@@ -1,0 +1,3907 @@
+{
+  "$description": "ArchWay Foundations — export desde Figma Us1oNLc2wgmgG3aMuT5dJv el 2026-10-07. Generado; no editar a mano.",
+  "primitives": {
+    "color": {
+      "gold": {
+        "900": {
+          "$type": "color",
+          "$value": "#423000",
+          "$description": "Gold (Dorado) 900. Tono muy oscuro. Uso en textos de alto contraste o fondos profundos.",
+          "$extensions": {
+            "figma": {
+              "name": "color/gold/900",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#755500",
+          "$description": "Gold (Dorado) 800. Tono oscuro. Uso en textos principales y superficies de énfasis.",
+          "$extensions": {
+            "figma": {
+              "name": "color/gold/800",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#a87a00",
+          "$description": "Gold (Dorado) 700. Tono medio-oscuro. Uso en textos secundarios y bordes activos.",
+          "$extensions": {
+            "figma": {
+              "name": "color/gold/700",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#db9f00",
+          "$description": "Gold (Dorado) 600. Tono medio. Uso en íconos, bordes y estados intermedios.",
+          "$extensions": {
+            "figma": {
+              "name": "color/gold/600",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#ffbc0d",
+          "$description": "Dorado base de marca McDonald's. Token principal de identidad.",
+          "$extensions": {
+            "figma": {
+              "name": "color/gold/500_",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#ffcb42",
+          "$description": "Gold (Dorado) 400. Tono medio-claro. Uso en estados hover y bordes sutiles.",
+          "$extensions": {
+            "figma": {
+              "name": "color/gold/400",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#ffd975",
+          "$description": "Gold (Dorado) 300. Tono claro. Uso en fondos de énfasis suave y decoración.",
+          "$extensions": {
+            "figma": {
+              "name": "color/gold/300",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#ffe7a8",
+          "$description": "Gold (Dorado) 200. Tono muy claro. Uso en superficies secundarias y tags.",
+          "$extensions": {
+            "figma": {
+              "name": "color/gold/200",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#fff5db",
+          "$description": "Gold (Dorado) 100. Tono casi blanco. Uso en fondos sutiles y estados disabled.",
+          "$extensions": {
+            "figma": {
+              "name": "color/gold/100",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "50": {
+          "$type": "color",
+          "$value": "#fff8e5",
+          "$description": "Gold (Dorado) 50. Tono más claro de la escala. Uso en fondos apenas perceptibles.",
+          "$extensions": {
+            "figma": {
+              "name": "color/gold/50",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "500-alpha": {
+          "$type": "color",
+          "$value": "#ffbc0d4d",
+          "$description": "Dorado base con 30% de opacidad. Uso en overlays y estados suaves de marca.",
+          "$extensions": {
+            "figma": {
+              "name": "color/gold/500-alpha",
+              "collection": "Primitives"
+            }
+          }
+        }
+      },
+      "red": {
+        "900": {
+          "$type": "color",
+          "$value": "#420002",
+          "$description": "Red (Rojo) 900. Tono muy oscuro. Uso en textos de alto contraste o fondos profundos.",
+          "$extensions": {
+            "figma": {
+              "name": "color/red/900",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#750004",
+          "$description": "Red (Rojo) 800. Tono oscuro. Uso en textos principales y superficies de énfasis.",
+          "$extensions": {
+            "figma": {
+              "name": "color/red/800",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#a80005",
+          "$description": "Red (Rojo) 700. Tono medio-oscuro. Uso en textos secundarios y bordes activos.",
+          "$extensions": {
+            "figma": {
+              "name": "color/red/700",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#db0007",
+          "$description": "Rojo base de la marca. Token principal para errores y alertas.",
+          "$extensions": {
+            "figma": {
+              "name": "color/red/600_",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#ff1017",
+          "$description": "Red (Rojo) 500. Tono base de la escala. Valor central de referencia.",
+          "$extensions": {
+            "figma": {
+              "name": "color/red/500",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#ff4248",
+          "$description": "Red (Rojo) 400. Tono medio-claro. Uso en estados hover y bordes sutiles.",
+          "$extensions": {
+            "figma": {
+              "name": "color/red/400",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#ff757a",
+          "$description": "Red (Rojo) 300. Tono claro. Uso en fondos de énfasis suave y decoración.",
+          "$extensions": {
+            "figma": {
+              "name": "color/red/300",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#ffa8ab",
+          "$description": "Red (Rojo) 200. Tono muy claro. Uso en superficies secundarias y tags.",
+          "$extensions": {
+            "figma": {
+              "name": "color/red/200",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#ffdbdc",
+          "$description": "Red (Rojo) 100. Tono casi blanco. Uso en fondos sutiles y estados disabled.",
+          "$extensions": {
+            "figma": {
+              "name": "color/red/100",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "50": {
+          "$type": "color",
+          "$value": "#fff0f0",
+          "$description": "Red (Rojo) 50. Tono más claro de la escala. Uso en fondos apenas perceptibles.",
+          "$extensions": {
+            "figma": {
+              "name": "color/red/50",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "600-alpha": {
+          "$type": "color",
+          "$value": "#db00074d",
+          "$description": "Rojo base con 30% de opacidad. Uso en superficies de error suaves.",
+          "$extensions": {
+            "figma": {
+              "name": "color/red/600-alpha",
+              "collection": "Primitives"
+            }
+          }
+        }
+      },
+      "black": {
+        "900": {
+          "$type": "color",
+          "$value": "#0f0f0f",
+          "$description": "Black (Neutro) 900. Tono muy oscuro. Uso en textos de alto contraste o fondos profundos.",
+          "$extensions": {
+            "figma": {
+              "name": "color/black/900",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#292929",
+          "$description": "Gris muy oscuro base. Token principal para textos y fondos oscuros.",
+          "$extensions": {
+            "figma": {
+              "name": "color/black/800_",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#424242",
+          "$description": "Black (Neutro) 700. Tono medio-oscuro. Uso en textos secundarios y bordes activos.",
+          "$extensions": {
+            "figma": {
+              "name": "color/black/700",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#5c5c5c",
+          "$description": "Black (Neutro) 600. Tono medio. Uso en íconos, bordes y estados intermedios.",
+          "$extensions": {
+            "figma": {
+              "name": "color/black/600",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#707070",
+          "$description": "Black (Neutro) 500. Tono base de la escala. Valor central de referencia.",
+          "$extensions": {
+            "figma": {
+              "name": "color/black/500",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#8f8f8f",
+          "$description": "Black (Neutro) 400. Tono medio-claro. Uso en estados hover y bordes sutiles.",
+          "$extensions": {
+            "figma": {
+              "name": "color/black/400",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#a8a8a8",
+          "$description": "Black (Neutro) 300. Tono claro. Uso en fondos de énfasis suave y decoración.",
+          "$extensions": {
+            "figma": {
+              "name": "color/black/300",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#c2c2c2",
+          "$description": "Black (Neutro) 200. Tono muy claro. Uso en superficies secundarias y tags.",
+          "$extensions": {
+            "figma": {
+              "name": "color/black/200",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#dbdbdb",
+          "$description": "Black (Neutro) 100. Tono casi blanco. Uso en fondos sutiles y estados disabled.",
+          "$extensions": {
+            "figma": {
+              "name": "color/black/100",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "50": {
+          "$type": "color",
+          "$value": "#f5f5f5",
+          "$description": "Black (Neutro) 50. Tono más claro de la escala. Uso en fondos apenas perceptibles.",
+          "$extensions": {
+            "figma": {
+              "name": "color/black/50",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "800-alpha": {
+          "$type": "color",
+          "$value": "#2929294d",
+          "$description": "Gris oscuro base con 30% de opacidad. Uso en overlays y sombras.",
+          "$extensions": {
+            "figma": {
+              "name": "color/black/800_ alpha",
+              "collection": "Primitives"
+            }
+          }
+        }
+      },
+      "white": {
+        "default": {
+          "$type": "color",
+          "$value": "#ffffff",
+          "$description": "Blanco puro. Base de superficies claras y fondos principales.",
+          "$extensions": {
+            "figma": {
+              "name": "color/white/default",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "transparent": {
+          "$type": "color",
+          "$value": "#ffffff00",
+          "$description": "Blanco con alpha 0. Uso en transiciones y fondos ghost.",
+          "$extensions": {
+            "figma": {
+              "name": "color/white/transparent",
+              "collection": "Primitives"
+            }
+          }
+        }
+      },
+      "green": {
+        "900": {
+          "$type": "color",
+          "$value": "#133e22",
+          "$description": "Green (Verde) 900. Tono muy oscuro. Uso en textos de alto contraste o fondos profundos.",
+          "$extensions": {
+            "figma": {
+              "name": "color/green/900",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#1f6538",
+          "$description": "Green (Verde) 800. Tono oscuro. Uso en textos principales y superficies de énfasis.",
+          "$extensions": {
+            "figma": {
+              "name": "color/green/800",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#2b8c4d",
+          "$description": "Green (Verde) 700. Tono medio-oscuro. Uso en textos secundarios y bordes activos.",
+          "$extensions": {
+            "figma": {
+              "name": "color/green/700",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#37b363",
+          "$description": "Green (Verde) 600. Tono medio. Uso en íconos, bordes y estados intermedios.",
+          "$extensions": {
+            "figma": {
+              "name": "color/green/600",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#53ca7d",
+          "$description": "Green (Verde) 500. Tono base de la escala. Valor central de referencia.",
+          "$extensions": {
+            "figma": {
+              "name": "color/green/500",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#7ad69b",
+          "$description": "Green (Verde) 400. Tono medio-claro. Uso en estados hover y bordes sutiles.",
+          "$extensions": {
+            "figma": {
+              "name": "color/green/400",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#a1e2b8",
+          "$description": "Green (Verde) 300. Tono claro. Uso en fondos de énfasis suave y decoración.",
+          "$extensions": {
+            "figma": {
+              "name": "color/green/300",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#c8eed6",
+          "$description": "Green (Verde) 200. Tono muy claro. Uso en superficies secundarias y tags.",
+          "$extensions": {
+            "figma": {
+              "name": "color/green/200",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#effaf3",
+          "$description": "Green (Verde) 100. Tono casi blanco. Uso en fondos sutiles y estados disabled.",
+          "$extensions": {
+            "figma": {
+              "name": "color/green/100",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "800-alpha": {
+          "$type": "color",
+          "$value": "#1f65384d",
+          "$description": "Verde oscuro con 30% de opacidad. Uso en superficies de éxito suaves.",
+          "$extensions": {
+            "figma": {
+              "name": "color/green/800-alpha",
+              "collection": "Primitives"
+            }
+          }
+        }
+      },
+      "lime": {
+        "900": {
+          "$type": "color",
+          "$value": "#2c3210",
+          "$description": "Lime (Lima) 900. Tono muy oscuro. Uso en textos de alto contraste o fondos profundos.",
+          "$extensions": {
+            "figma": {
+              "name": "color/lime/900",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#4d581d",
+          "$description": "Lime (Lima) 800. Tono oscuro. Uso en textos principales y superficies de énfasis.",
+          "$extensions": {
+            "figma": {
+              "name": "color/lime/800",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#6f7f2a",
+          "$description": "Lime (Lima) 700. Tono medio-oscuro. Uso en textos secundarios y bordes activos.",
+          "$extensions": {
+            "figma": {
+              "name": "color/lime/700",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#90a536",
+          "$description": "Lime (Lima) 600. Tono medio. Uso en íconos, bordes y estados intermedios.",
+          "$extensions": {
+            "figma": {
+              "name": "color/lime/600",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#adc44b",
+          "$description": "Lime (Lima) 500. Tono base de la escala. Valor central de referencia.",
+          "$extensions": {
+            "figma": {
+              "name": "color/lime/500",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#bfd071",
+          "$description": "Lime (Lima) 400. Tono medio-claro. Uso en estados hover y bordes sutiles.",
+          "$extensions": {
+            "figma": {
+              "name": "color/lime/400",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#d0dd97",
+          "$description": "Lime (Lima) 300. Tono claro. Uso en fondos de énfasis suave y decoración.",
+          "$extensions": {
+            "figma": {
+              "name": "color/lime/300",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#e2eabf",
+          "$description": "Lime (Lima) 200. Tono muy claro. Uso en superficies secundarias y tags.",
+          "$extensions": {
+            "figma": {
+              "name": "color/lime/200",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#f3f6e4",
+          "$description": "Lime (Lima) 100. Tono casi blanco. Uso en fondos sutiles y estados disabled.",
+          "$extensions": {
+            "figma": {
+              "name": "color/lime/100",
+              "collection": "Primitives"
+            }
+          }
+        }
+      },
+      "blue-dark": {
+        "950": {
+          "$type": "color",
+          "$value": "#051329",
+          "$description": "Blue (Azul) 950. Tono más oscuro de la escala. Uso reservado para contraste extremo.",
+          "$extensions": {
+            "figma": {
+              "name": "color/blue Dark/950",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#0b2856",
+          "$description": "Blue (Azul) 900. Tono muy oscuro. Uso en textos de alto contraste o fondos profundos.",
+          "$extensions": {
+            "figma": {
+              "name": "color/blue Dark/900",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#103c82",
+          "$description": "Blue (Azul) 800. Tono oscuro. Uso en textos principales y superficies de énfasis.",
+          "$extensions": {
+            "figma": {
+              "name": "color/blue Dark/800",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#1652b1",
+          "$description": "Blue (Azul) 700. Tono medio-oscuro. Uso en textos secundarios y bordes activos.",
+          "$extensions": {
+            "figma": {
+              "name": "color/blue Dark/700",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#1b67df",
+          "$description": "Blue (Azul) 600. Tono medio. Uso en íconos, bordes y estados intermedios.",
+          "$extensions": {
+            "figma": {
+              "name": "color/blue Dark/600",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#4584e8",
+          "$description": "Blue (Azul) 500. Tono base de la escala. Valor central de referencia.",
+          "$extensions": {
+            "figma": {
+              "name": "color/blue Dark/500",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#72a2ee",
+          "$description": "Blue (Azul) 400. Tono medio-claro. Uso en estados hover y bordes sutiles.",
+          "$extensions": {
+            "figma": {
+              "name": "color/blue Dark/400",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#a0c0f3",
+          "$description": "Blue (Azul) 300. Tono claro. Uso en fondos de énfasis suave y decoración.",
+          "$extensions": {
+            "figma": {
+              "name": "color/blue Dark/300",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#cddef9",
+          "$description": "Blue (Azul) 200. Tono muy claro. Uso en superficies secundarias y tags.",
+          "$extensions": {
+            "figma": {
+              "name": "color/blue Dark/200",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#e8f0fc",
+          "$description": "Blue (Azul) 100. Tono casi blanco. Uso en fondos sutiles y estados disabled.",
+          "$extensions": {
+            "figma": {
+              "name": "color/blue Dark/100",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "700-alpha": {
+          "$type": "color",
+          "$value": "#1652b14d",
+          "$description": "Azul medio-oscuro con 30% de opacidad. Uso en superficies informativas suaves.",
+          "$extensions": {
+            "figma": {
+              "name": "color/blue Dark/700-alpha",
+              "collection": "Primitives"
+            }
+          }
+        }
+      },
+      "fuchsia": {
+        "900": {
+          "$type": "color",
+          "$value": "#39041d",
+          "$description": "Fuchsia (Fucsia) 900. Tono muy oscuro. Uso en textos de alto contraste o fondos profundos.",
+          "$extensions": {
+            "figma": {
+              "name": "color/fuchsia/900",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#690735",
+          "$description": "Fuchsia (Fucsia) 800. Tono oscuro. Uso en textos principales y superficies de énfasis.",
+          "$extensions": {
+            "figma": {
+              "name": "color/fuchsia/800",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#9a0a4d",
+          "$description": "Fuchsia (Fucsia) 700. Tono medio-oscuro. Uso en textos secundarios y bordes activos.",
+          "$extensions": {
+            "figma": {
+              "name": "color/fuchsia/700",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#c90d65",
+          "$description": "Fuchsia (Fucsia) 600. Tono medio. Uso en íconos, bordes y estados intermedios.",
+          "$extensions": {
+            "figma": {
+              "name": "color/fuchsia/600",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#f0197d",
+          "$description": "Fuchsia (Fucsia) 500. Tono base de la escala. Valor central de referencia.",
+          "$extensions": {
+            "figma": {
+              "name": "color/fuchsia/500",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#f34998",
+          "$description": "Fuchsia (Fucsia) 400. Tono medio-claro. Uso en estados hover y bordes sutiles.",
+          "$extensions": {
+            "figma": {
+              "name": "color/fuchsia/400",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#f679b3",
+          "$description": "Fuchsia (Fucsia) 300. Tono claro. Uso en fondos de énfasis suave y decoración.",
+          "$extensions": {
+            "figma": {
+              "name": "color/fuchsia/300",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#f9a9ce",
+          "$description": "Fuchsia (Fucsia) 200. Tono muy claro. Uso en superficies secundarias y tags.",
+          "$extensions": {
+            "figma": {
+              "name": "color/fuchsia/200",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#fdd9e9",
+          "$description": "Fuchsia (Fucsia) 100. Tono casi blanco. Uso en fondos sutiles y estados disabled.",
+          "$extensions": {
+            "figma": {
+              "name": "color/fuchsia/100",
+              "collection": "Primitives"
+            }
+          }
+        }
+      },
+      "purple": {
+        "900": {
+          "$type": "color",
+          "$value": "#3a014b",
+          "$description": "Purple (Púrpura) 900. Tono muy oscuro. Uso en textos de alto contraste o fondos profundos.",
+          "$extensions": {
+            "figma": {
+              "name": "color/purple/900",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#5f027c",
+          "$description": "Purple (Púrpura) 800. Tono oscuro. Uso en textos principales y superficies de énfasis.",
+          "$extensions": {
+            "figma": {
+              "name": "color/purple/800",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#8703b0",
+          "$description": "Purple (Púrpura) 700. Tono medio-oscuro. Uso en textos secundarios y bordes activos.",
+          "$extensions": {
+            "figma": {
+              "name": "color/purple/700",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#ad04e2",
+          "$description": "Purple (Púrpura) 600. Tono medio. Uso en íconos, bordes y estados intermedios.",
+          "$extensions": {
+            "figma": {
+              "name": "color/purple/600",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#c71dfb",
+          "$description": "Purple (Púrpura) 500. Tono base de la escala. Valor central de referencia.",
+          "$extensions": {
+            "figma": {
+              "name": "color/purple/500",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#d34ffc",
+          "$description": "Purple (Púrpura) 400. Tono medio-claro. Uso en estados hover y bordes sutiles.",
+          "$extensions": {
+            "figma": {
+              "name": "color/purple/400",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#e082fd",
+          "$description": "Purple (Púrpura) 300. Tono claro. Uso en fondos de énfasis suave y decoración.",
+          "$extensions": {
+            "figma": {
+              "name": "color/purple/300",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#ecb4fe",
+          "$description": "Purple (Púrpura) 200. Tono muy claro. Uso en superficies secundarias y tags.",
+          "$extensions": {
+            "figma": {
+              "name": "color/purple/200",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#f9e6ff",
+          "$description": "Purple (Púrpura) 100. Tono casi blanco. Uso en fondos sutiles y estados disabled.",
+          "$extensions": {
+            "figma": {
+              "name": "color/purple/100",
+              "collection": "Primitives"
+            }
+          }
+        }
+      },
+      "orange": {
+        "900": {
+          "$type": "color",
+          "$value": "#331400",
+          "$description": "Orange (Naranja) 900. Tono muy oscuro. Uso en textos de alto contraste o fondos profundos.",
+          "$extensions": {
+            "figma": {
+              "name": "color/orange/900",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#662800",
+          "$description": "Orange (Naranja) 800. Tono oscuro. Uso en textos principales y superficies de énfasis.",
+          "$extensions": {
+            "figma": {
+              "name": "color/orange/800",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#983b01",
+          "$description": "Orange (Naranja) 700. Tono medio-oscuro. Uso en textos secundarios y bordes activos.",
+          "$extensions": {
+            "figma": {
+              "name": "color/orange/700",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#cb4f01",
+          "$description": "Orange (Naranja) 600. Tono medio. Uso en íconos, bordes y estados intermedios.",
+          "$extensions": {
+            "figma": {
+              "name": "color/orange/600",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#fe6301",
+          "$description": "Orange (Naranja) 500. Tono base de la escala. Valor central de referencia.",
+          "$extensions": {
+            "figma": {
+              "name": "color/orange/500",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#fe8234",
+          "$description": "Orange (Naranja) 400. Tono medio-claro. Uso en estados hover y bordes sutiles.",
+          "$extensions": {
+            "figma": {
+              "name": "color/orange/400",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#fea167",
+          "$description": "Orange (Naranja) 300. Tono claro. Uso en fondos de énfasis suave y decoración.",
+          "$extensions": {
+            "figma": {
+              "name": "color/orange/300",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#fec099",
+          "$description": "Orange (Naranja) 200. Tono muy claro. Uso en superficies secundarias y tags.",
+          "$extensions": {
+            "figma": {
+              "name": "color/orange/200",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#ffe0cc",
+          "$description": "Orange (Naranja) 100. Tono casi blanco. Uso en fondos sutiles y estados disabled.",
+          "$extensions": {
+            "figma": {
+              "name": "color/orange/100",
+              "collection": "Primitives"
+            }
+          }
+        }
+      },
+      "violet": {
+        "900": {
+          "$type": "color",
+          "$value": "#001742",
+          "$extensions": {
+            "figma": {
+              "name": "color/violet/900",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#1b0141",
+          "$extensions": {
+            "figma": {
+              "name": "color/violet/800",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#4103a1",
+          "$extensions": {
+            "figma": {
+              "name": "color/violet/700",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#5603d3",
+          "$extensions": {
+            "figma": {
+              "name": "color/violet/600",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#6c0efb",
+          "$extensions": {
+            "figma": {
+              "name": "color/violet/500",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#8a3ffc",
+          "$extensions": {
+            "figma": {
+              "name": "color/violet/400",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#a972fd",
+          "$extensions": {
+            "figma": {
+              "name": "color/violet/300",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#c8a5fe",
+          "$extensions": {
+            "figma": {
+              "name": "color/violet/200",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#c8a5fe",
+          "$extensions": {
+            "figma": {
+              "name": "color/violet/100",
+              "collection": "Primitives"
+            }
+          }
+        }
+      }
+    },
+    "primary": {
+      "color": {
+        "$type": "color",
+        "$value": "#ffffff",
+        "$description": "Color primario base del sistema. Referencia para alias semánticos.",
+        "$extensions": {
+          "figma": {
+            "name": "Primary/Color",
+            "collection": "Primitives"
+          }
+        }
+      }
+    },
+    "number": {
+      "$type": "number",
+      "$value": "0",
+      "$extensions": {
+        "figma": {
+          "name": "Number",
+          "collection": "Primitives"
+        }
+      }
+    },
+    "dimension": {
+      "0": {
+        "$type": "dimension",
+        "$value": "0px",
+        "$extensions": {
+          "figma": {
+            "name": "Valor/0",
+            "collection": "Primitives"
+          }
+        }
+      },
+      "4": {
+        "$type": "dimension",
+        "$value": "4px",
+        "$extensions": {
+          "figma": {
+            "name": "Valor/4",
+            "collection": "Primitives"
+          }
+        }
+      },
+      "8": {
+        "$type": "dimension",
+        "$value": "8px",
+        "$extensions": {
+          "figma": {
+            "name": "Valor/8",
+            "collection": "Primitives"
+          }
+        }
+      },
+      "12": {
+        "$type": "dimension",
+        "$value": "12px",
+        "$description": "Uso limitado",
+        "$extensions": {
+          "figma": {
+            "name": "Valor/12",
+            "collection": "Primitives"
+          }
+        }
+      },
+      "16": {
+        "$type": "dimension",
+        "$value": "16px",
+        "$extensions": {
+          "figma": {
+            "name": "Valor/16",
+            "collection": "Primitives"
+          }
+        }
+      },
+      "24": {
+        "$type": "dimension",
+        "$value": "24px",
+        "$extensions": {
+          "figma": {
+            "name": "Valor/24",
+            "collection": "Primitives"
+          }
+        }
+      },
+      "32": {
+        "$type": "dimension",
+        "$value": "32px",
+        "$extensions": {
+          "figma": {
+            "name": "Valor/32",
+            "collection": "Primitives"
+          }
+        }
+      },
+      "40": {
+        "$type": "dimension",
+        "$value": "40px",
+        "$extensions": {
+          "figma": {
+            "name": "Valor/40",
+            "collection": "Primitives"
+          }
+        }
+      },
+      "48": {
+        "$type": "dimension",
+        "$value": "48px",
+        "$extensions": {
+          "figma": {
+            "name": "Valor/48",
+            "collection": "Primitives"
+          }
+        }
+      },
+      "56": {
+        "$type": "dimension",
+        "$value": "56px",
+        "$extensions": {
+          "figma": {
+            "name": "Valor/56",
+            "collection": "Primitives"
+          }
+        }
+      },
+      "64": {
+        "$type": "dimension",
+        "$value": "64px",
+        "$extensions": {
+          "figma": {
+            "name": "Valor/64",
+            "collection": "Primitives"
+          }
+        }
+      },
+      "72": {
+        "$type": "dimension",
+        "$value": "72px",
+        "$extensions": {
+          "figma": {
+            "name": "Valor/72",
+            "collection": "Primitives"
+          }
+        }
+      },
+      "80": {
+        "$type": "dimension",
+        "$value": "80px",
+        "$extensions": {
+          "figma": {
+            "name": "Valor/80",
+            "collection": "Primitives"
+          }
+        }
+      },
+      "88": {
+        "$type": "dimension",
+        "$value": "88px",
+        "$extensions": {
+          "figma": {
+            "name": "Valor/88",
+            "collection": "Primitives"
+          }
+        }
+      },
+      "96": {
+        "$type": "dimension",
+        "$value": "96px",
+        "$extensions": {
+          "figma": {
+            "name": "Valor/96",
+            "collection": "Primitives"
+          }
+        }
+      },
+      "128": {
+        "$type": "dimension",
+        "$value": "128px",
+        "$extensions": {
+          "figma": {
+            "name": "Valor/128",
+            "collection": "Primitives"
+          }
+        }
+      },
+      "160": {
+        "$type": "dimension",
+        "$value": "160px",
+        "$extensions": {
+          "figma": {
+            "name": "Valor/160",
+            "collection": "Primitives"
+          }
+        }
+      }
+    }
+  },
+  "semantic": {
+    "background": {
+      "01": {
+        "$type": "color",
+        "$value": "{primitives.color.white.default}",
+        "$description": "Fondo base de pantalla. Superficie principal de la app.",
+        "$extensions": {
+          "figma": {
+            "name": "Background/01",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "02": {
+        "$type": "color",
+        "$value": "{primitives.color.black.50}",
+        "$description": "Fondo secundario. Uso en secciones alternadas o cards sobre fondo blanco.",
+        "$extensions": {
+          "figma": {
+            "name": "Background/02",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "03": {
+        "$type": "color",
+        "$value": "{primitives.color.black.100}",
+        "$description": "Fondo terciario. Uso en inputs deshabilitados y estados de carga.",
+        "$extensions": {
+          "figma": {
+            "name": "Background/03",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "04": {
+        "$type": "color",
+        "$value": "{primitives.color.black.200}",
+        "$description": "Fondo cuaternario. Uso en separadores visuales y zonas de bajo contraste.",
+        "$extensions": {
+          "figma": {
+            "name": "Background/04",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "05": {
+        "$type": "color",
+        "$value": "{primitives.color.black.700}",
+        "$description": "Fondo oscuro. Uso en overlays y elementos sobre fondo negro.",
+        "$extensions": {
+          "figma": {
+            "name": "Background/05",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "06": {
+        "$type": "color",
+        "$value": "{primitives.color.black.800}",
+        "$description": "Fondo más oscuro. Uso en tooltips y superficies de alto contraste.",
+        "$extensions": {
+          "figma": {
+            "name": "Background/06",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      }
+    },
+    "border": {
+      "default": {
+        "$type": "color",
+        "$value": "{primitives.color.black.400}",
+        "$description": "Chip stroke, Secondary button stroke, Input enabled",
+        "$extensions": {
+          "figma": {
+            "name": "Border/default",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "soft": {
+        "$type": "color",
+        "$value": "{primitives.color.black.100}",
+        "$description": "Borde suave para campos de texto en estado default. Menos prominente que Border/default para no competir con el contenido. Uso en Input Text Field enabled.",
+        "$extensions": {
+          "figma": {
+            "name": "Border/soft",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "strong": {
+        "$type": "color",
+        "$value": "{primitives.color.black.700}",
+        "$description": "Focused stroke — button, chip, input",
+        "$extensions": {
+          "figma": {
+            "name": "Border/strong",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "subtle": {
+        "$type": "color",
+        "$value": "{primitives.color.black.200}",
+        "$description": "Disabled stroke",
+        "$extensions": {
+          "figma": {
+            "name": "Border/subtle",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "input-active": {
+        "$type": "color",
+        "$value": "{primitives.color.black.800}",
+        "$description": "Input completed border",
+        "$extensions": {
+          "figma": {
+            "name": "Border/input-active",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      }
+    },
+    "button": {
+      "primary": {
+        "$type": "color",
+        "$value": "{primitives.color.gold.500}",
+        "$description": "Fondo del botón primario en estado enabled.",
+        "$extensions": {
+          "figma": {
+            "name": "Button/primary",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "primary-pressed": {
+        "$type": "color",
+        "$value": "{primitives.color.gold.400}",
+        "$description": "Fondo del botón primario en estado pressed.",
+        "$extensions": {
+          "figma": {
+            "name": "Button/primary-pressed",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "primary-focus": {
+        "$type": "color",
+        "$value": "{primitives.color.gold.600}",
+        "$description": "Fondo del botón primario en estado focused. Solo accesibilidad.",
+        "$extensions": {
+          "figma": {
+            "name": "Button/primary-focus",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "primary-disabled": {
+        "$type": "color",
+        "$value": "{primitives.color.gold.100}",
+        "$description": "Fondo del botón primario en estado disabled.",
+        "$extensions": {
+          "figma": {
+            "name": "Button/primary-disabled",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "text-enabled": {
+        "$type": "color",
+        "$value": "{primitives.color.black.800}",
+        "$description": "Color de texto del botón en estado enabled.",
+        "$extensions": {
+          "figma": {
+            "name": "Button/text-enabled",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "text-disabled": {
+        "$type": "color",
+        "$value": "{primitives.color.black.500}",
+        "$description": "Color de texto del botón en estado disabled.",
+        "$extensions": {
+          "figma": {
+            "name": "Button/text-disabled",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "secondary": {
+        "$type": "color",
+        "$value": "{primitives.primary.color}",
+        "$description": "Fondo del botón secondary en estado enabled.",
+        "$extensions": {
+          "figma": {
+            "name": "Button/secondary",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "secondary-pressed": {
+        "$type": "color",
+        "$value": "{primitives.color.black.50}",
+        "$description": "Fondo del botón secondary en estado pressed.",
+        "$extensions": {
+          "figma": {
+            "name": "Button/secondary-pressed",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "secondary-focus": {
+        "$type": "color",
+        "$value": "{primitives.color.black.50}",
+        "$description": "Fondo del botón secondary en estado focused.",
+        "$extensions": {
+          "figma": {
+            "name": "Button/secondary-focus",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "secondary-disabled": {
+        "$type": "color",
+        "$value": "{primitives.color.black.50}",
+        "$description": "Fondo del botón secondary en estado disabled.",
+        "$extensions": {
+          "figma": {
+            "name": "Button/secondary-disabled",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "secondary-stroke": {
+        "$type": "color",
+        "$value": "{primitives.color.black.400}",
+        "$description": "Borde del botón secondary en estado enabled.",
+        "$extensions": {
+          "figma": {
+            "name": "Button/secondary-stroke",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "secondary-stroke-pressed": {
+        "$type": "color",
+        "$value": "{primitives.color.black.400}",
+        "$description": "Borde del botón secondary en estado pressed.",
+        "$extensions": {
+          "figma": {
+            "name": "Button/secondary-stroke-pressed",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "secondary-stroke-focus": {
+        "$type": "color",
+        "$value": "{primitives.color.black.700}",
+        "$description": "Borde del botón secondary en estado focused.",
+        "$extensions": {
+          "figma": {
+            "name": "Button/secondary-stroke-focus",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "secondary-stroke-disabled": {
+        "$type": "color",
+        "$value": "{primitives.color.black.500}",
+        "$description": "Borde del botón secondary en estado disabled.",
+        "$extensions": {
+          "figma": {
+            "name": "Button/secondary-stroke-disabled",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "ghost": {
+        "$type": "color",
+        "$value": "{primitives.color.white.transparent}",
+        "$description": "Fondo transparente del botón ghost en estado enabled.",
+        "$extensions": {
+          "figma": {
+            "name": "Button/ghost",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "ghost-pressed": {
+        "$type": "color",
+        "$value": "{primitives.color.black.50}",
+        "$description": "Fondo del botón ghost en estado pressed.",
+        "$extensions": {
+          "figma": {
+            "name": "Button/ghost-pressed",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      }
+    },
+    "chip": {
+      "icon": {
+        "$type": "color",
+        "$value": "{primitives.color.black.800}",
+        "$description": "Color del ícono dentro del chip en estado enabled.",
+        "$extensions": {
+          "figma": {
+            "name": "Chip/icon",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "icon-disabled": {
+        "$type": "color",
+        "$value": "{primitives.color.black.500}",
+        "$description": "Color del ícono dentro del chip en estado disabled.",
+        "$extensions": {
+          "figma": {
+            "name": "Chip/icon-disabled",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "enabled-bg": {
+        "$type": "color",
+        "$value": "{primitives.color.white.default}",
+        "$description": "Fondo del chip en estado enabled.",
+        "$extensions": {
+          "figma": {
+            "name": "Chip/enabled-bg",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "enabled-stroke": {
+        "$type": "color",
+        "$value": "{primitives.color.black.400}",
+        "$description": "Borde del chip en estado enabled.",
+        "$extensions": {
+          "figma": {
+            "name": "Chip/enabled-stroke",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "enabled-text": {
+        "$type": "color",
+        "$value": "{primitives.color.black.800}",
+        "$description": "Texto del chip en estado enabled.",
+        "$extensions": {
+          "figma": {
+            "name": "Chip/enabled-text",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "selected-bg": {
+        "$type": "color",
+        "$value": "{primitives.color.gold.500}",
+        "$description": "Fondo del chip en estado selected. Filtro activo.",
+        "$extensions": {
+          "figma": {
+            "name": "Chip/selected-bg",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "selected-text": {
+        "$type": "color",
+        "$value": "{primitives.color.black.800}",
+        "$description": "Texto del chip en estado selected.",
+        "$extensions": {
+          "figma": {
+            "name": "Chip/selected-text",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "pressed-bg": {
+        "$type": "color",
+        "$value": "{primitives.color.black.50}",
+        "$description": "Fondo del chip en estado pressed.",
+        "$extensions": {
+          "figma": {
+            "name": "Chip/pressed-bg",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "pressed-stroke": {
+        "$type": "color",
+        "$value": "{primitives.color.black.400}",
+        "$description": "Borde del chip en estado pressed.",
+        "$extensions": {
+          "figma": {
+            "name": "Chip/pressed-stroke",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "focused-bg": {
+        "$type": "color",
+        "$value": "{primitives.color.black.100}",
+        "$description": "Fondo del chip en estado focused. Solo accesibilidad.",
+        "$extensions": {
+          "figma": {
+            "name": "Chip/focused-bg",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "focused-stroke": {
+        "$type": "color",
+        "$value": "{primitives.color.black.400}",
+        "$description": "Borde del chip en estado focused. Solo accesibilidad.",
+        "$extensions": {
+          "figma": {
+            "name": "Chip/focused-stroke",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "disabled-bg": {
+        "$type": "color",
+        "$value": "{primitives.color.black.50}",
+        "$description": "Fondo del chip en estado disabled.",
+        "$extensions": {
+          "figma": {
+            "name": "Chip/disabled-bg",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "disabled-stroke": {
+        "$type": "color",
+        "$value": "{primitives.color.black.200}",
+        "$description": "Borde del chip en estado disabled.",
+        "$extensions": {
+          "figma": {
+            "name": "Chip/disabled-stroke",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "disabled-text": {
+        "$type": "color",
+        "$value": "{primitives.color.black.500}",
+        "$description": "Texto del chip en estado disabled.",
+        "$extensions": {
+          "figma": {
+            "name": "Chip/disabled-text",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      }
+    },
+    "feacture": {
+      "misiones": {
+        "$type": "color",
+        "$value": "{primitives.color.purple.800}",
+        "$description": "Color sólido de identidad del programa Misiones — íconos, texto o fondos donde se necesita el purple pleno (no un tint). Usar Misiones-surface para fondos claros que necesiten contraste con este color.",
+        "$extensions": {
+          "figma": {
+            "name": "Feacture/Misiones",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "misiones-surface": {
+        "$type": "color",
+        "$value": "{primitives.color.purple.100}",
+        "$description": "Color de fondo/superficie de la identidad del programa Misiones (cards, headers, íconos).",
+        "$extensions": {
+          "figma": {
+            "name": "Feacture/Misiones-surface",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "accessibility": {
+        "$type": "color",
+        "$value": "{primitives.color.blue-dark.700}",
+        "$description": "Color del ícono/indicador de accesibilidad — señala que un elemento tiene una función o ajuste de accesibilidad disponible.",
+        "$extensions": {
+          "figma": {
+            "name": "Feacture/accessibility",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      }
+    },
+    "feedback": {
+      "error": {
+        "$type": "color",
+        "$value": "{primitives.color.red.600}",
+        "$description": "Input error border, Tag urgencia primary bg",
+        "$extensions": {
+          "figma": {
+            "name": "Feedback/error",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "error-on-black": {
+        "$type": "color",
+        "$value": "{primitives.color.red.400}",
+        "$description": "Variante de feedback/error, ajustada para pasar contraste sobre fondo negro (Layer/06). Usar solo en componentes con ese fondo — no es dark mode, no reemplaza al feedback original en el resto del sistema.",
+        "$extensions": {
+          "figma": {
+            "name": "Feedback/error-on-black",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "error-surface": {
+        "$type": "color",
+        "$value": "{primitives.color.red.100}",
+        "$description": "Tag urgencia secondary bg, Tag estado- secondary",
+        "$extensions": {
+          "figma": {
+            "name": "Feedback/error-surface",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "error-text": {
+        "$type": "color",
+        "$value": "{primitives.color.red.700}",
+        "$description": "Texto sobre error-surface",
+        "$extensions": {
+          "figma": {
+            "name": "Feedback/error-text",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "success": {
+        "$type": "color",
+        "$value": "{primitives.color.green.800}",
+        "$description": "Input success, Tag estado+ primary bg",
+        "$extensions": {
+          "figma": {
+            "name": "Feedback/success",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "success-on-black": {
+        "$type": "color",
+        "$value": "{primitives.color.green.700}",
+        "$description": "Variante de feedback/success, ajustada para pasar contraste sobre fondo negro (Layer/06). Usar solo en componentes con ese fondo — no es dark mode, no reemplaza al feedback original en el resto del sistema",
+        "$extensions": {
+          "figma": {
+            "name": "Feedback/success-on-black",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "success-surface": {
+        "$type": "color",
+        "$value": "{primitives.color.green.200}",
+        "$description": "Tag estado+ secondary bg",
+        "$extensions": {
+          "figma": {
+            "name": "Feedback/success-surface",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "success-surface-text": {
+        "$type": "color",
+        "$value": "{primitives.color.green.800}",
+        "$description": "Texto sobre success-surface",
+        "$extensions": {
+          "figma": {
+            "name": "Feedback/success-surface-text",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "warning": {
+        "$type": "color",
+        "$value": "{primitives.color.gold.500}",
+        "$description": "(alias de interactive/active en contextos de alerta)",
+        "$extensions": {
+          "figma": {
+            "name": "Feedback/warning",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "warning-surface": {
+        "$type": "color",
+        "$value": "{primitives.color.gold.200}",
+        "$description": "(alias de interactive/active en contextos de alerta)",
+        "$extensions": {
+          "figma": {
+            "name": "Feedback/warning-surface",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "info": {
+        "$type": "color",
+        "$value": "{primitives.color.blue-dark.600}",
+        "$description": "Color principal de información.",
+        "$extensions": {
+          "figma": {
+            "name": "Feedback/info",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "info-on-black": {
+        "$type": "color",
+        "$value": "{primitives.color.blue-dark.500}",
+        "$description": "Variante de feedback/info, para pasar contraste sobre fondo negro (Layer/06). Usar solo en componentes con ese fondo — no es dark mode, no reemplaza al feedback original en el resto del sistema",
+        "$extensions": {
+          "figma": {
+            "name": "Feedback/info-on-black",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "info-surface": {
+        "$type": "color",
+        "$value": "{primitives.color.blue-dark.200}",
+        "$description": "Superficie de información. Fondo de la barra de gamification en estado info.",
+        "$extensions": {
+          "figma": {
+            "name": "Feedback/info-surface",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      }
+    },
+    "interactive": {
+      "active": {
+        "$type": "color",
+        "$value": "{primitives.color.gold.500}",
+        "$description": "Chip selected, Switch ON, Toggle activo",
+        "$extensions": {
+          "figma": {
+            "name": "Interactive/active",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "active-text": {
+        "$type": "color",
+        "$value": "{primitives.color.black.800}",
+        "$description": "Texto sobre cualquier estado active",
+        "$extensions": {
+          "figma": {
+            "name": "Interactive/active-text",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "active-subtle": {
+        "$type": "color",
+        "$value": "{primitives.color.black.200}",
+        "$description": "Versión suave del color activo. Uso en tag secondary de destacar.",
+        "$extensions": {
+          "figma": {
+            "name": "Interactive/active-subtle",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "active-text-subtle": {
+        "$type": "color",
+        "$value": "{primitives.color.gold.700}",
+        "$description": "Texto sobre active-subtle",
+        "$extensions": {
+          "figma": {
+            "name": "Interactive/active-text-subtle",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      }
+    },
+    "highlight": {
+      "new": {
+        "$type": "color",
+        "$value": "{primitives.color.violet.400}",
+        "$description": "Indica al usuario que algo es nuevo o que nunca fue visto antes — funcionalidades nuevas, onboarding, walkthroughs, badges de novedad.",
+        "$extensions": {
+          "figma": {
+            "name": "highlight/new",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      }
+    },
+    "icon": {
+      "on-color": {
+        "$type": "color",
+        "$value": "{primitives.color.white.default}",
+        "$description": "Ícono sobre fondos de color — botón primary, chip selected.",
+        "$extensions": {
+          "figma": {
+            "name": "Icon/on-color",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "primary": {
+        "$type": "color",
+        "$value": "{primitives.color.black.800}",
+        "$description": "Ícono principal sobre fondos claros.",
+        "$extensions": {
+          "figma": {
+            "name": "Icon/Primary",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "gray": {
+        "$type": "color",
+        "$value": "{primitives.color.black.600}",
+        "$description": "Ícono secundario o de bajo énfasis.",
+        "$extensions": {
+          "figma": {
+            "name": "Icon/gray",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "disabled": {
+        "$type": "color",
+        "$value": "{primitives.color.black.500}",
+        "$description": "Ícono en estado disabled.",
+        "$extensions": {
+          "figma": {
+            "name": "Icon/disabled",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "gold": {
+        "$type": "color",
+        "$value": "{primitives.color.gold.500}",
+        "$description": "Ícono en color de marca. Uso sobre fondos oscuros o negros.",
+        "$extensions": {
+          "figma": {
+            "name": "Icon/gold",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "red": {
+        "$type": "color",
+        "$value": "{primitives.color.red.600}",
+        "$description": "Ícono de error o alerta destructiva.",
+        "$extensions": {
+          "figma": {
+            "name": "Icon/red",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      }
+    },
+    "layer": {
+      "01": {
+        "$type": "color",
+        "$value": "{primitives.color.white.default}",
+        "$description": "Superficie base. Fondo de pantalla o componente principal.",
+        "$extensions": {
+          "figma": {
+            "name": "Layer/01",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "02": {
+        "$type": "color",
+        "$value": "{primitives.color.black.50}",
+        "$description": "Superficie secundaria. Cards y elementos sobre fondo base.",
+        "$extensions": {
+          "figma": {
+            "name": "Layer/02",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "03": {
+        "$type": "color",
+        "$value": "{primitives.color.black.100}",
+        "$description": "Superficie terciaria. Inputs y campos sobre cards.",
+        "$extensions": {
+          "figma": {
+            "name": "Layer/03",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "04": {
+        "$type": "color",
+        "$value": "{primitives.color.black.200}",
+        "$description": "Superficie cuaternaria. Uso en separadores y bordes sutiles.",
+        "$extensions": {
+          "figma": {
+            "name": "Layer/04",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "05": {
+        "$type": "color",
+        "$value": "{primitives.color.black.700}",
+        "$description": "Superficie oscura. Uso en overlays y elementos de alto contraste.",
+        "$extensions": {
+          "figma": {
+            "name": "Layer/05",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "06": {
+        "$type": "color",
+        "$value": "{primitives.color.black.800}",
+        "$description": "Superficie más oscura. NavBar item selected, Tooltip background.",
+        "$extensions": {
+          "figma": {
+            "name": "Layer/06",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "inverse": {
+        "$type": "color",
+        "$value": "{primitives.color.black.800}",
+        "$description": "Superficie que invierte el esquema de color. Fondo oscuro Black 800 para elementos que flotan sobre contenido claro. Uso en Tooltip y NavBar item selected.",
+        "$extensions": {
+          "figma": {
+            "name": "Layer/inverse",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "brand": {
+        "$type": "color",
+        "$value": "{primitives.color.gold.500}",
+        "$description": "Superficie de marca McDonald's. Fondo amarillo Gold 500 del Header. Uso exclusivo en componentes que requieren identidad de marca como fondo principal.",
+        "$extensions": {
+          "figma": {
+            "name": "Layer/brand",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      }
+    },
+    "link": {
+      "default": {
+        "$type": "color",
+        "$value": "{primitives.color.blue-dark.700}",
+        "$description": "Link en estado default. Texto que navega a otra pantalla; si ejecuta una acción.",
+        "$extensions": {
+          "figma": {
+            "name": "Link/default",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "hover": {
+        "$type": "color",
+        "$value": "{primitives.color.blue-dark.600}",
+        "$description": "Color del link en estado hover. Solo web.",
+        "$extensions": {
+          "figma": {
+            "name": "Link/hover",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "focus": {
+        "$type": "color",
+        "$value": "{primitives.color.blue-dark.800}",
+        "$description": "Link en estado focused. Solo navegación por teclado o lector de pantalla.",
+        "$extensions": {
+          "figma": {
+            "name": "Link/focus",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "pressed": {
+        "$type": "color",
+        "$value": "{primitives.color.black.800}",
+        "$description": "Link en estado pressed.",
+        "$extensions": {
+          "figma": {
+            "name": "Link/pressed",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "visited": {
+        "$type": "color",
+        "$value": "{primitives.color.purple.700}",
+        "$description": "Color del link ya visitado.",
+        "$extensions": {
+          "figma": {
+            "name": "Link/visited",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "inverse": {
+        "$type": "color",
+        "$value": "{primitives.color.blue-dark.300}",
+        "$description": "Link sobre fondos oscuros — estado default.",
+        "$extensions": {
+          "figma": {
+            "name": "Link/inverse",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "inverse-hover": {
+        "$type": "color",
+        "$value": "{primitives.color.blue-dark.400}",
+        "$description": "Link sobre fondos oscuros — estado hover.",
+        "$extensions": {
+          "figma": {
+            "name": "Link/inverse-hover",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "inverse-focus": {
+        "$type": "color",
+        "$value": "{primitives.color.blue-dark.400}",
+        "$description": "Link sobre fondos oscuros — estado focused.",
+        "$extensions": {
+          "figma": {
+            "name": "Link/inverse-focus",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "inverse-pressed": {
+        "$type": "color",
+        "$value": "{primitives.color.white.default}",
+        "$description": "Link sobre fondos oscuros — mientras se toca.",
+        "$extensions": {
+          "figma": {
+            "name": "Link/inverse-pressed",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "inverse-visited": {
+        "$type": "color",
+        "$value": "{primitives.color.purple.200}",
+        "$description": "Sobre fondos oscuros — ya visitado.",
+        "$extensions": {
+          "figma": {
+            "name": "Link/inverse-visited",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      }
+    },
+    "surface": {
+      "default": {
+        "$type": "color",
+        "$value": "{primitives.color.white.default}",
+        "$description": "Superficie principal. Input bg, Chip bg, Secondary button bg",
+        "$extensions": {
+          "figma": {
+            "name": "Surface/default",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "subtle": {
+        "$type": "color",
+        "$value": "{primitives.color.black.50}",
+        "$description": "Superficie sutil. Chip pressed, Disabled bg, Input disabled bg.",
+        "$extensions": {
+          "figma": {
+            "name": "Surface/subtle",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "muted": {
+        "$type": "color",
+        "$value": "{primitives.color.black.100}",
+        "$description": "Superficie apagada. Chip focused bg.",
+        "$extensions": {
+          "figma": {
+            "name": "Surface/muted",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "default-bg": {
+        "$type": "color",
+        "$value": "{primitives.color.black.500}",
+        "$description": "Superficie de fondo. Barra de gamification.",
+        "$extensions": {
+          "figma": {
+            "name": "Surface/default-bg",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      }
+    },
+    "text": {
+      "primary": {
+        "$type": "color",
+        "$value": "{primitives.color.black.800}",
+        "$description": "Texto principal en todos los componentes.",
+        "$extensions": {
+          "figma": {
+            "name": "Text/Text_primary",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "secondary": {
+        "$type": "color",
+        "$value": "{primitives.color.black.600}",
+        "$description": "Texto secundario. Placeholder, hint text neutral.",
+        "$extensions": {
+          "figma": {
+            "name": "Text/Text_secondary",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "disabled": {
+        "$type": "color",
+        "$value": "{primitives.color.black.500}",
+        "$description": "Texto en estado disabled.",
+        "$extensions": {
+          "figma": {
+            "name": "Text/Text_disabled",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "on-color": {
+        "$type": "color",
+        "$value": "{primitives.color.white.default}",
+        "$description": "Texto sobre fondos de color — botón primary, chip selected, tooltip.",
+        "$extensions": {
+          "figma": {
+            "name": "Text/Text_on-color",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "error": {
+        "$type": "color",
+        "$value": "{primitives.color.red.600}",
+        "$description": "Texto de error. Hint text en estado error del input.",
+        "$extensions": {
+          "figma": {
+            "name": "Text/Text_error",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      }
+    },
+    "trust": {
+      "default": {
+        "$type": "color",
+        "$value": "{primitives.color.blue-dark.600}",
+        "$description": "Color principal de confianza. Tag confianza primary bg.",
+        "$extensions": {
+          "figma": {
+            "name": "Trust/default",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "bg-default": {
+        "$type": "color",
+        "$value": "{primitives.color.blue-dark.200}",
+        "$description": "Superficie de confianza. Tag confianza secondary bg.",
+        "$extensions": {
+          "figma": {
+            "name": "Trust/bg-default",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      },
+      "default-text": {
+        "$type": "color",
+        "$value": "{primitives.color.blue-dark.800}",
+        "$description": "Texto sobre superficie de confianza.",
+        "$extensions": {
+          "figma": {
+            "name": "Trust/default-text",
+            "collection": "Semantic",
+            "scopes": [
+              "ALL_SCOPES"
+            ]
+          }
+        }
+      }
+    },
+    "font": {
+      "family": {
+        "speedee": {
+          "$type": "fontFamily",
+          "$value": "Speedee",
+          "$extensions": {
+            "figma": {
+              "name": "Font/family/speedee",
+              "collection": "Semantic",
+              "scopes": [
+                "FONT_FAMILY"
+              ]
+            }
+          }
+        }
+      },
+      "letter-spacing": {
+        "m": {
+          "$type": "dimension",
+          "$value": "0.25px",
+          "$extensions": {
+            "figma": {
+              "name": "Font/letter-spacing/m",
+              "collection": "Semantic",
+              "scopes": [
+                "LETTER_SPACING"
+              ]
+            }
+          }
+        },
+        "l": {
+          "$type": "dimension",
+          "$value": "0px",
+          "$extensions": {
+            "figma": {
+              "name": "Font/letter-spacing/l",
+              "collection": "Semantic",
+              "scopes": [
+                "LETTER_SPACING"
+              ]
+            }
+          }
+        }
+      },
+      "line-height": {
+        "s": {
+          "$type": "dimension",
+          "$value": "16px",
+          "$extensions": {
+            "figma": {
+              "name": "Font/line-height/s",
+              "collection": "Semantic",
+              "scopes": [
+                "LINE_HEIGHT"
+              ]
+            }
+          }
+        },
+        "m": {
+          "$type": "dimension",
+          "$value": "20px",
+          "$extensions": {
+            "figma": {
+              "name": "Font/line-height/m",
+              "collection": "Semantic",
+              "scopes": [
+                "LINE_HEIGHT"
+              ]
+            }
+          }
+        },
+        "l": {
+          "$type": "dimension",
+          "$value": "24px",
+          "$extensions": {
+            "figma": {
+              "name": "Font/line-height/l",
+              "collection": "Semantic",
+              "scopes": [
+                "LINE_HEIGHT"
+              ]
+            }
+          }
+        },
+        "xl": {
+          "$type": "dimension",
+          "$value": "28px",
+          "$extensions": {
+            "figma": {
+              "name": "Font/line-height/xl",
+              "collection": "Semantic",
+              "scopes": [
+                "LINE_HEIGHT"
+              ]
+            }
+          }
+        },
+        "2xl": {
+          "$type": "dimension",
+          "$value": "32px",
+          "$extensions": {
+            "figma": {
+              "name": "Font/line-height/2xl",
+              "collection": "Semantic",
+              "scopes": [
+                "LINE_HEIGHT"
+              ]
+            }
+          }
+        },
+        "3xl": {
+          "$type": "dimension",
+          "$value": "36px",
+          "$extensions": {
+            "figma": {
+              "name": "Font/line-height/3xl",
+              "collection": "Semantic",
+              "scopes": [
+                "LINE_HEIGHT"
+              ]
+            }
+          }
+        },
+        "4xl": {
+          "$type": "dimension",
+          "$value": "44px",
+          "$extensions": {
+            "figma": {
+              "name": "Font/line-height/4xl",
+              "collection": "Semantic",
+              "scopes": [
+                "LINE_HEIGHT"
+              ]
+            }
+          }
+        }
+      },
+      "size": {
+        "4xl": {
+          "$type": "dimension",
+          "$value": "36px",
+          "$extensions": {
+            "figma": {
+              "name": "Font/size/4xl",
+              "collection": "Semantic",
+              "scopes": [
+                "FONT_SIZE"
+              ]
+            }
+          }
+        },
+        "3xl": {
+          "$type": "dimension",
+          "$value": "30px",
+          "$extensions": {
+            "figma": {
+              "name": "Font/size/3xl",
+              "collection": "Semantic",
+              "scopes": [
+                "FONT_SIZE"
+              ]
+            }
+          }
+        },
+        "2xl": {
+          "$type": "dimension",
+          "$value": "24px",
+          "$extensions": {
+            "figma": {
+              "name": "Font/size/2xl",
+              "collection": "Semantic",
+              "scopes": [
+                "FONT_SIZE"
+              ]
+            }
+          }
+        },
+        "xl": {
+          "$type": "dimension",
+          "$value": "20px",
+          "$extensions": {
+            "figma": {
+              "name": "Font/size/xl",
+              "collection": "Semantic",
+              "scopes": [
+                "FONT_SIZE"
+              ]
+            }
+          }
+        },
+        "l": {
+          "$type": "dimension",
+          "$value": "18px",
+          "$extensions": {
+            "figma": {
+              "name": "Font/size/l",
+              "collection": "Semantic",
+              "scopes": [
+                "FONT_SIZE"
+              ]
+            }
+          }
+        },
+        "m": {
+          "$type": "dimension",
+          "$value": "16px",
+          "$extensions": {
+            "figma": {
+              "name": "Font/size/m",
+              "collection": "Semantic",
+              "scopes": [
+                "FONT_SIZE"
+              ]
+            }
+          }
+        },
+        "s": {
+          "$type": "dimension",
+          "$value": "14px",
+          "$extensions": {
+            "figma": {
+              "name": "Font/size/s",
+              "collection": "Semantic",
+              "scopes": [
+                "FONT_SIZE"
+              ]
+            }
+          }
+        },
+        "xs": {
+          "$type": "dimension",
+          "$value": "12px",
+          "$extensions": {
+            "figma": {
+              "name": "Font/size/xs",
+              "collection": "Semantic",
+              "scopes": [
+                "FONT_SIZE"
+              ]
+            }
+          }
+        }
+      },
+      "weight": {
+        "regular": {
+          "$type": "string",
+          "$value": "Regular",
+          "$extensions": {
+            "figma": {
+              "name": "Font/weight/regular",
+              "collection": "Semantic",
+              "scopes": [
+                "FONT_STYLE"
+              ]
+            }
+          }
+        },
+        "bold": {
+          "$type": "string",
+          "$value": "Bold",
+          "$extensions": {
+            "figma": {
+              "name": "Font/weight/bold",
+              "collection": "Semantic",
+              "scopes": [
+                "FONT_STYLE"
+              ]
+            }
+          }
+        },
+        "italic": {
+          "$type": "string",
+          "$value": "Italic",
+          "$extensions": {
+            "figma": {
+              "name": "Font/weight/italic",
+              "collection": "Semantic",
+              "scopes": [
+                "FONT_STYLE"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "radius": {
+      "xs": {
+        "$type": "dimension",
+        "$value": "{primitives.dimension.4}",
+        "$description": "Micro-componentes: Badges, etiquetas de \"Nuevo\", indicadores de cantidad y elementos de precisión.",
+        "$extensions": {
+          "figma": {
+            "name": "Valor/radius/XS",
+            "collection": "Semantic",
+            "scopes": [
+              "CORNER_RADIUS",
+              "FONT_VARIATIONS"
+            ]
+          }
+        }
+      },
+      "s": {
+        "$type": "dimension",
+        "$value": "{primitives.dimension.8}",
+        "$description": "Valor Base. Botones principales, inputs de texto y componentes que viven dentro de un contenedor mayor.",
+        "$extensions": {
+          "figma": {
+            "name": "Valor/radius/S",
+            "collection": "Semantic",
+            "scopes": [
+              "CORNER_RADIUS",
+              "FONT_VARIATIONS"
+            ]
+          }
+        }
+      },
+      "m": {
+        "$type": "dimension",
+        "$value": "{primitives.dimension.12}",
+        "$description": "El Estándar (Default): Cards de producto, message cards, snackbars, banners informativos y promocionales.",
+        "$extensions": {
+          "figma": {
+            "name": "Valor/radius/M",
+            "collection": "Semantic",
+            "scopes": [
+              "CORNER_RADIUS",
+              "FONT_VARIATIONS"
+            ]
+          }
+        }
+      },
+      "l": {
+        "$type": "dimension",
+        "$value": "{primitives.dimension.16}",
+        "$description": "Grandes Contenedores (Vessels): Bottom sheets, diálogos de confirmación y modales de pantalla completa.",
+        "$extensions": {
+          "figma": {
+            "name": "Valor/radius/L",
+            "collection": "Semantic",
+            "scopes": [
+              "CORNER_RADIUS",
+              "FONT_VARIATIONS"
+            ]
+          }
+        }
+      },
+      "xxl": {
+        "$type": "dimension",
+        "$value": "{primitives.dimension.32}",
+        "$description": "Grandes Contenedores: Uso en header.",
+        "$extensions": {
+          "figma": {
+            "name": "Valor/radius/XXL",
+            "collection": "Semantic",
+            "scopes": [
+              "CORNER_RADIUS",
+              "FONT_VARIATIONS"
+            ]
+          }
+        }
+      },
+      "xxxl": {
+        "$type": "dimension",
+        "$value": "{primitives.dimension.160}",
+        "$description": "Componentes circle: componentes en formato píldora.",
+        "$extensions": {
+          "figma": {
+            "name": "Valor/radius/XXXL",
+            "collection": "Semantic",
+            "scopes": [
+              "CORNER_RADIUS",
+              "FONT_VARIATIONS"
+            ]
+          }
+        }
+      }
+    },
+    "spacing": {
+      "0": {
+        "$type": "dimension",
+        "$value": "{primitives.dimension.0}",
+        "$description": "Sin espacio. Uso cuando dos elementos deben estar pegados.",
+        "$extensions": {
+          "figma": {
+            "name": "Valor/spacing/0",
+            "collection": "Semantic",
+            "scopes": [
+              "WIDTH_HEIGHT",
+              "GAP",
+              "STROKE_FLOAT"
+            ]
+          }
+        }
+      },
+      "4": {
+        "$type": "dimension",
+        "$value": "{primitives.dimension.4}",
+        "$description": "Espacio entre icono y texto, o label e input.",
+        "$extensions": {
+          "figma": {
+            "name": "Valor/spacing/4",
+            "collection": "Semantic",
+            "scopes": [
+              "WIDTH_HEIGHT",
+              "GAP",
+              "STROKE_FLOAT"
+            ]
+          }
+        }
+      },
+      "8": {
+        "$type": "dimension",
+        "$value": "{primitives.dimension.8}",
+        "$description": "Valor Base",
+        "$extensions": {
+          "figma": {
+            "name": "Valor/spacing/8",
+            "collection": "Semantic",
+            "scopes": [
+              "WIDTH_HEIGHT",
+              "GAP",
+              "STROKE_FLOAT"
+            ]
+          }
+        }
+      },
+      "16": {
+        "$type": "dimension",
+        "$value": "{primitives.dimension.16}",
+        "$description": "Margen sagrado lateral y Gutters de la grilla",
+        "$extensions": {
+          "figma": {
+            "name": "Valor/spacing/16",
+            "collection": "Semantic",
+            "scopes": [
+              "WIDTH_HEIGHT",
+              "GAP",
+              "STROKE_FLOAT"
+            ]
+          }
+        }
+      },
+      "24": {
+        "$type": "dimension",
+        "$value": "{primitives.dimension.24}",
+        "$description": "Separación entre grupos de contenido o secciones.",
+        "$extensions": {
+          "figma": {
+            "name": "Valor/spacing/24",
+            "collection": "Semantic",
+            "scopes": [
+              "WIDTH_HEIGHT",
+              "GAP",
+              "STROKE_FLOAT"
+            ]
+          }
+        }
+      },
+      "32": {
+        "$type": "dimension",
+        "$value": "{primitives.dimension.32}",
+        "$description": "Separación entre banners y secciones principales.",
+        "$extensions": {
+          "figma": {
+            "name": "Valor/spacing/32",
+            "collection": "Semantic",
+            "scopes": [
+              "WIDTH_HEIGHT",
+              "GAP",
+              "STROKE_FLOAT"
+            ]
+          }
+        }
+      },
+      "40": {
+        "$type": "dimension",
+        "$value": "{primitives.dimension.40}",
+        "$description": "Uso esporádico",
+        "$extensions": {
+          "figma": {
+            "name": "Valor/spacing/40",
+            "collection": "Semantic",
+            "scopes": [
+              "WIDTH_HEIGHT",
+              "GAP",
+              "STROKE_FLOAT"
+            ]
+          }
+        }
+      },
+      "48": {
+        "$type": "dimension",
+        "$value": "{primitives.dimension.48}",
+        "$description": "Altura mínima de touch targets o espaciado de sección.",
+        "$extensions": {
+          "figma": {
+            "name": "Valor/spacing/48",
+            "collection": "Semantic",
+            "scopes": [
+              "WIDTH_HEIGHT",
+              "GAP",
+              "STROKE_FLOAT"
+            ]
+          }
+        }
+      },
+      "56": {
+        "$type": "dimension",
+        "$value": "{primitives.dimension.56}",
+        "$description": "NavBar height, FAB size, alto de botón L.",
+        "$extensions": {
+          "figma": {
+            "name": "Valor/spacing/56",
+            "collection": "Semantic",
+            "scopes": [
+              "WIDTH_HEIGHT",
+              "GAP",
+              "STROKE_FLOAT"
+            ]
+          }
+        }
+      },
+      "64": {
+        "$type": "dimension",
+        "$value": "{primitives.dimension.64}",
+        "$description": "Separación entre secciones de pantalla completa.",
+        "$extensions": {
+          "figma": {
+            "name": "Valor/spacing/64",
+            "collection": "Semantic",
+            "scopes": [
+              "WIDTH_HEIGHT",
+              "GAP",
+              "STROKE_FLOAT"
+            ]
+          }
+        }
+      },
+      "72": {
+        "$type": "dimension",
+        "$value": "{primitives.dimension.72}",
+        "$description": "Poco uso, usos específicos",
+        "$extensions": {
+          "figma": {
+            "name": "Valor/spacing/72",
+            "collection": "Semantic",
+            "scopes": [
+              "WIDTH_HEIGHT",
+              "GAP",
+              "STROKE_FLOAT"
+            ]
+          }
+        }
+      },
+      "80": {
+        "$type": "dimension",
+        "$value": "{primitives.dimension.80}",
+        "$description": "Separación grande entre bloques de contenido.",
+        "$extensions": {
+          "figma": {
+            "name": "Valor/spacing/80",
+            "collection": "Semantic",
+            "scopes": [
+              "WIDTH_HEIGHT",
+              "GAP",
+              "STROKE_FLOAT"
+            ]
+          }
+        }
+      },
+      "88": {
+        "$type": "dimension",
+        "$value": "{primitives.dimension.88}",
+        "$description": "Separación máxima. Uso en layouts de mucho espacio vertical.",
+        "$extensions": {
+          "figma": {
+            "name": "Valor/spacing/88",
+            "collection": "Semantic",
+            "scopes": [
+              "WIDTH_HEIGHT",
+              "GAP",
+              "STROKE_FLOAT"
+            ]
+          }
+        }
+      }
+    }
+  },
+  "typography": {
+    "display": {
+      "large-bold": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{semantic.font.family.speedee}",
+          "fontSize": "{semantic.font.size.4xl}",
+          "lineHeight": "{semantic.font.line-height.4xl}",
+          "letterSpacing": "{semantic.font.letter-spacing.l}",
+          "fontWeight": 700,
+          "fontStyle": "normal"
+        },
+        "$description": "Títulos de impacto. Uso en hero banners y pantallas promocionales.",
+        "$extensions": {
+          "figma": {
+            "name": "Display/Display Large Bold",
+            "style": "TEXT"
+          }
+        }
+      },
+      "medium-bold": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{semantic.font.family.speedee}",
+          "fontSize": "{semantic.font.size.3xl}",
+          "lineHeight": "{semantic.font.line-height.3xl}",
+          "letterSpacing": "{semantic.font.letter-spacing.l}",
+          "fontWeight": 700,
+          "fontStyle": "normal"
+        },
+        "$description": "Títulos grandes. Uso en pantallas de bienvenida y onboarding.",
+        "$extensions": {
+          "figma": {
+            "name": "Display/Display Medium Bold",
+            "style": "TEXT"
+          }
+        }
+      }
+    },
+    "heading": {
+      "large-bold": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{semantic.font.family.speedee}",
+          "fontSize": "{semantic.font.size.2xl}",
+          "lineHeight": "{semantic.font.line-height.2xl}",
+          "letterSpacing": "{semantic.font.letter-spacing.l}",
+          "fontWeight": 700,
+          "fontStyle": "normal"
+        },
+        "$description": "Título principal de pantalla. Jerarquía máxima dentro del contenido.",
+        "$extensions": {
+          "figma": {
+            "name": "Heading/Heading Large Bold",
+            "style": "TEXT"
+          }
+        }
+      },
+      "large": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{semantic.font.family.speedee}",
+          "fontSize": "{semantic.font.size.2xl}",
+          "lineHeight": "{semantic.font.line-height.2xl}",
+          "letterSpacing": "{semantic.font.letter-spacing.l}",
+          "fontWeight": 400,
+          "fontStyle": "normal"
+        },
+        "$description": "Título principal sin énfasis. Uso en presentaciones y layouts editoriales.",
+        "$extensions": {
+          "figma": {
+            "name": "Heading/Heading Large",
+            "style": "TEXT"
+          }
+        }
+      },
+      "medium-bold": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{semantic.font.family.speedee}",
+          "fontSize": "{semantic.font.size.xl}",
+          "lineHeight": "{semantic.font.line-height.xl}",
+          "letterSpacing": "{semantic.font.letter-spacing.l}",
+          "fontWeight": 700,
+          "fontStyle": "normal"
+        },
+        "$description": "Título de sección con énfasis. Uso en cards y módulos de contenido.",
+        "$extensions": {
+          "figma": {
+            "name": "Heading/Heading Medium Bold",
+            "style": "TEXT"
+          }
+        }
+      },
+      "medium": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{semantic.font.family.speedee}",
+          "fontSize": "{semantic.font.size.xl}",
+          "lineHeight": "{semantic.font.line-height.xl}",
+          "letterSpacing": "{semantic.font.letter-spacing.l}",
+          "fontWeight": 400,
+          "fontStyle": "normal"
+        },
+        "$description": "Título de sección sin énfasis. Uso en agrupadores y listados.",
+        "$extensions": {
+          "figma": {
+            "name": "Heading/Heading Medium",
+            "style": "TEXT"
+          }
+        }
+      },
+      "small-bold": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{semantic.font.family.speedee}",
+          "fontSize": "{semantic.font.size.l}",
+          "lineHeight": "{semantic.font.line-height.l}",
+          "letterSpacing": "{semantic.font.letter-spacing.l}",
+          "fontWeight": 700,
+          "fontStyle": "normal"
+        },
+        "$description": "Subtítulo con énfasis. Uso en ítems de lista y encabezados de formulario.",
+        "$extensions": {
+          "figma": {
+            "name": "Heading/Heading Small Bold",
+            "style": "TEXT"
+          }
+        }
+      },
+      "small": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{semantic.font.family.speedee}",
+          "fontSize": "{semantic.font.size.l}",
+          "lineHeight": "{semantic.font.line-height.l}",
+          "letterSpacing": "{semantic.font.letter-spacing.l}",
+          "fontWeight": 400,
+          "fontStyle": "normal"
+        },
+        "$description": "Subtítulo sin énfasis. Uso en etiquetas de sección y navegación.",
+        "$extensions": {
+          "figma": {
+            "name": "Heading/Heading Small",
+            "style": "TEXT"
+          }
+        }
+      }
+    },
+    "text": {
+      "body-large-bold": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{semantic.font.family.speedee}",
+          "fontSize": "{semantic.font.size.m}",
+          "lineHeight": "{semantic.font.line-height.l}",
+          "letterSpacing": "{semantic.font.letter-spacing.m}",
+          "fontWeight": 700,
+          "fontStyle": "normal"
+        },
+        "$description": "Resaltador de texto base. Énfasis dentro de párrafos de 16px.",
+        "$extensions": {
+          "figma": {
+            "name": "Text/Body Large Bold",
+            "style": "TEXT"
+          }
+        }
+      },
+      "body-large": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{semantic.font.family.speedee}",
+          "fontSize": "{semantic.font.size.m}",
+          "lineHeight": "{semantic.font.line-height.l}",
+          "letterSpacing": "{semantic.font.letter-spacing.m}",
+          "fontWeight": 400,
+          "fontStyle": "normal"
+        },
+        "$description": "Texto de base. Párrafos y descripciones principales.",
+        "$extensions": {
+          "figma": {
+            "name": "Text/Body Large",
+            "style": "TEXT"
+          }
+        }
+      },
+      "body-medium-bold": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{semantic.font.family.speedee}",
+          "fontSize": "{semantic.font.size.s}",
+          "lineHeight": "{semantic.font.line-height.m}",
+          "letterSpacing": "{semantic.font.letter-spacing.m}",
+          "fontWeight": 700,
+          "fontStyle": "normal"
+        },
+        "$description": "Resaltador de texto de apoyo. Énfasis dentro de descripciones de 14px.",
+        "$extensions": {
+          "figma": {
+            "name": "Text/Body Medium Bold",
+            "style": "TEXT"
+          }
+        }
+      },
+      "body-medium": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{semantic.font.family.speedee}",
+          "fontSize": "{semantic.font.size.s}",
+          "lineHeight": "{semantic.font.line-height.m}",
+          "letterSpacing": "{semantic.font.letter-spacing.m}",
+          "fontWeight": 400,
+          "fontStyle": "normal"
+        },
+        "$description": "Texto de apoyo o descripciones. Uso en subtítulos y textos secundarios.",
+        "$extensions": {
+          "figma": {
+            "name": "Text/Body Medium",
+            "style": "TEXT"
+          }
+        }
+      },
+      "body-small": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{semantic.font.family.speedee}",
+          "fontSize": "{semantic.font.size.xs}",
+          "lineHeight": "{semantic.font.line-height.s}",
+          "letterSpacing": "{semantic.font.letter-spacing.m}",
+          "fontWeight": 400,
+          "fontStyle": "normal"
+        },
+        "$description": "Texto legal, términos y condiciones, notas al pie. Puede ocupar varias líneas.",
+        "$extensions": {
+          "figma": {
+            "name": "Text/Body Small",
+            "style": "TEXT"
+          }
+        }
+      }
+    },
+    "label": {
+      "large": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{semantic.font.family.speedee}",
+          "fontSize": "{semantic.font.size.m}",
+          "lineHeight": "{semantic.font.line-height.m}",
+          "letterSpacing": "{semantic.font.letter-spacing.m}",
+          "fontWeight": 400,
+          "fontStyle": "normal"
+        },
+        "$description": "Etiqueta de acción grande. Uso en botones L y navegación principal.",
+        "$extensions": {
+          "figma": {
+            "name": "Label/Label Large",
+            "style": "TEXT"
+          }
+        }
+      },
+      "medium-bold": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{semantic.font.family.speedee}",
+          "fontSize": "{semantic.font.size.s}",
+          "lineHeight": "{semantic.font.line-height.s}",
+          "letterSpacing": "{semantic.font.letter-spacing.m}",
+          "fontWeight": 700,
+          "fontStyle": "normal"
+        },
+        "$description": "Etiqueta de acción con énfasis. Uso en botones M y estados activos.",
+        "$extensions": {
+          "figma": {
+            "name": "Label/Label Medium Bold",
+            "style": "TEXT"
+          }
+        }
+      },
+      "medium": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{semantic.font.family.speedee}",
+          "fontSize": "{semantic.font.size.s}",
+          "lineHeight": "{semantic.font.line-height.s}",
+          "letterSpacing": "{semantic.font.letter-spacing.m}",
+          "fontWeight": 400,
+          "fontStyle": "normal"
+        },
+        "$description": "Etiqueta de acción. Uso en botones M, chips y links.",
+        "$extensions": {
+          "figma": {
+            "name": "Label/Label Medium",
+            "style": "TEXT"
+          }
+        }
+      },
+      "medium-italic": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{semantic.font.family.speedee}",
+          "fontSize": "{semantic.font.size.s}",
+          "lineHeight": "{semantic.font.line-height.s}",
+          "letterSpacing": "{semantic.font.letter-spacing.m}",
+          "fontWeight": 400,
+          "fontStyle": "italic"
+        },
+        "$description": "Textos legales, términos y condiciones, aclaraciones de precio, disclaimers.",
+        "$extensions": {
+          "figma": {
+            "name": "Label/Label Medium Italic",
+            "style": "TEXT"
+          }
+        }
+      },
+      "small-bold": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{semantic.font.family.speedee}",
+          "fontSize": "{semantic.font.size.xs}",
+          "lineHeight": "{semantic.font.line-height.s}",
+          "letterSpacing": "{semantic.font.letter-spacing.m}",
+          "fontWeight": 700,
+          "fontStyle": "normal"
+        },
+        "$description": "Letra pequeña con énfasis. Uso en legales, Tab bar y badges.",
+        "$extensions": {
+          "figma": {
+            "name": "Label/Label Small Bold",
+            "style": "TEXT"
+          }
+        }
+      },
+      "small": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{semantic.font.family.speedee}",
+          "fontSize": "{semantic.font.size.xs}",
+          "lineHeight": "{semantic.font.line-height.s}",
+          "letterSpacing": "{semantic.font.letter-spacing.m}",
+          "fontWeight": 400,
+          "fontStyle": "normal"
+        },
+        "$description": "Rótulos de UI de bajo peso. Uso en Tab bar, badges y etiquetas. Una sola línea.",
+        "$extensions": {
+          "figma": {
+            "name": "Label/Label Small",
+            "style": "TEXT"
+          }
+        }
+      },
+      "small-italic": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{semantic.font.family.speedee}",
+          "fontSize": "{semantic.font.size.xs}",
+          "lineHeight": "{semantic.font.line-height.s}",
+          "letterSpacing": "{semantic.font.letter-spacing.m}",
+          "fontWeight": 400,
+          "fontStyle": "italic"
+        },
+        "$description": "Textos legales, términos y condiciones, aclaraciones de precio, disclaimers.",
+        "$extensions": {
+          "figma": {
+            "name": "Label/Label Small Italic",
+            "style": "TEXT"
+          }
+        }
+      }
+    }
+  },
+  "shadow": {
+    "shallow": {
+      "l-elev-1": {
+        "$type": "shadow",
+        "$value": {
+          "color": "#2929291a",
+          "offsetX": "0px",
+          "offsetY": "2px",
+          "blur": "4px",
+          "spread": "0px"
+        },
+        "$description": "Cards en una lista que no son el foco principal.",
+        "$extensions": {
+          "figma": {
+            "name": "Shallow/L.Elev-1",
+            "style": "EFFECT"
+          }
+        }
+      },
+      "m-elev-2": {
+        "$type": "shadow",
+        "$value": {
+          "color": "#29292926",
+          "offsetX": "0px",
+          "offsetY": "4px",
+          "blur": "12px",
+          "spread": "0px"
+        },
+        "$description": "Cards de producto, botones, banners, inputs.",
+        "$extensions": {
+          "figma": {
+            "name": "Shallow/M.Elev-2",
+            "style": "EFFECT"
+          }
+        }
+      },
+      "h-elev-3": {
+        "$type": "shadow",
+        "$value": {
+          "color": "#29292933",
+          "offsetX": "0px",
+          "offsetY": "8px",
+          "blur": "24px",
+          "spread": "0px"
+        },
+        "$description": "Cards de producto, botones, banners, inputs.",
+        "$extensions": {
+          "figma": {
+            "name": "Shallow/H.Elev-3",
+            "style": "EFFECT"
+          }
+        }
+      }
+    },
+    "deep": {
+      "l-elev-1": {
+        "$type": "shadow",
+        "$value": {
+          "color": "#29292933",
+          "offsetX": "0px",
+          "offsetY": "4px",
+          "blur": "8px",
+          "spread": "0px"
+        },
+        "$description": "Snackbars, Tooltips, menús contextuales oscuros.",
+        "$extensions": {
+          "figma": {
+            "name": "Deep/L.Elev-1",
+            "style": "EFFECT"
+          }
+        }
+      },
+      "m-elev-2": {
+        "$type": "shadow",
+        "$value": {
+          "color": "#29292940",
+          "offsetX": "0px",
+          "offsetY": "8px",
+          "blur": "16px",
+          "spread": "0px"
+        },
+        "$description": "Snackbars, Tooltips, menús contextuales oscuros.",
+        "$extensions": {
+          "figma": {
+            "name": "Deep/M.Elev-2",
+            "style": "EFFECT"
+          }
+        }
+      },
+      "h-elev-3": {
+        "$type": "shadow",
+        "$value": {
+          "color": "#29292959",
+          "offsetX": "0px",
+          "offsetY": "16px",
+          "blur": "32px",
+          "spread": "0px"
+        },
+        "$description": "Snackbars, Tooltips, menús contextuales oscuros.",
+        "$extensions": {
+          "figma": {
+            "name": "Deep/H.Elev-3",
+            "style": "EFFECT"
+          }
+        }
+      }
+    }
+  },
+  "gradient": {
+    "loyalty-ab": {
+      "$type": "gradient",
+      "$value": [
+        {
+          "color": "#910063",
+          "position": 0.001
+        },
+        {
+          "color": "#990059",
+          "position": 0.036
+        },
+        {
+          "color": "#b60035",
+          "position": 0.173
+        },
+        {
+          "color": "#ca001c",
+          "position": 0.301
+        },
+        {
+          "color": "#d7000c",
+          "position": 0.417
+        },
+        {
+          "color": "#db0007",
+          "position": 0.51
+        },
+        {
+          "color": "#e8720a",
+          "position": 1.0
+        }
+      ],
+      "$extensions": {
+        "figma": {
+          "name": "Loyalty AB",
+          "style": "PAINT",
+          "type": "GRADIENT_LINEAR"
+        }
+      }
+    },
+    "loyalty-ba": {
+      "$type": "gradient",
+      "$value": [
+        {
+          "color": "#e8720a",
+          "position": 0.0
+        },
+        {
+          "color": "#db0007",
+          "position": 0.51
+        },
+        {
+          "color": "#d7000c",
+          "position": 0.62
+        },
+        {
+          "color": "#ca001c",
+          "position": 0.729
+        },
+        {
+          "color": "#b60035",
+          "position": 0.828
+        },
+        {
+          "color": "#990059",
+          "position": 0.922
+        },
+        {
+          "color": "#910063",
+          "position": 1.0
+        }
+      ],
+      "$extensions": {
+        "figma": {
+          "name": "Loyalty BA",
+          "style": "PAINT",
+          "type": "GRADIENT_LINEAR"
+        }
+      }
+    }
+  },
+  "grid": {
+    "columns": {
+      "$type": "object",
+      "$value": {
+        "pattern": "columns",
+        "count": 4,
+        "gutter": "{semantic.spacing.16}",
+        "margin": "{semantic.spacing.16}",
+        "alignment": "stretch"
+      },
+      "$extensions": {
+        "figma": {
+          "name": "Aw_Layout/col",
+          "style": "GRID"
+        }
+      }
+    },
+    "baseline": {
+      "$type": "object",
+      "$value": {
+        "pattern": "grid",
+        "size": "{primitives.dimension.8}"
+      },
+      "$extensions": {
+        "figma": {
+          "name": "Aw_Layout/Grid",
+          "style": "GRID"
+        }
+      }
+    }
+  }
+}
