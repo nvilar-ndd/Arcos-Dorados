@@ -47,6 +47,14 @@ Foundations que todavía no existen en Figma (iconografía, motion, breakpoints,
 
 > Archivo generado. No se edita a mano: se regenera desde Figma.
 
+## Storybook
+
+[`storybook/`](./storybook) — visualización de las Foundations (Vue 3 + Vite + TypeScript strict) que lee `tokens/archway.tokens.json`. Incluye la tabla de contraste WCAG calculada en vivo.
+
+```bash
+cd Archway/storybook && npm install && npm run dev   # http://localhost:6006
+```
+
 ## Principios de consumo
 
 - **Sólo tokens semánticos** en componentes y en código. Nunca primitivos ni valores hardcodeados.
@@ -67,6 +75,7 @@ Archway/
 │   ├── grid.md
 │   ├── radius.md
 │   └── elevation.md
-└── tokens/
-    └── archway.tokens.json   ← generado desde Figma
+├── tokens/
+│   └── archway.tokens.json   ← generado desde Figma
+└── storybook/                ← Vue 3 + Vite, lee los tokens
 ```

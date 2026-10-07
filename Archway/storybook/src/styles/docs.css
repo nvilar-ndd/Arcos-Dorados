@@ -1,0 +1,125 @@
+/* Layout de las páginas de documentación. Consume sólo tokens semánticos de ArchWay. */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--aw-layer-01);
+  color: var(--aw-text-primary);
+  font-family: var(--aw-font-family-speedee);
+  -webkit-font-smoothing: antialiased;
+}
+
+.doc {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--aw-spacing-48) var(--aw-spacing-32) var(--aw-spacing-80);
+}
+@media (max-width: 640px) {
+  .doc { padding: var(--aw-spacing-32) var(--aw-spacing-16) var(--aw-spacing-64); }
+}
+
+.doc__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--aw-spacing-8);
+  margin: 0 0 var(--aw-spacing-8);
+  color: var(--aw-text-secondary);
+}
+.doc__eyebrow::before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  border-radius: var(--aw-radius-xs);
+  background: var(--aw-layer-brand);
+}
+.doc__title { margin: 0 0 var(--aw-spacing-16); }
+.doc__lead { max-width: 72ch; margin: 0 0 var(--aw-spacing-32); color: var(--aw-text-secondary); }
+
+.doc__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--aw-spacing-8);
+  margin: 0 0 var(--aw-spacing-48);
+  padding: 0;
+  list-style: none;
+}
+.doc__meta li {
+  padding: var(--aw-spacing-4) var(--aw-spacing-8);
+  border: 1px solid var(--aw-border-default);
+  border-radius: var(--aw-radius-xxxl);
+  color: var(--aw-text-secondary);
+}
+a { color: var(--aw-link-default); }
+a:hover { color: var(--aw-link-hover); }
+a:visited { color: var(--aw-link-visited); }
+a:focus-visible { outline: 2px solid var(--aw-link-focus); outline-offset: 2px; }
+
+.section { margin: 0 0 var(--aw-spacing-64); }
+.section__title { margin: 0 0 var(--aw-spacing-8); }
+.section__lead { max-width: 72ch; margin: 0 0 var(--aw-spacing-24); color: var(--aw-text-secondary); }
+
+.note {
+  display: flex;
+  gap: var(--aw-spacing-8);
+  max-width: 80ch;
+  margin: 0 0 var(--aw-spacing-24);
+  padding: var(--aw-spacing-16);
+  border-radius: var(--aw-radius-m);
+  background: var(--aw-feedback-info-surface);
+  color: var(--aw-text-primary);
+}
+.note--warning { background: var(--aw-feedback-warning-surface); }
+.note strong { white-space: nowrap; }
+
+code, .mono {
+  font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  font-size: 0.8125rem;
+  letter-spacing: 0;
+}
+code {
+  padding: 1px var(--aw-spacing-4);
+  border-radius: var(--aw-radius-xs);
+  background: var(--aw-layer-02);
+}
+
+.table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--aw-border-subtle);
+  border-radius: var(--aw-radius-m);
+}
+table.spec { width: 100%; border-collapse: collapse; }
+table.spec th,
+table.spec td {
+  padding: var(--aw-spacing-8) var(--aw-spacing-16);
+  border-bottom: 1px solid var(--aw-border-subtle);
+  text-align: left;
+  vertical-align: middle;
+}
+table.spec th {
+  background: var(--aw-layer-02);
+  color: var(--aw-text-secondary);
+  font-weight: 700;
+  white-space: nowrap;
+}
+table.spec tr:last-child td { border-bottom: 0; }
+table.spec td.desc { max-width: 44ch; color: var(--aw-text-secondary); }
+
+.copy {
+  all: unset;
+  cursor: pointer;
+  border-radius: var(--aw-radius-xs);
+}
+.copy:hover code { background: var(--aw-layer-03); }
+.copy:focus-visible { outline: 2px solid var(--aw-link-default); outline-offset: 2px; }
+
+.badge {
+  display: inline-block;
+  padding: 2px var(--aw-spacing-8);
+  border-radius: var(--aw-radius-xxxl);
+  white-space: nowrap;
+}
+.badge--pass { background: var(--aw-feedback-success-surface); color: var(--aw-feedback-success-surface-text); }
+.badge--large { background: var(--aw-feedback-warning-surface); color: var(--aw-text-primary); }
+.badge--fail { background: var(--aw-feedback-error-surface); color: var(--aw-feedback-error-text); }
