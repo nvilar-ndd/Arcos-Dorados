@@ -14,8 +14,8 @@ const gutterVar = `var(${cssVarOf(refId(columns.gutter))})`
 const marginVar = `var(${cssVarOf(refId(columns.margin))})`
 const baselineVar = `var(${cssVarOf(refId(baseline.size))})`
 
-const WIDTHS = [360, 375, 390, 430] as const
-const width = ref<number>(375)
+const WIDTHS = [360, 393, 412, 440] as const
+const width = ref<number>(412)
 const showColumns = ref(true)
 const showBaseline = ref(true)
 
@@ -30,7 +30,7 @@ const colWidth = computed(() => {
   <div class="grid-demo">
     <div class="controls aw-label-medium" role="group" aria-label="Controles de la grilla">
       <fieldset class="seg">
-        <legend class="aw-label-small">Ancho del viewport</legend>
+        <legend class="aw-label-small">Ancho del viewport (412 = Master Frame)</legend>
         <label v-for="w in WIDTHS" :key="w" class="seg__opt" :class="{ 'is-on': width === w }">
           <input v-model="width" type="radio" name="vw" :value="w" /> {{ w }}
         </label>
@@ -62,6 +62,7 @@ const colWidth = computed(() => {
       </div>
 
       <dl class="readout aw-text-body-medium">
+        <div><dt>Master Frame</dt><dd class="mono">412 × 912 · fold 720</dd></div>
         <div><dt>Columnas</dt><dd>{{ columns.count }} · {{ columns.alignment }}</dd></div>
         <div><dt>Margen lateral</dt><dd class="mono">{{ px(columns.margin) }}px · <code>{{ marginVar }}</code></dd></div>
         <div><dt>Gutter</dt><dd class="mono">{{ px(columns.gutter) }}px · <code>{{ gutterVar }}</code></dd></div>

@@ -8,7 +8,7 @@ import ElevationScale from '../components/ElevationScale.vue'
     title="Elevación"
     doc="elevation.md"
     source="effect styles Shallow/* y Deep/*"
-    lead="Dos familias de sombra con tres niveles cada una. A mayor nivel, más cerca del usuario."
+    lead="Shallow para componentes claros, Deep para componentes oscuros. Medium es el estándar; High se reserva para diálogos y bottom sheets."
   >
     <ElevationScale />
   </DocPage>

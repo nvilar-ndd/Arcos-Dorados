@@ -51,21 +51,36 @@ Scopes en Figma: `WIDTH_HEIGHT`, `GAP`, `STROKE_FLOAT`.
 | `Valor/spacing/80` | 80 | `--aw-spacing-80` | Separación grande entre bloques de contenido. |
 | `Valor/spacing/88` | 88 | `--aw-spacing-88` | Separación máxima. Uso en layouts de mucho espacio vertical. |
 
-## Reglas de aplicación
+## Reglas (página *Spacing block* y *Grid base* de Figma)
 
-| Relación | Token | Ejemplo |
-|---|---|---|
-| Elementos pegados | `spacing/0` | Segmented controls, grupos de botones unidos |
-| Ícono ↔ texto, label ↔ input | `spacing/4` | Botón con ícono, campo de formulario |
-| Padding interno base | `spacing/8` | Chips, tags, padding vertical de botón |
-| **Margen lateral de pantalla y gutter** | `spacing/16` | Margen "sagrado": no se reduce en mobile |
-| Entre grupos de contenido | `spacing/24` | Bloques dentro de una sección |
-| Entre secciones / banners | `spacing/32` | Secciones de la Home |
-| Touch target mínimo | `spacing/48` | Alto/ancho mínimo de cualquier elemento tocable |
-| Barra de navegación, FAB, botón L | `spacing/56` | NavBar height |
-| Secciones de pantalla completa | `spacing/64`–`88` | Layouts editoriales, kiosco |
+### 4px atómico, 8px de ritmo
+
+- **El 4 es la unidad atómica** (micro-espaciado): ícono ↔ texto, label ↔ input, radio de botones chicos, ajustes finos en componentes densos (p. ej. lista de ingredientes de un pedido). Es la excepción, no la regla.
+- **El 8 es la unidad de ritmo** (macro-espaciado): márgenes y paddings 16, 24, 32, 40…; separación entre secciones (un banner y una fila de cupones: 24 o 32).
+- **Alturas de componente en múltiplos de 8:** un botón mide 48 o 56, nunca 50 ni 54.
+
+### Ritmo vertical
+
+- **16px entre módulos principales** de la pantalla: es el margen vertical estándar de la App.
+- La escala se usa igual para paddings internos y para márgenes entre componentes.
+
+| Token | Uso definido en la página de Figma |
+|---|---|
+| `spacing/4` | Espacio entre ícono y texto, o label e input |
+| `spacing/8` | Espacio entre título y párrafo (ritmo interno) |
+| `spacing/16` | Margen sagrado lateral y gutters de la grilla |
+| `spacing/24` | Separación entre grupos de contenido o secciones |
+| `spacing/32` | División temática: entre un banner y el inicio de una lista |
+| `spacing/40` | Entre el header y bloques de marketing |
+| `spacing/48` | Separa la zona de lectura de la zona de decisión final |
+| `spacing/56` | Altura funcional |
+| `spacing/64` | Momentos de baja densidad y alto impacto visual |
 
 ### Touch targets
 
-- Mínimo **48×48** (`spacing/48`) en App y Kiosco ADK, aunque el elemento visual sea más chico (el área de toque se extiende con padding).
-- Web con mouse: el área visual puede ser menor, pero se mantiene 44×44 como mínimo recomendado (WCAG 2.5.5 AAA / 2.5.8 AA = 24×24).
+- Mínimo **44×44** en iOS y **48×48** en Android.
+- **Recomendado para Arcos Dorados: botones principales de al menos 56px de alto**, para facilitar el toque mientras el usuario camina o está apurado.
+
+### Configuración de Figma
+
+Configurar el *Big nudge* en **8** (Preferences → Nudge amount) para mover capas en pasos de la grilla con Shift + flechas.

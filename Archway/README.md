@@ -38,8 +38,9 @@ Figma (SSOT) ──► extracción vía MCP ──► audit.md (propuestas)
 | Grilla y layout | [foundations/grid.md](./foundations/grid.md) | Estilos `Aw_Layout/col`, `Aw_Layout/Grid` |
 | Radios | [foundations/radius.md](./foundations/radius.md) | Variables `Valor/radius/*` |
 | Elevación | [foundations/elevation.md](./foundations/elevation.md) | Effect styles `Shallow/*`, `Deep/*` |
+| Motion | [foundations/motion.md](./foundations/motion.md) | Página *Motion* (documentación, aún no variables) |
 
-Foundations que todavía no existen en Figma (iconografía, motion, breakpoints, opacidad, z-index, border width) están listadas como propuestas en [`audit.md`](./audit.md#-p2--foundations-faltantes).
+Foundations que todavía no existen en Figma (iconografía, breakpoints, opacidad, z-index, border width) están listadas como propuestas en [`audit.md`](./audit.md#-p2--foundations-faltantes).
 
 ## Tokens
 
@@ -74,7 +75,8 @@ Archway/
 │   ├── spacing.md
 │   ├── grid.md
 │   ├── radius.md
-│   └── elevation.md
+│   ├── elevation.md
+│   └── motion.md
 ├── tokens/
 │   └── archway.tokens.json   ← generado desde Figma
 └── storybook/                ← Vue 3 + Vite, lee los tokens

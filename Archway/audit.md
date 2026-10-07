@@ -37,7 +37,7 @@
 | F-02 | Escala tipográfica sólo mobile (no contempla Kiosco ni Desktop) | 🟡 P2 | Pendiente |
 | F-03 | Radius: falta `XL` y `full` | 🟡 P2 | Pendiente |
 | F-04 | Spacing: falta `12` semántico; spacing usado para stroke | 🟡 P2 | Pendiente |
-| F-05 | Sin foundations de Motion, Opacity, Z-index, Border width | 🟡 P2 | Pendiente |
+| F-05 | Motion sólo como texto (no variables); sin Opacity, Z-index, Border width | 🟡 P2 | Pendiente |
 | F-06 | Sin Iconography documentada en la librería | 🟡 P2 | Pendiente |
 | F-07 | Sin modo Dark | 🟡 P2 | Pendiente |
 | H-01 | Typos y descripciones a corregir | ⚪ P3 | Pendiente |
@@ -263,13 +263,15 @@ Además:
 - Spacing tiene scope `STROKE_FLOAT`: se usan valores de espaciado (0, 4, 8…) como grosor de borde. Proponer tokens `Border/width/{thin=1, default=1.5|2, thick=2|3}`.
 - Faltan `spacing/2` (offset de focus ring, ajustes ópticos) y `spacing/96`/`128` (existen como primitivo, sin semántico).
 
-### F-05 · Motion, Opacity, Z-index, Border width
+### F-05 · Motion como variables; Opacity, Z-index, Border width
 
-No existen en la librería. Son necesarios antes de documentar componentes interactivos (snackbar, bottom sheet, tooltip, modal).
+> *Corregido:* la primera versión de este punto decía que Motion no existía. Motion **sí está definido** en la página *Motion* de Figma (4 duraciones, 3 curvas, patrones y reglas) y ya está documentado en [`foundations/motion.md`](./foundations/motion.md). Lo pendiente es que vive como texto y no como variables.
+
+Opacity, Z-index y Border width no existen en la librería. Son necesarios antes de documentar componentes interactivos (snackbar, bottom sheet, tooltip, modal).
 
 | Foundation | Mínimo propuesto |
 |---|---|
-| **Motion** | Duraciones `fast 100ms`, `base 200ms`, `slow 300ms`, `emphasis 500ms`; curvas `standard`, `enter (decelerate)`, `exit (accelerate)`; respeto de `prefers-reduced-motion` |
+| **Motion** | Pasar a una colección de variables `Motion` los valores ya definidos (`motion-duration-fast/moderate/slow/expressive`, curvas Standard / Entrance / Exit) para exportarlos como el resto de los tokens |
 | **Opacity** | `disabled 0.38`, `overlay 0.30` (reemplaza los `*-alpha`), `scrim 0.50` |
 | **Z-index** | `base 0`, `dropdown 100`, `sticky 200`, `overlay 300`, `modal 400`, `toast 500`, `tooltip 600` |
 | **Border width** | ver F-04 |

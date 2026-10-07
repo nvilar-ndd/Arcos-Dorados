@@ -64,6 +64,13 @@ for (const [id, t] of flat) {
   lines.push(`  ${cssVar(id)}: linear-gradient(90deg, ${stops});`)
 }
 
+section('Motion')
+for (const [id, t] of flat) {
+  if (!id.startsWith('motion.') || t.$type === 'transition') continue
+  const v = t.$type === 'cubicBezier' ? `cubic-bezier(${t.$value.join(', ')})` : toCss(t.$value)
+  lines.push(`  ${cssVar(id)}: ${v};`)
+}
+
 const typeClasses = []
 for (const [id, t] of flat) {
   if (!id.startsWith('typography.')) continue

@@ -9,7 +9,7 @@ const preview: Preview = {
     actions: { disable: true },
     options: {
       storySort: {
-        order: ['ArchWay', ['Introducción'], 'Foundations', ['Color', 'Tipografía', 'Espaciado', 'Grilla', 'Radios', 'Elevación']],
+        order: ['ArchWay', ['Introducción'], 'Foundations', ['Color', 'Tipografía', 'Espaciado', 'Grilla', 'Radios', 'Elevación', 'Motion']],
       },
     },
     backgrounds: { disable: true },

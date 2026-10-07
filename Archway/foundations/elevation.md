@@ -21,11 +21,15 @@ Todas son `DROP_SHADOW` sin spread, color `#292929` (equivale a `color/black/800
 | `Deep/M.Elev-2` | 0 | 8 | 16 | 0 | `#292929` @ 25% | `deep-m-elev-2` | Snackbars, Tooltips, menús contextuales oscuros. |
 | `Deep/H.Elev-3` | 0 | 16 | 32 | 0 | `#292929` @ 35% | `deep-h-elev-3` | Snackbars, Tooltips, menús contextuales oscuros. |
 
-## Reglas
+## Reglas (página *Elevations* de Figma)
 
-- La elevación comunica jerarquía en el eje Z: a mayor nivel, más cerca del usuario.
-- No combinar sombra con borde fuerte en el mismo elemento; elegir uno.
-- Sobre `Layer/06` (fondo oscuro) las sombras pierden visibilidad: diferenciar por superficie (`Layer/05`) y no por sombra.
+- **Medium (Elev-2) es el estándar** para la mayoría de los componentes interactivos.
+- **High (Elev-3) se reserva** para elementos que interrumpen el flujo: diálogos y bottom sheets.
+- **Regla del fondo:** si el componente es blanco o gris muy claro → **Shallow**. Si es oscuro (#222222) o de un color de marca oscuro → **Deep**.
+- **Consistencia de radio:** Deep en un snackbar → radio 12; Shallow en un botón → radio 8.
+- **No abusar:** si todo tiene sombra, nada destaca. Priorizar la elevación en elementos que requieren una acción inmediata.
+
+> La página de Elevations incluye además una segunda tabla (`elev-0` a `elev-4`, con una fórmula de sombra) que no coincide con los 6 effect styles publicados. Este documento sigue a los estilos publicados.
 
 ## Uso en código
 
