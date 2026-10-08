@@ -31,7 +31,14 @@ const preview: Preview = {
     backgrounds: { disable: true },
     options: {
       storySort: {
-        order: ['Dashboard', ['Introducción'], 'Foundations', ['Color', 'Tipografía', 'Espaciado', 'Radios', 'Grilla'], 'Guías', 'Convergencia'],
+        order: [
+          'Dashboard', ['Introducción'],
+          'Foundations', ['Color', 'Tipografía', 'Espaciado', 'Radios', 'Grilla'],
+          'Componentes', ['Índice', '*'],
+          'Estructura', ['Índice', 'UI shell — Header + PanelLeft', 'Header', 'Left panel (sidebar)', 'SubPanelLeft (navegación secundaria de Country)', '*'],
+          'Uso', ['Índice', 'UI templates por contexto de navegación', '*'],
+          'Convergencia',
+        ],
       },
     },
   },

@@ -27,10 +27,13 @@ La colección Semantic tiene dos modos. `npm run tokens` genera las variables Li
 | Foundations › Espaciado | Escala por multiplicador y tokens de layout |
 | Foundations › Radios | sm, md, lg, xl |
 | Foundations › Grilla | Breakpoints, 6 grillas a escala y tamaños de modal |
-| Guías › UI templates | Se renderiza desde `../guides/ui-templates.md` |
+| Componentes › * | Un doc por familia, renderizado desde `../components/*.md` |
+| Estructura › * | UI shell, Header, Left panel, SubPanelLeft e IA, desde `../structure/*.md` |
+| Uso › * | UI templates y medidas de plantillas, desde `../usage/*.md` |
 | Convergencia › Dashboard a ArchWay | Se renderiza desde `../../Convergencia/dashboard-archway.md` |
 
 ## Notas
 
 - **Speedee** no se versiona (licencia): ver [fonts/README.md](./fonts/README.md). **Roboto Mono** se carga desde Google Fonts (licencia OFL).
 - La tabla de contraste se recalcula desde los tokens de cada modo.
+- Las páginas de Componentes, Estructura y Uso son MDX generados que importan el `.md` con `?raw`: el contenido se edita sólo en el `.md`.
