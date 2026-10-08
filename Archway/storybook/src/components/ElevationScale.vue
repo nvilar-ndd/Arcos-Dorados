@@ -21,7 +21,7 @@ const families = computed(() =>
 <template>
   <div class="elev">
     <section v-for="f in families" :key="f.fam" class="elev__family">
-      <h3 class="aw-heading-small-bold elev__title">{{ f.title }}</h3>
+      <h2 class="aw-heading-small-bold elev__title">{{ f.title }}</h2>
       <ul class="elev__grid" role="list">
         <li v-for="i in f.items" :key="i.t.id" class="card" :style="{ boxShadow: `var(${i.t.cssVar})` }">
           <p class="aw-heading-medium-bold card__name">{{ i.t.figma.name }}</p>

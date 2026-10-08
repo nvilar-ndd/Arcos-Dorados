@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { computed } from 'vue'
+import { computed, onMounted, ref } from 'vue'
 import { under, token, type Token } from '../tokens'
 
 interface TypeValue {
@@ -29,6 +29,14 @@ const refValue = (ref: string): string => {
   return String(token(id).resolved)
 }
 
+/** true cuando Speedee está disponible (instalada en el equipo o en storybook/fonts). */
+const speedee = ref(true)
+onMounted(async () => {
+  await document.fonts.ready
+  await Promise.allSettled(['400 16px Speedee', '700 16px Speedee'].map((f) => document.fonts.load(f)))
+  speedee.value = document.fonts.check('400 16px Speedee') && [...document.fonts].some((f) => f.family.replace(/["']/g, '') === 'Speedee' && f.status === 'loaded')
+})
+
 const groups = computed(() => {
   const all = under('typography')
   return Object.keys(ROLE).map((role) => ({
@@ -54,12 +62,12 @@ const groups = computed(() => {
 
 <template>
   <div class="type">
-    <p class="note note--warning aw-text-body-medium">
-      <strong>Speedee</strong>
-      <span>es la tipografía del sistema, con licencia de McDonald's. Este Storybook la usa si está instalada en tu equipo; si no, cae en Helvetica Neue / Arial. Tamaños, interlineados y tracking son los reales.</span>
+    <p v-if="!speedee" class="note note--warning aw-text-body-medium">
+      <strong>Speedee no está cargada.</strong>
+      <span>Es una tipografía con licencia y no se versiona: copiá los .woff2 en <code>Archway/storybook/fonts/</code> (ver el README de esa carpeta). Mientras tanto se ve Helvetica Neue / Arial; tamaños, interlineados y tracking son los reales.</span>
     </p>
     <section v-for="g in groups" :key="g.role" class="type__group">
-      <h3 class="aw-heading-small-bold type__role">{{ g.title }}</h3>
+      <h2 class="aw-heading-small-bold type__role">{{ g.title }}</h2>
       <article v-for="s in g.styles" :key="s.t.id" class="type__row">
         <p :class="s.className" class="type__sample">{{ SAMPLE[g.role] }}</p>
         <dl class="type__spec aw-label-small">

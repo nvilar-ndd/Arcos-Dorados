@@ -7,6 +7,7 @@ Visualización de las Foundations de ArchWay. **No define valores propios:** tod
 ```bash
 cd Archway/storybook
 npm install
+npm run fonts -- ~/ruta/a/Speedee_V1.301   # una sola vez, fuente con licencia
 npm run dev       # http://localhost:6006
 npm run build     # sitio estático en storybook-static/
 npm run typecheck # vue-tsc, TypeScript strict
@@ -33,6 +34,6 @@ Storybook 8.6 · Vue 3 (`<script setup lang="ts">`) · Vite · TypeScript strict
 
 ## Notas
 
-- **Speedee** es tipografía con licencia: se usa si está instalada localmente; si no, cae en Helvetica Neue / Arial.
+- **Speedee** es tipografía con licencia y **no se versiona**. Copiá los `.woff2` en `fonts/` (`npm run fonts -- <ruta a Speedee_V1.301>`; ver [fonts/README.md](./fonts/README.md)). Sin ellos, el Storybook usa Helvetica Neue / Arial.
 - El addon de accesibilidad marca una violación de contraste en *Color › Contraste*: son las muestras de los pares que hoy fallan, a propósito.
 - La tabla de contraste se recalcula desde los tokens: al aplicar en Figma lo aprobado del audit y regenerar el JSON, se actualiza sola.
