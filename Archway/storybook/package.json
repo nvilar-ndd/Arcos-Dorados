@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "tokens": "node scripts/build-tokens.mjs",
+    "fonts": "node scripts/install-fonts.mjs",
     "dev": "npm run tokens && storybook dev -p 6006",
     "build": "npm run tokens && storybook build -o storybook-static",
     "typecheck": "vue-tsc --noEmit"

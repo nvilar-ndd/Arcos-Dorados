@@ -2,3 +2,6 @@ node_modules/
 storybook-static/
 src/generated/
 *.log
+# Fuentes con licencia: no se versionan
+fonts/*
+!fonts/README.md
