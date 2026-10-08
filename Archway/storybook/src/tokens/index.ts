@@ -10,12 +10,18 @@ export type TokenType =
   | 'shadow'
   | 'gradient'
   | 'object'
+  | 'duration'
+  | 'cubicBezier'
+  | 'transition'
 
 export interface FigmaMeta {
   name: string
   collection?: 'Primitives' | 'Semantic'
   style?: 'TEXT' | 'EFFECT' | 'PAINT' | 'GRID'
   scopes?: string[]
+  /** Página de documentación de Figma de la que sale el token (Motion, Grid base…) */
+  page?: string
+  source?: 'documentation'
 }
 
 interface RawToken {

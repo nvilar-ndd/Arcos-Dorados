@@ -3902,6 +3902,179 @@
           "style": "GRID"
         }
       }
+    },
+    "master-frame": {
+      "$type": "object",
+      "$value": {
+        "width": "412px",
+        "height": "912px",
+        "fold": "720px"
+      },
+      "$description": "Lienzo maestro único para iOS y Android.",
+      "$extensions": {
+        "figma": {
+          "name": "Master Frame - Base 412px",
+          "page": "Grid *base*"
+        }
+      }
+    }
+  },
+  "motion": {
+    "duration": {
+      "fast": {
+        "$type": "duration",
+        "$value": "100ms",
+        "$description": "Micro-interacciones: hover, checkboxes, toggle, feedback de botones.",
+        "$extensions": {
+          "figma": {
+            "name": "motion-duration-fast",
+            "page": "Motion",
+            "node": "2067:7355",
+            "source": "documentation"
+          }
+        }
+      },
+      "moderate": {
+        "$type": "duration",
+        "$value": "250ms",
+        "$description": "Elementos pequeños: menús desplegables, expansión de acordeones, tooltips.",
+        "$extensions": {
+          "figma": {
+            "name": "motion-duration-moderate",
+            "page": "Motion",
+            "node": "2067:7355",
+            "source": "documentation"
+          }
+        }
+      },
+      "slow": {
+        "$type": "duration",
+        "$value": "400ms",
+        "$description": "Transiciones de pantalla completa, diálogos (modales) o movimientos de cards grandes.",
+        "$extensions": {
+          "figma": {
+            "name": "motion-duration-slow",
+            "page": "Motion",
+            "node": "2067:7355",
+            "source": "documentation"
+          }
+        }
+      },
+      "expressive": {
+        "$type": "duration",
+        "$value": "600ms",
+        "$description": "Momentos de marca: splash screens, animaciones de éxito de compra o recompensas.",
+        "$extensions": {
+          "figma": {
+            "name": "motion-duration-expressive",
+            "page": "Motion",
+            "node": "2067:7355",
+            "source": "documentation"
+          }
+        }
+      }
+    },
+    "easing": {
+      "standard": {
+        "$type": "cubicBezier",
+        "$value": [
+          0.4,
+          0,
+          0.2,
+          1
+        ],
+        "$description": "Standard / Estándar (ease-in-out). Elementos que se mueven de un punto A a un punto B dentro de la pantalla. Natural, equilibrada.",
+        "$extensions": {
+          "figma": {
+            "name": "Standard / Estándar (ease-in-out)",
+            "page": "Motion",
+            "node": "2067:7355",
+            "source": "documentation"
+          }
+        }
+      },
+      "entrance": {
+        "$type": "cubicBezier",
+        "$value": [
+          0,
+          0,
+          0.2,
+          1
+        ],
+        "$description": "Entrance / Entrada (ease-out). Elementos que entran a la pantalla (modal, toast de notificación). Empiezan rápido y frenan suavemente. Inmediata, atrae la atención.",
+        "$extensions": {
+          "figma": {
+            "name": "Entrance / Entrada (ease-out)",
+            "page": "Motion",
+            "node": "2067:7355",
+            "source": "documentation"
+          }
+        }
+      },
+      "exit": {
+        "$type": "cubicBezier",
+        "$value": [
+          0.4,
+          0,
+          1,
+          1
+        ],
+        "$description": "Exit / Salida (ease-in). Elementos que abandonan la pantalla. Empiezan lento y aceleran al salir. Despacho rápido: el elemento se retira para dejar espacio.",
+        "$extensions": {
+          "figma": {
+            "name": "Exit / Salida (ease-in)",
+            "page": "Motion",
+            "node": "2067:7355",
+            "source": "documentation"
+          }
+        }
+      }
+    },
+    "reduced": {
+      "duration": {
+        "$type": "duration",
+        "$value": "200ms",
+        "$description": "Con \"Reducir movimiento\" activo, las animaciones pasan a un fade de opacidad de 200ms.",
+        "$extensions": {
+          "figma": {
+            "name": "Reducir movimiento",
+            "page": "Motion",
+            "node": "2067:7355",
+            "source": "documentation"
+          }
+        }
+      }
+    },
+    "press": {
+      "scale": {
+        "$type": "number",
+        "$value": 0.98,
+        "$description": "Escala al presionar una card de producto (Scale & Depth).",
+        "$extensions": {
+          "figma": {
+            "name": "Scale & Depth",
+            "page": "Motion",
+            "node": "2067:7355",
+            "source": "documentation"
+          }
+        }
+      }
+    },
+    "shared-element": {
+      "$type": "transition",
+      "$value": {
+        "duration": "{motion.duration.slow}",
+        "timingFunction": "{motion.easing.standard}"
+      },
+      "$description": "Golden Path: elemento compartido entre listado y detalle.",
+      "$extensions": {
+        "figma": {
+          "name": "Golden Path",
+          "page": "Motion",
+          "node": "2067:7355",
+          "source": "documentation"
+        }
+      }
     }
   }
 }

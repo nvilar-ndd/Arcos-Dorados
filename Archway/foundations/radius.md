@@ -16,9 +16,12 @@
 
 > No existe `radius/XL` en Figma: la escala salta de `L` (16) a `XXL` (32). Ver [`audit.md`](../audit.md).
 
-## Reglas
+## Reglas (página *Corner Radius* de Figma)
+
+La forma comunica jerarquía y relación entre elementos. La escala se basa en múltiplos de 4 para garantizar nitidez en pantallas de alta densidad.
 
 - **Default del sistema: `radius/M` (12)** para cards, banners y snackbars.
-- **Radios anidados:** el radio interno = radio externo − padding. Una card `M` (12) con padding 8 contiene elementos `XS` (4).
-- `radius/XXXL` (160) se usa para lograr forma de **píldora**; en código se recomienda un valor "full" (`9999px` / `Capsule()` / `RoundedCornerShape(50%)`) para que no dependa del alto del componente.
-- Los componentes de pantalla completa (bottom sheets) sólo redondean las esquinas superiores.
+- **Regla del balance (anidación):** cuando un componente vive dentro de otro, su radio baja **4px** respecto del contenedor, para crear paralelismo óptico. Ejemplo: **padre 12 → hijo 8**.
+- **Full-bleed:** si una card (`radius/M`) se extiende hasta el borde de la pantalla, las esquinas que tocan el borde pasan a **0** y el radio se mantiene sólo en las esquinas internas.
+- **Botones dentro de contenedores grandes:** los botones usan 8, pero el CTA principal de un bottom sheet (`radius/L`) puede evaluar 12 para acompañar la curvatura, siempre que no rompa la consistencia del botón en el resto de la App.
+- **Píldora:** `radius/XXXL` (160). En código conviene un valor "full" (`9999px` / `Capsule()` / `RoundedCornerShape(50)`) para no depender del alto del componente.
