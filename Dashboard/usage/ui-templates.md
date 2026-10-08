@@ -1,7 +1,7 @@
 # UI templates por contexto de navegación
 
 > **Fuente de la verdad:** [DashBoard Foundation (Figma)](https://www.figma.com/design/XKulGF78txFYDLNMstLShZ/-DashBoard--Fuondation) — página *Usage and design criteria*.
-> **Extraído vía Figma MCP:** 2026-10-07.
+> **Extraído vía Figma MCP:** 2026-10-07 · revisado 2026-10-08. Medidas de cada plantilla en [page-templates.md](./page-templates.md).
 
 El layout y la estructura de una pantalla del Dashboard dependen del **contexto de navegación** desde el que se accede. Cada sección del sistema responde a un propósito distinto y requiere un patrón de UI específico.
 
@@ -13,7 +13,7 @@ El layout y la estructura de una pantalla del Dashboard dependen del **contexto 
 
 ## 🌍 Country session — formulario de configuración
 
-Las pantallas que dependen de la sesión de Country se diseñan como **formularios**. Este contexto configura todo lo que varía por país:
+Las pantallas que dependen de la sesión de Country se diseñan como **formularios** y se navegan con el [SubPanelLeft](../structure/sub-panel-left.md). Este contexto configura todo lo que varía por país:
 
 - Reglas
 - Datos
@@ -33,7 +33,7 @@ Ejemplos del archivo: Medios de pago (bancos, marcas de tarjeta), Motor de promo
 
 Las pantallas del panel izquierdo responden a flujos de **gestión u operación**: creación, edición, revisión y publicación. Por eso el diseño tiende a estructurarse como un **proceso paso a paso**.
 
-Generalmente empiezan con una **Read-only Table** o una **Card List** (ver abajo).
+Generalmente empiezan con una **Read-only Table** ([data-table.md](../components/data-table.md)) o una **Card List** ([card-list.md](../components/card-list.md)); ver abajo.
 
 **Criterio**
 
