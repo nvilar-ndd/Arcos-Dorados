@@ -32,6 +32,29 @@ color/black/800_ #292929   ──►   Text/Text_primary, Layer/06, …
 
 Los tokens con sufijo `_` son el **valor base** de cada familia de marca.
 
+## Cómo se construye la paleta (HSL)
+
+Las escalas se generan en **HSL** (página *Colors* de Figma) con tres reglas:
+
+- **Hue estable:** cada familia mantiene un único matiz en todos sus pasos.
+- **Lightness manda:** la luminosidad define la jerarquía; los pasos bajan de a 10 puntos (100 → 900).
+- **Saturation con intención:** cada familia fija su saturación según su rol.
+
+| Familia | Hue | Saturation | Lightness 100 → 900 | Base |
+|---|---|---|---|---|
+| Gold | 43 | 100 | 93 → 13 (50 = 95) | 500 · L 53 |
+| Red | 358 | 100 | 93 → 13 (50 = 97) | 600 · L 43 |
+| Black | 0 | 0 | 86 → 6 (50 = 96) | 800 · L 16 |
+| Green | 141 | 53 | 96 → 16 | — |
+| Lime | 71 | 51 | 93 → 13 | — |
+| Blue Dark | 217 | 78 | 95 → 19 (950 = 9) | — |
+| Fuchsia | 332 | 88 | 92 → 12 | — |
+| Purple | 286 | 97 | 95 → 15 | — |
+| Violet | 264 (700–900: 219) | 97 (700–900: 99) | 92 → 13 | — |
+| Orange | 23 | 99 | 90 → 10 | — |
+
+> **Fuente de los valores:** los hex de este documento salen de las **variables** de Figma. La página *Colors* muestra los hex calculados desde HSL y en varios pasos difieren en ±1 por redondeo (p. ej. Gold 50 `#FFF8E7` vs variable `#FFF8E5`). Hay dos diferencias reales: **Fuchsia 500** (página `#FF1017`, variable `#F0197D`) y **Fuchsia 600** (página `#B20006`, variable `#C90D65`); la página muestra valores de la familia Red. Violet cambia de hue en 700–900 y repite 100 = 200 (ver audit S-06).
+
 ## Primitivos
 
 ### Gold (Dorado) — marca

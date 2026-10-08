@@ -20,12 +20,14 @@ npm run typecheck # vue-tsc, TypeScript strict
 | Sección | Contenido |
 |---|---|
 | ArchWay › Introducción | Flujo Figma → audit → tokens → Storybook y reglas de consumo |
+| ArchWay › Glosario | Se renderiza desde `../glossary.md` |
 | Foundations › Color | Semánticos (con alias y uso), Primitivos por familia + gradientes, Contraste WCAG calculado en vivo |
 | Foundations › Tipografía | Los 20 text styles renderizados con sus variables `Font/*` |
 | Foundations › Espaciado | Escala `Valor/spacing/*` |
 | Foundations › Grilla | Master Frame 412, grilla de 4 columnas y baseline de 8px, interactiva por ancho de viewport |
 | Foundations › Radios | Escala `Valor/radius/*` |
 | Foundations › Elevación | Sombras Shallow / Deep |
+| Guías › Migración tipográfica | Se renderiza desde `../guides/typography-legacy-migration.md` |
 | Foundations › Motion | Duraciones y curvas animadas, patrones (Scale & Depth, Golden Path, Move) y simulación de "Reducir movimiento" |
 
 ## Stack

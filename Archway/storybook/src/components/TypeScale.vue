@@ -24,6 +24,30 @@ const ROLE: Record<string, string> = {
   label: 'Label — contenido que se acciona o rotula',
 }
 
+/** Uso en producto según la página Typography de Figma. */
+const USAGE: Record<string, string> = {
+  'Display Large Bold': 'Grandes promociones',
+  'Display Medium Bold': 'Títulos de categorías del menú',
+  'Heading Large Bold': 'Títulos de pantalla (ej. "Carrito")',
+  'Heading Large': 'Uso en presentaciones',
+  'Heading Medium Bold': 'Títulos de sección o modales',
+  'Heading Medium': 'Títulos de sección o modales',
+  'Heading Small Bold': 'Nombres de productos en cards',
+  'Heading Small': 'Nombres de productos en cards',
+  'Body Large Bold': 'Texto base',
+  'Body Large': 'Texto base',
+  'Body Medium Bold': 'Descripciones',
+  'Body Medium': 'Descripciones',
+  'Body Small': 'Letra pequeña, legales',
+  'Label Large': 'Primary buttons (CTAs)',
+  'Label Medium Bold': 'Labels, inputs, tabs',
+  'Label Medium': 'Labels, inputs, tabs',
+  'Label Medium Italic': 'Aclaraciones de precio, disclaimers, legales, TyC',
+  'Label Small Bold': 'Letra pequeña, legales y tab bar',
+  'Label Small': 'Letra pequeña, legales y tab bar',
+  'Label Small Italic': 'Aclaraciones de precio, disclaimers, legales, TyC',
+}
+
 const refValue = (ref: string): string => {
   const id = ref.replace(/^\{|\}$/g, '')
   return String(token(id).resolved)
@@ -75,6 +99,7 @@ const groups = computed(() => {
           <div><dt>Tamaño / Interlineado</dt><dd class="mono">{{ s.size }} / {{ s.lineHeight }}</dd></div>
           <div><dt>Peso</dt><dd>{{ s.weight }}</dd></div>
           <div><dt>Tracking</dt><dd class="mono">{{ s.tracking }}</dd></div>
+          <div><dt>Uso en producto</dt><dd>{{ USAGE[s.t.figma.name.split('/')[1]] ?? '—' }}</dd></div>
           <div><dt>Clase</dt><dd><code>.{{ s.className }}</code></dd></div>
         </dl>
         <p class="type__desc aw-text-body-small">{{ s.t.description }}</p>

@@ -40,6 +40,13 @@ Figma (SSOT) ──► extracción vía MCP ──► audit.md (propuestas)
 | Elevación | [foundations/elevation.md](./foundations/elevation.md) | Effect styles `Shallow/*`, `Deep/*` |
 | Motion | [foundations/motion.md](./foundations/motion.md) | Página *Motion* (documentación, aún no variables) |
 
+## Guías y referencias
+
+| Documento | Contenido | Fuente en Figma |
+|---|---|---|
+| [guides/typography-legacy-migration.md](./guides/typography-legacy-migration.md) | Equivalencias de los 24 estilos Legacy → 20 de ArchWay, guía para diseño y desarrollo, QA visual | Página *Typography*, sección Equivalencias / handoff |
+| [glossary.md](./glossary.md) | Glosario de traducción de términos del sistema | Página *Colors*, Glosario de Traducción |
+
 Foundations que todavía no existen en Figma (iconografía, breakpoints, opacidad, z-index, border width) están listadas como propuestas en [`audit.md`](./audit.md#-p2--foundations-faltantes).
 
 ## Tokens
@@ -69,6 +76,9 @@ cd Archway/storybook && npm install && npm run dev   # http://localhost:6006
 Archway/
 ├── README.md
 ├── audit.md                  ← propuestas pendientes de aprobación
+├── glossary.md
+├── guides/
+│   └── typography-legacy-migration.md
 ├── foundations/
 │   ├── color.md
 │   ├── typography.md
