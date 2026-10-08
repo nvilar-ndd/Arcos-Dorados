@@ -25,8 +25,8 @@ Propiedades: `Style` = Primary · secondary · tipografia × `State` = enabled �
 | Style | enabled | hover | focus | pressed |
 |---|---|---|---|---|
 | Primary | `button/primary-enabled` | `button/primary-hover` | + borde `button/primary-focus` 1 px | `button/primary-focus` |
-| secondary | `button/transparent` | `button/secondary-hover` | + borde `button/primary-focus` 1 px | `button/secondary-pressed` |
-| tipografia | sin fondo; sólo cambia el color del ícono/texto | | | |
+| secondary | `button/transparent` | `button/secondary-hover` | `button/secondary-focus` + borde `button/primary-focus` 1 px | `button/secondary` + borde `border/01` 1 px |
+| tipografia (avatar) | igual que Primary, con iniciales (`Label01`, `color/black/800`) en lugar de ícono | | | |
 
 ### FAB-ListMenu-desplegado
 

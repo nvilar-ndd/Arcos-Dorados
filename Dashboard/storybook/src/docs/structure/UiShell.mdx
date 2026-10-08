@@ -1,6 +1,12 @@
-import { Meta, Markdown } from '@storybook/blocks'
+import { Meta, Markdown, Stories } from '@storybook/blocks'
+import * as S from '../../../../ui/stories/structure.stories'
 import content from '../../../../structure/ui-shell.md?raw'
 
-<Meta title="Estructura/UI shell — Header + PanelLeft" />
+<Meta of={S} name="Docs" />
 
-<Markdown>{content}</Markdown>
+{/* Encabezado del .md (título + fuente), luego la vista previa y después el resto del documento. */}
+<Markdown>{content.split('\n## ')[0]}</Markdown>
+
+<Stories title="Vista previa" includePrimary />
+
+<Markdown>{'## ' + content.split('\n## ').slice(1).join('\n## ')}</Markdown>

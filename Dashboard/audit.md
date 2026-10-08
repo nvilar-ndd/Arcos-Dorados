@@ -39,6 +39,8 @@
 | D-C10 | Estados de reserva con tokens de botón y hex sueltos | 🟠 P1 | Pendiente |
 | D-C11 | Componentes sin estados (Link, Accordion) o sin estados clave (indeterminate, error) | 🟡 P2 | Pendiente |
 | D-C12 | Data table *read-only* con celdas Switch y Textfield | 🟡 P2 | Pendiente |
+| D-C13 | Dark: botón secundario en hover/focus queda con texto blanco sobre fondo claro (ilegible) | 🔴 P0 | Pendiente |
+| D-C14 | Placeholder `text/secondary` sobre el hover del Dropdown (`button/secondary-hover`): 3.45:1 | 🟠 P1 | Pendiente |
 | D-E01 | Medidas del shell y de las columnas de contenido sin tokens | 🟡 P2 | Pendiente |
 | D-E02 | Header con gap fijo de 206 px | 🟡 P2 | Pendiente |
 | D-E03 | Fondo del header distinto entre tamaños | ⚪ P3 | Pendiente |
@@ -222,6 +224,14 @@ En el Calendar de reservas: *Pendiente* usa `button/primary-disabled`, *Activa* 
 ### D-C12 · Data table read-only con controles
 
 `Data table row cell` ofrece estilos `Switch` y `Textfield`, pero la regla de uso dice que la tabla de solo lectura no tiene toggles ni cambios de estado por fila (eso es una Card List). **Propuesta:** sacarlos de la tabla read-only o documentar una "tabla editable" como tercer patrón.
+
+### D-C13 · Botón secundario en Dark
+
+Detectado al previsualizar los componentes en Storybook con el modo Dark: en hover y focus, `button/secondary-hover` y `button/secondary-focus` pasan a `secondary/ivory` (casi blanco) mientras `button/secondary-text` es `white/default`, y el texto desaparece. Mismo patrón que [D-A04](#d-a04--secondary-pressed-en-dark) (pressed). **Propuesta:** en Dark, `secondary-hover` → `black/700` y `secondary-focus` → `black/600`, o un `button/secondary-text-hover` oscuro.
+
+### D-C14 · Placeholder en hover
+
+Detectado con axe en Storybook: en `Dropdown-Menu` hover, el placeholder `text/secondary` (#6F6F6F) sobre `button/secondary-hover` (#D6D6D6) da **3.45:1** (pide 4.5:1). **Propuesta:** hover del input con `layer/03` o placeholder `text/primary` en hover.
 
 ### D-E01 · Medidas del shell sin tokens
 

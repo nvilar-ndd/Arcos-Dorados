@@ -27,9 +27,9 @@ La colección Semantic tiene dos modos. `npm run tokens` genera las variables Li
 | Foundations › Espaciado | Escala por multiplicador y tokens de layout |
 | Foundations › Radios | sm, md, lg, xl |
 | Foundations › Grilla | Breakpoints, 6 grillas a escala y tamaños de modal |
-| Componentes › * | Un doc por familia, renderizado desde `../components/*.md` |
-| Estructura › * | UI shell, Header, Left panel, SubPanelLeft e IA, desde `../structure/*.md` |
-| Uso › * | UI templates y medidas de plantillas, desde `../usage/*.md` |
+| Componentes › * | Vista previa interactiva (`../ui/stories`) + doc de la familia (`../components/*.md`) |
+| Estructura › * | UI shell, Header, Left panel y SubPanelLeft funcionando (drawer en < 768 px) + docs de `../structure/*.md` |
+| Uso › * | Plantillas armadas con los componentes (Country → formulario · paso a paso) + docs de `../usage/*.md` |
 | Convergencia › Dashboard a ArchWay | Se renderiza desde `../../Convergencia/dashboard-archway.md` |
 
 ## Notas
@@ -37,3 +37,4 @@ La colección Semantic tiene dos modos. `npm run tokens` genera las variables Li
 - **Speedee** no se versiona (licencia): ver [fonts/README.md](./fonts/README.md). **Roboto Mono** se carga desde Google Fonts (licencia OFL).
 - La tabla de contraste se recalcula desde los tokens de cada modo.
 - Las páginas de Componentes, Estructura y Uso son MDX generados que importan el `.md` con `?raw`: el contenido se edita sólo en el `.md`.
+- Los componentes viven en [`../ui`](../ui/README.md). Tailwind (preset generado desde los tokens) y `storybook-addon-pseudo-states` (para mostrar hover/focus/pressed en las matrices de estados) están configurados acá.
