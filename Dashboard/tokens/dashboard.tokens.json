@@ -1,0 +1,2577 @@
+{
+  "$description": "Dashboard Foundations — export desde Figma XKulGF78txFYDLNMstLShZ el 2026-10-07. Generado; no editar a mano. Los tokens semánticos tienen $value = Light y $extensions.modes.dark.",
+  "primitives": {
+    "color": {
+      "gold": {
+        "0": {
+          "$type": "color",
+          "$value": "#fff8e7",
+          "$extensions": {
+            "figma": {
+              "name": "color/gold/0",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#ffeccb",
+          "$extensions": {
+            "figma": {
+              "name": "color/gold/100",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#ffe090",
+          "$extensions": {
+            "figma": {
+              "name": "color/gold/200",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#ffd46a",
+          "$extensions": {
+            "figma": {
+              "name": "color/gold/300",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#ffc839",
+          "$extensions": {
+            "figma": {
+              "name": "color/gold/400",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#ffbc0d",
+          "$extensions": {
+            "figma": {
+              "name": "color/gold/500",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#d69b00",
+          "$extensions": {
+            "figma": {
+              "name": "color/gold/600",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#ad7d00",
+          "$extensions": {
+            "figma": {
+              "name": "color/gold/700",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#856000",
+          "$extensions": {
+            "figma": {
+              "name": "color/gold/800",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#5c4200",
+          "$extensions": {
+            "figma": {
+              "name": "color/gold/900",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "950": {
+          "$type": "color",
+          "$value": "#332500",
+          "$extensions": {
+            "figma": {
+              "name": "color/gold/950",
+              "collection": "Primitives"
+            }
+          }
+        }
+      },
+      "red": {
+        "0": {
+          "$type": "color",
+          "$value": "#ffe7e8",
+          "$extensions": {
+            "figma": {
+              "name": "color/red/0",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#ffbec0",
+          "$extensions": {
+            "figma": {
+              "name": "color/red/100",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#ff9497",
+          "$extensions": {
+            "figma": {
+              "name": "color/red/200",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#ff6a6f",
+          "$extensions": {
+            "figma": {
+              "name": "color/red/300",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#ff4046",
+          "$extensions": {
+            "figma": {
+              "name": "color/red/400",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#ff161d",
+          "$extensions": {
+            "figma": {
+              "name": "color/red/500",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#db0007",
+          "$extensions": {
+            "figma": {
+              "name": "color/red/600",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#b20006",
+          "$extensions": {
+            "figma": {
+              "name": "color/red/700",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#890005",
+          "$extensions": {
+            "figma": {
+              "name": "color/red/800",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#610003",
+          "$extensions": {
+            "figma": {
+              "name": "color/red/900",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "950": {
+          "$type": "color",
+          "$value": "#330002",
+          "$extensions": {
+            "figma": {
+              "name": "color/red/950",
+              "collection": "Primitives"
+            }
+          }
+        }
+      },
+      "black": {
+        "0": {
+          "$type": "color",
+          "$value": "#fcfcfc",
+          "$extensions": {
+            "figma": {
+              "name": "color/black/0",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "100": {
+          "$type": "color",
+          "$value": "#f2f2f2",
+          "$extensions": {
+            "figma": {
+              "name": "color/black/100",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "200": {
+          "$type": "color",
+          "$value": "#e4e4e4",
+          "$extensions": {
+            "figma": {
+              "name": "color/black/200",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "300": {
+          "$type": "color",
+          "$value": "#c7c7c7",
+          "$extensions": {
+            "figma": {
+              "name": "color/black/300",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "400": {
+          "$type": "color",
+          "$value": "#a9a9a9",
+          "$extensions": {
+            "figma": {
+              "name": "color/black/400",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "500": {
+          "$type": "color",
+          "$value": "#7f7f7f",
+          "$extensions": {
+            "figma": {
+              "name": "color/black/500",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "600": {
+          "$type": "color",
+          "$value": "#6a6a6a",
+          "$extensions": {
+            "figma": {
+              "name": "color/black/600",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "700": {
+          "$type": "color",
+          "$value": "#4b4b4b",
+          "$extensions": {
+            "figma": {
+              "name": "color/black/700",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "800": {
+          "$type": "color",
+          "$value": "#292929",
+          "$extensions": {
+            "figma": {
+              "name": "color/black/800",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "900": {
+          "$type": "color",
+          "$value": "#080808",
+          "$extensions": {
+            "figma": {
+              "name": "color/black/900",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "950": {
+          "$type": "color",
+          "$value": "#000000",
+          "$extensions": {
+            "figma": {
+              "name": "color/black/950",
+              "collection": "Primitives"
+            }
+          }
+        }
+      },
+      "white": {
+        "default": {
+          "$type": "color",
+          "$value": "#ffffff",
+          "$extensions": {
+            "figma": {
+              "name": "color/white/default",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "off": {
+          "$type": "color",
+          "$value": "#ffffff00",
+          "$extensions": {
+            "figma": {
+              "name": "color/white/off",
+              "collection": "Primitives"
+            }
+          }
+        }
+      },
+      "secondary": {
+        "blue": {
+          "$type": "color",
+          "$value": "#006bae",
+          "$extensions": {
+            "figma": {
+              "name": "color/secondary/blue",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "orange": {
+          "$type": "color",
+          "$value": "#fe8234",
+          "$extensions": {
+            "figma": {
+              "name": "color/secondary/orange",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "dark-grey": {
+          "$type": "color",
+          "$value": "#6f6f6f",
+          "$extensions": {
+            "figma": {
+              "name": "color/secondary/dark-grey",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "grey": {
+          "$type": "color",
+          "$value": "#adadad",
+          "$extensions": {
+            "figma": {
+              "name": "color/secondary/grey",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "light-grey": {
+          "$type": "color",
+          "$value": "#d6d6d6",
+          "$extensions": {
+            "figma": {
+              "name": "color/secondary/light-grey",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "ivory": {
+          "$type": "color",
+          "$value": "#f9f9f9",
+          "$extensions": {
+            "figma": {
+              "name": "color/secondary/ivory",
+              "collection": "Primitives"
+            }
+          }
+        }
+      },
+      "link": {
+        "blue": {
+          "$type": "color",
+          "$value": "#0f62fe",
+          "$extensions": {
+            "figma": {
+              "name": "color/link/blue",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "blue-300": {
+          "$type": "color",
+          "$value": "#76a5fe",
+          "$extensions": {
+            "figma": {
+              "name": "color/link/blue-300",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "blue-hover": {
+          "$type": "color",
+          "$value": "#054ada",
+          "$extensions": {
+            "figma": {
+              "name": "color/link/blue-hover",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "blue-hover-300": {
+          "$type": "color",
+          "$value": "#7da6fc",
+          "$extensions": {
+            "figma": {
+              "name": "color/link/blue-hover-300",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "blue-visited": {
+          "$type": "color",
+          "$value": "#8a3ffc",
+          "$extensions": {
+            "figma": {
+              "name": "color/link/blue-visited",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "blue-visited-300": {
+          "$type": "color",
+          "$value": "#a972fd",
+          "$extensions": {
+            "figma": {
+              "name": "color/link/blue-visited-300",
+              "collection": "Primitives"
+            }
+          }
+        }
+      },
+      "tertiary": {
+        "green-800": {
+          "$type": "color",
+          "$value": "#1f6437",
+          "$extensions": {
+            "figma": {
+              "name": "color/tertiary/green-800",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "green-600": {
+          "$type": "color",
+          "$value": "#38b362",
+          "$extensions": {
+            "figma": {
+              "name": "color/tertiary/green-600",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "green-100": {
+          "$type": "color",
+          "$value": "#effaf3",
+          "$extensions": {
+            "figma": {
+              "name": "color/tertiary/green-100",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "light-green": {
+          "$type": "color",
+          "$value": "#a9c141",
+          "$extensions": {
+            "figma": {
+              "name": "color/tertiary/light-green",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "dark-blue": {
+          "$type": "color",
+          "$value": "#103c82",
+          "$extensions": {
+            "figma": {
+              "name": "color/tertiary/dark-blue",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "light-blue": {
+          "$type": "color",
+          "$value": "#56afd1",
+          "$extensions": {
+            "figma": {
+              "name": "color/tertiary/light-blue",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "fuchsia": {
+          "$type": "color",
+          "$value": "#9a0a4d",
+          "$extensions": {
+            "figma": {
+              "name": "color/tertiary/fuchsia",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "beige": {
+          "$type": "color",
+          "$value": "#b69a81",
+          "$extensions": {
+            "figma": {
+              "name": "color/tertiary/beige",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "gold-disabled": {
+          "$type": "color",
+          "$value": "#ffe49e",
+          "$extensions": {
+            "figma": {
+              "name": "color/tertiary/gold-disabled",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "blue-disabled": {
+          "$type": "color",
+          "$value": "#ccf0ff",
+          "$extensions": {
+            "figma": {
+              "name": "color/tertiary/blue-disabled",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "purple-disabled": {
+          "$type": "color",
+          "$value": "#eee3ff",
+          "$extensions": {
+            "figma": {
+              "name": "color/tertiary/purple-disabled",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "red-disabled": {
+          "$type": "color",
+          "$value": "#ffcec4",
+          "$extensions": {
+            "figma": {
+              "name": "color/tertiary/red-disabled",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "green-disabled": {
+          "$type": "color",
+          "$value": "#e2eabf",
+          "$extensions": {
+            "figma": {
+              "name": "color/tertiary/green-disabled",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "dark-red": {
+          "$type": "color",
+          "$value": "#9a0005",
+          "$extensions": {
+            "figma": {
+              "name": "color/tertiary/dark-red",
+              "collection": "Primitives"
+            }
+          }
+        }
+      },
+      "accessible": {
+        "gold": {
+          "$type": "color",
+          "$value": "#c08800",
+          "$extensions": {
+            "figma": {
+              "name": "color/accessible/gold",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "grey": {
+          "$type": "color",
+          "$value": "#959595",
+          "$extensions": {
+            "figma": {
+              "name": "color/accessible/grey",
+              "collection": "Primitives"
+            }
+          }
+        },
+        "red": {
+          "$type": "color",
+          "$value": "#fa4d56",
+          "$extensions": {
+            "figma": {
+              "name": "color/accessible/red",
+              "collection": "Primitives"
+            }
+          }
+        }
+      }
+    },
+    "spacing": {
+      "0": {
+        "$type": "dimension",
+        "$value": "0px",
+        "$extensions": {
+          "figma": {
+            "name": "spacing/0",
+            "collection": "Primitives"
+          }
+        }
+      },
+      "025": {
+        "$type": "dimension",
+        "$value": "2px",
+        "$extensions": {
+          "figma": {
+            "name": "spacing/025",
+            "collection": "Primitives"
+          }
+        }
+      },
+      "050": {
+        "$type": "dimension",
+        "$value": "4px",
+        "$extensions": {
+          "figma": {
+            "name": "spacing/050",
+            "collection": "Primitives"
+          }
+        }
+      },
+      "100": {
+        "$type": "dimension",
+        "$value": "8px",
+        "$extensions": {
+          "figma": {
+            "name": "spacing/100",
+            "collection": "Primitives"
+          }
+        }
+      },
+      "200": {
+        "$type": "dimension",
+        "$value": "16px",
+        "$extensions": {
+          "figma": {
+            "name": "spacing/200",
+            "collection": "Primitives"
+          }
+        }
+      },
+      "300": {
+        "$type": "dimension",
+        "$value": "24px",
+        "$extensions": {
+          "figma": {
+            "name": "spacing/300",
+            "collection": "Primitives"
+          }
+        }
+      },
+      "400": {
+        "$type": "dimension",
+        "$value": "32px",
+        "$extensions": {
+          "figma": {
+            "name": "spacing/400",
+            "collection": "Primitives"
+          }
+        }
+      },
+      "500": {
+        "$type": "dimension",
+        "$value": "40px",
+        "$extensions": {
+          "figma": {
+            "name": "spacing/500",
+            "collection": "Primitives"
+          }
+        }
+      },
+      "600": {
+        "$type": "dimension",
+        "$value": "48px",
+        "$extensions": {
+          "figma": {
+            "name": "spacing/600",
+            "collection": "Primitives"
+          }
+        }
+      },
+      "700": {
+        "$type": "dimension",
+        "$value": "56px",
+        "$extensions": {
+          "figma": {
+            "name": "spacing/700",
+            "collection": "Primitives"
+          }
+        }
+      },
+      "800": {
+        "$type": "dimension",
+        "$value": "64px",
+        "$extensions": {
+          "figma": {
+            "name": "spacing/800",
+            "collection": "Primitives"
+          }
+        }
+      },
+      "1000": {
+        "$type": "dimension",
+        "$value": "80px",
+        "$extensions": {
+          "figma": {
+            "name": "spacing/1000",
+            "collection": "Primitives"
+          }
+        }
+      },
+      "1200": {
+        "$type": "dimension",
+        "$value": "96px",
+        "$extensions": {
+          "figma": {
+            "name": "spacing/1200",
+            "collection": "Primitives"
+          }
+        }
+      },
+      "1400": {
+        "$type": "dimension",
+        "$value": "128px",
+        "$extensions": {
+          "figma": {
+            "name": "spacing/1400",
+            "collection": "Primitives"
+          }
+        }
+      },
+      "2000": {
+        "$type": "dimension",
+        "$value": "160px",
+        "$extensions": {
+          "figma": {
+            "name": "spacing/2000",
+            "collection": "Primitives"
+          }
+        }
+      }
+    }
+  },
+  "semantic": {
+    "background": {
+      "01": {
+        "$type": "color",
+        "$value": "{primitives.color.white.default}",
+        "$description": "Color de base y predeterminado",
+        "$extensions": {
+          "figma": {
+            "name": "background/01",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.color.white.default}",
+            "dark": "{primitives.color.black.800}"
+          }
+        }
+      },
+      "02": {
+        "$type": "color",
+        "$value": "{primitives.color.secondary.dark-grey}",
+        "$extensions": {
+          "figma": {
+            "name": "background/02",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.color.secondary.dark-grey}",
+            "dark": "{primitives.color.secondary.light-grey}"
+          }
+        }
+      },
+      "03": {
+        "$type": "color",
+        "$value": "{primitives.color.secondary.grey}",
+        "$extensions": {
+          "figma": {
+            "name": "background/03",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.color.secondary.grey}",
+            "dark": "{primitives.color.secondary.grey}"
+          }
+        }
+      },
+      "04": {
+        "$type": "color",
+        "$value": "{primitives.color.secondary.light-grey}",
+        "$extensions": {
+          "figma": {
+            "name": "background/04",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.color.secondary.light-grey}",
+            "dark": "{primitives.color.secondary.dark-grey}"
+          }
+        }
+      },
+      "05": {
+        "$type": "color",
+        "$value": "{primitives.color.black.800}",
+        "$description": "Se utiliza únicamente en fondos de componentes",
+        "$extensions": {
+          "figma": {
+            "name": "background/05",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.color.black.800}",
+            "dark": "{primitives.color.white.default}"
+          }
+        }
+      }
+    },
+    "layer": {
+      "00": {
+        "$type": "color",
+        "$value": "{primitives.color.white.off}",
+        "$description": "Se utiliza si el fondo de atrás no es white",
+        "$extensions": {
+          "figma": {
+            "name": "layer/00",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.color.white.off}",
+            "dark": "{primitives.color.white.off}"
+          }
+        }
+      },
+      "01": {
+        "$type": "color",
+        "$value": "{primitives.color.white.default}",
+        "$description": "Se utiliza si el fondo de atrás no es white",
+        "$extensions": {
+          "figma": {
+            "name": "layer/01",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.color.white.default}",
+            "dark": "{primitives.color.black.800}"
+          }
+        }
+      },
+      "02": {
+        "$type": "color",
+        "$value": "{primitives.color.secondary.ivory}",
+        "$description": "Se utiliza si el fondo de atrás no es white",
+        "$extensions": {
+          "figma": {
+            "name": "layer/02",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.color.secondary.ivory}",
+            "dark": "{primitives.color.black.700}"
+          }
+        }
+      },
+      "03": {
+        "$type": "color",
+        "$value": "{primitives.color.secondary.light-grey}",
+        "$description": "Se utiliza si el fondo de atrás no es white",
+        "$extensions": {
+          "figma": {
+            "name": "layer/03",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.color.secondary.light-grey}",
+            "dark": "{primitives.color.secondary.grey}"
+          }
+        }
+      },
+      "04": {
+        "$type": "color",
+        "$value": "{primitives.color.secondary.grey}",
+        "$description": "Se utiliza si el fondo de atrás no es white",
+        "$extensions": {
+          "figma": {
+            "name": "layer/04",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.color.secondary.grey}",
+            "dark": "{primitives.color.secondary.light-grey}"
+          }
+        }
+      },
+      "05": {
+        "$type": "color",
+        "$value": "{primitives.color.secondary.dark-grey}",
+        "$description": "Se utiliza si el fondo de atrás no es white",
+        "$extensions": {
+          "figma": {
+            "name": "layer/05",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.color.secondary.dark-grey}",
+            "dark": "{primitives.color.secondary.ivory}"
+          }
+        }
+      },
+      "06": {
+        "$type": "color",
+        "$value": "{primitives.color.black.800}",
+        "$description": "Se utiliza si el fondo de atrás no es white",
+        "$extensions": {
+          "figma": {
+            "name": "layer/06",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.color.black.800}",
+            "dark": "{primitives.color.white.default}"
+          }
+        }
+      },
+      "07": {
+        "$type": "color",
+        "$value": "{primitives.color.gold.500}",
+        "$description": "Se utiliza si el fondo de atrás no es white",
+        "$extensions": {
+          "figma": {
+            "name": "layer/07",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.color.gold.500}",
+            "dark": "{primitives.color.gold.500}"
+          }
+        }
+      },
+      "08": {
+        "$type": "color",
+        "$value": "{primitives.color.gold.0}",
+        "$description": "Se utiliza si el fondo de atrás no es white",
+        "$extensions": {
+          "figma": {
+            "name": "layer/08",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.color.gold.0}",
+            "dark": "{primitives.color.gold.800}"
+          }
+        }
+      }
+    },
+    "border": {
+      "01": {
+        "$type": "color",
+        "$value": "{primitives.color.black.800}",
+        "$extensions": {
+          "figma": {
+            "name": "border/01",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.color.black.800}",
+            "dark": "{primitives.color.gold.500}"
+          }
+        }
+      },
+      "02": {
+        "$type": "color",
+        "$value": "{primitives.color.secondary.light-grey}",
+        "$extensions": {
+          "figma": {
+            "name": "border/02",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.color.secondary.light-grey}",
+            "dark": "{primitives.color.white.default}"
+          }
+        }
+      },
+      "03": {
+        "$type": "color",
+        "$value": "{primitives.color.secondary.grey}",
+        "$extensions": {
+          "figma": {
+            "name": "border/03",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.color.secondary.grey}",
+            "dark": "{primitives.color.secondary.light-grey}"
+          }
+        }
+      },
+      "04": {
+        "$type": "color",
+        "$value": "{primitives.color.gold.500}",
+        "$extensions": {
+          "figma": {
+            "name": "border/04",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.color.gold.500}",
+            "dark": "{primitives.color.white.default}"
+          }
+        }
+      }
+    },
+    "text": {
+      "primary": {
+        "$type": "color",
+        "$value": "{primitives.color.black.800}",
+        "$description": "Color de base y predeterminado",
+        "$extensions": {
+          "figma": {
+            "name": "text/primary",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.color.black.800}",
+            "dark": "{primitives.color.white.default}"
+          }
+        }
+      },
+      "secondary": {
+        "$type": "color",
+        "$value": "{primitives.color.secondary.dark-grey}",
+        "$extensions": {
+          "figma": {
+            "name": "text/secondary",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.color.secondary.dark-grey}",
+            "dark": "{primitives.color.secondary.ivory}"
+          }
+        }
+      },
+      "disabled": {
+        "$type": "color",
+        "$value": "{primitives.color.secondary.grey}",
+        "$extensions": {
+          "figma": {
+            "name": "text/disabled",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.color.secondary.grey}",
+            "dark": "{primitives.color.secondary.light-grey}"
+          }
+        }
+      },
+      "on-color": {
+        "$type": "color",
+        "$value": "{primitives.color.white.default}",
+        "$extensions": {
+          "figma": {
+            "name": "text/on-color",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.color.white.default}",
+            "dark": "{primitives.color.black.800}"
+          }
+        }
+      },
+      "success": {
+        "$type": "color",
+        "$value": "{primitives.color.tertiary.green-800}",
+        "$extensions": {
+          "figma": {
+            "name": "text/success",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.color.tertiary.green-800}",
+            "dark": "{primitives.color.tertiary.green-600}"
+          }
+        }
+      },
+      "error": {
+        "$type": "color",
+        "$value": "{primitives.color.red.600}",
+        "$extensions": {
+          "figma": {
+            "name": "text/error",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.color.red.600}",
+            "dark": "{primitives.color.red.300}"
+          }
+        }
+      }
+    },
+    "link": {
+      "primary": {
+        "$type": "color",
+        "$value": "{primitives.color.link.blue}",
+        "$description": "Color predeterminado",
+        "$extensions": {
+          "figma": {
+            "name": "link/primary",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.color.link.blue}",
+            "dark": "{primitives.color.link.blue-300}"
+          }
+        }
+      },
+      "primary-hover": {
+        "$type": "color",
+        "$value": "{primitives.color.link.blue-hover}",
+        "$description": "Color predeterminado",
+        "$extensions": {
+          "figma": {
+            "name": "link/primary-hover",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.color.link.blue-hover}",
+            "dark": "{primitives.color.link.blue-hover-300}"
+          }
+        }
+      },
+      "primary-visited": {
+        "$type": "color",
+        "$value": "{primitives.color.link.blue-visited}",
+        "$description": "Color predeterminado",
+        "$extensions": {
+          "figma": {
+            "name": "link/primary-visited",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.color.link.blue-visited}",
+            "dark": "{primitives.color.link.blue-visited-300}"
+          }
+        }
+      },
+      "secondary": {
+        "$type": "color",
+        "$value": "{primitives.color.black.800}",
+        "$description": "Color predeterminado",
+        "$extensions": {
+          "figma": {
+            "name": "link/secondary",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.color.black.800}",
+            "dark": "{primitives.color.white.default}"
+          }
+        }
+      }
+    },
+    "icon": {
+      "primary": {
+        "$type": "color",
+        "$value": "{primitives.color.black.800}",
+        "$description": "Color predeterminado",
+        "$extensions": {
+          "figma": {
+            "name": "icon/primary",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.color.black.800}",
+            "dark": "{primitives.color.white.default}"
+          }
+        }
+      },
+      "secondary": {
+        "$type": "color",
+        "$value": "{primitives.color.secondary.dark-grey}",
+        "$description": "Color predeterminado",
+        "$extensions": {
+          "figma": {
+            "name": "icon/secondary",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.color.secondary.dark-grey}",
+            "dark": "{primitives.color.secondary.ivory}"
+          }
+        }
+      },
+      "tertiary": {
+        "$type": "color",
+        "$value": "{primitives.color.white.default}",
+        "$description": "Color predeterminado",
+        "$extensions": {
+          "figma": {
+            "name": "icon/tertiary",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.color.white.default}",
+            "dark": "{primitives.color.black.800}"
+          }
+        }
+      },
+      "gold": {
+        "$type": "color",
+        "$value": "{primitives.color.gold.500}",
+        "$description": "Color predeterminado",
+        "$extensions": {
+          "figma": {
+            "name": "icon/gold",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.color.gold.500}",
+            "dark": "{primitives.color.gold.500}"
+          }
+        }
+      },
+      "background": {
+        "$type": "color",
+        "$value": "{primitives.color.tertiary.gold-disabled}",
+        "$description": "Color predeterminado",
+        "$extensions": {
+          "figma": {
+            "name": "icon/background",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.color.tertiary.gold-disabled}",
+            "dark": "{primitives.color.gold.700}"
+          }
+        }
+      }
+    },
+    "support": {
+      "warning": {
+        "$type": "color",
+        "$value": "{primitives.color.gold.500}",
+        "$extensions": {
+          "figma": {
+            "name": "support/warning",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.color.gold.500}",
+            "dark": "{primitives.color.gold.500}"
+          }
+        }
+      },
+      "success": {
+        "$type": "color",
+        "$value": "{primitives.color.tertiary.green-800}",
+        "$extensions": {
+          "figma": {
+            "name": "support/success",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.color.tertiary.green-800}",
+            "dark": "{primitives.color.tertiary.green-600}"
+          }
+        }
+      },
+      "error": {
+        "$type": "color",
+        "$value": "{primitives.color.red.600}",
+        "$extensions": {
+          "figma": {
+            "name": "support/error",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.color.red.600}",
+            "dark": "{primitives.color.red.400}"
+          }
+        }
+      },
+      "error-secondary": {
+        "$type": "color",
+        "$value": "{primitives.color.accessible.red}",
+        "$description": "Sólo en algunos componentes",
+        "$extensions": {
+          "figma": {
+            "name": "support/error-secondary",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.color.accessible.red}",
+            "dark": "{primitives.color.accessible.red}"
+          }
+        }
+      }
+    },
+    "tag": {
+      "background-green": {
+        "$type": "color",
+        "$value": "{primitives.color.tertiary.green-disabled}",
+        "$description": "Cambiar manualmente el color tipográfico",
+        "$extensions": {
+          "figma": {
+            "name": "tag/background-green",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.color.tertiary.green-disabled}",
+            "dark": "{primitives.color.tertiary.green-disabled}"
+          }
+        }
+      },
+      "background-blue": {
+        "$type": "color",
+        "$value": "{primitives.color.tertiary.blue-disabled}",
+        "$extensions": {
+          "figma": {
+            "name": "tag/background-blue",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.color.tertiary.blue-disabled}",
+            "dark": "{primitives.color.tertiary.blue-disabled}"
+          }
+        }
+      }
+    },
+    "button": {
+      "primary-text": {
+        "$type": "color",
+        "$value": "{primitives.color.black.800}",
+        "$extensions": {
+          "figma": {
+            "name": "button/primary-text",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.color.black.800}",
+            "dark": "{primitives.color.black.800}"
+          }
+        }
+      },
+      "primary-enabled": {
+        "$type": "color",
+        "$value": "{primitives.color.gold.500}",
+        "$extensions": {
+          "figma": {
+            "name": "button/primary-enabled",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.color.gold.500}",
+            "dark": "{primitives.color.gold.500}"
+          }
+        }
+      },
+      "primary-hover": {
+        "$type": "color",
+        "$value": "{primitives.color.gold.300}",
+        "$extensions": {
+          "figma": {
+            "name": "button/primary-hover",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.color.gold.300}",
+            "dark": "{primitives.color.gold.700}"
+          }
+        }
+      },
+      "primary-hover-transparent": {
+        "$type": "color",
+        "$value": "#ffbc0d33",
+        "$description": "Utilizado en los estados de los switch",
+        "$extensions": {
+          "figma": {
+            "name": "button/primary-hover-transparent",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "#ffbc0d33",
+            "dark": "#ffbc0d33"
+          }
+        }
+      },
+      "primary-focus": {
+        "$type": "color",
+        "$value": "{primitives.color.accessible.gold}",
+        "$description": "Se aplica al elemento cuando recibe el foco",
+        "$extensions": {
+          "figma": {
+            "name": "button/primary-focus",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.color.accessible.gold}",
+            "dark": "{primitives.color.gold.300}"
+          }
+        }
+      },
+      "primary-pressed": {
+        "$type": "color",
+        "$value": "{primitives.color.accessible.gold}",
+        "$extensions": {
+          "figma": {
+            "name": "button/primary-pressed",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.color.accessible.gold}",
+            "dark": "{primitives.color.gold.300}"
+          }
+        }
+      },
+      "primary-pressed-transparent": {
+        "$type": "color",
+        "$value": "#ffbc0d66",
+        "$extensions": {
+          "figma": {
+            "name": "button/primary-pressed-transparent",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "#ffbc0d66",
+            "dark": "#ffbc0d66"
+          }
+        }
+      },
+      "primary-disabled": {
+        "$type": "color",
+        "$value": "{primitives.color.tertiary.gold-disabled}",
+        "$extensions": {
+          "figma": {
+            "name": "button/primary-disabled",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.color.tertiary.gold-disabled}",
+            "dark": "{primitives.color.tertiary.gold-disabled}"
+          }
+        }
+      },
+      "secondary-text": {
+        "$type": "color",
+        "$value": "{primitives.color.black.800}",
+        "$extensions": {
+          "figma": {
+            "name": "button/secondary-text",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.color.black.800}",
+            "dark": "{primitives.color.white.default}"
+          }
+        }
+      },
+      "secondary": {
+        "$type": "color",
+        "$value": "{primitives.color.white.default}",
+        "$extensions": {
+          "figma": {
+            "name": "button/secondary",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.color.white.default}",
+            "dark": "{primitives.color.black.700}"
+          }
+        }
+      },
+      "secondary-stroke": {
+        "$type": "color",
+        "$value": "{primitives.color.black.800}",
+        "$extensions": {
+          "figma": {
+            "name": "button/secondary-stroke",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.color.black.800}",
+            "dark": "{primitives.color.white.default}"
+          }
+        }
+      },
+      "secondary-enabled": {
+        "$type": "color",
+        "$value": "{primitives.color.secondary.ivory}",
+        "$extensions": {
+          "figma": {
+            "name": "button/secondary-enabled",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.color.secondary.ivory}",
+            "dark": "{primitives.color.secondary.light-grey}"
+          }
+        }
+      },
+      "secondary-hover": {
+        "$type": "color",
+        "$value": "{primitives.color.secondary.light-grey}",
+        "$extensions": {
+          "figma": {
+            "name": "button/secondary-hover",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.color.secondary.light-grey}",
+            "dark": "{primitives.color.secondary.ivory}"
+          }
+        }
+      },
+      "secondary-hover-transparent": {
+        "$type": "color",
+        "$value": "#d6d6d633",
+        "$extensions": {
+          "figma": {
+            "name": "button/secondary-hover-transparent",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "#d6d6d633",
+            "dark": "#d6d6d633"
+          }
+        }
+      },
+      "secondary-focus": {
+        "$type": "color",
+        "$value": "{primitives.color.secondary.light-grey}",
+        "$extensions": {
+          "figma": {
+            "name": "button/secondary-focus",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.color.secondary.light-grey}",
+            "dark": "{primitives.color.secondary.ivory}"
+          }
+        }
+      },
+      "secondary-pressed": {
+        "$type": "color",
+        "$value": "{primitives.color.accessible.grey}",
+        "$extensions": {
+          "figma": {
+            "name": "button/secondary-pressed",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.color.accessible.grey}",
+            "dark": "{primitives.color.secondary.light-grey}"
+          }
+        }
+      },
+      "secondary-pressed-transparent": {
+        "$type": "color",
+        "$value": "#d6d6d666",
+        "$extensions": {
+          "figma": {
+            "name": "button/secondary-pressed-transparent",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "#d6d6d666",
+            "dark": "#d6d6d666"
+          }
+        }
+      },
+      "transparent": {
+        "$type": "color",
+        "$value": "{primitives.color.white.off}",
+        "$extensions": {
+          "figma": {
+            "name": "button/transparent",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.color.white.off}",
+            "dark": "{primitives.color.white.off}"
+          }
+        }
+      },
+      "skeleton": {
+        "$type": "color",
+        "$value": "{semantic.background.04}",
+        "$extensions": {
+          "figma": {
+            "name": "button/skeleton",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{semantic.background.04}",
+            "dark": "{semantic.background.04}"
+          }
+        }
+      },
+      "red": {
+        "$type": "color",
+        "$value": "{primitives.color.red.600}",
+        "$description": "Sólo para eliminar o comunicar algo similar",
+        "$extensions": {
+          "figma": {
+            "name": "button/red",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.color.red.600}",
+            "dark": "{primitives.color.red.600}"
+          }
+        }
+      },
+      "red-text": {
+        "$type": "color",
+        "$value": "{primitives.color.white.default}",
+        "$extensions": {
+          "figma": {
+            "name": "button/red-text",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.color.white.default}",
+            "dark": "{primitives.color.white.default}"
+          }
+        }
+      },
+      "red-hover": {
+        "$type": "color",
+        "$value": "{primitives.color.red.500}",
+        "$extensions": {
+          "figma": {
+            "name": "button/red-hover",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.color.red.500}",
+            "dark": "{primitives.color.red.500}"
+          }
+        }
+      },
+      "red-pressed": {
+        "$type": "color",
+        "$value": "{primitives.color.red.700}",
+        "$extensions": {
+          "figma": {
+            "name": "button/red-pressed",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.color.red.700}",
+            "dark": "{primitives.color.red.700}"
+          }
+        }
+      },
+      "red-disabled": {
+        "$type": "color",
+        "$value": "{primitives.color.red.0}",
+        "$description": "Sólo para eliminar o comunicar algo similar",
+        "$extensions": {
+          "figma": {
+            "name": "button/red-disabled",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.color.red.0}",
+            "dark": "{primitives.color.red.0}"
+          }
+        }
+      }
+    },
+    "spacing": {
+      "0": {
+        "$type": "dimension",
+        "$value": "{primitives.spacing.0}",
+        "$extensions": {
+          "figma": {
+            "name": "spacing/0",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.spacing.0}",
+            "dark": "{primitives.spacing.0}"
+          }
+        }
+      },
+      "50": {
+        "$type": "dimension",
+        "$value": "{primitives.spacing.050}",
+        "$extensions": {
+          "figma": {
+            "name": "spacing/50",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.spacing.050}",
+            "dark": "{primitives.spacing.050}"
+          }
+        }
+      },
+      "100": {
+        "$type": "dimension",
+        "$value": "{primitives.spacing.100}",
+        "$extensions": {
+          "figma": {
+            "name": "spacing/100",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.spacing.100}",
+            "dark": "{primitives.spacing.100}"
+          }
+        }
+      },
+      "200": {
+        "$type": "dimension",
+        "$value": "{primitives.spacing.200}",
+        "$extensions": {
+          "figma": {
+            "name": "spacing/200",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.spacing.200}",
+            "dark": "{primitives.spacing.200}"
+          }
+        }
+      },
+      "300": {
+        "$type": "dimension",
+        "$value": "{primitives.spacing.300}",
+        "$extensions": {
+          "figma": {
+            "name": "spacing/300",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.spacing.300}",
+            "dark": "{primitives.spacing.300}"
+          }
+        }
+      },
+      "400": {
+        "$type": "dimension",
+        "$value": "{primitives.spacing.400}",
+        "$extensions": {
+          "figma": {
+            "name": "spacing/400",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.spacing.400}",
+            "dark": "{primitives.spacing.400}"
+          }
+        }
+      },
+      "500": {
+        "$type": "dimension",
+        "$value": "{primitives.spacing.500}",
+        "$extensions": {
+          "figma": {
+            "name": "spacing/500",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.spacing.500}",
+            "dark": "{primitives.spacing.500}"
+          }
+        }
+      },
+      "600": {
+        "$type": "dimension",
+        "$value": "{primitives.spacing.600}",
+        "$extensions": {
+          "figma": {
+            "name": "spacing/600",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.spacing.600}",
+            "dark": "{primitives.spacing.600}"
+          }
+        }
+      },
+      "700": {
+        "$type": "dimension",
+        "$value": "{primitives.spacing.700}",
+        "$extensions": {
+          "figma": {
+            "name": "spacing/700",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.spacing.700}",
+            "dark": "{primitives.spacing.700}"
+          }
+        }
+      },
+      "800": {
+        "$type": "dimension",
+        "$value": "{primitives.spacing.800}",
+        "$extensions": {
+          "figma": {
+            "name": "spacing/800",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.spacing.800}",
+            "dark": "{primitives.spacing.800}"
+          }
+        }
+      },
+      "1000": {
+        "$type": "dimension",
+        "$value": "{primitives.spacing.1000}",
+        "$extensions": {
+          "figma": {
+            "name": "spacing/1000",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.spacing.1000}",
+            "dark": "{primitives.spacing.1000}"
+          }
+        }
+      },
+      "1200": {
+        "$type": "dimension",
+        "$value": "{primitives.spacing.1200}",
+        "$extensions": {
+          "figma": {
+            "name": "spacing/1200",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.spacing.1200}",
+            "dark": "{primitives.spacing.1200}"
+          }
+        }
+      },
+      "1400": {
+        "$type": "dimension",
+        "$value": "{primitives.spacing.1400}",
+        "$extensions": {
+          "figma": {
+            "name": "spacing/1400",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.spacing.1400}",
+            "dark": "{primitives.spacing.1400}"
+          }
+        }
+      },
+      "2000": {
+        "$type": "dimension",
+        "$value": "{primitives.spacing.2000}",
+        "$extensions": {
+          "figma": {
+            "name": "spacing/2000",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.spacing.2000}",
+            "dark": "{primitives.spacing.2000}"
+          }
+        }
+      }
+    },
+    "radius": {
+      "sm": {
+        "$type": "dimension",
+        "$value": "{primitives.spacing.050}",
+        "$extensions": {
+          "figma": {
+            "name": "radius/sm",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.spacing.050}",
+            "dark": "{primitives.spacing.050}"
+          }
+        }
+      },
+      "md": {
+        "$type": "dimension",
+        "$value": "{primitives.spacing.100}",
+        "$extensions": {
+          "figma": {
+            "name": "radius/md",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.spacing.100}",
+            "dark": "{primitives.spacing.100}"
+          }
+        }
+      },
+      "lg": {
+        "$type": "dimension",
+        "$value": "{primitives.spacing.200}",
+        "$extensions": {
+          "figma": {
+            "name": "radius/lg",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.spacing.200}",
+            "dark": "{primitives.spacing.200}"
+          }
+        }
+      },
+      "xl": {
+        "$type": "dimension",
+        "$value": "{primitives.spacing.400}",
+        "$extensions": {
+          "figma": {
+            "name": "radius/xl",
+            "collection": "Semantic"
+          },
+          "modes": {
+            "light": "{primitives.spacing.400}",
+            "dark": "{primitives.spacing.400}"
+          }
+        }
+      }
+    },
+    "size": {
+      "modal": {
+        "xs": {
+          "$type": "dimension",
+          "$value": "384px",
+          "$extensions": {
+            "figma": {
+              "name": "size/modal/xs",
+              "collection": "Semantic"
+            },
+            "modes": {
+              "light": "384px",
+              "dark": "384px"
+            }
+          }
+        },
+        "sm": {
+          "$type": "dimension",
+          "$value": "512px",
+          "$extensions": {
+            "figma": {
+              "name": "size/modal/sm",
+              "collection": "Semantic"
+            },
+            "modes": {
+              "light": "512px",
+              "dark": "512px"
+            }
+          }
+        },
+        "md": {
+          "$type": "dimension",
+          "$value": "672px",
+          "$extensions": {
+            "figma": {
+              "name": "size/modal/md",
+              "collection": "Semantic"
+            },
+            "modes": {
+              "light": "672px",
+              "dark": "672px"
+            }
+          }
+        },
+        "lg": {
+          "$type": "dimension",
+          "$value": "896px",
+          "$extensions": {
+            "figma": {
+              "name": "size/modal/lg",
+              "collection": "Semantic"
+            },
+            "modes": {
+              "light": "896px",
+              "dark": "896px"
+            }
+          }
+        }
+      }
+    },
+    "font": {
+      "family": {
+        "default": {
+          "$type": "fontFamily",
+          "$value": "speedee",
+          "$extensions": {
+            "figma": {
+              "name": "font/family/default",
+              "collection": "Semantic"
+            },
+            "modes": {
+              "light": "speedee",
+              "dark": "speedee"
+            }
+          }
+        }
+      },
+      "size": {
+        "label-01": {
+          "$type": "dimension",
+          "$value": "12px",
+          "$extensions": {
+            "figma": {
+              "name": "font/size/label-01",
+              "collection": "Semantic"
+            },
+            "modes": {
+              "light": "12px",
+              "dark": "12px"
+            }
+          }
+        },
+        "body": {
+          "$type": "dimension",
+          "$value": "16px",
+          "$extensions": {
+            "figma": {
+              "name": "font/size/body",
+              "collection": "Semantic"
+            },
+            "modes": {
+              "light": "16px",
+              "dark": "16px"
+            }
+          }
+        }
+      }
+    }
+  },
+  "typography": {
+    "h1": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Speedee",
+        "fontSize": "36px",
+        "lineHeight": "40px",
+        "letterSpacing": "-0.15px",
+        "fontWeight": 400
+      },
+      "$extensions": {
+        "figma": {
+          "name": "h1-  cms",
+          "style": "TEXT"
+        }
+      },
+      "$description": "Encabezados de diseño (página: \"Esto es para encabezados de diseño\")."
+    },
+    "h2": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Speedee",
+        "fontSize": "32px",
+        "lineHeight": "40px",
+        "letterSpacing": "-0.15px",
+        "fontWeight": 700
+      },
+      "$extensions": {
+        "figma": {
+          "name": "h2 - cms",
+          "style": "TEXT"
+        }
+      }
+    },
+    "h3": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Speedee",
+        "fontSize": "32px",
+        "lineHeight": "36px",
+        "letterSpacing": "-0.15px",
+        "fontWeight": 400
+      },
+      "$extensions": {
+        "figma": {
+          "name": "H3 - CMS",
+          "style": "TEXT"
+        }
+      }
+    },
+    "h4": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Speedee",
+        "fontSize": "24px",
+        "lineHeight": "32px",
+        "letterSpacing": "-0.15px",
+        "fontWeight": 700
+      },
+      "$extensions": {
+        "figma": {
+          "name": "H4 - CMS",
+          "style": "TEXT"
+        }
+      }
+    },
+    "h5": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Speedee",
+        "fontSize": "24px",
+        "lineHeight": "32px",
+        "letterSpacing": "-0.15px",
+        "fontWeight": 400
+      },
+      "$extensions": {
+        "figma": {
+          "name": "H5 - CMS",
+          "style": "TEXT"
+        }
+      }
+    },
+    "h6": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Speedee",
+        "fontSize": "18px",
+        "lineHeight": "24px",
+        "letterSpacing": "-0.15px",
+        "fontWeight": 700
+      },
+      "$extensions": {
+        "figma": {
+          "name": "H6 - CMS",
+          "style": "TEXT"
+        }
+      }
+    },
+    "h7": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Speedee",
+        "fontSize": "18px",
+        "lineHeight": "24px",
+        "letterSpacing": "-0.15px",
+        "fontWeight": 400
+      },
+      "$extensions": {
+        "figma": {
+          "name": "H7 - CMS",
+          "style": "TEXT"
+        }
+      }
+    },
+    "body01": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Speedee",
+        "fontSize": "16px",
+        "lineHeight": "24px",
+        "letterSpacing": "-0.15px",
+        "fontWeight": 400
+      },
+      "$extensions": {
+        "figma": {
+          "name": "Body01 - cms",
+          "style": "TEXT"
+        }
+      },
+      "$description": "Párrafos largos de cuatro líneas o más. Siempre alineado a la izquierda."
+    },
+    "body02": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Speedee",
+        "fontSize": "14px",
+        "lineHeight": "20px",
+        "letterSpacing": "-0.15px",
+        "fontWeight": 400
+      },
+      "$extensions": {
+        "figma": {
+          "name": "Body02 - cms",
+          "style": "TEXT"
+        }
+      },
+      "$description": "Párrafos largos de más de cuatro líneas; cuerpos largos en acordeones o listas estructuradas. Siempre alineado a la izquierda."
+    },
+    "body03": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Speedee",
+        "fontSize": "14px",
+        "lineHeight": "16px",
+        "letterSpacing": "-0.15px",
+        "fontWeight": 400
+      },
+      "$extensions": {
+        "figma": {
+          "name": "Body03 - cms",
+          "style": "TEXT"
+        }
+      },
+      "$description": "Párrafos cortos de no más de cuatro líneas; uso común en componentes."
+    },
+    "label03": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Speedee",
+        "fontSize": "14px",
+        "lineHeight": "16px",
+        "letterSpacing": "-0.15px",
+        "fontWeight": 700
+      },
+      "$extensions": {
+        "figma": {
+          "name": "Label03- cms",
+          "style": "TEXT"
+        }
+      },
+      "$description": "Ítems en estado activado."
+    },
+    "label02": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Speedee",
+        "fontSize": "14px",
+        "lineHeight": "16px",
+        "letterSpacing": "-0.15px",
+        "fontWeight": 400
+      },
+      "$extensions": {
+        "figma": {
+          "name": "Label02 -  cms",
+          "style": "TEXT"
+        }
+      },
+      "$description": "Multipropósito: etiquetas de campo, mensajes de error y títulos. No usar para cuerpo de texto."
+    },
+    "label01": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Speedee",
+        "fontSize": "12px",
+        "lineHeight": "16px",
+        "letterSpacing": "-0.15px",
+        "fontWeight": 400
+      },
+      "$extensions": {
+        "figma": {
+          "name": "Label01  - cms",
+          "style": "TEXT"
+        }
+      }
+    },
+    "rm-body1": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Roboto Mono",
+        "fontSize": "16px",
+        "lineHeight": "24px",
+        "letterSpacing": "-0.15px",
+        "fontWeight": 400
+      },
+      "$extensions": {
+        "figma": {
+          "name": "RM_Body1 - cms",
+          "style": "TEXT"
+        }
+      },
+      "$description": "Uso especial para JSON."
+    },
+    "rm-body2": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Roboto Mono",
+        "fontSize": "14px",
+        "lineHeight": "20px",
+        "letterSpacing": "-0.15px",
+        "fontWeight": 400
+      },
+      "$extensions": {
+        "figma": {
+          "name": "RM_Body2 - cms",
+          "style": "TEXT"
+        }
+      },
+      "$description": "Uso para JSON."
+    },
+    "rm-body3": {
+      "$type": "typography",
+      "$value": {
+        "fontFamily": "Roboto Mono",
+        "fontSize": "12px",
+        "lineHeight": "16px",
+        "letterSpacing": "-0.15px",
+        "fontWeight": 400
+      },
+      "$extensions": {
+        "figma": {
+          "name": "RM_Body3 - cms",
+          "style": "TEXT"
+        }
+      },
+      "$description": "Uso para JSON."
+    }
+  },
+  "layout": {
+    "01": {
+      "$type": "dimension",
+      "$value": "16px",
+      "$extensions": {
+        "figma": {
+          "name": "layout/01",
+          "collection": "Layout"
+        }
+      }
+    },
+    "02": {
+      "$type": "dimension",
+      "$value": "24px",
+      "$extensions": {
+        "figma": {
+          "name": "layout/02",
+          "collection": "Layout"
+        }
+      }
+    },
+    "03": {
+      "$type": "dimension",
+      "$value": "32px",
+      "$extensions": {
+        "figma": {
+          "name": "layout/03",
+          "collection": "Layout"
+        }
+      }
+    },
+    "04": {
+      "$type": "dimension",
+      "$value": "48px",
+      "$extensions": {
+        "figma": {
+          "name": "layout/04",
+          "collection": "Layout"
+        }
+      }
+    },
+    "05": {
+      "$type": "dimension",
+      "$value": "64px",
+      "$extensions": {
+        "figma": {
+          "name": "layout/05",
+          "collection": "Layout"
+        }
+      }
+    }
+  },
+  "breakpoint": {
+    "sm": {
+      "$type": "dimension",
+      "$value": "375px",
+      "$extensions": {
+        "figma": {
+          "name": "breakpoint/sm",
+          "collection": "Breakpoints"
+        }
+      }
+    },
+    "md": {
+      "$type": "dimension",
+      "$value": "768px",
+      "$extensions": {
+        "figma": {
+          "name": "breakpoint/md",
+          "collection": "Breakpoints"
+        }
+      }
+    },
+    "lg": {
+      "$type": "dimension",
+      "$value": "1024px",
+      "$extensions": {
+        "figma": {
+          "name": "breakpoint/lg",
+          "collection": "Breakpoints"
+        }
+      }
+    },
+    "xl": {
+      "$type": "dimension",
+      "$value": "1440px",
+      "$extensions": {
+        "figma": {
+          "name": "breakpoint/xl",
+          "collection": "Breakpoints"
+        }
+      }
+    },
+    "2xl": {
+      "$type": "dimension",
+      "$value": "1792px",
+      "$extensions": {
+        "figma": {
+          "name": "breakpoint/2xl",
+          "collection": "Breakpoints"
+        }
+      }
+    }
+  },
+  "grid": {
+    "small-320": {
+      "$type": "object",
+      "$value": {
+        "width": "320px",
+        "columns": 4,
+        "alignment": "stretch",
+        "gutter": "32px",
+        "margin": "16px"
+      },
+      "$extensions": {
+        "figma": {
+          "name": "CMS - Small-320",
+          "style": "GRID"
+        }
+      }
+    },
+    "medium-672": {
+      "$type": "object",
+      "$value": {
+        "width": "672px",
+        "columns": 8,
+        "alignment": "stretch",
+        "gutter": "32px",
+        "margin": "32px"
+      },
+      "$extensions": {
+        "figma": {
+          "name": "CMS- Medium-672",
+          "style": "GRID"
+        }
+      }
+    },
+    "large-1056": {
+      "$type": "object",
+      "$value": {
+        "width": "1056px",
+        "columns": 16,
+        "alignment": "stretch",
+        "gutter": "32px",
+        "margin": "32px"
+      },
+      "$extensions": {
+        "figma": {
+          "name": "CMS - Large -1056",
+          "style": "GRID"
+        }
+      }
+    },
+    "x-large-1312": {
+      "$type": "object",
+      "$value": {
+        "width": "1312px",
+        "columns": 16,
+        "alignment": "stretch",
+        "gutter": "32px",
+        "margin": "32px"
+      },
+      "$extensions": {
+        "figma": {
+          "name": "CMS-X-large -1312",
+          "style": "GRID"
+        }
+      }
+    },
+    "max-1584": {
+      "$type": "object",
+      "$value": {
+        "width": "1584px",
+        "columns": 16,
+        "alignment": "stretch",
+        "gutter": "32px",
+        "margin": "40px"
+      },
+      "$extensions": {
+        "figma": {
+          "name": "CMS - Max -1584",
+          "style": "GRID"
+        }
+      }
+    },
+    "maxplus-1784": {
+      "$type": "object",
+      "$value": {
+        "width": "1784px",
+        "columns": 16,
+        "alignment": "center",
+        "gutter": "32px",
+        "margin": null
+      },
+      "$extensions": {
+        "figma": {
+          "name": "CMS- MaxPlus - 1784",
+          "style": "GRID"
+        }
+      }
+    }
+  }
+}

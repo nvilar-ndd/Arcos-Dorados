@@ -1,0 +1,47 @@
+import { Meta, Unstyled } from '@storybook/blocks'
+
+<Meta title="Dashboard/Introducción" />
+
+<Unstyled>
+<div className="doc">
+  <p className="doc__eyebrow db-label02">Dashboard · Arcos Dorados</p>
+  <h1 className="doc__title db-h2">Dashboard Foundations</h1>
+  <p className="doc__lead db-body01">
+    Foundations del Dashboard (CMS) de Arcos Dorados. Por ahora viven separadas de ArchWay; el plan de unificación está en
+    {' '}<a href="https://github.com/nvilar-ndd/Arcos-Dorados/blob/main/Convergencia/dashboard-archway.md">Convergencia/dashboard-archway.md</a> y también en la sección <em>Convergencia</em> de este Storybook.
+  </p>
+
+  <section className="section">
+    <h2 className="section__title db-h4">Fuente de la verdad</h2>
+    <p className="section__lead db-body02">
+      Figma es la única fuente de la verdad. Este Storybook lee <code>Dashboard/tokens/dashboard.tokens.json</code>, exportado desde
+      {' '}<a href="https://www.figma.com/design/XKulGF78txFYDLNMstLShZ/-DashBoard--Fuondation">DashBoard Foundation</a>.
+    </p>
+  </section>
+
+  <section className="section">
+    <h2 className="section__title db-h4">Light y Dark</h2>
+    <p className="section__lead db-body02">
+      La colección Semantic de Dashboard tiene modo <strong>Light</strong> y <strong>Dark</strong>. Cambiá de modo con el selector de tema
+      (ícono de círculo) de la barra superior: todas las páginas, incluida la tabla de contraste, usan los valores del modo activo.
+    </p>
+  </section>
+
+  <section className="section">
+    <h2 className="section__title db-h4">Qué tiene y qué no</h2>
+    <div className="table-wrap">
+      <table className="spec db-body02">
+        <thead><tr><th>Foundation</th><th>Estado</th></tr></thead>
+        <tbody>
+          <tr><td>Color</td><td>Primitives + Semantic con Light y Dark</td></tr>
+          <tr><td>Tipografía</td><td>16 estilos (Speedee + Roboto Mono), sin variables</td></tr>
+          <tr><td>Espaciado y layout</td><td>Escala por multiplicador + colección Layout</td></tr>
+          <tr><td>Radios</td><td>sm, md, lg, xl</td></tr>
+          <tr><td>Grilla y breakpoints</td><td>5 breakpoints, 6 grillas, tamaños de modal</td></tr>
+          <tr><td>Elevación y Motion</td><td>No existen (sí en ArchWay)</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</div>
+</Unstyled>

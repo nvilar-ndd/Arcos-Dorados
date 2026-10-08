@@ -63,6 +63,10 @@ Foundations que todavía no existen en Figma (iconografía, breakpoints, opacida
 cd Archway/storybook && npm install && npm run dev   # http://localhost:6006
 ```
 
+## Convergencia
+
+ArchWay es el destino de los demás sistemas. El análisis de unificación de Dashboard está en [`../Convergencia/dashboard-archway.md`](../Convergencia/dashboard-archway.md).
+
 ## Principios de consumo
 
 - **Sólo tokens semánticos** en componentes y en código. Nunca primitivos ni valores hardcodeados.
