@@ -24,6 +24,8 @@ Mismo flujo que ArchWay: Figma (SSOT) → extracción vía MCP → [`audit.md`](
 
 [`components/`](./components/README.md) — 27 familias (Button, Text field, Dropdown, Toggle, Checkbox, Radio, Date picker, Calendar, File uploader, Tabs, Accordion, Pagination, Link, Tag, Tooltip, Notification, Modal, Progress, Hr, Scroll, Images, Carousel, Card, Card List, Selectable Card, Data table). Fuente: página *Components*.
 
+**Código:** los componentes están desarrollados en [`ui/`](./ui/README.md) — Vue 3 + TypeScript strict + Tailwind alimentado por los tokens — y se previsualizan en el Storybook.
+
 ## Estructura (UI shell)
 
 [`structure/`](./structure/README.md) — Header + PanelLeft, SubPanelLeft y arquitectura de la información. Fuente: páginas *⮑ UI shell / Header + PanelLeft* y *⮑ SubPanelLeft*.
@@ -43,7 +45,7 @@ Mismo flujo que ArchWay: Figma (SSOT) → extracción vía MCP → [`audit.md`](
 
 ## Storybook
 
-[`storybook/`](./storybook) — separado del de ArchWay, con selector Light/Dark.
+[`storybook/`](./storybook) — separado del de ArchWay, con selector Light/Dark. Muestra foundations, docs y la vista previa interactiva de cada componente y plantilla.
 
 ```bash
 cd Dashboard/storybook && npm install && npm run dev   # http://localhost:6007
@@ -65,6 +67,7 @@ Dashboard/
 ├── components/                 ← un .md por familia + README (índice)
 ├── structure/                  ← ui-shell, header, left-panel, sub-panel-left, IA
 ├── usage/                      ← ui-templates, page-templates
+├── ui/                         ← componentes Vue 3 + TS + Tailwind (preset desde tokens) + stories
 ├── tokens/
 │   └── dashboard.tokens.json   ← generado desde Figma
 └── storybook/                  ← Vue 3 + Vite, Light/Dark

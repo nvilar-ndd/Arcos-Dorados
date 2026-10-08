@@ -1,8 +1,8 @@
 import type { StorybookConfig } from '@storybook/vue3-vite'
 
 const config: StorybookConfig = {
-  stories: ['../src/**/*.mdx', '../src/**/*.stories.ts'],
-  addons: ['@storybook/addon-essentials', '@storybook/addon-a11y'],
+  stories: ['../src/**/*.mdx', '../src/**/*.stories.ts', '../../ui/stories/**/*.stories.ts'],
+  addons: ['@storybook/addon-essentials', '@storybook/addon-a11y', 'storybook-addon-pseudo-states'],
   framework: { name: '@storybook/vue3-vite', options: {} },
   // Speedee: archivos locales fuera de git (ver fonts/README.md)
   staticDirs: [{ from: '../fonts', to: '/fonts' }],

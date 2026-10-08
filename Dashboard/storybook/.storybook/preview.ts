@@ -1,6 +1,7 @@
 import type { Preview } from '@storybook/vue3'
 import '../src/generated/tokens.css'
 import '../src/styles/docs.css'
+import '../../ui/src/styles/ui.css'
 
 const preview: Preview = {
   globalTypes: {

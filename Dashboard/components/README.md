@@ -56,4 +56,8 @@ Los componentes de la estructura de la app (Header, Left panel, SubPanelLeft) es
 
 ## Código
 
-Todavía no se genera código de componentes: primero se aprueban los hallazgos del audit y se completan las descripciones en Figma. Cuando se genere, será Nuxt 4 + Vue 3 (`<script setup lang="ts">`, TS strict) + Tailwind consumiendo `--db-*`, y SwiftUI / Jetpack Compose si el componente aplica a mobile.
+Todos los componentes están desarrollados en [`Dashboard/ui`](../ui/README.md) (Vue 3 + TypeScript strict + Tailwind alimentado por los tokens `--db-*`) y se previsualizan en el Storybook del Dashboard: cada página de esta carpeta muestra su vista previa interactiva arriba del documento.
+
+El visual replica Figma. Lo único agregado es accesibilidad que no cambia el diseño: HTML semántico, teclado, ARIA y el anillo de foco `db-focus` (propuesta [D-C06](../audit.md#d-c06--foco-visible)). Los hallazgos del audit **no** se corrigen en código hasta que se aprueben en Figma.
+
+iOS (SwiftUI) y Android (Compose) quedan para cuando estos componentes se usen fuera del Dashboard web.

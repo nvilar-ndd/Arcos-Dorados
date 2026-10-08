@@ -1,0 +1,54 @@
+/*
+ * Dashboard UI — capa base de la librería.
+ * Requiere las variables --db-* (tokens.css generado desde dashboard.tokens.json) cargadas antes.
+ *
+ * El preflight de Tailwind está apagado para no pisar estilos de la app que consume la librería,
+ * así que cada componente lleva la clase raíz `db-ui`, que aplica un reset acotado.
+ * Todo el reset va dentro de :where() (especificidad 0) para que las utilidades y los
+ * estilos de texto `.db-*` siempre lo pisen.
+ */
+:where(.db-ui),
+:where(.db-ui) *,
+:where(.db-ui) ::before,
+:where(.db-ui) ::after {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: currentColor;
+}
+:where(.db-ui) :where(button, input, textarea, select) {
+  font: inherit;
+  color: inherit;
+  margin: 0;
+  background: transparent;
+  padding: 0;
+}
+:where(.db-ui) :where(button, [role='button'], label[for]) { cursor: pointer; }
+:where(.db-ui) :where(h1, h2, h3, h4, h5, h6, p, ul, ol, figure, fieldset, legend, dl, dd) { margin: 0; padding: 0; }
+:where(.db-ui) :where(ul, ol) { list-style: none; }
+:where(.db-ui) :where(img, svg, video) { display: block; max-width: 100%; }
+:where(.db-ui) :where(table) { border-collapse: collapse; }
+
+/* `base` con preflight apagado sólo emite las variables --tw-* que necesitan transform, ring y shadow. */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /*
+   * Anillo de foco del sistema — PROPUESTA del audit D-C06 (no existe en Figma).
+   * Se suma al estado "focused" de Figma sin reemplazarlo, sólo con teclado (:focus-visible).
+   */
+  .db-focus { outline: 2px solid transparent; outline-offset: 2px; }
+  .db-focus:focus-visible { outline-color: var(--db-border-01); }
+
+  /* Texto sólo para lectores de pantalla. */
+  .db-sr-only {
+    position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border-width: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .db-ui *, .db-ui *::before, .db-ui *::after { animation-duration: 1ms !important; transition-duration: 1ms !important; }
+}

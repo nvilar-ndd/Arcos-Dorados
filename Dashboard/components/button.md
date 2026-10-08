@@ -21,7 +21,7 @@ Disparar la acción principal o secundaria de una pantalla o formulario (guardar
 | Padding | 8 / 16 → `spacing/100` / `spacing/200` | `--db-spacing-100` / `--db-spacing-200` |
 | Gap ícono-texto | `spacing/100` (8) | `--db-spacing-100` |
 | Radio | **`spacing/100`** (8) — ver [D-C02](../audit.md#d-c02--radios-enlazados-a-spacing) | debería ser `--db-radius-md` |
-| Texto | estilo `Label02 - cms` | `.db-label-02` |
+| Texto | estilo `Label02 - cms` | `.db-label02` |
 | Ícono | opcional, 16 px | — |
 
 ## Variantes
@@ -36,12 +36,15 @@ Propiedad `Style`: **primary**, **secondary**, **eliminar** (destructivo) × `St
 | primary | pressed | `button/primary-pressed` | — | `button/primary-text` |
 | primary | disabled | `button/primary-disabled` | — | `text/disabled` |
 | secondary | enabled | `button/secondary` | `button/secondary-stroke` | `button/secondary-text` |
-| secondary | hovered / pressed | `button/secondary-hover` / `-pressed` | `button/secondary-stroke` | `button/secondary-text` |
+| secondary | hovered | `button/secondary-hover` | — | `button/secondary-text` |
+| secondary | focused | `button/secondary-focus` | `button/secondary-stroke` 1 px | `button/secondary-text` |
+| secondary | pressed | `button/secondary` | `button/secondary-stroke` | `button/secondary-text` |
 | secondary | disabled | `button/secondary-hover` | `border/03` | `text/disabled` |
-| eliminar | enabled | `button/red` | — | `button/red-text` |
-| eliminar | hovered / focused | `button/red-hover` | — | `button/red-text` |
-| eliminar | pressed | `button/red-pressed` | — | `button/red-text` |
-| eliminar | disabled | `button/red-disabled` | — | `text/disabled` |
+| eliminar | enabled | `button/red` | `button/secondary-stroke` 1 px | `button/red-text` |
+| eliminar | hovered | `button/red-hover` | — | `button/red-text` |
+| eliminar | focused | `button/red-hover` | `button/secondary-stroke` 1 px | `button/red-text` |
+| eliminar | pressed | `button/red-pressed` | `button/secondary-stroke` 1 px | `button/red-text` |
+| eliminar | disabled | `button/red-disabled` | `border/03` | `text/disabled` |
 
 ## Estados interactivos
 
@@ -69,3 +72,7 @@ Ancho por contenido (hug) en desktop. En los footers de formulario (ver [usage/p
 ## Convergencia con ArchWay
 
 ArchWay no tiene hover ni botón destructivo; el Dashboard los aporta. El pressed primario va en dirección opuesta (Dashboard oscurece, ArchWay aclara). Decisión pendiente: [Convergencia › D8](../../Convergencia/dashboard-archway.md#decisiones-necesarias-antes-de-empezar).
+
+## Código
+
+`DbButton` en [`Dashboard/ui`](../ui/README.md) · vista previa en Storybook › Componentes › Button.

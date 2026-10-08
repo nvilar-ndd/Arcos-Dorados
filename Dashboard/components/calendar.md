@@ -37,7 +37,7 @@ Documentación de Figma:
 | Pendiente de pago | `PENDING` | Reserva iniciada en la app sin completar el pago; lugar retenido por el tiempo configurado en el dashboard | Amarillo | `button/primary-disabled` |
 | Activa | `CONFIRMED` | Pago exitoso, reserva confirmada | Verde | `#E2EABF` suelto + borde `support/success` |
 | Cancelada | `CANCELLED` | Usuario o staff cancela antes del evento | Rojo | `color/tertiary/red-disabled` (primitivo) |
-| Finalizada | `COMPLETED` | Era `CONFIRMED` y la fecha ya pasó. Se ve *disabled* pero se puede abrir para ver información. **No implica asistencia confirmada** | Verde atenuado | — |
+| Finalizada | `COMPLETED` | Era `CONFIRMED` y la fecha ya pasó. Se ve *disabled* pero se puede abrir para ver información. **No implica asistencia confirmada** | Verde atenuado | — (en código: verde con borde punteado, para no bajar el contraste del texto) |
 | Ver [x] más | — | Más de 2 reservas en el día (activas o canceladas) | Gris | `layer/03` |
 | Slot | — | Sólo horario | Verde | `tag/background-green` |
 
