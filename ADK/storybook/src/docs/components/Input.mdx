@@ -1,6 +1,12 @@
-import { Meta, Markdown } from '@storybook/blocks'
+import { Meta, Markdown, Stories } from '@storybook/blocks'
+import * as S from '../../../../ui/stories/input.stories'
 import content from '../../../../components/input.md?raw'
 
-<Meta title="Componentes/Input" />
+<Meta of={S} name="Docs" />
 
-<Markdown>{content}</Markdown>
+{/* Encabezado del .md (título + fuente), luego la vista previa y después el resto del documento. */}
+<Markdown>{content.split('\n## ')[0]}</Markdown>
+
+<Stories title="Vista previa" includePrimary />
+
+<Markdown>{'## ' + content.split('\n## ').slice(1).join('\n## ')}</Markdown>

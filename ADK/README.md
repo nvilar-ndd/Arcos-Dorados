@@ -45,6 +45,8 @@ Mismo flujo que ArchWay y Dashboard:
 | Feedback | Snackbar, Alerta y Loaders |
 | Otros | Scroll Bar, Banners, Product, Attract / Logos / UI Shell |
 
+**Código:** los componentes están desarrollados en [`ui/`](./ui/README.md) (Vue 3 + TypeScript strict + Tailwind alimentado por los tokens) y se previsualizan en el Storybook, con pantallas completas armadas a 1080 × 1920.
+
 ## Tokens
 
 [`tokens/adk.tokens.json`](./tokens/adk.tokens.json), en formato W3C DTCG:
@@ -63,6 +65,7 @@ Mismo flujo que ArchWay y Dashboard:
 
 - Foundations con previews a tamaño real de kiosco.
 - Plantilla del lienzo 1080 × 1920 con sus zonas y el área accesible.
+- Vista previa interactiva de cada componente y pantallas completas (Home, detalle, resumen, factura, modo accesible).
 - Docs de componentes, audit y convergencia.
 
 ```bash
@@ -91,5 +94,6 @@ ADK/
 ├── foundations/        ← color, typography, spacing, layout
 ├── components/         ← un .md por familia + README
 ├── tokens/             ← adk.tokens.json
+├── ui/                 ← componentes Vue 3 + TS + Tailwind (preset desde tokens) + stories
 └── storybook/          ← Storybook 8 + Vue 3 (puerto 6008)
 ```

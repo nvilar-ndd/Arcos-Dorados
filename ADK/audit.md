@@ -12,7 +12,7 @@
 |---|---|---|---|
 | A-S01 | Sin variables propias: ~2.700 colores hex sueltos, sólo 28 nodos con variables (remotas de ArchWay) | 🔴 P0 | Pendiente |
 | A-T01 | 3.272 textos sin estilo (~1.170 en Speedee) contra 354 con estilo | 🔴 P0 | Pendiente |
-| A-A01 | Gold como único indicador de selección o progreso (1.69:1 sobre blanco) | 🔴 P0 | Pendiente |
+| A-A01 | Gold como único indicador en nav compacto (A11y) y loader (1.69:1 sobre blanco) | 🟠 P1 | Pendiente |
 | A-A02 | Bordes `#ADADAD` en Text Field, Dropdown y Toggle off (2.24:1) | 🔴 P0 | Pendiente |
 | A-C01 | Ningún componente tiene estado de foco | 🟠 P1 | Pendiente |
 | A-C05 | Text Field: Focused y Typing iguales al reposo (sólo cambia el cursor) | 🟠 P1 | Pendiente |
@@ -26,7 +26,8 @@
 | A-L02 | Área accesible sin reglas documentadas | 🟠 P1 | Pendiente |
 | A-C02 | Estado Inactive resuelto con opacidad 40 % en vez de tokens | 🟡 P2 | Pendiente |
 | A-C06 | Página *Product* en progreso (🟠) | 🟡 P2 | Pendiente |
-| A-C07 | Snackbar sin ícono ni tiempo de cierre definido | 🟡 P2 | Pendiente |
+| A-C07 | Snackbar sin tiempo de cierre definido | 🟡 P2 | Pendiente |
+| A-C08 | Toggle con nombres de variante invertidos (`Status=True` dibuja apagado) | 🟡 P2 | Pendiente |
 | A-S02 | Radios sueltos (5, 2, 3, 19, 6…) y pills como 100 / 99 | 🟡 P2 | Pendiente |
 | A-S03 | Sin effect styles: sombras repetidas como valores | 🟡 P2 | Pendiente |
 | A-T03 | Fuentes fuera del sistema (Speedee Light, IBM Plex Sans) | 🟡 P2 | Pendiente |
@@ -121,25 +122,27 @@ A 50–70 cm, 12 px equivale a ~7 px en un teléfono.
 
 ## Accesibilidad
 
-### A-A01 · Gold como único indicador 🔴
+### A-A01 · Gold como único indicador 🟠
 
-`#FFBC0D` sobre blanco da **1.69:1**. Se usa como único indicador en:
+`#FFBC0D` sobre blanco da **1.69:1**. La mayoría de los componentes ya suman un segundo indicador:
 
-- Chip seleccionado (fondo).
-- Nav seleccionado (borde, junto con fondo `#F9F9F9` a 1.05:1).
-- Product card seleccionada.
-- Loader circular.
+| Componente | Segundo indicador en Figma | Estado |
+|---|---|---|
+| Chip seleccionado | Texto Bold | ✅ |
+| Nav.menu-button / category-button | Barra Gold + texto Bold + fondo Ivory | ✅ |
+| Product card / Product Size | Check circular | ✅ |
+| Toggle | Posición del knob | ✅ |
+| **Nav compacto (A11y)** | Sólo ícono y barra inferior Gold | ❌ |
+| **Loader circular** | Sólo arco Gold | ❌ |
 
 **Criterio:** 1.4.1 (uso del color) y 1.4.11 (contraste no textual, 3:1).
 
-**Propuesta:** combinar el Gold con un segundo indicador:
+**Propuesta:**
 
-| Componente | Segundo indicador |
+| Componente | Propuesta |
 |---|---|
-| Chip | Check |
-| Nav | Barra `#292929` de 4 px + Bold |
-| Card | Borde 3 px + check |
-| Loader | Arco `#292929` o texto |
+| Nav compacto | Barra inferior `#292929`, o label visible debajo del ícono |
+| Loader | Track `#D6D6D6` + arco `#292929`, o texto visible ("Procesando tu pago…") |
 
 ### A-A02 · Bordes `#ADADAD` 🔴
 
@@ -169,7 +172,8 @@ El estado Error del Text Field cambia borde y label a rojo, sin ícono ni mensaj
 | A-C04 | Áreas de toque de 40 px | Mínimo 56 en kiosco (ver [layout § Tamaños de toque](./foundations/layout.md#tamaños-de-toque)) |
 | A-C05 | Text Field Focused igual al reposo | Borde `border.strong` 2 px en foco |
 | A-C06 | Product 🟠 | Cerrar estados (selected, agotado) y badges con tokens antes de desarrollar |
-| A-C07 | Snackbar | Ícono por estado, duración mínima 4 s y 6 s para Error |
+| A-C07 | Snackbar | Duración mínima 4 s y 6 s para Error; no cerrar mientras se toca |
+| A-C08 | Toggle: `Status=True` dibuja el estado apagado y `Status=False` el encendido | Renombrar a `On=True/False` |
 
 ## Layout
 

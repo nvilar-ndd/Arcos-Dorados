@@ -24,7 +24,7 @@ Todo lo que muestra un producto en el flujo: listado, detalle, personalización,
 | Estado | Detalle |
 |---|---|
 | Active | Imagen, nombre, precio |
-| Selected | Borde Gold |
+| Selected | Borde Gold + check circular Gold arriba a la derecha |
 | Disable | Producto agotado (*Outage*) |
 | Type | Product · Loyalty (canje con puntos) |
 
@@ -35,10 +35,10 @@ Badge de 32 de alto y `radius.full`:
 | Badge | Fondo | Token | Texto `#292929` |
 |---|---|---|---|
 | Nuevo | `#FFE49E` | `badge.new` | 11.67:1 ✅ |
-| Recomendado / Más vendido | `#E2EABF` | `badge.recommended` | 11.61:1 ✅ |
-| % Off / Últimos días | `#FE8234` (fuera de paleta) | — | 5.86:1 ✅ (con texto blanco, 2.48 ❌) |
-| McCombo del día | Gold | `badge.loyalty` | 8.63:1 ✅ |
-| Outage | — | — | Agotado |
+| Recomendado / Más vendido | `#E2EABF` · texto McDonald's Green (★ en Más vendido) | `badge.recommended` | ✅ |
+| % OFF | `#E2EABF` · texto McDonald's Green | `badge.recommended` | ✅ |
+| Últimos días / McCombo del día | Blanco + Link Visited al 20 % (≈ `#E8D9FE`) · texto Dark Blue | — (sin token) | ✅ |
+| No disponible (Outage) | `#D6D6D6` | `badge.loyalty-disabled` | 10.01:1 ✅ |
 
 | Loyalty Pill | Fondo | Token |
 |---|---|---|
@@ -62,7 +62,7 @@ Ver Convergencia § Formatos.
 | Criterio | Detalle |
 |---|---|
 | Card | Un único `<button>` o `<a>` por card, con nombre accesible "Nombre, precio". Los badges van dentro del nombre accesible ("Nuevo") |
-| Seleccionada | Gold sobre blanco no alcanza 3:1 (A-A01): borde Gold 3 px + check |
+| Seleccionada | Borde Gold (1.69:1) + check: el check es el segundo indicador ✅ |
 | Agotado | No usar sólo opacidad: texto "Agotado" visible y `aria-disabled="true"` |
 | Precio | Formato local (`Intl.NumberFormat`) y moneda leída completa |
 | Imágenes | Guía de producto en la página *Guía para mercado*: 1440 × 1080, se muestra cuadrada. Definir recorte seguro |

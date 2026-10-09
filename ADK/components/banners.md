@@ -9,10 +9,11 @@
 
 | Pieza | Medida / token |
 |---|---|
-| Contenedor | 656 × 200 · `radius.s` 8 · `shadow.bordered-down` (0 8 16 #292929 / 16 %) |
+| Contenedor | 656 × 200 · fondo blanco · `radius.s` 8 · `shadow.bordered-down` (0 8 16 #292929 / 16 %) |
+| Anatomía | Ilustración a la izquierda · título · bajada Bold · CTA secundario ("Quiero registrarme") |
 | Margen de seguridad | 24 en todo el borde: texto e imagen clave no pueden salir de ahí |
-| Título | 36 Bold (`headline.small-bold`) |
-| Variante | `loyalty` (con gradiente Loyalty AB / BA) |
+| Título | 36 Bold (`headline.small-bold`); en loyalty la marca va con el gradiente Loyalty |
+| Variante | `loyalty` (texto de marca con gradiente Loyalty AB) |
 
 | Criterio | Detalle |
 |---|---|
@@ -25,15 +26,16 @@
 **Propósito:** acceso a una categoría desde el Home (módulo *Categorías*, 656 × 424 = 2 × 2).
 
 ```
-┌───────────── 320 ─────────────┐
-│          [ilustración          │   radius.m 12 · fondo blanco
-│           190 × 190]           │   borde #979797 (fuera de paleta)
-│     Nombre categoría (28)      │   200 de alto
-└────────────────────────────────┘
+┌──────────────── 320 ────────────────┐
+│                         ┌─────────┐ │  radius.m 12 · fondo blanco · elevación
+│  Nombre                 │ ilustr. │ │  nombre 28 Bold, padding 16
+│  categoría (28 Bold)    │ 190 →144│ │  ilustración de 190 recortada a 144
+│                         └─────────┘ │  200 de alto
+└─────────────────────────────────────┘
 ```
 
 | Criterio | Detalle |
 |---|---|
 | Tamaño | 320 × 200, holgado ✅ |
 | Nombre | 28 (`headline.extra-small`), siempre visible: la ilustración sola no alcanza |
-| Borde | `#979797` no está en la paleta. Usar `border.subtle` si es decorativo, o `border.default` si es el único límite del botón |
+| Límite | Lo da la elevación sobre fondo Ivory. Hay un `#979797` suelto en la capa (fuera de paleta, A-S04) |

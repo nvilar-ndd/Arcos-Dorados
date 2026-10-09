@@ -2,6 +2,7 @@ import type { Preview } from '@storybook/vue3'
 import { create } from '@storybook/theming/create'
 import '../src/generated/tokens.css'
 import '../src/styles/docs.css'
+import '../../ui/src/styles/ui.css'
 
 const preview: Preview = {
   parameters: {
@@ -17,6 +18,7 @@ const preview: Preview = {
           'ADK', ['Introducción'],
           'Foundations', ['Color', 'Tipografía', 'Espaciado y forma', 'Layout de kiosco', 'Formatos futuros'],
           'Componentes', ['Índice', '*'],
+          'Pantallas',
           'Audit',
           'Convergencia',
         ],

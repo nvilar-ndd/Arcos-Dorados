@@ -17,6 +17,10 @@
 | Product | [product.md](./product.md) | Product 🟠 | Product Card, Carrito, Custom, Size, Badges, Loyalty Pill |
 | Attract, Logos y UI Shell | [attract-screen.md](./attract-screen.md) | Attract Screen ✅ · Logos ✅ · UI Shell | `Attract Screen`, `Logos Arcos`, `Footers_shell` |
 
+## Código
+
+Cada familia está desarrollada en [`../ui/`](../ui/README.md) (Vue 3 + TypeScript + Tailwind con tokens) y tiene vista previa interactiva en el Storybook, junto a este doc.
+
 ## Mapa hacia ArchWay
 
 | ADK | ArchWay | Qué cambia al converger |
