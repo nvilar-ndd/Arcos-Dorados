@@ -1,0 +1,144 @@
+/*
+ * Layout de las páginas de documentación del Storybook de ADK.
+ * Consume sólo variables --adk-* generadas desde tokens/adk.tokens.json.
+ * Las páginas son de escritorio (no de kiosco): por eso usan los estilos chicos de la escala.
+ */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--adk-background-default);
+  color: var(--adk-text-primary);
+  font-family: var(--adk-font-family);
+  -webkit-font-smoothing: antialiased;
+}
+
+.doc {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--adk-spacing-48) var(--adk-spacing-32) var(--adk-spacing-80);
+}
+@media (max-width: 640px) {
+  .doc { padding: var(--adk-spacing-32) var(--adk-spacing-16) var(--adk-spacing-64); }
+}
+
+.doc__eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--adk-spacing-8);
+  margin: 0 0 var(--adk-spacing-8);
+  color: var(--adk-text-secondary);
+}
+.doc__eyebrow::before {
+  content: '';
+  width: 12px;
+  height: 12px;
+  border-radius: var(--adk-radius-xs);
+  background: var(--adk-background-brand);
+}
+.doc__title { margin: 0 0 var(--adk-spacing-16); }
+.doc__lead { max-width: 72ch; margin: 0 0 var(--adk-spacing-32); color: var(--adk-text-secondary); }
+
+.doc__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--adk-spacing-8);
+  margin: 0 0 var(--adk-spacing-48);
+  padding: 0;
+  list-style: none;
+}
+.doc__meta li {
+  padding: var(--adk-spacing-4) var(--adk-spacing-8);
+  border: 1px solid var(--adk-border-default);
+  border-radius: var(--adk-radius-full);
+  color: var(--adk-text-secondary);
+}
+a { color: var(--adk-link-default); }
+a:hover { color: var(--adk-link-hover); }
+a:visited { color: var(--adk-link-visited); }
+a:focus-visible { outline: 2px solid var(--adk-link-default); outline-offset: 2px; }
+
+.section { margin: 0 0 var(--adk-spacing-64); }
+.section__title { margin: 0 0 var(--adk-spacing-8); }
+.section__lead { max-width: 72ch; margin: 0 0 var(--adk-spacing-24); color: var(--adk-text-secondary); }
+
+.note {
+  display: flex;
+  gap: var(--adk-spacing-8);
+  max-width: 80ch;
+  margin: 0 0 var(--adk-spacing-24);
+  padding: var(--adk-spacing-16);
+  border-radius: var(--adk-radius-s);
+  background: var(--adk-background-subtle);
+  color: var(--adk-text-primary);
+}
+.note--warning { background: var(--adk-badge-new); }
+.note strong { white-space: nowrap; }
+
+code, .mono {
+  font-family: ui-monospace, 'SF Mono', Menlo, Consolas, monospace;
+  font-size: 0.8125rem;
+  letter-spacing: 0;
+}
+code {
+  padding: 1px var(--adk-spacing-4);
+  border-radius: var(--adk-radius-xs);
+  background: var(--adk-background-subtle);
+}
+
+.table-wrap {
+  overflow-x: auto;
+  border: 1px solid var(--adk-border-subtle);
+  border-radius: var(--adk-radius-s);
+}
+table.spec { width: 100%; border-collapse: collapse; }
+table.spec th,
+table.spec td {
+  padding: var(--adk-spacing-8) var(--adk-spacing-16);
+  border-bottom: 1px solid var(--adk-border-subtle);
+  text-align: left;
+  vertical-align: middle;
+}
+table.spec th {
+  background: var(--adk-background-subtle);
+  color: var(--adk-text-secondary);
+  font-weight: 700;
+  white-space: nowrap;
+}
+table.spec tr:last-child td { border-bottom: 0; }
+table.spec td.desc { max-width: 44ch; color: var(--adk-text-secondary); }
+
+.copy {
+  all: unset;
+  cursor: pointer;
+  border-radius: var(--adk-radius-xs);
+}
+.copy:hover code { background: var(--adk-background-muted); }
+.copy:focus-visible { outline: 2px solid var(--adk-link-default); outline-offset: 2px; }
+
+.badge {
+  display: inline-block;
+  padding: 2px var(--adk-spacing-8);
+  border: 1px solid currentColor;
+  border-radius: var(--adk-radius-full);
+  white-space: nowrap;
+}
+/* Verde de texto: McDonald's Green (primitivo; ADK no tiene semántico de texto de éxito). */
+.badge--pass { color: var(--adk-color-tertiary-green); }
+.badge--large { color: var(--adk-text-primary); }
+.badge--fail { color: var(--adk-text-error); }
+.badge--neutral { color: var(--adk-text-secondary); }
+
+.swatch {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid var(--adk-border-subtle);
+  border-radius: var(--adk-radius-xs);
+  vertical-align: middle;
+}
+
+/* Páginas Markdown de Storybook: los links dentro de texto se subrayan (WCAG 1.4.1, link-in-text-block). */
+.sbdocs a { text-decoration: underline; }

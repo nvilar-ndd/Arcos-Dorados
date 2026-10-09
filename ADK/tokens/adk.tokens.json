@@ -1,0 +1,1945 @@
+{
+  "$description": "ADK (Advance Kiosk) — tokens relevados de Figma \"[ADK] Design System\" (IAqK97JM1KkMLs1VWGGTkv) el 2026-10-09. ADK no tiene variables propias: los primitivos salen de la página Colors y de los text styles; los semánticos son una PROPUESTA derivada del uso en componentes, con su destino en ArchWay en $extensions.archway.",
+  "primitives": {
+    "color": {
+      "primary": {
+        "gold": {
+          "$type": "color",
+          "$value": "#FFBC0D",
+          "$extensions": {
+            "figma": {
+              "name": "McDonald's Gold",
+              "page": "Colors"
+            },
+            "archway": {
+              "nearest": "primitives.color.gold.500",
+              "value": "#FFBC0D",
+              "deltaE": 0.0,
+              "match": "Igual"
+            }
+          }
+        },
+        "red": {
+          "$type": "color",
+          "$value": "#DB0007",
+          "$extensions": {
+            "figma": {
+              "name": "McDonald's Red",
+              "page": "Colors"
+            },
+            "archway": {
+              "nearest": "primitives.color.red.600",
+              "value": "#DB0007",
+              "deltaE": 0.0,
+              "match": "Igual"
+            }
+          }
+        },
+        "black": {
+          "$type": "color",
+          "$value": "#292929",
+          "$extensions": {
+            "figma": {
+              "name": "Black",
+              "page": "Colors"
+            },
+            "archway": {
+              "nearest": "primitives.color.black.800",
+              "value": "#292929",
+              "deltaE": 0.0,
+              "match": "Igual"
+            }
+          }
+        },
+        "white": {
+          "$type": "color",
+          "$value": "#FFFFFF",
+          "$extensions": {
+            "figma": {
+              "name": "White",
+              "page": "Colors"
+            },
+            "archway": {
+              "nearest": "primitives.color.white.default",
+              "value": "#FFFFFF",
+              "deltaE": 0.0,
+              "match": "Igual"
+            }
+          }
+        }
+      },
+      "secondary": {
+        "blue": {
+          "$type": "color",
+          "$value": "#006BAE",
+          "$extensions": {
+            "figma": {
+              "name": "Blue",
+              "page": "Colors"
+            },
+            "archway": {
+              "nearest": "primitives.color.blue-dark.800",
+              "value": "#103C82",
+              "deltaE": 21.97,
+              "match": "Sin equivalente"
+            }
+          }
+        },
+        "dark-grey": {
+          "$type": "color",
+          "$value": "#6F6F6F",
+          "$extensions": {
+            "figma": {
+              "name": "Dark Grey",
+              "page": "Colors"
+            },
+            "archway": {
+              "nearest": "primitives.color.black.500",
+              "value": "#707070",
+              "deltaE": 0.4,
+              "match": "Igual"
+            }
+          }
+        },
+        "grey": {
+          "$type": "color",
+          "$value": "#ADADAD",
+          "$extensions": {
+            "figma": {
+              "name": "Grey",
+              "page": "Colors"
+            },
+            "archway": {
+              "nearest": "primitives.color.black.300",
+              "value": "#A8A8A8",
+              "deltaE": 1.86,
+              "match": "≈ redondeo"
+            }
+          }
+        },
+        "light-grey": {
+          "$type": "color",
+          "$value": "#D6D6D6",
+          "$extensions": {
+            "figma": {
+              "name": "Light Grey",
+              "page": "Colors"
+            },
+            "archway": {
+              "nearest": "primitives.color.black.100",
+              "value": "#DBDBDB",
+              "deltaE": 1.78,
+              "match": "≈ redondeo"
+            }
+          }
+        },
+        "ivory": {
+          "$type": "color",
+          "$value": "#F9F9F9",
+          "$extensions": {
+            "figma": {
+              "name": "Ivory",
+              "page": "Colors"
+            },
+            "archway": {
+              "nearest": "primitives.color.black.50",
+              "value": "#F5F5F5",
+              "deltaE": 1.39,
+              "match": "≈ redondeo"
+            }
+          }
+        }
+      },
+      "tertiary": {
+        "green": {
+          "$type": "color",
+          "$value": "#1F6437",
+          "$extensions": {
+            "figma": {
+              "name": "McDonald's Green",
+              "page": "Colors"
+            },
+            "archway": {
+              "nearest": "primitives.color.green.800",
+              "value": "#1F6538",
+              "deltaE": 0.45,
+              "match": "Igual"
+            }
+          }
+        },
+        "light-green": {
+          "$type": "color",
+          "$value": "#A9C141",
+          "$extensions": {
+            "figma": {
+              "name": "Light Green",
+              "page": "Colors"
+            },
+            "archway": {
+              "nearest": "primitives.color.lime.500",
+              "value": "#ADC44B",
+              "deltaE": 3.13,
+              "match": "Cercano"
+            }
+          }
+        },
+        "dark-blue": {
+          "$type": "color",
+          "$value": "#103C82",
+          "$extensions": {
+            "figma": {
+              "name": "Dark Blue",
+              "page": "Colors"
+            },
+            "archway": {
+              "nearest": "primitives.color.blue-dark.800",
+              "value": "#103C82",
+              "deltaE": 0.0,
+              "match": "Igual"
+            }
+          }
+        },
+        "light-blue": {
+          "$type": "color",
+          "$value": "#56AFD1",
+          "$extensions": {
+            "figma": {
+              "name": "Light Blue",
+              "page": "Colors"
+            },
+            "archway": {
+              "nearest": "primitives.color.blue-dark.300",
+              "value": "#A0C0F3",
+              "deltaE": 20.65,
+              "match": "Sin equivalente"
+            }
+          }
+        },
+        "fuchsia": {
+          "$type": "color",
+          "$value": "#9A0A4D",
+          "$description": "En Figma escrito \"Fuschia\"",
+          "$extensions": {
+            "figma": {
+              "name": "Fuschia",
+              "page": "Colors"
+            },
+            "archway": {
+              "nearest": "primitives.color.fuchsia.700",
+              "value": "#9A0A4D",
+              "deltaE": 0.0,
+              "match": "Igual"
+            }
+          }
+        },
+        "beige": {
+          "$type": "color",
+          "$value": "#B69A81",
+          "$extensions": {
+            "figma": {
+              "name": "Beige",
+              "page": "Colors"
+            },
+            "archway": {
+              "nearest": "primitives.color.black.300",
+              "value": "#A8A8A8",
+              "deltaE": 18.54,
+              "match": "Sin equivalente"
+            }
+          }
+        },
+        "gold-disabled": {
+          "$type": "color",
+          "$value": "#FFE49E",
+          "$description": "Equivale a Gold al 40 % sobre blanco (estado Inactive de botón)",
+          "$extensions": {
+            "figma": {
+              "name": "Gold Disabled",
+              "page": "Colors"
+            },
+            "archway": {
+              "nearest": "primitives.color.gold.200",
+              "value": "#FFE7A8",
+              "deltaE": 3.99,
+              "match": "Cercano"
+            }
+          }
+        },
+        "blue-disabled": {
+          "$type": "color",
+          "$value": "#CCF0FF",
+          "$description": "Única variable local del archivo (\"Color\"), sin uso",
+          "$extensions": {
+            "figma": {
+              "name": "Blue Disabled",
+              "page": "Colors"
+            },
+            "archway": {
+              "nearest": "primitives.color.blue-dark.100",
+              "value": "#E8F0FC",
+              "deltaE": 9.39,
+              "match": "Sin equivalente"
+            }
+          }
+        },
+        "green-disabled": {
+          "$type": "color",
+          "$value": "#E2EABF",
+          "$extensions": {
+            "figma": {
+              "name": "Green Disabled",
+              "page": "Colors"
+            },
+            "archway": {
+              "nearest": "primitives.color.lime.200",
+              "value": "#E2EABF",
+              "deltaE": 0.0,
+              "match": "Igual"
+            }
+          }
+        },
+        "dark-red": {
+          "$type": "color",
+          "$value": "#9A0005",
+          "$extensions": {
+            "figma": {
+              "name": "Dark Red",
+              "page": "Colors"
+            },
+            "archway": {
+              "nearest": "primitives.color.red.700",
+              "value": "#A80005",
+              "deltaE": 5.95,
+              "match": "Cercano"
+            }
+          }
+        }
+      },
+      "accent": {
+        "gold": {
+          "$type": "color",
+          "$value": "#C08B00",
+          "$description": "Borde del botón primario",
+          "$extensions": {
+            "figma": {
+              "name": "Accent Gold",
+              "page": "Colors"
+            },
+            "archway": {
+              "nearest": "primitives.color.gold.700",
+              "value": "#A87A00",
+              "deltaE": 9.47,
+              "match": "Sin equivalente"
+            }
+          }
+        },
+        "gold-hover": {
+          "$type": "color",
+          "$value": "#F1B417",
+          "$description": "Hover del botón primario",
+          "$extensions": {
+            "figma": {
+              "name": "Hover Gold",
+              "page": "Colors"
+            },
+            "archway": {
+              "nearest": "primitives.color.gold.500",
+              "value": "#FFBC0D",
+              "deltaE": 5.99,
+              "match": "Cercano"
+            }
+          }
+        },
+        "grey": {
+          "$type": "color",
+          "$value": "#959595",
+          "$extensions": {
+            "figma": {
+              "name": "Accent Grey",
+              "page": "Colors"
+            },
+            "archway": {
+              "nearest": "primitives.color.black.400",
+              "value": "#8F8F8F",
+              "deltaE": 2.3,
+              "match": "≈ redondeo"
+            }
+          }
+        }
+      },
+      "link": {
+        "default": {
+          "$type": "color",
+          "$value": "#0F62FE",
+          "$extensions": {
+            "figma": {
+              "name": "Link",
+              "page": "Colors"
+            },
+            "archway": {
+              "nearest": "primitives.color.blue-dark.600",
+              "value": "#1B67DF",
+              "deltaE": 21.47,
+              "match": "Sin equivalente"
+            }
+          }
+        },
+        "hover": {
+          "$type": "color",
+          "$value": "#054ADA",
+          "$extensions": {
+            "figma": {
+              "name": "Link Hover",
+              "page": "Colors"
+            },
+            "archway": {
+              "nearest": "primitives.color.blue-dark.600",
+              "value": "#1B67DF",
+              "deltaE": 20.79,
+              "match": "Sin equivalente"
+            }
+          }
+        },
+        "visited": {
+          "$type": "color",
+          "$value": "#8A3FFC",
+          "$extensions": {
+            "figma": {
+              "name": "Link Visited",
+              "page": "Colors"
+            },
+            "archway": {
+              "nearest": "primitives.color.violet.400",
+              "value": "#8A3FFC",
+              "deltaE": 0.0,
+              "match": "Igual"
+            }
+          }
+        }
+      },
+      "illustration": {
+        "ground-shadow": {
+          "$type": "color",
+          "$value": "#F1F1F1",
+          "$description": "Hover del botón secundario. En la página Colors figura como \"#F1F1F\" (hex mal escrito)",
+          "$extensions": {
+            "figma": {
+              "name": "Ground Shadow",
+              "page": "Colors"
+            },
+            "archway": {
+              "nearest": "primitives.color.black.50",
+              "value": "#F5F5F5",
+              "deltaE": 1.39,
+              "match": "≈ redondeo"
+            }
+          }
+        },
+        "neutral-grey": {
+          "$type": "color",
+          "$value": "#EAEAEA",
+          "$extensions": {
+            "figma": {
+              "name": "Neutral Grey",
+              "page": "Colors"
+            },
+            "archway": {
+              "nearest": "primitives.color.black.50",
+              "value": "#F5F5F5",
+              "deltaE": 3.84,
+              "match": "Cercano"
+            }
+          }
+        }
+      },
+      "undocumented": {
+        "grey-808080": {
+          "$type": "color",
+          "$value": "#808080",
+          "$description": "155 usos en componentes; no está en la paleta",
+          "$extensions": {
+            "figma": {
+              "name": "— (sin nombre)"
+            },
+            "archway": {
+              "nearest": "primitives.color.black.400",
+              "value": "#8F8F8F",
+              "deltaE": 5.82,
+              "match": "Cercano"
+            }
+          }
+        },
+        "black-000000": {
+          "$type": "color",
+          "$value": "#000000",
+          "$description": "92 usos; negro puro fuera de la paleta",
+          "$extensions": {
+            "figma": {
+              "name": "— (sin nombre)"
+            },
+            "archway": {
+              "nearest": "primitives.color.black.900",
+              "value": "#0F0F0F",
+              "deltaE": 4.31,
+              "match": "Cercano"
+            }
+          }
+        },
+        "error-red": {
+          "$type": "color",
+          "$value": "#FA4D56",
+          "$description": "Borde de Snackbar Error; no está en la paleta",
+          "$extensions": {
+            "figma": {
+              "name": "— (sin nombre)"
+            },
+            "archway": {
+              "nearest": "primitives.color.red.400",
+              "value": "#FF4248",
+              "deltaE": 8.67,
+              "match": "Sin equivalente"
+            }
+          }
+        },
+        "orange": {
+          "$type": "color",
+          "$value": "#FE8234",
+          "$description": "Badges de oferta; coincide con ArchWay orange/400",
+          "$extensions": {
+            "figma": {
+              "name": "— (sin nombre)"
+            },
+            "archway": {
+              "nearest": "primitives.color.orange.400",
+              "value": "#FE8234",
+              "deltaE": 0.0,
+              "match": "Igual"
+            }
+          }
+        }
+      }
+    },
+    "dimension": {
+      "0": {
+        "$type": "dimension",
+        "$value": "0px"
+      },
+      "2": {
+        "$type": "dimension",
+        "$value": "2px"
+      },
+      "3": {
+        "$type": "dimension",
+        "$value": "3px"
+      },
+      "4": {
+        "$type": "dimension",
+        "$value": "4px"
+      },
+      "8": {
+        "$type": "dimension",
+        "$value": "8px"
+      },
+      "12": {
+        "$type": "dimension",
+        "$value": "12px"
+      },
+      "16": {
+        "$type": "dimension",
+        "$value": "16px"
+      },
+      "20": {
+        "$type": "dimension",
+        "$value": "20px"
+      },
+      "24": {
+        "$type": "dimension",
+        "$value": "24px"
+      },
+      "28": {
+        "$type": "dimension",
+        "$value": "28px"
+      },
+      "32": {
+        "$type": "dimension",
+        "$value": "32px"
+      },
+      "48": {
+        "$type": "dimension",
+        "$value": "48px"
+      },
+      "56": {
+        "$type": "dimension",
+        "$value": "56px"
+      },
+      "64": {
+        "$type": "dimension",
+        "$value": "64px"
+      },
+      "72": {
+        "$type": "dimension",
+        "$value": "72px"
+      },
+      "80": {
+        "$type": "dimension",
+        "$value": "80px"
+      },
+      "88": {
+        "$type": "dimension",
+        "$value": "88px"
+      },
+      "96": {
+        "$type": "dimension",
+        "$value": "96px"
+      },
+      "104": {
+        "$type": "dimension",
+        "$value": "104px"
+      },
+      "112": {
+        "$type": "dimension",
+        "$value": "112px"
+      }
+    }
+  },
+  "semantic": {
+    "background": {
+      "default": {
+        "$type": "color",
+        "$value": "{primitives.color.primary.white}",
+        "$description": "Fondo de pantalla y de componentes",
+        "$extensions": {
+          "adk": {
+            "status": "proposed"
+          },
+          "archway": {
+            "target": "semantic.background.01",
+            "value": "#FFFFFF",
+            "deltaE": 0.0,
+            "match": "Igual"
+          }
+        }
+      },
+      "subtle": {
+        "$type": "color",
+        "$value": "{primitives.color.secondary.ivory}",
+        "$description": "Fondos suaves: \"Podrías sumar x pts\", nav seleccionado, track del toggle",
+        "$extensions": {
+          "adk": {
+            "status": "proposed"
+          },
+          "archway": {
+            "target": "semantic.background.02",
+            "value": "#F5F5F5",
+            "deltaE": 1.39,
+            "match": "≈ redondeo"
+          }
+        }
+      },
+      "muted": {
+        "$type": "color",
+        "$value": "{primitives.color.illustration.ground-shadow}",
+        "$description": "Hover del botón secundario",
+        "$extensions": {
+          "adk": {
+            "status": "proposed"
+          },
+          "archway": {
+            "target": "semantic.button.secondary-pressed",
+            "value": "#F5F5F5",
+            "deltaE": 1.39,
+            "match": "≈ redondeo"
+          }
+        }
+      },
+      "inverse": {
+        "$type": "color",
+        "$value": "{primitives.color.primary.black}",
+        "$description": "Snackbar",
+        "$extensions": {
+          "adk": {
+            "status": "proposed"
+          },
+          "archway": {
+            "target": "semantic.background.06",
+            "value": "#292929",
+            "deltaE": 0.0,
+            "match": "Igual"
+          }
+        }
+      },
+      "brand": {
+        "$type": "color",
+        "$value": "{primitives.color.primary.gold}",
+        "$description": "User footer (Attract/Default), chips seleccionados",
+        "$extensions": {
+          "adk": {
+            "status": "proposed"
+          },
+          "archway": {
+            "target": "semantic.layer.brand",
+            "value": "#FFBC0D",
+            "deltaE": 0.0,
+            "match": "Igual"
+          }
+        }
+      }
+    },
+    "text": {
+      "primary": {
+        "$type": "color",
+        "$value": "{primitives.color.primary.black}",
+        "$description": "Texto principal",
+        "$extensions": {
+          "adk": {
+            "status": "proposed"
+          },
+          "archway": {
+            "target": "semantic.text.primary",
+            "value": "#292929",
+            "deltaE": 0.0,
+            "match": "Igual"
+          }
+        }
+      },
+      "secondary": {
+        "$type": "color",
+        "$value": "{primitives.color.secondary.dark-grey}",
+        "$description": "Texto secundario, descripciones",
+        "$extensions": {
+          "adk": {
+            "status": "proposed"
+          },
+          "archway": {
+            "target": "semantic.text.secondary",
+            "value": "#5C5C5C",
+            "deltaE": 7.76,
+            "match": "Cercano"
+          }
+        }
+      },
+      "disabled": {
+        "$type": "color",
+        "$value": "{primitives.color.secondary.grey}",
+        "$description": "Texto deshabilitado",
+        "$extensions": {
+          "adk": {
+            "status": "proposed"
+          },
+          "archway": {
+            "target": "semantic.text.disabled",
+            "value": "#707070",
+            "deltaE": 23.49,
+            "match": "Distinto"
+          }
+        }
+      },
+      "on-color": {
+        "$type": "color",
+        "$value": "{primitives.color.primary.white}",
+        "$description": "Texto sobre fondos oscuros (Snackbar)",
+        "$extensions": {
+          "adk": {
+            "status": "proposed"
+          },
+          "archway": {
+            "target": "semantic.text.on-color",
+            "value": "#FFFFFF",
+            "deltaE": 0.0,
+            "match": "Igual"
+          }
+        }
+      },
+      "error": {
+        "$type": "color",
+        "$value": "{primitives.color.primary.red}",
+        "$description": "Error de Text Field",
+        "$extensions": {
+          "adk": {
+            "status": "proposed"
+          },
+          "archway": {
+            "target": "semantic.text.error",
+            "value": "#DB0007",
+            "deltaE": 0.0,
+            "match": "Igual"
+          }
+        }
+      }
+    },
+    "link": {
+      "default": {
+        "$type": "color",
+        "$value": "{primitives.color.link.default}",
+        "$description": "Link",
+        "$extensions": {
+          "adk": {
+            "status": "proposed"
+          },
+          "archway": {
+            "target": "semantic.link.default",
+            "value": "#1652B1",
+            "deltaE": 34.92,
+            "match": "Distinto"
+          }
+        }
+      },
+      "hover": {
+        "$type": "color",
+        "$value": "{primitives.color.link.hover}",
+        "$description": "Link hover",
+        "$extensions": {
+          "adk": {
+            "status": "proposed"
+          },
+          "archway": {
+            "target": "semantic.link.hover",
+            "value": "#1B67DF",
+            "deltaE": 20.79,
+            "match": "Distinto"
+          }
+        }
+      },
+      "visited": {
+        "$type": "color",
+        "$value": "{primitives.color.link.visited}",
+        "$description": "Link visitado",
+        "$extensions": {
+          "adk": {
+            "status": "proposed"
+          },
+          "archway": {
+            "target": "semantic.link.visited",
+            "value": "#8703B0",
+            "deltaE": 26.73,
+            "match": "Distinto"
+          }
+        }
+      }
+    },
+    "border": {
+      "default": {
+        "$type": "color",
+        "$value": "{primitives.color.secondary.dark-grey}",
+        "$description": "Borde de botón secundario, chips y selección inactiva",
+        "$extensions": {
+          "adk": {
+            "status": "proposed"
+          },
+          "archway": {
+            "target": "semantic.button.secondary-stroke",
+            "value": "#8F8F8F",
+            "deltaE": 12.57,
+            "match": "Distinto"
+          }
+        }
+      },
+      "subtle": {
+        "$type": "color",
+        "$value": "{primitives.color.secondary.light-grey}",
+        "$description": "Divisores, track del scroll",
+        "$extensions": {
+          "adk": {
+            "status": "proposed"
+          },
+          "archway": {
+            "target": "semantic.border.soft",
+            "value": "#DBDBDB",
+            "deltaE": 1.78,
+            "match": "≈ redondeo"
+          }
+        }
+      },
+      "strong": {
+        "$type": "color",
+        "$value": "{primitives.color.primary.black}",
+        "$description": "Quantity, inputs activos",
+        "$extensions": {
+          "adk": {
+            "status": "proposed"
+          },
+          "archway": {
+            "target": "semantic.border.input-active",
+            "value": "#292929",
+            "deltaE": 0.0,
+            "match": "Igual"
+          }
+        }
+      },
+      "selected": {
+        "$type": "color",
+        "$value": "{primitives.color.primary.gold}",
+        "$description": "Selección activa (3px), nav seleccionado",
+        "$extensions": {
+          "adk": {
+            "status": "proposed"
+          },
+          "archway": {
+            "target": "semantic.interactive.active",
+            "value": "#FFBC0D",
+            "deltaE": 0.0,
+            "match": "Igual"
+          }
+        }
+      },
+      "error": {
+        "$type": "color",
+        "$value": "{primitives.color.primary.red}",
+        "$description": "Text Field en error",
+        "$extensions": {
+          "adk": {
+            "status": "proposed"
+          },
+          "archway": {
+            "target": "semantic.feedback.error",
+            "value": "#DB0007",
+            "deltaE": 0.0,
+            "match": "Igual"
+          }
+        }
+      }
+    },
+    "button": {
+      "primary": {
+        "$type": "color",
+        "$value": "{primitives.color.primary.gold}",
+        "$description": "Botón primario Active",
+        "$extensions": {
+          "adk": {
+            "status": "proposed"
+          },
+          "archway": {
+            "target": "semantic.button.primary",
+            "value": "#FFBC0D",
+            "deltaE": 0.0,
+            "match": "Igual"
+          }
+        }
+      },
+      "primary-hover": {
+        "$type": "color",
+        "$value": "{primitives.color.accent.gold-hover}",
+        "$description": "Botón primario Hover",
+        "$extensions": {
+          "adk": {
+            "status": "proposed"
+          },
+          "archway": {
+            "target": null,
+            "match": "Sin equivalente",
+            "note": "ArchWay no tiene hover (ver Dashboard D8)"
+          }
+        }
+      },
+      "primary-stroke": {
+        "$type": "color",
+        "$value": "{primitives.color.accent.gold}",
+        "$description": "Borde 1px del botón primario",
+        "$extensions": {
+          "adk": {
+            "status": "proposed"
+          },
+          "archway": {
+            "target": null,
+            "match": "Sin equivalente",
+            "note": "ArchWay no tiene borde en el primario"
+          }
+        }
+      },
+      "primary-inactive": {
+        "$type": "color",
+        "$value": "{primitives.color.tertiary.gold-disabled}",
+        "$description": "Botón primario Inactive (en Figma: Gold al 40 % de opacidad)",
+        "$extensions": {
+          "adk": {
+            "status": "proposed"
+          },
+          "archway": {
+            "target": "semantic.button.primary-disabled",
+            "value": "#FFF5DB",
+            "deltaE": 24.44,
+            "match": "Distinto"
+          }
+        }
+      },
+      "secondary": {
+        "$type": "color",
+        "$value": "{primitives.color.primary.white}",
+        "$description": "Botón secundario",
+        "$extensions": {
+          "adk": {
+            "status": "proposed"
+          },
+          "archway": {
+            "target": "semantic.button.secondary",
+            "value": "#FFFFFF",
+            "deltaE": 0.0,
+            "match": "Igual"
+          }
+        }
+      },
+      "secondary-hover": {
+        "$type": "color",
+        "$value": "{primitives.color.illustration.ground-shadow}",
+        "$description": "Botón secundario Hover",
+        "$extensions": {
+          "adk": {
+            "status": "proposed"
+          },
+          "archway": {
+            "target": "semantic.button.secondary-pressed",
+            "value": "#F5F5F5",
+            "deltaE": 1.39,
+            "match": "≈ redondeo"
+          }
+        }
+      },
+      "text": {
+        "$type": "color",
+        "$value": "{primitives.color.primary.black}",
+        "$description": "Texto de botones",
+        "$extensions": {
+          "adk": {
+            "status": "proposed"
+          },
+          "archway": {
+            "target": "semantic.button.text-enabled",
+            "value": "#292929",
+            "deltaE": 0.0,
+            "match": "Igual"
+          }
+        }
+      }
+    },
+    "control": {
+      "track": {
+        "$type": "color",
+        "$value": "{primitives.color.secondary.ivory}",
+        "$description": "Track del toggle apagado",
+        "$extensions": {
+          "adk": {
+            "status": "proposed"
+          },
+          "archway": {
+            "target": "semantic.chip.disabled-bg",
+            "value": "#F5F5F5",
+            "deltaE": 1.39,
+            "match": "≈ redondeo"
+          }
+        }
+      },
+      "track-stroke": {
+        "$type": "color",
+        "$value": "{primitives.color.secondary.grey}",
+        "$description": "Borde del track apagado",
+        "$extensions": {
+          "adk": {
+            "status": "proposed"
+          },
+          "archway": {
+            "target": "semantic.border.default",
+            "value": "#8F8F8F",
+            "deltaE": 11.32,
+            "match": "Distinto"
+          }
+        }
+      },
+      "on": {
+        "$type": "color",
+        "$value": "{primitives.color.primary.gold}",
+        "$description": "Toggle encendido, chip seleccionado",
+        "$extensions": {
+          "adk": {
+            "status": "proposed"
+          },
+          "archway": {
+            "target": "semantic.interactive.active",
+            "value": "#FFBC0D",
+            "deltaE": 0.0,
+            "match": "Igual"
+          }
+        }
+      },
+      "on-stroke": {
+        "$type": "color",
+        "$value": "{primitives.color.accent.gold}",
+        "$description": "Borde del toggle encendido",
+        "$extensions": {
+          "adk": {
+            "status": "proposed"
+          },
+          "archway": {
+            "target": null,
+            "match": "Sin equivalente"
+          }
+        }
+      }
+    },
+    "scroll": {
+      "track": {
+        "$type": "color",
+        "$value": "{primitives.color.secondary.light-grey}",
+        "$description": "Track de la barra de scroll",
+        "$extensions": {
+          "adk": {
+            "status": "proposed"
+          },
+          "archway": {
+            "target": "semantic.background.03",
+            "value": "#DBDBDB",
+            "deltaE": 1.78,
+            "match": "≈ redondeo"
+          }
+        }
+      },
+      "thumb": {
+        "$type": "color",
+        "$value": "{primitives.color.secondary.grey}",
+        "$description": "Thumb de la barra de scroll",
+        "$extensions": {
+          "adk": {
+            "status": "proposed"
+          },
+          "archway": {
+            "target": "semantic.background.04",
+            "value": "#C2C2C2",
+            "deltaE": 7.71,
+            "match": "Cercano"
+          }
+        }
+      }
+    },
+    "feedback": {
+      "success": {
+        "$type": "color",
+        "$value": "{primitives.color.tertiary.light-green}",
+        "$description": "Borde de Snackbar Success",
+        "$extensions": {
+          "adk": {
+            "status": "proposed"
+          },
+          "archway": {
+            "target": "semantic.feedback.success-on-black",
+            "value": "#2B8C4D",
+            "deltaE": 43.84,
+            "match": "Distinto"
+          }
+        }
+      },
+      "error": {
+        "$type": "color",
+        "$value": "{primitives.color.undocumented.error-red}",
+        "$description": "Borde de Snackbar Error",
+        "$extensions": {
+          "adk": {
+            "status": "proposed"
+          },
+          "archway": {
+            "target": "semantic.feedback.error-on-black",
+            "value": "#FF4248",
+            "deltaE": 8.67,
+            "match": "Distinto"
+          }
+        }
+      },
+      "warning": {
+        "$type": "color",
+        "$value": "{primitives.color.primary.gold}",
+        "$description": "Borde de Snackbar Warning",
+        "$extensions": {
+          "adk": {
+            "status": "proposed"
+          },
+          "archway": {
+            "target": "semantic.feedback.warning",
+            "value": "#FFBC0D",
+            "deltaE": 0.0,
+            "match": "Igual"
+          }
+        }
+      },
+      "info": {
+        "$type": "color",
+        "$value": "{primitives.color.tertiary.light-blue}",
+        "$description": "Borde de Snackbar Info",
+        "$extensions": {
+          "adk": {
+            "status": "proposed"
+          },
+          "archway": {
+            "target": "semantic.feedback.info-on-black",
+            "value": "#4584E8",
+            "deltaE": 44.46,
+            "match": "Distinto"
+          }
+        }
+      }
+    },
+    "badge": {
+      "new": {
+        "$type": "color",
+        "$value": "{primitives.color.tertiary.gold-disabled}",
+        "$description": "Badge \"Nuevo\"",
+        "$extensions": {
+          "adk": {
+            "status": "proposed"
+          },
+          "archway": {
+            "target": "semantic.feedback.warning-surface",
+            "value": "#FFE7A8",
+            "deltaE": 3.99,
+            "match": "Cercano"
+          }
+        }
+      },
+      "recommended": {
+        "$type": "color",
+        "$value": "{primitives.color.tertiary.green-disabled}",
+        "$description": "Badge \"Recomendado\" / \"Más vendido\"",
+        "$extensions": {
+          "adk": {
+            "status": "proposed"
+          },
+          "archway": {
+            "target": "semantic.feedback.success-surface",
+            "value": "#C8EED6",
+            "deltaE": 14.34,
+            "match": "Distinto"
+          }
+        }
+      },
+      "loyalty": {
+        "$type": "color",
+        "$value": "{primitives.color.primary.gold}",
+        "$description": "Loyalty pill",
+        "$extensions": {
+          "adk": {
+            "status": "proposed"
+          },
+          "archway": {
+            "target": "semantic.layer.brand",
+            "value": "#FFBC0D",
+            "deltaE": 0.0,
+            "match": "Igual"
+          }
+        }
+      },
+      "loyalty-disabled": {
+        "$type": "color",
+        "$value": "{primitives.color.secondary.light-grey}",
+        "$description": "Loyalty pill sin puntos suficientes",
+        "$extensions": {
+          "adk": {
+            "status": "proposed"
+          },
+          "archway": {
+            "target": "semantic.background.03",
+            "value": "#DBDBDB",
+            "deltaE": 1.78,
+            "match": "≈ redondeo"
+          }
+        }
+      }
+    },
+    "spacing": {
+      "0": {
+        "$type": "dimension",
+        "$value": "{primitives.dimension.0}"
+      },
+      "4": {
+        "$type": "dimension",
+        "$value": "{primitives.dimension.4}",
+        "$extensions": {
+          "figma": {
+            "name": "Spacer 4"
+          }
+        }
+      },
+      "8": {
+        "$type": "dimension",
+        "$value": "{primitives.dimension.8}",
+        "$extensions": {
+          "figma": {
+            "name": "Spacer 8"
+          }
+        }
+      },
+      "16": {
+        "$type": "dimension",
+        "$value": "{primitives.dimension.16}",
+        "$extensions": {
+          "figma": {
+            "name": "Spacer 16"
+          }
+        }
+      },
+      "24": {
+        "$type": "dimension",
+        "$value": "{primitives.dimension.24}",
+        "$extensions": {
+          "figma": {
+            "name": "Spacer 24"
+          }
+        }
+      },
+      "32": {
+        "$type": "dimension",
+        "$value": "{primitives.dimension.32}",
+        "$extensions": {
+          "figma": {
+            "name": "Spacer 32"
+          }
+        }
+      },
+      "48": {
+        "$type": "dimension",
+        "$value": "{primitives.dimension.48}",
+        "$extensions": {
+          "figma": {
+            "name": "Spacer 48"
+          }
+        }
+      },
+      "56": {
+        "$type": "dimension",
+        "$value": "{primitives.dimension.56}",
+        "$extensions": {
+          "figma": {
+            "name": "Spacer 56"
+          }
+        }
+      },
+      "64": {
+        "$type": "dimension",
+        "$value": "{primitives.dimension.64}",
+        "$extensions": {
+          "figma": {
+            "name": "Spacer 64"
+          }
+        }
+      },
+      "72": {
+        "$type": "dimension",
+        "$value": "{primitives.dimension.72}",
+        "$extensions": {
+          "figma": {
+            "name": "Spacer 72"
+          }
+        }
+      },
+      "80": {
+        "$type": "dimension",
+        "$value": "{primitives.dimension.80}",
+        "$extensions": {
+          "figma": {
+            "name": "Spacer 80"
+          }
+        }
+      },
+      "88": {
+        "$type": "dimension",
+        "$value": "{primitives.dimension.88}",
+        "$extensions": {
+          "figma": {
+            "name": "Spacer 88"
+          }
+        }
+      },
+      "96": {
+        "$type": "dimension",
+        "$value": "{primitives.dimension.96}",
+        "$extensions": {
+          "figma": {
+            "name": "Spacer 96"
+          }
+        }
+      },
+      "104": {
+        "$type": "dimension",
+        "$value": "{primitives.dimension.104}",
+        "$extensions": {
+          "figma": {
+            "name": "Spacer 104"
+          }
+        }
+      },
+      "112": {
+        "$type": "dimension",
+        "$value": "{primitives.dimension.112}",
+        "$extensions": {
+          "figma": {
+            "name": "Spacer 112"
+          }
+        }
+      }
+    },
+    "radius": {
+      "xs": {
+        "$type": "dimension",
+        "$value": "4px",
+        "$description": "Botones, inputs (349 usos)"
+      },
+      "s": {
+        "$type": "dimension",
+        "$value": "8px",
+        "$description": "Cards de producto, banners, nav menu, snackbar (105)"
+      },
+      "m": {
+        "$type": "dimension",
+        "$value": "12px",
+        "$description": "Botones de categoría (32)"
+      },
+      "l": {
+        "$type": "dimension",
+        "$value": "16px",
+        "$description": "Cards Loyalty, botón ilustración, scroll (58)"
+      },
+      "xl": {
+        "$type": "dimension",
+        "$value": "20px",
+        "$description": "Quantity y chips de 40px (36)"
+      },
+      "full": {
+        "$type": "dimension",
+        "$value": "9999px",
+        "$description": "Pills y badges (100/99 en Figma, 208 usos)"
+      }
+    },
+    "border-width": {
+      "default": {
+        "$type": "dimension",
+        "$value": "1px",
+        "$description": "Bordes de botón, chips, inputs"
+      },
+      "focus": {
+        "$type": "dimension",
+        "$value": "2px",
+        "$description": "PROPUESTA: anillo de foco"
+      },
+      "selected": {
+        "$type": "dimension",
+        "$value": "3px",
+        "$description": "Selección activa (botón Selection, nav)"
+      }
+    },
+    "font": {
+      "family": {
+        "$type": "fontFamily",
+        "$value": "Speedee"
+      }
+    }
+  },
+  "typography": {
+    "display": {
+      "large-bold": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{semantic.font.family}",
+          "fontSize": "128px",
+          "lineHeight": "128px",
+          "fontWeight": 700,
+          "letterSpacing": "-0.15px"
+        },
+        "$extensions": {
+          "figma": {
+            "name": "ADK/DIsplay/Large bold",
+            "style": "TEXT"
+          }
+        }
+      },
+      "medium-bold": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{semantic.font.family}",
+          "fontSize": "80px",
+          "lineHeight": "80px",
+          "fontWeight": 700,
+          "letterSpacing": "-0.15px"
+        },
+        "$extensions": {
+          "figma": {
+            "name": "ADK/DIsplay/Medium Bold",
+            "style": "TEXT"
+          }
+        }
+      },
+      "medium": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{semantic.font.family}",
+          "fontSize": "80px",
+          "lineHeight": "80px",
+          "fontWeight": 400,
+          "letterSpacing": "-0.15px"
+        },
+        "$extensions": {
+          "figma": {
+            "name": "ADK/DIsplay/Medium",
+            "style": "TEXT"
+          }
+        }
+      }
+    },
+    "headline": {
+      "extra-large-bold": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{semantic.font.family}",
+          "fontSize": "60px",
+          "lineHeight": "64px",
+          "fontWeight": 700,
+          "letterSpacing": "-0.15px"
+        },
+        "$extensions": {
+          "figma": {
+            "name": "ADK/Headline/Extra Large Bold",
+            "style": "TEXT"
+          }
+        }
+      },
+      "large-bold": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{semantic.font.family}",
+          "fontSize": "48px",
+          "lineHeight": "52px",
+          "fontWeight": 700,
+          "letterSpacing": "-0.15px"
+        },
+        "$extensions": {
+          "figma": {
+            "name": "ADK/Headline/Large Bold",
+            "style": "TEXT"
+          }
+        }
+      },
+      "large": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{semantic.font.family}",
+          "fontSize": "48px",
+          "lineHeight": "52px",
+          "fontWeight": 400,
+          "letterSpacing": "-0.15px"
+        },
+        "$extensions": {
+          "figma": {
+            "name": "ADK/Headline/Large",
+            "style": "TEXT"
+          }
+        }
+      },
+      "medium-bold": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{semantic.font.family}",
+          "fontSize": "40px",
+          "lineHeight": "44px",
+          "fontWeight": 700,
+          "letterSpacing": "-0.15px"
+        },
+        "$extensions": {
+          "figma": {
+            "name": "ADK/Headline/Medium Bold",
+            "style": "TEXT"
+          }
+        }
+      },
+      "medium": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{semantic.font.family}",
+          "fontSize": "40px",
+          "lineHeight": "44px",
+          "fontWeight": 400,
+          "letterSpacing": "-0.15px"
+        },
+        "$extensions": {
+          "figma": {
+            "name": "ADK/Headline/Medium",
+            "style": "TEXT"
+          }
+        }
+      },
+      "small-bold": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{semantic.font.family}",
+          "fontSize": "36px",
+          "lineHeight": "40px",
+          "fontWeight": 700,
+          "letterSpacing": "-0.15px"
+        },
+        "$description": "Se llama \"Small\" pero es Bold",
+        "$extensions": {
+          "figma": {
+            "name": "ADK/Headline/Small",
+            "style": "TEXT"
+          }
+        }
+      },
+      "extra-small-bold": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{semantic.font.family}",
+          "fontSize": "28px",
+          "lineHeight": "32px",
+          "fontWeight": 700,
+          "letterSpacing": "-0.15px"
+        },
+        "$extensions": {
+          "figma": {
+            "name": "ADK/Headline/Extra Small Bold",
+            "style": "TEXT"
+          }
+        }
+      },
+      "extra-small": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{semantic.font.family}",
+          "fontSize": "28px",
+          "lineHeight": "32px",
+          "fontWeight": 400,
+          "letterSpacing": "-0.15px"
+        },
+        "$extensions": {
+          "figma": {
+            "name": "ADK/Headline/Extra Small",
+            "style": "TEXT"
+          }
+        }
+      }
+    },
+    "body": {
+      "large-bold": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{semantic.font.family}",
+          "fontSize": "24px",
+          "lineHeight": "28px",
+          "fontWeight": 700,
+          "letterSpacing": "0px"
+        },
+        "$extensions": {
+          "figma": {
+            "name": "ADK/Body/Large Bold",
+            "style": "TEXT"
+          }
+        }
+      },
+      "large": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{semantic.font.family}",
+          "fontSize": "24px",
+          "lineHeight": "28px",
+          "fontWeight": 400,
+          "letterSpacing": "0px"
+        },
+        "$extensions": {
+          "figma": {
+            "name": "ADK/Body/Large",
+            "style": "TEXT"
+          }
+        }
+      },
+      "medium-bold": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{semantic.font.family}",
+          "fontSize": "22px",
+          "lineHeight": "26px",
+          "fontWeight": 700,
+          "letterSpacing": "0px"
+        },
+        "$extensions": {
+          "figma": {
+            "name": "ADK/Body/Medium Bold",
+            "style": "TEXT"
+          }
+        }
+      },
+      "medium": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{semantic.font.family}",
+          "fontSize": "22px",
+          "lineHeight": "26px",
+          "fontWeight": 400,
+          "letterSpacing": "0px"
+        },
+        "$extensions": {
+          "figma": {
+            "name": "ADK/Body/Medium",
+            "style": "TEXT"
+          }
+        }
+      },
+      "small-bold": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{semantic.font.family}",
+          "fontSize": "16px",
+          "lineHeight": "20px",
+          "fontWeight": 700,
+          "letterSpacing": "0px"
+        },
+        "$extensions": {
+          "figma": {
+            "name": "ADK/Body/Small Bold",
+            "style": "TEXT"
+          }
+        }
+      },
+      "small": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{semantic.font.family}",
+          "fontSize": "16px",
+          "lineHeight": "20px",
+          "fontWeight": 400,
+          "letterSpacing": "0px"
+        },
+        "$extensions": {
+          "figma": {
+            "name": "ADK/Body/Small",
+            "style": "TEXT"
+          }
+        }
+      }
+    },
+    "utility": {
+      "small": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{semantic.font.family}",
+          "fontSize": "12px",
+          "lineHeight": "16px",
+          "fontWeight": 400,
+          "letterSpacing": "0px"
+        },
+        "$extensions": {
+          "figma": {
+            "name": "ADK/Utility/Small",
+            "style": "TEXT"
+          }
+        }
+      },
+      "alert": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{semantic.font.family}",
+          "fontSize": "16px",
+          "lineHeight": "20px",
+          "fontWeight": 400,
+          "letterSpacing": "0px"
+        },
+        "$extensions": {
+          "figma": {
+            "name": "ADK/Utility/Alert",
+            "style": "TEXT"
+          }
+        }
+      },
+      "link": {
+        "$type": "typography",
+        "$value": {
+          "fontFamily": "{semantic.font.family}",
+          "fontSize": "16px",
+          "lineHeight": "20px",
+          "fontWeight": 400,
+          "letterSpacing": "0px",
+          "textDecoration": "underline"
+        },
+        "$extensions": {
+          "figma": {
+            "name": "ADK/Utility/Link",
+            "style": "TEXT"
+          }
+        }
+      }
+    }
+  },
+  "shadow": {
+    "bordered-down": {
+      "$type": "shadow",
+      "$value": {
+        "color": "#29292929",
+        "offsetX": "0px",
+        "offsetY": "8px",
+        "blur": "16px",
+        "spread": "0px"
+      },
+      "$description": "Nav.menu, banners, cards (100 usos). Sin estilo de efecto en Figma."
+    },
+    "bordered-up": {
+      "$type": "shadow",
+      "$value": {
+        "color": "#29292929",
+        "offsetX": "0px",
+        "offsetY": "-8px",
+        "blur": "16px",
+        "spread": "0px"
+      },
+      "$description": "Footer flotante (40 usos)."
+    }
+  },
+  "gradient": {
+    "loyalty-ab": {
+      "$type": "gradient",
+      "$value": [
+        {
+          "color": "#910063",
+          "position": 0.001
+        },
+        {
+          "color": "#990059",
+          "position": 0.036
+        },
+        {
+          "color": "#b60035",
+          "position": 0.173
+        },
+        {
+          "color": "#ca001c",
+          "position": 0.301
+        },
+        {
+          "color": "#d7000c",
+          "position": 0.417
+        },
+        {
+          "color": "#db0007",
+          "position": 0.51
+        },
+        {
+          "color": "#e8720a",
+          "position": 1.0
+        }
+      ],
+      "$description": "Idéntico a ArchWay",
+      "$extensions": {
+        "figma": {
+          "name": "Loyalty AB"
+        }
+      }
+    },
+    "loyalty-ba": {
+      "$type": "gradient",
+      "$value": [
+        {
+          "color": "#e8720a",
+          "position": 0.0
+        },
+        {
+          "color": "#db0007",
+          "position": 0.51
+        },
+        {
+          "color": "#d7000c",
+          "position": 0.62
+        },
+        {
+          "color": "#ca001c",
+          "position": 0.729
+        },
+        {
+          "color": "#b60035",
+          "position": 0.828
+        },
+        {
+          "color": "#990059",
+          "position": 0.922
+        },
+        {
+          "color": "#910063",
+          "position": 1.0
+        }
+      ],
+      "$description": "Idéntico a ArchWay",
+      "$extensions": {
+        "figma": {
+          "name": "Loyalty BA"
+        }
+      }
+    }
+  },
+  "layout": {
+    "screen-width": {
+      "$type": "dimension",
+      "$value": "1080px",
+      "$description": "Kiosco vertical 9:16"
+    },
+    "screen-height": {
+      "$type": "dimension",
+      "$value": "1920px"
+    },
+    "header-height": {
+      "$type": "dimension",
+      "$value": "192px",
+      "$description": "Header"
+    },
+    "margin-left": {
+      "$type": "dimension",
+      "$value": "32px",
+      "$description": "Margen izquierdo (nav)"
+    },
+    "nav-width": {
+      "$type": "dimension",
+      "$value": "248px",
+      "$description": "Columna de navegación lateral"
+    },
+    "column-gap": {
+      "$type": "dimension",
+      "$value": "48px",
+      "$description": "Separación nav ↔ contenido"
+    },
+    "content-width": {
+      "$type": "dimension",
+      "$value": "656px",
+      "$description": "Columna de contenido"
+    },
+    "margin-right": {
+      "$type": "dimension",
+      "$value": "96px",
+      "$description": "Margen derecho (incluye scroll)"
+    },
+    "scrollbar-width": {
+      "$type": "dimension",
+      "$value": "16px",
+      "$description": "Barra de scroll (x = 1032)"
+    },
+    "module-gap": {
+      "$type": "dimension",
+      "$value": "56px",
+      "$description": "Separación vertical entre módulos"
+    },
+    "footer-height": {
+      "$type": "dimension",
+      "$value": "248px",
+      "$description": "Footer flotante (y = 1672)"
+    },
+    "safe-area-height": {
+      "$type": "dimension",
+      "$value": "800px",
+      "$description": "Zona de alcance accesible (desde abajo). Variante extendida: 960"
+    },
+    "safe-area-height-extended": {
+      "$type": "dimension",
+      "$value": "960px"
+    },
+    "touch-target-min": {
+      "$type": "dimension",
+      "$value": "56px",
+      "$description": "PROPUESTA: mínimo en kiosco (Figma depreca 40px en footer)"
+    }
+  },
+  "breakpoint": {
+    "kiosk": {
+      "$type": "dimension",
+      "$value": "1080px",
+      "$description": "Único formato existente (1080×1920). Tablet y \"small kiosk\" son propuestas en Convergencia/adk-archway.md"
+    }
+  }
+}
