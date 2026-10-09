@@ -1,0 +1,7 @@
+import { Meta, Markdown } from '@storybook/blocks'
+import content from '../../../../Convergencia/adk-archway.md?raw'
+
+<Meta title="Convergencia/ADK a ArchWay" />
+
+{/* Las casillas de GitHub (- [ ]) se muestran como ☐ para no generar inputs sin label. */}
+<Markdown>{content.replaceAll('- [ ] ', '- ☐ ')}</Markdown>

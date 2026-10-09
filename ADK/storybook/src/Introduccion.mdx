@@ -1,0 +1,57 @@
+import { Meta, Unstyled } from '@storybook/blocks'
+
+<Meta title="ADK/Introducción" />
+
+<Unstyled>
+<div className="doc">
+  <p className="doc__eyebrow adk-utility-small">ADK · Advance Kiosk · Arcos Dorados</p>
+  <h1 className="doc__title adk-headline-medium-bold">ADK Design System</h1>
+  <p className="doc__lead adk-body-small">
+    Foundations y componentes de los kioscos de autoservicio: Web, pantalla vertical de 1080 × 1920 dentro del local, touch.
+    Por ahora separado de ArchWay; todo lo que hay que ajustar para usar las foundations de ArchWay está en
+    {' '}<a href="https://github.com/nvilar-ndd/Arcos-Dorados/blob/main/Convergencia/adk-archway.md">Convergencia/adk-archway.md</a> y en la sección <em>Convergencia</em> de este Storybook.
+  </p>
+
+  <section className="section">
+    <h2 className="section__title adk-headline-extra-small-bold">Fuente de la verdad</h2>
+    <p className="section__lead adk-body-small">
+      Figma es la única fuente de la verdad:
+      {' '}<a href="https://www.figma.com/design/IAqK97JM1KkMLs1VWGGTkv/-ADK--Design-System">[ADK] Design System</a>.
+      ADK <strong>no tiene variables</strong>: este Storybook lee <code>ADK/tokens/adk.tokens.json</code>, que registra la paleta, los 20 text styles
+      y los valores relevados de los componentes, con el destino de cada uno en ArchWay.
+    </p>
+  </section>
+
+  <section className="section">
+    <h2 className="section__title adk-headline-extra-small-bold">Qué tiene y qué no</h2>
+    <div className="table-wrap">
+      <table className="spec adk-body-small">
+        <thead><tr><th>Foundation</th><th>Estado en Figma</th></tr></thead>
+        <tbody>
+          <tr><td>Color</td><td>Paleta documentada (31 colores de UI), sin variables. ~2.700 hex sueltos en componentes</td></tr>
+          <tr><td>Tipografía</td><td>20 text styles Speedee (12–128 px). 3.272 textos sin estilo</td></tr>
+          <tr><td>Espaciado</td><td>14 spacers (4–112), sin variables</td></tr>
+          <tr><td>Radios, bordes, elevación</td><td>No documentados: relevados del uso</td></tr>
+          <tr><td>Layout</td><td>Lienzo único 1080 × 1920 + área accesible 800 / 960</td></tr>
+          <tr><td>Breakpoints, motion, dark mode</td><td>No existen</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section className="section">
+    <h2 className="section__title adk-headline-extra-small-bold">Secciones</h2>
+    <div className="table-wrap">
+      <table className="spec adk-body-small">
+        <thead><tr><th>Sección</th><th>Contenido</th></tr></thead>
+        <tbody>
+          <tr><td>Foundations</td><td>Color con su equivalente en ArchWay, contraste, tipografía a tamaño real y el modo kiosk propuesto, espaciado y forma, plantilla de kiosco con área accesible, y los formatos futuros (Kiosk S y Tablet)</td></tr>
+          <tr><td>Componentes</td><td>11 familias documentadas: anatomía, tokens, estados, responsive y accesibilidad</td></tr>
+          <tr><td>Audit</td><td>25 hallazgos priorizados (P0–P3), pendientes de aprobación</td></tr>
+          <tr><td>Convergencia</td><td>Decisiones K1–K13, plan por fases, reglas de binding y formatos tablet / pantallas chicas</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+</div>
+</Unstyled>
