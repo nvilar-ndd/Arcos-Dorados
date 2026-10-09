@@ -11,18 +11,18 @@ Columna izquierda de 248 px para moverse entre **categorías del menú** y para 
 
 | Pieza | Medida | Tokens |
 |---|---|---|
-| `Nav.menu-button` | 248 × 56 | Seleccionado: `background.subtle` `#F9F9F9` + `border.selected` Gold. Default: sin fondo |
-| `Nav.menu-button` accesible | 80 × 48 | Versión compacta para el modo accesible |
-| `Nav.menu` | 248 × 352 | `radius.s` 8 · `shadow.bordered-down` |
-| `nav.category-button` | 248 × 56 | Ícono/ilustración + nombre de categoría |
+| `Nav.menu-button` | 248 × 56 · padding 4/16 · gap 24 | Ícono 48 (`#ADADAD`, Gold seleccionado) + texto 16. Seleccionado: fondo `background.subtle` + barra izquierda Gold + **Bold** |
+| `Nav.menu-button` accesible | 80 × 48 | Sólo ícono 32; seleccionado con barra inferior Gold |
+| `Nav.menu` | 248 × 352 | `radius.s` 8 · `shadow.bordered-down`. Arriba, User points: "¡Hola, {nombre}!" 28, "Tienes disponibles" 16 y puntos 40 Bold con el gradiente Loyalty |
+| `nav.category-button` | 248 × 56 | Ilustración en círculo Ivory de 48 + nombre 16. Seleccionado: barra Gold + Bold |
 | User points | 248 | Puntos del usuario logueado |
-| Progress Bar (pasos) | 248 × 56 por paso | Paso actual, completado y pendiente |
+| Progress Bar (pasos) | 248 × 56 por paso | Pendiente: círculo vacío · Actual: barra Gold + Bold + Ivory · Completo: check Gold |
 
 ```
 ┌───────────────── 248 ─────────────────┐
 │ [ilustr.]  Hamburguesas               │  56 · default
 ├───────────────────────────────────────┤
-│▌[ilustr.]  McCombos                   │  56 · seleccionado (#F9F9F9 + Gold)
+│▌[ilustr.]  McCombos (Bold)            │  56 · seleccionado (Ivory + barra Gold)
 ├───────────────────────────────────────┤
 │ [ilustr.]  Postres                    │
 └───────────────────────────────────────┘
@@ -50,6 +50,6 @@ No hay estado *pressed* ni *focus*.
 
 | Criterio | Detalle |
 |---|---|
-| Selección | Hoy se indica con fondo `#F9F9F9` (1.05:1 vs blanco) + borde Gold (1.69:1). Ninguno de los dos llega a 3:1, así que proponemos sumar barra lateral `#292929` de 4 px o texto Bold (A-A01) |
+| Selección | Fondo Ivory (1.05:1) y barra Gold (1.69:1) no llegan a 3:1, pero el texto Bold es un segundo indicador ✅. En la versión compacta (sólo ícono) no hay texto: falla (A-A01) |
 | Semántica | `<nav aria-label="Categorías">` + lista. Ítem actual con `aria-current="page"` |
 | Pasos | `<ol>` con `aria-current="step"` |

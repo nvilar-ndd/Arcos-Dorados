@@ -18,19 +18,19 @@ El kiosco no tiene teclado físico, así que **el teclado en pantalla es parte d
 ```
 Label (16 · text.secondary)
 ┌────────────────────────────────────────────────────────────┐
-│ Input text (22 · text.primary)|                   [⌨ 38×26] │  888 × 104 · fondo blanco · radio 0
-└────────────────────────────────────────────────────────────┘  borde #ADADAD (por lado)
+│ [🪪 38×26]  Input text (22 · text.primary)|                  │  888 × 104 · fondo blanco · radio 0
+└────────────────────────────────────────────────────────────┘  sólo línea inferior #ADADAD
 Helper text (22 · text.secondary)                                total 888 × 136
 ```
 
 | Pieza | Medida | Tokens actuales |
 |---|---|---|
-| Campo | 888 × 104 | `background.default` · borde `secondary.grey` `#ADADAD` · radio 0 |
+| Campo | 888 × 104 | `background.default` · **sólo línea inferior** `secondary.grey` `#ADADAD` · radio 0 |
 | Label | 16 Regular | `text.secondary` `#6F6F6F` |
 | Valor | 22 Regular | `text.primary` |
 | Helper | 22 Regular | `text.secondary` |
 | Placeholder | 22 Regular | `#ADADAD` |
-| Ícono de teclado | 38 × 26 | `#292929` |
+| Ícono a la izquierda | 38 × 26 | `#292929` (p. ej. documento) |
 | Dropdown | 888 × 104 cerrado | Chevron de 48 px |
 | Lista del dropdown | 888 × 336 | Opciones de 64 de alto. Seleccionada: `background.subtle` + borde Gold |
 | Keyboard | 704 × 575 | Teclas de 48 px, texto 28–48 |

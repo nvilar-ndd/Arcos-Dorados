@@ -3,14 +3,43 @@
     "target": "ES2022",
     "module": "ESNext",
     "moduleResolution": "Bundler",
-    "lib": ["ES2022", "DOM", "DOM.Iterable"],
+    "lib": [
+      "ES2022",
+      "DOM",
+      "DOM.Iterable"
+    ],
     "strict": true,
     "noImplicitOverride": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
     "skipLibCheck": true,
     "jsx": "preserve",
-    "types": ["vite/client"]
+    "types": [
+      "vite/client"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "vue": [
+        "./node_modules/vue"
+      ],
+      "lucide-vue-next": [
+        "./node_modules/lucide-vue-next"
+      ],
+      "@storybook/vue3": [
+        "./node_modules/@storybook/vue3"
+      ],
+      "tailwindcss": [
+        "./node_modules/tailwindcss"
+      ]
+    }
   },
-  "include": ["src/**/*.ts", "src/**/*.vue", ".storybook/**/*.ts", "vite.config.ts"]
+  "include": [
+    "src/**/*.ts",
+    "src/**/*.vue",
+    ".storybook/**/*.ts",
+    "vite.config.ts",
+    "tailwind.config.ts",
+    "../ui/**/*.ts",
+    "../ui/**/*.vue"
+  ]
 }

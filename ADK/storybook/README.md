@@ -25,7 +25,8 @@ Corre en el puerto **6008**, así se puede tener abierto junto con ArchWay (6006
 | Foundations › Espaciado y forma | Spacers, radios, bordes, sombras y gradientes |
 | Foundations › Layout de kiosco | Lienzo 1080 × 1920 armado con los tokens de layout, con capas de zonas y del área accesible (800 / 960) |
 | Foundations › Formatos futuros | El mismo shell en Kiosk, Kiosk S y Tablet con container queries (propuesta) |
-| Componentes › * | Doc de cada familia (`../components/*.md`) |
+| Componentes › * | Vista previa interactiva (`../ui/stories`) + doc de la familia (`../components/*.md`) |
+| Pantallas | Flujos completos a 1080 × 1920 armados con los componentes |
 | Audit | `../audit.md` |
 | Convergencia | `Convergencia/adk-archway.md` |
 

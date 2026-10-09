@@ -25,7 +25,7 @@
 |---|---|
 | Accesibilidad | `role="status"` (`aria-live="polite"`); Error con `role="alert"` |
 | Tiempo de cierre | Ninguno documentado: proponemos 4 s mínimo y 6 s para Error, sin cerrar mientras se toca (2.2.1) |
-| Ícono | Necesario además del color del borde |
+| Ícono | Figma ya tiene ícono por estado (check, octógono, triángulo, info) ✅ |
 | Posición | Dentro del área accesible, arriba del footer |
 
 ## Alerta
