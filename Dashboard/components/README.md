@@ -44,13 +44,14 @@ Los componentes de la estructura de la app (Header, Left panel, SubPanelLeft) es
 | Card | [card.md](./card.md) | [4688:5247](https://www.figma.com/design/XKulGF78txFYDLNMstLShZ/-DashBoard--Fuondation?node-id=4688-5247) | Falta · ✅ guías por tipo |
 | Card List | [card-list.md](./card-list.md) | [4298:13547](https://www.figma.com/design/XKulGF78txFYDLNMstLShZ/-DashBoard--Fuondation?node-id=4298-13547) | ✅ |
 | Selectable Card | [selectable-card.md](./selectable-card.md) | [6603:5033](https://www.figma.com/design/XKulGF78txFYDLNMstLShZ/-DashBoard--Fuondation?node-id=6603-5033) | ✅ completa |
+| Empty state | [empty-state.md](./empty-state.md) | [6749:5101](https://www.figma.com/design/XKulGF78txFYDLNMstLShZ/-DashBoard--Fuondation?node-id=6749-5101) | Falta · ✅ texto de sección (nuevo 2026-10-15) |
 | Data table — Read-only | [data-table.md](./data-table.md) | [671:25687](https://www.figma.com/design/XKulGF78txFYDLNMstLShZ/-DashBoard--Fuondation?node-id=671-25687) | ✅ |
 
 **Fuera de alcance:** `Utilidades` (componentes internos de documentación), los componentes marcados "No se puede usar!" y el frame *Componentes pendientes!!!!* (trabajo en curso: grupo de cards, text field y card de resumen). El frame *Modo dark* sólo contiene una prueba de `Notification+ProgresBar`.
 
 ## Estado general
 
-- **27 familias** documentadas; **17** tienen "Descripción: Falta agregar" en Figma ([D-C01](../audit.md#d-c01--descripciones-faltantes)).
+- **28 familias** documentadas (Empty state se sumó en Figma el 2026-10-15); **17** tienen "Descripción: Falta agregar" en Figma ([D-C01](../audit.md#d-c01--descripciones-faltantes)).
 - Todos usan la tipografía `* - cms` y tokens semánticos del Dashboard, con excepciones: radios enlazados a `spacing/*` ([D-C02](../audit.md#d-c02--radios-enlazados-a-spacing)), primitivos enlazados directo ([D-C03](../audit.md#d-c03--primitivos-enlazados-directo)), hex sueltos ([D-C04](../audit.md#d-c04--colores-sin-variable)) y variables de otra librería ([D-C05](../audit.md#d-c05--variables-de-otra-librería)).
 - El foco de teclado es el estado más débil del sistema ([D-C06](../audit.md#d-c06--foco-visible)).
 

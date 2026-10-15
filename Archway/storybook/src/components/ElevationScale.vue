@@ -38,7 +38,7 @@ const families = computed(() =>
 .elev {
   padding: var(--aw-spacing-32);
   border-radius: var(--aw-radius-l);
-  background: var(--aw-layer-02);
+  background: var(--aw-surface-subtle);
 }
 .elev__family + .elev__family { margin-top: var(--aw-spacing-40); }
 .elev__title { margin: 0 0 var(--aw-spacing-16); }
@@ -53,7 +53,7 @@ const families = computed(() =>
 .card {
   padding: var(--aw-spacing-24);
   border-radius: var(--aw-radius-m);
-  background: var(--aw-layer-01);
+  background: var(--aw-surface-default);
 }
 .card__name { margin: 0 0 var(--aw-spacing-4); }
 .card__spec { margin: 0 0 var(--aw-spacing-8); color: var(--aw-text-secondary); }

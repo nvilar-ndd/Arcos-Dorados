@@ -239,8 +239,8 @@ Tokens de componente Button (primary, secondary, red, transparent, skeleton).
 | `button/primary-text` | `black/800` #292929 | `black/800` #292929 | `--db-button-primary-text` | — |
 | `button/primary-enabled` | `gold/500` #ffbc0d | `gold/500` #ffbc0d | `--db-button-primary-enabled` | — |
 | `button/primary-hover` | `gold/300` #ffd46a | `gold/700` #ad7d00 | `--db-button-primary-hover` | — |
-| `button/primary-hover-transparent` | `#ffbc0d33` | `#ffbc0d33` | `--db-button-primary-hover-transparent` | Utilizado en los estados de los switch |
-| `button/primary-focus` | `accessible/gold` #c08800 | `gold/300` #ffd46a | `--db-button-primary-focus` | Se aplica al elemento cuando recibe el foco |
+| `button/primary-hover-transparent` | `#ffbc0d33` | `#ffbc0d33` | `--db-button-primary-hover-transparent` | — *(descripción eliminada en Figma, 2026-10-15; antes: "Utilizado en los estados de los switch")* |
+| `button/primary-focus` | `accessible/gold` #c08800 | `gold/300` #ffd46a | `--db-button-primary-focus` | — *(descripción eliminada en Figma, 2026-10-15; antes: "Se aplica al elemento cuando recibe el foco")* |
 | `button/primary-pressed` | `accessible/gold` #c08800 | `gold/300` #ffd46a | `--db-button-primary-pressed` | — |
 | `button/primary-pressed-transparent` | `#ffbc0d66` | `#ffbc0d66` | `--db-button-primary-pressed-transparent` | — |
 | `button/primary-disabled` | `tertiary/gold-disabled` #ffe49e | `tertiary/gold-disabled` #ffe49e | `--db-button-primary-disabled` | — |

@@ -1,0 +1,126 @@
+Border/default|C|>color/black/400|STROKE_COLOR|ANDROID:theme.color.border.default|Chip stroke, Secondary button stroke, Input enabled
+Border/soft|C|>color/black/100|STROKE_COLOR|ANDROID:theme.color.border.soft|Borde suave para campos de texto en estado default. Menos prominente que Border/default para no competir con el contenido. Uso en Input Text Field enabled.
+Button/primary-bg|C|>color/gold/500|FRAME_FILL,SHAPE_FILL|ANDROID:theme.color.button.primaryBg|Fondo del botón primario en estado enabled.
+Chip/icon|C|>color/black/800|SHAPE_FILL,STROKE_COLOR|ANDROID:theme.color.chip.icon|Color del ícono dentro del chip en estado enabled.
+Feature/missions|C|>color/purple/800|ALL_SCOPES|ANDROID:theme.color.feature.missions|Color sólido de identidad del programa Misiones — íconos, texto o fondos donde se necesita el purple pleno (no un tint). Usar Misiones-surface para fondos claros que necesiten contraste con este color.
+Feature/missions-surface|C|>color/purple/100|FRAME_FILL,SHAPE_FILL|ANDROID:theme.color.feature.missionsSurface|Color de fondo/superficie de la identidad del programa Misiones (cards, headers, íconos).
+Feature/accessibility|C|>color/blue/700|ALL_SCOPES|ANDROID:theme.color.feature.accessibility|Color del ícono/indicador de accesibilidad — señala que un elemento tiene una función o ajuste de accesibilidad disponible.
+Feedback/error|C|>color/red/600|ALL_SCOPES|ANDROID:theme.color.feedback.error|Input error border, Tag urgencia primary bg
+Feedback/error-on-black|C|>color/red/400|SHAPE_FILL,TEXT_FILL|ANDROID:theme.color.feedback.errorOnBlack|Variante de feedback/error, ajustada para pasar contraste sobre fondo negro (Layer/06). Usar solo en componentes con ese fondo — no es dark mode, no reemplaza al feedback original en el resto del sistema.
+Interactive/active|C|>color/gold/500|FRAME_FILL,SHAPE_FILL|ANDROID:theme.color.interactive.active|Chip selected, Switch ON, Toggle activo
+Highlight/new|C|>color/violet/400|FRAME_FILL,SHAPE_FILL|ANDROID:theme.color.highlight.new|Indica al usuario que algo es nuevo o que nunca fue visto antes — funcionalidades nuevas, onboarding, walkthroughs, badges de novedad.
+Interactive/active-text|C|>color/black/800|TEXT_FILL|ANDROID:theme.color.interactive.activeText|Texto sobre cualquier estado active
+Interactive/active-subtle|C|>color/black/200|FRAME_FILL,SHAPE_FILL|ANDROID:theme.color.interactive.activeSubtle|Versión suave del color activo. Uso en tag secondary de destacar.
+Interactive/active-subtle-text|C|>color/gold/700|TEXT_FILL|ANDROID:theme.color.interactive.activeSubtleText|Texto sobre active-subtle
+Feedback/error-surface|C|>color/red/100|FRAME_FILL,SHAPE_FILL|ANDROID:theme.color.feedback.errorSurface|Tag urgencia secondary bg, Tag estado- secondary
+Feedback/error-text|C|>color/red/700|TEXT_FILL|ANDROID:theme.color.feedback.errorText|Texto sobre error-surface
+Feedback/success|C|>color/green/800|ALL_SCOPES|ANDROID:theme.color.feedback.success|Input success, Tag estado+ primary bg
+Feedback/success-on-black|C|>color/green/700|SHAPE_FILL,TEXT_FILL|ANDROID:theme.color.feedback.successOnBlack|Variante de feedback/success, ajustada para pasar contraste sobre fondo negro (Layer/06). Usar solo en componentes con ese fondo — no es dark mode, no reemplaza al feedback original en el resto del sistema
+Feedback/success-surface|C|>color/green/200|FRAME_FILL,SHAPE_FILL|ANDROID:theme.color.feedback.successSurface|Tag estado+ secondary bg
+Feedback/success-text|C|>color/green/800|TEXT_FILL|ANDROID:theme.color.feedback.successText|Texto sobre success-surface
+Feedback/warning|C|>color/gold/500|ALL_SCOPES|ANDROID:theme.color.feedback.warning|(alias de interactive/active en contextos de alerta)
+Feedback/warning-surface|C|>color/gold/200|FRAME_FILL,SHAPE_FILL|ANDROID:theme.color.feedback.warningSurface|(alias de interactive/active en contextos de alerta)
+Feedback/info|C|>color/blue/600|ALL_SCOPES|ANDROID:theme.color.feedback.info|Color principal de información.
+Feedback/info-on-black|C|>color/blue/500|SHAPE_FILL,TEXT_FILL|ANDROID:theme.color.feedback.infoOnBlack|Variante de feedback/info, para pasar contraste sobre fondo negro (Layer/06). Usar solo en componentes con ese fondo — no es dark mode, no reemplaza al feedback original en el resto del sistema
+Feedback/info-surface|C|>color/blue/200|FRAME_FILL,SHAPE_FILL|ANDROID:theme.color.feedback.infoSurface|Superficie de información. Fondo de la barra de gamification en estado info.
+Chip/icon-disabled|C|>color/black/500|SHAPE_FILL,STROKE_COLOR|ANDROID:theme.color.chip.iconDisabled|Color del ícono dentro del chip en estado disabled.
+Chip/bg|C|>color/white/default|FRAME_FILL,SHAPE_FILL|ANDROID:theme.color.chip.bg|Fondo del chip en estado enabled.
+Chip/stroke|C|>color/black/400|STROKE_COLOR|ANDROID:theme.color.chip.stroke|Borde del chip en estado enabled.
+Chip/text|C|>color/black/800|TEXT_FILL|ANDROID:theme.color.chip.text|Texto del chip en estado enabled.
+Chip/bg-selected|C|>color/gold/500|FRAME_FILL,SHAPE_FILL|ANDROID:theme.color.chip.bgSelected|Fondo del chip en estado selected. Filtro activo.
+Chip/text-selected|C|>color/black/800|TEXT_FILL|ANDROID:theme.color.chip.textSelected|Texto del chip en estado selected.
+Chip/bg-pressed|C|>color/black/50|FRAME_FILL,SHAPE_FILL|ANDROID:theme.color.chip.bgPressed|Fondo del chip en estado pressed.
+Chip/stroke-pressed|C|>color/black/400|STROKE_COLOR|ANDROID:theme.color.chip.strokePressed|Borde del chip en estado pressed.
+Chip/bg-focused|C|>color/black/100|FRAME_FILL,SHAPE_FILL|ANDROID:theme.color.chip.bgFocused|Fondo del chip en estado focused. Solo accesibilidad.
+Chip/stroke-focused|C|>color/black/400|STROKE_COLOR|ANDROID:theme.color.chip.strokeFocused|Borde del chip en estado focused. Solo accesibilidad.
+Chip/bg-disabled|C|>color/black/50|FRAME_FILL,SHAPE_FILL|ANDROID:theme.color.chip.bgDisabled|Fondo del chip en estado disabled.
+Chip/stroke-disabled|C|>color/black/200|STROKE_COLOR|ANDROID:theme.color.chip.strokeDisabled|Borde del chip en estado disabled.
+Chip/text-disabled|C|>color/black/500|TEXT_FILL|ANDROID:theme.color.chip.textDisabled|Texto del chip en estado disabled.
+Button/primary-bg-pressed|C|>color/gold/400|FRAME_FILL,SHAPE_FILL|ANDROID:theme.color.button.primaryBgPressed|Fondo del botón primario en estado pressed.
+Button/primary-bg-focused|C|>color/gold/600|FRAME_FILL,SHAPE_FILL|ANDROID:theme.color.button.primaryBgFocused|Fondo del botón primario en estado focused. Solo accesibilidad.
+Button/primary-bg-disabled|C|>color/gold/100|FRAME_FILL,SHAPE_FILL|ANDROID:theme.color.button.primaryBgDisabled|Fondo del botón primario en estado disabled.
+Button/text|C|>color/black/800|SHAPE_FILL,TEXT_FILL|ANDROID:theme.color.button.text|Color de texto del botón en estado enabled.
+Button/text-disabled|C|>color/black/500|SHAPE_FILL,TEXT_FILL|ANDROID:theme.color.button.textDisabled|Color de texto del botón en estado disabled.
+Button/secondary-bg|C|>color/white/default|FRAME_FILL,SHAPE_FILL|ANDROID:theme.color.button.secondaryBg|Fondo del botón secondary en estado enabled.
+Button/secondary-bg-pressed|C|>color/black/50|FRAME_FILL,SHAPE_FILL|ANDROID:theme.color.button.secondaryBgPressed|Fondo del botón secondary en estado pressed.
+Button/secondary-bg-focused|C|>color/black/50|FRAME_FILL,SHAPE_FILL|ANDROID:theme.color.button.secondaryBgFocused|Fondo del botón secondary en estado focused.
+Button/secondary-bg-disabled|C|>color/black/50|FRAME_FILL,SHAPE_FILL|ANDROID:theme.color.button.secondaryBgDisabled|Fondo del botón secondary en estado disabled.
+Button/secondary-stroke|C|>color/black/400|STROKE_COLOR|ANDROID:theme.color.button.secondaryStroke|Borde del botón secondary en estado enabled.
+Button/secondary-stroke-pressed|C|>color/black/400|STROKE_COLOR|ANDROID:theme.color.button.secondaryStrokePressed|Borde del botón secondary en estado pressed.
+Button/secondary-stroke-focused|C|>color/black/700|STROKE_COLOR|ANDROID:theme.color.button.secondaryStrokeFocused|Borde del botón secondary en estado focused.
+Button/secondary-stroke-disabled|C|>color/black/500|STROKE_COLOR|ANDROID:theme.color.button.secondaryStrokeDisabled|Borde del botón secondary en estado disabled.
+Button/ghost-bg|C|>color/white/transparent|FRAME_FILL,SHAPE_FILL|ANDROID:theme.color.button.ghostBg|Fondo transparente del botón ghost en estado enabled.
+Button/ghost-bg-pressed|C|>color/black/50|FRAME_FILL,SHAPE_FILL|ANDROID:theme.color.button.ghostBgPressed|Fondo del botón ghost en estado pressed.
+Border/strong|C|>color/black/700|STROKE_COLOR|ANDROID:theme.color.border.strong|Focused stroke — button, chip, input
+Border/subtle|C|>color/black/200|STROKE_COLOR|ANDROID:theme.color.border.subtle|Disabled stroke
+Border/input-active|C|>color/black/800|STROKE_COLOR|ANDROID:theme.color.border.inputActive|Input completed border
+Icon/on-color|C|>color/white/default|SHAPE_FILL,STROKE_COLOR|ANDROID:theme.color.icon.onColor|Ícono sobre fondos de color — botón primary, chip selected.
+Link/default|C|>color/blue/700|TEXT_FILL|ANDROID:theme.color.link.default|Link en estado default. Texto que navega a otra pantalla; si ejecuta una acción.
+Link/hover|C|>color/blue/600|TEXT_FILL|ANDROID:theme.color.link.hover|Color del link en estado hover. Solo web.
+Link/focused|C|>color/blue/800|TEXT_FILL|ANDROID:theme.color.link.focused|Link en estado focused. Solo navegación por teclado o lector de pantalla.
+Link/pressed|C|>color/black/800|TEXT_FILL|ANDROID:theme.color.link.pressed|Link en estado pressed.
+Link/visited|C|>color/purple/700|TEXT_FILL|ANDROID:theme.color.link.visited|Color del link ya visitado.
+Link/inverse|C|>color/blue/300|TEXT_FILL|ANDROID:theme.color.link.inverse|Link sobre fondos oscuros — estado default.
+Link/inverse-hover|C|>color/blue/400|TEXT_FILL|ANDROID:theme.color.link.inverseHover|Link sobre fondos oscuros — estado hover.
+Link/inverse-focused|C|>color/blue/400|TEXT_FILL|ANDROID:theme.color.link.inverseFocused|Link sobre fondos oscuros — estado focused.
+Link/inverse-pressed|C|>color/white/default|TEXT_FILL|ANDROID:theme.color.link.inversePressed|Link sobre fondos oscuros — mientras se toca.
+Link/inverse-visited|C|>color/purple/200|TEXT_FILL|ANDROID:theme.color.link.inverseVisited|Sobre fondos oscuros — ya visitado.
+Surface/default|C|>color/white/default|FRAME_FILL,SHAPE_FILL|ANDROID:theme.color.surface.default|Superficie principal. Input bg, Chip bg, Secondary button bg
+Text/primary|C|>color/black/800|TEXT_FILL|ANDROID:theme.color.text.primary|Texto principal en todos los componentes.
+Trust/default|C|>color/blue/600|FRAME_FILL,SHAPE_FILL|ANDROID:theme.color.trust.default|Color principal de confianza. Tag confianza primary bg.
+Trust/subtle|C|>color/blue/200|FRAME_FILL,SHAPE_FILL|ANDROID:theme.color.trust.subtle|Superficie de confianza. Tag confianza secondary bg.
+Trust/text|C|>color/blue/800|TEXT_FILL|ANDROID:theme.color.trust.text|Texto sobre superficie de confianza.
+Text/secondary|C|>color/black/600|TEXT_FILL|ANDROID:theme.color.text.secondary|Texto secundario. Placeholder, hint text neutral.
+Text/disabled|C|>color/black/500|TEXT_FILL|ANDROID:theme.color.text.disabled|Texto en estado disabled.
+Text/on-color|C|>color/white/default|TEXT_FILL|ANDROID:theme.color.text.onColor|Texto sobre fondos de color — botón primary, chip selected, tooltip.
+Text/error|C|>color/red/600|TEXT_FILL|ANDROID:theme.color.text.error|Texto de error. Hint text en estado error del input.
+Surface/subtle|C|>color/black/50|FRAME_FILL,SHAPE_FILL|ANDROID:theme.color.surface.subtle|Superficie sutil. Chip pressed, Disabled bg, Input disabled bg.
+Surface/muted|C|>color/black/100|FRAME_FILL,SHAPE_FILL|ANDROID:theme.color.surface.muted|Superficie apagada. Chip focused bg.
+Surface/strong|C|>color/black/200|FRAME_FILL,SHAPE_FILL|ANDROID:theme.color.surface.strong|Superficie de mayor énfasis. Uso en Gamification Bar (Icon Bar y progreso).
+Surface/inverse|C|>color/black/800|FRAME_FILL,SHAPE_FILL|ANDROID:theme.color.surface.inverse|Superficie invertida: fondo oscuro sobre contenido claro. Uso en Tooltip, Toast, NavBar item selected y Tag primary.
+Surface/brand|C|>color/gold/500|FRAME_FILL,SHAPE_FILL|ANDROID:theme.color.surface.brand|Superficie de marca McDonald's. Fondo amarillo del Header. Uso exclusivo en componentes que requieren identidad de marca como fondo principal.
+Icon/primary|C|>color/black/800|SHAPE_FILL,STROKE_COLOR|ANDROID:theme.color.icon.primary|Ícono principal sobre fondos claros.
+Icon/gray|C|>color/black/600|SHAPE_FILL,STROKE_COLOR|ANDROID:theme.color.icon.gray|Ícono secundario o de bajo énfasis.
+Icon/disabled|C|>color/black/500|SHAPE_FILL,STROKE_COLOR|ANDROID:theme.color.icon.disabled|Ícono en estado disabled.
+Icon/gold|C|>color/gold/500|SHAPE_FILL,STROKE_COLOR|ANDROID:theme.color.icon.gold|Ícono en color de marca. Uso sobre fondos oscuros o negros.
+Icon/red|C|>color/red/600|SHAPE_FILL,STROKE_COLOR|ANDROID:theme.color.icon.red|Ícono de error o alerta destructiva.
+Font/family/speedee|S|Speedee|FONT_FAMILY||
+Font/letter-spacing/m|F|0.25|LETTER_SPACING||
+Font/letter-spacing/l|F|0|LETTER_SPACING||
+Font/line-height/s|F|16|LINE_HEIGHT||
+Font/weight/regular|S|Regular|FONT_STYLE||
+Font/size/4xl|F|36|FONT_SIZE||
+Font/line-height/m|F|20|LINE_HEIGHT||
+Font/line-height/l|F|24|LINE_HEIGHT||
+Font/line-height/xl|F|28|LINE_HEIGHT||
+Font/line-height/2xl|F|32|LINE_HEIGHT||
+Font/line-height/3xl|F|36|LINE_HEIGHT||
+Font/line-height/4xl|F|44|LINE_HEIGHT||
+Font/size/3xl|F|30|FONT_SIZE||
+Font/size/2xl|F|24|FONT_SIZE||
+Font/size/xl|F|20|FONT_SIZE||
+Font/size/l|F|18|FONT_SIZE||
+Font/size/m|F|16|FONT_SIZE||
+Font/size/s|F|14|FONT_SIZE||
+Font/size/xs|F|12|FONT_SIZE||
+Font/weight/bold|S|Bold|FONT_STYLE||
+Font/weight/italic|S|Italic|FONT_STYLE||
+Valor/radius/XS|F|>Valor/4|CORNER_RADIUS,FONT_VARIATIONS||Micro-componentes: Badges, etiquetas de "Nuevo", indicadores de cantidad y elementos de precisión.
+Valor/radius/S|F|>Valor/8|CORNER_RADIUS,FONT_VARIATIONS||Valor Base. Botones principales, inputs de texto y componentes que viven dentro de un contenedor mayor.
+Valor/radius/M|F|>Valor/12|CORNER_RADIUS,FONT_VARIATIONS||El Estándar (Default): Cards de producto, message cards, snackbars, banners informativos y promocionales.
+Valor/radius/L|F|>Valor/16|CORNER_RADIUS,FONT_VARIATIONS||Grandes Contenedores (Vessels): Bottom sheets, diálogos de confirmación y modales de pantalla completa.
+Valor/radius/XXL|F|>Valor/32|CORNER_RADIUS,FONT_VARIATIONS||Grandes Contenedores: Uso en header.
+Valor/radius/XXXL|F|>Valor/160|CORNER_RADIUS,FONT_VARIATIONS||Componentes circle: componentes en formato píldora.
+Valor/spacing/0|F|>Valor/0|WIDTH_HEIGHT,GAP,STROKE_FLOAT||Sin espacio. Uso cuando dos elementos deben estar pegados.
+Valor/spacing/4|F|>Valor/4|WIDTH_HEIGHT,GAP,STROKE_FLOAT||Espacio entre icono y texto, o label e input.
+Valor/spacing/8|F|>Valor/8|WIDTH_HEIGHT,GAP,STROKE_FLOAT||Valor Base
+Valor/spacing/16|F|>Valor/16|WIDTH_HEIGHT,GAP,STROKE_FLOAT||Margen sagrado lateral y Gutters de la grilla
+Valor/spacing/24|F|>Valor/24|WIDTH_HEIGHT,GAP,STROKE_FLOAT||Separación entre grupos de contenido o secciones.
+Valor/spacing/32|F|>Valor/32|WIDTH_HEIGHT,GAP,STROKE_FLOAT||Separación entre banners y secciones principales.
+Valor/spacing/40|F|>Valor/40|WIDTH_HEIGHT,GAP,STROKE_FLOAT||Uso esporádico
+Valor/spacing/48|F|>Valor/48|WIDTH_HEIGHT,GAP,STROKE_FLOAT||Altura mínima de touch targets o espaciado de sección.
+Valor/spacing/56|F|>Valor/56|WIDTH_HEIGHT,GAP,STROKE_FLOAT||NavBar height, FAB size, alto de botón L.
+Valor/spacing/64|F|>Valor/64|WIDTH_HEIGHT,GAP,STROKE_FLOAT||Separación entre secciones de pantalla completa.
+Valor/spacing/72|F|>Valor/72|WIDTH_HEIGHT,GAP,STROKE_FLOAT||Poco uso, usos específicos
+Valor/spacing/80|F|>Valor/80|WIDTH_HEIGHT,GAP,STROKE_FLOAT||Separación grande entre bloques de contenido.
+Valor/spacing/88|F|>Valor/88|WIDTH_HEIGHT,GAP,STROKE_FLOAT||Separación máxima. Uso en layouts de mucho espacio vertical.

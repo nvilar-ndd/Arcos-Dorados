@@ -1,0 +1,48 @@
+# Huella por página: id|nombre|nodos|caracteres de texto|hash djb2 de los textos
+## ArchWay (Us1oNLc2wgmgG3aMuT5dJv)
+0:1|Cover|16|73|ab0dfc48
+1:3|Colors|2280|18307|75daeaf4
+241:3374|Typography|1186|16491|a2b7dcec
+2067:7419|Grid *base*|318|7286|3639a144
+244:5469|Spacing block|388|4663|3acd83d0
+2038:24413|Corner Radius|397|3243|1c7b12b2
+2038:25495|Elevations|353|3878|d0eec4e0
+2067:7355|Motion|62|3152|2df3ee99
+2038:25351|Utilities|40|691|162ca684
+2238:223|Accesibilidad|3|8|3a0b6b98
+1:6|Color_Investigacion|10047|48165|8b72fe20
+## Dashboard (XKulGF78txFYDLNMstLShZ)
+405:1446|Cover|14|135|95413439
+80:2560|Grids|53|601|5c874ddb
+0:1|Color|2382|14094|e75beba4
+65:525|Spaces|485|5063|f49d77b4
+97:731|Typography|302|2578|3bbb4b57
+106:1103|Components|8386|42531|645586a2
+657:36880|⮑ UI shell / Header + PanelLeft|5781|9487|90f02cbe
+4103:17|⮑ SubPanelLeft|257|2556|ccae6b6a
+4297:10215|Usage and design criteria|1037|5261|b8ba8f10
+## ADK (IAqK97JM1KkMLs1VWGGTkv)
+0:1|Cover|6|18|e372bc5e
+20:365|- Colors ✅|343|1660|623dad19
+2:7|- Tipography ✅|49|555|5143047
+2:5|- Spaces|29|0|1505
+335:69|Safe Accesibility Area|10|53|1fcc36bd
+3665:3202|templete|1190|3686|dda055e6
+3036:4916|- Attract Screen ✅|3063|2811|37c46c59
+137:9104|- Banners ✅|593|1179|a1a0c760
+11:2495|- Banners Categorias ✅|1278|2561|183dceda
+2:6|- Buttons ✅|1642|9486|f5e33792
+19:68|- Footer ✅|2688|14405|bdf616a4
+3197:1139|- Loaders ✅|68|682|3afef0f4
+3197:1424|- Logos ✅|95|1202|b4d6d739
+139:1295|- Header ✅|233|2701|8cd7f8c7
+43:1531|- Input ✅|1919|7319|73a994a1
+11:23|- Navegation ✅|1820|7726|d87dc244
+137:8749|- Scroll Bar ✅|110|1546|321f3637
+2222:6|- Snackbars ✅|315|2368|43590bbc
+2208:145|- Alerta ✅|339|2897|75fe0275
+3845:10|UI Shell|448|2005|2e3eeb3
+2:9|Themes|7|123|88cb5dda
+2397:743|Guia para mercado (Imagenes de Productos)|2911|12923|30c03536
+73:970|- Product 🟠|1340|5094|a97cb246
+3657:2971|Ilustraciones|968|431|f668380

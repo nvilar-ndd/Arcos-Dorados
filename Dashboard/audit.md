@@ -1,6 +1,6 @@
 # Audit — Dashboard Foundations
 
-> **Archivo auditado:** [DashBoard Foundation (Figma)](https://www.figma.com/design/XKulGF78txFYDLNMstLShZ/-DashBoard--Fuondation) · **Fecha:** 2026-10-07 · **Método:** extracción de variables, estilos y páginas vía Figma MCP + contraste WCAG 2.1 en modo Light y Dark.
+> **Archivo auditado:** [DashBoard Foundation (Figma)](https://www.figma.com/design/XKulGF78txFYDLNMstLShZ/-DashBoard--Fuondation) · **Fecha:** 2026-10-07 · **Revisado contra Figma:** 2026-10-15 (nuevo Empty state, D-C15 y D-C16) · **Método:** extracción de variables, estilos y páginas vía Figma MCP + contraste WCAG 2.1 en modo Light y Dark.
 >
 > **Flujo:** igual que ArchWay. Cada hallazgo queda `Pendiente` hasta que el equipo lo aprueba o lo rechaza; sólo lo aprobado se aplica en Figma. Muchos de estos puntos se resuelven solos al converger con ArchWay: ver [`Convergencia/dashboard-archway.md`](../Convergencia/dashboard-archway.md).
 
@@ -41,6 +41,8 @@
 | D-C12 | Data table *read-only* con celdas Switch y Textfield | 🟡 P2 | Pendiente |
 | D-C13 | Dark: botón secundario en hover/focus queda con texto blanco sobre fondo claro (ilegible) | 🔴 P0 | Pendiente |
 | D-C14 | Placeholder `text/secondary` sobre el hover del Dropdown (`button/secondary-hover`): 3.45:1 | 🟠 P1 | Pendiente |
+| D-C15 | Empty state (nuevo) con variables y estilos de otras librerías (`Number`, `Headlines/*`) | 🟠 P1 | Pendiente |
+| D-C16 | Componentes de prueba publicados (`Componente_de_prueba`, `2Componente_de_prueba`) | ⚪ P3 | Pendiente |
 | D-E01 | Medidas del shell y de las columnas de contenido sin tokens | 🟡 P2 | Pendiente |
 | D-E02 | Header con gap fijo de 206 px | 🟡 P2 | Pendiente |
 | D-E03 | Fondo del header distinto entre tamaños | ⚪ P3 | Pendiente |
@@ -232,6 +234,25 @@ Detectado al previsualizar los componentes en Storybook con el modo Dark: en hov
 ### D-C14 · Placeholder en hover
 
 Detectado con axe en Storybook: en `Dropdown-Menu` hover, el placeholder `text/secondary` (#6F6F6F) sobre `button/secondary-hover` (#D6D6D6) da **3.45:1** (pide 4.5:1). **Propuesta:** hover del input con `layer/03` o placeholder `text/primary` en hover.
+
+### D-C15 · Empty state con estilos y variables remotos
+
+*Nuevo, relevado 2026-10-15.* El componente [`Empty state`](./components/empty-state.md) (6749:5101) usa:
+
+| Pieza | Hoy | Propuesta (Dashboard) |
+|---|---|---|
+| Gap 32 y gap 8 | `spacing/32`, `spacing/8` de una colección remota **`Number`** | `spacing/400`, `spacing/100` |
+| Título | Estilo remoto `Headlines/Headline 02` + `#292929` sin variable | `H4 - CMS` + `text/primary` |
+| Descripción | Estilo remoto `Headlines/Headline 05` (color `text/secondary` ✅) | `H7 - CMS` |
+| Ícono | `Refresh` remoto, relleno `#292929` sin variable | Ícono de la librería del Dashboard con `icon/primary` |
+| Gap 16 entre ícono y texto | Sin variable | `spacing/200` |
+| Descripción del componente | Vacía | Copiar el texto de la sección: "Para mostrar información sobre elementos vacíos o errores." |
+
+Mismo problema que [D-C05](#d-c05--variables-de-otra-librería): en Dark, los valores remotos no cambian. Es buen momento para corregirlo, antes de que el componente se use en pantallas.
+
+### D-C16 · Componentes de prueba
+
+`Componente_de_prueba` (4643:4139) y `2Componente_de_prueba` (4644:4151), en *Utilidades*, están marcados "No se puede usar!" pero son componentes publicables: aparecen en el panel de Assets de quien use la librería. **Propuesta:** borrarlos o moverlos a un archivo de pruebas; si tienen que quedar, prefijarlos con `_` o `.` para que no se publiquen.
 
 ### D-E01 · Medidas del shell sin tokens
 

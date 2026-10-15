@@ -1,0 +1,119 @@
+color/gold/900|C|#423000|||true|Gold (Dorado) 900. Tono muy oscuro. Uso en textos de alto contraste o fondos profundos.
+color/red/900|C|#420002|||true|Red (Rojo) 900. Tono muy oscuro. Uso en textos de alto contraste o fondos profundos.
+color/red/800|C|#750004|||true|Red (Rojo) 800. Tono oscuro. Uso en textos principales y superficies de énfasis.
+color/red/700|C|#a80005|||true|Red (Rojo) 700. Tono medio-oscuro. Uso en textos secundarios y bordes activos.
+color/red/600|C|#db0007|||true|Rojo base de la marca. Token principal para errores y alertas.
+color/red/500|C|#ff1017|||true|Red (Rojo) 500. Tono base de la escala. Valor central de referencia.
+color/red/400|C|#ff4248|||true|Red (Rojo) 400. Tono medio-claro. Uso en estados hover y bordes sutiles.
+color/red/300|C|#ff757a|||true|Red (Rojo) 300. Tono claro. Uso en fondos de énfasis suave y decoración.
+color/red/200|C|#ffa8ab|||true|Red (Rojo) 200. Tono muy claro. Uso en superficies secundarias y tags.
+color/red/100|C|#ffdbdc|||true|Red (Rojo) 100. Tono casi blanco. Uso en fondos sutiles y estados disabled.
+color/red/50|C|#fff0f0|||true|Red (Rojo) 50. Tono más claro de la escala. Uso en fondos apenas perceptibles.
+color/red/600-alpha|C|#db00074d|||true|Rojo base con 30% de opacidad. Uso en superficies de error suaves.
+color/black/900|C|#0f0f0f|||true|Black (Neutro) 900. Tono muy oscuro. Uso en textos de alto contraste o fondos profundos.
+color/black/800|C|#292929|||true|Gris muy oscuro base. Token principal para textos y fondos oscuros.
+color/black/700|C|#424242|||true|Black (Neutro) 700. Tono medio-oscuro. Uso en textos secundarios y bordes activos.
+color/black/600|C|#5c5c5c|||true|Black (Neutro) 600. Tono medio. Uso en íconos, bordes y estados intermedios.
+color/black/500|C|#707070|||true|Black (Neutro) 500. Tono base de la escala. Valor central de referencia.
+color/black/400|C|#8f8f8f|||true|Black (Neutro) 400. Tono medio-claro. Uso en estados hover y bordes sutiles.
+color/black/300|C|#a8a8a8|||true|Black (Neutro) 300. Tono claro. Uso en fondos de énfasis suave y decoración.
+color/black/200|C|#c2c2c2|||true|Black (Neutro) 200. Tono muy claro. Uso en superficies secundarias y tags.
+color/black/100|C|#dbdbdb|||true|Black (Neutro) 100. Tono casi blanco. Uso en fondos sutiles y estados disabled.
+color/black/50|C|#f5f5f5|||true|Black (Neutro) 50. Tono más claro de la escala. Uso en fondos apenas perceptibles.
+color/black/800-alpha|C|#2929294d|||true|Gris oscuro base con 30% de opacidad. Uso en overlays y sombras.
+color/white/default|C|#ffffff|||true|Blanco puro. Base de superficies claras y fondos principales.
+color/white/transparent|C|#ffffff00|||true|Blanco con alpha 0. Uso en transiciones y fondos ghost.
+color/gold/800|C|#755500|||true|Gold (Dorado) 800. Tono oscuro. Uso en textos principales y superficies de énfasis.
+color/gold/700|C|#a87a00|||true|Gold (Dorado) 700. Tono medio-oscuro. Uso en textos secundarios y bordes activos.
+color/gold/600|C|#db9f00|||true|Gold (Dorado) 600. Tono medio. Uso en íconos, bordes y estados intermedios.
+color/gold/500|C|#ffbc0d|||true|Dorado base de marca McDonald's. Token principal de identidad.
+color/gold/400|C|#ffcb42|||true|Gold (Dorado) 400. Tono medio-claro. Uso en estados hover y bordes sutiles.
+color/gold/300|C|#ffd975|||true|Gold (Dorado) 300. Tono claro. Uso en fondos de énfasis suave y decoración.
+color/gold/200|C|#ffe7a8|||true|Gold (Dorado) 200. Tono muy claro. Uso en superficies secundarias y tags.
+color/gold/100|C|#fff5db|||true|Gold (Dorado) 100. Tono casi blanco. Uso en fondos sutiles y estados disabled.
+color/gold/50|C|#fff8e5|||true|Gold (Dorado) 50. Tono más claro de la escala. Uso en fondos apenas perceptibles.
+color/gold/500-alpha|C|#ffbc0d4d|||true|Dorado base con 30% de opacidad. Uso en overlays y estados suaves de marca.
+color/green/900|C|#133e22|||true|Green (Verde) 900. Tono muy oscuro. Uso en textos de alto contraste o fondos profundos.
+color/green/800|C|#1f6538|||true|Green (Verde) 800. Tono oscuro. Uso en textos principales y superficies de énfasis.
+color/green/700|C|#2b8c4d|||true|Green (Verde) 700. Tono medio-oscuro. Uso en textos secundarios y bordes activos.
+color/green/600|C|#37b363|||true|Green (Verde) 600. Tono medio. Uso en íconos, bordes y estados intermedios.
+color/green/500|C|#53ca7d|||true|Green (Verde) 500. Tono base de la escala. Valor central de referencia.
+color/green/400|C|#7ad69b|||true|Green (Verde) 400. Tono medio-claro. Uso en estados hover y bordes sutiles.
+color/green/300|C|#a1e2b8|||true|Green (Verde) 300. Tono claro. Uso en fondos de énfasis suave y decoración.
+color/green/200|C|#c8eed6|||true|Green (Verde) 200. Tono muy claro. Uso en superficies secundarias y tags.
+color/green/100|C|#effaf3|||true|Green (Verde) 100. Tono casi blanco. Uso en fondos sutiles y estados disabled.
+color/green/800-alpha|C|#1f65384d|||true|Verde oscuro con 30% de opacidad. Uso en superficies de éxito suaves.
+color/lime/900|C|#2c3210|||true|Lime (Lima) 900. Tono muy oscuro. Uso en textos de alto contraste o fondos profundos.
+color/lime/800|C|#4d581d|||true|Lime (Lima) 800. Tono oscuro. Uso en textos principales y superficies de énfasis.
+color/lime/700|C|#6f7f2a|||true|Lime (Lima) 700. Tono medio-oscuro. Uso en textos secundarios y bordes activos.
+color/lime/600|C|#90a536|||true|Lime (Lima) 600. Tono medio. Uso en íconos, bordes y estados intermedios.
+color/lime/500|C|#adc44b|||true|Lime (Lima) 500. Tono base de la escala. Valor central de referencia.
+color/lime/400|C|#bfd071|||true|Lime (Lima) 400. Tono medio-claro. Uso en estados hover y bordes sutiles.
+color/lime/300|C|#d0dd97|||true|Lime (Lima) 300. Tono claro. Uso en fondos de énfasis suave y decoración.
+color/lime/200|C|#e2eabf|||true|Lime (Lima) 200. Tono muy claro. Uso en superficies secundarias y tags.
+color/lime/100|C|#f3f6e4|||true|Lime (Lima) 100. Tono casi blanco. Uso en fondos sutiles y estados disabled.
+color/blue/950|C|#051329|||true|Blue (Azul) 950. Tono más oscuro de la escala. Uso reservado para contraste extremo.
+color/blue/900|C|#0b2856|||true|Blue (Azul) 900. Tono muy oscuro. Uso en textos de alto contraste o fondos profundos.
+color/blue/800|C|#103c82|||true|Blue (Azul) 800. Tono oscuro. Uso en textos principales y superficies de énfasis.
+color/blue/700|C|#1652b1|||true|Blue (Azul) 700. Tono medio-oscuro. Uso en textos secundarios y bordes activos.
+color/blue/600|C|#1b67df|||true|Blue (Azul) 600. Tono medio. Uso en íconos, bordes y estados intermedios.
+color/blue/500|C|#4584e8|||true|Blue (Azul) 500. Tono base de la escala. Valor central de referencia.
+color/blue/400|C|#72a2ee|||true|Blue (Azul) 400. Tono medio-claro. Uso en estados hover y bordes sutiles.
+color/blue/300|C|#a0c0f3|||true|Blue (Azul) 300. Tono claro. Uso en fondos de énfasis suave y decoración.
+color/blue/200|C|#cddef9|||true|Blue (Azul) 200. Tono muy claro. Uso en superficies secundarias y tags.
+color/blue/100|C|#e8f0fc|||true|Blue (Azul) 100. Tono casi blanco. Uso en fondos sutiles y estados disabled.
+color/fuchsia/900|C|#39041d|||true|Fuchsia (Fucsia) 900. Tono muy oscuro. Uso en textos de alto contraste o fondos profundos.
+color/blue/700-alpha|C|#1652b14d|||true|Azul medio-oscuro con 30% de opacidad. Uso en superficies informativas suaves.
+color/fuchsia/800|C|#690735|||true|Fuchsia (Fucsia) 800. Tono oscuro. Uso en textos principales y superficies de énfasis.
+color/fuchsia/700|C|#9a0a4d|||true|Fuchsia (Fucsia) 700. Tono medio-oscuro. Uso en textos secundarios y bordes activos.
+color/fuchsia/600|C|#c90d65|||true|Fuchsia (Fucsia) 600. Tono medio. Uso en íconos, bordes y estados intermedios.
+color/fuchsia/500|C|#f0197d|||true|Fuchsia (Fucsia) 500. Tono base de la escala. Valor central de referencia.
+color/fuchsia/400|C|#f34998|||true|Fuchsia (Fucsia) 400. Tono medio-claro. Uso en estados hover y bordes sutiles.
+color/fuchsia/300|C|#f679b3|||true|Fuchsia (Fucsia) 300. Tono claro. Uso en fondos de énfasis suave y decoración.
+color/fuchsia/200|C|#f9a9ce|||true|Fuchsia (Fucsia) 200. Tono muy claro. Uso en superficies secundarias y tags.
+color/fuchsia/100|C|#fdd9e9|||true|Fuchsia (Fucsia) 100. Tono casi blanco. Uso en fondos sutiles y estados disabled.
+color/purple/900|C|#3a014b|||true|Purple (Púrpura) 900. Tono muy oscuro. Uso en textos de alto contraste o fondos profundos.
+color/purple/800|C|#5f027c|||true|Purple (Púrpura) 800. Tono oscuro. Uso en textos principales y superficies de énfasis.
+color/purple/700|C|#8703b0|||true|Purple (Púrpura) 700. Tono medio-oscuro. Uso en textos secundarios y bordes activos.
+color/purple/600|C|#ad04e2|||true|Purple (Púrpura) 600. Tono medio. Uso en íconos, bordes y estados intermedios.
+color/purple/500|C|#c71dfb|||true|Purple (Púrpura) 500. Tono base de la escala. Valor central de referencia.
+color/purple/400|C|#d34ffc|||true|Purple (Púrpura) 400. Tono medio-claro. Uso en estados hover y bordes sutiles.
+color/purple/300|C|#e082fd|||true|Purple (Púrpura) 300. Tono claro. Uso en fondos de énfasis suave y decoración.
+color/purple/200|C|#ecb4fe|||true|Purple (Púrpura) 200. Tono muy claro. Uso en superficies secundarias y tags.
+color/purple/100|C|#f9e6ff|||true|Purple (Púrpura) 100. Tono casi blanco. Uso en fondos sutiles y estados disabled.
+color/orange/900|C|#331400|||true|Orange (Naranja) 900. Tono muy oscuro. Uso en textos de alto contraste o fondos profundos.
+color/violet/900|C|#001742|ALL_SCOPES||true|
+color/violet/800|C|#1b0141|ALL_SCOPES||true|
+color/violet/700|C|#4103a1|ALL_SCOPES||true|
+color/violet/600|C|#5603d3|ALL_SCOPES||true|
+color/violet/500|C|#6c0efb|ALL_SCOPES||true|
+color/violet/400|C|#8a3ffc|ALL_SCOPES||true|
+color/violet/300|C|#a972fd|ALL_SCOPES||true|
+color/violet/200|C|#c8a5fe|ALL_SCOPES||true|
+color/violet/100|C|#e7d7fe|ALL_SCOPES||true|
+color/orange/800|C|#662800|||true|Orange (Naranja) 800. Tono oscuro. Uso en textos principales y superficies de énfasis.
+color/orange/700|C|#983b01|||true|Orange (Naranja) 700. Tono medio-oscuro. Uso en textos secundarios y bordes activos.
+color/orange/600|C|#cb4f01|||true|Orange (Naranja) 600. Tono medio. Uso en íconos, bordes y estados intermedios.
+color/orange/500|C|#fe6301|||true|Orange (Naranja) 500. Tono base de la escala. Valor central de referencia.
+color/orange/400|C|#fe8234|||true|Orange (Naranja) 400. Tono medio-claro. Uso en estados hover y bordes sutiles.
+color/orange/300|C|#fea167|||true|Orange (Naranja) 300. Tono claro. Uso en fondos de énfasis suave y decoración.
+color/orange/200|C|#fec099|||true|Orange (Naranja) 200. Tono muy claro. Uso en superficies secundarias y tags.
+color/orange/100|C|#ffe0cc|||true|Orange (Naranja) 100. Tono casi blanco. Uso en fondos sutiles y estados disabled.
+Number|F|0||||
+Valor/0|F|0||||
+Valor/4|F|4||||
+Valor/8|F|8||||
+Valor/12|F|12||||Uso limitado
+Valor/16|F|16||||
+Valor/24|F|24||||
+Valor/32|F|32||||
+Valor/40|F|40||||
+Valor/48|F|48||||
+Valor/56|F|56||||
+Valor/64|F|64||||
+Valor/72|F|72||||
+Valor/80|F|80||||
+Valor/88|F|88||||
+Valor/96|F|96||||
+Valor/128|F|128||||
+Valor/160|F|160||||

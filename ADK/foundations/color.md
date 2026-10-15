@@ -55,7 +55,7 @@ Cada token lleva en `$extensions.archway` su equivalente en ArchWay. La comparac
 |---|---|---|---|
 | McDonald's Green | `tertiary.green` | `#1F6437` | `green/800` — igual |
 | Light Green | `tertiary.light-green` | `#A9C141` | `lime/500` `#ADC44B` — cercano |
-| Dark Blue | `tertiary.dark-blue` | `#103C82` | `blue Dark/800` — igual |
+| Dark Blue | `tertiary.dark-blue` | `#103C82` | `blue/800` — igual |
 | Light Blue | `tertiary.light-blue` | `#56AFD1` | Sin equivalente (ΔE 21) |
 | Fuschia | `tertiary.fuchsia` | `#9A0A4D` | `fuchsia/700` — igual |
 | Beige | `tertiary.beige` | `#B69A81` | Sin equivalente |

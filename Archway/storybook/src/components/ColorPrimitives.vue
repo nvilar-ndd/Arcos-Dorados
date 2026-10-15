@@ -3,7 +3,7 @@ import { computed } from 'vue'
 import { under, type Token } from '../tokens'
 import CopyToken from './CopyToken.vue'
 
-const FAMILY_ORDER = ['gold', 'red', 'black', 'white', 'green', 'lime', 'blue-dark', 'orange', 'fuchsia', 'purple', 'violet']
+const FAMILY_ORDER = ['gold', 'red', 'black', 'white', 'green', 'lime', 'blue', 'orange', 'fuchsia', 'purple', 'violet']
 const FAMILY_LABEL: Record<string, string> = {
   gold: 'Gold · marca',
   red: 'Red · marca / error',
@@ -11,7 +11,7 @@ const FAMILY_LABEL: Record<string, string> = {
   white: 'White',
   green: 'Green · éxito',
   lime: 'Lime',
-  'blue-dark': 'Blue Dark · info, links, confianza',
+  blue: 'Blue · info, links, confianza',
   orange: 'Orange',
   fuchsia: 'Fuchsia',
   purple: 'Purple · Misiones, visited',
@@ -36,7 +36,9 @@ const families = computed(() => {
   }))
 })
 
-const isBase = (t: Token): boolean => t.figma.name.endsWith('_')
+/** Colores base de marca (antes marcados con sufijo `_` en Figma; renombrados 2026-10-15). */
+const BASE = new Set(['color/gold/500', 'color/red/600', 'color/black/800'])
+const isBase = (t: Token): boolean => BASE.has(t.figma.name)
 const hasAlpha = (t: Token): boolean => String(t.resolved).length === 9
 const stepLabel = (t: Token): string => t.path.slice(3).join('-') || t.path[2]
 const darkText = (t: Token): boolean => {
@@ -85,7 +87,7 @@ const darkText = (t: Token): boolean => {
   overflow: hidden;
   border: 1px solid var(--aw-border-subtle);
   border-radius: var(--aw-radius-m);
-  background: var(--aw-layer-01);
+  background: var(--aw-surface-default);
 }
 .chip__swatch {
   position: relative;
@@ -101,12 +103,12 @@ const darkText = (t: Token): boolean => {
 .chip__swatch--alpha {
   background:
     linear-gradient(var(--swatch), var(--swatch)),
-    repeating-conic-gradient(var(--aw-layer-03) 0 25%, var(--aw-layer-01) 0 50%) 0 0 / 12px 12px;
+    repeating-conic-gradient(var(--aw-surface-muted) 0 25%, var(--aw-surface-default) 0 50%) 0 0 / 12px 12px;
 }
 .chip__base {
   padding: 0 var(--aw-spacing-4);
   border-radius: var(--aw-radius-xs);
-  background: var(--aw-layer-01);
+  background: var(--aw-surface-default);
   color: var(--aw-text-primary);
 }
 .chip__meta {

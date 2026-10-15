@@ -43,7 +43,7 @@
 
 | | |
 |---|---|
-| **Qué pasa** | La paleta existe sólo como muestras en la página *Colors*. Los componentes usan hex sueltos: `#292929` ×995, `#FFFFFF` ×693, `#FFBC0D` ×209… La librería ArchWay ya está habilitada y 28 nodos usan semánticos de ArchWay (`Background/01`, `Text/Text_primary`, `Button/primary-disabled`…), mezclados con hex |
+| **Qué pasa** | La paleta existe sólo como muestras en la página *Colors*. Los componentes usan hex sueltos: `#292929` ×995, `#FFFFFF` ×693, `#FFBC0D` ×209… La librería ArchWay ya está habilitada y 28 nodos usan semánticos de ArchWay (hoy `Surface/default`, `Text/primary`, `Button/primary-bg-disabled`…; ArchWay los renombró el 2026-10-15 y los bindings se mantienen porque Figma conserva el ID), mezclados con hex |
 | **Impacto** | No hay forma de cambiar un color de forma global, el código no puede consumir tokens, y la convergencia exige tocar nodo por nodo |
 | **Propuesta** | **No crear una colección propia de ADK.** Enlazar directamente a ArchWay Semantic (ver Convergencia, fase 2). Mientras tanto, [`adk.tokens.json`](./tokens/adk.tokens.json) documenta los semánticos propuestos y su destino |
 

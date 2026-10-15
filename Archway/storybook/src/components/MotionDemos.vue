@@ -149,8 +149,8 @@ const usage = (t: Token): string => t.description.replace(`${t.figma.name}. `, '
   border-radius: var(--aw-radius-s);
   cursor: pointer;
 }
-.btn--primary { background: var(--aw-button-primary); color: var(--aw-button-text-enabled); }
-.btn--primary:active { background: var(--aw-button-primary-pressed); }
+.btn--primary { background: var(--aw-button-primary-bg); color: var(--aw-button-text); }
+.btn--primary:active { background: var(--aw-button-primary-bg-pressed); }
 .btn:focus-visible { outline: 2px solid var(--aw-link-default); outline-offset: 2px; }
 .seg { display: flex; flex-wrap: wrap; gap: var(--aw-spacing-4); margin: 0; padding: 0; border: 0; }
 .seg legend { width: 100%; margin: 0 0 var(--aw-spacing-4); color: var(--aw-text-secondary); }
@@ -159,12 +159,12 @@ const usage = (t: Token): string => t.description.replace(`${t.figma.name}. `, '
   align-items: center;
   min-height: 40px;
   padding: 0 var(--aw-spacing-16);
-  border: 1px solid var(--aw-chip-enabled-stroke);
+  border: 1px solid var(--aw-chip-stroke);
   border-radius: var(--aw-radius-xxxl);
-  background: var(--aw-chip-enabled-bg);
+  background: var(--aw-chip-bg);
   cursor: pointer;
 }
-.seg__opt.is-on { border-color: var(--aw-chip-selected-bg); background: var(--aw-chip-selected-bg); color: var(--aw-chip-selected-text); }
+.seg__opt.is-on { border-color: var(--aw-chip-bg-selected); background: var(--aw-chip-bg-selected); color: var(--aw-chip-text-selected); }
 .seg__opt input { position: absolute; opacity: 0; pointer-events: none; }
 .seg__opt:focus-within { outline: 2px solid var(--aw-link-default); outline-offset: 2px; }
 .check { display: inline-flex; align-items: center; gap: var(--aw-spacing-8); min-height: 40px; cursor: pointer; }
@@ -187,7 +187,7 @@ const usage = (t: Token): string => t.description.replace(`${t.figma.name}. `, '
   height: 40px;
   margin: var(--aw-spacing-8) 0;
   border-radius: var(--aw-radius-xxxl);
-  background: var(--aw-layer-02);
+  background: var(--aw-surface-subtle);
 }
 .lane--short { width: 50%; }
 .dot {
@@ -197,7 +197,7 @@ const usage = (t: Token): string => t.description.replace(`${t.figma.name}. `, '
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  background: var(--aw-layer-brand);
+  background: var(--aw-surface-brand);
   box-shadow: var(--aw-shadow-shallow-m-elev-2);
   transition: left calc(var(--d) * var(--slow)) var(--e);
 }
@@ -209,7 +209,7 @@ const usage = (t: Token): string => t.description.replace(`${t.figma.name}. `, '
 .curve p { margin: var(--aw-spacing-4) 0 0; }
 .curve .lane--short { width: 100%; }
 .curve__plot { width: 100%; max-width: 200px; height: auto; overflow: visible; }
-.curve__frame { fill: var(--aw-layer-02); stroke: var(--aw-border-subtle); }
+.curve__frame { fill: var(--aw-surface-subtle); stroke: var(--aw-border-subtle); }
 .curve__linear { stroke: var(--aw-border-default); stroke-dasharray: 3 3; }
 .curve__path { fill: none; stroke: var(--aw-text-primary); stroke-width: 3; stroke-linecap: round; }
 
@@ -223,7 +223,7 @@ const usage = (t: Token): string => t.description.replace(`${t.figma.name}. `, '
   padding: var(--aw-spacing-16);
   border: 0;
   border-radius: var(--aw-radius-m);
-  background: var(--aw-layer-01);
+  background: var(--aw-surface-default);
   box-shadow: var(--aw-shadow-shallow-m-elev-2);
   color: var(--aw-text-primary);
   text-align: left;
@@ -241,9 +241,9 @@ const usage = (t: Token): string => t.description.replace(`${t.figma.name}. `, '
   height: 280px;
   margin-top: var(--aw-spacing-16);
   overflow: hidden;
-  border: 8px solid var(--aw-layer-06);
+  border: 8px solid var(--aw-surface-inverse);
   border-radius: 28px;
-  background: var(--aw-layer-01);
+  background: var(--aw-surface-default);
 }
 .golden__item {
   position: absolute;
@@ -259,7 +259,7 @@ const usage = (t: Token): string => t.description.replace(`${t.figma.name}. `, '
   overflow: hidden;
   border: 0;
   border-radius: var(--aw-radius-m);
-  background: var(--aw-layer-brand);
+  background: var(--aw-surface-brand);
   color: var(--aw-text-primary);
   text-align: left;
   cursor: pointer;
@@ -273,7 +273,7 @@ const usage = (t: Token): string => t.description.replace(`${t.figma.name}. `, '
 .golden__img { position: absolute; inset: 8px 8px 32px; border-radius: var(--aw-radius-s); background: var(--aw-gradient-loyalty-ab); opacity: 0.85; }
 .golden__title { position: relative; }
 .golden__rows { position: absolute; top: 128px; left: 16px; right: 16px; display: grid; gap: var(--aw-spacing-8); }
-.golden__rows span { height: 24px; border-radius: var(--aw-radius-xs); background: var(--aw-layer-03); }
+.golden__rows span { height: 24px; border-radius: var(--aw-radius-xs); background: var(--aw-surface-muted); }
 
 @media (max-width: 720px) {
   .track { grid-template-columns: 1fr; }

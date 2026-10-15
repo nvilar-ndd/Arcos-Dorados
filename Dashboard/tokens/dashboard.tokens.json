@@ -1444,7 +1444,6 @@
       "primary-hover-transparent": {
         "$type": "color",
         "$value": "#ffbc0d33",
-        "$description": "Utilizado en los estados de los switch",
         "$extensions": {
           "figma": {
             "name": "button/primary-hover-transparent",
@@ -1459,7 +1458,6 @@
       "primary-focus": {
         "$type": "color",
         "$value": "{primitives.color.accessible.gold}",
-        "$description": "Se aplica al elemento cuando recibe el foco",
         "$extensions": {
           "figma": {
             "name": "button/primary-focus",
