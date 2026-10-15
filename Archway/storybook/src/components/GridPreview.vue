@@ -82,12 +82,12 @@ const colWidth = computed(() => {
   align-items: center;
   min-height: 40px;
   padding: 0 var(--aw-spacing-16);
-  border: 1px solid var(--aw-chip-enabled-stroke);
+  border: 1px solid var(--aw-chip-stroke);
   border-radius: var(--aw-radius-xxxl);
-  background: var(--aw-chip-enabled-bg);
+  background: var(--aw-chip-bg);
   cursor: pointer;
 }
-.seg__opt.is-on { border-color: var(--aw-chip-selected-bg); background: var(--aw-chip-selected-bg); color: var(--aw-chip-selected-text); }
+.seg__opt.is-on { border-color: var(--aw-chip-bg-selected); background: var(--aw-chip-bg-selected); color: var(--aw-chip-text-selected); }
 .seg__opt input { position: absolute; opacity: 0; pointer-events: none; }
 .seg__opt:focus-within { outline: 2px solid var(--aw-link-default); outline-offset: 2px; }
 .check { display: inline-flex; align-items: center; gap: var(--aw-spacing-8); min-height: 40px; cursor: pointer; }
@@ -98,9 +98,9 @@ const colWidth = computed(() => {
   position: relative;
   height: 560px;
   overflow: hidden;
-  border: 8px solid var(--aw-layer-06);
+  border: 8px solid var(--aw-surface-inverse);
   border-radius: 36px;
-  background: var(--aw-layer-01);
+  background: var(--aw-surface-default);
   transition: width 200ms ease;
 }
 .baseline {
@@ -114,8 +114,8 @@ const colWidth = computed(() => {
 .cols { position: absolute; inset: 0; display: grid; pointer-events: none; z-index: 2; }
 .col { background: rgb(255 0 0 / 0.1); }
 .content { position: relative; display: grid; gap: var(--aw-spacing-16); padding-block: var(--aw-spacing-24); }
-.mock { border-radius: var(--aw-radius-m); background: var(--aw-layer-03); }
-.mock--header { height: 56px; background: var(--aw-layer-brand); }
+.mock { border-radius: var(--aw-radius-m); background: var(--aw-surface-muted); }
+.mock--header { height: 56px; background: var(--aw-surface-brand); }
 .mock--card { height: 160px; }
 .mock--banner { height: 112px; background: var(--aw-gradient-loyalty-ab); }
 .mock--tile { height: 72px; border-radius: var(--aw-radius-s); }

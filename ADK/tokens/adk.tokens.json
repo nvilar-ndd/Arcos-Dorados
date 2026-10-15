@@ -78,7 +78,7 @@
               "page": "Colors"
             },
             "archway": {
-              "nearest": "primitives.color.blue-dark.800",
+              "nearest": "primitives.color.blue.800",
               "value": "#103C82",
               "deltaE": 21.97,
               "match": "Sin equivalente"
@@ -192,7 +192,7 @@
               "page": "Colors"
             },
             "archway": {
-              "nearest": "primitives.color.blue-dark.800",
+              "nearest": "primitives.color.blue.800",
               "value": "#103C82",
               "deltaE": 0.0,
               "match": "Igual"
@@ -208,7 +208,7 @@
               "page": "Colors"
             },
             "archway": {
-              "nearest": "primitives.color.blue-dark.300",
+              "nearest": "primitives.color.blue.300",
               "value": "#A0C0F3",
               "deltaE": 20.65,
               "match": "Sin equivalente"
@@ -275,7 +275,7 @@
               "page": "Colors"
             },
             "archway": {
-              "nearest": "primitives.color.blue-dark.100",
+              "nearest": "primitives.color.blue.100",
               "value": "#E8F0FC",
               "deltaE": 9.39,
               "match": "Sin equivalente"
@@ -377,7 +377,7 @@
               "page": "Colors"
             },
             "archway": {
-              "nearest": "primitives.color.blue-dark.600",
+              "nearest": "primitives.color.blue.600",
               "value": "#1B67DF",
               "deltaE": 21.47,
               "match": "Sin equivalente"
@@ -393,7 +393,7 @@
               "page": "Colors"
             },
             "archway": {
-              "nearest": "primitives.color.blue-dark.600",
+              "nearest": "primitives.color.blue.600",
               "value": "#1B67DF",
               "deltaE": 20.79,
               "match": "Sin equivalente"
@@ -613,7 +613,7 @@
             "status": "proposed"
           },
           "archway": {
-            "target": "semantic.background.01",
+            "target": "semantic.surface.default",
             "value": "#FFFFFF",
             "deltaE": 0.0,
             "match": "Igual"
@@ -629,7 +629,7 @@
             "status": "proposed"
           },
           "archway": {
-            "target": "semantic.background.02",
+            "target": "semantic.surface.subtle",
             "value": "#F5F5F5",
             "deltaE": 1.39,
             "match": "≈ redondeo"
@@ -645,7 +645,7 @@
             "status": "proposed"
           },
           "archway": {
-            "target": "semantic.button.secondary-pressed",
+            "target": "semantic.button.secondary-bg-pressed",
             "value": "#F5F5F5",
             "deltaE": 1.39,
             "match": "≈ redondeo"
@@ -661,7 +661,7 @@
             "status": "proposed"
           },
           "archway": {
-            "target": "semantic.background.06",
+            "target": "semantic.surface.inverse",
             "value": "#292929",
             "deltaE": 0.0,
             "match": "Igual"
@@ -677,7 +677,7 @@
             "status": "proposed"
           },
           "archway": {
-            "target": "semantic.layer.brand",
+            "target": "semantic.surface.brand",
             "value": "#FFBC0D",
             "deltaE": 0.0,
             "match": "Igual"
@@ -909,7 +909,7 @@
             "status": "proposed"
           },
           "archway": {
-            "target": "semantic.button.primary",
+            "target": "semantic.button.primary-bg",
             "value": "#FFBC0D",
             "deltaE": 0.0,
             "match": "Igual"
@@ -955,7 +955,7 @@
             "status": "proposed"
           },
           "archway": {
-            "target": "semantic.button.primary-disabled",
+            "target": "semantic.button.primary-bg-disabled",
             "value": "#FFF5DB",
             "deltaE": 24.44,
             "match": "Distinto"
@@ -971,7 +971,7 @@
             "status": "proposed"
           },
           "archway": {
-            "target": "semantic.button.secondary",
+            "target": "semantic.button.secondary-bg",
             "value": "#FFFFFF",
             "deltaE": 0.0,
             "match": "Igual"
@@ -987,7 +987,7 @@
             "status": "proposed"
           },
           "archway": {
-            "target": "semantic.button.secondary-pressed",
+            "target": "semantic.button.secondary-bg-pressed",
             "value": "#F5F5F5",
             "deltaE": 1.39,
             "match": "≈ redondeo"
@@ -1003,7 +1003,7 @@
             "status": "proposed"
           },
           "archway": {
-            "target": "semantic.button.text-enabled",
+            "target": "semantic.button.text",
             "value": "#292929",
             "deltaE": 0.0,
             "match": "Igual"
@@ -1021,7 +1021,7 @@
             "status": "proposed"
           },
           "archway": {
-            "target": "semantic.chip.disabled-bg",
+            "target": "semantic.chip.bg-disabled",
             "value": "#F5F5F5",
             "deltaE": 1.39,
             "match": "≈ redondeo"
@@ -1085,7 +1085,7 @@
             "status": "proposed"
           },
           "archway": {
-            "target": "semantic.background.03",
+            "target": "semantic.surface.muted",
             "value": "#DBDBDB",
             "deltaE": 1.78,
             "match": "≈ redondeo"
@@ -1101,7 +1101,7 @@
             "status": "proposed"
           },
           "archway": {
-            "target": "semantic.background.04",
+            "target": "semantic.surface.strong",
             "value": "#C2C2C2",
             "deltaE": 7.71,
             "match": "Cercano"
@@ -1217,7 +1217,7 @@
             "status": "proposed"
           },
           "archway": {
-            "target": "semantic.layer.brand",
+            "target": "semantic.surface.brand",
             "value": "#FFBC0D",
             "deltaE": 0.0,
             "match": "Igual"
@@ -1233,7 +1233,7 @@
             "status": "proposed"
           },
           "archway": {
-            "target": "semantic.background.03",
+            "target": "semantic.surface.muted",
             "value": "#DBDBDB",
             "deltaE": 1.78,
             "match": "≈ redondeo"

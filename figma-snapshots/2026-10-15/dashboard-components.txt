@@ -1,0 +1,74 @@
+# Dashboard › Components (106:1103) — component sets (nombre|variantes) y componentes sueltos (nombre|id)
+Building Blocks|45
+Button|15
+Calendar picker|7
+Card_Campos|2
+Card_Option|3
+Card_list|8
+Cards_Category|3
+Cards_img|3
+Card|4
+Checkbox|8
+Data Table icon/illustration|4
+Data table row cell|5
+Date|15
+Day|8
+Dd-LabelNum|4
+DropDown-ListMenuNum|1
+DropDown-ListMenuNum|1
+Dropdown-ListItem|5
+Dropdown-ListMenu-desplegado|1
+Dropdown-ListMenu|1
+Dropdown-Menu|8
+Evento|5
+FAB-ListMenu-desplegado|4
+Header|2
+Hr|2
+MediumFAB|8
+Modal|3
+Notification+ProgresBar|4
+Notification|12
+Number Day|2
+Pagination|2
+Progress indicator item|6
+RadioButton|12
+Range calendar|2
+Segmented button|3
+Selectable Card|12
+Sidebar_items|2
+SmallFAB|12
+Spinner animation|8
+Spinner base|2
+Tab label|6
+Tag-operations|2
+Tag|2
+Text Area|5
+TextField|9
+Toggle|12
+Tooltip|24
+Utilidades_Nota_|6
+Utilidades_TitleFlow|4
+_File uploader file item|6
+_File uploader file list item|3
+_FileUploader|5
+_Progress circle|7
+imagen-carousel|4
+images|1
+item|6
+progress bar -Items|7
+progress bar|6
+scroll|2
+sidebar|15
+---
+2Componente_de_prueba|4644:4151
+Accordion item|697:23702
+Componente_de_prueba|4643:4139
+Data table header cell|635:3426
+Dd-LabelNum/ListaLabelNum|787:19417
+Empty state|6749:5101
+File Uploader|3300:5800
+Link|714:27725
+Menu_item|3817:7616
+Pagination-cantidad|787:27048
+Pagination-info|787:27019
+TextField_Dropdown|701:29017

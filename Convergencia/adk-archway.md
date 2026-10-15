@@ -1,6 +1,6 @@
 # Convergencia de Foundations — ADK → ArchWay
 
-> **Fuentes:** [[ADK] Design System](https://www.figma.com/design/IAqK97JM1KkMLs1VWGGTkv/-ADK--Design-System) y [Archway Foundations Library](https://www.figma.com/design/Us1oNLc2wgmgG3aMuT5dJv/-Archway--Foundations--Library), extraídas vía Figma MCP el 2026-10-09.
+> **Fuentes:** [[ADK] Design System](https://www.figma.com/design/IAqK97JM1KkMLs1VWGGTkv/-ADK--Design-System) y [Archway Foundations Library](https://www.figma.com/design/Us1oNLc2wgmgG3aMuT5dJv/-Archway--Foundations--Library), extraídas vía Figma MCP el 2026-10-09. **Nombres de ArchWay actualizados el 2026-10-15** (Background/Layer → `Surface/*`, ver [`Archway/audit.md`](../Archway/audit.md#cambios-en-figma-desde-la-versión-anterior-2026-10-15)); los valores y los ΔE no cambiaron.
 > **Estado:** análisis para decidir. Nada de esto está aplicado.
 > **Distancia perceptual ΔE (CIE76):**
 >
@@ -47,7 +47,7 @@
 | **Arquitectura** | Primitives → Semantic | Sin variables (paleta como muestras) | ✅ Sin conflicto de nombres: ADK adopta ArchWay tal cual |
 | **Color – marca** | gold 500, red 600, black 800 | Idénticos | ✅ |
 | **Color – grises** | `black/50…900` | Dark Grey, Grey, Light Grey, Ivory (= Dashboard) | Redondeo en 4 de 5; mismas decisiones que Dashboard |
-| **Color – links** | `blue Dark/700` `#1652B1` | `#0F62FE` (= Dashboard) | ❗ Misma decisión que Dashboard D4 |
+| **Color – links** | `blue/700` `#1652B1` | `#0F62FE` (= Dashboard) | ❗ Misma decisión que Dashboard D4 |
 | **Botón primario** | Sin borde · pressed más claro (`gold/400`) | Borde `#C08B00` · hover más oscuro (`#F1B417`) | ❗ Direcciones opuestas en el estado presionado |
 | **Feedback** | Superficies + `*-on-black` | 4 colores sueltos de borde de snackbar | ArchWay cubre todo |
 | **Tipografía** | 20 estilos 12–36, enlazados a `Font/*` | 20 estilos 12–128, sueltos, tracking −0.15 | ❗ Modo Kiosk (F-02) |
@@ -126,15 +126,15 @@ Cómo decide el script de la fase 2a. Se lee por propiedad y por hex:
 
 | Hex | En `fills` de TEXT | En `fills` de frame/shape | En `strokes` |
 |---|---|---|---|
-| `#292929` | `Text/primary` | `Background/06` (snackbar) | `Border/input-active` |
-| `#FFFFFF` | `Text/on-color` | `Background/01` | — (revisar) |
-| `#FFBC0D` | — (revisar) | `Button/primary` · `Layer/brand` · `Interactive/active` según componente | `Interactive/active` |
+| `#292929` | `Text/primary` | `Surface/inverse` (snackbar) | `Border/input-active` |
+| `#FFFFFF` | `Text/on-color` | `Surface/default` | — (revisar) |
+| `#FFBC0D` | — (revisar) | `Button/primary-bg` · `Surface/brand` · `Interactive/active` según componente | `Interactive/active` |
 | `#6F6F6F` | `Text/secondary` | — (revisar) | `Button/secondary-stroke` |
-| `#ADADAD` | `Text/disabled` | `Background/04` (thumb) | `Border/default` (corrige A-A02) |
-| `#D6D6D6` | — | `Background/03` | `Border/soft` |
-| `#F9F9F9` | — | `Background/02` | — |
-| `#F1F1F1` | — | `Button/secondary-pressed` | — |
-| `#F1B417` | — | `Button/primary-pressed` (K3) | — |
+| `#ADADAD` | `Text/disabled` | `Surface/strong` (thumb) | `Border/default` (corrige A-A02) |
+| `#D6D6D6` | — | `Surface/muted` | `Border/soft` |
+| `#F9F9F9` | — | `Surface/subtle` | — |
+| `#F1F1F1` | — | `Button/secondary-bg-pressed` | — |
+| `#F1B417` | — | `Button/primary-bg-pressed` (K3) | — |
 | `#C08B00` | — | — | `Button/primary-stroke` (K4) |
 | `#DB0007` | `Text/error` | `Feedback/error` | `Feedback/error` |
 | `#808080` · `#979797` · `#000000` | Revisión manual (A-S04) | | |
@@ -184,26 +184,26 @@ Cada color de la paleta ADK contra el primitivo ArchWay más cercano.
 | primary | McDonald's Red | `primary.red` | `#DB0007` | `red.600` `#DB0007` | 0.0 | Igual |
 | primary | Black | `primary.black` | `#292929` | `black.800` `#292929` | 0.0 | Igual |
 | primary | White | `primary.white` | `#FFFFFF` | `white.default` `#FFFFFF` | 0.0 | Igual |
-| secondary | Blue | `secondary.blue` | `#006BAE` | `blue-dark.800` `#103C82` | 22.0 | Sin equivalente |
+| secondary | Blue | `secondary.blue` | `#006BAE` | `blue.800` `#103C82` | 22.0 | Sin equivalente |
 | secondary | Dark Grey | `secondary.dark-grey` | `#6F6F6F` | `black.500` `#707070` | 0.4 | Igual |
 | secondary | Grey | `secondary.grey` | `#ADADAD` | `black.300` `#A8A8A8` | 1.9 | ≈ redondeo |
 | secondary | Light Grey | `secondary.light-grey` | `#D6D6D6` | `black.100` `#DBDBDB` | 1.8 | ≈ redondeo |
 | secondary | Ivory | `secondary.ivory` | `#F9F9F9` | `black.50` `#F5F5F5` | 1.4 | ≈ redondeo |
 | tertiary | McDonald's Green | `tertiary.green` | `#1F6437` | `green.800` `#1F6538` | 0.5 | Igual |
 | tertiary | Light Green | `tertiary.light-green` | `#A9C141` | `lime.500` `#ADC44B` | 3.1 | Cercano |
-| tertiary | Dark Blue | `tertiary.dark-blue` | `#103C82` | `blue-dark.800` `#103C82` | 0.0 | Igual |
-| tertiary | Light Blue | `tertiary.light-blue` | `#56AFD1` | `blue-dark.300` `#A0C0F3` | 20.7 | Sin equivalente |
+| tertiary | Dark Blue | `tertiary.dark-blue` | `#103C82` | `blue.800` `#103C82` | 0.0 | Igual |
+| tertiary | Light Blue | `tertiary.light-blue` | `#56AFD1` | `blue.300` `#A0C0F3` | 20.7 | Sin equivalente |
 | tertiary | Fuschia | `tertiary.fuchsia` | `#9A0A4D` | `fuchsia.700` `#9A0A4D` | 0.0 | Igual |
 | tertiary | Beige | `tertiary.beige` | `#B69A81` | `black.300` `#A8A8A8` | 18.5 | Sin equivalente |
 | tertiary | Gold Disabled | `tertiary.gold-disabled` | `#FFE49E` | `gold.200` `#FFE7A8` | 4.0 | Cercano |
-| tertiary | Blue Disabled | `tertiary.blue-disabled` | `#CCF0FF` | `blue-dark.100` `#E8F0FC` | 9.4 | Sin equivalente |
+| tertiary | Blue Disabled | `tertiary.blue-disabled` | `#CCF0FF` | `blue.100` `#E8F0FC` | 9.4 | Sin equivalente |
 | tertiary | Green Disabled | `tertiary.green-disabled` | `#E2EABF` | `lime.200` `#E2EABF` | 0.0 | Igual |
 | tertiary | Dark Red | `tertiary.dark-red` | `#9A0005` | `red.700` `#A80005` | 5.9 | Cercano |
 | accent | Accent Gold | `accent.gold` | `#C08B00` | `gold.700` `#A87A00` | 9.5 | Sin equivalente |
 | accent | Hover Gold | `accent.gold-hover` | `#F1B417` | `gold.500` `#FFBC0D` | 6.0 | Cercano |
 | accent | Accent Grey | `accent.grey` | `#959595` | `black.400` `#8F8F8F` | 2.3 | ≈ redondeo |
-| link | Link | `link.default` | `#0F62FE` | `blue-dark.600` `#1B67DF` | 21.5 | Sin equivalente |
-| link | Link Hover | `link.hover` | `#054ADA` | `blue-dark.600` `#1B67DF` | 20.8 | Sin equivalente |
+| link | Link | `link.default` | `#0F62FE` | `blue.600` `#1B67DF` | 21.5 | Sin equivalente |
+| link | Link Hover | `link.hover` | `#054ADA` | `blue.600` `#1B67DF` | 20.8 | Sin equivalente |
 | link | Link Visited | `link.visited` | `#8A3FFC` | `violet.400` `#8A3FFC` | 0.0 | Igual |
 | illustration | Ground Shadow | `illustration.ground-shadow` | `#F1F1F1` | `black.50` `#F5F5F5` | 1.4 | ≈ redondeo |
 | illustration | Neutral Grey | `illustration.neutral-grey` | `#EAEAEA` | `black.50` `#F5F5F5` | 3.8 | Cercano |
@@ -237,14 +237,14 @@ Cómo queda cada uso de ADK en ArchWay. **Distinto** y **Cercano** cambian de co
 | `border.strong` | `primary.black` | `#292929` | `border.input-active` | `#292929` | 0.0 | Igual |
 | `border.selected` | `primary.gold` | `#FFBC0D` | `interactive.active` | `#FFBC0D` | 0.0 | Igual |
 | `border.error` | `primary.red` | `#DB0007` | `feedback.error` | `#DB0007` | 0.0 | Igual |
-| `button.primary` | `primary.gold` | `#FFBC0D` | `button.primary` | `#FFBC0D` | 0.0 | Igual |
+| `button.primary` | `primary.gold` | `#FFBC0D` | `button.primary-bg` | `#FFBC0D` | 0.0 | Igual |
 | `button.primary-hover` | `accent.gold-hover` | `#F1B417` | — | — | — | Sin equivalente |
 | `button.primary-stroke` | `accent.gold` | `#C08B00` | — | — | — | Sin equivalente |
-| `button.primary-inactive` | `tertiary.gold-disabled` | `#FFE49E` | `button.primary-disabled` | `#FFF5DB` | 24.4 | Distinto |
+| `button.primary-inactive` | `tertiary.gold-disabled` | `#FFE49E` | `button.primary-bg-disabled` | `#FFF5DB` | 24.4 | Distinto |
 | `button.secondary` | `primary.white` | `#FFFFFF` | `button.secondary` | `#FFFFFF` | 0.0 | Igual |
 | `button.secondary-hover` | `illustration.ground-shadow` | `#F1F1F1` | `button.secondary-pressed` | `#F5F5F5` | 1.4 | ≈ redondeo |
 | `button.text` | `primary.black` | `#292929` | `button.text-enabled` | `#292929` | 0.0 | Igual |
-| `control.track` | `secondary.ivory` | `#F9F9F9` | `chip.disabled-bg` | `#F5F5F5` | 1.4 | ≈ redondeo |
+| `control.track` | `secondary.ivory` | `#F9F9F9` | `chip.bg-disabled` | `#F5F5F5` | 1.4 | ≈ redondeo |
 | `control.track-stroke` | `secondary.grey` | `#ADADAD` | `border.default` | `#8F8F8F` | 11.3 | Distinto |
 | `control.on` | `primary.gold` | `#FFBC0D` | `interactive.active` | `#FFBC0D` | 0.0 | Igual |
 | `control.on-stroke` | `accent.gold` | `#C08B00` | — | — | — | Sin equivalente |
@@ -336,7 +336,7 @@ La escala de ADK no es un factor fijo (cuerpo ~1.5×, títulos ~2×), pero **igu
 | Radio 20 / 28 / 99 / 100 | Pills | No existe | `radius/full` (F-03). El 20 de ADK es el pill de 40 px |
 | Sombra `0 8 16 /16 %` | 100 usos | Deep/M-elev-2 = `0 8 16 /25 %` | Adoptar Deep/M (un poco más marcada) o pedir variante 16 % |
 | Sombra `0 −8 16 /16 %` | Footer flotante | No existe | Agregar `elevation/*-up` |
-| Header "sombra blanca" | Fade | — | Gradiente `Background/01 → transparente`, no elevación |
+| Header "sombra blanca" | Fade | — | Gradiente `Surface/default → transparente`, no elevación |
 | Touch target | 40–80 | — | `size/touch-target`: mobile 48 · tablet 48 · kiosk 56 (K12) |
 | Border width | 1 · 3 | — | `border-width/default` 1 · `focus` 2 · `selected` 3 (F-05 de ArchWay pide border width) |
 
@@ -404,7 +404,7 @@ KIOSK (1080 × 1920)               KIOSK S (800 × 1280)            TABLET (1280
 | **Fitts** | En tablet el carrito pasa al costado: el CTA de pago queda a la misma distancia de cualquier producto. En kiosco el footer está en la zona baja, al alcance |
 | **Hick** | En Kiosk S la nav pasa a tabs: si hay más de 7–8 categorías, agrupar antes que achicar |
 | **Jakob** | Tablet en horizontal sigue el patrón de POS y apps de delivery (menú izquierda, carrito derecha), que el cliente ya conoce |
-| **Ley de la región común** | El carrito lateral en tablet es una región con fondo `Background/02`, separada del catálogo |
+| **Ley de la región común** | El carrito lateral en tablet es una región con fondo `Surface/subtle`, separada del catálogo |
 
 ## Riesgos
 

@@ -35,6 +35,6 @@ const rows = computed(() =>
   border-radius: 2px;
   background: var(--aw-feedback-info);
 }
-.bar--base { background: var(--aw-layer-brand); }
+.bar--base { background: var(--aw-surface-brand); }
 .bar--zero { background: var(--aw-border-default); }
 </style>

@@ -1,6 +1,6 @@
 # Convergencia de Foundations — Dashboard → ArchWay
 
-> **Fuentes:** [Archway Foundations Library](https://www.figma.com/design/Us1oNLc2wgmgG3aMuT5dJv/-Archway--Foundations--Library) y [DashBoard Foundation](https://www.figma.com/design/XKulGF78txFYDLNMstLShZ/-DashBoard--Fuondation), extraídas vía Figma MCP el 2026-10-07.
+> **Fuentes:** [Archway Foundations Library](https://www.figma.com/design/Us1oNLc2wgmgG3aMuT5dJv/-Archway--Foundations--Library) y [DashBoard Foundation](https://www.figma.com/design/XKulGF78txFYDLNMstLShZ/-DashBoard--Fuondation), extraídas vía Figma MCP el 2026-10-07. **Nombres de ArchWay actualizados el 2026-10-15** (Background/Layer → `Surface/*`, ver [`Archway/audit.md`](../Archway/audit.md#cambios-en-figma-desde-la-versión-anterior-2026-10-15)); los valores no cambiaron.
 > **Estado:** análisis para decidir. Nada de esto está aplicado. Las comparaciones de color usan la distancia perceptual ΔE (CIE76): < 0.5 igual, < 3 redondeo, < 8 cercano.
 
 ## Resumen
@@ -17,7 +17,7 @@
 
 - **La marca coincide exacto:** `gold/500` #FFBC0D, `red/600` #DB0007 y `black/800` #292929 son iguales en los dos sistemas, y el patrón de tokens (Primitives → Semantic) es el mismo.
 - **Lo que más trabajo da:** el azul de links (otra familia de color), la escala de grises (Dashboard usa `secondary/*` con valores propios), los estados de botón (direcciones opuestas en pressed) y la tipografía (otro sistema de nombres, tracking −0.15 y sin variables).
-- **Colisiones de nombre que hay que resolver antes de mezclar:** `radius/md` = 8 en Dashboard y `radius/M` = 12 en ArchWay; `background/02` es gris oscuro en Dashboard y gris claro en ArchWay.
+- **Colisiones de nombre que hay que resolver antes de mezclar:** `radius/md` = 8 en Dashboard y `radius/M` = 12 en ArchWay; `background/02` es gris oscuro en Dashboard y su ex par `Background/02` de ArchWay (hoy `Surface/subtle`) es gris claro.
 
 ## Comparativa por foundation
 
@@ -27,7 +27,7 @@
 | **Color – marca** | gold 500, red 600, black 800 | Idénticos | ✅ Sin trabajo |
 | **Color – escalas** | 50–900, sufijo `_` en el base | 0–950, sin sufijo | Distinto paso inicial (0 vs 50) y Dashboard agrega 950 |
 | **Color – neutros** | `black/50…900` | `black/0…950` + `secondary/*` (dark-grey, grey, light-grey, ivory) | Los `secondary/*` son los que usa la semántica de Dashboard; 4 de ellos ≈ ArchWay |
-| **Color – links** | `blue Dark/700` #1652B1 | `link/blue` #0F62FE (azul tipo IBM Carbon) | ❗ Decisión de marca |
+| **Color – links** | `blue/700` #1652B1 | `link/blue` #0F62FE (azul tipo IBM Carbon) | ❗ Decisión de marca |
 | **Dark mode** | No existe (propuesta en el doc para DesignOps) | Existe, base #292929 | Dashboard es el insumo para el dark de ArchWay |
 | **Tipografía** | 20 estilos (Display/Heading/Text/Label), enlazados a `Font/*`, tracking 0 / +0.25 | 16 estilos (h1–H7, Body01–03, Label01–03, RM_Body), sin variables, tracking −0.15 | ❗ Mayor trabajo: Dashboard sigue con el tracking Legacy |
 | **Monoespaciada** | — | Roboto Mono (JSON) | Aporte de Dashboard |
@@ -113,35 +113,35 @@ Cómo quedaría cada token de Dashboard en ArchWay. **Distinto** y **Cercano** c
 
 | Dashboard | Valor | ArchWay | Valor | Estado | Nota |
 |---|---|---|---|---|---|
-| `background/01` | `#ffffff` | `Background/01` | `#ffffff` | Igual | Fondo base |
-| `background/02` | `#6f6f6f` | — | — | Sin equivalente | Dashboard: gris oscuro. ArchWay `Background/02` es gris claro (misma numeración, distinto significado) |
+| `background/01` | `#ffffff` | `Surface/default` | `#ffffff` | Igual | Fondo base |
+| `background/02` | `#6f6f6f` | — | — | Sin equivalente | Dashboard: gris oscuro. ArchWay `Surface/subtle` es gris claro (misma numeración, distinto significado) |
 | `background/03` | `#adadad` | — | — | Sin equivalente | Ídem: numeración igual, valor distinto |
-| `background/04` | `#d6d6d6` | `Background/04` | `#c2c2c2` | Cercano |  |
-| `background/05` | `#292929` | `Background/06` | `#292929` | Igual | Fondo oscuro de componentes |
-| `layer/00` | `#ffffff00` | `Button/ghost` | `#ffffff` | Igual | Transparente |
-| `layer/01` | `#ffffff` | `Layer/01` | `#ffffff` | Igual |  |
-| `layer/02` | `#f9f9f9` | `Layer/02` | `#f5f5f5` | ≈ redondeo |  |
-| `layer/03` | `#d6d6d6` | `Layer/03` | `#dbdbdb` | ≈ redondeo |  |
-| `layer/04` | `#adadad` | `Layer/04` | `#c2c2c2` | Cercano |  |
-| `layer/05` | `#6f6f6f` | `Layer/05` | `#424242` | Distinto |  |
-| `layer/06` | `#292929` | `Layer/06` | `#292929` | Igual |  |
-| `layer/07` | `#ffbc0d` | `Layer/brand` | `#ffbc0d` | Igual |  |
+| `background/04` | `#d6d6d6` | `Surface/strong` | `#c2c2c2` | Cercano |  |
+| `background/05` | `#292929` | `Surface/inverse` | `#292929` | Igual | Fondo oscuro de componentes |
+| `layer/00` | `#ffffff00` | `Button/ghost-bg` | `#ffffff` | Igual | Transparente |
+| `layer/01` | `#ffffff` | `Surface/default` | `#ffffff` | Igual |  |
+| `layer/02` | `#f9f9f9` | `Surface/subtle` | `#f5f5f5` | ≈ redondeo |  |
+| `layer/03` | `#d6d6d6` | `Surface/muted` | `#dbdbdb` | ≈ redondeo |  |
+| `layer/04` | `#adadad` | `Surface/strong` | `#c2c2c2` | Cercano |  |
+| `layer/05` | `#6f6f6f` | — | — | Sin equivalente | ArchWay eliminó `Layer/05` (`#424242`) el 2026-10-15 |
+| `layer/06` | `#292929` | `Surface/inverse` | `#292929` | Igual |  |
+| `layer/07` | `#ffbc0d` | `Surface/brand` | `#ffbc0d` | Igual |  |
 | `layer/08` | `#fff8e7` | `Feedback/warning-surface` | `#ffe7a8` | Distinto | Fondo de componentes activos (gold claro) |
 | `border/01` | `#292929` | `Border/input-active` | `#292929` | Igual |  |
 | `border/02` | `#d6d6d6` | `Border/soft` | `#dbdbdb` | ≈ redondeo |  |
 | `border/03` | `#adadad` | `Border/default` | `#8f8f8f` | Distinto |  |
 | `border/04` | `#ffbc0d` | `Interactive/active` | `#ffbc0d` | Igual | Borde dorado: no hay Border dorado en ArchWay |
-| `text/primary` | `#292929` | `Text/Text_primary` | `#292929` | Igual |  |
-| `text/secondary` | `#6f6f6f` | `Text/Text_secondary` | `#5c5c5c` | Cercano |  |
-| `text/disabled` | `#adadad` | `Text/Text_disabled` | `#707070` | Distinto |  |
-| `text/on-color` | `#ffffff` | `Text/Text_on-color` | `#ffffff` | Igual |  |
+| `text/primary` | `#292929` | `Text/primary` | `#292929` | Igual |  |
+| `text/secondary` | `#6f6f6f` | `Text/secondary` | `#5c5c5c` | Cercano |  |
+| `text/disabled` | `#adadad` | `Text/disabled` | `#707070` | Distinto |  |
+| `text/on-color` | `#ffffff` | `Text/on-color` | `#ffffff` | Igual |  |
 | `text/success` | `#1f6437` | `Feedback/success` | `#1f6538` | Igual |  |
-| `text/error` | `#db0007` | `Text/Text_error` | `#db0007` | Igual |  |
+| `text/error` | `#db0007` | `Text/error` | `#db0007` | Igual |  |
 | `link/primary` | `#0f62fe` | `Link/default` | `#1652b1` | Distinto | Azul distinto |
 | `link/primary-hover` | `#054ada` | `Link/hover` | `#1b67df` | Distinto |  |
 | `link/primary-visited` | `#8a3ffc` | `Link/visited` | `#8703b0` | Distinto | Dashboard usa violeta; ArchWay púrpura |
 | `link/secondary` | `#292929` | `Link/pressed` | `#292929` | Igual | ArchWay no tiene link secundario |
-| `icon/primary` | `#292929` | `Icon/Primary` | `#292929` | Igual |  |
+| `icon/primary` | `#292929` | `Icon/primary` | `#292929` | Igual |  |
 | `icon/secondary` | `#6f6f6f` | `Icon/gray` | `#5c5c5c` | Cercano |  |
 | `icon/tertiary` | `#ffffff` | `Icon/on-color` | `#ffffff` | Igual |  |
 | `icon/gold` | `#ffbc0d` | `Icon/gold` | `#ffbc0d` | Igual |  |
@@ -152,24 +152,24 @@ Cómo quedaría cada token de Dashboard en ArchWay. **Distinto** y **Cercano** c
 | `support/error-secondary` | `#fa4d56` | `Feedback/error-on-black` | `#ff4248` | Distinto | Rojo para fondo oscuro |
 | `tag/background-green` | `#e2eabf` | `Feedback/success-surface` | `#c8eed6` | Distinto |  |
 | `tag/background-blue` | `#ccf0ff` | `Feedback/info-surface` | `#cddef9` | Distinto |  |
-| `button/primary-text` | `#292929` | `Button/text-enabled` | `#292929` | Igual |  |
-| `button/primary-enabled` | `#ffbc0d` | `Button/primary` | `#ffbc0d` | Igual |  |
+| `button/primary-text` | `#292929` | `Button/text` | `#292929` | Igual |  |
+| `button/primary-enabled` | `#ffbc0d` | `Button/primary-bg` | `#ffbc0d` | Igual |  |
 | `button/primary-hover` | `#ffd46a` | — | — | Sin equivalente | ArchWay no tiene hover (necesario en Web/Dashboard) |
-| `button/primary-focus` | `#c08800` | `Button/primary-focus` | `#db9f00` | Distinto |  |
-| `button/primary-pressed` | `#c08800` | `Button/primary-pressed` | `#ffcb42` | Distinto | Dirección opuesta: Dashboard oscurece, ArchWay aclara |
-| `button/primary-disabled` | `#ffe49e` | `Button/primary-disabled` | `#fff5db` | Distinto |  |
-| `button/secondary` | `#ffffff` | `Button/secondary` | `#ffffff` | Igual |  |
-| `button/secondary-text` | `#292929` | `Button/text-enabled` | `#292929` | Igual |  |
+| `button/primary-focus` | `#c08800` | `Button/primary-bg-focused` | `#db9f00` | Distinto |  |
+| `button/primary-pressed` | `#c08800` | `Button/primary-bg-pressed` | `#ffcb42` | Distinto | Dirección opuesta: Dashboard oscurece, ArchWay aclara |
+| `button/primary-disabled` | `#ffe49e` | `Button/primary-bg-disabled` | `#fff5db` | Distinto |  |
+| `button/secondary` | `#ffffff` | `Button/secondary-bg` | `#ffffff` | Igual |  |
+| `button/secondary-text` | `#292929` | `Button/text` | `#292929` | Igual |  |
 | `button/secondary-stroke` | `#292929` | `Button/secondary-stroke` | `#8f8f8f` | Distinto |  |
 | `button/secondary-enabled` | `#f9f9f9` | — | — | Sin equivalente |  |
 | `button/secondary-hover` | `#d6d6d6` | — | — | Sin equivalente | Sin hover en ArchWay |
-| `button/secondary-focus` | `#d6d6d6` | `Button/secondary-focus` | `#f5f5f5` | Distinto |  |
-| `button/secondary-pressed` | `#959595` | `Button/secondary-pressed` | `#f5f5f5` | Distinto |  |
+| `button/secondary-focus` | `#d6d6d6` | `Button/secondary-bg-focused` | `#f5f5f5` | Distinto |  |
+| `button/secondary-pressed` | `#959595` | `Button/secondary-bg-pressed` | `#f5f5f5` | Distinto |  |
 | `button/primary-hover-transparent` | `#ffbc0d33` | — | — | Sin equivalente | Estados de switch (transparencia 20%) |
 | `button/primary-pressed-transparent` | `#ffbc0d66` | — | — | Sin equivalente | Estados de switch (transparencia 40%) |
 | `button/secondary-hover-transparent` | `#d6d6d633` | — | — | Sin equivalente |  |
 | `button/secondary-pressed-transparent` | `#d6d6d666` | — | — | Sin equivalente |  |
-| `button/transparent` | `#ffffff00` | `Button/ghost` | `#ffffff` | Igual |  |
+| `button/transparent` | `#ffffff00` | `Button/ghost-bg` | `#ffffff` | Igual |  |
 | `button/skeleton` | `#d6d6d6` | — | — | Sin equivalente | Skeleton: sin equivalente |
 | `button/red` | `#db0007` | — | — | Sin equivalente | Botón destructivo: no existe en ArchWay |
 | `button/red-text` | `#ffffff` | — | — | Sin equivalente |  |
@@ -247,7 +247,7 @@ Primitivo de ArchWay más cercano a cada color de Dashboard. Los **sin equivalen
 | `color/accessible/grey` | `#959595` | `black/400` | `#8f8f8f` | 2.3 | ≈ redondeo |
 | `color/accessible/red` | `#fa4d56` | `red/400` | `#ff4248` | 8.7 | Sin equivalente |
 
-**Lectura rápida:** las escalas `gold`, `red` y `black` de Dashboard tienen otra curva de luminosidad (los pasos 100–300 y 800–950 difieren), así que no conviene mapear paso por paso: la semántica de Dashboard debería apuntar al primitivo de ArchWay que cumpla el mismo rol. Varios `tertiary/*` ya son colores de ArchWay con otro nombre (`dark-blue` = `blue Dark/800`, `fuchsia` = `fuchsia/700`, `green-disabled` = `lime/200`, `blue-visited` = `violet/400`).
+**Lectura rápida:** las escalas `gold`, `red` y `black` de Dashboard tienen otra curva de luminosidad (los pasos 100–300 y 800–950 difieren), así que no conviene mapear paso por paso: la semántica de Dashboard debería apuntar al primitivo de ArchWay que cumpla el mismo rol. Varios `tertiary/*` ya son colores de ArchWay con otro nombre (`dark-blue` = `blue/800`, `fuchsia` = `fuchsia/700`, `green-disabled` = `lime/200`, `blue-visited` = `violet/400`).
 
 ## Tipografía
 
