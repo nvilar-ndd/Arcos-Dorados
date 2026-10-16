@@ -2,11 +2,19 @@
 
 Repositorio de documentación y código de los sistemas de diseño de Arcos Dorados (McDonald's Latinoamérica). Figma es la fuente de la verdad; este repo documenta lo publicado en Figma.
 
-| Carpeta | Contenido | Storybook |
-|---|---|---|
-| [`Archway/`](./Archway) | **ArchWay** — design system transversal y destino de la convergencia (Foundations, Core, Squad Components) | `Archway/storybook` · puerto 6006 |
-| [`Dashboard/`](./Dashboard) | **Dashboard** — Foundations, componentes core (docs + código Vue/Tailwind) y estructura (UI shell) del CMS, separados hasta la unificación | `Dashboard/storybook` · puerto 6007 |
-| [`ADK/`](./ADK) | **ADK (Advance Kiosk)** — Foundations, componentes y layout de los kioscos de autoservicio (1080 × 1920 vertical), separados hasta la unificación | `ADK/storybook` · puerto 6008 |
-| [`Convergencia/`](./Convergencia) | Análisis y plan de unificación de cada sistema hacia ArchWay: [`dashboard-archway.md`](./Convergencia/dashboard-archway.md), [`adk-archway.md`](./Convergencia/adk-archway.md) | — |
+| Carpeta | Contenido |
+|---|---|
+| [`Archway/`](./Archway/README.md) | **Todos los sistemas de diseño**, con ArchWay como padre: [ArchWay DS](./Archway/Archway-DS/README.md), [Dashboard](./Archway/Dashboard/README.md), [ADK](./Archway/ADK/README.md), [Legacy](./Archway/Legacy/README.md), el [plan de convergencia](./Archway/Convergencia/README.md) y las [fotos de Figma](./Archway/figma-snapshots/README.md) |
+| [`Voz-y-Tono/`](./Voz-y-Tono/README.md) | **Manual de voz y tono** de los productos digitales (en armado) |
 
-Legacy se suma con la misma estructura (una carpeta por sistema + su análisis en `Convergencia/`).
+## Storybooks
+
+| Sistema | Carpeta | Puerto |
+|---|---|---|
+| ArchWay DS | `Archway/Archway-DS/storybook` | http://localhost:6006 |
+| Dashboard | `Archway/Dashboard/storybook` | http://localhost:6007 |
+| ADK | `Archway/ADK/storybook` | http://localhost:6008 |
+
+```bash
+cd Archway/Archway-DS/storybook && npm install && npm run dev
+```
