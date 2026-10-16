@@ -1,0 +1,5916 @@
+{
+  "fileKey": "7Hb0VVgTTN1q1RMnVWFYvd",
+  "fileName": "Iconography",
+  "pages": [
+    {
+      "page": "Account & Payment",
+      "pageId": "141:119",
+      "groups": [
+        {
+          "name": null,
+          "id": null,
+          "items": [
+            {
+              "name": "Address",
+              "id": "906:2835",
+              "variants": 15,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gold"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Privacy",
+              "id": "906:2720",
+              "variants": 15,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gold"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Email",
+              "id": "906:2606",
+              "variants": 15,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gold"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Profile",
+              "id": "906:2243",
+              "variants": 15,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gold"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Credit Card",
+              "id": "906:2492",
+              "variants": 15,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gold"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Avatar",
+              "id": "319:1201",
+              "variants": 15,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gold"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Receipt",
+              "id": "1352:3287",
+              "variants": 15,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gold"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "ID Card",
+              "id": "1833:270",
+              "variants": 15,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "48px",
+                    "56px",
+                    "32px",
+                    "16px",
+                    "24px"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "True",
+                    "False"
+                  ]
+                },
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gold"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Billetera",
+              "id": "3839:81",
+              "variants": 10,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                },
+                {
+                  "name": "Type",
+                  "values": [
+                    "Outline",
+                    "Filled"
+                  ]
+                }
+              ],
+              "description": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Arrows",
+      "pageId": "141:115",
+      "groups": [
+        {
+          "name": null,
+          "id": null,
+          "items": [
+            {
+              "name": "View All",
+              "id": "906:2977",
+              "variants": 10,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Link Blue"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Arrow-right",
+              "id": "4515:2",
+              "variants": 10,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Grey"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Arrow-up",
+              "id": "4515:597",
+              "variants": 10,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Grey"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Arrow-left",
+              "id": "4513:2",
+              "variants": 10,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Grey"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Arrow-down",
+              "id": "4513:77",
+              "variants": 10,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Grey"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Chevron",
+              "id": "906:4329",
+              "variants": 100,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Blue",
+                    "Gold",
+                    "Red",
+                    "White"
+                  ]
+                },
+                {
+                  "name": "Direction",
+                  "values": [
+                    "Right",
+                    "Down",
+                    "Left",
+                    "Up"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Sort Ascending/Descending",
+              "id": "2771:216",
+              "variants": 20,
+              "properties": [
+                {
+                  "name": "Active State",
+                  "values": [
+                    "Open",
+                    "Ascending",
+                    "Descending",
+                    "Horizontal"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Expand",
+              "id": "3612:4",
+              "variants": 5,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "56px",
+                    "48px",
+                    "32px",
+                    "24px",
+                    "16px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Collapse",
+              "id": "3612:62",
+              "variants": 5,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "56px",
+                    "48px",
+                    "32px",
+                    "24px",
+                    "16px"
+                  ]
+                }
+              ],
+              "description": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Bottom Navigation",
+      "pageId": "0:1267",
+      "groups": [
+        {
+          "name": null,
+          "id": null,
+          "items": [
+            {
+              "name": "Reorder",
+              "id": "908:1997",
+              "variants": 20,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                },
+                {
+                  "name": "Color",
+                  "values": [
+                    "Gold",
+                    "Disable",
+                    "Black"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Restaurants",
+              "id": "319:1592",
+              "variants": 10,
+              "properties": [
+                {
+                  "name": "Active State",
+                  "values": [
+                    "True",
+                    "False"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "More",
+              "id": "908:1935",
+              "variants": 10,
+              "properties": [
+                {
+                  "name": "Active State",
+                  "values": [
+                    "True",
+                    "False"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Pass",
+              "id": "908:1870",
+              "variants": 10,
+              "properties": [
+                {
+                  "name": "Active State",
+                  "values": [
+                    "True",
+                    "False"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Rewards & Deals",
+              "id": "908:1766",
+              "variants": 10,
+              "properties": [
+                {
+                  "name": "Active State",
+                  "values": [
+                    "True",
+                    "False"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Loyalty",
+              "id": "319:1511",
+              "variants": 10,
+              "properties": [
+                {
+                  "name": "Active State",
+                  "values": [
+                    "True",
+                    "False"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Deals",
+              "id": "908:1391",
+              "variants": 10,
+              "properties": [
+                {
+                  "name": "Active State",
+                  "values": [
+                    "True",
+                    "False"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Order",
+              "id": "908:1701",
+              "variants": 10,
+              "properties": [
+                {
+                  "name": "Active State",
+                  "values": [
+                    "True",
+                    "False"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "House",
+              "id": "323:3187",
+              "variants": 20,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "56",
+                    "32px",
+                    "16px",
+                    "24px",
+                    "48px",
+                    "56px"
+                  ]
+                },
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Disable",
+                    "Gold"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "True",
+                    "False"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Home",
+              "id": "323:6567",
+              "variants": 10,
+              "properties": [
+                {
+                  "name": "Active State",
+                  "values": [
+                    "True",
+                    "False"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Orders",
+              "id": "982:1680",
+              "variants": 10,
+              "properties": [
+                {
+                  "name": "Active state",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Restaurants",
+              "id": "983:1746",
+              "variants": 10,
+              "properties": [
+                {
+                  "name": "Active state",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Mi cuenta",
+              "id": "984:64",
+              "variants": 10,
+              "properties": [
+                {
+                  "name": "Active state",
+                  "values": [
+                    "True",
+                    "False"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "56px",
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Mi cuenta_McID",
+              "id": "4256:29",
+              "variants": 10,
+              "properties": [
+                {
+                  "name": "Active state",
+                  "values": [
+                    "True",
+                    "False"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "56px",
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px"
+                  ]
+                }
+              ],
+              "description": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Brand",
+      "pageId": "323:5524",
+      "groups": [
+        {
+          "name": null,
+          "id": null,
+          "items": [
+            {
+              "name": "Arcos",
+              "id": "323:5794",
+              "variants": 10,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Disable"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "OpenDoor",
+              "id": "323:5859",
+              "variants": 10,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "True",
+                    "False"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "PickUp",
+              "id": "323:6040",
+              "variants": 10,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Disable"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Tags",
+              "id": "323:6105",
+              "variants": 10,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Disable"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Logo",
+              "id": "323:6235",
+              "variants": 15,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Gold",
+                    "Disable",
+                    "Black"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Sticker",
+              "id": "323:6814",
+              "variants": 15,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gold",
+                    "Disable"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Checkbox",
+      "pageId": "70:52",
+      "groups": [
+        {
+          "name": null,
+          "id": null,
+          "items": [
+            {
+              "name": "Circle",
+              "id": "909:1622",
+              "variants": 20,
+              "properties": [
+                {
+                  "name": "Selected",
+                  "values": [
+                    "False",
+                    "True",
+                    "Black"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                },
+                {
+                  "name": "White Outline",
+                  "values": [
+                    "true",
+                    "false"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Square",
+              "id": "909:1703",
+              "variants": 15,
+              "properties": [
+                {
+                  "name": "Selected",
+                  "values": [
+                    "False",
+                    "True",
+                    "Black"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Content",
+      "pageId": "0:260",
+      "groups": [
+        {
+          "name": null,
+          "id": null,
+          "items": [
+            {
+              "name": "Nutrition",
+              "id": "908:2842",
+              "variants": 15,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gold"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Print",
+              "id": "908:2728",
+              "variants": 15,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gold"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Image",
+              "id": "908:2614",
+              "variants": 15,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gold"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Messaging",
+              "id": "908:2500",
+              "variants": 15,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gold"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Open Link",
+              "id": "908:2371",
+              "variants": 15,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Link Blue"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Share",
+              "id": "908:2257",
+              "variants": 15,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Link Blue"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Daypart",
+      "pageId": "59:45",
+      "groups": [
+        {
+          "name": null,
+          "id": null,
+          "items": [
+            {
+              "name": "Dinner",
+              "id": "910:2317",
+              "variants": 20,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Dark Gray",
+                    "Gold"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Lunch",
+              "id": "910:2144",
+              "variants": 20,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Dark Gray",
+                    "Gold"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Breakfast",
+              "id": "910:1961",
+              "variants": 20,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Dark Gray",
+                    "Gold"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Controls",
+      "pageId": "0:480",
+      "groups": [
+        {
+          "name": null,
+          "id": null,
+          "items": [
+            {
+              "name": "Close",
+              "id": "908:3086",
+              "variants": 12,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Red"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px",
+                    "8px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Add",
+              "id": "908:3185",
+              "variants": 10,
+              "properties": [
+                {
+                  "name": "Active State",
+                  "values": [
+                    "True",
+                    "False"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Remove",
+              "id": "908:3288",
+              "variants": 10,
+              "properties": [
+                {
+                  "name": "Active State",
+                  "values": [
+                    "True",
+                    "False"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Refresh",
+              "id": "908:3326",
+              "variants": 5,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Renew",
+              "id": "323:3750",
+              "variants": 5,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Show & Hide",
+              "id": "908:3381",
+              "variants": 20,
+              "properties": [
+                {
+                  "name": "Type",
+                  "values": [
+                    "Show",
+                    "Hide"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Menu",
+              "id": "908:3559",
+              "variants": 10,
+              "properties": [
+                {
+                  "name": "Active State",
+                  "values": [
+                    "True",
+                    "False"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Menu_sidebar",
+              "id": "2741:2",
+              "variants": 10,
+              "properties": [
+                {
+                  "name": "Active State",
+                  "values": [
+                    "Open",
+                    "Close"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "More",
+              "id": "908:3560",
+              "variants": 10,
+              "properties": [
+                {
+                  "name": "Outline",
+                  "values": [
+                    "True",
+                    "False"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Search",
+              "id": "909:1398",
+              "variants": 15,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gold"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Download",
+              "id": "909:1485",
+              "variants": 10,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Link Blue"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Upload",
+              "id": "3256:4",
+              "variants": 10,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Link Blue"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "56px",
+                    "48px",
+                    "32px",
+                    "24px",
+                    "16px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Calendar",
+              "id": "3336:7",
+              "variants": 20,
+              "properties": [
+                {
+                  "name": "Type",
+                  "values": [
+                    "Today",
+                    "Month"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "True",
+                    "False"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "56px",
+                    "48px",
+                    "32px",
+                    "24px",
+                    "16px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Countries",
+              "id": "3577:4",
+              "variants": 10,
+              "properties": [
+                {
+                  "name": "Outline",
+                  "values": [
+                    "True",
+                    "False"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "56px",
+                    "48px",
+                    "32px",
+                    "24px",
+                    "16px"
+                  ]
+                }
+              ],
+              "description": "Ícono creado para la categoría Countries del menú izquierdo del Dashboard"
+            },
+            {
+              "name": "Data management",
+              "id": "3590:1178",
+              "variants": 10,
+              "properties": [
+                {
+                  "name": "Outline",
+                  "values": [
+                    "True",
+                    "False"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "56px",
+                    "48px",
+                    "32px",
+                    "24px",
+                    "16px"
+                  ]
+                }
+              ],
+              "description": "Ícono creado para la categoría Data management del menú izquierdo del Dashboard"
+            },
+            {
+              "name": "Games",
+              "id": "3637:1386",
+              "variants": 10,
+              "properties": [
+                {
+                  "name": "Outline",
+                  "values": [
+                    "True",
+                    "False"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "56px",
+                    "48px",
+                    "32px",
+                    "24px",
+                    "16px"
+                  ]
+                }
+              ],
+              "description": "Ícono creado para la categoría Games del menú izquierdo del Dashboard"
+            },
+            {
+              "name": "Home content",
+              "id": "3642:769",
+              "variants": 10,
+              "properties": [
+                {
+                  "name": "Outline",
+                  "values": [
+                    "True",
+                    "False"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "56px",
+                    "48px",
+                    "32px",
+                    "24px",
+                    "16px"
+                  ]
+                }
+              ],
+              "description": "Ícono creado para la categoría Home content del menú izquierdo del Dashboard"
+            },
+            {
+              "name": "App content",
+              "id": "3670:802",
+              "variants": 10,
+              "properties": [
+                {
+                  "name": "Outline",
+                  "values": [
+                    "True",
+                    "False"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "56px",
+                    "48px",
+                    "32px",
+                    "24px",
+                    "16px"
+                  ]
+                }
+              ],
+              "description": "Ícono creado para la categoría App content del menú izquierdo del Dashboard"
+            },
+            {
+              "name": "Cross Selling",
+              "id": "3737:1030",
+              "variants": 10,
+              "properties": [
+                {
+                  "name": "Outline",
+                  "values": [
+                    "True",
+                    "False"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "56px",
+                    "48px",
+                    "32px",
+                    "24px",
+                    "16px"
+                  ]
+                }
+              ],
+              "description": "Ícono creado para la categoría Cross Selling del menú izquierdo del Dashboard"
+            },
+            {
+              "name": "move elements",
+              "id": "4920:80",
+              "variants": 5,
+              "properties": [
+                {
+                  "name": "size",
+                  "values": [
+                    "16",
+                    "24",
+                    "32",
+                    "48",
+                    "56"
+                  ]
+                }
+              ],
+              "description": "Se utiliza para mover filas"
+            },
+            {
+              "name": "Logout",
+              "id": "5123:1223",
+              "variants": 10,
+              "properties": [
+                {
+                  "name": "Outline",
+                  "values": [
+                    "True",
+                    "False"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "56px",
+                    "48px",
+                    "32px",
+                    "24px",
+                    "16px"
+                  ]
+                }
+              ],
+              "description": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Devices",
+      "pageId": "0:610",
+      "groups": [
+        {
+          "name": null,
+          "id": null,
+          "items": [
+            {
+              "name": "Tablet",
+              "id": "910:2737",
+              "variants": 15,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gold"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Desktop",
+              "id": "319:2183",
+              "variants": 10,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gold"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Mobile Phone",
+              "id": "910:2617",
+              "variants": 15,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gold"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Kiosk",
+              "id": "910:2503",
+              "variants": 15,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gold"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Fulfillment",
+      "pageId": "0:698",
+      "groups": [
+        {
+          "name": null,
+          "id": null,
+          "items": [
+            {
+              "name": "Table Service",
+              "id": "910:3529",
+              "variants": 20,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gold",
+                    "Disable"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Delivery",
+              "id": "910:3414",
+              "variants": 20,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gold",
+                    "Disable"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Counter",
+              "id": "910:3300",
+              "variants": 20,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gold",
+                    "Disable"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Eat In",
+              "id": "910:3186",
+              "variants": 15,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gold",
+                    "Disable"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Curbside",
+              "id": "910:3094",
+              "variants": 20,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gold",
+                    "Disable"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Drive Thru",
+              "id": "910:2980",
+              "variants": 20,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gold",
+                    "Disable"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Delivery motorcycle",
+              "id": "1182:4",
+              "variants": 25,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Disable",
+                    "Gold",
+                    "Blue"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "True",
+                    "False"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "56px",
+                    "48px",
+                    "32px",
+                    "24px",
+                    "16px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Trophy",
+              "id": "3361:1178",
+              "variants": 10,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "56px",
+                    "48px",
+                    "32px",
+                    "24px",
+                    "16px"
+                  ]
+                },
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "White"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Discount",
+              "id": "3361:1215",
+              "variants": 10,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "56px",
+                    "48px",
+                    "32px",
+                    "24px",
+                    "16px"
+                  ]
+                },
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "White"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Lightning",
+              "id": "3361:1225",
+              "variants": 10,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "56px",
+                    "48px",
+                    "32px",
+                    "24px",
+                    "16px"
+                  ]
+                },
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "White"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Pre-sales",
+              "id": "3424:986",
+              "variants": 5,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "56px",
+                    "48px",
+                    "32px",
+                    "24px",
+                    "16px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Pin",
+              "id": "5295:9",
+              "variants": 10,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "56px",
+                    "48px",
+                    "32px",
+                    "24px",
+                    "16px"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                }
+              ],
+              "description": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Information Labels",
+      "pageId": "0:1031",
+      "groups": [
+        {
+          "name": null,
+          "id": null,
+          "items": [
+            {
+              "name": "Question",
+              "id": "2323:1383",
+              "variants": 15,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Gold",
+                    "Black"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Info - Circle",
+              "id": "2323:1424",
+              "variants": 20,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Gold",
+                    "Black",
+                    "White"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Info - Diamond",
+              "id": "2323:1470",
+              "variants": 15,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Dark Gray",
+                    "Black"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": "General/optional information for the user to view."
+            },
+            {
+              "name": "Success",
+              "id": "2323:1511",
+              "variants": 20,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Green",
+                    "Light Green"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": "Reassuring visual cue of success or completions."
+            },
+            {
+              "name": "Error",
+              "id": "2323:1571",
+              "variants": 15,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Red",
+                    "Black"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": "Highest emphasis; reflects critical malfunctions or an issue on the page or section."
+            },
+            {
+              "name": "Warning",
+              "id": "2323:1612",
+              "variants": 20,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Red",
+                    "Yellow"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": "Moderate emphasis; resolution may not be required in order to continue."
+            },
+            {
+              "name": "Cancel",
+              "id": "2323:1668",
+              "variants": 15,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Red",
+                    "Black"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "56px",
+                    "48px",
+                    "32px",
+                    "24px",
+                    "16px"
+                  ]
+                }
+              ],
+              "description": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Location & Directions",
+      "pageId": "0:1139",
+      "groups": [
+        {
+          "name": null,
+          "id": null,
+          "items": [
+            {
+              "name": "Directions",
+              "id": "910:3946",
+              "variants": 15,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Golde"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Locate Me",
+              "id": "910:3832",
+              "variants": 15,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gold"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Location",
+              "id": "910:3718",
+              "variants": 20,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gold",
+                    "White"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Distance",
+              "id": "329:49",
+              "variants": 10,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Disable",
+                    "Black"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Restaurant Pins",
+      "pageId": "72:34",
+      "groups": [
+        {
+          "name": null,
+          "id": null,
+          "items": [
+            {
+              "name": "Restaurant Pin",
+              "id": "72:99",
+              "variants": 8,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "Large",
+                    "Small"
+                  ]
+                },
+                {
+                  "name": "Content",
+                  "values": [
+                    "Blank",
+                    "Favorite",
+                    "Logo",
+                    "Number"
+                  ]
+                }
+              ],
+              "description": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Loyalty",
+      "pageId": "72:108",
+      "groups": [
+        {
+          "name": null,
+          "id": null,
+          "items": [
+            {
+              "name": "Half Coin",
+              "id": "77:176",
+              "variants": 9,
+              "properties": [
+                {
+                  "name": "Type",
+                  "values": [
+                    "Half coin"
+                  ]
+                },
+                {
+                  "name": "State",
+                  "values": [
+                    "Active",
+                    "Disabled",
+                    "Default"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "32px",
+                    "24px",
+                    "16px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Coin",
+              "id": "2166:36",
+              "variants": 15,
+              "properties": [
+                {
+                  "name": "Type",
+                  "values": [
+                    "Loyalty"
+                  ]
+                },
+                {
+                  "name": "State",
+                  "values": [
+                    "Active",
+                    "Default",
+                    "Disable"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "32px",
+                    "24px",
+                    "16px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Coin Stack",
+              "id": "323:84",
+              "variants": 9,
+              "properties": [
+                {
+                  "name": "Type",
+                  "values": [
+                    "Coin Stack"
+                  ]
+                },
+                {
+                  "name": "State",
+                  "values": [
+                    "Active",
+                    "Disabled",
+                    "Default"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "32px",
+                    "24px",
+                    "16px"
+                  ]
+                }
+              ],
+              "description": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Ordering",
+      "pageId": "0:1418",
+      "groups": [
+        {
+          "name": null,
+          "id": null,
+          "items": [
+            {
+              "name": "Checkmark",
+              "id": "915:1363",
+              "variants": 18,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Fuchsia",
+                    "Green"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px",
+                    "8px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Monopoly",
+              "id": "913:1595",
+              "variants": 15,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gold"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "QR Code",
+              "id": "913:1467",
+              "variants": 20,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gold",
+                    "White + Black Background",
+                    "Black + Gold Background"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Save for Later",
+              "id": "912:2739",
+              "variants": 15,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gold"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Bag",
+              "id": "912:2624",
+              "variants": 19,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gold"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                },
+                {
+                  "name": "Badge",
+                  "values": [
+                    "Off",
+                    "On"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Meal Item",
+              "id": "912:2510",
+              "variants": 15,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gold"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Single Item",
+              "id": "912:2390",
+              "variants": 15,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gold"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "McCafe",
+              "id": "912:2276",
+              "variants": 16,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gold",
+                    "Disble"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Reorder",
+              "id": "912:2046",
+              "variants": 15,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gold"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Deals",
+              "id": "912:1310",
+              "variants": 25,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gold",
+                    "Gold + Border",
+                    "Green"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Edit",
+              "id": "910:4434",
+              "variants": 15,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Link Blue"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Favorite Star",
+              "id": "912:1967",
+              "variants": 30,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gold",
+                    "White",
+                    "Gold + Border"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px",
+                    "8px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Favorite",
+              "id": "323:3867",
+              "variants": 20,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "Black",
+                    "Red",
+                    "Red+Border"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Order",
+              "id": "910:4219",
+              "variants": 15,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gold"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Assessment",
+              "id": "711:647",
+              "variants": 40,
+              "properties": [
+                {
+                  "name": "Active",
+                  "values": [
+                    "Off",
+                    "On"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "56 px",
+                    "48 px",
+                    "32 px",
+                    "24 px",
+                    "16 px"
+                  ]
+                },
+                {
+                  "name": "Color",
+                  "values": [
+                    "Grey",
+                    "Green",
+                    "Line",
+                    "Gold",
+                    "Red"
+                  ]
+                },
+                {
+                  "name": "Type",
+                  "values": [
+                    "Positive",
+                    "Negative"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Phone QR",
+              "id": "4356:2188",
+              "variants": 3,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "56px",
+                    "48px",
+                    "32px"
+                  ]
+                }
+              ],
+              "description": "Por su nivel de detalle (mano, teléfono y QR), se recomienda usarlo solo desde 32px."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Payment Providers",
+      "pageId": "116:0",
+      "groups": [
+        {
+          "name": null,
+          "id": null,
+          "items": [
+            {
+              "name": "UnionPay",
+              "id": "915:2670",
+              "variants": 5,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Diners Club",
+              "id": "915:2644",
+              "variants": 5,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "JCB",
+              "id": "915:2618",
+              "variants": 5,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "PayPal",
+              "id": "915:2592",
+              "variants": 5,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Klarna",
+              "id": "915:2566",
+              "variants": 5,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Google Pay",
+              "id": "915:2540",
+              "variants": 10,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                },
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "White"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Apple Pay",
+              "id": "915:2514",
+              "variants": 10,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                },
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "White"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Visa",
+              "id": "915:2488",
+              "variants": 5,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "MasterCard",
+              "id": "915:2462",
+              "variants": 5,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "48px",
+                    "32x",
+                    "24x",
+                    "16px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Edenred",
+              "id": "319:494",
+              "variants": 5,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "56px",
+                    "48px",
+                    "32px",
+                    "24px",
+                    "16px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Sodexo",
+              "id": "1507:3",
+              "variants": 5,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "56px",
+                    "48px",
+                    "32px",
+                    "24px",
+                    "16px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Elo",
+              "id": "319:372",
+              "variants": 5,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "56px",
+                    "48px",
+                    "32px",
+                    "24px",
+                    "16px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Pix",
+              "id": "319:621",
+              "variants": 5,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "56px",
+                    "48px",
+                    "32px",
+                    "24px",
+                    "16px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Alelo",
+              "id": "319:804",
+              "variants": 5,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "56px",
+                    "48px",
+                    "32px",
+                    "24px",
+                    "16px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Discover",
+              "id": "915:2436",
+              "variants": 5,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "AMEX",
+              "id": "915:2410",
+              "variants": 5,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Generic",
+              "id": "915:2269",
+              "variants": 15,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gold"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Cash",
+              "id": "323:300",
+              "variants": 10,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gold"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Mercadopago",
+              "id": "227:115",
+              "variants": 5,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "56px",
+                    "48px",
+                    "32px",
+                    "24px",
+                    "16px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Hipercard",
+              "id": "319:296",
+              "variants": 5,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "56px",
+                    "48px",
+                    "32px",
+                    "24px",
+                    "16px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Yappy",
+              "id": "835:606",
+              "variants": 5,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "56px",
+                    "48px",
+                    "32px",
+                    "16px",
+                    "24px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Clicktopay",
+              "id": "1484:82",
+              "variants": 5,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "56px",
+                    "48px",
+                    "32px",
+                    "16px",
+                    "24px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Pago efectivo",
+              "id": "1664:311",
+              "variants": 5,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "56px",
+                    "48px",
+                    "32px",
+                    "24px",
+                    "16px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "NUPay",
+              "id": "1995:57",
+              "variants": 5,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "56px",
+                    "48px",
+                    "32px",
+                    "24px",
+                    "16px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "PSE",
+              "id": "2176:25",
+              "variants": 5,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "56px",
+                    "48px",
+                    "32px",
+                    "24px",
+                    "16px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Yape",
+              "id": "1228:58",
+              "variants": 5,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "56px",
+                    "48px",
+                    "32px",
+                    "24px",
+                    "16px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Maestro",
+              "id": "1358:105",
+              "variants": 5,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "56px",
+                    "48px",
+                    "32px",
+                    "24px",
+                    "16px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Pluxee",
+              "id": "1507:65",
+              "variants": 5,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "56px",
+                    "48px",
+                    "32px",
+                    "24px",
+                    "16px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "MODO",
+              "id": "2614:50",
+              "variants": 5,
+              "properties": [
+                {
+                  "name": "Property 1",
+                  "values": [
+                    "56px",
+                    "48px",
+                    "32px",
+                    "24px",
+                    "16px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Pay at Counter",
+              "id": "2713:108",
+              "variants": 5,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "56px",
+                    "48px",
+                    "32px",
+                    "24px",
+                    "16px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Bank",
+              "id": "4799:283",
+              "variants": 5,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "56px",
+                    "48px",
+                    "32px",
+                    "24px",
+                    "16px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Bank-arrow",
+              "id": "4801:297",
+              "variants": 5,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "56px",
+                    "48px",
+                    "32px",
+                    "24px",
+                    "16px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Payment",
+              "id": "5361:102",
+              "variants": 5,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Restaurant Features",
+      "pageId": "0:1771",
+      "groups": [
+        {
+          "name": null,
+          "id": null,
+          "items": [
+            {
+              "name": "All Day Breakfast",
+              "id": "923:2887",
+              "variants": 20,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gold",
+                    "Disable"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Breakfast",
+              "id": "323:1950",
+              "variants": 15,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Disable",
+                    "Gold"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Dessert Center",
+              "id": "323:2363",
+              "variants": 15,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Disable",
+                    "Gold"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Shopping Center",
+              "id": "323:2477",
+              "variants": 15,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Disable",
+                    "Gold"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Skateboard",
+              "id": "323:2591",
+              "variants": 20,
+              "properties": [
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                },
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Disable",
+                    "Gold"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Careers",
+              "id": "923:2691",
+              "variants": 20,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gold",
+                    "Disable"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Kiosk",
+              "id": "922:2481",
+              "variants": 20,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gold",
+                    "Disable"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Loyalty",
+              "id": "922:2391",
+              "variants": 15,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gradient",
+                    "Disable"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Parties",
+              "id": "922:2390",
+              "variants": 20,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gold",
+                    "Disable"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Child Chair",
+              "id": "922:2276",
+              "variants": 15,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gold",
+                    "Disable"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Charging Station",
+              "id": "922:2189",
+              "variants": 20,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gold",
+                    "Disable"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Outdoor Terrace",
+              "id": "922:2075",
+              "variants": 20,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gold",
+                    "Disable"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Play Place",
+              "id": "922:1961",
+              "variants": 20,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gold",
+                    "Disable"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Arch Card",
+              "id": "922:1847",
+              "variants": 20,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gold",
+                    "Disable"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "McDJ",
+              "id": "922:1733",
+              "variants": 20,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gold",
+                    "Disable"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Discover",
+              "id": "922:1619",
+              "variants": 25,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gold",
+                    "Disable",
+                    "White"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Parking",
+              "id": "922:1505",
+              "variants": 20,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gold",
+                    "Disable"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Estacionamiento",
+              "id": "323:1006",
+              "variants": 20,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gold",
+                    "Disable"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Gift Card",
+              "id": "922:1391",
+              "variants": 20,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gold",
+                    "Disable"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "24 Hours",
+              "id": "921:4568",
+              "variants": 15,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gold",
+                    "Disable"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Accessibility",
+              "id": "927:3041",
+              "variants": 20,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gold",
+                    "Disable"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "WiFi",
+              "id": "921:4471",
+              "variants": 20,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gold",
+                    "Disable"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Settings & Accessibility",
+      "pageId": "0:2485",
+      "groups": [
+        {
+          "name": null,
+          "id": null,
+          "items": [
+            {
+              "name": "Bluetooth",
+              "id": "1134:1349",
+              "variants": 15,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gold"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Trash",
+              "id": "2244:51",
+              "variants": 25,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Edit",
+              "id": "323:4309",
+              "variants": 10,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "True",
+                    "False"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "56px",
+                    "48px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Copy",
+              "id": "323:4363",
+              "variants": 10,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "True",
+                    "False"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "56px",
+                    "48px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Configuration",
+              "id": "323:4415",
+              "variants": 10,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "True",
+                    "False"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "56px",
+                    "48px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Misiones",
+              "id": "3923:3",
+              "variants": 10,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "True",
+                    "False"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "56px",
+                    "48px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Security",
+              "id": "323:4464",
+              "variants": 10,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "True",
+                    "False"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "56px",
+                    "48px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "List View",
+              "id": "918:4120",
+              "variants": 20,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gold",
+                    "White"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Settings",
+              "id": "2136:38",
+              "variants": 15,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gold"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Voice",
+              "id": "918:3890",
+              "variants": 15,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gold"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Accessibility",
+              "id": "931:3187",
+              "variants": 10,
+              "properties": [
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Language",
+              "id": "917:3719",
+              "variants": 15,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gold"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Talk",
+              "id": "323:7041",
+              "variants": 20,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gold",
+                    "White"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Accesibility_TEA",
+              "id": "3101:260",
+              "variants": 5,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "audio waveform",
+              "id": "4434:18",
+              "variants": 10,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "black",
+                    "white"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "56px",
+                    "48px",
+                    "24px",
+                    "32px",
+                    "16px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Voice off",
+              "id": "4432:855",
+              "variants": 10,
+              "properties": [
+                {
+                  "name": "Outline",
+                  "values": [
+                    "True",
+                    "False"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "56px",
+                    "48px",
+                    "32px",
+                    "24px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "FaceID",
+              "id": "4622:94",
+              "variants": 5,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "56px",
+                    "48px",
+                    "32px",
+                    "24px",
+                    "16px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Fingerprint",
+              "id": "4622:196",
+              "variants": 5,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "56px",
+                    "48px",
+                    "32px",
+                    "24px",
+                    "16px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Accessibility universal",
+              "id": "5284:161",
+              "variants": 10,
+              "properties": [
+                {
+                  "name": "Outline",
+                  "values": [
+                    "True",
+                    "False"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "56px",
+                    "48px",
+                    "32px",
+                    "24px",
+                    "16px"
+                  ]
+                }
+              ],
+              "description": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Social & Tech",
+      "pageId": "141:107",
+      "groups": [
+        {
+          "name": null,
+          "id": null,
+          "items": [
+            {
+              "name": "Instagram",
+              "id": "983:1673",
+              "variants": 10,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Gradient"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Twitter",
+              "id": "981:1541",
+              "variants": 5,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Google",
+              "id": "918:4316",
+              "variants": 5,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Facebook",
+              "id": "918:4288",
+              "variants": 10,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Blue"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Apple",
+              "id": "918:4259",
+              "variants": 5,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Android",
+              "id": "323:2947",
+              "variants": 5,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Notification",
+              "id": "323:3061",
+              "variants": 10,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                },
+                {
+                  "name": "Status",
+                  "values": [
+                    "Default",
+                    "New notification"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "YouTube",
+              "id": "1220:2268",
+              "variants": 10,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Red"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Whatsapp",
+              "id": "350:134",
+              "variants": 10,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Green",
+                    "Black"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Play",
+              "id": "323:3351",
+              "variants": 10,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Golde"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False"
+                  ]
+                },
+                {
+                  "name": "Size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "32px",
+                    "48px",
+                    "56px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "stars",
+              "id": "4500:264",
+              "variants": 10,
+              "properties": [
+                {
+                  "name": "size",
+                  "values": [
+                    "16px",
+                    "24px",
+                    "48px",
+                    "32px",
+                    "56px"
+                  ]
+                },
+                {
+                  "name": "color",
+                  "values": [
+                    "black",
+                    "white"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Sound",
+              "id": "5232:13",
+              "variants": 5,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "56px",
+                    "48px",
+                    "32px",
+                    "24px",
+                    "16px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Muted",
+              "id": "5232:24",
+              "variants": 5,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "56px",
+                    "48px",
+                    "32px",
+                    "24px",
+                    "16px"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Pause",
+              "id": "5232:35",
+              "variants": 5,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "56px",
+                    "48px",
+                    "32px",
+                    "24px",
+                    "16px"
+                  ]
+                }
+              ],
+              "description": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Specials",
+      "pageId": "1315:293",
+      "groups": [
+        {
+          "name": null,
+          "id": null,
+          "items": [
+            {
+              "name": "appniversario 2024/logo",
+              "id": "1317:671",
+              "variants": 5,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "32",
+                    "24",
+                    "16",
+                    "48",
+                    "56"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "appniversario 2024/fries",
+              "id": "1319:680",
+              "variants": 5,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "56",
+                    "48",
+                    "32",
+                    "24",
+                    "16"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "appniversario 2024/offer",
+              "id": "1319:717",
+              "variants": 5,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "56",
+                    "48",
+                    "32",
+                    "24",
+                    "16"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "appniversario 2024/list",
+              "id": "1319:754",
+              "variants": 5,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "56",
+                    "48",
+                    "32",
+                    "24",
+                    "16"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "appniversario 2024/profile",
+              "id": "1319:831",
+              "variants": 5,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "56",
+                    "48",
+                    "32",
+                    "24",
+                    "16"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "appniversario 2024/loyalty",
+              "id": "1329:15",
+              "variants": 5,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "56",
+                    "48",
+                    "32",
+                    "24",
+                    "16"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "BigFest/Logo",
+              "id": "1594:2",
+              "variants": 5,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "56",
+                    "48",
+                    "32",
+                    "24",
+                    "16"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "BigFest/burger",
+              "id": "1594:24",
+              "variants": 5,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "56",
+                    "48",
+                    "32",
+                    "24",
+                    "16"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "BigFest/offer",
+              "id": "1594:109",
+              "variants": 5,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "56",
+                    "48",
+                    "32",
+                    "24",
+                    "16"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "BigFest/list",
+              "id": "1594:133",
+              "variants": 5,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "32",
+                    "48",
+                    "24",
+                    "16",
+                    "56"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "BigFest/fries",
+              "id": "1613:10",
+              "variants": 5,
+              "properties": [
+                {
+                  "name": "Size",
+                  "values": [
+                    "32",
+                    "48",
+                    "24",
+                    "16",
+                    "56"
+                  ]
+                }
+              ],
+              "description": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

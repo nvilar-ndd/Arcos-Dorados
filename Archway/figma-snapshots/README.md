@@ -30,3 +30,4 @@ Si el hash de una página cambia, se revisa esa página en detalle. Si cambia s�
 | Fecha | Cambios detectados |
 |---|---|
 | 2026-10-15 | ArchWay: renombre y limpieza de variables de color (Background/Layer → Surface, naming, scopes, codeSyntax Android). Dashboard: nuevo `Empty state`, 2 descripciones de variables eliminadas. ADK: sin cambios. Primera foto con huellas de página |
+| 2026-10-16 | Primer relevamiento de [Iconography](../Iconografia/iconos.json) (216 íconos) e [Illustrations Guide](../Ilustraciones/ilustraciones.json) (213 componentes). Los manifiestos JSON sirven como foto de base |

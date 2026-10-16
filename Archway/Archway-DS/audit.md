@@ -52,7 +52,7 @@ El equipo renombró y limpió las variables de color. Esto **resuelve S-02** y r
 | F-03 | Radius: falta `XL` y `full` | 🟡 P2 | Pendiente |
 | F-04 | Spacing: falta `12` semántico; spacing usado para stroke | 🟡 P2 | Pendiente |
 | F-05 | Motion sólo como texto (no variables); sin Opacity, Z-index, Border width | 🟡 P2 | Pendiente |
-| F-06 | Sin Iconography documentada en la librería | 🟡 P2 | Pendiente |
+| F-06 | Iconografía: existe en archivo propio (documentada en `Archway/Iconografia`); faltan tokens de tamaño y binding de color | 🟡 P2 | 🟡 Parcial |
 | F-07 | Sin modo Dark | 🟡 P2 | Pendiente |
 | H-01 | Typos y descripciones a corregir | ⚪ P3 | 🟡 Parcial |
 
@@ -304,11 +304,14 @@ Opacity, Z-index y Border width no existen en la librería. Son necesarios antes
 
 **Fundamento:** Doherty Threshold (feedback < 400ms) y WCAG 2.3.3 (animaciones desactivables).
 
-### F-06 · Iconografía
+### F-06 · Iconografía — 🟡 Parcial (2026-10-16)
 
-El estándar es el set de íconos McDonald's (no emojis como íconos de sistema), pero la librería de Foundations no documenta tamaños, grid de ícono ni stroke.
+La librería de Foundations no documenta íconos, pero **existen en un archivo propio de Global**: [Iconography](https://www.figma.com/design/7Hb0VVgTTN1q1RMnVWFYvd/Iconography?node-id=9-11), con 216 íconos, 5 tamaños (16–56) y especificaciones de stroke, radio y fry tip. Quedó documentada en [`../Iconografia/`](../Iconografia/README.md), con su manual de creación y su propio audit.
 
-**Propuesta:** `iconography.md` + tokens `Icon/size/{s=16, m=24, l=32, xl=48}`, keyline grid 24, área táctil mínima 48, y regla de color: sólo tokens `Icon/*`.
+**Pendiente:**
+- Tokens `Icon/size/{xs=16, s=24, m=32, l=48, xl=56}` en ArchWay, alineados a los tamaños de la librería.
+- Enlazar el color de los íconos a `Icon/*` ([I-S01](../Iconografia/audit.md#i-s01--color-por-estilos-de-otra-librería)).
+- Regla de área táctil: 44 en mobile y 56 en kiosco, independiente del tamaño del ícono.
 
 ### F-07 · Dark mode
 
