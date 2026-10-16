@@ -5,7 +5,7 @@ Repositorio de documentación y código de los sistemas de diseño de Arcos Dora
 | Carpeta | Contenido |
 |---|---|
 | [`Archway/`](./Archway/README.md) | **Todos los sistemas de diseño**, con ArchWay como padre: [ArchWay DS](./Archway/Archway-DS/README.md), [Dashboard](./Archway/Dashboard/README.md), [ADK](./Archway/ADK/README.md), [Legacy](./Archway/Legacy/README.md), los [íconos](./Archway/Iconografia/README.md) y las [ilustraciones](./Archway/Ilustraciones/README.md) compartidos, el [plan de convergencia](./Archway/Convergencia/README.md) y las [fotos de Figma](./Archway/figma-snapshots/README.md) |
-| [`Voz-y-Tono/`](./Voz-y-Tono/README.md) | **Manual de voz y tono** de los productos digitales (en armado) |
+| [`Voz-y-Tono/`](./Voz-y-Tono/README.md) | **Manual de voz, tono y estilo** v1.0 (vigente desde el 15/10/2026): voz UX, tono, contextos, estilo de escritura, accesibilidad, localización y voz hablada |
 
 ## Storybooks
 
