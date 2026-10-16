@@ -1,0 +1,3489 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Manual de Voz, Tono y Estilo UX — v1.0</title>
+<style>
+ :root{
+  --ds-yellow:#FFBC0D;
+  --ds-red:#DB0007;
+  --ds-charcoal:#292929;
+  --ds-white:#FFFFFF;
+  --ds-blue:#006BAE;
+  --ds-orange:#FE8234;
+  --ds-gray-700:#6F6F6F;
+  --ds-gray-500:#ADADAD;
+  --ds-gray-300:#D6D6D6;
+  --ds-gray-050:#F9F9F9;
+  --ds-link:#0F62FE;
+  --ds-link-hover:#054ADA;
+  --ds-link-visited:#8A3FFC;
+
+  --font-family:"Speedee", Arial, Helvetica, sans-serif;
+  --color-bg:var(--ds-gray-050);
+  --color-surface:var(--ds-white);
+  --color-surface-subtle:#F3F3F3;
+  --color-text:var(--ds-charcoal);
+  --color-text-muted:var(--ds-gray-700);
+  --color-border:var(--ds-gray-300);
+  --color-border-strong:var(--ds-gray-500);
+  --color-accent:var(--ds-link);
+  --color-accent-hover:var(--ds-link-hover);
+  --color-accent-visited:var(--ds-link-visited);
+  --color-nav:var(--ds-charcoal);
+  --color-nav-hover:#3A3A3A;
+  --color-nav-active:#474747;
+  --color-nav-text:var(--ds-white);
+  --color-nav-muted:var(--ds-gray-300);
+  --color-focus:var(--ds-yellow);
+  --color-highlight-soft:#FFF6D6;
+  --color-highlight-border:#E4B426;
+  --shadow-sm:0 2px 8px rgba(0,0,0,.05);
+  --shadow-md:0 10px 28px rgba(0,0,0,.09);
+  --radius-sm:8px;
+  --radius-md:12px;
+  --radius-lg:16px;
+  --sidebar-width:320px;
+  --reading-width:800px;
+  --content-width:1160px;
+  --header-height-mobile:56px;
+  --space-1:4px;
+  --space-2:8px;
+  --space-3:12px;
+  --space-4:16px;
+  --space-5:20px;
+  --space-6:24px;
+  --space-7:32px;
+  --space-8:40px;
+  --space-9:56px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font:16px/1.6 var(--font-family);background:var(--color-bg);color:var(--color-text)}
+a{color:var(--color-accent);text-underline-offset:3px;text-decoration-thickness:1px}
+a:hover{color:var(--color-accent-hover)}
+a:visited{color:var(--color-accent-visited)}
+aside a:visited,.mobile-drawer a:visited,.primary-link:visited,.secondary-link:visited{color:inherit}
+button,input{font:inherit}
+button{cursor:pointer}
+.skip{position:fixed;left:12px;top:-64px;background:var(--color-text);color:#fff;padding:10px 14px;z-index:100;border-radius:var(--radius-sm)}
+.skip:focus{top:12px}
+.app{min-height:100vh;display:grid;grid-template-columns:var(--sidebar-width) minmax(0,1fr)}
+aside{position:sticky;top:0;height:100vh;background:var(--color-nav);color:var(--color-nav-text);padding:18px 14px 22px;overflow:auto;border-right:1px solid rgba(255,255,255,.08)}
+.brand{padding:6px 8px 18px;border-bottom:1px solid rgba(255,255,255,.14)}
+.brand-logo{display:block;width:56px;height:56px;max-width:100%;object-fit:contain;margin-bottom:10px}
+.brand small{display:block;color:var(--color-nav-muted);margin-top:4px}
+.home-link{display:inline-flex;color:#fff;text-decoration:none;font-weight:760;font-size:18px;letter-spacing:-.01em}
+.search-mini{margin:18px 4px 16px}
+.search-mini .label{color:var(--color-nav-muted)}
+.search-mini input{width:100%;border:1px solid rgba(255,255,255,.18);background:#292d29;color:#fff;border-radius:var(--radius-sm);padding:10px 12px}
+.search-mini input::placeholder{color:#bfc4bd}
+.nav-group{margin:0}
+.nav-entry{display:flex!important;align-items:center;font-weight:720;margin:2px 0 12px;border-bottom:1px solid rgba(255,255,255,.12);padding-bottom:12px!important}
+.nav-category{margin:0}
+.nav-category-toggle{display:flex!important;align-items:center;justify-content:space-between;gap:10px;margin:4px 0;font-size:15px;line-height:1.35;font-weight:680;color:var(--color-nav-text)!important}
+.nav-category-toggle .chevron{font-size:12px;transition:transform .18s ease;color:var(--color-nav-muted)}
+.nav-category.open .chevron{transform:rotate(90deg)}
+.nav-subtopics{display:none;padding:2px 0 5px 11px;margin-left:8px;border-left:1px solid rgba(255,255,255,.14);width:calc(100% - 8px)}
+.nav-category.open .nav-subtopics{display:block}
+.nav-group a,.nav-group button{width:100%;text-align:left;padding:8px 10px;border-radius:var(--radius-sm);color:#e9ece8;text-decoration:none;background:none;border:0}
+.nav-group a:hover,.nav-group a:focus-visible,.nav-group button:hover,.nav-group button:focus-visible{background:var(--color-nav-hover);color:#fff}
+.nav-category-toggle.active{background:var(--color-nav-active)!important;color:#fff!important;font-weight:720}
+.nav-subtopics a{display:block!important;width:100%;font-size:14px;line-height:1.35;color:#d4d8d2;padding:8px 9px;white-space:normal;overflow-wrap:anywhere}
+.nav-subtopics a.active{background:rgba(255,255,255,.07);color:#fff;font-weight:620;box-shadow:inset 2px 0 0 var(--ds-yellow)}
+.nav-group .disabled{color:#979d96;cursor:default}
+.secondary{margin-top:22px;padding-top:14px;border-top:1px solid rgba(255,255,255,.14)}
+.secondary h2{display:none}
+main{min-width:0;min-height:100vh}
+.topbar{display:none}
+.content{width:min(100%,var(--content-width));min-height:100vh;margin:0 auto;padding:60px 48px 88px;display:flex;flex-direction:column}
+.content>article,.content>.search-panel{max-width:var(--reading-width);margin-bottom:50px}
+.eyebrow{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--color-text-muted);font-weight:760}
+.hero{padding:8px 0 28px;max-width:900px}
+.hero h1{font-size:clamp(38px,5vw,60px);line-height:1.04;letter-spacing:-.035em;margin:12px 0 18px}
+.hero p{font-size:20px;max-width:760px;color:#454842;margin:0}
+.home-intro{max-width:760px;margin:4px 0 24px;color:var(--color-text-muted)}
+.home-actions{display:flex;flex-wrap:wrap;gap:12px;margin:18px 0 30px;align-items:center}
+.primary-link,.secondary-link{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:9px 14px;border-radius:var(--radius-sm);font-weight:700;text-decoration:none}
+.primary-link{background:var(--color-accent);color:#fff}
+.primary-link:hover{background:var(--color-accent-hover);color:#fff}
+.secondary-link{border:1px solid var(--color-border);background:var(--color-surface);color:var(--color-text)}
+.search-box{display:flex;gap:10px;margin:24px 0 34px;max-width:760px}
+.search-box input{flex:1;padding:13px 15px;border:1px solid var(--color-border-strong);border-radius:var(--radius-md);background:#fff;min-width:0;color:var(--color-text)}
+.search-box button{border:0;border-radius:var(--radius-md);padding:12px 18px;background:var(--color-accent);color:#fff;font-weight:720}
+.search-box button:hover{background:var(--color-accent-hover)}
+.section-heading{margin:42px 0 16px;max-width:760px}
+.section-heading h2{font-size:24px;line-height:1.2;margin:0 0 6px;letter-spacing:-.015em}
+.section-heading p{margin:0;color:var(--color-text-muted)}
+.category-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin:20px 0 36px}
+.category-card{background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-lg);padding:22px 22px 20px;box-shadow:var(--shadow-sm);min-height:150px}
+.category-card h3{font-size:18px;margin:0 0 8px;letter-spacing:-.01em}
+.category-card p{margin:0;color:var(--color-text-muted)}
+.category-card ul{padding-left:19px;margin:12px 0 0}
+.category-card li+li{margin-top:5px}
+.category-card .muted{font-size:14px}
+.featured-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px;margin:18px 0 40px}
+.featured-card{display:block;background:var(--color-surface);border:1px solid var(--color-border);border-radius:var(--radius-md);padding:16px;text-decoration:none;color:inherit;box-shadow:var(--shadow-sm)}
+.featured-card:hover,.featured-card:focus-visible{border-color:var(--color-border-strong);box-shadow:var(--shadow-md);color:inherit}
+.featured-card .label{margin-bottom:6px}.featured-card strong{display:block;line-height:1.35}
+.page{padding-top:2px}
+.page h1{font-size:clamp(34px,4.6vw,50px);line-height:1.08;letter-spacing:-.028em;margin:12px 0 20px}
+.page h2{font-size:25px;line-height:1.25;margin:48px 0 14px;letter-spacing:-.015em}
+.page[data-page="tono"] h4{font-size:1em;line-height:1.35;margin:24px 0 8px}
+.page h3,.page[data-page="escritura-escuchada"] h2{font-size:19px;line-height:1.35;margin:30px 0 8px}
+.page p,.page li{max-width:74ch}
+.lede{font-size:19px;line-height:1.55;color:#454842;margin:0 0 26px;max-width:68ch}
+.rule{margin:18px 0}
+.rule p{margin:0 0 12px}
+.rule p:last-child{margin-bottom:0}
+.rule-copy{font-size:inherit;line-height:inherit;font-weight:inherit;margin:18px 0}
+.callout{margin:18px 0}
+.example{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin:20px 0 26px}
+.example > div{padding:17px;border-radius:var(--radius-md);border:1px solid var(--color-border);background:#fff}
+.example .avoid{background:var(--color-surface-subtle);border-left:3px solid var(--ds-gray-700)}
+.example .better{border-left:3px solid var(--ds-blue)}
+.example .avoid .label::before{content:"× ";font-weight:800}
+.example .better .label::before{content:"✓ ";font-weight:800}
+.label{display:block;font-size:11px;text-transform:uppercase;letter-spacing:.075em;color:var(--color-text-muted);font-weight:780;margin-bottom:5px}
+.related{margin-top:48px;padding-top:26px;border-top:1px solid var(--color-border)}
+.related h2{margin-top:0}
+.related-links{display:flex;flex-wrap:wrap;gap:9px}
+.pill{display:inline-flex;padding:8px 11px;border:1px solid var(--color-border);border-radius:999px;background:#fff;text-decoration:none;color:var(--color-text)}
+.pill:hover{border-color:var(--color-border-strong);background:var(--color-surface-subtle);color:var(--color-text)}
+.back{display:none}
+.search-panel h1{font-size:clamp(34px,4.6vw,50px);line-height:1.08;letter-spacing:-.028em;margin:14px 0 18px}
+.result-count{color:var(--color-text-muted);margin:8px 0 18px}
+.result{display:block;background:#fff;border:1px solid var(--color-border);border-radius:var(--radius-md);padding:18px 19px;margin:12px 0;text-decoration:none;color:inherit}
+.result:hover,.result:focus-visible{border-color:var(--color-border-strong);box-shadow:var(--shadow-md);color:inherit}
+.result h2{font-size:19px;margin:0 0 5px}.result p{margin:0;color:var(--color-text-muted)}
+mark{background:#fff1a8}
+.empty{background:#fff;border:1px dashed var(--color-border-strong);padding:28px;border-radius:var(--radius-lg)}
+.status{display:inline-flex;padding:5px 9px;background:#f0ece4;border-radius:999px;font-size:13px;font-weight:700;color:#5d4934}
+.footer-note{margin-top:auto;padding-top:20px;border-top:1px solid var(--color-border);font-size:14px;color:var(--color-text-muted);max-width:760px;width:100%}
+:focus-visible{outline:3px solid var(--color-focus);outline-offset:3px}
+.drawer-backdrop{display:none}
+.mobile-search{display:none}
+body.nav-open{overflow:hidden}
+
+@media(max-width:1040px){.featured-grid{grid-template-columns:1fr 1fr}.content{padding-left:32px;padding-right:32px}}
+@media(max-width:880px){
+ .app{display:block}aside{display:none}.topbar{display:flex;position:sticky;top:0;z-index:32;min-height:var(--header-height-mobile);background:var(--color-nav);color:#fff;padding:10px 14px;gap:12px;align-items:center;box-shadow:0 2px 12px rgba(0,0,0,.14)}
+ .topbar button{border:1px solid rgba(255,255,255,.2);background:#2a2e2b;color:#fff;border-radius:var(--radius-sm);padding:8px 10px}.topbar strong{font-size:15px}
+ .mobile-drawer{display:none;position:fixed;inset:var(--header-height-mobile) 0 0 0;z-index:31;background:var(--color-nav);color:#fff;padding:16px 16px 28px;overflow:auto;overscroll-behavior:contain}
+ .mobile-drawer.open{display:block}.mobile-search{display:block;margin:2px 0 14px}.mobile-search .label{color:var(--color-nav-muted)}.mobile-search input{width:100%;border:1px solid rgba(255,255,255,.18);background:#292d29;color:#fff;border-radius:var(--radius-sm);padding:11px 12px}.mobile-search input::placeholder{color:#bfc4bd}.mobile-drawer .nav-entry,.mobile-drawer .nav-category-toggle,.mobile-drawer .nav-subtopics a,.mobile-drawer .secondary a{display:block;color:#fff;text-decoration:none;padding:9px 10px}
+ .mobile-drawer .nav-category{margin-bottom:3px}.mobile-drawer .nav-subtopics{padding-left:10px}.mobile-drawer .secondary{margin-top:16px}
+ .content{width:100%;padding:34px 20px 64px}.category-grid{grid-template-columns:1fr}.featured-grid{grid-template-columns:1fr 1fr}.example{grid-template-columns:1fr}.hero p{font-size:18px}.page h2{margin-top:38px}
+}
+@media(max-width:560px){.content{padding:28px 16px 56px}.hero h1{font-size:38px}.search-box{flex-direction:column}.search-box button{width:100%}.featured-grid{grid-template-columns:1fr}.home-actions{align-items:stretch}.primary-link,.secondary-link{width:100%}.category-card{padding:18px}.page h1,.search-panel h1{font-size:34px}.lede{font-size:18px}}
+
+
+.search-box button,.primary-link{background:var(--ds-yellow);color:var(--ds-charcoal);border-color:#D7A20B}
+.search-box button:hover,.search-box button:focus-visible,.primary-link:hover,.primary-link:focus-visible{background:#F2AE00;color:var(--ds-charcoal)}
+.callout{border-color:var(--color-border);background:var(--color-surface)}
+.related{border-top-color:var(--color-border)}
+.pill{background:var(--color-surface);border-color:var(--color-border)}
+/* Editorial tables: preserve cell contents and scroll within the article. */
+.table-wrap{max-width:100%;min-width:0;overflow-x:auto;margin:24px 0;border:1px solid var(--color-border);border-radius:var(--radius-sm)}
+.content-table{width:100%;min-width:640px;border-collapse:collapse;table-layout:auto;font-size:15px;line-height:1.5}
+.content-table th,.content-table td{padding:12px 16px;vertical-align:top;text-align:left;white-space:normal;overflow-wrap:break-word;border-right:1px solid var(--color-border);border-bottom:1px solid var(--color-border)}
+.content-table th{font-weight:700;background:var(--color-surface-subtle);border-bottom:2px solid var(--color-border-strong)}
+.content-table tr>:last-child{border-right:0}
+.content-table tbody tr:last-child td{border-bottom:0}
+.content-table td{min-width:140px}
+.table-wrap:focus-visible{outline:2px solid var(--ds-link);outline-offset:3px}
+</style>
+</head>
+<body>
+<a class="skip" href="#main">Saltar al contenido</a>
+<div class="app">
+<aside aria-label="Navegación principal">
+  <div class="brand"><img class="brand-logo" src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTYwIiBoZWlnaHQ9IjE2MCIgdmlld0JveD0iMCAwIDE2MCAxNjAiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMTA2LjI1IDM1LjA2NjZDMTE2LjYwNCAzNS4wNjY2IDEyNC45OTQgNzguNjg1NiAxMjQuOTk0IDEzMi40OUgxNDBDMTQwIDc0LjU0MjMgMTI0Ljg4OCAyNy41NzE1IDEwNi4yNSAyNy41NzE1Qzk1LjY0NTEgMjcuNTcxNSA4Ni4xODQ5IDQxLjY5MTQgODAgNjMuNzY0OEM3My44MTUyIDQxLjY5MTQgNjQuMzU0OSAyNy41NzE1IDUzLjc1MDMgMjcuNTcxNUMzNS4xMTcgMjcuNTcxNSAyMCA3NC41NDIzIDIwIDEzMi40OUgzNS4wMDU4QzM1LjAwNTggNzguNjg1NiA0My40MDA1IDM1LjA2NjYgNTMuNzUwMyAzNS4wNjY2QzY0LjEwNDcgMzUuMDY2NiA3Mi40OTk0IDc1LjMyOTMgNzIuNDk5NCAxMjQuOTk0SDg3LjUwMDZDODcuNTAwNiA3NS4zMjkzIDk1Ljg5NTMgMzUuMDY2NiAxMDYuMjUgMzUuMDY2NloiIGZpbGw9IiNGRkJDMEQiLz4KPC9zdmc+Cg==" width="56" height="56" alt="McDonald’s"><a class="home-link" href="#/p/como-usar">Manual de voz, tono y estilo</a><small>v1.0</small></div>
+  <div class="search-mini"><label class="label" for="sideSearch">Buscar</label><input id="sideSearch" type="search" placeholder="Ej. Puntuación" autocomplete="off"></div>
+  <nav class="desktop-nav nav-group" id="desktopNav"></nav>
+</aside>
+<main>
+  <div id="main" class="content" tabindex="-1"></div>
+</main>
+</div>
+<script type="application/json" id="manualContentData">
+{
+  "categories": [
+    {
+      "id": "intro",
+      "name": "Introducción",
+      "topics": [
+        "como-usar",
+        "glosario"
+      ]
+    },
+    {
+      "id": "voz-tono",
+      "name": "Voz y tono",
+      "topics": [
+        "voz-ux",
+        "tono"
+      ]
+    },
+    {
+      "id": "contextos",
+      "name": "Contextos de UX",
+      "topics": [
+        "problemas-recuperacion",
+        "confirmaciones",
+        "promociones",
+        "esperas",
+        "exploracion-eleccion",
+        "ayuda-soporte",
+        "situaciones-combinadas"
+      ]
+    },
+    {
+      "id": "estilo",
+      "name": "Estilo de escritura",
+      "topics": [
+        "mayusculas",
+        "marcas-productos-secciones",
+        "titulos-bajadas",
+        "cta",
+        "puntuacion",
+        "siglas-abreviaturas",
+        "listas",
+        "numeros",
+        "fechas",
+        "horas-duraciones",
+        "separadores",
+        "voz-activa",
+        "parrafos-breves",
+        "emojis"
+      ]
+    },
+    {
+      "id": "accesibilidad",
+      "name": "Accesibilidad e inclusión",
+      "topics": [
+        "comprension",
+        "etiquetas-enlaces",
+        "alt-text",
+        "modalidad",
+        "genero",
+        "verbos-sensoriales"
+      ]
+    },
+    {
+      "id": "localizacion",
+      "name": "Localización y terminología",
+      "topics": [
+        "fuente-neutral",
+        "voseo",
+        "idioma-mercado",
+        "datos-mercado",
+        "equivalencias"
+      ]
+    },
+    {
+      "id": "voz-hablada",
+      "name": "Voz hablada",
+      "topics": [
+        "voz-hablada-asistente",
+        "escritura-escuchada",
+        "recuperacion-conversacional",
+        "multimodalidad-voz",
+        "pronunciacion",
+        "evaluacion-voz"
+      ]
+    }
+  ],
+  "pages": {
+    "como-usar": {
+      "title": "Cómo usar este Manual",
+      "category": "intro",
+      "alts": [
+        "cómo usar el manual",
+        "usar manual",
+        "consulta del manual",
+        "duda sobre el manual"
+      ],
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Para qué sirve"
+        },
+        {
+          "type": "paragraph",
+          "text": "Este manual reúne criterios y reglas para crear, revisar y adaptar contenidos para las experiencias digitales. Sirve para resolver dudas de escritura y tomar decisiones consistentes mientras se diseña o mantiene una experiencia."
+        },
+        {
+          "type": "paragraph",
+          "text": "No es necesario leerlo de principio a fin. Puedes entrar por la sección, el contexto, el mercado o el término relacionado con tu consulta."
+        },
+        {
+          "type": "paragraph",
+          "text": "La ausencia de una pauta no significa que exista una regla implícita ni que todos los casos posibles ya estén contemplados."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Cómo aplicar las reglas"
+        },
+        {
+          "type": "paragraph",
+          "text": "Las reglas son la referencia principal dentro de su alcance. Una excepción o variante solo modifica lo que indica y bajo la condición documentada. No convierte una preferencia individual en un criterio reutilizable."
+        },
+        {
+          "type": "paragraph",
+          "text": "Para crear, revisar o resolver conflictos entre reglas, la prioridad es **comprensión y funcionamiento → accesibilidad → corrección lingüística → consistencia interna**. Esta jerarquía no autoriza a reinterpretar libremente las pautas durante su aplicación."
+        },
+        {
+          "type": "paragraph",
+          "text": "Los ejemplos ilustran decisiones de contenido. No confirman por sí mismos funcionalidades, causas, disponibilidad, plazos ni políticas de producto. Antes de usarlos en una experiencia, comprueba que su información y sus acciones correspondan al caso real."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Cuando una regla no alcanza"
+        },
+        {
+          "type": "paragraph",
+          "text": "Primero, revisa si existe una regla relacionada y aplícala si resulta adecuada. Si no es suficiente, genera un problema real o contradice otra regla, consulta en el canal de Slack #manual-de-estilo."
+        },
+        {
+          "type": "paragraph",
+          "text": "Una respuesta operativa no se convierte automáticamente en norma. El equipo de contenido evalúa si la solución constituye un criterio reutilizable y si corresponde incorporarla al manual."
+        }
+      ]
+    },
+    "voz-ux": {
+      "title": "Voz UX",
+      "category": "voz-tono",
+      "alts": [
+        "voz",
+        "voz ux",
+        "fundamentos de voz",
+        "clara y simple",
+        "cercana y amable",
+        "positiva",
+        "confiable y cálida"
+      ],
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Qué entendemos por Voz UX"
+        },
+        {
+          "type": "paragraph",
+          "text": "La Voz UX es la manera reconocible en que la marca se expresa en sus experiencias digitales. Se manifiesta en las palabras que elegimos, en el orden de la información y en la forma de orientar a las personas."
+        },
+        {
+          "type": "paragraph",
+          "text": "La voz se mantiene estable. El tono puede adaptarse a la situación, pero la comunicación debe conservar los mismos fundamentos."
+        },
+        {
+          "type": "paragraph",
+          "text": "Los fundamentos agrupan los atributos internos de marca para su aplicación en UX. Su valor está en la combinación y en sus comportamientos observables; no son atributos exclusivos de la marca."
+        },
+        {
+          "type": "paragraph",
+          "text": "Los ejemplos ilustran formulaciones de voz y no confirman funciones ni opciones de recuperación del producto."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Fundamentos de la Voz UX"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Clara y simple"
+        },
+        {
+          "type": "paragraph",
+          "text": "Escribimos para que la información se entienda a la primera y permita actuar sin esfuerzo innecesario."
+        },
+        {
+          "type": "paragraph",
+          "text": "En la práctica:"
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            "Ve directo al punto;",
+            "Presenta primero lo necesario para decidir o avanzar;",
+            "Usa palabras conocidas y frases fáciles de seguir;",
+            "Conserva la información necesaria para evitar ambigüedad;",
+            "Explica términos que no puedan reemplazarse por otros más comunes."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Ser simple no significa ser impreciso ni omitir información importante."
+        },
+        {
+          "type": "example",
+          "avoid": {
+            "label": "Evita",
+            "items": [
+              "`Procede a verificar la información ingresada para poder proseguir con la operación.`"
+            ]
+          },
+          "better": {
+            "label": "Mejor",
+            "items": [
+              "`Revisa tus datos antes de continuar.`"
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Cercana y amable"
+        },
+        {
+          "type": "paragraph",
+          "text": "Hablamos con las personas de forma natural y respetuosa. La cercanía define principalmente la relación y el trato: acompaña sin juzgar, culpar ni forzar confianza."
+        },
+        {
+          "type": "paragraph",
+          "text": "En la práctica:"
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            "Mantén un trato informal: usa `tú`, no `usted`, en la versión fuente en español neutral;",
+            "Aplica el voseo de Argentina y Uruguay como adaptación posterior, según [[page:fuente-neutral|Español regional y localización]];",
+            "Usa construcciones directas y naturales;",
+            "Ofrece orientación concreta;",
+            "Evita bromas o informalidad forzada;",
+            "No atribuyas emociones que la persona no expresó."
+          ]
+        },
+        {
+          "type": "example",
+          "avoid": {
+            "label": "Evita",
+            "items": [
+              "`¡Ups! Seguro está frustrado. Revise bien sus datos e inténtelo de nuevo.`"
+            ]
+          },
+          "better": {
+            "label": "Mejor",
+            "items": [
+              "`No pudimos completar la acción. Revisa los datos e intenta nuevamente.`"
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Positiva, con criterio"
+        },
+        {
+          "type": "paragraph",
+          "text": "Ponemos el foco en las posibilidades y en el próximo paso. La positividad es una orientación estable, no una obligación de sonar optimistas o entusiastas en todas las situaciones."
+        },
+        {
+          "type": "paragraph",
+          "text": "En la práctica:"
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            "Destaca el resultado o la acción disponible;",
+            "Celebra solo cuando el momento lo justifique;",
+            "Reduce el entusiasmo ante riesgo, incertidumbre, errores o bloqueos;",
+            "Evita promesas que la experiencia no pueda cumplir."
+          ]
+        },
+        {
+          "type": "example",
+          "avoid": {
+            "label": "Evita",
+            "items": [
+              "`¡Increíble! ¡Tu pedido fue confirmado con muchísimo éxito! 🎉🍟✨`"
+            ]
+          },
+          "better": {
+            "label": "Mejor",
+            "items": [
+              "`Tu pedido está confirmado.`"
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": "Los emojis son un recurso expresivo excepcional. Consulta la [[page:emojis|política de emojis]]."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Confiable y cálida"
+        },
+        {
+          "type": "paragraph",
+          "text": "Comunicamos con precisión, transparencia y seguridad sin volvernos fríos o distantes. Este fundamento define principalmente cómo informamos, asumimos responsabilidad y acompañamos situaciones sensibles."
+        },
+        {
+          "type": "paragraph",
+          "text": "En la práctica:"
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            "Diferencia lo confirmado de lo que todavía puede cambiar;",
+            "Comunica límites y condiciones de forma visible;",
+            "Da plazos y próximos pasos cuando puedan sostenerse;",
+            "Reconoce la responsabilidad de la organización cuando corresponda;",
+            "Evita certezas que el producto no pueda garantizar."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "La calidez acompaña la información; no la reemplaza."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Cómo resolver tensiones entre fundamentos"
+        },
+        {
+          "type": "paragraph",
+          "text": "Los cuatro fundamentos permanecen estables, pero no necesitan expresarse con la misma intensidad en todos los mensajes."
+        },
+        {
+          "type": "paragraph",
+          "text": "Cuando entren en tensión, tienen prioridad:"
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            "comprensión;",
+            "utilidad y capacidad de actuar;",
+            "precisión;",
+            "confianza."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "La expresividad, el humor, el entusiasmo y otros recursos de personalidad nunca deben imponerse sobre esos criterios."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Voz y tono"
+        },
+        {
+          "type": "paragraph",
+          "text": "La voz define quiénes somos cuando comunicamos. El tono define cómo expresamos esa voz en una situación concreta."
+        },
+        {
+          "type": "paragraph",
+          "text": "Una promoción puede admitir más energía que un error. Una confirmación puede ser más celebratoria que una espera. En todos los casos, la voz sigue siendo clara y simple, cercana y amable, positiva con criterio, confiable y cálida."
+        },
+        {
+          "type": "paragraph",
+          "text": "Consulta [[page:tono|Tono]] para decidir cómo adaptar la expresión según riesgo, impacto, situación, intención y necesidad de la persona."
+        }
+      ],
+      "related": [
+        "tono",
+        "emojis"
+      ]
+    },
+    "tono": {
+      "title": "Tono",
+      "category": "voz-tono",
+      "alts": [
+        "tono",
+        "contexto",
+        "riesgo",
+        "impacto",
+        "responsabilidad",
+        "situación sensible"
+      ],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "La voz permanece reconocible en toda la experiencia. El tono es la forma en que esa voz se adapta a lo que está pasando."
+        },
+        {
+          "type": "paragraph",
+          "text": "Adaptar el tono no significa crear una personalidad distinta para cada pantalla. Significa ajustar la expresión sin contradecir los fundamentos de Voz UX."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Tono"
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Qué puede cambiar"
+        },
+        {
+          "type": "paragraph",
+          "text": "Según el contexto pueden variar:"
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            "la energía o el entusiasmo;",
+            "la calidez y el grado de contención;",
+            "la cantidad y el orden de la información;",
+            "la urgencia;",
+            "el nivel de formalidad;",
+            "el uso de humor y otros recursos expresivos."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Estas dimensiones no forman una única escala. Un mensaje serio no necesita ser frío ni excesivamente formal."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Cómo elegir el tono"
+        },
+        {
+          "type": "paragraph",
+          "text": "Primero considera el riesgo, el impacto y la capacidad de actuar; después, la situación y la intención comunicacional; finalmente, lo que la persona necesita hacer o comprender a partir de señales observables. La expresividad resulta de esa evaluación."
+        },
+        {
+          "type": "paragraph",
+          "text": "Esta precedencia resuelve tensiones; no es una secuencia mecánica obligatoria. La responsabilidad de la organización se considera cuando corresponde reconocer una falla, disculparse o explicar una acción propia."
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "text": "1. Riesgo, impacto y capacidad de actuar"
+        },
+        {
+          "type": "paragraph",
+          "text": "Es la variable prioritaria."
+        },
+        {
+          "type": "paragraph",
+          "text": "Evalúa qué consecuencias puede tener la situación, cuánta incertidumbre existe y cuánto afecta la capacidad de continuar."
+        },
+        {
+          "type": "paragraph",
+          "text": "Cuanto mayor sea el riesgo, el impacto o la dificultad para avanzar:"
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            "más directa debe ser la comunicación;",
+            "más importante es explicar el efecto de la situación;",
+            "más visible debe ser el próximo paso;",
+            "más concreta debe ser la previsibilidad;",
+            "menos espacio hay para humor, entusiasmo o decoración verbal."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "text": "2. Situación e intención"
+        },
+        {
+          "type": "paragraph",
+          "text": "Identifica qué está ocurriendo y qué debe lograr el mensaje: informar, orientar, confirmar, advertir, invitar, promocionar, pedir una acción o acompañar una espera."
+        },
+        {
+          "type": "paragraph",
+          "text": "La intención determina qué información debe aparecer primero y qué nivel de expresividad puede admitir el caso."
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "text": "3. Necesidad o estado inferible de la persona"
+        },
+        {
+          "type": "paragraph",
+          "text": "Considera qué necesita hacer o comprender a partir de señales observables de la experiencia: decidir, confirmar, esperar, corregir, recuperar una tarea o pedir ayuda."
+        },
+        {
+          "type": "paragraph",
+          "text": "No atribuyas emociones que no puedas verificar."
+        },
+        {
+          "type": "example",
+          "avoid": {
+            "label": "Evita",
+            "items": [
+              "`Sabemos que estás frustrado.`"
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": "**Prefiere:** una explicación concreta del problema y una salida disponible."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "La expresividad es un resultado, no el punto de partida"
+        },
+        {
+          "type": "paragraph",
+          "text": "Humor, entusiasmo, calidez, formalidad y otros recursos se ajustan después de analizar las variables anteriores."
+        },
+        {
+          "type": "paragraph",
+          "text": "Una intención promocional no justifica entusiasmo si existe riesgo o incertidumbre relevante. Una situación sensible puede seguir siendo cálida sin dejar de ser precisa y sobria."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Recursos expresivos"
+        },
+        {
+          "type": "paragraph",
+          "text": "Para emojis, consulta la [[page:emojis|regla de escritura]]."
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "text": "Humor"
+        },
+        {
+          "type": "paragraph",
+          "text": "Úsalo solo cuando acompañe la experiencia y no compita con la tarea. Si existe duda sobre su adecuación, no lo uses."
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "text": "Entusiasmo"
+        },
+        {
+          "type": "paragraph",
+          "text": "Puede acompañar promociones, beneficios y confirmaciones positivas. Redúcelo ante riesgo, incertidumbre o una dificultad para avanzar."
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "text": "Urgencia"
+        },
+        {
+          "type": "paragraph",
+          "text": "Úsala solo cuando exista un plazo o consecuencia real. Explica qué hacer y por qué."
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "text": "Formalidad"
+        },
+        {
+          "type": "paragraph",
+          "text": "No la confundas con seriedad. Incluso en situaciones sensibles, escribe de forma clara y humana."
+        },
+        {
+          "type": "heading",
+          "level": 4,
+          "text": "Calidez"
+        },
+        {
+          "type": "paragraph",
+          "text": "En momentos positivos puede expresarse con energía. En situaciones difíciles se demuestra con precisión, respeto, transparencia y ayuda concreta."
+        }
+      ],
+      "related": [
+        "voz-ux",
+        "problemas-recuperacion",
+        "emojis"
+      ]
+    },
+    "confirmaciones": {
+      "title": "Confirmaciones",
+      "category": "contextos",
+      "alts": [
+        "confirmación",
+        "confirmaciones",
+        "pedido confirmado"
+      ],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Las confirmaciones pueden dar certeza sobre una acción que ya ocurrió o ayudar a evaluar una acción antes de realizarla."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Antes de una acción"
+        },
+        {
+          "type": "paragraph",
+          "text": "Pide una confirmación adicional cuando ayude a prevenir una consecuencia importante o difícil de revertir, no como paso rutinario."
+        },
+        {
+          "type": "paragraph",
+          "text": "Explica con claridad qué acción está por realizarse y qué consecuencia necesita evaluar la persona. Incluye la información específica necesaria para comprobar que está confirmando la acción correcta."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Después de una acción"
+        },
+        {
+          "type": "paragraph",
+          "text": "Confirma el resultado principal, incluye los datos necesarios para reconocerlo y explica qué ocurrirá después cuando sea relevante."
+        },
+        {
+          "type": "paragraph",
+          "text": "Usa una celebración proporcional al momento, sin retrasar la información esencial."
+        }
+      ],
+      "related": [
+        "voz-ux",
+        "tono",
+        "comprension"
+      ]
+    },
+    "promociones": {
+      "title": "Promociones y beneficios",
+      "category": "contextos",
+      "alts": [
+        "promoción",
+        "promociones",
+        "beneficio",
+        "beneficios"
+      ],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Su objetivo es permitir que la persona comprenda el beneficio y decida con información suficiente."
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            "Presenta el beneficio con claridad, las condiciones relevantes y la acción disponible.",
+            "Si una condición puede cambiar de forma significativa cómo se interpreta el beneficio, hazla visible junto con la información necesaria para decidir.",
+            "Puede haber más entusiasmo, siempre que no oculte información ni cree urgencia artificial. No antepongas entusiasmo a la comprensión.",
+            "Evita la presión innecesaria. Usa urgencia solo cuando exista un plazo o consecuencia real; explica qué hacer y por qué.",
+            "Una intención promocional no justifica entusiasmo si existe riesgo o incertidumbre relevante."
+          ]
+        }
+      ],
+      "related": [
+        "voz-ux",
+        "tono",
+        "cta",
+        "fuente-neutral"
+      ]
+    },
+    "esperas": {
+      "title": "Esperas y demoras",
+      "category": "contextos",
+      "alts": [
+        "espera",
+        "esperas",
+        "demora",
+        "demoras"
+      ],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Su objetivo es reducir incertidumbre y aportar previsibilidad."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Mientras un proceso está en curso"
+        },
+        {
+          "type": "paragraph",
+          "text": "Confirma el estado real cuando la información esté disponible. Si existe una estimación fiable, comunícala como expectativa y no como una promesa que el producto no pueda sostener."
+        },
+        {
+          "type": "paragraph",
+          "text": "Explica cómo sabrá la persona que el proceso terminó cuando esa información sea relevante y esté disponible."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Cuando existe una demora"
+        },
+        {
+          "type": "paragraph",
+          "text": "Si la espera supera o modifica una expectativa ya comunicada, haz visible ese cambio y comunica la información actual disponible."
+        },
+        {
+          "type": "paragraph",
+          "text": "No inventes una duración ni presentes una estimación incierta como un plazo confirmado. Ofrece una alternativa o un próximo paso cuando exista."
+        },
+        {
+          "type": "paragraph",
+          "text": "Para criterios sobre impacto, responsabilidad de la organización y recuperación ante una demora problemática, consulta [[page:problemas-recuperacion|Problemas y recuperación]]."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Información relevante durante la espera"
+        },
+        {
+          "type": "paragraph",
+          "text": "Omite detalles internos que no ayuden a comprender qué está ocurriendo, qué debe hacer la persona o qué puede esperar. Explica el estado y la información relevante para continuar, no las etapas internas del proceso."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Especificidad útil"
+        },
+        {
+          "type": "example",
+          "avoid": {
+            "label": "Evita",
+            "items": [
+              "`La disponibilidad puede variar según el tipo de pedido y el local seleccionado. Revisa las condiciones correspondientes a tu caso.`"
+            ]
+          },
+          "better": {
+            "label": "Mejor",
+            "items": [
+              "`Tu pedido estará disponible para retirar mañana a partir de las 10 hs.`"
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Información relevante"
+        },
+        {
+          "type": "paragraph",
+          "text": "Evita exponer etapas de validación interna y derivación a preparación cuando no cambien lo que la persona debe hacer o puede esperar."
+        },
+        {
+          "type": "example",
+          "better": {
+            "label": "Mejor",
+            "items": [
+              "`Estamos preparando tu pedido. Te avisaremos cuando esté listo.`"
+            ]
+          }
+        }
+      ],
+      "related": [
+        "tono",
+        "comprension",
+        "problemas-recuperacion"
+      ]
+    },
+    "situaciones-combinadas": {
+      "title": "Situaciones combinadas",
+      "category": "contextos",
+      "alts": [
+        "situaciones combinadas",
+        "promoción y problema",
+        "confirmación y espera"
+      ],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Aplica la prioridad de [[page:tono|Tono]]. Una promoción no debe desplazar la resolución de un problema. Una confirmación puede incluir una espera posterior, pero primero debe dar certeza sobre lo que ya ocurrió."
+        }
+      ],
+      "related": [
+        "tono",
+        "problemas-recuperacion"
+      ]
+    },
+    "mayusculas": {
+      "title": "Mayúsculas",
+      "category": "estilo",
+      "alts": [
+        "mayúscula",
+        "mayúsculas",
+        "capitalización",
+        "all caps"
+      ],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Usa mayúscula solo donde corresponde. Escribe títulos, etiquetas, opciones y demás textos de interfaz con mayúscula inicial y continúa en minúscula. Reserva mayúsculas adicionales para nombres propios, siglas y denominaciones que las requieran."
+        },
+        {
+          "type": "paragraph",
+          "text": "No uses mayúsculas sostenidas para dar énfasis."
+        },
+        {
+          "type": "example",
+          "avoid": {
+            "label": "Evita",
+            "items": [
+              "`REVISA LOS DATOS DE PAGO`"
+            ]
+          },
+          "better": {
+            "label": "Mejor",
+            "items": [
+              "`Revisa los datos de pago`"
+            ]
+          }
+        }
+      ]
+    },
+    "marcas-productos-secciones": {
+      "title": "Marcas, productos y secciones",
+      "category": "estilo",
+      "alts": [
+        "marcas",
+        "productos",
+        "secciones",
+        "McDonald’s",
+        "Big Mac",
+        "McCafé"
+      ],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Respeta la escritura de marcas, productos y secciones. Conserva la grafía, capitalización y acentuación aprobadas de marcas, productos, programas y funcionalidades. Usa formas como `McDonald’s`, `Big Mac`, `McCafé`, `McDelivery`, `AutoMac`, `Chicken McNuggets`, `McFlurry`, `McMuffin`, `McChicken` y `Filet-O-Fish` dentro de su alcance aprobado. Conserva los descriptores que forman parte del nombre: `McMuffin` se mantiene aunque varíen sus calificadores."
+        },
+        {
+          "type": "paragraph",
+          "text": "Escribe ingredientes, sabores y categorías comunes con las reglas habituales del idioma. No reproduzcas las mayúsculas de catálogos, sistemas o archivos fuente."
+        },
+        {
+          "type": "example",
+          "avoid": {
+            "label": "Evita",
+            "items": [
+              "`BIG MAC`, `MCCAFÉ`, `FRESA`, `QUESO AMARILLO`."
+            ]
+          },
+          "better": {
+            "label": "Mejor",
+            "items": [
+              "`Big Mac`, `McCafé`, `fresa`, `queso amarillo`."
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": "Los nombres de secciones, pantallas y áreas llevan mayúscula inicial: `Mi cuenta`, `Mis pedidos`, `Promociones`. Conserva esta escritura dentro de una oración."
+        },
+        {
+          "type": "example",
+          "avoid": {
+            "label": "Evita",
+            "items": [
+              "`Ve a MI CUENTA.`",
+              "`Ve a Mi Cuenta.`"
+            ]
+          },
+          "better": {
+            "label": "Mejor",
+            "items": [
+              "`Ve a Mi cuenta`."
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": "No uses `Mc` o `Mac` como recurso para inventar nombres de productos, categorías, servicios o funcionalidades. Usa únicamente denominaciones aprobadas."
+        }
+      ]
+    },
+    "titulos-bajadas": {
+      "title": "Títulos y bajadas",
+      "category": "estilo",
+      "alts": [
+        "títulos",
+        "titulo",
+        "bajadas",
+        "bajada"
+      ],
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Títulos y bajadas"
+        },
+        {
+          "type": "paragraph",
+          "text": "Escribe títulos y bajadas que orienten. Haz que el título comunique con claridad la tarea, el objetivo o la información principal de la pantalla: qué necesita hacer, resolver o comprender la persona. El propósito principal debe poder reconocerse desde el título, sin depender de la bajada o de las acciones disponibles para deducirlo."
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            "Presenta primero lo que la persona necesita para entender o actuar.",
+            "Mantén el título breve sin eliminar información esencial.",
+            "No cierres títulos con punto. Evita títulos de varias oraciones; si excepcionalmente los hay, puntúa cada oración de forma habitual, incluida la última.",
+            "Si el título es una pregunta, usa signos de apertura y cierre.",
+            "Cierra las bajadas con punto."
+          ]
+        }
+      ],
+      "related": [
+        "puntuacion"
+      ]
+    },
+    "cta": {
+      "title": "Llamados a la acción (CTA)",
+      "category": "estilo",
+      "alts": [
+        "cta",
+        "botón",
+        "botones",
+        "acción",
+        "llamado a la acción",
+        "continuar",
+        "aceptar"
+      ],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Haz que los llamados a la acción (CTA) anticipen el resultado. Escribe llamados a la acción breves, específicos y orientados a la tarea. La persona debe poder anticipar qué ocurrirá al seleccionar la opción."
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            "Empieza con un verbo de acción.",
+            "Nombra el resultado cuando pueda haber dudas.",
+            "Usa los mismos términos que ya aparezcan en la experiencia. No introduzcas sinónimos ni términos nuevos para nombrar una misma acción o un mismo concepto.",
+            "Haz que el CTA dialogue con el título de la pantalla: la acción debe responder a la tarea o decisión que el título presenta.",
+            "Elimina artículos, pronombres y palabras que no aporten significado.",
+            "Evita acciones genéricas como `Aceptar`, `Continuar` o `Enviar` cuando una alternativa más precisa pueda explicar el resultado.",
+            "No uses puntuación final en botones o enlaces de acción breves."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "**Título:** `¿Quieres eliminar tu cuenta de forma permanente?`"
+        },
+        {
+          "type": "example",
+          "avoid": {
+            "label": "Evita",
+            "items": [
+              "`Aceptar`."
+            ]
+          },
+          "better": {
+            "label": "Mejor",
+            "items": [
+              "`Eliminar cuenta`"
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": "El CTA responde directamente a la decisión planteada en el título."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Cuando el espacio sea limitado"
+        },
+        {
+          "type": "paragraph",
+          "text": "No acortes una acción hasta volverla ambigua. Antes de abreviar, elimina palabras redundantes y comprueba el texto en el componente real. Aplica una excepción de componente solo si está documentada para ese alcance."
+        },
+        {
+          "type": "paragraph",
+          "text": "La forma verbal de los llamados a la acción debe mantenerse consistente dentro de una misma experiencia."
+        }
+      ],
+      "related": [
+        "puntuacion",
+        "comprension",
+        "etiquetas-enlaces"
+      ]
+    },
+    "puntuacion": {
+      "title": "Puntuación",
+      "category": "estilo",
+      "alts": [
+        "puntuación",
+        "punto",
+        "botón",
+        "botones",
+        "punto en botones",
+        "¿los botones llevan punto?"
+      ],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Usa la puntuación para facilitar la lectura."
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            "Usa punto final en oraciones completas y textos de más de una oración.",
+            "Omite el punto final en etiquetas, opciones y botones breves. Para títulos y bajadas, aplica la pauta de [[page:titulos-bajadas|Títulos y bajadas]].",
+            "Usa signos de apertura y cierre en preguntas y exclamaciones.",
+            "Evita encadenar signos para intensificar un mensaje."
+          ]
+        }
+      ],
+      "related": [
+        "cta",
+        "titulos-bajadas"
+      ]
+    },
+    "siglas-abreviaturas": {
+      "title": "Siglas y abreviaturas",
+      "category": "estilo",
+      "alts": [
+        "siglas",
+        "abreviaturas",
+        "abreviación"
+      ],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Usa siglas y abreviaturas solo si se entienden. Prioriza las palabras completas. Usa una sigla o abreviatura cuando sea conocida, esté aprobada o una restricción real del componente la haga necesaria sin afectar la comprensión."
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            "Escribe siglas en mayúsculas y sin puntos entre sus letras.",
+            "Desarrolla una sigla en la primera mención si puede resultar desconocida.",
+            "No inventes abreviaturas solo para ahorrar espacio.",
+            "Mantén una misma forma en toda la experiencia."
+          ]
+        }
+      ]
+    },
+    "listas": {
+      "title": "Listas",
+      "category": "estilo",
+      "alts": [
+        "listas",
+        "viñetas",
+        "bullets",
+        "lista numerada"
+      ],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Construye listas fáciles de recorrer. Usa una lista cuando ayude a separar opciones, requisitos o pasos."
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            "Mantén una estructura paralela.",
+            "Usa números solo cuando el orden sea necesario.",
+            "Usa viñetas cuando el orden no cambie el significado.",
+            "Si los elementos son oraciones completas, ciérralos con punto.",
+            "Si son palabras o fragmentos breves, no agregues punto final."
+          ]
+        }
+      ]
+    },
+    "numeros": {
+      "title": "Números y porcentajes",
+      "category": "estilo",
+      "alts": [
+        "números",
+        "porcentajes",
+        "porcentaje",
+        "20%"
+      ],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Usa cifras para que la persona pueda reconocer y comparar valores o localizar datos rápidamente."
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            "Mantén un mismo formato para el mismo tipo de dato dentro de una experiencia.",
+            "No agregues decimales que no aporten precisión útil.",
+            "Mantén juntos el valor y la información que lo identifica.",
+            "No traslades automáticamente separadores de un mercado a otro."
+          ]
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Porcentajes"
+        },
+        {
+          "type": "paragraph",
+          "text": "Escribe el símbolo unido al valor: `20%`."
+        }
+      ]
+    },
+    "fechas": {
+      "title": "Fechas",
+      "category": "estilo",
+      "alts": [
+        "fechas",
+        "fecha",
+        "mes",
+        "día"
+      ],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Presenta fechas sin ambigüedad. Usa el día en cifras y el mes en letras: `15 de septiembre`. Escribe meses y días de la semana en minúscula y no agregues cero inicial al día."
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            "Incluye el año solo cuando evite ambigüedad.",
+            "Añade el día de la semana cuando aporte contexto útil: `lunes 20 de enero`.",
+            "No uses ordinales abreviados en fechas.",
+            "En rangos del mismo mes, evita repetir información innecesaria.",
+            "Abrevia meses y días únicamente por una restricción real de espacio; usa minúsculas y no agregues punto.",
+            "Reserva los formatos numéricos abreviados para excepciones de componente documentadas."
+          ]
+        },
+        {
+          "type": "example",
+          "avoid": {
+            "label": "Evita",
+            "items": [
+              "`Del 1ro de julio al 08/07`."
+            ]
+          },
+          "better": {
+            "label": "Mejor",
+            "items": [
+              "`Del 1 al 8 de julio`."
+            ]
+          }
+        }
+      ]
+    },
+    "horas-duraciones": {
+      "title": "Horas y duraciones",
+      "category": "estilo",
+      "alts": [
+        "hora",
+        "horas",
+        "duración",
+        "duraciones",
+        "hs",
+        "24 horas"
+      ],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Distingue horas y duraciones. Para una hora del día, usa el sistema de 24 horas y `hs` después de la hora. Omite `:00` en horas exactas: `18 hs`. Cuando haya minutos, usa dos cifras: `9:05 hs`, `21:30 hs`. No agregues cero inicial a horas de un dígito."
+        },
+        {
+          "type": "paragraph",
+          "text": "En rangos, usa una sola marca final cuando el sentido sea claro: `Abre de 18 a 21:30 hs`. No uses formatos de 12 horas ni separes horas y minutos con un punto. Incluye zona horaria o segundos solo cuando sean necesarios para comprender o completar la tarea."
+        },
+        {
+          "type": "paragraph",
+          "text": "Para una duración, escribe las unidades con palabras. Si una restricción real de espacio exige abreviar, usa `hs`, `min` y `s`. No mezcles palabras completas y abreviaturas ni uses un formato de reloj para una duración."
+        },
+        {
+          "type": "example",
+          "avoid": {
+            "label": "Evita",
+            "items": [
+              "`3:25 hs`"
+            ]
+          },
+          "better": {
+            "label": "Mejor",
+            "items": [
+              "`3 horas y 25 minutos`",
+              "`3 hs 25 min` (solo si una restricción real de espacio exige abreviar)."
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": "`h` es la forma recomendada por la norma general; `hs` se adopta como convención regional del producto por usabilidad y naturalidad. Un formato obligatorio generado por el sistema se trata como excepción de componente, no como una nueva convención general."
+        }
+      ]
+    },
+    "separadores": {
+      "title": "Separadores, monedas y precios",
+      "category": "estilo",
+      "alts": [
+        "separadores",
+        "moneda",
+        "monedas",
+        "precio",
+        "precios",
+        "símbolo monetario"
+      ],
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Usa separadores según el mercado"
+        },
+        {
+          "type": "paragraph",
+          "text": "Usa los separadores validados para el mercado de destino y mantenlos consistentes dentro de la experiencia. Consulta las [[page:datos-mercado|tablas regionales]]."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Presenta monedas y precios según la convención local"
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            "Usa el símbolo monetario habitual del mercado.",
+            "Mantén su posición según la convención validada localmente.",
+            "No muestres decimales cuando el precio sea entero y los centavos no aporten información.",
+            "Muéstralos cuando formen parte real del precio.",
+            "Mantén una cantidad consistente de decimales en comparaciones equivalentes, como listas de precios, resúmenes del pedido o totales de compra.",
+            "No agregues códigos como `ARS`, `BRL` o `MXN` de manera sistemática en una experiencia destinada a un único mercado.",
+            "Usa un código de moneda solo cuando exista una necesidad real de desambiguación."
+          ]
+        }
+      ],
+      "related": [
+        "datos-mercado"
+      ]
+    },
+    "voz-activa": {
+      "title": "Voz activa",
+      "category": "estilo",
+      "alts": [
+        "voz activa",
+        "voz pasiva"
+      ],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Prefiere la voz activa. La voz activa suele ser más directa, cercana y fácil de recorrer. Ayuda a identificar quién realiza la acción y reduce construcciones innecesariamente formales o distantes."
+        },
+        {
+          "type": "example",
+          "avoid": {
+            "label": "Evita",
+            "items": [
+              "`Tu pedido fue cancelado y el dinero será devuelto.`"
+            ]
+          },
+          "better": {
+            "label": "Mejor",
+            "items": [
+              "`Cancelamos tu pedido y te devolveremos el dinero.`"
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": "La preferencia por la voz activa no prohíbe la pasiva cuando resulte natural o el agente sea irrelevante."
+        }
+      ]
+    },
+    "parrafos-breves": {
+      "title": "Párrafos y negritas",
+      "category": "estilo",
+      "alts": [
+        "párrafos",
+        "parrafo",
+        "negritas",
+        "negrita",
+        "énfasis"
+      ],
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Mantén párrafos breves"
+        },
+        {
+          "type": "paragraph",
+          "text": "Usa hasta cuatro oraciones como referencia práctica, no como límite rígido. Separa ideas y evita grandes bloques visuales continuos. Usa espacio, subtítulos o listas cuando ayuden a recorrer el contenido, sin fragmentar artificialmente ideas que funcionan juntas."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Usa negritas para destacar ideas completas"
+        },
+        {
+          "type": "paragraph",
+          "text": "Destaca información que ayude a identificar la idea principal al recorrer solo los fragmentos en negrita. Evita palabras aisladas sin contexto, bloques completos o demasiados destacados. Deja fuera los signos de puntuación que cierran la frase."
+        },
+        {
+          "type": "example",
+          "avoid": {
+            "label": "Evita",
+            "items": [
+              "**Tu pedido está en camino y llegará entre las 18 y las 18:30 hs.**",
+              "Si necesitas cambiar el restaurante, hazlo **antes** de confirmar el pedido."
+            ]
+          },
+          "better": {
+            "label": "Mejor",
+            "items": [
+              "Tu pedido está en camino y **llegará entre las 18 y las 18:30 hs**.",
+              "Si necesitas cambiar el restaurante, **hazlo antes de confirmar el pedido**."
+            ]
+          }
+        }
+      ]
+    },
+    "emojis": {
+      "title": "Emojis",
+      "category": "estilo",
+      "alts": [
+        "emoji",
+        "emojis",
+        "emoji en error",
+        "¿puedo usar un emoji en un error?"
+      ],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Evita los emojis por defecto. Usa un emoji solo cuando aporte una función clara o refuerce el mensaje sin comprometer comprensión, accesibilidad, tono ni consistencia."
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            "Usa como máximo uno por idea o mensaje breve. Esto no habilita uno en cada frase.",
+            "No sustituyas palabras ni información necesaria.",
+            "No los uses en CTA, información importante o crítica, errores, pagos, bloqueos, malas noticias ni contextos sensibles.",
+            "Evita ubicarlos donde interrumpan la oración.",
+            "Evita el detalle excesivo, el género explícito y los estereotipos.",
+            "En personas o partes del cuerpo, usa la variante amarilla.",
+            "Descarta significados ambiguos o dependientes de la generación.",
+            "Considera las diferencias de representación entre plataformas y su lectura con tecnologías asistivas.",
+            "No uses emoticones como `:)` o `;)`."
+          ]
+        }
+      ],
+      "related": [
+        "problemas-recuperacion",
+        "tono"
+      ]
+    },
+    "comprension": {
+      "title": "Comprensión e instrucciones accesibles",
+      "category": "accesibilidad",
+      "alts": [
+        "comprensión",
+        "instrucciones",
+        "carga cognitiva",
+        "lenguaje claro"
+      ],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "La accesibilidad y la inclusión forman parte del contenido desde el inicio. No son una revisión final ni una versión alternativa de la experiencia."
+        },
+        {
+          "type": "paragraph",
+          "text": "Un contenido accesible ayuda a que más personas comprendan la información, se orienten y actúen. Un contenido inclusivo evita excluir, estereotipar o hacer suposiciones innecesarias."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Prioriza la comprensión"
+        },
+        {
+          "type": "paragraph",
+          "text": "Aplica los fundamentos de [[page:voz-ux|Voz UX]] y las convenciones de Estilo de escritura. Usa palabras comunes y precisas, explica términos poco frecuentes cuando sean indispensables y conserva la información necesaria para decidir."
+        },
+        {
+          "type": "paragraph",
+          "text": "Evita jerga, lenguaje interno, modismos, referencias culturales o expresiones locales que no sean necesarias para comprender o completar la tarea. Ser claro no significa simplificar hasta perder precisión."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Organiza las instrucciones según la tarea"
+        },
+        {
+          "type": "paragraph",
+          "text": "Cuando una tarea tenga varios pasos, presenta cada acción principal por separado y en su orden de ejecución. Usa listas numeradas cuando exista una secuencia real. No acumules acciones independientes en un solo paso ni conviertas toda instrucción en una lista obligatoria."
+        },
+        {
+          "type": "paragraph",
+          "text": "Para párrafos, subtítulos y listas, aplica las reglas de escritura. Revisa además que el orden de lectura sea lógico cuando el contenido se recorra con tecnologías asistivas."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Reduce la carga cognitiva"
+        },
+        {
+          "type": "paragraph",
+          "text": "No obligues a la persona a interpretar información innecesaria, recordar datos entre pasos o deducir cómo continuar."
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            "Muestra opciones relevantes para el momento.",
+            "Explica consecuencias antes de una acción importante.",
+            "Indica qué información falta y cómo completarla.",
+            "Evita repetir mensajes que no aporten orientación nueva.",
+            "En errores o bloqueos, explica qué ocurrió y ofrece un próximo paso cuando exista."
+          ]
+        }
+      ],
+      "related": [
+        "verbos-sensoriales",
+        "problemas-recuperacion"
+      ]
+    },
+    "etiquetas-enlaces": {
+      "title": "Etiquetas y enlaces descriptivos",
+      "category": "accesibilidad",
+      "alts": [
+        "etiquetas",
+        "enlaces",
+        "links",
+        "controles"
+      ],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Escribe etiquetas y enlaces descriptivos. Las etiquetas de botones, enlaces, opciones y campos deben comunicar su función incluso fuera del contexto visual de la pantalla. Distingue los elementos que producen resultados diferentes e indica claramente cualquier formato necesario para completar un campo."
+        },
+        {
+          "type": "paragraph",
+          "text": "Consulta la [[page:cta|regla de llamados a la acción]] para redactar etiquetas que anticipen el resultado. La brevedad no debe quitarles significado."
+        }
+      ],
+      "related": [
+        "cta",
+        "comprension"
+      ]
+    },
+    "alt-text": {
+      "title": "Alternativas textuales (alt text)",
+      "category": "accesibilidad",
+      "alts": [
+        "alt text",
+        "texto alternativo",
+        "alternativas textuales",
+        "imagen"
+      ],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Alternativas textuales (alt text). Las imágenes, los íconos y otros recursos visuales no deben ser el único medio para comunicar información necesaria."
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            "Proporciona una alternativa textual cuando un elemento visual aporte información relevante.",
+            "Describe la función o la información que la persona necesita, no cada detalle visible.",
+            "No repitas en el alt text información ya expresada de forma equivalente en el texto cercano. Describe la información o función adicional que aporta el elemento visual.",
+            "Si un elemento es decorativo y no aporta significado, evita convertirlo en contenido redundante.",
+            "No uses únicamente color, forma, posición o movimiento para explicar un estado o una acción."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "No repitas automáticamente una confirmación visible junto a una imagen si esta no añade información."
+        },
+        {
+          "type": "paragraph",
+          "text": "La alternativa adecuada depende de la función del elemento en su contexto. La misma imagen puede requerir una descripción diferente o no requerirla según el mensaje que acompañe."
+        }
+      ],
+      "related": [
+        "modalidad"
+      ]
+    },
+    "modalidad": {
+      "title": "Modalidades y tecnologías asistivas",
+      "category": "accesibilidad",
+      "alts": [
+        "modalidad",
+        "modalidades",
+        "lector de pantalla",
+        "teclado",
+        "zoom",
+        "tecnologías asistivas"
+      ],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "No dependas de una única modalidad. Redacta instrucciones que sigan siendo comprensibles si cambia la disposición de la interfaz o si la persona utiliza zoom, navegación por teclado, un lector de pantalla u otra tecnología asistiva."
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            "Describe la acción, el elemento o la secuencia antes que su posición.",
+            "Evita referencias como “aquí”, “allí”, “arriba”, “abajo”, “a la izquierda”, “en el botón” o “el botón verde” cuando sean la única forma de identificar qué hacer.",
+            "No presupongas que la persona puede ver, oír o realizar un gesto específico para comprender la información.",
+            "Cuando una experiencia use audio, imagen o movimiento, ofrece por otra vía la información necesaria para completar la tarea."
+          ]
+        },
+        {
+          "type": "example",
+          "avoid": {
+            "label": "Evita",
+            "items": [
+              "Toca el botón de abajo para cambiar el medio de pago.",
+              "Toca el ícono de lápiz de la derecha.",
+              "Escucha el mensaje para continuar."
+            ]
+          },
+          "better": {
+            "label": "Mejor",
+            "items": [
+              "Selecciona “Cambiar” para elegir otro medio de pago.",
+              "Selecciona “Editar” para cambiar la dirección de entrega.",
+              "Reproduce el mensaje o consulta la transcripción."
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": "Una referencia espacial puede usarse como apoyo si el elemento tiene un nombre claro y la instrucción no depende exclusivamente de su ubicación."
+        },
+        {
+          "type": "paragraph",
+          "text": "Los emojis no deben sustituir información necesaria. Considera cómo se leen con tecnologías asistivas y consulta la [[page:emojis|política de emojis]]."
+        }
+      ],
+      "related": [
+        "verbos-sensoriales",
+        "alt-text"
+      ]
+    },
+    "genero": {
+      "title": "Lenguaje inclusivo y respetuoso",
+      "category": "accesibilidad",
+      "alts": [
+        "inclusión",
+        "inclusivo",
+        "género",
+        "presuposiciones",
+        "términos respetuosos",
+        "discapacidad"
+      ],
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Evita presuposiciones sobre las personas"
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            "No afirmes que una tarea es fácil, rápida o evidente para todas las personas.",
+            "No atribuyas emociones como frustración, ansiedad o entusiasmo.",
+            "Evita estereotipos sobre edad, género, origen, cultura, discapacidad, conocimientos o situación económica.",
+            "Solicita datos de identidad solo cuando sean necesarios para la experiencia."
+          ]
+        },
+        {
+          "type": "example",
+          "avoid": {
+            "label": "Evita",
+            "items": [
+              "`Es muy fácil: solo completa estos 3 pasos.`"
+            ]
+          },
+          "better": {
+            "label": "Mejor",
+            "items": [
+              "`Completa estos 3 pasos.`"
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Evita marcas de género innecesarias"
+        },
+        {
+          "type": "paragraph",
+          "text": "Como primera opción, busca una reformulación clara, natural y precisa."
+        },
+        {
+          "type": "paragraph",
+          "text": "Puedes:"
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            "dirigirte directamente a la persona;",
+            "usar verbos sin adjetivos o participios que marquen género;",
+            "nombrar la acción o el estado;",
+            "usar sustantivos colectivos o construcciones neutrales cuando resulten naturales, como “las personas que usan la aplicación”."
+          ]
+        },
+        {
+          "type": "example",
+          "avoid": {
+            "label": "Evita",
+            "items": [
+              "`Bienvenido.`",
+              "`Estás listo para retirar tu pedido.`"
+            ]
+          },
+          "better": {
+            "label": "Mejor",
+            "items": [
+              "`Te damos la bienvenida.`",
+              "`Tu pedido está listo.`"
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": "No fuerces una neutralización si introduce ambigüedad, pierde precisión o vuelve poco natural el mensaje."
+        },
+        {
+          "type": "paragraph",
+          "text": "No adoptes `x`, `@` o `e` como recursos generales del producto por sus problemas de lectura, pronunciación, accesibilidad y consistencia."
+        },
+        {
+          "type": "paragraph",
+          "text": "Los desdoblamientos sistemáticos como `usuarios y usuarias` tampoco funcionan como norma general. Si el género es relevante o no puede evitarse razonablemente, resuelve la formulación según el caso y el contexto lingüístico. Esto no establece el masculino genérico como respuesta automática."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Usa términos respetuosos y precisos"
+        },
+        {
+          "type": "paragraph",
+          "text": "Cuando menciones características personales, identidades o discapacidades, hazlo solo si son relevantes para la tarea."
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            "Evita expresiones despectivas, paternalistas o que presenten a una persona como un problema.",
+            "No reduzcas a una persona a una característica.",
+            "Usa la denominación que la persona o la comunidad indique cuando sea posible."
+          ]
+        }
+      ],
+      "related": [
+        "comprension"
+      ]
+    },
+    "verbos-sensoriales": {
+      "title": "Verbos sensoriales",
+      "category": "accesibilidad",
+      "alts": [
+        "verbos sensoriales",
+        "ver",
+        "ver detalles",
+        "abrir detalles",
+        "¿podemos escribir ver detalles?"
+      ],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Evita los verbos sensoriales cuando una alternativa natural y precisa describa la acción, el contenido o el resultado sin presuponer una capacidad específica."
+        },
+        {
+          "type": "paragraph",
+          "text": "Usa “consultar”, “revisar”, “explorar”, “seleccionar” o “reproducir” solo cuando describan correctamente la acción. No hagas reemplazos mecánicos que cambien el sentido."
+        },
+        {
+          "type": "example",
+          "avoid": {
+            "label": "Evita",
+            "items": [
+              "Ver carrito"
+            ]
+          },
+          "better": {
+            "label": "Mejor",
+            "items": [
+              "Ir al carrito"
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": "Puedes usar un verbo sensorial cuando la percepción sea parte real de la tarea y reemplazarlo altere el significado. Aun entonces, la experiencia no debe depender exclusivamente de esa modalidad cuando existan requisitos de accesibilidad."
+        },
+        {
+          "type": "paragraph",
+          "text": "Una excepción específica de una plataforma inherentemente visual o sin modalidad alternativa se limita al canal que la justifica; no se traslada automáticamente a la app."
+        }
+      ],
+      "related": [
+        "comprension",
+        "modalidad"
+      ]
+    },
+    "fuente-neutral": {
+      "title": "Español neutral y localización",
+      "category": "localizacion",
+      "alts": [
+        "español neutral",
+        "localización",
+        "localizar",
+        "traducción",
+        "adaptación",
+        "versión fuente",
+        "tú"
+      ],
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Escribe primero una versión fuente clara y neutral"
+        },
+        {
+          "type": "paragraph",
+          "text": "Todas las experiencias se redactan originalmente en español neutral con tratamiento informal de tú, no de “usted”, independientemente del mercado de destino. Argentina y Uruguay reciben después una adaptación al voseo rioplatense, incluso si uno de ellos es el mercado principal."
+        },
+        {
+          "type": "paragraph",
+          "text": "La versión fuente debe poder entenderse en los distintos mercados hispanohablantes antes de aplicar adaptaciones locales."
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            "Elige palabras claras y naturales.",
+            "Evita localismos y referencias culturales innecesarias.",
+            "Evita jerga interna y explica términos técnicos o de marca que las personas puedan no conocer.",
+            "Mantén el mismo término para el mismo concepto, salvo una equivalencia local validada.",
+            "No incorpores a una fuente reutilizable una adaptación propia de un mercado."
+          ]
+        },
+        {
+          "type": "example",
+          "avoid": {
+            "label": "Evita",
+            "items": [
+              "`Chequeá tus datos antes de continuar.`"
+            ]
+          },
+          "better": {
+            "label": "Mejor",
+            "items": [
+              "`Revisa tus datos antes de continuar.`"
+            ]
+          }
+        },
+        {
+          "type": "paragraph",
+          "text": "La formulación que se debe evitar combina una elección léxica regional con voseo; no corresponde a la fuente en español neutral."
+        },
+        {
+          "type": "paragraph",
+          "text": "Una variante local modifica únicamente lo que necesita cambiar por una razón lingüística, terminológica, cultural, de formato o de canal. El resto de la regla se mantiene."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Cuándo crear una adaptación"
+        },
+        {
+          "type": "paragraph",
+          "text": "Crea una adaptación cuando exista una diferencia identificada y validada que afecte comprensión, precisión o adecuación."
+        },
+        {
+          "type": "paragraph",
+          "text": "Puede estar justificada cuando:"
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            "una palabra cambia de significado o naturalidad en un mercado;",
+            "existe una nomenclatura oficial distinta para un producto, programa o servicio;",
+            "corresponde aplicar voseo rioplatense en Argentina o Uruguay;",
+            "un formato de fecha, hora, número, moneda o precio depende del mercado;",
+            "una adaptación cultural o lingüística es necesaria para conservar el significado y la utilidad."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Una adaptación modifica solo lo necesario. No duplica toda la regla general."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Localizar no es solo traducir"
+        },
+        {
+          "type": "paragraph",
+          "text": "Traducir cambia un contenido de idioma. Localizar adapta el contenido a las convenciones lingüísticas, culturales, terminológicas y de formato del mercado donde se utilizará."
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            "Parte de la regla general y conserva todo lo que siga siendo válido.",
+            "Adapta únicamente los elementos que lo requieran.",
+            "Revisa el contenido en su contexto de uso.",
+            "Agrega a [[page:equivalencias|Equivalencias]] los términos y sus adaptaciones aprobadas que puedan reutilizarse."
+          ]
+        }
+      ],
+      "related": [
+        "voseo",
+        "idioma-mercado",
+        "datos-mercado",
+        "equivalencias"
+      ]
+    },
+    "voseo": {
+      "title": "Voseo rioplatense",
+      "category": "localizacion",
+      "alts": [
+        "voseo",
+        "vos",
+        "Argentina",
+        "Uruguay",
+        "tú o vos",
+        "usar vos",
+        "estoy escribiendo para Argentina"
+      ],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "El voseo rioplatense se aplica en **Argentina y Uruguay** como una adaptación posterior de la versión fuente."
+        },
+        {
+          "type": "paragraph",
+          "text": "El proceso de trabajo es:"
+        },
+        {
+          "type": "orderedList",
+          "items": [
+            "redactar y aprobar la experiencia en español neutral con `tú`;",
+            "crear la adaptación para Argentina o Uruguay;",
+            "adaptar el texto completo: tratamiento, terminología, nombres y convenciones del mercado;",
+            "no mezclar `tú` y `vos` dentro de una misma versión."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "No redactes directamente en voseo como versión fuente, incluso cuando el mercado principal sea Argentina o Uruguay."
+        },
+        {
+          "type": "paragraph",
+          "text": "Revisa y valida la adaptación en su contexto de uso antes de publicarla."
+        },
+        {
+          "type": "paragraph",
+          "text": "Esta lógica forma parte del proceso general de localización: la versión fuente se adapta posteriormente según el idioma o mercado correspondiente."
+        }
+      ],
+      "related": [
+        "fuente-neutral"
+      ]
+    },
+    "idioma-mercado": {
+      "title": "Idioma de producto por mercado",
+      "category": "localizacion",
+      "alts": [
+        "idioma",
+        "idiomas",
+        "mercado",
+        "mercados",
+        "Brasil",
+        "inglés",
+        "francés",
+        "español"
+      ],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "La tabla indica el idioma o la variante de la experiencia, no el idioma oficial del territorio."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Idioma / variante",
+            "Mercados"
+          ],
+          "rows": [
+            [
+              "Español con voseo",
+              "Argentina, Uruguay"
+            ],
+            [
+              "Español neutral con tú",
+              "Chile, Colombia, Costa Rica, Ecuador, México, Panamá, Perú, Puerto Rico, Venezuela"
+            ],
+            [
+              "Portugués",
+              "Brasil"
+            ],
+            [
+              "Inglés",
+              "Aruba, Curazao, Saint-Martin, Saint Croix, Saint Thomas, Trinidad y Tobago"
+            ],
+            [
+              "Francés",
+              "Guadalupe, Guyana Francesa, Martinica"
+            ]
+          ]
+        }
+      ],
+      "related": [
+        "fuente-neutral"
+      ]
+    },
+    "datos-mercado": {
+      "title": "Datos regionales de monedas y separadores",
+      "category": "localizacion",
+      "alts": [
+        "datos regionales",
+        "moneda",
+        "monedas",
+        "separadores",
+        "Argentina",
+        "TBD",
+        "sin convención aprobada"
+      ],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Usa la convención aprobada para el mercado de destino. No deduzcas un formato a partir del idioma de producto ni traslades automáticamente el de otro mercado."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Mercado",
+            "Moneda",
+            "Símbolo",
+            "Miles",
+            "Decimales",
+            "Ejemplo"
+          ],
+          "rows": [
+            [
+              "Argentina",
+              "Peso argentino",
+              "$",
+              "Punto",
+              "Coma",
+              "1.234,56"
+            ],
+            [
+              "Aruba",
+              "Florín arubeño",
+              "TBD",
+              "TBD",
+              "TBD",
+              "TBD"
+            ],
+            [
+              "Brasil",
+              "Real",
+              "R$",
+              "Punto",
+              "Coma",
+              "1.234,56"
+            ],
+            [
+              "Chile",
+              "Peso chileno",
+              "$",
+              "Punto",
+              "Coma",
+              "1.234,56"
+            ],
+            [
+              "Colombia",
+              "Peso colombiano",
+              "$",
+              "Punto",
+              "Coma",
+              "1.234,56"
+            ],
+            [
+              "Costa Rica",
+              "Colón costarricense",
+              "₡",
+              "Coma",
+              "Punto",
+              "1,234.56"
+            ],
+            [
+              "Curazao",
+              "Florín caribeño",
+              "Cg",
+              "Punto",
+              "Coma",
+              "1.234,56"
+            ],
+            [
+              "Ecuador",
+              "Dólar estadounidense",
+              "US$",
+              "Punto",
+              "Coma",
+              "1.234,56"
+            ],
+            [
+              "Guadalupe",
+              "Euro",
+              "€",
+              "Espacio fino",
+              "Coma",
+              "1 234,56"
+            ],
+            [
+              "Guyana Francesa",
+              "Euro",
+              "€",
+              "Espacio fino",
+              "Coma",
+              "1 234,56"
+            ],
+            [
+              "Martinica",
+              "Euro",
+              "€",
+              "Espacio fino",
+              "Coma",
+              "1 234,56"
+            ],
+            [
+              "México",
+              "Peso mexicano",
+              "$",
+              "Coma",
+              "Punto",
+              "1,234.56"
+            ],
+            [
+              "Panamá",
+              "Balboa / dólar estadounidense",
+              "B/. / US$",
+              "Coma",
+              "Punto",
+              "1,234.56"
+            ],
+            [
+              "Perú",
+              "Sol",
+              "S/",
+              "Coma",
+              "Punto",
+              "1,234.56"
+            ],
+            [
+              "Puerto Rico",
+              "TBD",
+              "TBD",
+              "TBD",
+              "TBD",
+              "TBD"
+            ],
+            [
+              "Saint-Martin",
+              "TBD",
+              "TBD",
+              "TBD",
+              "TBD",
+              "TBD"
+            ],
+            [
+              "Saint Croix",
+              "Dólar estadounidense",
+              "$",
+              "Coma",
+              "Punto",
+              "1,234.56"
+            ],
+            [
+              "Saint Thomas",
+              "Dólar estadounidense",
+              "$",
+              "Coma",
+              "Punto",
+              "1,234.56"
+            ],
+            [
+              "Trinidad y Tobago",
+              "Dólar de Trinidad y Tobago",
+              "Sin convención aprobada",
+              "Coma",
+              "Punto",
+              "1,234.56"
+            ],
+            [
+              "Uruguay",
+              "Peso uruguayo",
+              "$",
+              "Punto",
+              "Coma",
+              "1.234,56"
+            ],
+            [
+              "Venezuela",
+              "Sin convención aprobada",
+              "Sin convención aprobada",
+              "Punto",
+              "Coma",
+              "1.234,56"
+            ]
+          ]
+        }
+      ],
+      "related": [
+        "separadores",
+        "fuente-neutral"
+      ]
+    },
+    "glosario": {
+      "title": "Glosario",
+      "category": "intro",
+      "alts": [
+        "glosario",
+        "definiciones",
+        "conceptos"
+      ],
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Accesibilidad"
+        },
+        {
+          "type": "paragraph",
+          "text": "Condición que permite que más personas comprendan y usen una experiencia, incluidas aquellas con discapacidades o limitaciones permanentes, temporales o contextuales."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Bloqueo"
+        },
+        {
+          "type": "paragraph",
+          "text": "Situación en la que la persona no puede continuar una tarea hasta resolver una condición o recibir una alternativa."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Carga cognitiva"
+        },
+        {
+          "type": "paragraph",
+          "text": "Esfuerzo mental necesario para comprender información, recordar opciones y completar una tarea."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Claridad"
+        },
+        {
+          "type": "paragraph",
+          "text": "Cualidad que permite comprender la información y actuar sin esfuerzo innecesario, sin perder precisión."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Contenido UX"
+        },
+        {
+          "type": "paragraph",
+          "text": "Contenido que forma parte de una experiencia de producto y ayuda a comprender, decidir, actuar o continuar una tarea."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Contexto de UX"
+        },
+        {
+          "type": "paragraph",
+          "text": "Situación recurrente de la experiencia que reúne una necesidad comunicacional y un objetivo de contenido, como una confirmación, una espera, una promoción, un error o un bloqueo."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "CTA"
+        },
+        {
+          "type": "paragraph",
+          "text": "Texto de una acción que indica qué puede hacer la persona y anticipa el resultado de activarla."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Error"
+        },
+        {
+          "type": "paragraph",
+          "text": "Situación en la que una acción no se completa como se esperaba o requiere una corrección."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Español neutral"
+        },
+        {
+          "type": "paragraph",
+          "text": "Versión fuente en español pensada para ser clara y comprensible en los distintos mercados de la región. Usa `tú` como tratamiento base."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Inclusión"
+        },
+        {
+          "type": "paragraph",
+          "text": "Criterio que busca evitar exclusiones, estereotipos y presuposiciones innecesarias al representar, describir o dirigirse a las personas."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Localización"
+        },
+        {
+          "type": "paragraph",
+          "text": "Adaptación de un contenido a las convenciones lingüísticas, culturales, terminológicas y de formato del mercado donde se utilizará."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Mercado"
+        },
+        {
+          "type": "paragraph",
+          "text": "Ámbito geográfico o comercial para el que se publica una experiencia y en el que pueden aplicarse convenciones o nomenclaturas específicas."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Modalidad"
+        },
+        {
+          "type": "paragraph",
+          "text": "Forma mediante la cual una persona recibe información o interactúa con la experiencia, por ejemplo texto, voz, pantalla o sonido."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Próximo paso"
+        },
+        {
+          "type": "paragraph",
+          "text": "Acción disponible o resultado esperado que permite saber cómo continuar."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Riesgo"
+        },
+        {
+          "type": "paragraph",
+          "text": "Posibilidad de que una situación produzca consecuencias negativas para la persona, sus datos, su dinero, su confianza o su capacidad de continuar."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Tono"
+        },
+        {
+          "type": "paragraph",
+          "text": "Forma en que la Voz UX se adapta a una situación concreta sin cambiar la identidad de la marca."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Traducción"
+        },
+        {
+          "type": "paragraph",
+          "text": "Conversión de un contenido de un idioma a otro. No equivale por sí sola a localización."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Variante o adaptación local"
+        },
+        {
+          "type": "paragraph",
+          "text": "Cambio validado de una regla, término, formulación o formato para un mercado o idioma específico."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Voz hablada del asistente"
+        },
+        {
+          "type": "paragraph",
+          "text": "Forma en que la identidad verbal se convierte en una experiencia conversacional y sonora."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Voz UX"
+        },
+        {
+          "type": "paragraph",
+          "text": "Manera reconocible en que la marca se expresa en sus experiencias digitales mediante las palabras, el orden de la información y la forma de orientar a las personas."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Voseo rioplatense"
+        },
+        {
+          "type": "paragraph",
+          "text": "Tratamiento con `vos` utilizado como adaptación posterior en Argentina y Uruguay. La versión fuente se redacta siempre en español neutral con `tú`."
+        }
+      ]
+    },
+    "voz-hablada-asistente": {
+      "title": "Voz hablada del asistente",
+      "category": "voz-hablada",
+      "alts": [
+        "voz hablada",
+        "asistente",
+        "IA conversacional",
+        "persona vocal"
+      ],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "La voz hablada del asistente convierte la identidad verbal de la marca en una experiencia conversacional y sonora. Hereda la Voz UX y adapta el tono según el contexto, pero requiere decisiones específicas de oralidad, turnos, pronunciación y realización vocal."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Qué debe conservar"
+        },
+        {
+          "type": "paragraph",
+          "text": "La personalidad vocal hereda los fundamentos de [[page:voz-ux|Voz UX]] y aplica la jerarquía de [[page:tono|Tono]]. La claridad tiene prioridad sobre la expresividad. Las variaciones contextuales conservan una misma personalidad."
+        }
+      ],
+      "related": [
+        "voz-ux",
+        "tono"
+      ]
+    },
+    "escritura-escuchada": {
+      "title": "Escritura para ser escuchada",
+      "category": "voz-hablada",
+      "alts": [
+        "escuchado",
+        "turno",
+        "lenguaje hablado",
+        "oralidad"
+      ],
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Mantén cada turno enfocado"
+        },
+        {
+          "type": "paragraph",
+          "text": "Comunica una idea principal o solicita una acción por vez. Si necesitas ofrecer varias opciones, presenta solo las necesarias para decidir y ordénalas de forma fácil de recordar."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Haz una pregunta y cede el turno"
+        },
+        {
+          "type": "paragraph",
+          "text": "Cuando el asistente formule una pregunta, debe permitir que la persona responda. No agregues después información nueva que compita con la acción solicitada."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Usa lenguaje directo y cotidiano"
+        },
+        {
+          "type": "paragraph",
+          "text": "Prefiere frases breves, palabras conocidas y construcciones naturales al hablar. Evita introducciones innecesarias y lenguaje técnico."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Lleva al frente la información necesaria"
+        },
+        {
+          "type": "paragraph",
+          "text": "En el canal hablado, la información principal no debe quedar escondida al final. Explica primero qué ocurrió, qué necesita decidir la persona o qué acción está disponible."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Adapta la información al turno"
+        },
+        {
+          "type": "paragraph",
+          "text": "Prioriza lo necesario para ese turno, evita enumeraciones largas y divide la información cuando ayude a comprender o decidir."
+        }
+      ],
+      "related": [
+        "voz-hablada-asistente",
+        "recuperacion-conversacional"
+      ]
+    },
+    "recuperacion-conversacional": {
+      "title": "Recuperación conversacional",
+      "category": "voz-hablada",
+      "alts": [
+        "recuperación conversacional",
+        "reformular",
+        "intervención"
+      ],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Cuando una intervención no funciona, no repitas mecánicamente el mismo contenido."
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            "Reformula;",
+            "Reduce la cantidad de opciones;",
+            "Divide una lista;",
+            "Aclara un término;",
+            "Cambia el orden de la información;",
+            "Ofrece una alternativa real cuando exista."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "No simules comprensión ni confirmes información que el sistema no reconoció."
+        }
+      ],
+      "related": [
+        "escritura-escuchada",
+        "multimodalidad-voz"
+      ]
+    },
+    "multimodalidad-voz": {
+      "title": "Multimodalidad en voz y pantalla",
+      "category": "voz-hablada",
+      "alts": [
+        "multimodalidad",
+        "voz y pantalla",
+        "accesibilidad multimodal"
+      ],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Mantén continuidad entre voz y pantalla cuando ambas estén disponibles. Si el asistente muestra opciones, detalles o confirmaciones visuales, la conversación debe referirse a esa información de forma natural y permitir continuar sin repetirla innecesariamente ni contradecirla."
+        },
+        {
+          "type": "paragraph",
+          "text": "Conserva intención, terminología y significado entre modalidades. No obligues a depender de una sola cuando la experiencia ofrece ambas. Considera alternativas para quienes no puedan escuchar, hablar o usar una pantalla cuando corresponda."
+        }
+      ],
+      "related": [
+        "recuperacion-conversacional"
+      ]
+    },
+    "pronunciacion": {
+      "title": "Pronunciación",
+      "category": "voz-hablada",
+      "alts": [
+        "pronunciación",
+        "nombres de productos",
+        "fechas y horas",
+        "monedas"
+      ],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Evalúa la pronunciación con términos y datos reales de la experiencia:"
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            "nombres de productos, programas y secciones, incluidas `Mi cuenta` y `Mis pedidos`;",
+            "números, cantidades y códigos;",
+            "fechas y horas;",
+            "monedas y precios;",
+            "direcciones;",
+            "términos localizados;",
+            "nombres propios cuando corresponda."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Una pronunciación correcta no debe inferirse solo de la grafía."
+        }
+      ],
+      "related": [
+        "evaluacion-voz",
+        "datos-mercado"
+      ]
+    },
+    "evaluacion-voz": {
+      "title": "Evaluación y selección de una voz",
+      "category": "voz-hablada",
+      "alts": [
+        "evaluación vocal",
+        "seleccionar voz",
+        "género percibido",
+        "edad percibida",
+        "velocidad",
+        "pausas",
+        "entonación",
+        "prosodia",
+        "energía",
+        "timbre"
+      ],
+      "blocks": [
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Dimensiones obligatorias de evaluación vocal"
+        },
+        {
+          "type": "paragraph",
+          "text": "Estas dimensiones deben evaluarse al seleccionar o configurar una voz, pero el Manual no fija valores universales. Los valores concretos requieren pruebas perceptuales y técnicas con voces candidatas."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Género percibido"
+        },
+        {
+          "type": "paragraph",
+          "text": "No se prescribe un género. Evalúa qué asociaciones genera cada voz y si son compatibles con el perfil buscado. El género no debe usarse como atajo para representar cercanía, autoridad o calidez."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Edad percibida"
+        },
+        {
+          "type": "paragraph",
+          "text": "No se fija un rango ni se usa la edad como atajo de cercanía, autoridad o calidez. Evalúa si la percepción resultante introduce asociaciones no deseadas o afecta claridad, cercanía o confianza."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Velocidad"
+        },
+        {
+          "type": "paragraph",
+          "text": "Debe favorecer comprensión y procesamiento auditivo. Determínala mediante pruebas, no mediante un valor universal."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Pausas"
+        },
+        {
+          "type": "paragraph",
+          "text": "Deben apoyar estructura, turnos, opciones y comprensión. Valídalas escuchando diálogos completos."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Entonación y prosodia"
+        },
+        {
+          "type": "paragraph",
+          "text": "Deben permitir distinguir intención y contexto sin exageración ni artificio."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Energía"
+        },
+        {
+          "type": "paragraph",
+          "text": "Puede variar según la situación. Redúcela ante riesgo, errores, pagos, demoras o incertidumbre."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Altura tonal"
+        },
+        {
+          "type": "paragraph",
+          "text": "Evalúala como parte de la percepción global de la voz, no como un atributo de marca aislado."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Volumen y timbre"
+        },
+        {
+          "type": "paragraph",
+          "text": "Deben sostener claridad, naturalidad y consistencia con la tecnología utilizada."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Pronunciación"
+        },
+        {
+          "type": "paragraph",
+          "text": "Valida el reconocimiento de nombres y datos con la voz y la tecnología previstas, según los criterios de Pronunciación."
+        },
+        {
+          "type": "heading",
+          "level": 3,
+          "text": "Variación contextual"
+        },
+        {
+          "type": "paragraph",
+          "text": "Evalúa ritmo, pausas, entonación y energía en diálogos reales de distintos contextos, conservando una misma personalidad."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Cómo seleccionar una voz"
+        },
+        {
+          "type": "paragraph",
+          "text": "Define primero el perfil y luego compara voces candidatas con el mismo conjunto de diálogos representativos."
+        },
+        {
+          "type": "paragraph",
+          "text": "Evalúa, como mínimo:"
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            "claridad y naturalidad;",
+            "adaptación contextual sin cambio de personalidad;",
+            "pronunciación;",
+            "consistencia en intervenciones breves y extensas;",
+            "percepción social de la voz;",
+            "comportamiento con la tecnología y los idiomas previstos."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "No elijas una voz solo por una demostración aislada, una etiqueta comercial o una preferencia estética."
+        },
+        {
+          "type": "paragraph",
+          "text": "No copies parámetros de otras marcas ni los fijes por intuición. Prueba las voces con la tecnología y los idiomas previstos antes de elegir valores concretos."
+        },
+        {
+          "type": "paragraph",
+          "text": "Para adaptar tratamiento, terminología y convenciones, consulta [[page:fuente-neutral|Español regional y localización]] y [[page:equivalencias|Equivalencias]]."
+        }
+      ],
+      "related": [
+        "pronunciacion",
+        "voz-hablada-asistente",
+        "fuente-neutral"
+      ]
+    },
+    "equivalencias": {
+      "title": "Equivalencias",
+      "category": "localizacion",
+      "alts": [
+        "equivalencias",
+        "adaptaciones terminológicas",
+        "email",
+        "fresa",
+        "frutilla",
+        "término preferido"
+      ],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Para decidir cuándo y cómo adaptar, consulta [[page:fuente-neutral|Español regional y localización]]. Para escribir los nombres, consulta [[page:marcas-productos-secciones|Escritura de marcas, productos y secciones]]."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Término preferido"
+        },
+        {
+          "type": "paragraph",
+          "text": "Usa `email` para nombrar el correo electrónico."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Adaptaciones terminológicas"
+        },
+        {
+          "type": "paragraph",
+          "text": "La tabla registra diferencias que no conviene dejar a traducción o interpretación automática. Cada término agrupa sus adaptaciones por mercado o idioma."
+        },
+        {
+          "type": "paragraph",
+          "text": "Si no se indica una adaptación, usa el término base solo cuando corresponda al producto de ese mercado. La ausencia de una fila no prueba disponibilidad, equivalencia ni uso del término base. No traduzcas ni adaptes nombres de marca, productos o funcionalidades por iniciativa propia."
+        },
+        {
+          "type": "table",
+          "headers": [
+            "Término",
+            "Mercados",
+            "Adaptación"
+          ],
+          "rows": [
+            [
+              "Apple Pie",
+              "Brasil",
+              "torta"
+            ],
+            [
+              "",
+              "Costa Rica, Panamá",
+              "pastel de manzana"
+            ],
+            [
+              "",
+              "México",
+              "pay de manzana"
+            ],
+            [
+              "café filtrado",
+              "Brasil",
+              "café coado"
+            ],
+            [
+              "",
+              "Perú",
+              "café pasado"
+            ],
+            [
+              "cheddar",
+              "Costa Rica, México, Panamá",
+              "queso amarillo"
+            ],
+            [
+              "",
+              "Puerto Rico",
+              "queso americano"
+            ],
+            [
+              "combinado",
+              "Brasil",
+              "misto"
+            ],
+            [
+              "Cuarto de Libra con Queso",
+              "Brasil",
+              "Quarteirão com Queijo"
+            ],
+            [
+              "",
+              "Puerto Rico",
+              "Quarter Pounder con Queso"
+            ],
+            [
+              "",
+              "Aruba",
+              "Quarter Pounder Cheese"
+            ],
+            [
+              "Doble Cuarto de Libra",
+              "Brasil",
+              "Duplo Quarterão com Queijo"
+            ],
+            [
+              "",
+              "Puerto Rico",
+              "Double Quarter Pounder con Queso"
+            ],
+            [
+              "",
+              "Aruba",
+              "Double Quarter Pounder With Cheese"
+            ],
+            [
+              "dos carnes",
+              "Argentina",
+              "doble carne"
+            ],
+            [
+              "",
+              "Brasil",
+              "dois hambúrgueres de carne"
+            ],
+            [
+              "",
+              "Costa Rica",
+              "dos tortas de carne"
+            ],
+            [
+              "dulce de leche",
+              "Chile, Perú",
+              "manjar"
+            ],
+            [
+              "",
+              "Colombia",
+              "arequipe"
+            ],
+            [
+              "fresa",
+              "Argentina, Uruguay",
+              "frutilla"
+            ],
+            [
+              "galleta",
+              "Argentina, Colombia, Uruguay, Panamá, Puerto Rico",
+              "galletita"
+            ],
+            [
+              "gaseosa",
+              "Brasil",
+              "refrigerante"
+            ],
+            [
+              "Happy Meal",
+              "Argentina, Colombia, Costa Rica, Panamá",
+              "Cajita Feliz"
+            ],
+            [
+              "",
+              "Brasil",
+              "McLanche Feliz"
+            ],
+            [
+              "Hash Brown",
+              "Costa Rica, Panamá",
+              "papa rallada"
+            ],
+            [
+              "ketchup",
+              "México",
+              "catsup"
+            ],
+            [
+              "McDonald’s",
+              "Brasil",
+              "Méqui"
+            ],
+            [
+              "McPollo",
+              "Brasil, Puerto Rico, Aruba",
+              "McChicken"
+            ],
+            [
+              "Mi McDonald’s",
+              "Brasil",
+              "Meu Méqui"
+            ],
+            [
+              "",
+              "Inglés",
+              "My McDonald’s"
+            ],
+            [
+              "",
+              "Francés",
+              "McDo+"
+            ],
+            [
+              "MiM",
+              "Brasil",
+              "Meu M"
+            ],
+            [
+              "",
+              "Inglés",
+              "MyM"
+            ],
+            [
+              "",
+              "Francés",
+              "McDo+"
+            ],
+            [
+              "papas",
+              "Brasil",
+              "McFritas"
+            ],
+            [
+              "",
+              "Panamá, Puerto Rico",
+              "McPapas"
+            ],
+            [
+              "pepinillos",
+              "Argentina",
+              "pepinos"
+            ],
+            [
+              "puré de frutas",
+              "Chile",
+              "compota"
+            ],
+            [
+              "topping para helados",
+              "Argentina, Chile, Colombia, Uruguay, Panamá, Puerto Rico",
+              "salsa"
+            ],
+            [
+              "",
+              "Brasil",
+              "cobertura"
+            ],
+            [
+              "",
+              "México",
+              "jarabe"
+            ]
+          ],
+          "mergeFirstColumn": true
+        }
+      ],
+      "related": [
+        "fuente-neutral",
+        "marcas-productos-secciones"
+      ]
+    },
+    "problemas-recuperacion": {
+      "title": "Problemas y recuperación",
+      "category": "contextos",
+      "alts": [
+        "recuperación",
+        "problema",
+        "problemas",
+        "próximo paso",
+        "especificidad útil",
+        "error",
+        "errores",
+        "bloqueo",
+        "bloqueos",
+        "mensaje de error",
+        "algo salió mal",
+        "cómo escribir un error",
+        "Errores y bloqueos",
+        "Comunicación ante problemas y recuperación"
+      ],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Su objetivo es ayudar a comprender un problema, sus consecuencias y cómo continuar. Reúne criterios para errores, bloqueos, demoras problemáticas, pagos y pérdida de información."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Explica qué ocurrió y qué impacto tiene"
+        },
+        {
+          "type": "paragraph",
+          "text": "Describe el problema sin culpar a la persona. Evita mensajes genéricos cuando exista información suficiente para explicar el caso. Comunica qué ocurrió con la mayor especificidad útil y aclara el impacto cuando no sea evidente."
+        },
+        {
+          "type": "paragraph",
+          "text": "Incluye solo lo necesario para comprender y actuar. Si conoces el problema o la salida, comunícalos sin agrupar casos distintos que obliguen a la persona a descubrir qué indicación le corresponde."
+        },
+        {
+          "type": "example",
+          "avoid": {
+            "label": "Evita",
+            "items": [
+              "`Algo salió mal` como respuesta suficiente cuando el sistema dispone de información más específica."
+            ]
+          },
+          "better": {
+            "label": "Mejor",
+            "items": [
+              "explicar qué ocurrió y qué puede hacer la persona a continuación."
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Ofrece una salida según quién puede resolverlo"
+        },
+        {
+          "type": "paragraph",
+          "text": "Orienta hacia una salida real. Si la persona puede resolver el error, indica qué necesita corregir o hacer para continuar. Si la solución no depende de ella, explica cómo puede seguir sin sugerir que está en sus manos corregir el problema."
+        },
+        {
+          "type": "paragraph",
+          "text": "Si no hay una salida inmediata, comunica la información disponible sin inventar acciones, información ni funciones."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Comunica expectativas que puedan sostenerse"
+        },
+        {
+          "type": "paragraph",
+          "text": "Comunica plazos concretos o expectativas que puedan sostenerse cuando esa información esté disponible. No inventes tiempos ni resultados. Para el estado de un proceso en curso o una espera, consulta [[page:esperas|Esperas y demoras]]."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Distingue información relevante de procesos internos"
+        },
+        {
+          "type": "paragraph",
+          "text": "Omite procesos internos, responsables, etapas operativas o detalles técnicos que no ayuden a comprender qué ocurrirá o qué debe hacer la persona. Esto no permite ocultar responsabilidades, causas, cambios de plazo ni consecuencias relevantes. Comunica resultado, próximo paso y previsibilidad, sin inventar información o funciones."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Reconoce la responsabilidad de la organización"
+        },
+        {
+          "type": "paragraph",
+          "text": "La responsabilidad funciona como una condición específica, no como un eje principal del modelo de tono. Cuando una consecuencia negativa sea responsabilidad de la organización, evalúa si corresponde reconocerlo, disculparse de forma breve, explicar qué hará la organización e indicar un plazo o expectativa que pueda sostenerse. No uses disculpas automáticas ante cualquier resultado negativo."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Ajusta la expresividad en situaciones sensibles"
+        },
+        {
+          "type": "paragraph",
+          "text": "En errores, bloqueos, demoras, pagos o pérdida de información, prioriza precisión, transparencia y próximos pasos inequívocos que ofrezcan una salida real. Reduce la expresividad, la presión comercial, el humor y la ligereza. Una situación sensible puede seguir siendo cálida sin dejar de ser precisa y sobria. No atribuyas emociones que no puedas verificar. Aplica el modelo de [[page:tono|Tono]] sin redefinirlo en este contexto."
+        }
+      ],
+      "related": [
+        "tono",
+        "cta",
+        "comprension",
+        "emojis",
+        "esperas"
+      ]
+    },
+    "exploracion-eleccion": {
+      "title": "Exploración y elección",
+      "category": "contextos",
+      "alts": [],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Cuando una persona explora una funcionalidad, un beneficio o varias alternativas, ayúdala a comprender qué se ofrece, reconocer las diferencias relevantes y decidir cómo continuar."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Facilita comprender y decidir"
+        },
+        {
+          "type": "paragraph",
+          "text": "Presenta primero lo necesario para entender qué puede hacer la persona, qué obtiene o qué cambia entre las alternativas."
+        },
+        {
+          "type": "unorderedList",
+          "items": [
+            "Muestra la información relevante para la decisión actual.",
+            "Conserva las condiciones o consecuencias que puedan cambiar la elección.",
+            "No presupongas que el nombre de una funcionalidad o beneficio explica por sí solo para qué sirve.",
+            "Cuando presentes una funcionalidad nueva o poco conocida, explica qué permite hacer o por qué puede resultar relevante antes de agregar detalles secundarios.",
+            "Evita acumular mensajes o beneficios que compitan con la decisión principal."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "La exploración puede admitir cercanía y energía moderada, pero ajusta la expresividad a la importancia de la decisión. No uses entusiasmo, urgencia o presión para desplazar información necesaria para elegir."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Presenta y compara opciones con foco"
+        },
+        {
+          "type": "paragraph",
+          "text": "Cuando haya varias alternativas, usa denominaciones consistentes y facilita reconocer qué las diferencia."
+        },
+        {
+          "type": "paragraph",
+          "text": "Prioriza las diferencias que ayudan a decidir. La información secundaria puede quedar disponible como detalle adicional cuando no sea necesaria para comparar las opciones inicialmente."
+        },
+        {
+          "type": "paragraph",
+          "text": "No agregues atributos solo para que todas las alternativas parezcan tener la misma cantidad de información ni cambies de término para nombrar el mismo concepto."
+        }
+      ],
+      "related": [
+        "tono",
+        "titulos-bajadas",
+        "comprension",
+        "cta",
+        "promociones"
+      ]
+    },
+    "ayuda-soporte": {
+      "title": "Ayuda y soporte",
+      "category": "contextos",
+      "alts": [],
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "El contenido de ayuda debe permitir reconocer rápidamente si responde a una duda o tarea y ofrecer la orientación necesaria para continuar."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Orienta hacia la necesidad o tarea"
+        },
+        {
+          "type": "paragraph",
+          "text": "Organiza el contenido alrededor de lo que la persona necesita comprender o hacer, no de cómo está organizado internamente el producto."
+        },
+        {
+          "type": "paragraph",
+          "text": "El título debe permitir reconocer rápidamente qué necesidad, duda o tarea resuelve el contenido. Usa los mismos términos que aparecen en la experiencia y evita nombres internos o formulaciones genéricas que obliguen a interpretar de qué trata la ayuda."
+        },
+        {
+          "type": "paragraph",
+          "text": "Mantén cada contenido enfocado en una necesidad principal. Si reúne información distinta, organízala para que cada parte pueda identificarse y recorrerse con facilidad."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Da la información necesaria para resolverla"
+        },
+        {
+          "type": "paragraph",
+          "text": "Ve directo a la orientación útil para la tarea. Incluye requisitos, condiciones o resultados esperados cuando sean necesarios para aplicarla correctamente."
+        },
+        {
+          "type": "paragraph",
+          "text": "Cuando incluyas enlaces para obtener ayuda, detalles o más información, deja claro qué información encontrará la persona allí."
+        },
+        {
+          "type": "heading",
+          "level": 2,
+          "text": "Ofrece ayuda en el momento adecuado"
+        },
+        {
+          "type": "paragraph",
+          "text": "Cuando una duda pueda resolverse con una orientación breve dentro de la tarea, evita obligar a la persona a abandonarla para buscar la respuesta en otro lugar."
+        },
+        {
+          "type": "paragraph",
+          "text": "Si la explicación necesaria es más extensa o corresponde a otra necesidad, ofrece acceso al contenido adicional sin sobrecargar el momento actual."
+        }
+      ],
+      "related": [
+        "tono",
+        "titulos-bajadas",
+        "comprension",
+        "etiquetas-enlaces"
+      ]
+    }
+  },
+  "aliases": {
+    "monedas-precios": "separadores",
+    "negritas": "parrafos-breves",
+    "presuposiciones": "genero",
+    "terminos-respetuosos": "genero",
+    "crear-adaptacion": "fuente-neutral",
+    "localizar": "fuente-neutral",
+    "relacion-glosario": "fuente-neutral",
+    "errores": "problemas-recuperacion",
+    "recuperacion": "problemas-recuperacion"
+  },
+  "statePage": {
+    "title": "Estado y cambios",
+    "categoryLabel": "Manual v1.0",
+    "alts": [],
+    "blocks": [
+      {
+        "type": "lede",
+        "text": "Este Manual evoluciona junto con las necesidades de las experiencias digitales. El versionado permite saber cuándo un cambio modifica una pauta y qué versión debe utilizarse como referencia."
+      },
+      {
+        "type": "heading",
+        "level": 2,
+        "text": "Esta versión publicada"
+      },
+      {
+        "type": "paragraph",
+        "text": "**Versión:** v1.0."
+      },
+      {
+        "type": "paragraph",
+        "text": "**Estado:** Vigente."
+      },
+      {
+        "type": "paragraph",
+        "text": "**Fecha de publicación:** 15 de octubre de 2026."
+      }
+    ]
+  }
+}
+</script>
+<script>
+const contentData=JSON.parse(document.getElementById('manualContentData').textContent);
+const categories=contentData.categories;
+const pages=contentData.pages;
+const statePage=contentData.statePage;
+const aliases=contentData.aliases||{};
+function canonicalId(id){return aliases[id]||id}
+function esc(s){return s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;'}[c]))}
+function navHTML(mobile=false){
+  const groups=categories.map(c=>{
+    if(c.direct) return `<a class="nav-category-toggle" data-route="${esc(c.direct)}" href="#/p/${c.direct}">${esc(c.name)}</a>`;
+    return `<div class="nav-category" data-category="${c.id}"><button class="nav-category-toggle" type="button" aria-expanded="false"><span>${esc(c.name)}</span><span class="chevron" aria-hidden="true">›</span></button><div class="nav-subtopics">${c.topics.length?c.topics.map(id=>`<a data-route="${id}" href="#/p/${id}">${esc(pages[id].title)}</a>`).join(''):`<button class="disabled" disabled aria-disabled="true">Sin contenido en esta muestra</button>`}</div></div>`;
+  }).join('');
+  return `${mobile?`<div class="mobile-search"><label class="label" for="mobileSearch">Buscar</label><input id="mobileSearch" type="search" placeholder="Ej. Puntuación" autocomplete="off"></div>`:''}${groups}`;
+}
+document.getElementById('desktopNav').innerHTML=navHTML();
+function bindNavToggles(root=document){
+  root.querySelectorAll('.nav-category > .nav-category-toggle').forEach(btn=>btn.addEventListener('click',()=>{
+    const group=btn.closest('.nav-category'); const open=!group.classList.contains('open');
+    group.classList.toggle('open',open); btn.setAttribute('aria-expanded',String(open));
+  }));
+}
+bindNavToggles(document);
+function categoryName(p){
+  if(p.categoryLabel)return p.categoryLabel;
+  const c=categories.find(x=>x.id===p.category);
+  return c?c.name:'';
+}
+function inline(text=''){
+  let out=esc(text);
+  out=out.replace(/\[\[page:([^|\]]+)\|([^\]]+)\]\]/g,(_,id,label)=>`<a href="#/p/${id}">${label}</a>`);
+  out=out.replace(/`([^`]+)`/g,'$1');
+  out=out.replace(/\*\*([^*]+)\*\*/g,'<strong>$1</strong>');
+  return out;
+}
+function renderBlock(b){
+  if(!b||!b.type)return '';
+  if(b.type==='lede')return `<p class="lede">${inline(b.text)}</p>`;
+  if(b.type==='paragraph')return `<p>${inline(b.text)}</p>`;
+  if(b.type==='heading'){const level=[2,3,4].includes(b.level)?b.level:2;return `<h${level}>${inline(b.text)}</h${level}>`}
+  if(b.type==='unorderedList'||b.type==='orderedList'){
+    const tag=b.type==='orderedList'?'ol':'ul';
+    return `<${tag}>${(b.items||[]).map(x=>`<li>${inline(x)}</li>`).join('')}</${tag}>`;
+  }
+  if(b.type==='rule'){
+    const genericLabels=new Set(['Objetivo','Regla']);
+    const label=b.label&&!genericLabels.has(b.label)?`<p><strong>${inline(b.label)}</strong></p>`:'';
+    const text=b.text?`<p>${inline(b.text)}</p>`:'';
+    const children=(b.children||[]).map(renderBlock).join('');
+    return `<div class="rule">${label}${text}${children}</div>`;
+  }
+  if(b.type==='example'){
+    const side=(obj,cls,def)=>{if(!obj)return '';const vals=obj.items||((obj.text||'')?[obj.text]:[]);return `<div class="${cls}"><span class="label">${inline(obj.label||def)}</span>${vals.length>1?`<ul>${vals.map(x=>`<li>${inline(x)}</li>`).join('')}</ul>`:vals.map(x=>`<div>${inline(x)}</div>`).join('')}</div>`};
+    return `<div class="example">${side(b.avoid,'avoid','Evita')}${side(b.better,'better','Mejor')}</div>`;
+  }
+  if(b.type==='table')return `<div class="table-wrap" role="region" aria-label="Tabla de ${esc(b.headers?.[0]||'datos')}" tabindex="0"><table class="content-table"><thead><tr>${(b.headers||[]).map(h=>`<th scope="col">${inline(h)}</th>`).join('')}</tr></thead><tbody>${(b.rows||[]).map((r,i)=>`<tr>${r.map((c,j)=>{if(b.mergeFirstColumn&&j===0){if(c==='')return '';let span=1;while(i+span<b.rows.length&&b.rows[i+span][0]==='')span++;return `<td rowspan="${span}">${inline(c)}</td>`}return `<td>${inline(c)}</td>`}).join('')}</tr>`).join('')}</tbody></table></div>`;
+  if(b.type==='callout')return `<p class="callout">${b.label?`<strong>${inline(b.label)}</strong> `:''}${inline(b.text||'')}</p>`;
+  if(b.type==='status')return `<span class="status">${inline(b.text)}</span>`;
+  return '';
+}
+function renderBlocks(blocks=[]){return blocks.map(renderBlock).join('')}
+function plainText(p){
+  const parts=[];
+  const walk=b=>{
+    if(!b)return;
+    if(b.text)parts.push(b.text.replace(/\[\[page:[^|\]]+\|([^\]]+)\]\]/g,'$1').replace(/\*\*/g,'').replace(/`/g,''));
+    if(b.label)parts.push(b.label);
+    (b.items||[]).forEach(x=>parts.push(x.replace(/\*\*/g,'').replace(/`/g,'')));
+    if(b.better){parts.push(b.better.label||'');(b.better.items||[b.better.text||'']).forEach(x=>parts.push(x))}
+    if(b.avoid){parts.push(b.avoid.label||'');(b.avoid.items||[b.avoid.text||'']).forEach(x=>parts.push(x))}
+    (b.headers||[]).forEach(x=>parts.push(x));(b.rows||[]).forEach(r=>r.forEach(x=>parts.push(x)));
+    (b.children||[]).forEach(walk);
+  };
+  (p.blocks||[]).forEach(walk);
+  return parts.join(' ');
+}
+function footerHTML(){return `<footer class="footer-note"><a data-route="estado" href="#/estado">Estado y cambios</a></footer>`}
+function pageShell(p,id){let rel=p.related?.length?`<section class="related"><h2>Contenido relacionado</h2><div class="related-links">${p.related.map(rid=>`<a class="pill" href="#/p/${rid}">${esc(pages[rid]?.title||rid)}</a>`).join('')}</div></section>`:'';return `<article class="page" data-page="${esc(id)}"><h1>${esc(p.title)}</h1>${renderBlocks(p.blocks)}${rel}</article>${footerHTML()}`}
+function normalize(s){return s.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g,'')}
+function search(q){let nq=normalize(q.trim());if(!nq)return [];return Object.entries(pages).map(([id,p])=>{let hay=normalize([p.title,categoryName(p),...p.alts,plainText(p)].join(' '));let score=0;if(normalize(p.title)===nq)score+=100;if(normalize(p.title).includes(nq))score+=40;if(p.alts.some(a=>normalize(a)===nq))score+=70;if(p.alts.some(a=>normalize(a).includes(nq)||nq.includes(normalize(a))))score+=25;if(hay.includes(nq))score+=10;return {id,p,score}}).filter(x=>x.score>0).sort((a,b)=>b.score-a.score)}
+function renderSearch(q){let r=search(q),safe=esc(q);if(!q.trim())return `<section class="search-panel"><span class="eyebrow">Búsqueda</span><h1>Busca en el Manual</h1><form class="search-box" id="searchForm"><input id="searchInput" type="search" aria-label="Buscar" placeholder="Ej. Puntuación"><button>Buscar</button></form><div class="empty">Escribe una consulta para buscar en los contenidos publicados de esta muestra.</div></section>`;return `<section class="search-panel"><span class="eyebrow">Búsqueda</span><h1>Resultados para “${safe}”</h1><form class="search-box" id="searchForm"><input id="searchInput" type="search" value="${safe}" aria-label="Buscar"><button>Buscar</button></form>${r.length?`<div class="result-count">${r.length} resultado${r.length===1?'':'s'}</div>${r.map(x=>`<a class="result" href="#/p/${x.id}"><span class="label">${esc(categoryName(x.p))}</span><h2>${esc(x.p.title)}</h2><p>${esc((plainText(x.p).slice(0,180)+'…'))}</p></a>`).join('')}`:`<div class="empty"><h2>Sin resultados</h2><p>No encontramos contenido publicado para “${safe}”. Prueba con otro término o navega por las categorías.</p></div>`}</section>`}
+function updateNavState(){
+  const h=location.hash||'#/';
+  document.querySelectorAll('[data-route]').forEach(el=>el.classList.remove('active'));
+  document.querySelectorAll('.nav-category').forEach(g=>{g.classList.remove('open'); const b=g.querySelector('.nav-category-toggle'); if(b)b.setAttribute('aria-expanded','false')});
+  if(h==='#/'||h==='#'){document.querySelectorAll('[data-route="como-usar"]').forEach(el=>el.classList.add('active'));return}
+  if(h==='#/estado'){document.querySelectorAll('[data-route="estado"]').forEach(el=>el.classList.add('active'));return}
+  if(h.startsWith('#/p/')){
+    const rawId=h.slice(4), id=canonicalId(rawId), p=pages[id];
+    document.querySelectorAll(`[data-route="${id}"]`).forEach(el=>el.classList.add('active'));
+    if(p){const c=categories.find(x=>x.id===p.category); if(c){document.querySelectorAll(`[data-category="${c.id}"]`).forEach(g=>{g.classList.add('open'); const b=g.querySelector('.nav-category-toggle'); if(b){b.classList.add('active');b.setAttribute('aria-expanded','true')}})}}
+  }
+}
+function route(){let h=location.hash||'#/';let main=document.getElementById('main');if(h==='#/'||h==='#'){location.replace('#/p/como-usar');return}else if(h.startsWith('#/p/')){let rawId=h.slice(4),id=canonicalId(rawId),p=pages[id];if(rawId!==id){location.replace('#/p/'+id);return}main.innerHTML=p?pageShell(p,id):`<div class="empty"><h1>Contenido no disponible</h1><p>Este destino no forma parte del vertical slice.</p><a href="#/p/como-usar">Ir a Cómo usar este Manual</a></div>${footerHTML()}`}else if(h==='#/estado'){main.innerHTML=pageShell(statePage,'estado')}else if(h.startsWith('#/buscar')){let qs=new URLSearchParams(h.split('?')[1]||'');main.innerHTML=renderSearch(qs.get('q')||'')+footerHTML()}else{location.replace('#/p/como-usar');return}bind();updateNavState();main.focus();window.scrollTo(0,0)}
+function goSearch(v){location.hash='#/buscar?q='+encodeURIComponent(v)}
+function bind(){let hs=document.getElementById('homeSearch');if(hs)hs.addEventListener('submit',e=>{e.preventDefault();goSearch(document.getElementById('homeSearchInput').value)});let sf=document.getElementById('searchForm');if(sf)sf.addEventListener('submit',e=>{e.preventDefault();goSearch(document.getElementById('searchInput').value)})}
+document.getElementById('sideSearch').addEventListener('keydown',e=>{if(e.key==='Enter')goSearch(e.currentTarget.value)});
+window.addEventListener('hashchange',route);route();
+</script>
+</body>
+</html>
