@@ -12,7 +12,7 @@ En el archivo conviven tres familias con estilos y usos distintos. La regla gene
 | **Ilustraciones Arcos** | Ilustraciones propias de Arcos Dorados con personajes, para la web y la App (General, Wallet, Misiones, Loyalty) | 1 componente, 29 variantes | [ilustraciones-arcos.md](./catalogo/ilustraciones-arcos.md) |
 | **Deprecated** | Lo que ya no se usa (Méqui Friday) | 1 | [deprecated.md](./catalogo/deprecated.md) |
 
-[`ilustraciones.json`](./ilustraciones.json) es el manifiesto con los IDs de Figma. Lo usa el [script de export](#export).
+[`ilustraciones.json`](./ilustraciones.json) es el manifiesto con los IDs de Figma. Lo usa el [script de export](#export) para generar los SVG en `svg/`.
 
 ## Digital illustrations (Global)
 
@@ -108,11 +108,10 @@ Son ilustraciones y logos de campaña. **No se usan de forma permanente en la Ap
 ```bash
 cd ~/Arcos-Dorados
 FIGMA_TOKEN=tu_token node Archway/scripts/export-figma-assets.mjs ilustraciones
-FIGMA_TOKEN=tu_token node Archway/scripts/export-figma-assets.mjs ilustraciones --format=png --scale=2
 FIGMA_TOKEN=tu_token node Archway/scripts/export-figma-assets.mjs ilustraciones --page="Ilustraciones Arcos"
 ```
 
-El script escribe `Ilustraciones/<formato>/<pagina>/<grupo>/<ilustracion>/<variante>.<formato>`. Para web conviene **SVG**. Para las apps nativas puede convenir PNG @2x/@3x en las ilustraciones con muchos degradados.
+Las ilustraciones se entregan **siempre en SVG**, igual que los íconos: Web las usa directo, iOS las importa al Asset Catalog como vector (*Preserve Vector Data*) y Android como Vector Drawable. El script escribe `Ilustraciones/svg/<pagina>/<grupo>/<ilustracion>/<variante>.svg`.
 
 ## Hallazgos (pendientes de aprobación)
 

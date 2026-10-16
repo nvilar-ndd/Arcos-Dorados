@@ -1,16 +1,17 @@
 #!/usr/bin/env node
 /**
- * Exporta íconos e ilustraciones desde Figma (SSOT) a archivos en el repo.
+ * Exporta íconos e ilustraciones desde Figma (SSOT) a SVG en el repo. Siempre SVG: es el único formato
+ * que usan los productos (Web, iOS y Android lo importan como vector).
  *
  *   FIGMA_TOKEN=xxxx node Archway/scripts/export-figma-assets.mjs iconos
- *   FIGMA_TOKEN=xxxx node Archway/scripts/export-figma-assets.mjs ilustraciones --format=png --scale=2
+ *   FIGMA_TOKEN=xxxx node Archway/scripts/export-figma-assets.mjs ilustraciones
  *   FIGMA_TOKEN=xxxx node Archway/scripts/export-figma-assets.mjs iconos --page="Arrows"
  *
  * Lee el manifiesto (Iconografia/iconos.json o Ilustraciones/ilustraciones.json), pide a la
  * API REST de Figma las variantes de cada component set y escribe un archivo por variante:
  *
  *   Iconografia/svg/<pagina>/<icono>/<variante>.svg
- *   Ilustraciones/<formato>/<pagina>/<grupo>/<ilustracion>/<variante>.<formato>
+ *   Ilustraciones/svg/<pagina>/<grupo>/<ilustracion>/<variante>.svg
  *
  * Requisitos: Node 18+ (fetch nativo) y un token personal de Figma con acceso de lectura
  * a los archivos (Figma › Settings › Security › Personal access tokens, scope file_content:read).
@@ -30,19 +31,18 @@ const args = Object.fromEntries(
 )
 const kind = process.argv[2]
 const CONFIG = {
-  iconos: { manifest: 'Iconografia/iconos.json', out: 'Iconografia', defaultFormat: 'svg' },
-  ilustraciones: { manifest: 'Ilustraciones/ilustraciones.json', out: 'Ilustraciones', defaultFormat: 'svg' },
+  iconos: { manifest: 'Iconografia/iconos.json', out: 'Iconografia' },
+  ilustraciones: { manifest: 'Ilustraciones/ilustraciones.json', out: 'Ilustraciones' },
 }
 if (!CONFIG[kind]) {
-  console.error('Uso: node export-figma-assets.mjs <iconos|ilustraciones> [--format=svg|png] [--scale=1] [--page="Nombre"]')
+  console.error('Uso: node export-figma-assets.mjs <iconos|ilustraciones> [--page="Nombre"]')
   process.exit(1)
 }
 if (!TOKEN) {
   console.error('Falta FIGMA_TOKEN (token personal de Figma con file_content:read).')
   process.exit(1)
 }
-const format = args.format ?? CONFIG[kind].defaultFormat
-const scale = Number(args.scale ?? 1)
+const format = 'svg'
 
 const slug = (s) =>
   s.normalize('NFKD').replace(/[̀-ͯ]/g, '').toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'sin-nombre'
@@ -86,13 +86,13 @@ for (const page of manifest.pages) {
     }
   }
 }
-console.log(`${targets.length} archivos a exportar (${format}${format === 'png' ? ` @${scale}x` : ''})`)
+console.log(`${targets.length} SVG a exportar`)
 
 // 2. URLs de render en lotes y descarga.
 let done = 0
 for (const batch of chunk(targets, 100)) {
   const ids = batch.map((t) => t.id).join(',')
-  const q = `ids=${encodeURIComponent(ids)}&format=${format}${format === 'svg' ? '&svg_outline_text=true&svg_include_id=false' : `&scale=${scale}`}`
+  const q = `ids=${encodeURIComponent(ids)}&format=svg&svg_outline_text=true&svg_include_id=false&svg_simplify_stroke=true`
   const { images } = await api(`/images/${key}?${q}`)
   await Promise.all(
     batch.map(async (t) => {

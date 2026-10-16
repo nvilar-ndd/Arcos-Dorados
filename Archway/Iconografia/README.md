@@ -82,7 +82,9 @@ Los estilos vienen de una librería de color de Global, no de las variables de A
 
 1. Exportar los SVG con el script (ver [Export a SVG](#export-a-svg)).
 2. **Web (Nuxt 4 + Vue 3):** un componente `AwIcon` que carga el SVG del tamaño pedido y reemplaza el fill por `currentColor`. Así el color sale de los tokens (`text-icon-primary`, `text-icon-gold`).
-3. **iOS y Android:** importar los SVG a un Asset Catalog como *template image* (iOS) o como Vector Drawables (Android), tintados con los colores de tema de ArchWay.
+3. **iOS y Android:** los mismos SVG. En iOS se importan al Asset Catalog como vector (*Preserve Vector Data*, *Render As: Template Image*). En Android se convierten a Vector Drawable. En los dos casos se tiñen con los colores de tema de ArchWay.
+
+Los íconos se entregan **siempre en SVG**. No se generan PNG.
 
 ```vue
 <!-- Propuesta de API: el componente todavía no existe -->
