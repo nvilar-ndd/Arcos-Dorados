@@ -1,0 +1,3181 @@
+{
+  "fileKey": "E0n9VRsdG5TfPRqhf9sbFK",
+  "fileName": "Illustrations-Guide",
+  "pages": [
+    {
+      "page": "Digital illustrations",
+      "pageId": "0:1",
+      "groups": [
+        {
+          "name": "Menu Items",
+          "id": "3104:3256",
+          "items": [
+            {
+              "name": "Bag",
+              "id": "3030:2783",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                },
+                {
+                  "name": "White Outline",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Bakery",
+              "id": "3050:2919",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                },
+                {
+                  "name": "White Outline",
+                  "values": [
+                    "true",
+                    "false"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Bakery and Coffee",
+              "id": "5312:2139",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Outline",
+                  "values": [
+                    "True",
+                    "False"
+                  ]
+                },
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "True",
+                    "False"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Bakery and Frappe",
+              "id": "7911:2716",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Outline",
+                  "values": [
+                    "True",
+                    "False"
+                  ]
+                },
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "True",
+                    "False"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Beverages - 1",
+              "id": "3055:5718",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                },
+                {
+                  "name": "White Outline",
+                  "values": [
+                    "true",
+                    "false"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Beverages - 2",
+              "id": "3050:2905",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                },
+                {
+                  "name": "White Outline",
+                  "values": [
+                    "true",
+                    "false"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Breakfast",
+              "id": "4073:2860",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                },
+                {
+                  "name": "White Outline",
+                  "values": [
+                    "true",
+                    "false"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Big Mac",
+              "id": "3030:2786",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                },
+                {
+                  "name": "White Outline",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Coffee",
+              "id": "3055:5709",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                },
+                {
+                  "name": "White Outline",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Condiments",
+              "id": "3050:2917",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                },
+                {
+                  "name": "White Outline",
+                  "values": [
+                    "true",
+                    "false"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Cone - Chocolate",
+              "id": "3055:5713",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                },
+                {
+                  "name": "White Outline",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Cone - Vanilla",
+              "id": "3055:5714",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                },
+                {
+                  "name": "White Outline",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Desserts",
+              "id": "4437:5418",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "true",
+                    "false"
+                  ]
+                },
+                {
+                  "name": "White Outline",
+                  "values": [
+                    "true",
+                    "false"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Extra Value Meal",
+              "id": "3055:5723",
+              "variants": 5,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                },
+                {
+                  "name": "White Outline",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                },
+                {
+                  "name": "Status",
+                  "values": [
+                    "On",
+                    "Off"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Pollo Box",
+              "id": "5235:3427",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Pollo",
+              "id": "5235:3456",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Pollo y nuggets",
+              "id": "5235:3478",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "McNuggets",
+              "id": "3050:2916",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                },
+                {
+                  "name": "White Outline",
+                  "values": [
+                    "true",
+                    "false"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Chicken & Fish",
+              "id": "3050:2904",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                },
+                {
+                  "name": "White Outline",
+                  "values": [
+                    "true",
+                    "false"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Filet O Fish",
+              "id": "3050:2908",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                },
+                {
+                  "name": "White Outline",
+                  "values": [
+                    "true",
+                    "false"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Fountain Drink",
+              "id": "3050:2906",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                },
+                {
+                  "name": "White Outline",
+                  "values": [
+                    "true",
+                    "false"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Frappe",
+              "id": "3055:5710",
+              "variants": 4,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Fries",
+              "id": "3050:2903",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                },
+                {
+                  "name": "White Outline",
+                  "values": [
+                    "true",
+                    "false"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Fries Sides More",
+              "id": "3055:5719",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                },
+                {
+                  "name": "White Outline",
+                  "values": [
+                    "true",
+                    "false"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Happy Meal",
+              "id": "3030:2784",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "Default",
+                    "true",
+                    "false"
+                  ]
+                },
+                {
+                  "name": "White Outline",
+                  "values": [
+                    "Default",
+                    "false",
+                    "true"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Hashbrown",
+              "id": "3055:5708",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                },
+                {
+                  "name": "White Outline",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "McCafe",
+              "id": "3055:5717",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "true",
+                    "false",
+                    "fals"
+                  ]
+                },
+                {
+                  "name": "White Outline",
+                  "values": [
+                    "true",
+                    "false",
+                    "fals"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "McMuffin",
+              "id": "3050:2920",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                },
+                {
+                  "name": "White Outline",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "McGriddle",
+              "id": "5317:2148",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Outline",
+                  "values": [
+                    "True",
+                    "False"
+                  ]
+                },
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "True",
+                    "False"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "McFlurry - M&M",
+              "id": "3055:5715",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                },
+                {
+                  "name": "White Outline",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "McFlurry - Oreo",
+              "id": "3055:5716",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                },
+                {
+                  "name": "White Outline",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "OJ",
+              "id": "3055:5712",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                },
+                {
+                  "name": "White Outline",
+                  "values": [
+                    "true",
+                    "false"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Promotions",
+              "id": "3055:5721",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                },
+                {
+                  "name": "White Outline",
+                  "values": [
+                    "true",
+                    "false"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Chicken McCrispy",
+              "id": "4797:1856",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                },
+                {
+                  "name": "White Outline",
+                  "values": [
+                    "true",
+                    "false"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Quarter Pounder",
+              "id": "3030:2787",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                },
+                {
+                  "name": "White Outline",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Salad",
+              "id": "3050:2915",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                },
+                {
+                  "name": "White Outline",
+                  "values": [
+                    "true",
+                    "false"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "McWrap",
+              "id": "5749:2167",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "White Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Signature Crafted",
+              "id": "4075:6890",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                },
+                {
+                  "name": "White Outline",
+                  "values": [
+                    "true",
+                    "false"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Sweets Treats",
+              "id": "3055:5720",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                },
+                {
+                  "name": "White Outline",
+                  "values": [
+                    "true",
+                    "false"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "123",
+              "id": "3055:5722",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                },
+                {
+                  "name": "White Outline",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Family Box Marron",
+              "id": "4127:2132",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                },
+                {
+                  "name": "White Outline",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                }
+              ],
+              "description": "Texto editable para categorías: dejarlo en 24/26"
+            },
+            {
+              "name": "Family Box Blanca",
+              "id": "4127:2222",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                },
+                {
+                  "name": "White Outline",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Al Plato",
+              "id": "4540:1554",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "True",
+                    "False"
+                  ]
+                },
+                {
+                  "name": "White Otline",
+                  "values": [
+                    "True",
+                    "False"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Burrito",
+              "id": "4540:1611",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "White Outline",
+                  "values": [
+                    "True",
+                    "False"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "McCafe Espresso",
+              "id": "5116:2013",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "True",
+                    "false"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "True",
+                    "false",
+                    "fals"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Sin Tacc",
+              "id": "4497:1553",
+              "variants": 2,
+              "properties": [
+                {
+                  "name": "White Oultine",
+                  "values": [
+                    "False",
+                    "true"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Delivery Yellow",
+              "id": "3468:1780",
+              "variants": 3,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                },
+                {
+                  "name": "White Outline",
+                  "values": [
+                    "false"
+                  ]
+                },
+                {
+                  "name": "Status",
+                  "values": [
+                    "on",
+                    "off"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Pick Up",
+              "id": "5502:3145",
+              "variants": 3,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "Off",
+                    "On"
+                  ]
+                },
+                {
+                  "name": "Status",
+                  "values": [
+                    "Off",
+                    "On",
+                    "O"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Search Delivery Yellow",
+              "id": "3468:2329",
+              "variants": 3,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "off",
+                    "on"
+                  ]
+                },
+                {
+                  "name": "Status",
+                  "values": [
+                    "ON",
+                    "off"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "success bag",
+              "id": "3491:1773",
+              "variants": 1,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "Success bag"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Filling bag",
+              "id": "3576:1542",
+              "variants": 1,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "Success bag"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "success menu",
+              "id": "3579:1583",
+              "variants": 1,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "Success bag"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Fifa bag",
+              "id": "3588:1552",
+              "variants": 1,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "Fifa bag"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Tu_Fav",
+              "id": "5385:2959",
+              "variants": 1,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "false"
+                  ]
+                },
+                {
+                  "name": "White Outline",
+                  "values": [
+                    "false"
+                  ]
+                },
+                {
+                  "name": "Status",
+                  "values": [
+                    "On"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "PickUp-phone",
+              "id": "5397:2732",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Category color",
+              "id": "5671:2200",
+              "variants": 2,
+              "properties": [
+                {
+                  "name": "Status",
+                  "values": [
+                    "Off",
+                    "On"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Sundae",
+              "id": "6270:4041",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "True",
+                    "False"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "True",
+                    "False"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Tasty",
+              "id": "7969:2696",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "Off",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "Off",
+                    "True"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Melt",
+              "id": "8077:4034",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "Off",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Outline",
+                  "values": [
+                    "Off",
+                    "True"
+                  ]
+                }
+              ],
+              "description": ""
+            }
+          ]
+        },
+        {
+          "name": "Menu Items centred",
+          "id": "6628:2243",
+          "items": [
+            {
+              "name": "123_centred",
+              "id": "6629:3355",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Extra Value Meal_centred",
+              "id": "6629:4280",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Desserts_centred",
+              "id": "6629:8224",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Breakfast_centred",
+              "id": "6629:8299",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Happy Meal_centred",
+              "id": "6629:8386",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Beverages - 2_centred",
+              "id": "6629:8639",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Fries_centred",
+              "id": "6629:8702",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Big Mac_centred",
+              "id": "6629:8798",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "McNuggets_centred",
+              "id": "6629:8880",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Salad_centred",
+              "id": "6629:8976",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Sin Tacc_centred",
+              "id": "6629:9049",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Promotions_centred",
+              "id": "6653:3354",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Family Box Marron_centred",
+              "id": "6653:4448",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "McCafe_centred",
+              "id": "6653:4585",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "McCafé Espresso_centred",
+              "id": "6653:4624",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "McNivoros_centred",
+              "id": "6653:4640",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "McMuffin_centred",
+              "id": "6653:4727",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Chicken & Fish_centred",
+              "id": "6653:4726",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Fries Sides More_centred",
+              "id": "6653:5072",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Bakery_centred",
+              "id": "6653:5107",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Signature Crafted_centred",
+              "id": "6653:5302",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Hashbrown_centred",
+              "id": "6656:3945",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Tu_Fav_centred",
+              "id": "6657:4054",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Exclusivo_pickup_centred",
+              "id": "6657:4159",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Bag_centred",
+              "id": "6657:4205",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Al Plato_centred",
+              "id": "6657:5077",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Chicken McCrispy _centred",
+              "id": "6657:5110",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Burrito_centred",
+              "id": "6657:5124",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Cone - Vainilla_centred",
+              "id": "6657:5148",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Gran Día_centred",
+              "id": "6665:4263",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "AppFriday_centred",
+              "id": "6665:4333",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Méqui Friday_centred",
+              "id": "6665:4476",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Big Brother_centred",
+              "id": "6665:4953",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Big Fest_centred",
+              "id": "6665:5093",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Méqui-Fest_centred",
+              "id": "6665:5375",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "McMenu F1®_centred",
+              "id": "6665:5382",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            }
+          ]
+        },
+        {
+          "name": "Silhouettes",
+          "id": "3105:3270",
+          "items": [
+            {
+              "name": "Bag",
+              "id": "2:2062",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Big Mac",
+              "id": "2:2001",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Condiments",
+              "id": "2:1575",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Coffee",
+              "id": "2:1968",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Cone - Chocolate",
+              "id": "2:1814",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Cone - Vanilla",
+              "id": "2:1745",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Filet O Fish",
+              "id": "2:1787",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Frappe",
+              "id": "2:1917",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Fries",
+              "id": "2:1896",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Fountain Drink",
+              "id": "2:1843",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Happy Meal",
+              "id": "2:2033",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Hashbrowns",
+              "id": "2:2015",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "McMuffin",
+              "id": "2:2051",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "McNuggets",
+              "id": "2:1589",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "McFlurry - M&M",
+              "id": "2:1668",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "McFlurry - Oreo",
+              "id": "2:1619",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "OJ",
+              "id": "2:1880",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Quarter Pounder",
+              "id": "2:1953",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Salad",
+              "id": "2:1719",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            }
+          ]
+        },
+        {
+          "name": "Loyalty",
+          "id": "3582:1578",
+          "items": [
+            {
+              "name": "(sin nombre)",
+              "id": "3585:1734",
+              "variants": 4,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Loyalty meal",
+              "id": "3585:1949",
+              "variants": 3,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "Off",
+                    "On"
+                  ]
+                },
+                {
+                  "name": "Status",
+                  "values": [
+                    "On",
+                    "Off"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Loyalty Meal Ellipse",
+              "id": "4057:2155",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Loyalty Points Ellipse",
+              "id": "4057:2156",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Loyalty Hand with phone",
+              "id": "4057:2157",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Loyalty Email",
+              "id": "5125:3022",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Loyalty Maintenance Mode",
+              "id": "7645:2556",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            }
+          ]
+        },
+        {
+          "name": "Payments",
+          "id": "3191:6633",
+          "items": [
+            {
+              "name": "Pay Any Way - Dollars",
+              "id": "3468:1765",
+              "variants": 2,
+              "properties": [
+                {
+                  "name": "Status",
+                  "values": [
+                    "On",
+                    "Off"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Cash - Dollars",
+              "id": "2:1362",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Cash - Pound",
+              "id": "2:1376",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Cash - Euro",
+              "id": "2:1386",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Cash - Yen",
+              "id": "2:1396",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Pay Any Way - Pounds",
+              "id": "2:1317",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Pay Any Way - Euros",
+              "id": "2:1332",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Pay Any Way - Yen",
+              "id": "2:1347",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Insert Cash - Dollars",
+              "id": "2:1406",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Insert Cash - Pounds",
+              "id": "2:1421",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Insert Cash - Euro",
+              "id": "2:1433",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Insert Cash - Yen",
+              "id": "2:1445",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Payment/All Markets/Credit Card",
+              "id": "2:1297",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Payment/All Markets/Pay at Counter",
+              "id": "2:827",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Payment/All Markets/Pay Here",
+              "id": "2:782",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Payment/All Markets/Receipt",
+              "id": "2:871",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            }
+          ]
+        },
+        {
+          "name": "Location Services",
+          "id": "3191:6688",
+          "items": [
+            {
+              "name": "Location Pin",
+              "id": "897:6124",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Location Services",
+              "id": "1190:4661",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            }
+          ]
+        },
+        {
+          "name": "General",
+          "id": "3191:6634",
+          "items": [
+            {
+              "name": "Missing Wi-Fry",
+              "id": "3466:1622",
+              "variants": 2,
+              "properties": [
+                {
+                  "name": "Status",
+                  "values": [
+                    "On",
+                    "Off"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Account Login",
+              "id": "3466:1672",
+              "variants": 2,
+              "properties": [
+                {
+                  "name": "Status",
+                  "values": [
+                    "On",
+                    "Off"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Success",
+              "id": "3577:1715",
+              "variants": 2,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Email",
+              "id": "4215:1552",
+              "variants": 2,
+              "properties": [
+                {
+                  "name": "Status",
+                  "values": [
+                    "On",
+                    "Off"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Take Table Tent",
+              "id": "2:2102",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            }
+          ]
+        },
+        {
+          "name": "Drive Thru",
+          "id": "3191:5384",
+          "items": [
+            {
+              "name": "Drive Thru / Main",
+              "id": "2:974",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            }
+          ]
+        },
+        {
+          "name": "Club VIP",
+          "id": "3960:3097",
+          "items": [
+            {
+              "name": "Club VIP",
+              "id": "3960:3251",
+              "variants": 6,
+              "properties": [
+                {
+                  "name": "color",
+                  "values": [
+                    "black",
+                    "white"
+                  ]
+                },
+                {
+                  "name": "bg",
+                  "values": [
+                    "on",
+                    "off"
+                  ]
+                },
+                {
+                  "name": "line",
+                  "values": [
+                    "on",
+                    "off"
+                  ]
+                }
+              ],
+              "description": ""
+            }
+          ]
+        },
+        {
+          "name": "Devices",
+          "id": "3191:5413",
+          "items": [
+            {
+              "name": "Mobile - Blank",
+              "id": "3191:6503",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Red",
+                    "White",
+                    "Yellow"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Mobile - Delivery",
+              "id": "3191:6506",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Red",
+                    "White",
+                    "Yellow"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Mobile - Logo",
+              "id": "3191:6509",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Red",
+                    "White",
+                    "Yellow"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Mobile - Messaging",
+              "id": "3191:6508",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Red",
+                    "White",
+                    "Yellow"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Mobile - Pickup",
+              "id": "3191:6505",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Red",
+                    "White",
+                    "Yellow"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Mobile - QR Code",
+              "id": "3191:6504",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Red",
+                    "White",
+                    "Yellow",
+                    "Black"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Mobile - Ratings",
+              "id": "3191:6507",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Red",
+                    "White",
+                    "Yellow"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Kiosk - Blank",
+              "id": "3191:6571",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Red Device",
+                    "White",
+                    "Yellow"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Kiosk - Logo",
+              "id": "3191:6572",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Red Device",
+                    "White",
+                    "Yellow"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Kiosk - Scan at Kiosk",
+              "id": "3191:6574",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Red Device",
+                    "White",
+                    "Yellow"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Kiosk - Digital Instructions - Blank",
+              "id": "2:1530",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Kiosk - Digital Instructions - Scan at Kiosk",
+              "id": "2:1482",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Laptop - Blank",
+              "id": "3191:6597",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Red",
+                    "White",
+                    "Yellow"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Laptop - Logo",
+              "id": "3191:6596",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "Red",
+                    "White",
+                    "Yellow"
+                  ]
+                }
+              ],
+              "description": ""
+            }
+          ]
+        },
+        {
+          "name": "Delivery & Pickup",
+          "id": "3168:2983",
+          "items": [
+            {
+              "name": "Car",
+              "id": "3168:3054",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                },
+                {
+                  "name": "White Outline",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Counter",
+              "id": "3168:3055",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                },
+                {
+                  "name": "White Outline",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Counter - Greyscale",
+              "id": "3168:3056",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                },
+                {
+                  "name": "White Outline",
+                  "values": [
+                    "true",
+                    "false"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Delivery",
+              "id": "3168:3057",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                },
+                {
+                  "name": "White Outline",
+                  "values": [
+                    "true",
+                    "false"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Drive Thru",
+              "id": "3168:3058",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                },
+                {
+                  "name": "White Outline",
+                  "values": [
+                    "true",
+                    "false"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Drive Thru - Greysacle",
+              "id": "3168:3059",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                },
+                {
+                  "name": "White Outline",
+                  "values": [
+                    "true",
+                    "false"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Order Ahead Lane - Side",
+              "id": "5125:2368",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                },
+                {
+                  "name": "White Outline",
+                  "values": [
+                    "true",
+                    "false"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Order Ahead Lane - Back",
+              "id": "5125:2564",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                },
+                {
+                  "name": "White Outline",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Car Dash",
+              "id": "5125:2690",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                },
+                {
+                  "name": "White Outline",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Car Dash Greyscale",
+              "id": "5125:2813",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                },
+                {
+                  "name": "White Outline",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Curbside Sign - No Token",
+              "id": "3168:3096",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                },
+                {
+                  "name": "White Outline",
+                  "values": [
+                    "true",
+                    "false"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Curbside Sign - No Token - Greyscale",
+              "id": "3168:3098",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "Curbside Sign - No Token - Grayscale",
+                    "false",
+                    "true"
+                  ]
+                },
+                {
+                  "name": "White Outline",
+                  "values": [
+                    "true",
+                    "On",
+                    "false"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Curbside Sign - With Token",
+              "id": "3168:3097",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                },
+                {
+                  "name": "White Outline",
+                  "values": [
+                    "true",
+                    "false"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Curbside Sign - With Token - Greyscale",
+              "id": "3168:3099",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                },
+                {
+                  "name": "White Outline",
+                  "values": [
+                    "true",
+                    "false"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Curbside Sign - With Number",
+              "id": "3168:3100",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                },
+                {
+                  "name": "White Outline",
+                  "values": [
+                    "true",
+                    "false"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "McDelivery Bag",
+              "id": "3168:3101",
+              "variants": 5,
+              "properties": [
+                {
+                  "name": "Status",
+                  "values": [
+                    "On",
+                    "Off"
+                  ]
+                },
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                },
+                {
+                  "name": "White Outline",
+                  "values": [
+                    "true",
+                    "false"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "McDelivery Bag error",
+              "id": "5055:1826",
+              "variants": 5,
+              "properties": [
+                {
+                  "name": "Status",
+                  "values": [
+                    "On",
+                    "Off"
+                  ]
+                },
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                },
+                {
+                  "name": "White Outline",
+                  "values": [
+                    "true",
+                    "false"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Table Service",
+              "id": "3173:2972",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                },
+                {
+                  "name": "White Outline",
+                  "values": [
+                    "true",
+                    "false"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Property",
+              "id": "3173:2976",
+              "variants": 5,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                },
+                {
+                  "name": "White Outline",
+                  "values": [
+                    "true",
+                    "false"
+                  ]
+                },
+                {
+                  "name": "Status",
+                  "values": [
+                    "Off",
+                    "On"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Table Service - Greyscale",
+              "id": "3173:2973",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                },
+                {
+                  "name": "White Outline",
+                  "values": [
+                    "true",
+                    "false"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Table Service - With Number",
+              "id": "3173:2974",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                },
+                {
+                  "name": "White Outline",
+                  "values": [
+                    "true",
+                    "false"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Table Service - Cropped - With Number",
+              "id": "3173:2975",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                },
+                {
+                  "name": "White Outline",
+                  "values": [
+                    "true",
+                    "false"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Automac",
+              "id": "3561:1491",
+              "variants": 2,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Mostrador bag",
+              "id": "3562:1683",
+              "variants": 2,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Estacionamiento",
+              "id": "3562:1817",
+              "variants": 2,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Digital Promotions",
+              "id": "4703:1781",
+              "variants": 2,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "True",
+                    "False"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Table Service - With tent",
+              "id": "5415:2025",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "false",
+                    "true"
+                  ]
+                },
+                {
+                  "name": "White Outline",
+                  "values": [
+                    "true",
+                    "false"
+                  ]
+                }
+              ],
+              "description": ""
+            }
+          ]
+        },
+        {
+          "name": "At the Restaurant",
+          "id": "3191:5313",
+          "items": [
+            {
+              "name": "Deals",
+              "id": "3470:1508",
+              "variants": 2,
+              "properties": [
+                {
+                  "name": "Status",
+                  "values": [
+                    "On",
+                    "Off"
+                  ]
+                }
+              ],
+              "description": ""
+            },
+            {
+              "name": "Billboard",
+              "id": "2:892",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Celebration Bag",
+              "id": "2:903",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Charging Table",
+              "id": "2:672",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Counter",
+              "id": "2:836",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Dine In Table",
+              "id": "2:725",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Empty Tray",
+              "id": "335:2559",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Sign",
+              "id": "2:994",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Spatula",
+              "id": "2:883",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Table Tent",
+              "id": "2:2068",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Tray",
+              "id": "2:693",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "wifi",
+              "id": "5429:3082",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Specials ilustrations",
+      "pageId": "5190:2000",
+      "groups": [
+        {
+          "name": "Fifa",
+          "id": "5190:2003",
+          "items": [
+            {
+              "name": "Fifa bag",
+              "id": "5190:2018",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Fifa flag",
+              "id": "5190:2021",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Fifa ref",
+              "id": "5190:2024",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Fifa boots",
+              "id": "5190:2027",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Fifa scream",
+              "id": "5190:2030",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Fifa emblem",
+              "id": "5190:2033",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            },
+            {
+              "name": "Fifa ball pow",
+              "id": "5190:2036",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            }
+          ]
+        },
+        {
+          "name": "BT21",
+          "id": "5190:2060",
+          "items": [
+            {
+              "name": "BT21",
+              "id": "5192:2524",
+              "variants": 2,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "White"
+                  ]
+                }
+              ],
+              "description": ""
+            }
+          ]
+        },
+        {
+          "name": "Méqui 1000",
+          "id": "5882:1058",
+          "items": [
+            {
+              "name": "Mequi 1000",
+              "id": "5882:1063",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Color",
+                  "values": [
+                    "Black",
+                    "White"
+                  ]
+                },
+                {
+                  "name": "Type",
+                  "values": [
+                    "Horizontal",
+                    "Vertical"
+                  ]
+                }
+              ],
+              "description": "Las variantes horizontales son para las categorías de las apps. No usar la versión cuadrada en apps."
+            }
+          ]
+        },
+        {
+          "name": "Gran Día",
+          "id": "5198:516",
+          "items": [
+            {
+              "name": "Gran Día",
+              "id": "5198:2823",
+              "variants": 4,
+              "properties": [
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                },
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "False",
+                    "True"
+                  ]
+                }
+              ],
+              "description": ""
+            }
+          ]
+        },
+        {
+          "name": "Black Friday",
+          "id": "5553:771",
+          "items": [
+            {
+              "name": "AppFriday",
+              "id": "5553:779",
+              "variants": 1,
+              "properties": [
+                {
+                  "name": "Outline",
+                  "values": [
+                    "False"
+                  ]
+                },
+                {
+                  "name": "Shadow",
+                  "values": [
+                    "False"
+                  ]
+                }
+              ],
+              "description": ""
+            }
+          ]
+        },
+        {
+          "name": "McDonald's WorldCup 2026",
+          "id": "7439:4180",
+          "items": [
+            {
+              "name": "Lg_McWorldCup2026",
+              "id": "7440:4505",
+              "variants": 2,
+              "properties": [
+                {
+                  "name": "Fill",
+                  "values": [
+                    "fullfill",
+                    "stroke"
+                  ]
+                }
+              ],
+              "description": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Ilustraciones Arcos",
+      "pageId": "6150:3",
+      "groups": [
+        {
+          "name": "Ilustraciones",
+          "id": "7735:5035",
+          "items": [
+            {
+              "name": "Ilustracion",
+              "id": "7717:660",
+              "variants": 29,
+              "properties": [
+                {
+                  "name": "Name",
+                  "values": [
+                    "App",
+                    "Delivery",
+                    "Delivery Mobile",
+                    "Fácil de usar",
+                    "Login hombre",
+                    "Login mujer",
+                    "Misiones",
+                    "Misiones mundo",
+                    "Notificación",
+                    "Identificacion",
+                    "Pedido",
+                    "Pedido por App",
+                    "Puntos Delivery",
+                    "Waiting Room",
+                    "Wallet",
+                    "Wallet Created",
+                    "Welcome Wallet",
+                    "Wallet - Loading",
+                    "Seguridad",
+                    "Gana puntos",
+                    "Max. Intentos",
+                    "Cierre de sesión",
+                    "Descubre Wallet",
+                    "Biometria",
+                    "Documento de Identidad",
+                    "Waiting Room - Gold",
+                    "Regístrate",
+                    "Exp. de puntos",
+                    "Wifi"
+                  ]
+                },
+                {
+                  "name": "Section",
+                  "values": [
+                    "General",
+                    "Wallet",
+                    "Misiones",
+                    "Loyalty"
+                  ]
+                }
+              ],
+              "description": ""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "page": "Deprecated",
+      "pageId": "5597:1026",
+      "groups": [
+        {
+          "name": "Méqui Friday",
+          "id": "5597:1028",
+          "items": [
+            {
+              "name": "Mequifriday/Default",
+              "id": "5554:1333",
+              "variants": 1,
+              "properties": [],
+              "description": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
