@@ -1,6 +1,6 @@
 ---
 feature: Catálogo, detalle y personalización de productos
-estado: 🧭 Relevado
+estado: 🔍 En auditoría
 figma: https://www.figma.com/design/CkrLK7rb1I1DKjKCvZOpLN/?node-id=1-292
 ultima_extraccion: 2026-10-23
 owner_ux:
@@ -29,4 +29,11 @@ Navegación por categorías (nav lateral de 248 px + grilla de cards 208 × 312,
 
 ## 4. Hallazgos abiertos
 
-Ninguno todavía.
+| ID | Hallazgo | Prioridad | Estado |
+|---|---|---|---|
+| [F-001-02](../../audits/001-flujos-kiosco.md#f-001-02) | Pantallas sin tokens: 4 fills con variable en 493 pantallas y texto sin estilos; ArchWay no está agregada | 🔴 P0 | Pendiente |
+| [F-001-03](../../audits/001-flujos-kiosco.md#f-001-03) | Controles de 40 px en acciones del flujo principal (personalizar, seleccionar, cantidad, factura, quitar descuento) | 🟠 P1 | Pendiente |
+| [F-001-04](../../audits/001-flujos-kiosco.md#f-001-04) | "Vaciar carrito" pegado a la acción principal en el footer de Home, Detalle y Tipo de pago | 🟠 P1 | Pendiente |
+| [F-001-06](../../audits/001-flujos-kiosco.md#f-001-06) | Errores con una sola salida "Volver" y sin siguiente paso (identificación, cupones, FLEX, ticket no impreso) | 🟠 P1 | Pendiente |
+| [F-001-12](../../audits/001-flujos-kiosco.md#f-001-12) | Inconsistencias de componentes entre archivos (variantes de footer, dos `nav.menu-button`, Chips vs Tag Pill, componentes locales, Inter) | 🟡 P2 | Pendiente |
+| [F-001-13](../../audits/001-flujos-kiosco.md#f-001-13) | "Añadir al carrito" es una pantalla completa sin CTA ni duración definida | 🟡 P2 | Pendiente |

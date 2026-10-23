@@ -1,6 +1,6 @@
 ---
 feature: Factura electrónica
-estado: 🧭 Relevado
+estado: 🔍 En auditoría
 figma: https://www.figma.com/design/FgvtqbTZN2gkuUJbegbhrA/?node-id=71-12049
 ultima_extraccion: 2026-10-23
 owner_ux:
@@ -36,4 +36,7 @@ Opcional dentro de *Selección de tipo de pago*. Formulario de 1 dropdown (tipo 
 
 ## 5. Hallazgos abiertos
 
-Ninguno todavía.
+| ID | Hallazgo | Prioridad | Estado |
+|---|---|---|---|
+| [F-001-03](../../audits/001-flujos-kiosco.md#f-001-03) | Controles de 40 px en acciones del flujo principal (personalizar, seleccionar, cantidad, factura, quitar descuento) | 🟠 P1 | Pendiente |
+| [F-001-10](../../audits/001-flujos-kiosco.md#f-001-10) | Factura electrónica: error sin ícono, placeholder como label y bordes de bajo contraste | 🟠 P1 | Pendiente |

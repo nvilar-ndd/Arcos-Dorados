@@ -1,6 +1,6 @@
 ---
 feature: Errores de pago, impresión e integración
-estado: 🧭 Relevado
+estado: 🔍 En auditoría
 figma: https://www.figma.com/design/FgvtqbTZN2gkuUJbegbhrA/?node-id=70-11157
 ultima_extraccion: 2026-10-23
 owner_ux:
@@ -35,11 +35,13 @@ Documentado en el canvas de Figma junto a cada error. Hay que llevarlo a una tab
 
 | Tema | Pregunta | Regla |
 |---|---|---|
-| Jerarquía | Dos botones **secundarios** iguales: ¿cuál es la salida recomendada? | K-DEC-03 · Von Restorff |
+| Jerarquía | Pago: ✅ *Reintentar* primario + *Volver*. FLEX y ticket no impreso: una sola salida o ninguna (F-001-06) | K-DEC-03 · Von Restorff |
 | Alcance | Acciones en `y ≈ 984–1104`, fuera de la Safe Area | K-ALC-02 |
 | Copy | Títulos de 2 líneas a 64 px de alto de línea; ¿la causa y el siguiente paso están claros? | *Problemas y recuperación* |
 | Ticket no impreso | El número de pedido es la única referencia: ¿tamaño y contraste suficientes para fotografiarlo? | K-LEG-03 |
 
 ## 4. Hallazgos abiertos
 
-Ninguno todavía. Señal S-04 en la agenda de la [auditoría 001](../../audits/README.md).
+| ID | Hallazgo | Prioridad | Estado |
+|---|---|---|---|
+| [F-001-06](../../audits/001-flujos-kiosco.md#f-001-06) | Errores con una sola salida "Volver" y sin siguiente paso (identificación, cupones, FLEX, ticket no impreso) | 🟠 P1 | Pendiente |

@@ -1,6 +1,6 @@
 ---
 feature: Checkout — método de retiro y pago
-estado: 🧭 Relevado
+estado: 🔍 En auditoría
 figma: https://www.figma.com/design/FgvtqbTZN2gkuUJbegbhrA/?node-id=52-5396
 ultima_extraccion: 2026-10-23
 owner_ux:
@@ -54,4 +54,10 @@ flowchart LR
 
 ## 5. Hallazgos abiertos
 
-Ninguno todavía. Señales S-02, S-03 en la agenda de la [auditoría 001](../../audits/README.md).
+| ID | Hallazgo | Prioridad | Estado |
+|---|---|---|---|
+| [F-001-01](../../audits/001-flujos-kiosco.md#f-001-01) | No hay modo accesible diseñado: las decisiones obligatorias quedan en `y 496–1008`, fuera de la Safe Area | 🔴 P0 | Pendiente |
+| [F-001-03](../../audits/001-flujos-kiosco.md#f-001-03) | Controles de 40 px en acciones del flujo principal (personalizar, seleccionar, cantidad, factura, quitar descuento) | 🟠 P1 | Pendiente |
+| [F-001-04](../../audits/001-flujos-kiosco.md#f-001-04) | "Vaciar carrito" pegado a la acción principal en el footer de Home, Detalle y Tipo de pago | 🟠 P1 | Pendiente |
+| [F-001-09](../../audits/001-flujos-kiosco.md#f-001-09) | Pantalla de pago con una sola opción ("Pagar en el mostrador con efectivo") | 🟠 P1 | Pendiente |
+| [F-001-16](../../audits/001-flujos-kiosco.md#f-001-16) | Typos en copy final: "pedidoo", "diponible" | 🟡 P2 | Pendiente |

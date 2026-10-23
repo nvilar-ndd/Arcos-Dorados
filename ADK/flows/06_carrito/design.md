@@ -1,6 +1,6 @@
 ---
 feature: Carrito
-estado: 🧭 Relevado
+estado: 🔍 En auditoría
 figma: https://www.figma.com/design/FgvtqbTZN2gkuUJbegbhrA/?node-id=1-293
 ultima_extraccion: 2026-10-23
 owner_ux:
@@ -28,4 +28,8 @@ Revisión del pedido antes del checkout: detalle de McCombos (hasta 3 ítems), p
 
 ## 4. Hallazgos abiertos
 
-Ninguno todavía.
+| ID | Hallazgo | Prioridad | Estado |
+|---|---|---|---|
+| [F-001-03](../../audits/001-flujos-kiosco.md#f-001-03) | Controles de 40 px en acciones del flujo principal (personalizar, seleccionar, cantidad, factura, quitar descuento) | 🟠 P1 | Pendiente |
+| [F-001-04](../../audits/001-flujos-kiosco.md#f-001-04) | "Vaciar carrito" pegado a la acción principal en el footer de Home, Detalle y Tipo de pago | 🟠 P1 | Pendiente |
+| [F-001-18](../../audits/001-flujos-kiosco.md#f-001-18) | Datos de ejemplo inconsistentes en el carrito (el total no suma) | ⚪ P3 | Pendiente |

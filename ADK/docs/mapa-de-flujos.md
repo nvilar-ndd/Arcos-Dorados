@@ -77,6 +77,9 @@ Nota en el canvas: *posibilidad de sumar productos que no integren en outage* (d
 | Soft login + cupón de otro McID → prioriza la sesión del primero | [`5099:9030`](https://www.figma.com/design/CkrLK7rb1I1DKjKCvZOpLN/?node-id=5099-9030) |
 | Cupón con McID + producto Loyalty · mismo usuario | [`5101:27681`](https://www.figma.com/design/CkrLK7rb1I1DKjKCvZOpLN/?node-id=5101-27681) |
 | Cupón con McID + producto Loyalty · otro usuario → cambia | [`5101:36679`](https://www.figma.com/design/CkrLK7rb1I1DKjKCvZOpLN/?node-id=5101-36679) |
+| Error · cupón no reconocido | [`5269:50050`](https://www.figma.com/design/CkrLK7rb1I1DKjKCvZOpLN/?node-id=5269-50050) |
+| Error · cupón ya utilizado | [`5269:50023`](https://www.figma.com/design/CkrLK7rb1I1DKjKCvZOpLN/?node-id=5269-50023) |
+| Error · cupón vencido | [`5269:50041`](https://www.figma.com/design/CkrLK7rb1I1DKjKCvZOpLN/?node-id=5269-50041) |
 
 ### ✅ *Loyalty* — `4972:95346`
 
@@ -157,7 +160,7 @@ Cada error de pago trae en el canvas la lista de **códigos del procesador** que
 
 ## Señales tempranas (a validar en la primera auditoría)
 
-Salen sólo de posiciones y tamaños en la metadata, sin abrir el diseño. No son hallazgos aprobados: son la agenda de la auditoría 001.
+Salen sólo de posiciones y tamaños en la metadata, sin abrir el diseño. Ya se validaron en la [auditoría 001](../audits/001-flujos-kiosco.md): S-04 resultó parcial (los errores de **pago** sí tienen acción primaria; el problema está en los de identificación, cupones y FLEX, ver F-001-06).
 
 | # | Dónde | Señal | Regla |
 |---|---|---|---|

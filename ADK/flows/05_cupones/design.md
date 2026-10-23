@@ -1,6 +1,6 @@
 ---
 feature: Cupones y resolución de identidad (McID)
-estado: 🧭 Relevado
+estado: 🔍 En auditoría
 figma: https://www.figma.com/design/CkrLK7rb1I1DKjKCvZOpLN/?node-id=5086-8102
 ultima_extraccion: 2026-10-23
 owner_ux:
@@ -37,4 +37,8 @@ Qué pasa cuando un cupón trae un McID y ya hay (o no) una sesión con token o 
 
 ## 4. Hallazgos abiertos
 
-Ninguno todavía.
+| ID | Hallazgo | Prioridad | Estado |
+|---|---|---|---|
+| [F-001-06](../../audits/001-flujos-kiosco.md#f-001-06) | Errores con una sola salida "Volver" y sin siguiente paso (identificación, cupones, FLEX, ticket no impreso) | 🟠 P1 | Pendiente |
+| [F-001-15](../../audits/001-flujos-kiosco.md#f-001-15) | Cupón: dos "Volver" en la misma pantalla y CTA de footer redundante | 🟡 P2 | Pendiente |
+| [F-001-16](../../audits/001-flujos-kiosco.md#f-001-16) | Typos en copy final: "pedidoo", "diponible" | 🟡 P2 | Pendiente |

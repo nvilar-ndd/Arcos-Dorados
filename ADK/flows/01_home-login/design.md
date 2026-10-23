@@ -1,6 +1,6 @@
 ---
 feature: Home, Login, Idiomas y Métodos de retiro
-estado: 🧭 Relevado
+estado: 🔍 En auditoría
 figma: https://www.figma.com/design/cJxVzUn17o3SgYkfiuXSkm/-ADK--Login
 ultima_extraccion: 2026-10-23
 owner_ux:
@@ -39,4 +39,10 @@ flowchart LR
 
 ## 4. Hallazgos abiertos
 
-Ninguno todavía. Ver agenda en [`audits/`](../../audits/README.md).
+| ID | Hallazgo | Prioridad | Estado |
+|---|---|---|---|
+| [F-001-01](../../audits/001-flujos-kiosco.md#f-001-01) | No hay modo accesible diseñado: las decisiones obligatorias quedan en `y 496–1008`, fuera de la Safe Area | 🔴 P0 | Pendiente |
+| [F-001-05](../../audits/001-flujos-kiosco.md#f-001-05) | Idiomas nombrados en español ("Inglés", "Portugués") | 🟠 P1 | Pendiente |
+| [F-001-06](../../audits/001-flujos-kiosco.md#f-001-06) | Errores con una sola salida "Volver" y sin siguiente paso (identificación, cupones, FLEX, ticket no impreso) | 🟠 P1 | Pendiente |
+| [F-001-08](../../audits/001-flujos-kiosco.md#f-001-08) | Inactividad sin cuenta regresiva visible | 🟠 P1 | Pendiente |
+| [F-001-14](../../audits/001-flujos-kiosco.md#f-001-14) | Nombre y puntos del usuario visibles para la fila | 🟡 P2 | Pendiente |

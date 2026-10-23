@@ -1,6 +1,6 @@
 ---
 feature: Cross Selling y NBO (Next Best Offer)
-estado: 🧭 Relevado — sin estado en Figma (debajo del separador)
+estado: 🔍 En auditoría — sin estado en Figma (debajo del separador)
 figma: https://www.figma.com/design/FgvtqbTZN2gkuUJbegbhrA/?node-id=71-29955
 ultima_extraccion: 2026-10-23
 owner_ux:
@@ -28,4 +28,7 @@ Sugerencia de productos adicionales en dos momentos: desde la Home y **post carr
 
 ## 4. Hallazgos abiertos
 
-Ninguno todavía.
+| ID | Hallazgo | Prioridad | Estado |
+|---|---|---|---|
+| [F-001-07](../../audits/001-flujos-kiosco.md#f-001-07) | Texto legal de EE. UU. ("2,000 calories a day…") en el footer de Loyalty y del checkout de Cross Selling | 🟠 P1 | Pendiente |
+| [F-001-17](../../audits/001-flujos-kiosco.md#f-001-17) | Frames fuera de lienzo y pantallas sin componentes | ⚪ P3 | Pendiente |

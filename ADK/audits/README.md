@@ -4,7 +4,7 @@ Una auditoría por archivo (o por página) y por fecha, con la plantilla [`templ
 
 | # | Alcance | Fecha | Hallazgos | Estado |
 |---|---|---|---|---|
-| 001 | Checkout, Errores, Factura y OTP — señales S-01 a S-09 de [`mapa-de-flujos.md`](../docs/mapa-de-flujos.md#señales-tempranas-a-validar-en-la-primera-auditoría) | — | — | Por empezar |
+| [001](./001-flujos-kiosco.md) | Los 3 archivos de producto: 14 páginas, 493 pantallas | 2026-10-23 | 18 (2 🔴 · 8 🟠 · 6 🟡 · 2 ⚪) | Pendiente de revisión del equipo |
 
 ## IDs
 

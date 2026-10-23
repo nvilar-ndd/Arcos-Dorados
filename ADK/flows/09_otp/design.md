@@ -1,6 +1,6 @@
 ---
 feature: Validación OTP para canje de puntos
-estado: 🧭 Relevado
+estado: 🔍 En auditoría
 figma: https://www.figma.com/design/FgvtqbTZN2gkuUJbegbhrA/?node-id=272-16440
 ultima_extraccion: 2026-10-23
 owner_ux:
@@ -35,4 +35,6 @@ Para usar puntos, el usuario confirma su identidad con un código de **4 dígito
 
 ## 5. Hallazgos abiertos
 
-Ninguno todavía.
+| ID | Hallazgo | Prioridad | Estado |
+|---|---|---|---|
+| [F-001-12](../../audits/001-flujos-kiosco.md#f-001-12) | Inconsistencias de componentes entre archivos (variantes de footer, dos `nav.menu-button`, Chips vs Tag Pill, componentes locales, Inter) | 🟡 P2 | Pendiente |
