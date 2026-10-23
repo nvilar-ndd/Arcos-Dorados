@@ -58,7 +58,7 @@ flowchart LR
 
 | ID | Hallazgo | Prioridad | Estado |
 |---|---|---|---|
-| [F-001-01](../../audits/001-flujos-kiosco.md#f-001-01) | No hay modo accesible diseñado: las decisiones obligatorias quedan en `y 496–1008`, fuera de la Safe Area | 🔴 P0 | Pendiente |
+| [F-001-01](../../audits/001-flujos-kiosco.md#f-001-01) | No hay modo accesible diseñado: las decisiones obligatorias quedan en `y 496–1008`, fuera de la Safe Area | 🔴 P0 | ⏳ Bloqueado (Q-02) |
 | [F-001-03](../../audits/001-flujos-kiosco.md#f-001-03) | Controles de 40 px en acciones del flujo principal (personalizar, seleccionar, cantidad, factura, quitar descuento) | 🟠 P1 | Pendiente |
 | [F-001-04](../../audits/001-flujos-kiosco.md#f-001-04) | "Vaciar carrito" pegado a la acción principal en el footer de Home, Detalle y Tipo de pago | 🟠 P1 | Pendiente |
 | [F-001-09](../../audits/001-flujos-kiosco.md#f-001-09) | Fallback de pinpad caído presentado como decisión de una sola opción, sin explicar por qué falta la tarjeta | 🟠 P1 | Pendiente |

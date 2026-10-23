@@ -41,7 +41,7 @@ flowchart LR
 
 | ID | Hallazgo | Prioridad | Estado |
 |---|---|---|---|
-| [F-001-01](../../audits/001-flujos-kiosco.md#f-001-01) | No hay modo accesible diseñado: las decisiones obligatorias quedan en `y 496–1008`, fuera de la Safe Area | 🔴 P0 | Pendiente |
+| [F-001-01](../../audits/001-flujos-kiosco.md#f-001-01) | No hay modo accesible diseñado: las decisiones obligatorias quedan en `y 496–1008`, fuera de la Safe Area | 🔴 P0 | ⏳ Bloqueado (Q-02) |
 | [F-001-05](../../audits/001-flujos-kiosco.md#f-001-05) | Idiomas nombrados en español ("Inglés", "Portugués") | 🟠 P1 | Pendiente |
 | [F-001-06](../../audits/001-flujos-kiosco.md#f-001-06) | Errores con una sola salida "Volver" y sin siguiente paso (identificación, cupones, FLEX, ticket no impreso) | 🟠 P1 | Pendiente |
 | [F-001-08](../../audits/001-flujos-kiosco.md#f-001-08) | Inactividad sin cuenta regresiva visible | 🟠 P1 | Pendiente |

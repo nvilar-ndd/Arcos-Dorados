@@ -33,7 +33,7 @@ metodo: "Script de lectura con use_figma sobre todas las pantallas (instancias y
 
 | ID | Hallazgo | Regla | Prioridad | Estado |
 |---|---|---|---|---|
-| F-001-01 | No hay modo accesible diseñado: las decisiones obligatorias quedan en `y 496–1008`, fuera de la Safe Area | K-ALC-02 · K-ALC-04 | 🔴 P0 | Pendiente |
+| F-001-01 | No hay modo accesible diseñado: las decisiones obligatorias quedan en `y 496–1008`, fuera de la Safe Area | K-ALC-02 · K-ALC-04 | 🔴 P0 | ⏳ Bloqueado: definición del modo accesible pendiente (Q-02) |
 | F-001-02 | Pantallas sin tokens: 4 fills con variable en 493 pantallas y texto sin estilos; ArchWay no está agregada | K-SIS-02 | 🔴 P0 | Pendiente |
 | F-001-03 | Controles de 40 px en acciones del flujo principal (personalizar, seleccionar, cantidad, factura, quitar descuento) | K-TOQ-01 | 🟠 P1 | Pendiente |
 | F-001-04 | "Vaciar carrito" pegado a la acción principal en el footer de Home, Detalle y Tipo de pago | K-TOQ-04 | 🟠 P1 | Pendiente |
@@ -238,7 +238,7 @@ En el [carrito](https://www.figma.com/design/FgvtqbTZN2gkuUJbegbhrA/?node-id=1-2
 | Q-07 | ¿El archivo [ADK] Login está listo para dev? | ✅ Todo Ready for Dev (sin páginas de estado en Figma) |
 | Q-08 | ¿Cuánto dura "Añadir al carrito" y cuánto tiempo quedan Nº de pedido y Gracias antes de volver a Attract? | Cierre por tiempo, ya definido: faltan los segundos · F-001-13 · K-SES |
 
-Siguen abiertas Q-01 a Q-04 de [`principios-kiosco.md`](../docs/principios-kiosco.md#preguntas-abiertas).
+Q-01 quedó resuelta (el DS define lienzo y área accesible). Siguen abiertas Q-02 —**modo accesible, pendiente de definición**—, Q-03 y Q-04 de [`principios-kiosco.md`](../docs/principios-kiosco.md#preguntas-abiertas).
 
 ## Cómo se midió
 

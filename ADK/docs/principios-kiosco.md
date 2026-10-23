@@ -29,7 +29,7 @@ y:    0 ┌───────────────────────
 | K-ALC-03 | El tercio superior no contiene controles de los que dependa avanzar | Ningún CTA obligatorio en `y < 640` | Alcance en silla de ruedas y niños |
 | K-ALC-04 | Cada pantalla de flujo define qué pasa en modo accesible (qué baja, qué se oculta) | Documentado en el `design.md` | Audit DS **A-L02** |
 
-> ⚠️ **Dato de hardware pendiente:** para traducir px a centímetros desde el piso hacen falta el **tamaño del panel en pulgadas** y la **altura de montaje** del kiosco. Sin eso, K-ALC se mide en px del lienzo. Ver [Preguntas abiertas](#preguntas-abiertas).
+> **Unidad de medida:** el formato lo define el DS en [`Archway/ADK/foundations/layout.md`](../../Archway/ADK/foundations/layout.md#formato): 1080 × 1920 px, densidad 1.0×. El alcance físico (ADA 308, 15–48″ desde el piso) ya está traducido a la **Safe Accessibility Area** (1080 × 800, extendida 960). Por eso las reglas K-ALC y K-TOQ se miden en px del lienzo y no en centímetros.
 
 ## 2. Áreas de toque (`K-TOQ`)
 
@@ -40,8 +40,6 @@ y:    0 ┌───────────────────────
 | K-TOQ-03 | Separación entre targets adyacentes | **≥ 16 px** | Gap de la sub-grilla de contenido · WCAG 2.5.8 |
 | K-TOQ-04 | Acciones destructivas (vaciar carrito, cancelar, cerrar sesión) no quedan pegadas a la acción principal | Separadas por posición o requieren confirmación | [Fitts](../../Base-de-conocimiento/leyes-de-ux.md#7-ley-de-fitts-fittss-law) · [Postel](../../Base-de-conocimiento/leyes-de-ux.md#24-ley-de-postel-postels-law) |
 | K-TOQ-05 | El target táctil cubre todo el elemento visible (card, chip, fila), no sólo el texto o el ícono | — | Fitts |
-
-**Referencia física (sólo orientativa hasta confirmar hardware):** en un panel de 32″ vertical, 1 px ≈ 0,37 mm → 56 px ≈ 21 mm, 80 px ≈ 30 mm. En 27″, 1 px ≈ 0,31 mm → 56 px ≈ 17 mm.
 
 ## 3. Legibilidad y entorno (`K-LEG`)
 
@@ -95,7 +93,7 @@ El kiosco es público y compartido: la próxima persona en la fila no tiene que 
 
 | # | Pregunta | Por qué importa | Dueño |
 |---|---|---|---|
-| Q-01 | ¿Tamaño del panel (pulgadas) y altura de montaje de cada modelo de kiosco? | Convertir K-ALC y K-TOQ a mm y validar contra ADA 308 (15–48″ desde el piso) | Tech / Operaciones |
-| Q-02 | ¿Cómo se activa y se sale del modo accesible y qué persiste entre pantallas? | K-ALC-02 y K-ALC-04 | UX ADK |
+| Q-01 | ~~¿Tamaño del panel y altura de montaje?~~ | ✅ Resuelto: el DS define el lienzo (1080 × 1920 @1.0×) y el alcance como Safe Accessibility Area. Se audita en px | — |
+| Q-02 | ¿Cómo se activa y se sale del modo accesible, qué componentes bajan y qué persiste entre pantallas? | ⏳ **Pendiente de definición (UX ADK).** Bloquea K-ALC-02, K-ALC-04 y F-001-01. Coincide con Audit DS **A-L02** | UX ADK |
 | Q-03 | ¿Tiempo real de inactividad y de la cuenta regresiva en producción? | K-SES-01 | Producto |
 | Q-04 | ¿Hay lector de pantalla, audio o teclado físico / switch en algún mercado? | Define el alcance del foco (Audit DS **A-C01**) | Tech |
