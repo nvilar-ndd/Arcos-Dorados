@@ -35,7 +35,7 @@ flowchart LR
 | Cambio de cuenta | ¿El usuario entiende que pierde el carrito antes de confirmar? | K-TOQ-04 · voz y tono *Confirmaciones* |
 | Modales de error (`identificationError`, `identificationUpgradingError`, `unauthorized`) | Acción primaria y salida clara | K-DEC-03 · K-LEG-07 |
 | Footer V2 con accesibilidad | Comportamiento del modo accesible en Attract y Home | K-ALC-02 · K-ALC-04 |
-| Gobernanza | El archivo no tiene páginas READY / PENDIENTES (señal S-08) | — |
+| Gobernanza | Todo el archivo está Ready for Dev (confirmado), pero no tiene páginas READY / PENDIENTES como los otros dos: conviene agregarlas | — |
 
 ## 4. Hallazgos abiertos
 

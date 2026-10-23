@@ -41,7 +41,8 @@ metodo: "Script de lectura con use_figma sobre todas las pantallas (instancias y
 | F-001-06 | Errores con una sola salida "Volver" y sin siguiente paso (identificación, cupones, FLEX, ticket no impreso) | K-DEC-03 · K-SIS-05 | 🟠 P1 | Pendiente |
 | F-001-07 | Texto legal de EE. UU. ("2,000 calories a day…") en el footer de Loyalty y del checkout de Cross Selling | K-SIS-05 | 🟠 P1 | Pendiente |
 | F-001-08 | Inactividad sin cuenta regresiva visible | K-SES-01 | 🟠 P1 | Pendiente |
-| F-001-09 | Pantalla de pago con una sola opción ("Pagar en el mostrador con efectivo") | K-DEC-02 | 🟠 P1 | Pendiente · ver Q-05 |
+| F-001-09 | Fallback de pinpad caído presentado como decisión de una sola opción, sin explicar por qué falta la tarjeta | K-DEC-02 · K-DEC-03 | 🟠 P1 | Pendiente |
+| F-001-19 | Cross Selling: la acción para descartar cambia de altura según la cantidad de sugerencias, que llega a 6 | K-DEC-01 · K-DEC-04 | 🟠 P1 | Pendiente |
 | F-001-10 | Factura electrónica: error sin ícono, placeholder como label y bordes de bajo contraste | K-LEG-04 · K-LEG-07 | 🟠 P1 | Pendiente |
 | F-001-11 | Texto legal de 12 px en el footer de todas las pantallas | K-LEG-02 | 🟡 P2 | Pendiente |
 | F-001-12 | Inconsistencias de componentes entre archivos (variantes de footer, dos `nav.menu-button`, Chips vs Tag Pill, componentes locales, Inter) | K-SIS-01 | 🟡 P2 | Pendiente |
@@ -147,9 +148,17 @@ Las pantallas de Loyalty ([`4972:95346`](https://www.figma.com/design/CkrLK7rb1I
 
 ### F-001-09 · Pantalla de pago con una sola opción 🟠
 
-En 5 variantes de *¿Cómo quieres pagar?* ([`52:6049`](https://www.figma.com/design/FgvtqbTZN2gkuUJbegbhrA/?node-id=52-6049), `52:6192`, `52:6528`, `154:12971`, `71:11337`) la única opción es *Pagar en el mostrador con efectivo*, en `y 553`, como botón secundario. Una pantalla de decisión sin decisión suma un toque y tiempo.
+En 5 variantes de *¿Cómo quieres pagar?* ([`52:6049`](https://www.figma.com/design/FgvtqbTZN2gkuUJbegbhrA/?node-id=52-6049), `52:6192`, `52:6528`, `154:12971`, `71:11337`) la única opción es *Pagar en el mostrador con efectivo*, en `y 553`, como botón secundario. **Es el fallback cuando el pinpad está caído** (Q-05, confirmado). La pantalla mantiene el título de decisión ("¿Cómo quieres pagar tu pedido?") sin explicar por qué falta la tarjeta, y la única salida es un secundario en el tercio superior.
 
-**Propuesta:** si sólo hay un medio de pago, saltear la pregunta y mostrar el medio en la confirmación. Ver Q-05.
+**Propuesta:** tratarla como estado de *Problemas y recuperación*, no como decisión. Título informativo ("El pago con tarjeta no está disponible"), bajada con el siguiente paso, *Pagar en el mostrador* como **primario de 80 px en el tercio inferior** (K-ALC-01, K-DEC-03) y la factura electrónica debajo.
+
+<a id="f-001-19"></a>
+
+### F-001-19 · Cross Selling: descarte que se mueve 🟠
+
+Las 6 variantes de [`71:37445`](https://www.figma.com/design/FgvtqbTZN2gkuUJbegbhrA/?node-id=71-37445) son estados de 1 a 6 sugerencias (Q-06, confirmado). El botón de descarte (656 × 80) queda en `y 960` con 1–3 productos y salta a `y 1288` con 4–6. Si el usuario aprende a descartar sin leer, la segunda vez toca una card de producto en lugar del botón. Con 5 y 6 sugerencias, además, se supera el máximo de 4 opciones.
+
+**Regla:** K-DEC-01 · K-DEC-04 · Hick · memoria espacial. **Propuesta:** anclar el descarte en el footer (posición fija, tercio inferior) para todas las cantidades y limitar las sugerencias a 4.
 
 <a id="f-001-10"></a>
 
@@ -224,10 +233,10 @@ En el [carrito](https://www.figma.com/design/FgvtqbTZN2gkuUJbegbhrA/?node-id=1-2
 
 | # | Pregunta | Afecta |
 |---|---|---|
-| Q-05 | ¿Cuándo aparece la pantalla de pago con una sola opción? ¿Por mercado o por estado del pinpad? | F-001-09 |
-| Q-06 | ¿Qué variante de Cross Selling / NBO se eligió de las 6 exploraciones y está lista para dev? | flows/11 |
-| Q-07 | ¿El archivo [ADK] Login está listo para dev? No tiene páginas de estado | flows/01 |
-| Q-08 | ¿Cuánto dura "Añadir al carrito" y cuánto tiempo quedan Nº de pedido y Gracias antes de volver a Attract? | F-001-13 · K-SES |
+| Q-05 | ¿Cuándo aparece la pantalla de pago con una sola opción? | ✅ Fallback con pinpad caído → F-001-09 |
+| Q-06 | ¿Qué variante de Cross Selling / NBO se eligió? | ✅ Las 6 son estados de 1 a 6 sugerencias → F-001-19 |
+| Q-07 | ¿El archivo [ADK] Login está listo para dev? | ✅ Todo Ready for Dev (sin páginas de estado en Figma) |
+| Q-08 | ¿Cuánto dura "Añadir al carrito" y cuánto tiempo quedan Nº de pedido y Gracias antes de volver a Attract? | Cierre por tiempo, ya definido: faltan los segundos · F-001-13 · K-SES |
 
 Siguen abiertas Q-01 a Q-04 de [`principios-kiosco.md`](../docs/principios-kiosco.md#preguntas-abiertas).
 

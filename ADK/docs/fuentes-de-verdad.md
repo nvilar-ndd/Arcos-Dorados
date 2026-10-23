@@ -6,7 +6,7 @@
 
 | Archivo | File key | Páginas de trabajo | Estado declarado en Figma |
 |---|---|---|---|
-| [[ADK] Login](https://www.figma.com/design/cJxVzUn17o3SgYkfiuXSkm/-ADK--Login) | `cJxVzUn17o3SgYkfiuXSkm` | Nuevo Login (con Token) · Home | Sin páginas de estado (READY / PENDIENTES) |
+| [[ADK] Login](https://www.figma.com/design/cJxVzUn17o3SgYkfiuXSkm/-ADK--Login) | `cJxVzUn17o3SgYkfiuXSkm` | Nuevo Login (con Token) · Home | ✅ Todo Ready for Dev (confirmado; el archivo no tiene páginas de estado) |
 | [[ADK] Productos, Loyalty y Cupones](https://www.figma.com/design/CkrLK7rb1I1DKjKCvZOpLN/-ADK--Productos--Loyalty---Cupones) | `CkrLK7rb1I1DKjKCvZOpLN` | Flujos de productos · Error integración FLEX · Flujos de Promociones · Cupones · Loyalty · Filtros y etiquetas | ✅ READY: todas menos *Filtros y etiquetas* (🚧 En revisión UX) |
 | [[ADK] Carrito, Checkout y Cross Selling](https://www.figma.com/design/FgvtqbTZN2gkuUJbegbhrA/-ADK--Carrito---Checkout--Cross-Selling) | `FgvtqbTZN2gkuUJbegbhrA` | Carrito · Checkout · Errores de alerta · Factura electrónica · OTP · Cross Selling / NBO | ✅ READY: todas menos *Cross Selling / NBO* (debajo del separador, sin estado) |
 

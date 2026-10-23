@@ -23,6 +23,8 @@ Combina **dónde se consume** (comer aquí / para llevar), **dónde se entrega**
 | Para llevar | Mostrador | Mostrador | `52:6429` · `52:6526` |
 | Para llevar | Tótem (tarjeta) | Mostrador | `52:6477` |
 
+> **Pinpad caído:** las variantes `52:6049`, `52:6192`, `52:6528`, `154:12971` y `71:11337` muestran sólo *Pagar en el mostrador con efectivo*. Es el fallback de outage del pinpad, no una configuración por mercado.
+
 ```mermaid
 flowchart LR
   C[Carrito] --> MR{¿Dónde lo recibís?}
@@ -59,5 +61,5 @@ flowchart LR
 | [F-001-01](../../audits/001-flujos-kiosco.md#f-001-01) | No hay modo accesible diseñado: las decisiones obligatorias quedan en `y 496–1008`, fuera de la Safe Area | 🔴 P0 | Pendiente |
 | [F-001-03](../../audits/001-flujos-kiosco.md#f-001-03) | Controles de 40 px en acciones del flujo principal (personalizar, seleccionar, cantidad, factura, quitar descuento) | 🟠 P1 | Pendiente |
 | [F-001-04](../../audits/001-flujos-kiosco.md#f-001-04) | "Vaciar carrito" pegado a la acción principal en el footer de Home, Detalle y Tipo de pago | 🟠 P1 | Pendiente |
-| [F-001-09](../../audits/001-flujos-kiosco.md#f-001-09) | Pantalla de pago con una sola opción ("Pagar en el mostrador con efectivo") | 🟠 P1 | Pendiente |
+| [F-001-09](../../audits/001-flujos-kiosco.md#f-001-09) | Fallback de pinpad caído presentado como decisión de una sola opción, sin explicar por qué falta la tarjeta | 🟠 P1 | Pendiente |
 | [F-001-16](../../audits/001-flujos-kiosco.md#f-001-16) | Typos en copy final: "pedidoo", "diponible" | 🟡 P2 | Pendiente |

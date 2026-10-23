@@ -4,7 +4,7 @@ Una auditoría por archivo (o por página) y por fecha, con la plantilla [`templ
 
 | # | Alcance | Fecha | Hallazgos | Estado |
 |---|---|---|---|---|
-| [001](./001-flujos-kiosco.md) | Los 3 archivos de producto: 14 páginas, 493 pantallas | 2026-10-23 | 18 (2 🔴 · 8 🟠 · 6 🟡 · 2 ⚪) | Pendiente de revisión del equipo |
+| [001](./001-flujos-kiosco.md) | Los 3 archivos de producto: 14 páginas, 493 pantallas | 2026-10-23 | 19 (2 🔴 · 9 🟠 · 6 🟡 · 2 ⚪) | Pendiente de revisión del equipo |
 
 ## IDs
 
