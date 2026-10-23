@@ -1,6 +1,6 @@
 # Base de conocimiento
 
-Material de referencia transversal a todos los sistemas de diseño (ArchWay, Dashboard, ADK, Legacy). No documenta componentes ni foundations: reúne los principios y criterios con los que se auditan, se proponen mejoras y se justifican decisiones de diseño.
+Material de referencia para todo el trabajo de producto y diseño de Arcos Dorados: los sistemas de diseño (ArchWay, Dashboard, ADK, Legacy), los productos (app, web eCommerce, kioscos) y la investigación. No documenta componentes ni foundations: reúne los principios y criterios con los que se auditan, se proponen mejoras y se justifican decisiones.
 
 | Documento | Qué es | Cuándo usarlo |
 |---|---|---|
@@ -11,7 +11,7 @@ Material de referencia transversal a todos los sistemas de diseño (ArchWay, Das
 Desde un `audit.md` o un `design.md`, enlazá la ley con su ancla (ajustá los `../` según la profundidad del archivo). Por ejemplo, desde `Archway/Archway-DS/audit.md`:
 
 ```md
-Se amplía el área táctil a 48 dp ([Ley de Fitts](../Base-de-conocimiento/leyes-de-ux.md#7-ley-de-fitts-fittss-law)).
+Se amplía el área táctil a 48 dp ([Ley de Fitts](../../Base-de-conocimiento/leyes-de-ux.md#7-ley-de-fitts-fittss-law)).
 ```
 
 ## Criterios

@@ -13,7 +13,6 @@ Carpeta padre de todos los sistemas de diseño de Arcos Dorados. **ArchWay es el
 | [`Ilustraciones/`](./Ilustraciones/README.md) | **Ilustraciones**: Digital illustrations de Global, Specials de campaña e Ilustraciones Arcos, con guía de uso y manual de color | [Illustrations Guide](https://www.figma.com/design/E0n9VRsdG5TfPRqhf9sbFK/Illustrations-Guide?node-id=0-1) | — |
 | [`Legacy/`](./Legacy/README.md) | **Legacy DS** — el sistema anterior, en depreciación | Pendiente | — |
 | [`Convergencia/`](./Convergencia/README.md) | **Plan para unificar todo en ArchWay**: decisiones, fases, backlog y checklist | — | — |
-| [`Base-de-conocimiento/`](./Base-de-conocimiento/README.md) | **Referencia transversal** para auditar y justificar decisiones: [Leyes de UX](./Base-de-conocimiento/leyes-de-ux.md) | — | — |
 | [`figma-snapshots/`](./figma-snapshots/README.md) | Fotos de los archivos de Figma en cada revisión | — | — |
 
 ## Cómo se relacionan
@@ -62,6 +61,5 @@ Archway/
 ├── scripts/               ← export de íconos e ilustraciones desde Figma
 ├── Legacy/                ← por relevar
 ├── Convergencia/          ← plan maestro + análisis por sistema
-├── Base-de-conocimiento/  ← referencia transversal: leyes de UX
 └── figma-snapshots/       ← fotos de Figma por fecha
 ```
