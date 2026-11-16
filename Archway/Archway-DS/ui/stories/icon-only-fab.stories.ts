@@ -8,7 +8,7 @@ import androidSrc from '../../android/archway-ui/src/main/java/com/arcosdorados/
 import { swift, kotlin } from './_support/extract'
 import { platformStory, IOS_NATIVE, NOT_COMPILED } from './_support/platform'
 
-const meta = { title: 'Código/Core/Icon Only · FAB', component: AwIconButton, tags: ['autodocs'], argTypes: { variant: { control: 'inline-radio', options: ['primary', 'secondary', 'ghost'] }, size: { control: 'inline-radio', options: ['medium', 'small', 'xs'] } }, args: { icon: 'favorite', label: 'Agregar a favoritos', variant: 'primary', size: 'medium', pressed: undefined, loading: false, disabled: false } } satisfies Meta<typeof AwIconButton>
+const meta = { title: 'Componentes/Core/Icon Only · FAB · FAB Extended', component: AwIconButton, argTypes: { variant: { control: 'inline-radio', options: ['primary', 'secondary', 'ghost'] }, size: { control: 'inline-radio', options: ['medium', 'small', 'xs'] } }, args: { icon: 'favorite', label: 'Agregar a favoritos', variant: 'primary', size: 'medium', pressed: undefined, loading: false, disabled: false } } satisfies Meta<typeof AwIconButton>
 export default meta
 
 export const Playground: StoryObj<typeof meta> = {}

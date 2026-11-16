@@ -6,7 +6,7 @@ import androidSrc from '../../android/archway-ui/src/main/java/com/arcosdorados/
 import { swift, kotlin } from './_support/extract'
 import { platformStory, IOS_NATIVE, NOT_COMPILED } from './_support/platform'
 
-const meta = { title: 'Código/Core/Divider', component: AwDivider, tags: ['autodocs'], argTypes: {}, args: {} } satisfies Meta<typeof AwDivider>
+const meta = { title: 'Componentes/Core/Divider', component: AwDivider, argTypes: {}, args: {} } satisfies Meta<typeof AwDivider>
 export default meta
 
 export const Playground: StoryObj<typeof meta> = {}

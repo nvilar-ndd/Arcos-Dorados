@@ -7,7 +7,7 @@ import androidSrc from '../../android/archway-ui/src/main/java/com/arcosdorados/
 import { swift, kotlin } from './_support/extract'
 import { platformStory, IOS_NATIVE, NOT_COMPILED } from './_support/platform'
 
-const meta = { title: 'Código/Core/Chip', component: AwChip, tags: ['autodocs'], argTypes: { size: { control: 'inline-radio', options: ['medium', 'small'] } }, args: { label: 'Hamburguesas', size: 'medium', disabled: false, selected: false } } satisfies Meta<typeof AwChip>
+const meta = { title: 'Componentes/Core/Chip', component: AwChip, argTypes: { size: { control: 'inline-radio', options: ['medium', 'small'] } }, args: { label: 'Hamburguesas', size: 'medium', disabled: false, selected: false } } satisfies Meta<typeof AwChip>
 export default meta
 
 export const Playground: StoryObj<typeof meta> = {}

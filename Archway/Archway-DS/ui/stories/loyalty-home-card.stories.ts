@@ -6,7 +6,7 @@ import androidSrc from '../../android/archway-ui/src/main/java/com/arcosdorados/
 import { swift, kotlin } from './_support/extract'
 import { platformStory, IOS_NATIVE, NOT_COMPILED } from './_support/platform'
 
-const meta = { title: 'Código/Específicos/Loyalty Home Card', component: AwLoyaltyCard, tags: ['autodocs'], argTypes: { points: { control: { type: 'range', min: 0, max: 2500, step: 50 } } }, args: { points: 1250, goal: 2000, content: 'Te faltan 750 puntos para tu próximo premio', expiry: '300 puntos vencen el 31/12', skeleton: false } } satisfies Meta<typeof AwLoyaltyCard>
+const meta = { title: 'Componentes/Específicos/Loyalty home card', component: AwLoyaltyCard, argTypes: { points: { control: { type: 'range', min: 0, max: 2500, step: 50 } } }, args: { points: 1250, goal: 2000, content: 'Te faltan 750 puntos para tu próximo premio', expiry: '300 puntos vencen el 31/12', skeleton: false } } satisfies Meta<typeof AwLoyaltyCard>
 export default meta
 
 export const Playground: StoryObj<typeof meta> = {}

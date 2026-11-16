@@ -6,7 +6,7 @@ import androidSrc from '../../android/archway-ui/src/main/java/com/arcosdorados/
 import { swift, kotlin } from './_support/extract'
 import { platformStory, IOS_NATIVE, NOT_COMPILED } from './_support/platform'
 
-const meta = { title: 'Código/Específicos/Product Cards', component: AwProductCard, tags: ['autodocs'], argTypes: { size: { control: 'inline-radio', options: ['small', 'big'] } }, args: { name: 'Big Mac', price: '$ 6.900', oldPrice: '$ 8.200', points: '+150', size: 'small', disabled: false, skeleton: false } } satisfies Meta<typeof AwProductCard>
+const meta = { title: 'Componentes/Específicos/Product Card (Carrousel cards)', component: AwProductCard, argTypes: { size: { control: 'inline-radio', options: ['small', 'big'] } }, args: { name: 'Big Mac', price: '$ 6.900', oldPrice: '$ 8.200', points: '+150', size: 'small', disabled: false, skeleton: false } } satisfies Meta<typeof AwProductCard>
 export default meta
 
 export const Playground: StoryObj<typeof meta> = {}

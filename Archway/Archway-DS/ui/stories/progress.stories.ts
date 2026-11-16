@@ -13,7 +13,7 @@ import androidSrc from '../../android/archway-ui/src/main/java/com/arcosdorados/
 import { swift, kotlin } from './_support/extract'
 import { platformStory, IOS_NATIVE, NOT_COMPILED } from './_support/platform'
 
-const meta = { title: 'Código/Core/Progress', component: AwProgressBar, tags: ['autodocs'], argTypes: { value: { control: { type: 'range', min: 0, max: 100 } } }, args: { value: 40, label: 'Progreso', showLabel: true } } satisfies Meta<typeof AwProgressBar>
+const meta = { title: 'Componentes/Core/Progress · Pagination · Stepper', component: AwProgressBar, argTypes: { value: { control: { type: 'range', min: 0, max: 100 } } }, args: { value: 40, label: 'Progreso', showLabel: true } } satisfies Meta<typeof AwProgressBar>
 export default meta
 
 export const Playground: StoryObj<typeof meta> = {}

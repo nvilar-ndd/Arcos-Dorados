@@ -64,7 +64,7 @@ Foundations que todavía no existen en Figma (iconografía, breakpoints, opacida
 
 ## Storybook
 
-[`storybook/`](./storybook) — Foundations, fichas de componentes y **Código › Core / Específicos** (Vue 3 + Vite + TypeScript strict + Tailwind) sobre `tokens/archway.tokens.json`. Cada componente tiene *Playground* con controles y *Web · iOS · Android* con la demo en vivo y el código de las tres plataformas. Incluye la tabla de contraste WCAG calculada en vivo.
+[`storybook/`](./storybook) — Foundations y una entrada por componente en **Componentes › Core / Específicos** (Vue 3 + Vite + TypeScript strict + Tailwind) sobre `tokens/archway.tokens.json`. Cada entrada junta la ficha, el *Playground* con controles y *Web · iOS · Android* con la demo en vivo y el código de las tres plataformas. Incluye la tabla de contraste WCAG calculada en vivo.
 
 ```bash
 cd Archway/Archway-DS/storybook && npm install && npm run dev   # http://localhost:6006

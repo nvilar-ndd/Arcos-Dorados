@@ -9,7 +9,7 @@ import androidSrc from '../../android/archway-ui/src/main/java/com/arcosdorados/
 import { swift, kotlin } from './_support/extract'
 import { platformStory, IOS_NATIVE, NOT_COMPILED } from './_support/platform'
 
-const meta = { title: 'Código/Específicos/Dialog · Pop-up', tags: ['!autodocs'] } satisfies Meta
+const meta = { title: 'Componentes/Específicos/Dialog 💠 Pop-up dashboard' } satisfies Meta
 export default meta
 
 export const Plataformas = platformStory(

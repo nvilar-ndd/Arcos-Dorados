@@ -6,7 +6,7 @@ import androidSrc from '../../android/archway-ui/src/main/java/com/arcosdorados/
 import { swift, kotlin } from './_support/extract'
 import { platformStory, IOS_NATIVE, NOT_COMPILED } from './_support/platform'
 
-const meta = { title: 'Código/Core/Toast', component: AwToast, tags: ['autodocs'], argTypes: { status: { control: 'inline-radio', options: ['info', 'success', 'warning', 'error'] } }, args: { message: 'Agregamos el producto a tu pedido', status: 'success', duration: 0 } } satisfies Meta<typeof AwToast>
+const meta = { title: 'Componentes/Core/Toast', component: AwToast, argTypes: { status: { control: 'inline-radio', options: ['info', 'success', 'warning', 'error'] } }, args: { message: 'Agregamos el producto a tu pedido', status: 'success', duration: 0 } } satisfies Meta<typeof AwToast>
 export default meta
 
 export const Playground: StoryObj<typeof meta> = {}

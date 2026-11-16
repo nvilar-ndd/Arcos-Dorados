@@ -9,7 +9,7 @@ import androidSrc from '../../android/archway-ui/src/main/java/com/arcosdorados/
 import { swift, kotlin } from './_support/extract'
 import { platformStory, IOS_NATIVE, NOT_COMPILED } from './_support/platform'
 
-const meta = { title: 'Código/Específicos/Card Voucher · Setting', component: AwVoucherCard, tags: ['autodocs'], argTypes: {}, args: { headline: '2x1 en McFlurry', subhead: 'Cupón', support: ['Válido hasta el 30/11', 'Sólo en el local'], tag: 'Nuevo', actionLabel: 'Ver cupón' } } satisfies Meta<typeof AwVoucherCard>
+const meta = { title: 'Componentes/Específicos/Card (Nivel 2) · Card / Voucher · Card / Setting', component: AwVoucherCard, argTypes: {}, args: { headline: '2x1 en McFlurry', subhead: 'Cupón', support: ['Válido hasta el 30/11', 'Sólo en el local'], tag: 'Nuevo', actionLabel: 'Ver cupón' } } satisfies Meta<typeof AwVoucherCard>
 export default meta
 
 export const Playground: StoryObj<typeof meta> = {}

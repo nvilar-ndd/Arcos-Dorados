@@ -6,7 +6,7 @@ import androidSrc from '../../android/archway-ui/src/main/java/com/arcosdorados/
 import { swift, kotlin } from './_support/extract'
 import { platformStory, IOS_NATIVE, NOT_COMPILED } from './_support/platform'
 
-const meta = { title: 'Código/Core/Top Bar', component: AwTopBar, tags: ['autodocs'], argTypes: { leading: { control: 'inline-radio', options: ['back', 'close', 'none'] } }, args: { title: 'Mi pedido', leading: 'back', helpLabel: 'Ayuda' } } satisfies Meta<typeof AwTopBar>
+const meta = { title: 'Componentes/Core/Top Bar', component: AwTopBar, argTypes: { leading: { control: 'inline-radio', options: ['back', 'close', 'none'] } }, args: { title: 'Mi pedido', leading: 'back', helpLabel: 'Ayuda' } } satisfies Meta<typeof AwTopBar>
 export default meta
 
 export const Playground: StoryObj<typeof meta> = {}

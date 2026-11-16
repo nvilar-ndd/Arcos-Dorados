@@ -7,7 +7,7 @@ import androidSrc from '../../android/archway-ui/src/main/java/com/arcosdorados/
 import { swift, kotlin } from './_support/extract'
 import { platformStory, IOS_NATIVE, NOT_COMPILED } from './_support/platform'
 
-const meta = { title: 'Código/Core/NavBar', tags: ['!autodocs'] } satisfies Meta
+const meta = { title: 'Componentes/Core/NavBar · TabBar' } satisfies Meta
 export default meta
 
 export const Plataformas = platformStory(

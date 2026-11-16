@@ -6,7 +6,7 @@ import androidSrc from '../../android/archway-ui/src/main/java/com/arcosdorados/
 import { swift, kotlin } from './_support/extract'
 import { platformStory, IOS_NATIVE, NOT_COMPILED } from './_support/platform'
 
-const meta = { title: 'Código/Específicos/Banner', component: AwBanner, tags: ['autodocs'], argTypes: {}, args: { alt: 'Promoción de la semana', skeleton: true } } satisfies Meta<typeof AwBanner>
+const meta = { title: 'Componentes/Específicos/Banner', component: AwBanner, argTypes: {}, args: { alt: 'Promoción de la semana', skeleton: true } } satisfies Meta<typeof AwBanner>
 export default meta
 
 export const Playground: StoryObj<typeof meta> = {}

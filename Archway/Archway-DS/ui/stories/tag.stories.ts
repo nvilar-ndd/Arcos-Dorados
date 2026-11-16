@@ -6,7 +6,7 @@ import androidSrc from '../../android/archway-ui/src/main/java/com/arcosdorados/
 import { swift, kotlin } from './_support/extract'
 import { platformStory, IOS_NATIVE, NOT_COMPILED } from './_support/platform'
 
-const meta = { title: 'Código/Core/Tag', component: AwTag, tags: ['autodocs'], argTypes: { hierarchy: { control: 'inline-radio', options: ['primary', 'secondary', 'tertiary'] } }, args: { label: 'Nuevo', hierarchy: 'primary' } } satisfies Meta<typeof AwTag>
+const meta = { title: 'Componentes/Core/Tag', component: AwTag, argTypes: { hierarchy: { control: 'inline-radio', options: ['primary', 'secondary', 'tertiary'] } }, args: { label: 'Nuevo', hierarchy: 'primary' } } satisfies Meta<typeof AwTag>
 export default meta
 
 export const Playground: StoryObj<typeof meta> = {}

@@ -11,7 +11,7 @@ import androidSrc from '../../android/archway-ui/src/main/java/com/arcosdorados/
 import { swift, kotlin } from './_support/extract'
 import { platformStory, IOS_NATIVE, NOT_COMPILED } from './_support/platform'
 
-const meta = { title: 'Código/Core/Input', component: AwTextField, tags: ['autodocs'], argTypes: { type: { control: 'inline-radio', options: ['text', 'email', 'tel', 'number', 'password'] }, error: { control: 'text' } }, args: { label: 'Nombre', placeholder: 'Escribí tu nombre', hint: 'Como figura en tu documento', error: '', type: 'text', multiline: false, maxlength: undefined, disabled: false, modelValue: '' } } satisfies Meta<typeof AwTextField>
+const meta = { title: 'Componentes/Core/Input — Text Field · Text Area · Password · Select · PinCode', component: AwTextField, argTypes: { type: { control: 'inline-radio', options: ['text', 'email', 'tel', 'number', 'password'] }, error: { control: 'text' } }, args: { label: 'Nombre', placeholder: 'Escribí tu nombre', hint: 'Como figura en tu documento', error: '', type: 'text', multiline: false, maxlength: undefined, disabled: false, modelValue: '' } } satisfies Meta<typeof AwTextField>
 export default meta
 
 export const Playground: StoryObj<typeof meta> = {}

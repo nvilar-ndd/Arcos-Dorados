@@ -1,9 +1,9 @@
-import { Meta, Markdown, Canvas } from '@storybook/blocks'
+import { Meta, Markdown, Canvas, Controls } from '@storybook/blocks'
 import * as Code from '../../../../ui/stories/button.stories'
 import { ficha } from '../md'
 import content from '../../../../components/core/button.md?raw'
 
-<Meta title="Componentes/Core/Button · Button_Ghost" />
+<Meta of={Code} />
 
 <h1 className="doc__title aw-display-medium-bold">Button · Button_Ghost</h1>
 
@@ -16,6 +16,16 @@ import content from '../../../../components/core/button.md?raw'
 
 ## Código — Web · iOS · Android
 
-<p className="aw-label-small">Demo web en vivo y código de las tres plataformas. Los controles están en <strong>Código › Core</strong>.</p>
+### Playground
+
+<p className="aw-label-small">Probá las propiedades del componente web con los controles.</p>
+
+<Canvas of={Code.Playground} sourceState="none" />
+
+<Controls of={Code.Playground} />
+
+### Variantes y código por plataforma
+
+<p className="aw-label-small">Demo web en vivo y el código real de Web, iOS y Android.</p>
 
 <Canvas of={Code.Plataformas} sourceState="none" />

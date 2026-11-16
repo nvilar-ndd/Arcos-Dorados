@@ -6,7 +6,7 @@ import androidSrc from '../../android/archway-ui/src/main/java/com/arcosdorados/
 import { swift, kotlin } from './_support/extract'
 import { platformStory, IOS_NATIVE, NOT_COMPILED } from './_support/platform'
 
-const meta = { title: 'Código/Específicos/Tile Misiones', component: AwMissionTile, tags: ['autodocs'], argTypes: {}, args: { label: '50 puntos', icon: 'loyalty', skeleton: false } } satisfies Meta<typeof AwMissionTile>
+const meta = { title: 'Componentes/Específicos/Tile 💠 Misiones', component: AwMissionTile, argTypes: {}, args: { label: '50 puntos', icon: 'loyalty', skeleton: false } } satisfies Meta<typeof AwMissionTile>
 export default meta
 
 export const Playground: StoryObj<typeof meta> = {}

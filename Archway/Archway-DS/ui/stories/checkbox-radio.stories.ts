@@ -9,7 +9,7 @@ import androidSrc from '../../android/archway-ui/src/main/java/com/arcosdorados/
 import { swift, kotlin } from './_support/extract'
 import { platformStory, IOS_NATIVE, NOT_COMPILED } from './_support/platform'
 
-const meta = { title: 'Código/Core/Checkbox · Radio', component: AwCheckbox, tags: ['autodocs'], argTypes: {}, args: { label: 'Acepto los términos', disabled: false, modelValue: false } } satisfies Meta<typeof AwCheckbox>
+const meta = { title: 'Componentes/Core/Checkbox · Radio', component: AwCheckbox, argTypes: {}, args: { label: 'Acepto los términos', disabled: false, modelValue: false } } satisfies Meta<typeof AwCheckbox>
 export default meta
 
 export const Playground: StoryObj<typeof meta> = {}

@@ -60,7 +60,7 @@ const email = ref('')
 | `AwProgressBar`, `AwProgressCircle`, `AwPagination`, `AwStepper` | `AwMissionTile`, `AwPin` |
 | `AwTopBar`, `AwNavBar`, `AwIcon` | `AwBenefitsProgress` |
 
-Cada uno tiene su story en el Storybook (**Código › Core / Específicos**): *Playground* con controles y *Web · iOS · Android* con la demo en vivo y el código de las tres plataformas.
+Cada uno tiene su story en el Storybook (**Componentes › Core / Específicos**, dentro de la ficha de cada componente): *Playground* con controles y *Web · iOS · Android* con la demo en vivo y el código de las tres plataformas.
 
 ## Pendiente
 

@@ -6,7 +6,7 @@ import androidSrc from '../../android/archway-ui/src/main/java/com/arcosdorados/
 import { swift, kotlin } from './_support/extract'
 import { platformStory, IOS_NATIVE, NOT_COMPILED } from './_support/platform'
 
-const meta = { title: 'Código/Core/Button', component: AwButton, tags: ['autodocs'], argTypes: { variant: { control: 'inline-radio', options: ['primary', 'secondary', 'ghost'] }, size: { control: 'inline-radio', options: ['large', 'medium', 'small', 'xs'] }, shape: { control: 'inline-radio', options: ['square', 'round'] } }, args: { label: 'Agregar al pedido', variant: 'primary', size: 'large', shape: 'square', loading: false, disabled: false } } satisfies Meta<typeof AwButton>
+const meta = { title: 'Componentes/Core/Button · Button_Ghost', component: AwButton, argTypes: { variant: { control: 'inline-radio', options: ['primary', 'secondary', 'ghost'] }, size: { control: 'inline-radio', options: ['large', 'medium', 'small', 'xs'] }, shape: { control: 'inline-radio', options: ['square', 'round'] } }, args: { label: 'Agregar al pedido', variant: 'primary', size: 'large', shape: 'square', loading: false, disabled: false } } satisfies Meta<typeof AwButton>
 export default meta
 
 export const Playground: StoryObj<typeof meta> = {}

@@ -6,7 +6,7 @@ import androidSrc from '../../android/archway-ui/src/main/java/com/arcosdorados/
 import { swift, kotlin } from './_support/extract'
 import { platformStory, IOS_NATIVE, NOT_COMPILED } from './_support/platform'
 
-const meta = { title: 'Código/Específicos/Progress', component: AwBenefitsProgress, tags: ['autodocs'], argTypes: { type: { control: 'inline-radio', options: ['beneficios', 'misiones'] }, value: { control: { type: 'range', min: 0, max: 100 } } }, args: { value: 60, type: 'beneficios', label: 'Avance del beneficio' } } satisfies Meta<typeof AwBenefitsProgress>
+const meta = { title: 'Componentes/Específicos/Loading & progress 💠', component: AwBenefitsProgress, argTypes: { type: { control: 'inline-radio', options: ['beneficios', 'misiones'] }, value: { control: { type: 'range', min: 0, max: 100 } } }, args: { value: 60, type: 'beneficios', label: 'Avance del beneficio' } } satisfies Meta<typeof AwBenefitsProgress>
 export default meta
 
 export const Playground: StoryObj<typeof meta> = {}

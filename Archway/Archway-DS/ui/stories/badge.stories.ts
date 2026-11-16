@@ -6,7 +6,7 @@ import androidSrc from '../../android/archway-ui/src/main/java/com/arcosdorados/
 import { swift, kotlin } from './_support/extract'
 import { platformStory, IOS_NATIVE, NOT_COMPILED } from './_support/platform'
 
-const meta = { title: 'Código/Core/Badge', component: AwBadge, tags: ['autodocs'], argTypes: {}, args: { count: 3, max: 99 } } satisfies Meta<typeof AwBadge>
+const meta = { title: 'Componentes/Core/Badge', component: AwBadge, argTypes: {}, args: { count: 3, max: 99 } } satisfies Meta<typeof AwBadge>
 export default meta
 
 export const Playground: StoryObj<typeof meta> = {}

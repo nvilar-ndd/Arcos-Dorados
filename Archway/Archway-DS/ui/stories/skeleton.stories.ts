@@ -6,7 +6,7 @@ import androidSrc from '../../android/archway-ui/src/main/java/com/arcosdorados/
 import { swift, kotlin } from './_support/extract'
 import { platformStory, IOS_NATIVE, NOT_COMPILED } from './_support/platform'
 
-const meta = { title: 'Código/Core/Skeleton', component: AwSkeleton, tags: ['autodocs'], argTypes: { type: { control: 'inline-radio', options: ['square', 'rectangle', 'circle'] } }, args: { type: 'rectangle' } } satisfies Meta<typeof AwSkeleton>
+const meta = { title: 'Componentes/Core/Skeleton', component: AwSkeleton, argTypes: { type: { control: 'inline-radio', options: ['square', 'rectangle', 'circle'] } }, args: { type: 'rectangle' } } satisfies Meta<typeof AwSkeleton>
 export default meta
 
 export const Playground: StoryObj<typeof meta> = {}

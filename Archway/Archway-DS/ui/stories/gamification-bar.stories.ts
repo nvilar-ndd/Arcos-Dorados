@@ -6,7 +6,7 @@ import androidSrc from '../../android/archway-ui/src/main/java/com/arcosdorados/
 import { swift, kotlin } from './_support/extract'
 import { platformStory, IOS_NATIVE, NOT_COMPILED } from './_support/platform'
 
-const meta = { title: 'Código/Específicos/Gamification Bar', component: AwGamificationBar, tags: ['autodocs'], argTypes: { progress: { control: { type: 'range', min: 0, max: 100 } }, type: { control: 'inline-radio', options: ['expanded', 'collapsed'] } }, args: { progress: 50, message: 'Sumá $ 2.500 más y el envío es gratis', type: 'expanded', skeleton: false } } satisfies Meta<typeof AwGamificationBar>
+const meta = { title: 'Componentes/Específicos/Gamification Bar', component: AwGamificationBar, argTypes: { progress: { control: { type: 'range', min: 0, max: 100 } }, type: { control: 'inline-radio', options: ['expanded', 'collapsed'] } }, args: { progress: 50, message: 'Sumá $ 2.500 más y el envío es gratis', type: 'expanded', skeleton: false } } satisfies Meta<typeof AwGamificationBar>
 export default meta
 
 export const Playground: StoryObj<typeof meta> = {}

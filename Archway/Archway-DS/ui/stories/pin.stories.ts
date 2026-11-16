@@ -6,7 +6,7 @@ import androidSrc from '../../android/archway-ui/src/main/java/com/arcosdorados/
 import { swift, kotlin } from './_support/extract'
 import { platformStory, IOS_NATIVE, NOT_COMPILED } from './_support/platform'
 
-const meta = { title: 'Código/Específicos/Pin', component: AwPin, tags: ['autodocs'], argTypes: { status: { control: 'inline-radio', options: ['default', 'incomplete', 'expired'] } }, args: { name: 'Madrugador', status: 'default' } } satisfies Meta<typeof AwPin>
+const meta = { title: 'Componentes/Específicos/Pin 💠', component: AwPin, argTypes: { status: { control: 'inline-radio', options: ['default', 'incomplete', 'expired'] } }, args: { name: 'Madrugador', status: 'default' } } satisfies Meta<typeof AwPin>
 export default meta
 
 export const Playground: StoryObj<typeof meta> = {}

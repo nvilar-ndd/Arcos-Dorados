@@ -7,7 +7,7 @@ import androidSrc from '../../android/archway-ui/src/main/java/com/arcosdorados/
 import { swift, kotlin } from './_support/extract'
 import { platformStory, IOS_NATIVE, NOT_COMPILED } from './_support/platform'
 
-const meta = { title: 'Código/Core/Search', component: AwSearch, tags: ['autodocs'], argTypes: {}, args: { placeholder: 'Buscar', label: 'Buscar productos', disabled: false, modelValue: '' } } satisfies Meta<typeof AwSearch>
+const meta = { title: 'Componentes/Core/Search', component: AwSearch, argTypes: {}, args: { placeholder: 'Buscar', label: 'Buscar productos', disabled: false, modelValue: '' } } satisfies Meta<typeof AwSearch>
 export default meta
 
 export const Playground: StoryObj<typeof meta> = {}

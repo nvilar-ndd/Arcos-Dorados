@@ -1,9 +1,9 @@
-import { Meta, Markdown, Canvas } from '@storybook/blocks'
+import { Meta, Markdown, Canvas, Controls } from '@storybook/blocks'
 import * as Code from '../../../../ui/stories/dialog-popup.stories'
 import { ficha } from '../md'
 import content from '../../../../components/especificos/dialog-popup.md?raw'
 
-<Meta title="Componentes/Específicos/Dialog 💠 Pop-up dashboard" />
+<Meta of={Code} />
 
 <h1 className="doc__title aw-display-medium-bold">Dialog 💠 Pop-up dashboard</h1>
 
@@ -16,6 +16,8 @@ import content from '../../../../components/especificos/dialog-popup.md?raw'
 
 ## Código — Web · iOS · Android
 
-<p className="aw-label-small">Demo web en vivo y código de las tres plataformas. Los controles están en <strong>Código › Específicos</strong>.</p>
+### Variantes y código por plataforma
+
+<p className="aw-label-small">Demo web en vivo y el código real de Web, iOS y Android.</p>
 
 <Canvas of={Code.Plataformas} sourceState="none" />

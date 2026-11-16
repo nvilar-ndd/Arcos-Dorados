@@ -7,7 +7,7 @@ import androidSrc from '../../android/archway-ui/src/main/java/com/arcosdorados/
 import { swift, kotlin } from './_support/extract'
 import { platformStory, IOS_NATIVE, NOT_COMPILED } from './_support/platform'
 
-const meta = { title: 'Código/Core/Switch', component: AwSwitch, tags: ['autodocs'], argTypes: {}, args: { label: 'Notificaciones', disabled: false, skeleton: false, modelValue: true } } satisfies Meta<typeof AwSwitch>
+const meta = { title: 'Componentes/Core/Switch', component: AwSwitch, argTypes: {}, args: { label: 'Notificaciones', disabled: false, skeleton: false, modelValue: true } } satisfies Meta<typeof AwSwitch>
 export default meta
 
 export const Playground: StoryObj<typeof meta> = {}

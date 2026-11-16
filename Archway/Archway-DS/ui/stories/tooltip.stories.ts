@@ -9,7 +9,7 @@ import androidSrc from '../../android/archway-ui/src/main/java/com/arcosdorados/
 import { swift, kotlin } from './_support/extract'
 import { platformStory, IOS_NATIVE, NOT_COMPILED } from './_support/platform'
 
-const meta = { title: 'Código/Core/Tooltip', component: AwTooltip, tags: ['autodocs'], argTypes: { position: { control: 'inline-radio', options: ['top', 'bottom', 'left', 'right'] } }, args: { text: 'Sumá 100 puntos más para tu próximo premio', position: 'bottom', pointer: true, closable: false, open: true } } satisfies Meta<typeof AwTooltip>
+const meta = { title: 'Componentes/Core/Tooltip', component: AwTooltip, argTypes: { position: { control: 'inline-radio', options: ['top', 'bottom', 'left', 'right'] } }, args: { text: 'Sumá 100 puntos más para tu próximo premio', position: 'bottom', pointer: true, closable: false, open: true } } satisfies Meta<typeof AwTooltip>
 export default meta
 
 export const Playground: StoryObj<typeof meta> = {

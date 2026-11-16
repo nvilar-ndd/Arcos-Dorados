@@ -141,7 +141,7 @@ Desarrollados el 16/11/2026 a partir de estas fichas, consumiendo sólo los toke
 
 - **Visual = Figma.** Las propuestas de [audit.md](./audit.md) no se aplicaron; sólo se sumó lo que la accesibilidad exige sin cambiar el visual (área táctil 48 / 44, disabled por token, foco visible, reduce motion) y tokens equivalentes donde Figma tiene hex sueltos (C-T02).
 - **iOS usa nativos** en Switch, NavBar, Top Bar y Search (Nivel 0).
-- En el [Storybook](../storybook), **Código › Core / Específicos**: cada componente tiene *Playground* (controles) y *Web · iOS · Android* (demo en vivo + código de las tres plataformas).
+- En el [Storybook](../storybook), cada componente es una sola entrada en **Componentes › Core / Específicos**: la ficha, el *Playground* (controles) y *Web · iOS · Android* (demo en vivo + código de las tres plataformas).
 - ⚠️ iOS y Android **no se compilaron** en el entorno de generación: validar en Xcode y Android Studio antes de integrarlos.
 
 ## Estructura
