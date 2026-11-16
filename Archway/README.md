@@ -6,7 +6,7 @@ Carpeta padre de todos los sistemas de diseño de Arcos Dorados. **ArchWay es el
 
 | Carpeta | Qué es | Figma | Storybook |
 |---|---|---|---|
-| [`Archway-DS/`](./Archway-DS/README.md) | **ArchWay DS** — el sistema principal: foundations, tokens, audit y guías | [Archway Foundations Library](https://www.figma.com/design/Us1oNLc2wgmgG3aMuT5dJv/-Archway--Foundations--Library) | `Archway-DS/storybook` · 6006 |
+| [`Archway-DS/`](./Archway-DS/README.md) | **ArchWay DS** — el sistema principal: foundations, tokens, [componentes Core y Específicos](./Archway-DS/components/README.md), audit y guías | [Archway Foundations Library](https://www.figma.com/design/Us1oNLc2wgmgG3aMuT5dJv/-Archway--Foundations--Library) · [Design Resources CORE](https://www.figma.com/design/jXe3O8ICmPdNyX6mYbQDVC/Design-Resources-CORE---Archway-) | `Archway-DS/storybook` · 6006 |
 | [`Dashboard/`](./Dashboard/README.md) | **Dashboard DS** — CMS: foundations, componentes (docs + Vue) y estructura | [DashBoard Foundation](https://www.figma.com/design/XKulGF78txFYDLNMstLShZ/-DashBoard--Fuondation) | `Dashboard/storybook` · 6007 |
 | [`ADK/`](./ADK/README.md) | **ADK DS** — kioscos de autoservicio (1080 × 1920): foundations, componentes (docs + Vue) y layout | [[ADK] Design System](https://www.figma.com/design/IAqK97JM1KkMLs1VWGGTkv/-ADK--Design-System) | `ADK/storybook` · 6008 |
 | [`Iconografia/`](./Iconografia/README.md) | **Íconos** de McDonald's Global (216 íconos, 2.699 variantes) ordenados por tipo, manual de creación y export a SVG. Compartidos por todos los sistemas | [Iconography](https://www.figma.com/design/7Hb0VVgTTN1q1RMnVWFYvd/Iconography?node-id=9-11) | — |
@@ -53,7 +53,7 @@ La tipografía Speedee tiene licencia: cada Storybook la carga desde su carpeta 
 ```
 Archway/
 ├── README.md              ← este archivo
-├── Archway-DS/            ← ArchWay: foundations, tokens, audit, guías, storybook
+├── Archway-DS/            ← ArchWay: foundations, componentes, tokens, audit, guías, storybook
 ├── Dashboard/             ← foundations, components, structure, usage, ui (Vue), storybook
 ├── ADK/                   ← foundations, components, ui (Vue), storybook
 ├── Iconografia/           ← íconos compartidos: catálogo por tipo, manual, audit, svg/

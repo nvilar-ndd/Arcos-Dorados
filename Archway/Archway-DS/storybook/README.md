@@ -1,6 +1,6 @@
 # ArchWay Storybook
 
-Visualización de las Foundations de ArchWay. **No define valores propios:** todo sale de [`../tokens/archway.tokens.json`](../tokens/archway.tokens.json), exportado desde Figma (SSOT). Única excepción: la paleta de ilustración (`src/data/illustration-palette.ts`), que en Figma es una tabla de texto y no variables.
+Visualización de las Foundations y los componentes de ArchWay. **No define valores propios:** todo sale de [`../tokens/archway.tokens.json`](../tokens/archway.tokens.json), exportado desde Figma (SSOT). Única excepción: la paleta de ilustración (`src/data/illustration-palette.ts`), que en Figma es una tabla de texto y no variables.
 
 ## Uso
 
@@ -27,6 +27,9 @@ npm run typecheck # vue-tsc, TypeScript strict
 | Foundations › Grilla | Master Frame 412, grilla de 4 columnas y baseline de 8px, interactiva por ancho de viewport |
 | Foundations › Radios | Escala `Valor/radius/*` |
 | Foundations › Elevación | Sombras Shallow / Deep |
+| Componentes › Pirámide y estado | Se renderiza desde `../components/README.md`: niveles, reglas de forma y Liquid Glass, estado de cada componente |
+| Componentes › Core / Específicos | Una página por ficha (`../components/**/*.md`) con el nodo de Figma embebido en vivo arriba (requiere sesión de Figma en el navegador). Los links internos apuntan a GitHub |
+| Componentes › Audit | `../components/audit.md` |
 | Guías › Migración tipográfica | Se renderiza desde `../guides/typography-legacy-migration.md` |
 | Foundations › Motion | Duraciones y curvas animadas, patrones (Scale & Depth, Golden Path, Move) y simulación de "Reducir movimiento" |
 

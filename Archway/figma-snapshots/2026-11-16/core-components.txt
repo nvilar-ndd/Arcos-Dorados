@@ -1,0 +1,78 @@
+# Design Resources CORE – Archway (jXe3O8ICmPdNyX6mYbQDVC) — primer relevamiento 2026-11-16
+# página|component set o componente|variantes|id
+Badge|Badge|2|2133:2088
+Button|Button|80|424:897
+Button|FAB|4|431:2972
+Button|FAB_Extended|4|3256:415
+Button|.Button Loading — Motion|4|4364:265
+Button|Button_Ghost|32|424:567
+Button|Icon_Only|45|431:2891
+Card|.Card (Core)|12|5182:653
+Checkbox / Radio|Checkbox|4|4983:115
+Checkbox / Radio|Radio|4|4993:137
+Chip|Chip|30|548:1953
+Divider|Divider|1|5009:8
+List Item|List Item|4|5010:47
+Imput text field|Placeholder|9|537:14143
+Imput text field|Hint|4|537:14240
+Imput text field|Imput label|2|537:14251
+Imput text field|Imput_Text Field|9|501:1801
+Imput text field|Imput_Text area|9|537:17470
+Imput text field|Imput_Select|3|5001:3921
+Imput text field|Imput_PinCode box|2|5001:3930
+Imput text field|Imput_PinCode|4|5001:4017
+Imput text field|Imput_Password|18|5005:564
+Loading & progress|Progress bar|11|2044:452
+Loading & progress|Progress Circle|35|3944:367
+Loading & progress|Pagination Bullet|2|4465:1181
+Loading & progress|Pagination|6|4465:1188
+Loading & progress|Progress_step|2|4465:1250
+Loading & progress|Progress_stepper|7|4465:1217
+Navigation bars/ TabBar|NavItem|4|2142:1905
+Navigation bars/ TabBar|NavItem_Only|4|2146:1870
+Navigation bars/ TabBar|NavBarCustom|2|2149:2174
+Navigation bars/ TabBar|_Tab Bar Button - iPhone|4|3315:14311
+Search|Search / Android|5|3642:347
+Search|_Search - iPhone|6|3844:2213
+Switch|Switch|10|5447:68
+Switch|Ios Toggle - Switch|2|5499:339
+Skeleton|Skeleton|6|4081:14653
+Tag|Tag|3|581:529
+Tile (category)|Principal categories|1|2117:2661
+Tile (category)|Categories|1|2117:2665
+Tile (category)|Stripe secondary categories|1|2117:2668
+Tile (category)|Category_Secondary|3|2117:2654
+Tile (category)|Category_Primary|3|2117:2647
+Tile (category)|Tile|3|4583:10376
+Toast|Toast / General|4|4709:2086
+Tooltip|Tooltip_Plain|12|2108:2512
+Tooltip|Pointer|4|2108:2728
+Tooltip|Rich Tooltip|12|2316:250
+Top Bar|Top Bar|2|5230:4480
+Top Bar|Top Bar · iOS|2|5230:4489
+Banners|Banner|2|4099:16647
+Card 💠|Card / Voucher|3|4798:9238
+Card 💠|Card|10|4798:9335
+Card 💠|Card / Setting|1|5435:5130
+Dialog 💠 Pop-up|Dialog 💠 Pop-up dashboard|2|5146:3503
+Gamification Bar|Icon Bar|2|2684:4297
+Gamification Bar|Gamification Bar|16|2684:4307
+Gamification Bar|progres Gamification Bar|8|2998:875
+Header|Selection Mode Header|7|2210:2260
+Header|Header|6|2236:2206
+Header|background_home|1|2396:3968
+Header|State|3|2290:2526
+Loading & progress 💠|ProgressBar_beneficios|3|5253:2593
+Loading & progress 💠|Progress bar misiones|3|5253:2613
+Loyalty|Loyalty home card|2|4100:16736
+Pin 💠|Pin|3|5277:5
+Products Cards & Carrousels|Carrousel cards / Classic / Small|5|2220:2452
+Products Cards & Carrousels|Carrousel cards / Classic / Big|3|2483:855
+Products Cards & Carrousels|Carrousel cards / New|6|2220:2258
+Tile 💠 Misiones|Tile 💠 Misiones|3|5265:4129
+Status bar|Status bar custom|1|5056:1729
+iOs|_Tab Bar Button - iPhone|—|4519:12994
+iOs|_Search - iPhone|—|4519:13459
+Utilidades|Medida|1|2393:3411
+Utilidades|indicador de numero|1|2567:5634
+Utilidades|Utiidades_Enlace del flujo|1|5503:360

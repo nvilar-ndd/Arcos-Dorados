@@ -11,8 +11,7 @@
 | Capa | Archivo Figma | Estado |
 |---|---|---|
 | Foundations | [Archway Foundations Library](https://www.figma.com/design/Us1oNLc2wgmgG3aMuT5dJv/-Archway--Foundations--Library) | Documentado · revisado 2026-11-16 |
-| Core components | — | Próxima fase. La página *Utilities* ya tiene la plantilla `Header` (*Base para componente*) para documentarlos |
-| Squad components | — | Próxima fase |
+| Core components y Específicos | [Design Resources CORE – Archway](https://www.figma.com/design/jXe3O8ICmPdNyX6mYbQDVC/Design-Resources-CORE---Archway-) (librería *Design Resources CORE [Archway]*) | Documentado · 19 Core + 10 Específicos · [components/](./components/README.md) |
 
 ### Flujo de cambios
 
@@ -51,6 +50,10 @@ Figma (SSOT) ──► extracción vía MCP ──► audit.md (propuestas)
 
 Foundations que todavía no existen en Figma (iconografía, breakpoints, opacidad, z-index, border width) están listadas como propuestas en [`audit.md`](./audit.md#-p2--foundations-faltantes).
 
+## Componentes
+
+[`components/`](./components/README.md) — pirámide (Nativos iOS · Core · Compuestos · Específicos 💠), reglas de forma y Liquid Glass, tabla de estado y una ficha por componente: 19 Core ([Button](./components/core/button.md), [Chip](./components/core/chip.md), [Input](./components/core/input.md), [Card](./components/core/card.md), [Switch](./components/core/switch.md)…) y 10 Específicos ([Header](./components/especificos/header.md), [Gamification Bar](./components/especificos/gamification-bar.md), [Product Card](./components/especificos/product-cards.md)…). Hallazgos en [`components/audit.md`](./components/audit.md).
+
 ## Tokens
 
 [`tokens/archway.tokens.json`](./tokens/archway.tokens.json) — export completo en formato [W3C Design Tokens (DTCG)](https://www.designtokens.org/tr/drafts/format/), con alias preservados (`{primitives.color.gold.500}`) y el nombre original de Figma en `$extensions.figma`. Es la entrada para Storybook y para la transformación a Tailwind (Web), Swift (iOS) y Kotlin (Android).
@@ -81,7 +84,8 @@ ArchWay es el destino de los demás sistemas. El plan de unificación está en [
 ```
 Archway/Archway-DS/
 ├── README.md
-├── audit.md                  ← propuestas pendientes de aprobación
+├── audit.md                  ← propuestas de Foundations pendientes de aprobación
+├── components/               ← fichas Core y Específicos + audit de componentes
 ├── glossary.md
 ├── guides/
 │   └── typography-legacy-migration.md
