@@ -1,6 +1,6 @@
 # ArchWay Storybook
 
-Visualización de las Foundations de ArchWay. **No define valores propios:** todo sale de [`../tokens/archway.tokens.json`](../tokens/archway.tokens.json), exportado desde Figma (SSOT).
+Visualización de las Foundations de ArchWay. **No define valores propios:** todo sale de [`../tokens/archway.tokens.json`](../tokens/archway.tokens.json), exportado desde Figma (SSOT). Única excepción: la paleta de ilustración (`src/data/illustration-palette.ts`), que en Figma es una tabla de texto y no variables.
 
 ## Uso
 
@@ -21,8 +21,8 @@ npm run typecheck # vue-tsc, TypeScript strict
 |---|---|
 | ArchWay › Introducción | Flujo Figma → audit → tokens → Storybook y reglas de consumo |
 | ArchWay › Glosario | Se renderiza desde `../glossary.md` |
-| Foundations › Color | Semánticos (con alias y uso), Primitivos por familia + gradientes, Contraste WCAG calculado en vivo |
-| Foundations › Tipografía | Los 20 text styles renderizados con sus variables `Font/*` |
+| Foundations › Color | Semánticos (con alias y uso), Primitivos por familia + gradientes, Contraste WCAG calculado en vivo, Paleta de ilustración (referencia, no tokens) |
+| Foundations › Tipografía | Los 20 text styles renderizados con sus variables `Font/*` y el simulador del tamaño de letra del sistema (topes +30 % / el doble) |
 | Foundations › Espaciado | Escala `Valor/spacing/*` |
 | Foundations › Grilla | Master Frame 412, grilla de 4 columnas y baseline de 8px, interactiva por ancho de viewport |
 | Foundations › Radios | Escala `Valor/radius/*` |

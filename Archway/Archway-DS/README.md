@@ -10,8 +10,8 @@
 
 | Capa | Archivo Figma | Estado |
 |---|---|---|
-| Foundations | [Archway Foundations Library](https://www.figma.com/design/Us1oNLc2wgmgG3aMuT5dJv/-Archway--Foundations--Library) | Documentado |
-| Core components | — | Próxima fase |
+| Foundations | [Archway Foundations Library](https://www.figma.com/design/Us1oNLc2wgmgG3aMuT5dJv/-Archway--Foundations--Library) | Documentado · revisado 2026-11-16 |
+| Core components | — | Próxima fase. La página *Utilities* ya tiene la plantilla `Header` (*Base para componente*) para documentarlos |
 | Squad components | — | Próxima fase |
 
 ### Flujo de cambios
@@ -34,8 +34,8 @@ Figma (SSOT) ──► extracción vía MCP ──► audit.md (propuestas)
 
 | Foundation | Documento | Fuente en Figma |
 |---|---|---|
-| Color | [foundations/color.md](./foundations/color.md) | Variables `Primitives` + `Semantic`, estilos Loyalty |
-| Tipografía | [foundations/typography.md](./foundations/typography.md) | 20 text styles + variables `Font/*` |
+| Color | [foundations/color.md](./foundations/color.md) | Variables `Primitives` + `Semantic`, estilos Loyalty, guía de uso y paleta de ilustración |
+| Tipografía | [foundations/typography.md](./foundations/typography.md) | 20 text styles + variables `Font/*` · topes de tamaño de letra del sistema |
 | Espaciado | [foundations/spacing.md](./foundations/spacing.md) | Variables `Valor/*`, `Valor/spacing/*` |
 | Grilla y layout | [foundations/grid.md](./foundations/grid.md) | Estilos `Aw_Layout/col`, `Aw_Layout/Grid` |
 | Radios | [foundations/radius.md](./foundations/radius.md) | Variables `Valor/radius/*` |

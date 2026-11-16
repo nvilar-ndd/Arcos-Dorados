@@ -15,7 +15,7 @@ type Story = StoryObj<typeof meta>
 
 const panel = (collapsedInit: boolean) => ({
   components: { DbSidebar, DbIconButton },
-  setup: () => ({ mainNav, Sun, Languages, current: ref<string | null>('service-fee'), collapsed: ref(collapsedInit) }),
+  setup: () => ({ mainNav, Sun, Languages, current: ref<string | null>('eta'), collapsed: ref(collapsedInit) }),
   template: `<div class="flex h-[720px] gap-300">
     <DbSidebar v-model:current="current" v-model:collapsed="collapsed" :items="mainNav">
       <template #footer>

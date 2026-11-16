@@ -5,6 +5,10 @@
  * Columnas: nombre + código · tipo/subtipo · vigencia + fechas · estado · toggle · menú de acciones.
  * Uso exclusivo para entidades gestionables (si es sólo lectura: DbDataTable).
  * Los estados y textos son los del ejemplo de promociones de Figma.
+ *
+ * Variante `change-order` (State=change-order, 6872:5073, nueva en Figma el 2026-11):
+ * columna "Orden" a la izquierda, nombre + tipo/subtipo, "Destino" (Tag-operations + texto, p. ej. PLU)
+ * y vigencia sin fechas de creación/modificación. Para listas cuyo orden de prioridad se edita.
  */
 import { computed } from 'vue'
 import { Calendar, Copy, EllipsisVertical } from 'lucide-vue-next'
@@ -16,8 +20,19 @@ import DbToggle from './DbToggle.vue'
 export type DbEntityStatus =
   | 'proxima' | 'activa' | 'inactiva' | 'expirada' | 'borrador' | 'cargando' | 'pendiente' | 'archivada'
 
+export interface DbCardListDestination {
+  /** Tipo de destino, va en el Tag-operations (`tag/background-blue`): "PLU", "URL"… */
+  kind: string
+  /** Producto o URL de destino. */
+  label: string
+}
+
 export interface DbCardListItem {
   name: string
+  /** Posición en la lista (variante change-order). `undefined` → "—". */
+  order?: number
+  /** Destino de la promoción (variante change-order). */
+  destination?: DbCardListDestination
   code?: string
   type?: string
   subtype?: string
@@ -30,8 +45,14 @@ export interface DbCardListItem {
 const active = defineModel<boolean>('active', { default: false })
 
 const props = withDefaults(
-  defineProps<{ item: DbCardListItem; actions?: DbMenuItem[]; headingLevel?: 2 | 3 | 4 }>(),
-  { actions: () => [], headingLevel: 3 },
+  defineProps<{
+    item: DbCardListItem
+    actions?: DbMenuItem[]
+    headingLevel?: 2 | 3 | 4
+    /** `State` de Figma: `default` o `change-order`. */
+    state?: 'default' | 'change-order'
+  }>(),
+  { actions: () => [], headingLevel: 3, state: 'default' },
 )
 const emit = defineEmits<{ action: [value: string]; copy: [code: string] }>()
 
@@ -48,14 +69,49 @@ const STATUS: Record<DbEntityStatus, { tag: string; tone: DbTagTone; title: stri
 }
 
 const s = computed(() => STATUS[props.item.status])
+const ordering = computed(() => props.state === 'change-order')
 </script>
 
 <template>
   <article
-    class="db-ui grid w-full grid-cols-[1fr_auto] items-center gap-200 rounded-md border border-border-02 bg-layer-01 p-200 lg:grid-cols-[minmax(0,2fr)_minmax(0,1.3fr)_minmax(0,1fr)_auto_auto]"
+    :class="[
+      'db-ui grid w-full items-center gap-200 rounded-md border border-border-02 bg-layer-01 p-200',
+      ordering
+        ? 'grid-cols-[auto_1fr_auto] lg:grid-cols-[auto_minmax(0,1.6fr)_minmax(0,1.3fr)_minmax(0,1.2fr)_minmax(0,1fr)_auto_auto]'
+        : 'grid-cols-[1fr_auto] lg:grid-cols-[minmax(0,2fr)_minmax(0,1.3fr)_minmax(0,1fr)_auto_auto]',
+    ]"
   >
+    <!-- Orden (change-order) -->
+    <div v-if="ordering" class="flex flex-col items-center gap-100">
+      <span class="db-label01 text-text-primary">Orden</span>
+      <span class="db-label03 text-text-primary" :aria-label="item.order === undefined ? 'Sin orden' : `Posición ${item.order}`">{{ item.order ?? '—' }}</span>
+    </div>
+
+    <!-- Change-order: nombre + tipo/subtipo -->
+    <div v-if="ordering" class="flex min-w-0 flex-col gap-100">
+      <component :is="`h${headingLevel}`" class="db-label03 truncate text-text-primary">{{ item.name }}</component>
+      <div class="flex flex-wrap items-center gap-200">
+        <span v-if="item.type" class="db-label03 text-text-primary">{{ item.type }}</span>
+        <span v-if="item.subtype" class="db-label02 text-text-primary">{{ item.subtype }}</span>
+      </div>
+    </div>
+
+    <!-- Change-order: destino -->
+    <div v-if="ordering" class="hidden min-w-0 items-center gap-200 lg:flex">
+      <DbDivider orientation="vertical" />
+      <div v-if="item.destination" class="flex min-w-0 flex-col items-start gap-100">
+        <DbTag :label="item.destination.kind" tone="info" />
+        <span class="db-label02 truncate text-text-primary">{{ item.destination.label }}</span>
+      </div>
+    </div>
+
+    <!-- Change-order: vigencia -->
+    <span v-if="ordering && item.dateRange" class="db-label02 hidden items-center gap-100 text-text-primary lg:inline-flex">
+      <Calendar class="size-200 text-icon-primary" aria-hidden="true" />{{ item.dateRange }}
+    </span>
+
     <!-- Nombre, tag de publicación, código, tipo -->
-    <div class="flex min-w-0 flex-col gap-100">
+    <div v-if="!ordering" class="flex min-w-0 flex-col gap-100">
       <div class="flex items-center gap-200">
         <component :is="`h${headingLevel}`" class="db-label03 truncate text-text-primary">{{ item.name }}</component>
         <DbTag :label="s.tag" :tone="s.tone" />
@@ -79,7 +135,7 @@ const s = computed(() => STATUS[props.item.status])
     </div>
 
     <!-- Vigencia -->
-    <div class="hidden min-w-0 flex-col gap-100 lg:flex">
+    <div v-if="!ordering" class="hidden min-w-0 flex-col gap-100 lg:flex">
       <span v-if="item.dateRange" class="db-label02 inline-flex items-center gap-100 text-text-primary">
         <Calendar class="size-200 text-icon-primary" aria-hidden="true" />{{ item.dateRange }}
       </span>
@@ -96,7 +152,7 @@ const s = computed(() => STATUS[props.item.status])
     </div>
 
     <!-- Toggle + acciones -->
-    <div class="col-start-2 row-start-1 flex items-center gap-200 lg:col-start-auto lg:row-start-auto">
+    <div :class="[ordering ? 'col-start-3' : 'col-start-2', 'row-start-1 flex items-center gap-200 lg:col-start-auto lg:row-start-auto']">
       <DbToggle
         :model-value="s.toggle === 'on' ? true : s.toggle === 'off' ? false : active"
         :disabled="s.toggle === 'locked'"
@@ -104,7 +160,7 @@ const s = computed(() => STATUS[props.item.status])
         @update:model-value="active = $event"
       />
     </div>
-    <div class="col-start-2 flex justify-end lg:col-start-auto">
+    <div :class="[ordering ? 'col-start-3' : 'col-start-2', 'flex justify-end lg:col-start-auto']">
       <DbMenu
         v-if="actions.length"
         :items="actions"

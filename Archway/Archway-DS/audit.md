@@ -1,10 +1,23 @@
 # Audit — ArchWay Foundations
 
-> **Archivo auditado:** [Archway Foundations Library (Figma)](https://www.figma.com/design/Us1oNLc2wgmgG3aMuT5dJv/-Archway--Foundations--Library) · **Fecha:** 2026-10-07 · **Revisado contra Figma:** 2026-10-15 · **Método:** extracción de variables y estilos vía Figma MCP + cálculo de contraste WCAG 2.1 sobre valores resueltos.
+> **Archivo auditado:** [Archway Foundations Library (Figma)](https://www.figma.com/design/Us1oNLc2wgmgG3aMuT5dJv/-Archway--Foundations--Library) · **Fecha:** 2026-10-07 · **Revisado contra Figma:** 2026-11-16 · **Método:** extracción de variables y estilos vía Figma MCP + cálculo de contraste WCAG 2.1 sobre valores resueltos.
 >
 > **Flujo:** cada hallazgo queda `Pendiente` hasta que el equipo lo **aprueba** o lo **rechaza**. Sólo lo aprobado se aplica en Figma (SSOT) y, después, se regenera la documentación. Nada de este archivo está aplicado todavía.
 
-## Cambios en Figma desde la versión anterior (2026-10-15)
+## Cambios en Figma al 2026-11-16
+
+**Sin cambios de valores**: las 119 variables de Primitives y las 126 de Semantic, los 20 text styles, los 6 effect styles, los gradientes y la grilla son idénticos a la revisión del 15/10. Lo nuevo es documentación en el canvas y un ajuste de scopes. Ningún ítem P0 se resolvió.
+
+| Página | Cambio | Impacto en el audit |
+|---|---|---|
+| Variables | Primitivos `violet/*` sin scopes (ocultos de los selectores, como el resto) | Cierra el punto de violet en S-03 y S-06 |
+| Colors | Guía *Cómo usar los colores*, glosario +5 términos (17), *Change Log — Colores* y la Color Guide de ilustraciones | Glosario y [color.md](./foundations/color.md) actualizados. Nuevos H-01 (`Chip/selected-bg`) y H-02 (paleta de ilustración) |
+| Typography | Topes con el tamaño de letra del sistema (acordado con iOS y Android el 16/10), fichas de muestra corregidas, *Change Log — Typography* y dos fichas de referencia Material en Roboto | [typography.md](./foundations/typography.md) actualizado. Nuevo F-08 (tope en Web) y pregunta en F-02 (Roboto) |
+| Utilities | Sección *Base para componente*: componente `Header` para documentar componentes con el rótulo "Archway" (texto aún en lorem ipsum) | Primer paso hacia Core components. Sin componentes de ArchWay publicados todavía |
+| Spacing, Elevations | Ajustes menores de texto en las tablas (±16 caracteres) | Sin impacto |
+| Grid, Corner Radius, Motion, Accesibilidad, Color_Investigacion | Sin cambios | — |
+
+## Cambios en Figma al 2026-10-15
 
 El equipo renombró y limpió las variables de color. Esto **resuelve S-02** y resuelve en parte S-03, S-04, S-05, S-06, S-07 y H-01. Los P0 (A-01…A-06) siguen pendientes: los valores no cambiaron, sólo los nombres. La tabla completa de renombres está en [`foundations/color.md`](./foundations/color.md) y en `Convergencia/*`.
 
@@ -24,8 +37,8 @@ El equipo renombró y limpió las variables de color. Esto **resuelve S-02** y r
 |---|---|---|
 | 🔴 P0 — Accesibilidad | 6 | Pares de color que fallan WCAG AA o descripciones que inducen a un uso que falla |
 | 🟠 P1 — Estructura y consistencia | 10 | Arquitectura de tokens, duplicados, scopes, naming |
-| 🟡 P2 — Foundations faltantes | 7 | Lo que el sistema necesita para App + Web + Dashboard + Kiosco ADK |
-| ⚪ P3 — Higiene | 1 | Typos y descripciones |
+| 🟡 P2 — Foundations faltantes | 8 | Lo que el sistema necesita para App + Web + Dashboard + Kiosco ADK |
+| ⚪ P3 — Higiene | 2 | Typos, descripciones y paleta de ilustración |
 
 ### Tablero de decisiones
 
@@ -39,22 +52,24 @@ El equipo renombró y limpió las variables de color. Esto **resuelve S-02** y r
 | A-06 | Dorado como único indicador de estado sobre blanco: 1.69:1 | 🔴 P0 | Pendiente |
 | S-01 | Tokens de componente (`Button/*`, `Chip/*`) mezclados en Semantic | 🟠 P1 | Pendiente |
 | S-02 | Duplicados: `Background/0x` = `Layer/0x`, `Surface/default` = `Layer/01` | 🟠 P1 | ✅ Resuelto (2026-10-15) |
-| S-03 | Scopes: 6 semánticos siguen con `ALL_SCOPES`; radius con `FONT_VARIATIONS` | 🟠 P1 | 🟡 Parcial |
+| S-03 | Scopes: 6 semánticos siguen con `ALL_SCOPES`; radius con `FONT_VARIATIONS` (violet resuelto el 13/10) | 🟠 P1 | 🟡 Parcial |
 | S-04 | `codeSyntax`: sólo Android; faltan Web, iOS y los 40 numéricos | 🟠 P1 | 🟡 Parcial |
 | S-05 | Naming: queda el prefijo `Valor/` y la escala de radius sin `XL` | 🟠 P1 | 🟡 Parcial |
-| S-06 | Escala `violet`: 100 corregido; 900 sigue siendo azul, sin descripciones | 🟠 P1 | 🟡 Parcial |
+| S-06 | Escala `violet`: 100 corregido y scopes resueltos; 900 sigue siendo azul, sin descripciones | 🟠 P1 | 🟡 Parcial |
 | S-07 | `Primary/Color` eliminado; queda `Number` = 0 en Primitives | 🟠 P1 | 🟡 Parcial |
 | S-08 | Escalas de color con pasos desparejos (50 y 950 sólo en algunas) | 🟠 P1 | Pendiente |
 | S-09 | Estados de botón/chip sin jerarquía (focus = pressed; disabled más fuerte que enabled) | 🟠 P1 | Pendiente |
 | S-10 | Sombras, grilla y gradientes no enlazados a variables | 🟠 P1 | Pendiente |
 | F-01 | Sin breakpoints ni grillas para Web, Dashboard y Kiosco | 🟡 P2 | Pendiente |
-| F-02 | Escala tipográfica sólo mobile (no contempla Kiosco ni Desktop) | 🟡 P2 | Pendiente |
+| F-02 | Escala tipográfica sólo mobile (no contempla Kiosco ni Desktop); fichas Roboto sin definir | 🟡 P2 | Pendiente |
 | F-03 | Radius: falta `XL` y `full` | 🟡 P2 | Pendiente |
 | F-04 | Spacing: falta `12` semántico; spacing usado para stroke | 🟡 P2 | Pendiente |
 | F-05 | Motion sólo como texto (no variables); sin Opacity, Z-index, Border width | 🟡 P2 | Pendiente |
 | F-06 | Iconografía: existe en archivo propio (documentada en `Archway/Iconografia`); faltan tokens de tamaño y binding de color | 🟡 P2 | 🟡 Parcial |
 | F-07 | Sin modo Dark | 🟡 P2 | Pendiente |
+| F-08 | Tope de escalado de texto definido para iOS y Android, no para Web | 🟡 P2 | Pendiente |
 | H-01 | Typos y descripciones a corregir | ⚪ P3 | 🟡 Parcial |
+| H-02 | Paleta de ilustración en *Colors* con hex mal cargados y duplicados | ⚪ P3 | Pendiente |
 
 ---
 
@@ -163,7 +178,7 @@ Los alias que siguen compartiendo valor (`Feedback/warning` = `Interactive/activ
 
 ### S-03 · Scopes — 🟡 Parcial (2026-10-15)
 
-**Resuelto:** 120 de 126 semánticos tienen scopes específicos (`TEXT_FILL`, `FRAME_FILL`+`SHAPE_FILL`, `STROKE_COLOR`, etc.) y los primitivos están ocultos del publishing.
+**Resuelto:** los primitivos `violet/*` ya no tienen scopes, como el resto (13/10). 120 de 126 semánticos tienen scopes específicos (`TEXT_FILL`, `FRAME_FILL`+`SHAPE_FILL`, `STROKE_COLOR`, etc.) y los primitivos están ocultos del publishing.
 
 **Pendiente:**
 
@@ -172,7 +187,6 @@ Los alias que siguen compartiendo valor (`Feedback/warning` = `Interactive/activ
 | `Feedback/error`, `Feedback/success`, `Feedback/warning`, `Feedback/info` | `ALL_SCOPES` | `SHAPE_FILL`, `STROKE_COLOR`, `FRAME_FILL` |
 | `Feature/missions`, `Feature/accessibility` | `ALL_SCOPES` | Según uso: `TEXT_FILL` o `SHAPE_FILL` |
 | `Valor/radius/*` | `CORNER_RADIUS`, `FONT_VARIATIONS` | Sólo `CORNER_RADIUS` |
-| `color/violet/*` (primitivos) | `ALL_SCOPES` | Ninguno, como el resto de los primitivos |
 
 ### S-04 · `codeSyntax` — 🟡 Parcial (2026-10-15)
 
@@ -209,7 +223,8 @@ Lo puedo aplicar vía MCP una vez aprobado.
 
 - ✅ `violet/100` ahora es `#e7d7fe` (antes igual a `violet/200`).
 - ❌ `violet/900` = `#001742` sigue siendo un **azul marino**; `violet/800` `#1b0141` sí es violeta. Propuesta: ≈ `#10002e`.
-- ❌ Sin descripciones y con `ALL_SCOPES` (ver S-03).
+- ✅ Sin scopes, como el resto de los primitivos (13/10/2026).
+- ❌ Sin descripciones.
 
 Hoy sólo la usa `Highlight/new` (`violet/400`).
 
@@ -277,6 +292,7 @@ La escala (12–36) es mobile. En kiosco (pantalla de 32"+, usuario a ~60 cm) un
 Además:
 - `Label Medium` y `Label Small` tienen interlineado 16 sobre 14px (1.14). Funciona en una línea, pero si el label rompe en dos (traducciones PT/ES) las líneas se pisan visualmente. Proponer 20 para `Label Medium`.
 - Los estilos `Italic` para legales reducen legibilidad en tamaño 12; considerar `Body Small` regular + color `Text/secondary` para disclaimers largos.
+- **Fichas Roboto (Android + Web)** en la página *Typography*: reproducen la escala de Material 3 (Body 16/14/12, Label 14/12/11 en Medium). No son estilos. Definir si son sólo referencia o si Android/Web tienen un *fallback* Roboto; en ese caso, `Label Small` 11 rompe el piso de 12 del sistema.
 
 ### F-03 · Radius
 
@@ -317,11 +333,21 @@ La librería de Foundations no documenta íconos, pero **existen en un archivo p
 
 Semantic tiene un único modo `Light`. Las variantes `-on-black` y `Link/inverse-*` son parches por contexto. Si dark mode está en el roadmap de la App, conviene agregarlo como **segundo modo de la colección Semantic** ahora, cuando hay pocos componentes, en vez de seguir sumando variantes `-on-black`. Si no está en el roadmap, documentarlo explícitamente como fuera de alcance.
 
+### F-08 · Tope de escalado en Web
+
+Figma define el tope de crecimiento con el tamaño de letra del sistema para iOS (+30 % / el doble) y Android (`fontScale` 1,3 / 2,0), pero no para Web (eCommerce, Dashboard) ni para Kiosco.
+
+**Propuesta:** Web usa `rem` y respeta el tamaño base del navegador; los estilos Display, Heading y Label se acotan con `clamp()` a 1,3× y Body a 2×, igual que en mobile. En Kiosco (ADK) el texto no escala con el sistema: la accesibilidad pasa por el modo accesible del ADK. Documentarlo en [typography.md](./foundations/typography.md#tamaño-de-letra-del-sistema) una vez aprobado.
+
+**Fundamento:** WCAG 1.4.4 (Resize text, 200 %) — Body llega al doble; los Label topeados deben seguir siendo legibles y el contenido no debe perderse.
+
 ---
 
 ## ⚪ P3 — Higiene
 
-### H-01 · Typos y descripciones — 🟡 Parcial (2026-10-15)
+### H-01 · Typos y descripciones
+
+**Estado:** 🟡 Parcial (revisado 2026-11-16, sin cambios desde el 15/10).
 
 **Resuelto:** el typo `Feacture` en el nombre del grupo.
 
@@ -343,18 +369,23 @@ Semantic tiene un único modo `Light`. Las variantes `-on-black` y `Link/inverse
 | `Shallow/M.Elev-2` y `Shallow/H.Elev-3` | Misma descripción: no queda claro cuándo usar cada nivel |
 | `Deep/L`, `Deep/M`, `Deep/H` | Las tres comparten descripción |
 | `color/violet/*` | Sin descripciones |
-
----|---|
-| `Feacture/*` | Typo en el nombre del grupo → `Feature` |
-| `Valor/radius/XXL` | "Uso en headerer" |
-| `Valor/radius/L` | "…modales de pantalla completa.e" |
-| `Button/primary-bg-focused` | Termina en `&quot;` |
-| `Link/default` | "Texto que navega a otra pantalla; si ejecuta una acción." (frase incompleta: ¿link vs botón?) |
-| `Feedback/warning`, `Feedback/warning-surface` | Descripción entre paréntesis sin uso concreto |
-| `Shallow/M.Elev-2` y `Shallow/H.Elev-3` | Misma descripción: no queda claro cuándo usar cada nivel |
-| `Deep/L`, `Deep/M`, `Deep/H` | Las tres comparten descripción |
-| `color/violet/*` | Sin descripciones |
+| Guía *Cómo usar los colores* (página Colors) | Escribe `Chip/selected-bg`; la variable es `Chip/bg-selected` |
+| Frame de la paleta de ilustración | "Iustraciones" → "Ilustraciones" |
 | `Border/default`, `Feedback/*-surface` | Descripciones con espacios iniciales / saltos de línea |
+
+### H-02 · Paleta de ilustración en Colors
+
+La Color Guide de ilustraciones copiada en *Colors* (13/10) arrastra los errores de la tabla del ADK ([ADK audit](../ADK/audit.md)):
+
+| Color | En Figma | Propuesta |
+|---|---|---|
+| Ground Shadow | `#F1F1F` | `#F1F1F1` (es el valor que usa el ADK) |
+| Hashbrown | `#E8970` | Confirmar el sexto dígito con Global |
+| Sesame Seed Bun & Artisanal Bun · Ham Dark | `EC9D47` · `AF6150` | Agregar `#` |
+| Pickle Dark | `#66881E` (= Lettuce Dark) | Confirmar si es intencional |
+| Light Card Purple | Repetido | Borrar la fila duplicada |
+
+Además, al vivir en la librería de Foundations puede confundirse con la paleta de UI. **Propuesta:** dejarla sólo en el archivo *Illustrations Guide* o convertirla en estilos `Illustrations/*` ([L-C01](../Ilustraciones/README.md)), y enlazarla desde *Colors*.
 
 ---
 

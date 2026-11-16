@@ -1,7 +1,7 @@
 # Tipografía
 
 > **Fuente de la verdad:** [Archway Foundations Library (Figma)](https://www.figma.com/design/Us1oNLc2wgmgG3aMuT5dJv/-Archway--Foundations--Library) — 20 estilos de texto locales, todos con propiedades enlazadas a variables `Font/*` de la colección **Semantic**.
-> **Extraído vía Figma MCP:** 2026-10-07 · **Estado:** documentado tal cual está en Figma. Las propuestas de mejora viven en [`audit.md`](../audit.md) y no se aplican hasta su aprobación.
+> **Extraído vía Figma MCP:** 2026-10-07 · **Revisado:** 2026-11-16 · **Estado:** documentado tal cual está en Figma. Las propuestas de mejora viven en [`audit.md`](../audit.md) y no se aplican hasta su aprobación.
 
 ## Familia
 
@@ -99,9 +99,58 @@ En una migración 1:1 el texto de 14 queda en 14. Al **rediseñar** una pantalla
 ## Lineamientos de accesibilidad
 
 - Tamaño mínimo del sistema: **12px** (`Font/size/xs`). No hay estilos por debajo.
-- Los tamaños deben escalar con la preferencia del usuario: **Dynamic Type** en iOS, **sp** en Android y **rem** en web (16px = 1rem).
+- Los tamaños deben escalar con la preferencia del usuario: **Dynamic Type** en iOS, **sp** en Android y **rem** en web (16px = 1rem), con los topes de la tabla siguiente.
 - WCAG 1.4.12 (Text Spacing): los contenedores no deben cortar texto si el usuario aumenta interlineado/tracking — evitar alturas fijas en componentes con texto.
 - Color de texto: sólo tokens `Text/*`, `Link/*` o `*-text` (ver [color.md](./color.md)).
+
+### Tamaño de letra del sistema
+
+Los estilos crecen cuando la persona agranda la letra en los ajustes del teléfono, **hasta un tope por grupo**: el texto de lectura sigue siendo legible y la UI (tab bar, badges, botones) no se rompe. Acordado con iOS y Android el **16/10/2026** (sección *Tamaño de letra del sistema* del Handoff de la página *Typography*).
+
+| Grupo | Tope iOS | Tope Android | Ejemplo |
+|---|---|---|---|
+| Display, Heading, Label | +30 % (máximo fuera del modo de accesibilidad) | `fontScale` 1,3 | Label Small: 12 → 16 |
+| Body (`Text/Body *`) | El doble | `fontScale` 2,0 | Body Medium: 14 → 28 |
+
+- En el tab bar nativo de iOS, la etiqueta ampliada se muestra al mantener presionado (*Large Content Viewer*), así que el ítem no necesita crecer.
+- **Web:** Figma no define tope. Por consistencia, aplicar el mismo criterio con `rem` + `clamp()` (Label hasta 1,3×, Body hasta 2×). Queda como propuesta en [F-08](../audit.md#f-08--tope-de-escalado-en-web).
+- Diseñar los contenedores para el tope: alturas mínimas, no fijas, y textos que puedan pasar a dos líneas.
+
+**En código**
+
+```swift
+// iOS — Display/Heading/Label topean en el último tamaño fuera de accesibilidad (+30 %)
+Text(title).font(.aw(.labelSmall))
+  .dynamicTypeSize(...DynamicTypeSize.xxxLarge)
+```
+
+```kotlin
+// Android — Label/Display/Heading: fontScale máx. 1,3 · Body: 2,0
+@Composable
+fun cappedSp(base: Float, maxScale: Float): TextUnit {
+  val density = LocalDensity.current
+  val scale = density.fontScale.coerceAtMost(maxScale)
+  return with(density) { (base * scale).dp.toSp() }
+}
+```
+
+```css
+/* Web (propuesta F-08) */
+.aw-label-small { font-size: clamp(0.75rem, 0.75rem * var(--aw-user-scale, 1), 0.75rem * 1.3); }
+```
+
+### Referencia Material (Android + Web)
+
+La página tiene dos fichas sueltas con la escala de Material 3 en **Roboto** (Body Large 16/24 +0.5 · Body Medium 14/20 +0.25 · Body Small 12/16 +0.4 · Label Large Medium 14/20 +0.1 · Label Medium Medium 12/16 +0.5 · Label Small Medium 11/16 +0.5). **No son estilos ni variables**: se documentan como referencia de comparación. La familia de ArchWay en todas las plataformas sigue siendo Speedee; si la intención es definir un *fallback* Roboto para Android/Web, queda como pregunta en [F-02](../audit.md#f-02--tipografía-para-kiosco-y-desktop).
+
+## Historial en Figma
+
+Resumen del *Change Log — Typography* (autora: Rochi).
+
+| Fecha | Cambio |
+|---|---|
+| 29/09/2026 | Renombre de Body para alinear con Material: Body Medium → Body Large, Body Small → Body Medium, Body Extra Small → Body Small |
+| 16/10/2026 | Topes con el tamaño de letra del sistema (tabla de arriba). Fichas de muestra corregidas para coincidir con los estilos: Heading Medium 20/28 (decía 20/38), Label Medium 14/16 (decía 14/20), Heading Small sin tracking, Label Small Bold con su estilo aplicado. Los 20 text styles no cambiaron |
 
 ## Para desarrollo
 

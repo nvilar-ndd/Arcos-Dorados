@@ -92,7 +92,7 @@ En una migración 1:1 el texto de 14 queda en 14. Al rediseñar una pantalla, ev
   - SwiftUI: `lineSpacing = LH − tamaño` (ej. Body Medium 20 − 14 = 6) + padding vertical. Usar un helper común.
   - Compose: `lineHeight` en sp, `LineHeightStyle` centrado y `trim = None`.
 - **Decoraciones y color:** subrayado y tachado en el componente (`.underline()` / `.strikethrough()` · `TextDecoration.Underline` / `LineThrough`). El color siempre sale de tokens `color/text/*` o `color/feedback/*`.
-- **Accesibilidad:** definir si los estilos escalan con Dynamic Type (iOS) y font scale (Android). Los Label de tab bar y badges son los primeros en romperse.
+- **Accesibilidad:** los estilos escalan con el tamaño de letra del sistema con tope por grupo: Display, Heading y Label hasta +30 % (iOS: máximo fuera del modo de accesibilidad · Android: `fontScale` 1,3); Body hasta el doble (`fontScale` 2,0). Acordado con iOS y Android el 16/10/2026; detalle en [typography.md](../foundations/typography.md#tamaño-de-letra-del-sistema).
 
 ## QA visual
 

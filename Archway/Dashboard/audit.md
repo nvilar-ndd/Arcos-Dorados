@@ -1,6 +1,6 @@
 # Audit — Dashboard Foundations
 
-> **Archivo auditado:** [DashBoard Foundation (Figma)](https://www.figma.com/design/XKulGF78txFYDLNMstLShZ/-DashBoard--Fuondation) · **Fecha:** 2026-10-07 · **Revisado contra Figma:** 2026-10-15 (nuevo Empty state, D-C15 y D-C16) · **Método:** extracción de variables, estilos y páginas vía Figma MCP + contraste WCAG 2.1 en modo Light y Dark.
+> **Archivo auditado:** [DashBoard Foundation (Figma)](https://www.figma.com/design/XKulGF78txFYDLNMstLShZ/-DashBoard--Fuondation) · **Fecha:** 2026-10-07 · **Revisado contra Figma:** 2026-11-16 (variante `change-order` de Card List, IA v-03/11/26: D-C17 y D-E04) · **Método:** extracción de variables, estilos y páginas vía Figma MCP + contraste WCAG 2.1 en modo Light y Dark.
 >
 > **Flujo:** igual que ArchWay. Cada hallazgo queda `Pendiente` hasta que el equipo lo aprueba o lo rechaza; sólo lo aprobado se aplica en Figma. Muchos de estos puntos se resuelven solos al converger con ArchWay: ver [`Convergencia/dashboard-archway.md`](../Convergencia/dashboard-archway.md).
 
@@ -43,10 +43,11 @@
 | D-C14 | Placeholder `text/secondary` sobre el hover del Dropdown (`button/secondary-hover`): 3.45:1 | 🟠 P1 | Pendiente |
 | D-C15 | Empty state (nuevo) con variables y estilos de otras librerías (`Number`, `Headlines/*`) | 🟠 P1 | Pendiente |
 | D-C16 | Componentes de prueba publicados (`Componente_de_prueba`, `2Componente_de_prueba`) | ⚪ P3 | Pendiente |
+| D-C17 | Card List `change-order`: reordenamiento sin alternativa al arrastre; exploraciones sueltas con typos | 🟠 P1 | Pendiente |
 | D-E01 | Medidas del shell y de las columnas de contenido sin tokens | 🟡 P2 | Pendiente |
 | D-E02 | Header con gap fijo de 206 px | 🟡 P2 | Pendiente |
 | D-E03 | Fondo del header distinto entre tamaños | ⚪ P3 | Pendiente |
-| D-E04 | Arquitectura de la información desalineada entre componente y árbol | 🟡 P2 | Pendiente |
+| D-E04 | Arquitectura de la información desalineada entre componente y árbol | 🟡 P2 | 🟡 Parcial (2026-11-16) |
 
 ---
 
@@ -254,6 +255,15 @@ Mismo problema que [D-C05](#d-c05--variables-de-otra-librería): en Dark, los va
 
 `Componente_de_prueba` (4643:4139) y `2Componente_de_prueba` (4644:4151), en *Utilidades*, están marcados "No se puede usar!" pero son componentes publicables: aparecen en el panel de Assets de quien use la librería. **Propuesta:** borrarlos o moverlos a un archivo de pruebas; si tienen que quedar, prefijarlos con `_` o `.` para que no se publiquen.
 
+### D-C17 · Card List change-order y exploraciones
+
+Nueva en noviembre: `Card_list` suma `State=change-order` ([card-list.md](./components/card-list.md#variante-change-order-cambio-de-orden)), con columna *Orden*, destino y vigencia.
+
+- **Cómo se cambia el orden no está definido.** El componente muestra la posición pero no el control (handle de arrastre, botones, campo). Si es por arrastre, WCAG 2.5.7 (*Dragging Movements*, AA en 2.2) pide una alternativa de un solo puntero, y el teclado necesita otra (2.1.1). **Propuesta:** botones *Subir* / *Bajar* en el menú de acciones, o un campo numérico en la columna *Orden*, más anuncio `aria-live` del resultado. **Fundamento:** Ley de Fitts (el handle de arrastre suele ser un blanco chico) y control del usuario.
+- **Sólo existe para `Publicada-Activa`.** Faltan los otros 7 `Style` con `change-order`, o documentar que la lista ordenable sólo admite promociones activas/próximas.
+- **Exploraciones sueltas** `Card_list2` y `Card_list3` (frames, no componentes) usan otra etiqueta (*Prioridad* vs *Orden*), un estado nuevo (*Programada · Inicia el …*) y tienen typos: "Desativada pelo administrador" (portugués), "Papas con chedar" (*cheddar*), "Double Stranger Burguer" (*Burger*), "Por metodo de pago" (*método*). **Propuesta:** decidir *Orden* o *Prioridad* (una sola palabra en todo el CMS) y sumar *Programada* a la tabla de estados si se adopta.
+- La variante `Style=Borrador -None` tiene un espacio de más en el nombre.
+
 ### D-E01 · Medidas del shell sin tokens
 
 Alto del header (96), anchos del sidebar (272 / 256 / 48), del SubPanelLeft (272), columnas de contenido (1089 formulario · 800 paso a paso) y `Card_Info` (208) son valores fijos. **Propuesta:** sumarlos a la colección `Layout` (`layout/shell-header`, `layout/shell-sidebar`, `layout/shell-sidebar-collapsed`, `layout/content-form`, `layout/content-flow`, `layout/aside`), con valor por breakpoint.
@@ -268,8 +278,11 @@ El header separa el grupo izquierdo del derecho con `itemSpacing` = 206. Funcion
 
 ### D-E04 · IA desalineada entre componente y árbol
 
-- El componente `Header+PanelLeft` muestra **Pagos**, que no está en los árboles *Ai - Panel Left* ni *v-09/03/26*.
-- *Delivery* pasó a *Coste de envío* y *App Content* sumó *Animaciones* y *Primera compra* (v-09/03/26): el componente ya muestra "Costos de envío".
+**Actualizado 2026-11-16.** La IA v-03/11/26 ([information-architecture.md](./structure/information-architecture.md)) ya está aplicada en `Header+PanelLeft`: *Pagos* entró al árbol, *Delivery* agrupa costos de envío y ETA, *Agenda de cumpleaños* pasó a primer nivel y salieron *Fees* y *Cross Selling*. Queda pendiente:
+
+- **Idioma:** el árbol está en español (*Promociones*, *Pedidos*) y el componente en inglés (*Promotions*, *Orders*), salvo *Agenda de cumpleaños* y *Pagos*.
+- **Decisiones abiertas en el árbol:** *Wallet* ("eliminar?", oculto en el componente), *Pedido por voz* ("sigue en CMS"), *Game* ("solo en Figma"), *Agenda › entrevista* ("ver con Esther") y el submenú de *Restaurantes*, que dice "SUB MENU" sin detalle.
+- **Colores sin leyenda:** el diagrama marca ítems en lila, naranja, rosa y celeste sin explicar qué significa cada color.
 - SubPanelLeft: etiquetas en español con typos (`Loyality`, `Parámentros`) contra un árbol en inglés; *Refunds* es primer nivel en el componente y subsección de *Cancellations* en el árbol; *Wallet* no está en el componente.
 
 **Propuesta:** un único árbol versionado (este repo: [structure/information-architecture.md](./structure/information-architecture.md)) como referencia, y labels por i18n.

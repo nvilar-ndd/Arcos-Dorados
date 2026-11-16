@@ -1,7 +1,7 @@
 # Color
 
 > **Fuente de la verdad:** [Archway Foundations Library (Figma)](https://www.figma.com/design/Us1oNLc2wgmgG3aMuT5dJv/-Archway--Foundations--Library) — colecciones **Primitives** (modo `Default`) y **Semantic** (modo `Light`), estilos de pintura `Loyalty AB` / `Loyalty BA`.
-> **Extraído vía Figma MCP:** 2026-10-15 · **Estado:** documentado tal cual está en Figma. Las propuestas de mejora viven en [`audit.md`](../audit.md) y no se aplican hasta su aprobación.
+> **Extraído vía Figma MCP:** 2026-10-15 · **Revisado:** 2026-11-16 (sin cambios de valores) · **Estado:** documentado tal cual está en Figma. Las propuestas de mejora viven en [`audit.md`](../audit.md) y no se aplican hasta su aprobación.
 
 ## Arquitectura
 
@@ -13,13 +13,25 @@ color/gold/500   #FFBC0D   ──►   Button/primary-bg, Surface/brand, …   �
 color/black/800  #292929   ──►   Text/primary, Surface/inverse, …
 ```
 
-- **Primitives** — 101 colores en 11 familias. No se usan directo en componentes: en Figma están **ocultos de la publicación** (`hiddenFromPublishing`), así que no aparecen en el selector de variables de los archivos que usan la librería.
+- **Primitives** — 101 colores en 11 familias. No se usan directo en componentes: en Figma están **ocultos de la publicación** (`hiddenFromPublishing`), así que no aparecen en el selector de variables de los archivos que usan la librería. Además no tienen *scopes*, así que tampoco aparecen en los selectores dentro del archivo (desde el 13/10/2026 incluye a la familia `violet`, que antes tenía `ALL_SCOPES`).
 - **Semantic** — 86 colores, todos alias de un primitivo. **Es la única capa que consumen diseño y código.**
 - Un solo modo (`Light`). No hay dark mode definido; las variantes `-on-black` son ajustes puntuales para `Surface/inverse`, no un tema oscuro.
 
 ### Regla de consumo
 
 > En Figma y en código se aplican **sólo tokens semánticos**. Si un caso no tiene token semántico, se pide uno nuevo (vía audit/PR); nunca se usa un primitivo ni un hex.
+
+### Cómo usar los colores (guía de la página *Colors*)
+
+La página abre con una guía de uso (agregada el 13/10/2026). En resumen:
+
+- **La fuente de verdad son las variables**; la página sólo las documenta.
+- Siempre se usan **tokens semánticos**, nombrados según su uso (`Button/primary-bg`, `Surface/default`, `Text/primary`).
+- Los **primitivos** son la base de valores: no se aplican directo en componentes ni en pantallas.
+- **Un mismo color puede tener varios tokens** según dónde se usa: `gold/500` es `Button/primary-bg` en un botón, `Chip/bg-selected` en un chip y `Surface/brand` en el header. Se elige por intención, no por valor.
+- Orden de la página: Cómo usar · Paleta · Color Tokens (resumen) · Detalle por grupo · Glosario · Changelog.
+
+> La guía de Figma escribe `Chip/selected-bg`; la variable se llama `Chip/bg-selected` (ver [H-01](../audit.md#h-01--typos-y-descripciones)).
 
 ## Colores de marca
 
@@ -401,6 +413,29 @@ background: linear-gradient(90deg, #910063 0.1%, #990059 3.6%, #b60035 17.3%, #c
 background: linear-gradient(90deg, #e8720a 0%, #db0007 51%, #d7000c 62%, #ca001c 72.9%, #b60035 82.8%, #990059 92.2%, #910063 100%);
 ```
 
+## Paleta de ilustración
+
+La página *Colors* incluye, desde el 13/10/2026, la **Color Guide de ilustraciones** de Arcos Dorados, marcada como *uso exclusivo para ilustraciones*. No son variables ni estilos: es una tabla de referencia para quien dibuja. **No se usan en UI** y no se exportan a tokens; el manual completo (partes, contornos y reglas) está en [`Ilustraciones/`](../../Ilustraciones/README.md#manual-de-color).
+
+| Color | Hex | Color | Hex |
+|---|---|---|---|
+| Ground Shadow | `#F1F1F1` ⚠️ | Mustard | `#FFD90D` |
+| Big Mac Sauce & Wrap | `#EDC8A3` | Pickle Light | `#E6E454` |
+| English Muffin & Cone & Biscuit | `#E5AF71` | Lettuce Light | `#9CC93A` |
+| Bag & McCafé Drinks | `#C2945C` | Dark Card Green | `#7EA824` |
+| Sesame Seed Bun & Artisanal Bun | `#EC9D47` ⚠️ | Lettuce Dark | `#66881E` |
+| Hashbrown | `#E8970?` ⚠️ | Pickle Dark | `#66881E` ⚠️ |
+| McNuggets & Filet-O-Fish & Breading | `#D87714` | Light Card Blue | `#78B2C8` |
+| Ham Light | `#E9B3A8` | McFlurry Cup | `#00A2C4` |
+| Skin Tones Rose Beige | `#ECA596` | Light Card Teal | `#6A8A99` |
+| Skin Tones Umber | `#B57C6F` | Dark Card Blue | `#4D8195` |
+| Ham Dark | `#AF6150` ⚠️ | Dark Card Teal | `#43616F` |
+| Beef & Chocolate & BBQ Sauce | `#73371F` | Neutral Grey | `#EAEAEA` |
+| McCafé & Black Coffee | `#461E00` | Light Card Purple | `#A68AA3` ⚠️ |
+| Sauce & Onions | `#FFEBB8` | Dark Card Purple | `#7F657C` |
+
+⚠️ Tal cual está en Figma hay errores de carga: `#F1F1F` (5 dígitos), `#E8970` (incompleto), `EC9D47` y `AF6150` sin `#`, *Pickle Dark* con el mismo hex que *Lettuce Dark* y *Light Card Purple* repetido. Son los mismos errores que la tabla del [ADK](../../ADK/foundations/color.md); acá se documentan corregidos donde el valor es inequívoco y el resto queda como pregunta en [`audit.md`](../audit.md#h-02--paleta-de-ilustración-en-colors).
+
 ## Contraste verificado (WCAG 2.1 AA)
 
 Calculado sobre los valores resueltos de los pares semánticos de uso real. Los fallos están detallados con propuestas en [`audit.md`](../audit.md).
@@ -475,3 +510,14 @@ Los tokens se exportan en [`tokens/archway.tokens.json`](../tokens/archway.token
   color: var(--aw-button-text);
 }
 ```
+
+## Historial en Figma
+
+Resumen del *Change Log — Colores* de la página (autora: Rochi).
+
+| Fecha | Cambio |
+|---|---|
+| 13/10/2026 | `Layer/*` se unifica en `Surface/*` (`Layer/05` se elimina; su único uso, Tag primary, pasa a `Surface/inverse`). Componentes de Design Resources reconectados. Página reordenada y documentación igualada a las variables. Grupo *Promotion* eliminado; `Link/active` → `Link/pressed`. Paleta conectada a variables y rótulos corregidos. `violet/100` corregido. Glosario +5 términos. Scopes por tipo de propiedad; primitivos `violet` ocultos de los selectores |
+| 15/10/2026 | Renombres acordados con Android e iOS (`[variante]-[parte]-[estado]`, `focused`, `Text/primary`, `Feature/missions`, `Highlight/new`, `Icon/primary`). `Background/*` eliminado. Primitivos sin guiones bajos. `codeSyntax` Android en todos los semánticos |
+
+> El changelog cuenta 93 y luego 86 tokens en Semantic: se refiere sólo a los de color. La colección tiene **126** variables (86 de color + 40 de tipografía, radio y espaciado).
