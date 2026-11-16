@@ -29,7 +29,7 @@ Todas son `DROP_SHADOW` sin spread, color `#292929` (equivale a `color/black/800
 - **Consistencia de radio:** Deep en un snackbar → radio 12; Shallow en un botón → radio 8.
 - **No abusar:** si todo tiene sombra, nada destaca. Priorizar la elevación en elementos que requieren una acción inmediata.
 
-> La página de Elevations incluye además una segunda tabla (`elev-0` a `elev-4`, con una fórmula de sombra) que no coincide con los 6 effect styles publicados. Este documento sigue a los estilos publicados.
+> La página de Elevations incluye además una segunda tabla (`elev-0` a `elev-4`, con una fórmula de sombra) que no coincide con los 6 effect styles publicados. Este documento sigue a los estilos publicados. Los ejemplos del canvas todavía se rotulan `Layer-0`, `Layer-1` y `Layer-5`; equivalen a `Surface/default`, `Surface/subtle` y `Surface/inverse` (revisado 2026-11-16, ver [H-01](../audit.md#h-01--typos-y-descripciones)).
 
 ## Uso en código
 

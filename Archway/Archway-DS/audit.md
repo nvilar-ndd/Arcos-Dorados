@@ -14,7 +14,7 @@
 | Colors | Guía *Cómo usar los colores*, glosario +5 términos (17), *Change Log — Colores* y la Color Guide de ilustraciones | Glosario y [color.md](./foundations/color.md) actualizados. Nuevos H-01 (`Chip/selected-bg`) y H-02 (paleta de ilustración) |
 | Typography | Topes con el tamaño de letra del sistema (acordado con iOS y Android el 16/10), fichas de muestra corregidas, *Change Log — Typography* y dos fichas de referencia Material en Roboto | [typography.md](./foundations/typography.md) actualizado. Nuevo F-08 (tope en Web) y pregunta en F-02 (Roboto) |
 | Utilities | Sección *Base para componente*: componente `Header` para documentar componentes con el rótulo "Archway" (texto aún en lorem ipsum) | Primer paso hacia Core components. Sin componentes de ArchWay publicados todavía |
-| Spacing, Elevations | Ajustes menores de texto en las tablas (±16 caracteres) | Sin impacto |
+| Spacing, Elevations | Se quitaron nodos de tablas duplicadas; el contenido no cambió. Restos de copia en las tablas | Sumados a H-01 |
 | Grid, Corner Radius, Motion, Accesibilidad, Color_Investigacion | Sin cambios | — |
 
 ## Cambios en Figma al 2026-10-15
@@ -371,6 +371,8 @@ Figma define el tope de crecimiento con el tamaño de letra del sistema para iOS
 | `color/violet/*` | Sin descripciones |
 | Guía *Cómo usar los colores* (página Colors) | Escribe `Chip/selected-bg`; la variable es `Chip/bg-selected` |
 | Frame de la paleta de ilustración | "Iustraciones" → "Ilustraciones" |
+| Página *Spacing* (tabla de la escala) | `spacing-0` dice "Grandes promociones" (copiado de tipografía); `spacing-24` termina en "???"; `spacing-56` dice "Altura Funcional:" sin completar; la columna *Line Height* no aplica a espaciado |
+| Página *Elevations* | Los ejemplos se rotulan `Layer-0`, `Layer-1`, `Layer-5` (nombres anteriores a `Surface/*`); la tabla de tokens tiene columnas *Line Height*, *Tracking* y *Weight* copiadas de tipografía; la tabla `elev-0…elev-4` (con `elev-4` 0,16,40 25 %) sigue sin coincidir con los 6 effect styles |
 | `Border/default`, `Feedback/*-surface` | Descripciones con espacios iniciales / saltos de línea |
 
 ### H-02 · Paleta de ilustración en Colors

@@ -37,7 +37,7 @@ Chip/bg-disabled|C|>color/black/50|FRAME_FILL,SHAPE_FILL|ANDROID:theme.color.chi
 Chip/stroke-disabled|C|>color/black/200|STROKE_COLOR|ANDROID:theme.color.chip.strokeDisabled|Borde del chip en estado disabled.
 Chip/text-disabled|C|>color/black/500|TEXT_FILL|ANDROID:theme.color.chip.textDisabled|Texto del chip en estado disabled.
 Button/primary-bg-pressed|C|>color/gold/400|FRAME_FILL,SHAPE_FILL|ANDROID:theme.color.button.primaryBgPressed|Fondo del botón primario en estado pressed.
-Button/primary-bg-focused|C|>color/gold/600|FRAME_FILL,SHAPE_FILL|ANDROID:theme.color.button.primaryBgFocused|Fondo del botón primario en estado focused. Solo accesibilidad.
+Button/primary-bg-focused|C|>color/gold/600|FRAME_FILL,SHAPE_FILL|ANDROID:theme.color.button.primaryBgFocused|Fondo del botón primario en estado focused. Solo accesibilidad."
 Button/primary-bg-disabled|C|>color/gold/100|FRAME_FILL,SHAPE_FILL|ANDROID:theme.color.button.primaryBgDisabled|Fondo del botón primario en estado disabled.
 Button/text|C|>color/black/800|SHAPE_FILL,TEXT_FILL|ANDROID:theme.color.button.text|Color de texto del botón en estado enabled.
 Button/text-disabled|C|>color/black/500|SHAPE_FILL,TEXT_FILL|ANDROID:theme.color.button.textDisabled|Color de texto del botón en estado disabled.
@@ -64,7 +64,7 @@ Link/inverse|C|>color/blue/300|TEXT_FILL|ANDROID:theme.color.link.inverse|Link s
 Link/inverse-hover|C|>color/blue/400|TEXT_FILL|ANDROID:theme.color.link.inverseHover|Link sobre fondos oscuros — estado hover.
 Link/inverse-focused|C|>color/blue/400|TEXT_FILL|ANDROID:theme.color.link.inverseFocused|Link sobre fondos oscuros — estado focused.
 Link/inverse-pressed|C|>color/white/default|TEXT_FILL|ANDROID:theme.color.link.inversePressed|Link sobre fondos oscuros — mientras se toca.
-Link/inverse-visited|C|>color/purple/200|TEXT_FILL|ANDROID:theme.color.link.inverseVisited|Sobre fondos oscuros — ya visitado.
+Link/inverse-visited|C|>color/purple/200|TEXT_FILL|ANDROID:theme.color.link.inverseVisited|sobre fondos oscuros — ya visitado.
 Surface/default|C|>color/white/default|FRAME_FILL,SHAPE_FILL|ANDROID:theme.color.surface.default|Superficie principal. Input bg, Chip bg, Secondary button bg
 Text/primary|C|>color/black/800|TEXT_FILL|ANDROID:theme.color.text.primary|Texto principal en todos los componentes.
 Trust/default|C|>color/blue/600|FRAME_FILL,SHAPE_FILL|ANDROID:theme.color.trust.default|Color principal de confianza. Tag confianza primary bg.
@@ -108,16 +108,16 @@ Font/weight/italic|S|Italic|FONT_STYLE||
 Valor/radius/XS|F|>Valor/4|CORNER_RADIUS,FONT_VARIATIONS||Micro-componentes: Badges, etiquetas de "Nuevo", indicadores de cantidad y elementos de precisión.
 Valor/radius/S|F|>Valor/8|CORNER_RADIUS,FONT_VARIATIONS||Valor Base. Botones principales, inputs de texto y componentes que viven dentro de un contenedor mayor.
 Valor/radius/M|F|>Valor/12|CORNER_RADIUS,FONT_VARIATIONS||El Estándar (Default): Cards de producto, message cards, snackbars, banners informativos y promocionales.
-Valor/radius/L|F|>Valor/16|CORNER_RADIUS,FONT_VARIATIONS||Grandes Contenedores (Vessels): Bottom sheets, diálogos de confirmación y modales de pantalla completa.
-Valor/radius/XXL|F|>Valor/32|CORNER_RADIUS,FONT_VARIATIONS||Grandes Contenedores: Uso en header.
-Valor/radius/XXXL|F|>Valor/160|CORNER_RADIUS,FONT_VARIATIONS||Componentes circle: componentes en formato píldora.
+Valor/radius/L|F|>Valor/16|CORNER_RADIUS,FONT_VARIATIONS||Grandes Contenedores (Vessels): Bottom sheets, diálogos de confirmación y modales de pantalla completa.e
+Valor/radius/XXL|F|>Valor/32|CORNER_RADIUS,FONT_VARIATIONS||Grandes Contenedores: Uso en headerer
+Valor/radius/XXXL|F|>Valor/160|CORNER_RADIUS,FONT_VARIATIONS||Componentes circle: componentes en formato pildora
 Valor/spacing/0|F|>Valor/0|WIDTH_HEIGHT,GAP,STROKE_FLOAT||Sin espacio. Uso cuando dos elementos deben estar pegados.
 Valor/spacing/4|F|>Valor/4|WIDTH_HEIGHT,GAP,STROKE_FLOAT||Espacio entre icono y texto, o label e input.
 Valor/spacing/8|F|>Valor/8|WIDTH_HEIGHT,GAP,STROKE_FLOAT||Valor Base
 Valor/spacing/16|F|>Valor/16|WIDTH_HEIGHT,GAP,STROKE_FLOAT||Margen sagrado lateral y Gutters de la grilla
 Valor/spacing/24|F|>Valor/24|WIDTH_HEIGHT,GAP,STROKE_FLOAT||Separación entre grupos de contenido o secciones.
 Valor/spacing/32|F|>Valor/32|WIDTH_HEIGHT,GAP,STROKE_FLOAT||Separación entre banners y secciones principales.
-Valor/spacing/40|F|>Valor/40|WIDTH_HEIGHT,GAP,STROKE_FLOAT||Uso esporádico
+Valor/spacing/40|F|>Valor/40|WIDTH_HEIGHT,GAP,STROKE_FLOAT||Uso esporadico
 Valor/spacing/48|F|>Valor/48|WIDTH_HEIGHT,GAP,STROKE_FLOAT||Altura mínima de touch targets o espaciado de sección.
 Valor/spacing/56|F|>Valor/56|WIDTH_HEIGHT,GAP,STROKE_FLOAT||NavBar height, FAB size, alto de botón L.
 Valor/spacing/64|F|>Valor/64|WIDTH_HEIGHT,GAP,STROKE_FLOAT||Separación entre secciones de pantalla completa.
