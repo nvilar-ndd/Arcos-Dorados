@@ -1,0 +1,100 @@
+/*
+ * ArchWay UI — capa base de la librería web.
+ * Requiere las variables --aw-* (tokens.css, generado desde tokens/archway.tokens.json) cargadas antes.
+ *
+ * El preflight de Tailwind está apagado para no pisar estilos de la app que consume la librería:
+ * cada componente lleva la clase raíz `aw-ui`, que aplica un reset acotado dentro de :where()
+ * (especificidad 0) para que las utilidades y los estilos de texto `.aw-*` siempre lo pisen.
+ */
+:where(.aw-ui),
+:where(.aw-ui) *,
+:where(.aw-ui) ::before,
+:where(.aw-ui) ::after {
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: currentColor;
+}
+:where(.aw-ui) :where(button, input, textarea, select) {
+  font: inherit;
+  color: inherit;
+  margin: 0;
+  background: transparent;
+  padding: 0;
+  -webkit-tap-highlight-color: transparent;
+}
+:where(.aw-ui) :where(button, [role='button'], [role='switch'], label[for]) { cursor: pointer; }
+:where(.aw-ui) :where(button:disabled, [aria-disabled='true']) { cursor: not-allowed; }
+:where(.aw-ui) :where(h1, h2, h3, h4, h5, h6, p, ul, ol, figure, fieldset, legend, dl, dd) { margin: 0; padding: 0; }
+:where(.aw-ui) :where(ul, ol) { list-style: none; }
+:where(.aw-ui) :where(img, svg, video) { display: block; max-width: 100%; }
+:where(.aw-ui) :where(:focus) { outline: none; }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  /*
+   * Área táctil mínima de 48 sin cambiar el tamaño visual (audit C-A04).
+   * El componente se ve como en Figma; el pseudo-elemento invisible amplía la zona de toque.
+   */
+  .aw-hit { position: relative; }
+  .aw-hit::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: max(100%, 48px);
+    height: max(100%, 48px);
+    transform: translate(-50%, -50%);
+  }
+
+  /* Squircle de Figma (corner smoothing 60 %): en web se aproxima con border-radius. */
+
+  /* Texto sólo para lectores de pantalla. */
+  .aw-sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+  }
+
+  /* Shimmer del Skeleton: se implementa en código (Figma: Skeleton). */
+  .aw-shimmer { position: relative; overflow: hidden; }
+  .aw-shimmer::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    transform: translateX(-100%);
+    background: linear-gradient(90deg, transparent, var(--aw-surface-default), transparent);
+    opacity: 0.6;
+    animation: aw-shimmer 1.4s var(--aw-motion-easing-standard) infinite;
+  }
+
+  /* Indeterminado (Progress Circle, IconButton loading). */
+  .aw-spin { transform-origin: center; animation: aw-spin 1s linear infinite; }
+
+  /* Entrada del Toast: Motion › Entrance. */
+  .aw-toast { animation: aw-toast-in var(--aw-motion-duration-moderate) var(--aw-motion-easing-entrance) both; }
+}
+
+@keyframes aw-shimmer { to { transform: translateX(100%); } }
+@keyframes aw-spin { to { transform: rotate(360deg); } }
+@keyframes aw-loading { from { transform: scaleX(0); } to { transform: scaleX(0.9); } }
+@keyframes aw-toast-in { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: none; } }
+
+/* Reducir movimiento: sin shimmer, sin loops ni desplazamientos (Foundations › Motion, audit C-A06). */
+@media (prefers-reduced-motion: reduce) {
+  .aw-ui, .aw-ui * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .aw-shimmer::after { display: none; }
+}

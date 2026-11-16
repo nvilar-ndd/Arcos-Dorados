@@ -131,13 +131,24 @@ Mientras un componente no existe en ArchWay, se usa el de Legacy.
 
 ## Código
 
-Los componentes se desarrollan para **Web (Nuxt 4 + Vue 3 + TypeScript strict + Tailwind)**, **iOS (SwiftUI)** y **Android (Jetpack Compose)** consumiendo los tokens de [`tokens/archway.tokens.json`](../tokens/archway.tokens.json), **una vez aprobados estos docs**. Mientras tanto, el [Storybook](../storybook) muestra cada ficha con el componente de Figma embebido.
+Desarrollados el 16/11/2026 a partir de estas fichas, consumiendo sólo los tokens de [`tokens/archway.tokens.json`](../tokens/archway.tokens.json):
+
+| Plataforma | Dónde | Stack |
+|---|---|---|
+| Web (ADK, eCommerce, Dashboard) | [`ui/`](../ui) | Nuxt 4 + Vue 3 + TypeScript strict + Tailwind (preset de tokens) |
+| iOS | [`ios/`](../ios) | Swift Package `ArchwayUI`, SwiftUI iOS 16+ |
+| Android | [`android/`](../android) | Módulo `archway-ui`, Jetpack Compose (sin Material) |
+
+- **Visual = Figma.** Las propuestas de [audit.md](./audit.md) no se aplicaron; sólo se sumó lo que la accesibilidad exige sin cambiar el visual (área táctil 48 / 44, disabled por token, foco visible, reduce motion) y tokens equivalentes donde Figma tiene hex sueltos (C-T02).
+- **iOS usa nativos** en Switch, NavBar, Top Bar y Search (Nivel 0).
+- En el [Storybook](../storybook), **Código › Core / Específicos**: cada componente tiene *Playground* (controles) y *Web · iOS · Android* (demo en vivo + código de las tres plataformas).
+- ⚠️ iOS y Android **no se compilaron** en el entorno de generación: validar en Xcode y Android Studio antes de integrarlos.
 
 ## Estructura
 
 ```
 components/
-├── README.md        ← este archivo: pirámide, reglas y estado
+├── README.md        ← este archivo: pirámide, reglas, estado y código
 ├── audit.md         ← hallazgos de componentes (C-*)
 ├── core/            ← 19 fichas Nivel 1–2
 └── especificos/     ← 10 fichas 💠

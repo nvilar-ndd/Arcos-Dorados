@@ -25,7 +25,7 @@ Hint                         ← Hint (Label Small, Text/secondary) · ícono op
 
 | Parte | Medida / token |
 |---|---|
-| Campo | 320 × 32 (Text Field, alto total 72 con label y hint) · Text Area 112 · Select 52 |
+| Campo | 324 × 32 (padding 8 / 16) · alto total 72 con label y hint · Text Area: campo de 72 (total 112) · Select 52 · ⚠️ 32 < 44 / 48 ([C-A04](../audit.md#c-a04--áreas-táctiles)) |
 | Padding | `Valor/spacing/16` horizontal · `Valor/spacing/4` entre label, campo y hint |
 | Radio | `Valor/radius/M` (12) — *Square Circle*: el pill come espacio de escritura |
 | Fondo | `Surface/default` (Disabled: `Surface/subtle`) |

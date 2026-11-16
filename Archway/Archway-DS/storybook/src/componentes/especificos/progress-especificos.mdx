@@ -1,4 +1,5 @@
-import { Meta, Markdown } from '@storybook/blocks'
+import { Meta, Markdown, Canvas } from '@storybook/blocks'
+import * as Code from '../../../../ui/stories/progress-especificos.stories'
 import { ficha } from '../md'
 import content from '../../../../components/especificos/progress-especificos.md?raw'
 
@@ -12,3 +13,9 @@ import content from '../../../../components/especificos/progress-especificos.md?
 </div>
 
 <Markdown>{ficha(content, 'Archway/Archway-DS/components/especificos/progress-especificos.md')}</Markdown>
+
+## Código — Web · iOS · Android
+
+<p className="aw-label-small">Demo web en vivo y código de las tres plataformas. Los controles están en <strong>Código › Específicos</strong>.</p>
+
+<Canvas of={Code.Plataformas} sourceState="none" />

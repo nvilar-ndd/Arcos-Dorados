@@ -1,4 +1,5 @@
-import { Meta, Markdown } from '@storybook/blocks'
+import { Meta, Markdown, Canvas } from '@storybook/blocks'
+import * as Code from '../../../../ui/stories/search.stories'
 import { ficha } from '../md'
 import content from '../../../../components/core/search.md?raw'
 
@@ -12,3 +13,9 @@ import content from '../../../../components/core/search.md?raw'
 </div>
 
 <Markdown>{ficha(content, 'Archway/Archway-DS/components/core/search.md')}</Markdown>
+
+## Código — Web · iOS · Android
+
+<p className="aw-label-small">Demo web en vivo y código de las tres plataformas. Los controles están en <strong>Código › Core</strong>.</p>
+
+<Canvas of={Code.Plataformas} sourceState="none" />

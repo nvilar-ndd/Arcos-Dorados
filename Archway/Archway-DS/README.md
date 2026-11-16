@@ -54,6 +54,8 @@ Foundations que todavía no existen en Figma (iconografía, breakpoints, opacida
 
 [`components/`](./components/README.md) — pirámide (Nativos iOS · Core · Compuestos · Específicos 💠), reglas de forma y Liquid Glass, tabla de estado y una ficha por componente: 19 Core ([Button](./components/core/button.md), [Chip](./components/core/chip.md), [Input](./components/core/input.md), [Card](./components/core/card.md), [Switch](./components/core/switch.md)…) y 10 Específicos ([Header](./components/especificos/header.md), [Gamification Bar](./components/especificos/gamification-bar.md), [Product Card](./components/especificos/product-cards.md)…). Hallazgos en [`components/audit.md`](./components/audit.md).
 
+**Código** (16/11/2026): los 29 componentes, sólo con tokens, en [`ui/`](./ui/README.md) (Web: Nuxt 4 + Vue 3 + TS strict + Tailwind), [`ios/`](./ios/README.md) (SwiftUI) y [`android/`](./android/README.md) (Jetpack Compose). iOS y Android todavía no se compilaron: validar en Xcode / Android Studio.
+
 ## Tokens
 
 [`tokens/archway.tokens.json`](./tokens/archway.tokens.json) — export completo en formato [W3C Design Tokens (DTCG)](https://www.designtokens.org/tr/drafts/format/), con alias preservados (`{primitives.color.gold.500}`) y el nombre original de Figma en `$extensions.figma`. Es la entrada para Storybook y para la transformación a Tailwind (Web), Swift (iOS) y Kotlin (Android).
@@ -62,7 +64,7 @@ Foundations que todavía no existen en Figma (iconografía, breakpoints, opacida
 
 ## Storybook
 
-[`storybook/`](./storybook) — visualización de las Foundations (Vue 3 + Vite + TypeScript strict) que lee `tokens/archway.tokens.json`. Incluye la tabla de contraste WCAG calculada en vivo.
+[`storybook/`](./storybook) — Foundations, fichas de componentes y **Código › Core / Específicos** (Vue 3 + Vite + TypeScript strict + Tailwind) sobre `tokens/archway.tokens.json`. Cada componente tiene *Playground* con controles y *Web · iOS · Android* con la demo en vivo y el código de las tres plataformas. Incluye la tabla de contraste WCAG calculada en vivo.
 
 ```bash
 cd Archway/Archway-DS/storybook && npm install && npm run dev   # http://localhost:6006
@@ -99,5 +101,10 @@ Archway/Archway-DS/
 │   └── motion.md
 ├── tokens/
 │   └── archway.tokens.json   ← generado desde Figma
-└── storybook/                ← Vue 3 + Vite, lee los tokens
+├── icons/archway-icons.json  ← 21 íconos de Iconography (paths)
+├── scripts/                  ← build-platform-tokens.mjs → Swift, Kotlin e íconos
+├── ui/                       ← Web: componentes Vue + preset de Tailwind
+├── ios/                      ← Swift Package ArchwayUI (SwiftUI)
+├── android/                  ← módulo archway-ui (Compose)
+└── storybook/                ← Vue 3 + Vite + Tailwind, lee los tokens
 ```

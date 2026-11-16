@@ -76,6 +76,7 @@ Mínimos: **44 × 44 pt** en iOS (Apple HIG), **48 × 48 dp** en Android (Materi
 | Checkbox / Radio | 40 × 40 | 44 / 48 |
 | Switch | 52 × 40 | 52 × 44 / 52 × 48 |
 | Search / Android | 36 de alto | 48 |
+| Input (Text Field, Password, Select) | campo de 32 de alto (padding 8/16) | 44 / 48 |
 | Tooltip (botón cerrar) | 24 | 44 / 48 |
 
 **Propuesta:** dejar el tamaño **visual** como está y llevar el **área táctil** (el frame transparente que ya usan Checkbox, Switch e Icon Only) a 48 en todos. El diseño no cambia y se cumple en las dos plataformas. **Fundamento:** Ley de Fitts.
