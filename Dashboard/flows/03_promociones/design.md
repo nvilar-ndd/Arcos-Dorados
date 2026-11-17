@@ -1,6 +1,6 @@
 ---
 modulo: Promociones — creación, segmentación y reglas
-estado: 🧭 Relevado
+estado: 🔍 En auditoría
 contexto: Left panel
 figma: https://www.figma.com/design/eY15rEgfQpHeY2H50TkbKW/
 ultima_extraccion: 2026-11-17
@@ -38,7 +38,7 @@ Listado en **Card List** (cada promoción se activa y cambia de estado). Alta en
 - Tipos de alta: código (35 pantallas), subtipo de código, subcódigos dinámicos, automática, descuento a empleados, descuento de envío y **por método de pago** (% orden, % producto, monto, precio fijo, Pix) en su propia página.
 - Hay notas de flujo en texto ("Tipos de promociones: PUBLICAR", "Advertencia", "EDITAR / ELIMINAR / DUPLICAR / DESACTIVAR / VOLVER / NOTIFICACIÓN") y medidas del paso a paso.
 - Secciones duplicadas con el mismo nombre (*Promotions / CTA*, *PROM_Create_Shipping_Discount*, *PROM_Archivar*, *PROM_Deactivate*): confirmar cuál es la vigente.
-- Primer candidato a auditoría.
+- Auditado en [Audit 001](../../audits/001-promociones.md) (2026-11-17).
 
 ## 4. Puntos a definir
 
@@ -47,8 +47,45 @@ Listado en **Card List** (cada promoción se activa y cambia de estado). Alta en
 - Duplicar promoción como atajo de alta (BO-FOR-02).
 - [Q-03](../../docs/preguntas-abiertas.md): panel vs. Country.
 
-## 5. Hallazgos abiertos
+## 5. Estados de la promoción (propuesta, DF-001-05)
+
+```mermaid
+stateDiagram-v2
+  [*] --> Borrador
+  Borrador --> PendienteAprobacion: Enviar a revisión (permisos reducidos)
+  Borrador --> Programada: Publicar (inicio futuro)
+  Borrador --> Activa: Publicar (inicio ahora)
+  PendienteAprobacion --> Programada: Aprobar
+  PendienteAprobacion --> Borrador: Devolver
+  Programada --> Activa: llega la fecha
+  Activa --> Inactiva: Desactivar
+  Inactiva --> Activa: Activar
+  Activa --> Expirada: vence
+  Inactiva --> Archivada: Archivar
+  Expirada --> Archivada: Archivar
+  Archivada --> Inactiva: Restaurar
+```
+
+Hoy Figma muestra tag + estado + toggle con 9 combinaciones (Activa, Próxima, Inactiva, Expirada, Pendiente de publicar, Publicando, Borrador, Archivada, Publicada). Pendiente de validar con producto.
+
+## 6. Hallazgos abiertos
 
 | ID | Hallazgo | Prioridad | Estado |
 |---|---|---|---|
-| — | — | — | — |
+| [DF-001-01](../../audits/001-promociones.md#df-001-01--activar-desde-el-toggle-no-tiene-flujo) | Activar desde el toggle no tiene flujo | 🔴 P0 | Pendiente |
+| [DF-001-02](../../audits/001-promociones.md#df-001-02--publicar-sin-alcance-ni-zona-horaria) | Publicar sin alcance ni zona horaria | 🟠 P1 | Pendiente |
+| [DF-001-03](../../audits/001-promociones.md#df-001-03--archivar-no-se-puede-deshacer) | Archivar no se puede deshacer; toast dice "eliminada" | 🟠 P1 | Pendiente |
+| [DF-001-04](../../audits/001-promociones.md#df-001-04--volver-y-cancelar-pierden-datos) | Volver y Cancelar pierden datos; borrador sólo al final | 🟠 P1 | Pendiente |
+| [DF-001-05](../../audits/001-promociones.md#df-001-05--tres-indicadores-de-estado) | Tres indicadores de estado superpuestos | 🟠 P1 | Pendiente |
+| [DF-001-06](../../audits/001-promociones.md#df-001-06--el-listado-no-dice-dónde-aplica) | El listado no dice dónde aplica; sin acciones masivas | 🟠 P1 | Pendiente |
+| [DF-001-07](../../audits/001-promociones.md#df-001-07--desactivar-con-cta-ambiguo) | Desactivar con CTA "Actualizar" | 🟠 P1 | Pendiente |
+| [DF-001-08](../../audits/001-promociones.md#df-001-08--error-sin-recuperación) | Error de cambio de estado sin recuperación | 🟠 P1 | Pendiente |
+| [DF-001-09](../../audits/001-promociones.md#df-001-09--steppers-distintos-según-el-tipo) | Steppers distintos según el tipo | 🟡 P2 | Pendiente |
+| [DF-001-10](../../audits/001-promociones.md#df-001-10--dos-primarios-en-disponibilidad) | Dos primarios en Disponibilidad | 🟡 P2 | Pendiente |
+| [DF-001-11](../../audits/001-promociones.md#df-001-11--duplicar-pide-confirmación) | Duplicar pide confirmación | 🟡 P2 | Pendiente |
+| [DF-001-12](../../audits/001-promociones.md#df-001-12--revisión-final-con-placeholders) | Revisión final con placeholders | 🟡 P2 | Pendiente |
+| [DF-001-13](../../audits/001-promociones.md#df-001-13--tres-registros-e-inglés) | Tres registros e inglés | 🟡 P2 | Pendiente |
+| [DF-001-14](../../audits/001-promociones.md#df-001-14--aprobación-sin-aprobador) | Aprobación sin aprobador | 🟡 P2 | Pendiente |
+| [DF-001-15](../../audits/001-promociones.md#df-001-15--umbral-del-aviso-de-descuento) | Umbral del aviso de descuento | 🟡 P2 | Pendiente |
+| [DF-001-16](../../audits/001-promociones.md#df-001-16--typos-en-copy-final) | Typos en copy final | ⚪ P3 | Pendiente |
+| [DF-001-17](../../audits/001-promociones.md#df-001-17--secciones-duplicadas-y-menú-viejo) | Secciones duplicadas y menú viejo | ⚪ P3 | Pendiente |

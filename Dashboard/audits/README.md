@@ -4,7 +4,7 @@ Una auditoría por archivo (o por módulo) y por fecha, con la plantilla [`templ
 
 | # | Alcance | Fecha | Hallazgos | Estado |
 |---|---|---|---|---|
-| — | Archivos relevados el 2026-11-17 ([mapa de flujos](../docs/mapa-de-flujos.md)). Primera auditoría sugerida: **Promociones** | — | — | — |
+| [001](./001-promociones.md) | Promociones: listado, alta por código y ciclo de vida | 2026-11-17 | 17 (1 🔴 · 7 🟠 · 7 🟡 · 2 ⚪) | Pendiente de revisión del equipo |
 
 ## IDs
 

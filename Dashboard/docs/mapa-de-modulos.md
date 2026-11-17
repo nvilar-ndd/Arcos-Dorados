@@ -11,7 +11,7 @@ Patrón por defecto: listado inicial (Card List o tabla read-only) + flujo paso 
 | 00 | Transversal | — | Login · Home (con/sin país) · Perfil · ABM de usuarios · General setting · Logs · Audits · Providers Auth | [Login](https://www.figma.com/design/N60mLC2VbXIHHzTnY18dRf/) · [Home + Header](https://www.figma.com/design/z9thVNqJLSqKMKUJQM9AGo/) | 🔴 Alto | 🧭 |
 | 01 | Países | → Country → Configuration | 22 páginas (ver abajo) | [Countries](https://www.figma.com/design/usfvpsKjGaLLwjc8deDS0a/) | 🔴 Alto | 🧭 |
 | 02 | Restaurantes | *SUB MENU* sin detallar | Listado · Crear · Detalle · Mapa · Cumpleaños (config, kits, upselling) · Template menú lateral | [Restaurantes](https://www.figma.com/design/2avCORvKSEYLW4epxnWWod/) | 🔴 Alto | 🧭 |
-| 03 | Promociones | — | Promociones · Por método de pago | [Promociones](https://www.figma.com/design/eY15rEgfQpHeY2H50TkbKW/) | 🔴 Alto | 🧭 |
+| 03 | Promociones | — | Promociones · Por método de pago | [Promociones](https://www.figma.com/design/eY15rEgfQpHeY2H50TkbKW/) | 🔴 Alto | 🔍 [Audit 001](../audits/001-promociones.md) |
 | 04 | Pedidos | — | Listado · Detalle | [Orders](https://www.figma.com/design/vFtg6osMX8fx6ebK08NKSj/) | 🟠 Medio | 🧭 |
 | 05 | Productos | — | Productos (listado) · deprecated | [Productos](https://www.figma.com/design/IsLhjURFelHOQUgptnmrAZ/) | 🔴 Alto | 🧭 Parcial |
 | 06 | Delivery | Costes de envío · ETA | Costes de envío · ETA | [Delivery](https://www.figma.com/design/5pzsamjfXhKuKXYmaT1bMV/) | 🔴 Alto | 🧭 |
