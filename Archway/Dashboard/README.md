@@ -2,6 +2,8 @@
 
 Foundations, componentes core y estructura del Dashboard (CMS) de Arcos Dorados. **Por ahora viven separadas de ArchWay**; la unificación está planificada en [`Convergencia/dashboard-archway.md`](../Convergencia/dashboard-archway.md).
 
+> **Producto y flujos** (módulos, auditorías de flujo, historias de usuario): [`Dashboard/`](../../Dashboard/README.md). Esta carpeta documenta sólo el sistema de diseño.
+
 ## Fuente de la verdad
 
 | Capa | Archivo Figma |
