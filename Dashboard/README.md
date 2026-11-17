@@ -6,7 +6,7 @@ Esta carpeta documenta **producto y flujos**. El **sistema de diseño** (foundat
 
 | Carpeta | Qué documenta | Fuente de la verdad |
 |---|---|---|
-| **`Dashboard/`** (esta) | Módulos, flujos, auditorías de flujo, `design.md` por módulo, historias de usuario y permisos | Archivos de producto en Figma (**por relevar**, ver [`docs/fuentes-de-verdad.md`](./docs/fuentes-de-verdad.md)) |
+| **`Dashboard/`** (esta) | Módulos, flujos, auditorías de flujo, `design.md` por módulo, historias de usuario y permisos | Los 17 archivos de producto de la carpeta [*Especificación*](https://www.figma.com/files/1180156850377231464/folder/420538859) ([`docs/fuentes-de-verdad.md`](./docs/fuentes-de-verdad.md)) |
 | [`Archway/Dashboard/`](../Archway/Dashboard/README.md) | Foundations, tokens, componentes, UI shell, IA, plantillas de pantalla, Storybook (6007) | [DashBoard Foundation](https://www.figma.com/design/XKulGF78txFYDLNMstLShZ/-DashBoard--Fuondation) |
 | [`Archway/Convergencia/dashboard-archway.md`](../Archway/Convergencia/dashboard-archway.md) | Decisión DS separado vs. unificado con ArchWay | — |
 | [`Voz-y-Tono/`](../Voz-y-Tono/README.md) | Manual de voz, tono y estilo v1.0 | — |
@@ -14,7 +14,7 @@ Esta carpeta documenta **producto y flujos**. El **sistema de diseño** (foundat
 
 ## Módulos
 
-El mapa completo (subcategorías, contexto de navegación, patrón de pantalla y estado) está en [`docs/mapa-de-modulos.md`](./docs/mapa-de-modulos.md). Sigue la IA vigente del panel izquierdo (**v-03/11/26**).
+El mapa completo (subcategorías, archivo de Figma, riesgo y estado) está en [`docs/mapa-de-modulos.md`](./docs/mapa-de-modulos.md) y el inventario de páginas y flujos con node IDs en [`docs/mapa-de-flujos.md`](./docs/mapa-de-flujos.md). Sigue la IA vigente del panel izquierdo (**v-03/11/26**) cruzada con Figma.
 
 | Bloque del producto | Módulos | Doc |
 |---|---|---|
@@ -24,7 +24,7 @@ El mapa completo (subcategorías, contexto de navegación, patrón de pantalla y
 | Operación de canales | Pedidos · Delivery (costes de envío, ETA) · Pedido por voz | [`04`](./flows/04_pedidos/design.md) · [`06`](./flows/06_delivery/design.md) · [`14`](./flows/14_pedido-por-voz/design.md) |
 | Contenido y entornos | Home Content · App Content (animaciones, splash, legal) | [`12`](./flows/12_home-content/design.md) · [`08`](./flows/08_app-content/design.md) |
 | Fidelización | Loyalty · Misiones · Wallet · Game · Agenda de cumpleaños | [`11`](./flows/11_loyalty/design.md) · [`10`](./flows/10_misiones/design.md) · [`09`](./flows/09_wallet/design.md) · [`15`](./flows/15_game/design.md) · [`07`](./flows/07_agenda-cumpleanos/design.md) |
-| Transversal | Home · Permisos (RBAC) · Historial de cambios | [`00`](./flows/00_transversal/design.md) |
+| Transversal | Login · Home · ABM de usuarios (RBAC) · Logs y Audits | [`00`](./flows/00_transversal/design.md) |
 
 ## Cómo se trabaja
 
@@ -56,7 +56,8 @@ Dashboard/
 ├── docs/
 │   ├── fuentes-de-verdad.md      ← Figma, DS, IA, voz y tono, qué falta relevar
 │   ├── principios-dashboard.md   ← reglas BO-* con umbrales (el "contrato" de auditoría) — v0 borrador
-│   ├── mapa-de-modulos.md        ← inventario de módulos, contexto, patrón y estado
+│   ├── mapa-de-modulos.md        ← módulos, archivo de Figma, riesgo y estado
+│   ├── mapa-de-flujos.md         ← inventario de los 17 archivos con páginas, secciones y node IDs
 │   └── preguntas-abiertas.md     ← decisiones pendientes con producto / tech
 ├── flows/                        ← un design.md por módulo
 │   ├── 00_transversal/ 01_paises/  …  15_game/

@@ -10,12 +10,13 @@
 | ID | Regla | Umbral / criterio | Base |
 |---|---|---|---|
 | BO-SEG-01 | Las acciones destructivas (eliminar, desactivar, despublicar, cerrar local) piden confirmación | Modal que nombra el objeto y el impacto (canales, países, restaurantes afectados). Botón con el verbo concreto, no "Aceptar" | WCAG 3.3.4 · Nielsen #5 |
-| BO-SEG-02 | Borrar es *soft-delete* | Archivado restaurable; plazo de restauración *propuesta: 30 días* | Nielsen #3 |
+| BO-SEG-02 | Borrar es *soft-delete* | Archivado restaurable; plazo de restauración *propuesta: 30 días*. Precedente en Figma: *Archivar* / *Archivada* en Promociones | Nielsen #3 |
 | BO-SEG-03 | Publicar a canales B2C muestra un resumen de alcance antes de confirmar | Canales · países · restaurantes · vigencia con zona horaria | WCAG 3.3.4 · Peak-End |
 | BO-SEG-04 | Cambios sin guardar no se pierden en silencio | Aviso al salir de la pantalla o cambiar de país en sesión | Nielsen #5 |
 | BO-SEG-05 | Las acciones masivas dicen cuántos ítems tocan y se pueden deshacer | Contador visible; *propuesta:* deshacer ≥ 10 s o confirmación reforzada sobre 50 ítems o más de 1 país | Nielsen #3 |
 | BO-SEG-06 | Fecha y hora siempre con zona horaria explícita | La del país objetivo; nunca la del navegador sin decirlo | — |
-| BO-SEG-07 | Toda entidad muestra quién y cuándo la modificó | *Última modificación* en el detalle; historial completo *propuesta* | Visibilidad del estado |
+| BO-SEG-07 | Toda entidad muestra quién y cuándo la modificó | *Última modificación* en el detalle. Precedente en Figma: *Logs* y *Audits* (Home + Header), historial del pedido (Orders) | Visibilidad del estado |
+| BO-SEG-08 | Los límites de negocio se avisan antes de bloquear | Contador visible y mensaje al llegar al tope. Precedentes: 5 pop-ups, 12 notificaciones, 4 ítems de navegación | Nielsen #5 |
 
 ## BO-EST · Estados
 
