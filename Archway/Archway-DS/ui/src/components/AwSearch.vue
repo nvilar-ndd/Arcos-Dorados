@@ -17,11 +17,15 @@ defineEmits<{ submit: [query: string] }>()
   <form role="search" class="aw-ui w-full" @submit.prevent="$emit('submit', model)">
     <div
       :class="[
-        'aw-hit flex h-[36px] items-center gap-8 rounded-xxxl border px-16 transition-colors duration-fast ease-standard',
-        disabled ? 'bg-surface-subtle border-border-subtle text-text-disabled' : model ? 'bg-surface-default border-border-input-active focus-within:border-border-strong' : 'bg-surface-default border-border-soft focus-within:border-border-strong',
+        'aw-hit flex h-[36px] items-center rounded-xxxl px-16 transition-[box-shadow] duration-fast ease-standard',
+        disabled
+          ? 'bg-surface-subtle text-text-disabled shadow-[inset_0_0_0_1px_var(--aw-border-subtle)]'
+          : model
+            ? 'bg-surface-default shadow-[inset_0_0_0_1px_var(--aw-border-input-active)] focus-within:shadow-[inset_0_0_0_1px_var(--aw-border-strong)]'
+            : 'bg-surface-default shadow-[inset_0_0_0_1px_var(--aw-border-soft)] focus-within:shadow-[inset_0_0_0_1px_var(--aw-border-strong)]',
       ]"
     >
-      <AwIcon name="search" :size="16" class="text-icon-primary" />
+      <AwIcon name="search" :size="16" class="mr-[9px] text-icon-primary" />
       <input
         v-model="model"
         type="search"
@@ -31,8 +35,8 @@ defineEmits<{ submit: [query: string] }>()
         :aria-label="label"
         :disabled="disabled"
       />
-      <button v-if="model && !disabled" type="button" class="text-icon-primary" aria-label="Borrar búsqueda" @click="model = ''">
-        <AwIcon name="cancel" :size="16" />
+      <button v-if="model && !disabled" type="button" class="aw-hit ml-4 mr-[5px] text-icon-primary" aria-label="Borrar búsqueda" @click="model = ''">
+        <AwIcon name="cancel-filled" :size="16" />
       </button>
     </div>
   </form>

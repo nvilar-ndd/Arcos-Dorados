@@ -39,3 +39,9 @@ Buscador de la nueva home: busca productos dentro de la pantalla de categorías.
 - Rol `search` / `searchbox`; `accessibilityLabel` "Buscar productos".
 - Botón borrar: "Borrar búsqueda".
 - Anunciar la cantidad de resultados al terminar de escribir (`aria-live="polite"`), sin interrumpir en cada tecla.
+
+## Cambios 2026-11-17 (paridad con Figma)
+
+- Bordes como trazo interior; lupa con 9 de margen derecho; borrar (`cancel-filled`) con 4 izquierda / 5 derecha.
+
+Web ajustado y verificado contra la captura de Figma en Storybook (historia oculta *QA paridad Figma*). iOS y Android quedan pendientes de este ajuste.

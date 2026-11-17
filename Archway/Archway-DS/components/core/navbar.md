@@ -54,3 +54,9 @@ Sólo un ítem Selected a la vez. Badge opcional ([Badge](./badge.md), `Highligh
 - `accessibilityHint` opcional ("Ver cupones disponibles").
 - Alto 56 ≥ 44 / 48 ✅. En iOS, el tab bar nativo muestra la etiqueta ampliada al mantener presionado (Large Content Viewer).
 - Selected se distingue por fondo, ícono filled y Bold (no sólo color) ✅.
+
+## Cambios 2026-11-17 (paridad con Figma)
+
+- Padding 16 arriba, 24 abajo, 16 a los lados; gap −8 entre ítems. Ícono seleccionado en `Icon/gold`.
+
+Web ajustado y verificado contra la captura de Figma en Storybook (historia oculta *QA paridad Figma*). iOS y Android quedan pendientes de este ajuste.

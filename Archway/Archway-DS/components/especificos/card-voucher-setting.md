@@ -26,3 +26,10 @@ Opción de configuración con su control: título (`Label/Label Medium Bold`), t
 ## Accesibilidad
 
 Las mismas reglas que [Card](../core/card.md#accesibilidad): una sola acción si la card se toca entera; acciones propias con label.
+
+## Cambios 2026-11-17 (paridad con Figma)
+
+- Voucher: tipos `img-product`, `img-left`, `icon-left`; troquel; fila de acciones con Ghost XS de info + Primary XS redondo *Usar*; sombra `Shallow/M/Elev 2`.
+- Setting card: gap 8, padding 16, trazo interior `Border/soft`, textos con gap 4.
+
+Web ajustado y verificado contra la captura de Figma en Storybook (historia oculta *QA paridad Figma*). iOS y Android quedan pendientes de este ajuste.

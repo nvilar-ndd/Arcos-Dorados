@@ -5,7 +5,8 @@
  */
 import { computed } from 'vue'
 const props = withDefaults(defineProps<{ value?: number; size?: 16 | 24 | 32 | 48 | 56; label?: string }>(), { value: undefined, size: 32, label: 'Cargando' })
-const stroke = computed(() => (props.size <= 24 ? 2 : props.size <= 32 ? 3 : 4))
+/** Figma: el anillo mide 1/8 del tamaño (16 → 2, 24 → 3, 32 → 4, 48 → 6, 56 → 7), puntas redondeadas. */
+const stroke = computed(() => props.size / 8)
 const r = computed(() => (props.size - stroke.value) / 2)
 const c = computed(() => 2 * Math.PI * r.value)
 const pct = computed(() => (props.value === undefined ? 25 : Math.max(0, Math.min(100, props.value))))

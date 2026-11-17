@@ -7,7 +7,7 @@ withDefaults(defineProps<{ step: number; total?: 3 | 4 }>(), { total: 4 })
 </script>
 
 <template>
-  <div class="aw-ui flex gap-4" role="img" :aria-label="`Paso ${step} de ${total}`">
+  <div class="aw-ui flex gap-8" role="img" :aria-label="`Paso ${step} de ${total}`">
     <span v-for="i in total" :key="i" :class="['h-4 w-56 rounded-full', i <= step ? 'bg-interactive-active' : 'bg-surface-muted']" />
   </div>
 </template>

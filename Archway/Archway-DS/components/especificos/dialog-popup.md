@@ -31,3 +31,9 @@ Se carga desde el Dashboard: ver [Dashboard › Home content](../../../Dashboard
 - Rol `dialog` con `aria-modal`; el foco entra al abrir y vuelve al disparador al cerrar.
 - **Cerrar siempre disponible** (aunque `Close` sea opcional en Figma): botón "Cerrar" y gesto / Esc.
 - La imagen lleva texto alternativo con el mensaje; el título no puede estar sólo en la imagen.
+
+## Cambios 2026-11-17 (paridad con Figma)
+
+- El cierre es un Icon Only fuera de la tarjeta, arriba a la derecha (gap 8). Tarjeta radio L, gap 24; imagen radio L; botones Medium.
+
+Web ajustado y verificado contra la captura de Figma en Storybook (historia oculta *QA paridad Figma*). iOS y Android quedan pendientes de este ajuste.

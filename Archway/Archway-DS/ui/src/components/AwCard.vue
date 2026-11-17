@@ -49,23 +49,25 @@ const pressed = computed(() => (props.variant === 'filled' ? 'active:bg-surface-
     ]"
     @click="whole && emit('click')"
   >
-    <div class="flex w-full items-center gap-8">
+    <div class="flex w-full items-start gap-16">
       <div v-if="$slots.leading" class="size-80 shrink-0 overflow-hidden rounded-s"><slot name="leading" /></div>
-      <div class="flex min-w-0 flex-1 flex-col items-start gap-4">
-        <slot name="tag"><AwTag v-if="tag" :label="tag" hierarchy="secondary" /></slot>
-        <span class="aw-label-medium-bold text-text-primary">{{ title }}</span>
-        <span v-if="subtitle" class="aw-label-small text-text-secondary">{{ subtitle }}</span>
+      <div class="flex min-w-0 flex-1 flex-col items-start gap-8">
+        <slot name="tag"><AwTag v-if="tag" :label="tag" hierarchy="primary" /></slot>
+        <span class="flex flex-col">
+          <span class="aw-label-medium-bold text-text-primary">{{ title }}</span>
+          <span v-if="subtitle" class="aw-label-small text-text-secondary">{{ subtitle }}</span>
+        </span>
       </div>
       <AwIconButton
         v-if="favorite !== undefined"
-        icon="favorite"
+        :icon="favorite ? 'favorite' : 'favorite-outline'"
         :label="favorite ? 'Quitar de favoritos' : 'Agregar a favoritos'"
         variant="ghost"
         :pressed="favorite"
         @click.stop="emit('update:favorite', !favorite)"
       />
-      <AwIcon v-if="trailing === 'chevron'" name="chevron-up" :rotate="90" class="text-icon-primary" />
-      <AwIconButton v-else-if="trailing === 'more'" icon="more" label="Más opciones" variant="ghost" @click.stop="emit('more')" />
+      <span v-if="trailing === 'chevron'" class="flex size-24 shrink-0 items-center justify-center text-icon-primary"><AwIcon name="chevron-right" :size="16" /></span>
+      <AwIconButton v-else-if="trailing === 'more'" icon="more" label="Más opciones" variant="ghost" size="xs" @click.stop="emit('more')" />
     </div>
     <div v-if="$slots.default" class="w-full"><slot /></div>
   </component>

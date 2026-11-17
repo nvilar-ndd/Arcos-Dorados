@@ -42,3 +42,9 @@ Android: alto 64 · padding 8 vertical, 16 lateral · gap 8 · ancho Fill (mín.
 
 - **Aunque el título no se vea, la pantalla tiene título** para el lector (VoiceOver / TalkBack lo anuncia al entrar).
 - `accessibilityLabel`: "Volver", "Cerrar", "Ayuda". El título es `heading` / `accessibilityTraits = .header`.
+
+## Cambios 2026-11-17 (paridad con Figma)
+
+- Gap 16. Atrás usa el dibujo de 32 de `chevron-left`; cerrar usa el de 48.
+
+Web ajustado y verificado contra la captura de Figma en Storybook (historia oculta *QA paridad Figma*). iOS y Android quedan pendientes de este ajuste.

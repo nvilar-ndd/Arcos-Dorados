@@ -74,3 +74,13 @@ Hint                         ← Hint (Label Small, Text/secondary) · ícono op
 - Password: el ojo es un botón con label "Mostrar contraseña" / "Ocultar contraseña". Permitir pegar.
 - PinCode: un solo campo lógico para el lector ("Código de 6 dígitos"), `autocomplete="one-time-code"` / `textContentType = .oneTimeCode`, teclado numérico.
 - Select: rol `button` con `aria-haspopup="listbox"`; anuncia el valor elegido.
+
+## Cambios 2026-11-17 (paridad con Figma)
+
+- La página en Figma se renombró a *Input text field*.
+- Label en `Text/secondary`. Bordes como trazo interior por estado; Success usa `Border/soft`.
+- Botón de borrar (`cancel-filled`) visible mientras se escribe o hay error, siempre en Text Area. Text Area crece desde 72 de alto.
+- Password: íconos `show` / `hide`. Íconos de hint: `cancel-red` (error) y `success-filled`. Botones finales con 5 de margen derecho.
+- Select: chevron abajo con 5 de margen; Disabled con `Border/soft`. PinCode: gap 4 entre celdas.
+
+Web ajustado y verificado contra la captura de Figma en Storybook (historia oculta *QA paridad Figma*). iOS y Android quedan pendientes de este ajuste.

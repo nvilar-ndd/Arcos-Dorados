@@ -46,3 +46,10 @@ En iOS, FAB y FAB Extended llevan **Liquid Glass** porque flotan sobre el conten
 - En toggles (favorito), el label alterna: "Agregar a favoritos" / "Quitar de favoritos" (+ `accessibilityState: selected`).
 - Área táctil: XS y Small en 40 → 48 ([C-A04](../audit.md#c-a04--áreas-táctiles)).
 - El FAB no debe tapar contenido al final del scroll: dejar 56 + 16 + 16 de margen inferior en la lista.
+
+## Cambios 2026-11-17 (paridad con Figma)
+
+- Icon Only: ícono 24 en Medium y en Ghost Small, 16 en el resto. Disabled mantiene `Icon/primary`; Ghost Disabled lleva fondo `Button/secondary-bg-disabled`.
+- FAB extendido: mínimo 140, padding 16 izquierda / 24 derecha.
+
+Web ajustado y verificado contra la captura de Figma en Storybook (historia oculta *QA paridad Figma*). iOS y Android quedan pendientes de este ajuste.

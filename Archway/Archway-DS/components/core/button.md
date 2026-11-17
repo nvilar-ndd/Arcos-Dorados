@@ -74,3 +74,11 @@ Contraste: `Button/text` sobre `Button/primary-bg` **8.63:1** ✅ · borde Secon
 - **Loading:** anunciar el cambio (`accessibilityValue` "Procesando", `aria-busy="true"`) y bloquear el doble toque. Con "Reducir movimiento", barra estática ([C-A06](../audit.md#c-a06--animaciones-sin-reglas-de-pausa)).
 - **Área táctil:** XS y Small quedan en 40 → llevar a 48 ([C-A04](../audit.md#c-a04--áreas-táctiles)).
 - Disabled: preferir explicar por qué no se puede avanzar (hint) antes que deshabilitar sin contexto.
+
+## Cambios 2026-11-17 (paridad con Figma)
+
+- Ancho mínimo: 120 en Large y Medium; 64 en Small/XS Primary y Secondary; 68 en Ghost.
+- Secondary: trazo interior 1 px (Pressed y Focus 0,5); Disabled 1 px en S/XS y 0,5 en M/L. Ghost Focus: trazo interior 1 px.
+- Los trazos son interiores (no suman al tamaño): en web `box-shadow: inset`.
+
+Web ajustado y verificado contra la captura de Figma en Storybook (historia oculta *QA paridad Figma*). iOS y Android quedan pendientes de este ajuste.

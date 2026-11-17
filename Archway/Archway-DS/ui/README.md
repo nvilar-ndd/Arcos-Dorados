@@ -56,13 +56,26 @@ const email = ref('')
 | `AwTextField` (text, password, textarea), `AwSelect`, `AwPinCode`, `AwSearch` | `AwLoyaltyCard` |
 | `AwCheckbox`, `AwRadio`, `AwSwitch` | `AwVoucherCard`, `AwSettingCard` |
 | `AwListItem`, `AwCard`, `AwTile` (tile y category) | `AwProductCard`, `AwBanner` |
-| `AwToast`, `AwTooltip`, `AwSkeleton` | `AwDialog` |
+| `AwToast`, `AwInlineNotice`, `AwTooltip`, `AwSkeleton` | `AwDialog` |
 | `AwProgressBar`, `AwProgressCircle`, `AwPagination`, `AwStepper` | `AwMissionTile`, `AwPin` |
 | `AwTopBar`, `AwNavBar`, `AwIcon` | `AwBenefitsProgress` |
 
 Cada uno tiene su story en el Storybook (**Componentes › Core / Específicos**, dentro de la ficha de cada componente): *Playground* con controles y *Web · iOS · Android* con la demo en vivo y el código de las tres plataformas.
 
+## Íconos
+
+`AwIcon` lee `icons/archway-icons.json`. Muchos íconos tienen dibujos distintos por tamaño (`sizes["16" | "32" | "48"]`), como en Iconography: por defecto se usa el dibujo del tamaño pedido y, si hace falta otro, se fuerza con `art` (p. ej. el chevron de la Top Bar usa `art="32"` a 24 px). `chevron-right`, `chevron-down` y `chevron-left` son alias rotados de `chevron-up`. Los paths con `knockout` se pintan con `Icon/on-color` y los `inner` con `Icon/primary`, para los íconos rellenos de dos tonos (`*-filled`, `cancel-red`).
+
+## Paridad con Figma
+
+Storybook tiene una historia oculta (*QA paridad Figma › Render*, `?t=<template>&w=<ancho>`) que renderiza un componente suelto para compararlo píxel a píxel con la captura de Figma (dpr 1, sin animaciones). Medidas que no salen del tamaño de la caja se resuelven así:
+
+- **Bordes interiores:** los trazos de Figma son *inside*; en web van como `box-shadow: inset 0 0 0 Npx` para no sumar al tamaño.
+- **Métricas de Speedee:** el TTF usa `useTypoMetrics` y Chrome lo dibujaba 2 px más arriba que Figma. Los `@font-face` llevan `ascent-override: 99.6%`, `descent-override: 26.8%` y `line-gap-override: 0%`. Usar los mismos valores al cargar la fuente en Nuxt.
+
 ## Pendiente
+
+- iOS y Android no recibieron todavía los ajustes de medidas del 17/11 (ver la sección *Cambios 2026-11-17* de cada ficha).
 
 - Íconos **Local** y **Moto** de Iconography (Header PickUp / Delivery) no están exportados todavía: el Header usa un slot `mode-icon`.
 - La regla de *Liquid Glass* y las marcas "A definir" de Figma ([C-S06](../components/audit.md#c-s06--marcas-pendientes)).

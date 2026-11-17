@@ -14,3 +14,9 @@ Misma estructura que Tile: 116 × 112, `Surface/default` + `Border/subtle`, radi
 ## Accesibilidad
 
 Sin interacción: se lee como imagen + texto ("Recompensa: 500 puntos"), sin rol de botón.
+
+## Cambios 2026-11-17 (paridad con Figma)
+
+- Slot de 72 con radio M sobre `Surface/default`, trazo 0,5 + `Shallow/L/Elev 1`; ícono 48 en `Feature/missions`.
+
+Web ajustado y verificado contra la captura de Figma en Storybook (historia oculta *QA paridad Figma*). iOS y Android quedan pendientes de este ajuste.

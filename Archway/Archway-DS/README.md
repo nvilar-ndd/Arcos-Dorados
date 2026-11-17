@@ -11,7 +11,7 @@
 | Capa | Archivo Figma | Estado |
 |---|---|---|
 | Foundations | [Archway Foundations Library](https://www.figma.com/design/Us1oNLc2wgmgG3aMuT5dJv/-Archway--Foundations--Library) | Documentado · revisado 2026-11-16 |
-| Core components y Específicos | [Design Resources CORE – Archway](https://www.figma.com/design/jXe3O8ICmPdNyX6mYbQDVC/Design-Resources-CORE---Archway-) (librería *Design Resources CORE [Archway]*) | Documentado · 19 Core + 10 Específicos · [components/](./components/README.md) |
+| Core components y Específicos | [Design Resources CORE – Archway](https://www.figma.com/design/jXe3O8ICmPdNyX6mYbQDVC/Design-Resources-CORE---Archway-) (librería *Design Resources CORE [Archway]*) | Documentado · 20 Core + 10 Específicos · [components/](./components/README.md) |
 
 ### Flujo de cambios
 
@@ -52,7 +52,7 @@ Foundations que todavía no existen en Figma (iconografía, breakpoints, opacida
 
 ## Componentes
 
-[`components/`](./components/README.md) — pirámide (Nativos iOS · Core · Compuestos · Específicos 💠), reglas de forma y Liquid Glass, tabla de estado y una ficha por componente: 19 Core ([Button](./components/core/button.md), [Chip](./components/core/chip.md), [Input](./components/core/input.md), [Card](./components/core/card.md), [Switch](./components/core/switch.md)…) y 10 Específicos ([Header](./components/especificos/header.md), [Gamification Bar](./components/especificos/gamification-bar.md), [Product Card](./components/especificos/product-cards.md)…). Hallazgos en [`components/audit.md`](./components/audit.md).
+[`components/`](./components/README.md) — pirámide (Nativos iOS · Core · Compuestos · Específicos 💠), reglas de forma y Liquid Glass, tabla de estado y una ficha por componente: 20 Core ([Button](./components/core/button.md), [Chip](./components/core/chip.md), [Input](./components/core/input.md), [Card](./components/core/card.md), [Switch](./components/core/switch.md), [Inline notice](./components/core/inline-notice.md)…) y 10 Específicos ([Header](./components/especificos/header.md), [Gamification Bar](./components/especificos/gamification-bar.md), [Product Card](./components/especificos/product-cards.md)…). Hallazgos en [`components/audit.md`](./components/audit.md).
 
 **Código** (16/11/2026): los 29 componentes, sólo con tokens, en [`ui/`](./ui/README.md) (Web: Nuxt 4 + Vue 3 + TS strict + Tailwind), [`ios/`](./ios/README.md) (SwiftUI) y [`android/`](./android/README.md) (Jetpack Compose). iOS y Android todavía no se compilaron: validar en Xcode / Android Studio.
 

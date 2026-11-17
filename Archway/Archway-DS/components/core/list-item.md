@@ -33,3 +33,9 @@ Específicos que se arman sobre él (pendientes): *List Item 💠 Address · Pic
 - Un solo elemento accesible por fila: label = título + subtítulo; el control de la derecha aporta el rol y el estado (`switch`, `checkbox`) o el chevron indica navegación (`button` / link).
 - Alto 56 ≥ 48 ✅.
 - Listas: `<ul>`/`<li>` en web; en mobile, el lector anuncia "1 de N".
+
+## Cambios 2026-11-17 (paridad con Figma)
+
+- Padding 16 × 8, gap 16, divisor pegado abajo.
+
+Web ajustado y verificado contra la captura de Figma en Storybook (historia oculta *QA paridad Figma*). iOS y Android quedan pendientes de este ajuste.

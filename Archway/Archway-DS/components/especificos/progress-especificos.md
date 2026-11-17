@@ -20,3 +20,10 @@ Barras de progreso con contexto de negocio, armadas sobre [Progress](../core/pro
 ## Accesibilidad
 
 Las de [Progress](../core/progress.md#accesibilidad): `progressbar` con valor y texto del objetivo.
+
+## Cambios 2026-11-17 (paridad con Figma)
+
+- Beneficios: degradé fucsia → rojo → naranja (primitivos, C-T02); completo en `Interactive/active` con check.
+- Misiones: riel `Surface/subtle` con rombos dorados cada 82,88; avance `Feature/missions` con knob blanco de 12.
+
+Web ajustado y verificado contra la captura de Figma en Storybook (historia oculta *QA paridad Figma*). iOS y Android quedan pendientes de este ajuste.

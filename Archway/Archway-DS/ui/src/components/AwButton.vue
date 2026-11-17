@@ -33,37 +33,56 @@ const props = withDefaults(
 defineEmits<{ click: [event: MouseEvent] }>()
 
 const SIZE: Record<AwButtonSize, string> = {
-  large: 'h-56 px-16 aw-label-large',
-  medium: 'h-48 px-16 aw-label-large',
+  large: 'h-56 min-w-[120px] px-16 aw-label-large',
+  medium: 'h-48 min-w-[120px] px-16 aw-label-large',
   small: 'h-[32px] px-16 aw-label-medium aw-hit',
   xs: 'h-[24px] px-16 aw-label-small aw-hit',
 }
+/** Ancho mínimo de Small/XS: 64 en Primary/Secondary, 68 en Ghost (Figma). */
+const MIN_SMALL: Record<AwButtonVariant, string> = { primary: 'min-w-[64px]', secondary: 'min-w-[64px]', ghost: 'min-w-[68px]' }
 const RADIUS: Record<AwButtonSize, string> = { large: 'rounded-l', medium: 'rounded-l', small: 'rounded-m', xs: 'rounded-m' }
 
-const VARIANT: Record<AwButtonVariant, { base: string; disabled: string }> = {
+/**
+ * Los bordes son `Inside` en Figma: se dibujan con box-shadow inset para no sumar al tamaño.
+ * Secondary: 1 px Button/secondary-stroke; Pressed y Focused 0.5 px; Disabled stroke-disabled de 1 px
+ * en Small/XS y 0.5 px en Medium/Large.
+ */
+const VARIANT: Record<AwButtonVariant, { base: string; stroke: string; disabled: string; disabledStroke: string }> = {
   primary: {
     base: 'bg-button-primary-bg text-button-text active:bg-button-primary-bg-pressed focus-visible:bg-button-primary-bg-focused',
+    stroke: '',
     disabled: 'bg-button-primary-bg-disabled text-button-text-disabled',
+    disabledStroke: '',
   },
   secondary: {
-    base: 'bg-button-secondary-bg text-button-text border-button-secondary-stroke active:bg-button-secondary-bg-pressed active:border-button-secondary-stroke-pressed focus-visible:bg-button-secondary-bg-focused focus-visible:border-button-secondary-stroke-focused',
-    disabled: 'bg-button-secondary-bg-disabled text-button-text-disabled border-button-secondary-stroke-disabled',
+    base: 'bg-button-secondary-bg text-button-text active:bg-button-secondary-bg-pressed focus-visible:bg-button-secondary-bg-focused',
+    stroke: 'shadow-[inset_0_0_0_1px_var(--aw-button-secondary-stroke)] active:shadow-[inset_0_0_0_0.5px_var(--aw-button-secondary-stroke-pressed)] focus-visible:shadow-[inset_0_0_0_0.5px_var(--aw-button-secondary-stroke-focused)]',
+    disabled: 'bg-button-secondary-bg-disabled text-button-text-disabled',
+    disabledStroke: 'shadow-[inset_0_0_0_1px_var(--aw-button-secondary-stroke-disabled)]',
+    // safelist: shadow-[inset_0_0_0_0.5px_var(--aw-button-secondary-stroke-disabled)]
   },
   ghost: {
-    base: 'bg-button-ghost-bg text-button-text border-transparent active:bg-button-ghost-bg-pressed focus-visible:border-button-secondary-stroke-focused',
-    disabled: 'bg-button-ghost-bg text-button-text-disabled border-transparent',
+    base: 'bg-button-ghost-bg text-button-text active:bg-button-ghost-bg-pressed focus-visible:shadow-[inset_0_0_0_1px_var(--aw-button-secondary-stroke-focused)]',
+    stroke: '',
+    disabled: 'bg-button-ghost-bg text-button-text-disabled',
+    disabledStroke: '',
   },
 }
 
 const inactive = computed(() => props.disabled || props.loading)
-const classes = computed(() => [
-  'aw-ui relative inline-flex items-center justify-center gap-8 overflow-hidden whitespace-nowrap transition-colors duration-fast ease-standard',
-  SIZE[props.size],
-  props.shape === 'round' ? 'rounded-xxl' : RADIUS[props.size],
-  props.variant === 'secondary' && props.stroke ? 'border-[0.5px]' : props.variant === 'ghost' ? 'border' : '',
-  props.disabled ? VARIANT[props.variant].disabled : VARIANT[props.variant].base,
-  props.block ? 'w-full' : '',
-])
+const classes = computed(() => {
+  const v = VARIANT[props.variant]
+  return [
+    'aw-ui relative inline-flex items-center justify-center gap-8 overflow-hidden whitespace-nowrap outline-none transition-[background-color,box-shadow] duration-fast ease-standard',
+    SIZE[props.size],
+    props.size === 'small' || props.size === 'xs' ? MIN_SMALL[props.variant] : '',
+    props.shape === 'round' ? 'rounded-xxl' : RADIUS[props.size],
+    props.disabled
+      ? [v.disabled, props.stroke ? (props.size === 'large' || props.size === 'medium' ? v.disabledStroke.replace('_1px_', '_0.5px_') : v.disabledStroke) : '']
+      : [v.base, props.stroke ? v.stroke : ''],
+    props.block ? 'w-full' : '',
+  ]
+})
 </script>
 
 <template>

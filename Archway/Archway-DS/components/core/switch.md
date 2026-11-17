@@ -46,3 +46,9 @@
 - `accessibilityLabel` = nombre de la opción; rol `switch`; estado on / off.
 - Focused sólo con teclado externo, TalkBack o Switch Control; nunca con el dedo.
 - Si la fila tiene label, toda la fila alterna el switch (área táctil ≥ 48).
+
+## Cambios 2026-11-17 (paridad con Figma)
+
+- El knob no lleva sombra.
+
+Web ajustado y verificado contra la captura de Figma en Storybook (historia oculta *QA paridad Figma*). iOS y Android quedan pendientes de este ajuste.

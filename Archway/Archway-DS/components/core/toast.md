@@ -53,3 +53,9 @@ Texto `Text/on-color` sobre `Surface/inverse`: 14.55:1 ✅. Las variantes `-on-b
 - El estado no depende sólo del color: hay ícono y texto ✅.
 - 5 s puede no alcanzar con lector de pantalla o con 2 líneas: extender o permitir cerrar ([C-A06](../audit.md#c-a06--animaciones-sin-reglas-de-pausa)).
 - No poner acciones críticas dentro del Toast (desaparece).
+
+## Cambios 2026-11-17 (paridad con Figma)
+
+- Acento: trazo interior izquierdo de 5. Sombra del estilo remoto `Elevation/Bordered Down` (C-T05). Íconos de estado en versión rellena.
+
+Web ajustado y verificado contra la captura de Figma en Storybook (historia oculta *QA paridad Figma*). iOS y Android quedan pendientes de este ajuste.

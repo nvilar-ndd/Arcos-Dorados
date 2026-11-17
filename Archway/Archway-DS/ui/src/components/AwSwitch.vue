@@ -26,7 +26,7 @@ withDefaults(defineProps<{ label?: string; ariaLabel?: string; disabled?: boolea
       >
         <span
           :class="[
-            'h-24 w-24 rounded-full shadow-shallow-l-elev-1 transition-[width] duration-fast ease-standard',
+            'h-24 w-24 rounded-full transition-[width] duration-fast ease-standard',
             disabled ? (model ? 'bg-surface-default' : 'bg-surface-subtle') : 'bg-surface-default group-active:w-[30px]',
           ]"
         />

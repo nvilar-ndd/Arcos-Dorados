@@ -29,3 +29,11 @@ Fondo `Surface/subtle` / `Surface/brand` · radio `Valor/radius/L` · texto `Dis
 - Con "Reducir movimiento": sin confeti ni flotación; contador y barra sin animar ([C-A06](../audit.md#c-a06--animaciones-sin-reglas-de-pausa)).
 - El loop infinito (6) necesita poder pausarse o detenerse a los 5 s (WCAG 2.2.2).
 - Anunciar "Premio desbloqueado" con `aria-live`. Los puntos se leen como número ("1.000 puntos").
+
+## Cambios 2026-11-17 (paridad con Figma)
+
+- Título *MiMcDonald’s* en `Heading Small Bold`; tarjeta radio L con esquina superior derecha de 48 y trazo `Border/subtle`.
+- Puntos en `Display Medium Bold` con texto en degradé; barra sobre `Button/primary-bg-disabled` con estrellas y degradé de avance (C-T02).
+- Pie de vencimiento sobre `Surface/subtle`, radio L abajo, con ícono de advertencia.
+
+Web ajustado y verificado contra la captura de Figma en Storybook (historia oculta *QA paridad Figma*). iOS y Android quedan pendientes de este ajuste.

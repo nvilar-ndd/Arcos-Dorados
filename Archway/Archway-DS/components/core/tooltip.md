@@ -40,3 +40,12 @@
 - Al abrirse, el lector enfoca su contenido; la X tiene label "Cerrar" y área táctil ≥ 48 ([C-A04](../audit.md#c-a04--áreas-táctiles)).
 - Web: `role="tooltip"` + `aria-describedby`; se cierra con Esc; con hover y foco (WCAG 1.4.13: descartable, persistente y "hoverable").
 - iOS: `cornerCurve = .continuous` para el squircle.
+
+## Cambios 2026-11-17 (paridad con Figma)
+
+- Plain: padding 8, gap 4, radio S, `Label Small`, cierre `cancel-filled` 24.
+- Rich: ancho 248, padding 16 (abajo 8), gap 8, radio M; título `Label Medium` + texto `Label Small`; fila de acciones de 40 alineada a la derecha.
+- Puntero 16 × 8 con punta redondeada; nueva propiedad `align` (start / center / end). Sin sombra.
+- En Figma `Position` indica dónde está el puntero, al revés que la propiedad `position` de web (C-H01).
+
+Web ajustado y verificado contra la captura de Figma en Storybook (historia oculta *QA paridad Figma*). iOS y Android quedan pendientes de este ajuste.

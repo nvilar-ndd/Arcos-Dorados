@@ -1,6 +1,6 @@
 # Audit — ArchWay Components (Design Resources CORE)
 
-> **Archivo auditado:** [Design Resources CORE – Archway (Figma)](https://www.figma.com/design/jXe3O8ICmPdNyX6mYbQDVC/Design-Resources-CORE---Archway-) · **Fecha:** 2026-11-16 · **Método:** relevamiento de las 33 páginas vía Figma MCP (component sets, propiedades, descripciones, variables enlazadas, colores sin variable y estilos de texto) + contraste WCAG 2.1 sobre los valores resueltos de [Foundations](../foundations/color.md).
+> **Archivo auditado:** [Design Resources CORE – Archway (Figma)](https://www.figma.com/design/jXe3O8ICmPdNyX6mYbQDVC/Design-Resources-CORE---Archway-) · **Fecha:** 2026-11-16 (actualizado 2026-11-17 con los componentes nuevos y modificados) · **Método:** relevamiento de las 33 páginas vía Figma MCP (component sets, propiedades, descripciones, variables enlazadas, colores sin variable y estilos de texto) + contraste WCAG 2.1 sobre los valores resueltos de [Foundations](../foundations/color.md).
 >
 > **Flujo:** igual que el [audit de Foundations](../audit.md). Cada hallazgo queda `Pendiente` hasta que el equipo lo **aprueba** o lo **rechaza**; sólo lo aprobado se aplica en Figma. Nada de este archivo está aplicado.
 
@@ -30,6 +30,8 @@ Antes de los hallazgos, lo que el archivo ya resuelve y conviene sostener:
 | C-S01 | Dos componentes base de Card (`.Card (Core)` y `Card` Nivel 2) | 🟠 P1 | Pendiente |
 | C-S03 | Lista cerrada de estados distinta en cada componente; sin `Hover` para web | 🟠 P1 | Pendiente |
 | C-T03 | Textos sin estilo de texto (Card, Gamification Bar, Loyalty home card) | 🟡 P2 | Pendiente |
+| C-T05 | Toast y Product Card usan el estilo de efecto remoto `Elevation/Bordered Down` (no está en Foundations) | 🟡 P2 | Pendiente · nuevo 17/11 |
+| C-T06 | Inline notice: fondos hex sin variable y textos sin estilo de texto | 🟠 P1 | Pendiente · nuevo 17/11 |
 | C-S02 | Estado de los componentes desalineado entre *Índice*, *Estado de componentes* y lo publicado | 🟡 P2 | Pendiente |
 | C-S04 | Tag Core: la documentación no coincide con el componente | 🟡 P2 | Pendiente |
 | C-S05 | Skeleton: nombres de variante cruzados con los tokens | 🟡 P2 | Pendiente |
@@ -120,6 +122,29 @@ Referencia: reglas de [Motion](../foundations/motion.md).
 | ProgressBar_beneficios (💠) | `#D6D6D6`, `#FFBC0D` | `Surface/muted`, `Interactive/active` (ver C-A02) |
 | Carrousel cards / Classic (Small y Big) | Precio con descuento `#DB0007` (10 nodos) | `Text/error`, o un token `Text/price-discount` si el rojo no significa error |
 | .Button Loading — Motion | `#FFFFFF` | `Surface/default` |
+| Loyalty home card (💠) · degradés de puntos y barra | hex sueltos (fucsia → rojo → naranja) | Variables de degradé en Foundations (`Gradient/loyalty`) o primitivos `fuchsia/700`, `red/600`, `orange/500` |
+| ProgressBar_beneficios (💠) · degradé de avance | hex sueltos | Igual que Loyalty |
+
+En código se usan los primitivos más cercanos hasta que el equipo apruebe la propuesta.
+
+### C-T05 · Estilo de efecto remoto
+
+Toast y Product Card (imagen) toman la sombra del estilo `Elevation/Bordered Down`, que viene de otra librería: en Foundations no existe. En código se replica como `0 8px 16px` con `black/800` al 16 %.
+
+**Propuesta:** sumar el estilo a Foundations › Elevation (p. ej. `Shallow/Bordered/Down`) o reemplazarlo por `Shallow/M/Elev 2`.
+
+### C-T06 · Inline notice sin tokens
+
+Componente nuevo (5699:578, 17/11). Los cuatro fondos son hex sueltos y los textos (Speedee 14/20, título y enlace Bold) no tienen estilo de texto.
+
+| Tono | Hex en Figma | Primitivo más cercano (web) | Propuesta |
+|---|---|---|---|
+| Informativo | `#EDF5FF` | `blue/100` | `Feedback/info-subtle` |
+| Positivo | `#EBF7ED` | `green/100` | `Feedback/success-subtle` |
+| Advertencia | `#FFEDD5` | `orange/100` | `Feedback/warning-subtle` |
+| Crítico | `#FFEDF0` | `red/50` | `Feedback/error-subtle` |
+
+Textos: aplicar `Body/Body Medium` y `Body/Body Medium Bold`. iOS y Android no tienen primitivos: mientras tanto usan `Feedback/*-surface` (más saturados que Figma). Los cuatro íconos son `Icon/primary`: el tono lo da sólo el fondo, así que el aviso crítico depende del ícono y el título para no apoyarse sólo en el color (WCAG 1.4.1) — conviene que el título sea obligatorio en Advertencia y Crítico.
 
 ### C-T04 · Documentación con nombres viejos o hex
 
@@ -211,3 +236,5 @@ El propio archivo lo marca "⚠ A definir": la variante `Background=Subtle` usa 
 | Chip (descripción) | "I\nnteractivo" | "Interactivo" |
 | Progress bar misiones | propiedad `Estado` (el resto usa `State`) | `State` |
 | Card / Setting | la ficha nombra `Show Switch`; la propiedad es `Show Icon` | Alinear |
+| Tooltip_Plain | `Position` describe dónde queda la **flecha**, no el tooltip (en web `position` es la ubicación del tooltip) | Renombrar a `Pointer` |
+| Icon Only | en Disabled el ícono sigue en `Icon/primary` (no `Icon/disabled`) | Confirmar si es intencional |

@@ -39,3 +39,9 @@ Redimensionables. Sin estados interactivos (no se toca, no se foquea).
 - El skeleton es `accessibilityHidden` / `aria-hidden="true"`; el contenedor anuncia "Cargando" (`aria-busy="true"`).
 - Con "Reducir movimiento", sin shimmer (bloque estático).
 - Mismas dimensiones que el contenido final: el layout no salta al cargar (CLS).
+
+## Cambios 2026-11-17 (paridad con Figma)
+
+- Nueva opción de fondo `subtle` / `muted`.
+
+Web ajustado y verificado contra la captura de Figma en Storybook (historia oculta *QA paridad Figma*). iOS y Android quedan pendientes de este ajuste.

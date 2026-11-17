@@ -58,3 +58,9 @@ En código, `Progress` y `Phase` son un número continuo (0–100), no pasos.
 - Anunciar inicio, avances significativos y fin; no cada punto.
 - Animado: respetar `prefers-reduced-motion`; no depender sólo de la animación.
 - Pagination / Stepper: anunciar "Paso 2 de 4" / "Página 3 de 5".
+
+## Cambios 2026-11-17 (paridad con Figma)
+
+- Progress circle: grosor = tamaño ÷ 8. Pagination: celdas de 16 con puntos de 10 (activo) y 6. Stepper: gap 8. Progress bar: mínimo 8.
+
+Web ajustado y verificado contra la captura de Figma en Storybook (historia oculta *QA paridad Figma*). iOS y Android quedan pendientes de este ajuste.

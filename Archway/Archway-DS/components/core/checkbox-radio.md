@@ -47,3 +47,10 @@ El estado seleccionado se reconoce por el tilde (forma), no sólo por el dorado 
 - Checkbox: rol `checkbox`, estado checked. Radio: rol `radio` dentro de un `radiogroup` con nombre.
 - La fila completa es el área táctil (≥ 48); el control solo queda en 40 ([C-A04](../audit.md#c-a04--áreas-táctiles)).
 - Teclado (web): Espacio marca Checkbox; flechas mueven la selección del Radio.
+
+## Cambios 2026-11-17 (paridad con Figma)
+
+- Glifos exactos de Iconografía (24). Radio seleccionado: círculo dorado con el check calado (no un punto).
+- Área: label con padding 8 y gap 8.
+
+Web ajustado y verificado contra la captura de Figma en Storybook (historia oculta *QA paridad Figma*). iOS y Android quedan pendientes de este ajuste.

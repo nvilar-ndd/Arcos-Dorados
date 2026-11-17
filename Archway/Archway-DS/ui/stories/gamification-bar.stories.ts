@@ -6,7 +6,7 @@ import androidSrc from '../../android/archway-ui/src/main/java/com/arcosdorados/
 import { swift, kotlin } from './_support/extract'
 import { platformStory, IOS_NATIVE, NOT_COMPILED } from './_support/platform'
 
-const meta = { title: 'Componentes/Específicos/Gamification Bar', component: AwGamificationBar, argTypes: { progress: { control: { type: 'range', min: 0, max: 100 } }, type: { control: 'inline-radio', options: ['expanded', 'collapsed'] } }, args: { progress: 50, message: 'Sumá $ 2.500 más y el envío es gratis', type: 'expanded', skeleton: false } } satisfies Meta<typeof AwGamificationBar>
+const meta = { title: 'Componentes/Específicos/Gamification Bar', component: AwGamificationBar, argTypes: { progress: { control: { type: 'range', min: 0, max: 100 } }, type: { control: 'inline-radio', options: ['expanded', 'collapsed'] } }, args: { progress: 27, message: '¡A solo $ 2.500 del envío gratis!', type: 'collapsed', skeleton: false } } satisfies Meta<typeof AwGamificationBar>
 export default meta
 
 export const Playground: StoryObj<typeof meta> = {}
@@ -20,6 +20,6 @@ export const Plataformas = platformStory(
     androidNote: NOT_COMPILED,
   },
   { AwGamificationBar },
-  `<div style="width:412px;display:grid;gap:16px"><AwGamificationBar :progress="20" message="Sumá $ 1.000 más para reducir la tasa de servicio" /><AwGamificationBar :progress="70" type="collapsed" /><AwGamificationBar :progress="100" message="¡Tenés envío gratis!" /></div>`,
+  `<div style="width:412px;display:grid;gap:16px"><AwGamificationBar>Sumá productos y desbloqueá tu <strong class="aw-label-small-bold">envío gratis</strong></AwGamificationBar><AwGamificationBar :progress="27">¡A solo <strong class="aw-label-small-bold">$ 2.500</strong> del <strong class="aw-label-small-bold">envío gratis!</strong></AwGamificationBar><AwGamificationBar :progress="100"><strong class="aw-label-small-bold">¡Felicitaciones! Alcanzaste el envío gratis</strong></AwGamificationBar><AwGamificationBar :progress="60" type="expanded" message="Expanded" /></div>`,
   () => ({}),
 )

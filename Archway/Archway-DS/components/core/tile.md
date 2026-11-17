@@ -39,3 +39,10 @@ El borde `Border/subtle` (1.78:1) es decorativo: el bloque se reconoce por el co
 - `accessibilityHint` = "Ver productos de Hamburguesas"; rol `button` (navega).
 - Skeleton: `accessibilityHidden = true`.
 - Pressed con transformación: respetar "Reducir movimiento" (sólo cambio de color).
+
+## Cambios 2026-11-17 (paridad con Figma)
+
+- Tile: trazo interior 0,5 `Border/subtle` + `Shallow/L/Elev 1`; contenedor del ícono 40 con radio M.
+- Category Primary: alineado abajo, gap 8, padding 8 × 16, imagen 72 a la izquierda. Category Secondary: padding 8, gap 8.
+
+Web ajustado y verificado contra la captura de Figma en Storybook (historia oculta *QA paridad Figma*). iOS y Android quedan pendientes de este ajuste.

@@ -15,9 +15,9 @@ withDefaults(defineProps<{ headline: string; supporting?: string; icon?: AwIconN
 </script>
 
 <template>
-  <div class="aw-ui flex min-h-[68px] w-full items-center gap-16 rounded-s border border-border-soft bg-surface-default px-16 py-8">
+  <div class="aw-ui flex min-h-[68px] w-full items-center gap-8 rounded-s bg-surface-default p-16 shadow-[inset_0_0_0_1px_var(--aw-border-soft)]">
     <AwIcon v-if="icon" :name="icon" class="text-icon-primary" />
-    <div class="flex min-w-0 flex-1 flex-col">
+    <div class="flex min-w-0 flex-1 flex-col gap-4">
       <span :class="['aw-label-medium-bold', disabled ? 'text-text-disabled' : 'text-text-primary']">{{ headline }}</span>
       <span v-if="supporting" class="aw-text-body-small text-text-secondary">{{ supporting }}</span>
     </div>

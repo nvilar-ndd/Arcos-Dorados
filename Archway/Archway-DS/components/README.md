@@ -77,6 +77,7 @@ Replica la tabla *Estado de componentes* de Figma (22/10/2026), corregida con lo
 | Tile | [tile.md](./core/tile.md) | Base de Categorías | ✅ Existe |
 | Toast | [toast.md](./core/toast.md) | Toast / General | ✅ Existe |
 | Tooltip | [tooltip.md](./core/tooltip.md) | Tooltips | ✅ Existe |
+| Inline notice | [inline-notice.md](./core/inline-notice.md) | — (nuevo 17/11) | ✅ Existe |
 | Top Bar (Android) | [top-bar.md](./core/top-bar.md) | Navigation Bar | ✅ Existe |
 | Skeleton | [skeleton.md](./core/skeleton.md) | Skeleton | ✅ Existe |
 | Progress · Pagination · Stepper | [progress.md](./core/progress.md) | Loading & progress | ✅ Existe |

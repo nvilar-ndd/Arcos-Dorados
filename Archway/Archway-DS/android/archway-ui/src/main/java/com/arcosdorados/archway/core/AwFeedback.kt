@@ -7,6 +7,7 @@ import androidx.compose.animation.fadeOut
 import androidx.compose.animation.slideInVertically
 import androidx.compose.animation.slideOutVertically
 import androidx.compose.foundation.background
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Box
 import androidx.compose.foundation.layout.Column
@@ -27,6 +28,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.semantics.LiveRegionMode
 import androidx.compose.ui.semantics.liveRegion
+import androidx.compose.foundation.layout.size
+import androidx.compose.ui.semantics.Role
 import androidx.compose.ui.semantics.semantics
 import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.dp
@@ -107,6 +110,47 @@ fun AwTooltip(visible: Boolean, onDismiss: () -> Unit, text: String, title: Stri
                     AwText(text, if (title != null) AwTypography.labelMedium else AwTypography.labelSmall, color = AwColor.textOnColor)
                 }
                 if (closable) AwIconButton(AwIcons.Close, "Cerrar", onDismiss, variant = AwButtonVariant.Ghost, size = AwButtonSize.XS)
+            }
+        }
+    }
+}
+
+enum class AwInlineNoticeTone { Info, Success, Warning, Critical }
+
+/**
+ * Inline notice — Figma: Design Resources CORE › Inline notice (5699:578). Aviso fijo dentro del flujo, sin cierre.
+ * Ícono 16 en caja 20, gap 8, padding 10 × 12, radio 4, Body Medium (título y acción en Bold).
+ * Nota: Figma usa fondos hex sin token (audit C-T06); hasta tener `Feedback/*-subtle` se usa `feedback*Surface`.
+ * Warning / Critical anuncian como live region Polite (no interrumpen).
+ */
+@Composable
+fun AwInlineNotice(
+    description: String,
+    modifier: Modifier = Modifier,
+    tone: AwInlineNoticeTone = AwInlineNoticeTone.Info,
+    title: String? = null,
+    actionLabel: String? = null,
+    onAction: (() -> Unit)? = null,
+) {
+    val (bg, accent, icon) = when (tone) {
+        AwInlineNoticeTone.Info -> Triple(AwColor.feedbackInfoSurface, AwColor.iconPrimary, AwIcons.Info)
+        AwInlineNoticeTone.Success -> Triple(AwColor.feedbackSuccessSurface, AwColor.iconPrimary, AwIcons.Success)
+        AwInlineNoticeTone.Warning -> Triple(AwColor.feedbackWarningSurface, AwColor.iconPrimary, AwIcons.Warning)
+        AwInlineNoticeTone.Critical -> Triple(AwColor.feedbackErrorSurface, AwColor.iconPrimary, AwIcons.Error)
+    }
+    Row(
+        modifier.clip(RoundedCornerShape(AwRadius.xs)).background(bg).padding(horizontal = 12.dp, vertical = 10.dp)
+            .semantics(mergeDescendants = onAction == null) {
+                if (tone == AwInlineNoticeTone.Warning || tone == AwInlineNoticeTone.Critical) liveRegion = LiveRegionMode.Polite
+            },
+        horizontalArrangement = Arrangement.spacedBy(AwSpacing.s8),
+    ) {
+        Box(Modifier.size(20.dp), contentAlignment = Alignment.Center) { AwIcon(icon, size = 16.dp, tint = accent) }
+        Column(Modifier.weight(1f)) {
+            AwText(listOfNotNull(title, description).joinToString(" "), AwTypography.textBodyMedium, color = AwColor.textPrimary)
+            if (actionLabel != null && onAction != null) {
+                AwText(actionLabel, AwTypography.textBodyMediumBold, color = AwColor.textPrimary,
+                    modifier = Modifier.clickable(role = Role.Button, onClick = onAction))
             }
         }
     }

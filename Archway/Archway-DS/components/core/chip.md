@@ -48,3 +48,10 @@ Forma **Round (píldora)** siempre: es una acción de filtro aislada. En iOS, lo
 - Grupo de filtros: contenedor con `accessibilityLabel` ("Filtros") y anuncio del resultado ("12 productos").
 - Only Icon: `accessibilityLabel` obligatorio.
 - Área táctil 40 → 48 ([C-A04](../audit.md#c-a04--áreas-táctiles)).
+
+## Cambios 2026-11-17 (paridad con Figma)
+
+- Gap ícono–texto 8 en Medium y 4 en Small; padding horizontal 15 + trazo de 1.
+- Small Selected lleva borde `gold/600` (variable remota `Color/Chip/chip-Selected-stroke`, C-T01); Medium no.
+
+Web ajustado y verificado contra la captura de Figma en Storybook (historia oculta *QA paridad Figma*). iOS y Android quedan pendientes de este ajuste.

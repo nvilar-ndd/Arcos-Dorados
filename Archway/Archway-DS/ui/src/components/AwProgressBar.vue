@@ -12,7 +12,7 @@ const pct = computed(() => Math.max(0, Math.min(100, Math.round(props.value))))
   <div class="aw-ui flex w-full flex-col gap-8">
     <div v-if="showLabel" class="aw-label-medium flex justify-between text-text-primary"><span>{{ label }}</span><span>{{ pct }} %</span></div>
     <div role="progressbar" :aria-valuenow="pct" aria-valuemin="0" aria-valuemax="100" :aria-label="label" class="h-8 w-full overflow-hidden rounded-xs bg-feedback-info-surface">
-      <div class="h-full rounded-xs bg-feedback-info transition-[width] duration-moderate ease-standard" :style="{ width: `${pct}%` }" />
+      <div class="h-full min-w-8 rounded-xs bg-feedback-info transition-[width] duration-moderate ease-standard" :style="{ width: `${pct}%` }" />
     </div>
   </div>
 </template>

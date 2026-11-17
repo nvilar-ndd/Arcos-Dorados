@@ -14,3 +14,9 @@ Sin variables: `#F9F9F9` y `#FFFFFF` sueltos en los 3 estados ([C-T02](../audit.
 ## Accesibilidad
 
 El estado se anuncia en texto ("Pin Hora de disfrutar, incompleto"), no sólo con el tratamiento visual.
+
+## Cambios 2026-11-17 (paridad con Figma)
+
+- Hexágono (exterior blanco, interior `Surface/subtle`) con sombra; imagen 38. Incompleto al 50 %; Vencido al 50 % y en escala de grises.
+
+Web ajustado y verificado contra la captura de Figma en Storybook (historia oculta *QA paridad Figma*). iOS y Android quedan pendientes de este ajuste.

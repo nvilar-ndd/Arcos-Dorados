@@ -85,3 +85,46 @@ public extension View {
         }
     }
 }
+
+/// Inline notice — Figma: Design Resources CORE › Inline notice (5699:578). Aviso fijo dentro del flujo,
+/// sin cierre. Info / Success / Warning / Critical. Ícono 16 en caja 20, gap 8, padding 10 × 12, radio 4,
+/// Body Medium (título y acción en Bold).
+/// Nota: Figma usa fondos hex sin token (audit C-T06); hasta tener `Feedback/*-subtle` se usa `feedback*Surface`.
+public struct AWInlineNotice: View {
+    public enum Tone: Sendable { case info, success, warning, critical }
+    let description: String
+    let tone: Tone
+    let title: String?
+    let actionLabel: String?
+    let action: (() -> Void)?
+
+    public init(_ description: String, tone: Tone = .info, title: String? = nil, actionLabel: String? = nil, action: (() -> Void)? = nil) {
+        self.description = description; self.tone = tone; self.title = title; self.actionLabel = actionLabel; self.action = action
+    }
+
+    public var body: some View {
+        HStack(alignment: .top, spacing: AWSpacing.s8) {
+            AWIcon(icon, size: 16).foregroundStyle(accent).frame(width: 20, height: 20)
+            VStack(alignment: .leading, spacing: 0) {
+                (titleText + Text(description)).awText(AWTypography.textBodyMedium)
+                if let actionLabel, let action {
+                    Button(action: action) { Text(actionLabel).underline().awText(AWTypography.textBodyMediumBold) }
+                        .buttonStyle(.plain)
+                }
+            }
+            .foregroundStyle(AWColor.textPrimary)
+            Spacer(minLength: 0)
+        }
+        .padding(.vertical, 10)
+        .padding(.horizontal, 12)
+        .background(background)
+        .awCorner(AWRadius.xs)
+        .accessibilityElement(children: .contain)
+        .accessibilityAddTraits(tone == .warning || tone == .critical ? .isStaticText : [])
+    }
+
+    private var titleText: Text { title.map { Text($0 + " ").bold() } ?? Text("") }
+    private var icon: AWIconName { switch tone { case .info: .info; case .success: .success; case .warning: .warning; case .critical: .error } }
+    private var accent: Color { AWColor.iconPrimary }
+    private var background: Color { switch tone { case .info: AWColor.feedbackInfoSurface; case .success: AWColor.feedbackSuccessSurface; case .warning: AWColor.feedbackWarningSurface; case .critical: AWColor.feedbackErrorSurface } }
+}

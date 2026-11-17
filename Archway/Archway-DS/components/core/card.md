@@ -71,3 +71,10 @@
 - Card que se toca entera: un solo `accessibilityLabel` que describa a dónde lleva (incluye título, subtítulo y tag).
 - Íconos de acción: `accessibilityLabel` obligatorio ("Más opciones", "Agregar a favoritos").
 - Selected: `accessibilityState: selected` / `aria-checked` si es parte de un grupo de selección.
+
+## Cambios 2026-11-17 (paridad con Figma)
+
+- Fila con alineación arriba y gap 16; título y subtítulo agrupados (gap 0) y columna con gap 8.
+- Chevron 16 en caja de 24; *more* es Icon Only XS; favorito alterna `favorite-outline` / `favorite`. Tag en jerarquía Primary.
+
+Web ajustado y verificado contra la captura de Figma en Storybook (historia oculta *QA paridad Figma*). iOS y Android quedan pendientes de este ajuste.

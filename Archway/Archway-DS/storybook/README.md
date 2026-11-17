@@ -39,6 +39,7 @@ Storybook 8.6 · Vue 3 (`<script setup lang="ts">`) · Vite · TypeScript strict
 
 ## Notas
 
-- **Speedee** es tipografía con licencia y **no se versiona**. Copiá los `.woff2` en `fonts/` (`npm run fonts -- <ruta a Speedee_V1.301>`; ver [fonts/README.md](./fonts/README.md)). Sin ellos, el Storybook usa Helvetica Neue / Arial.
+- **Speedee** es tipografía con licencia y **no se versiona**. Copiá los `.woff2` en `fonts/` (`npm run fonts -- <ruta a Speedee_V1.301>`; ver [fonts/README.md](./fonts/README.md)). Sin ellos, el Storybook usa Helvetica Neue / Arial. Los `@font-face` de `.storybook/preview-head.html` y `manager-head.html` corrigen las métricas verticales (`ascent-override` / `descent-override` / `line-gap-override`) para que el texto quede a la misma altura que en Figma.
+- La historia *QA paridad Figma* (oculta del menú) sirve para comparar componentes contra capturas de Figma; ver [ui/README.md](../ui/README.md#paridad-con-figma).
 - El addon de accesibilidad marca una violación de contraste en *Color › Contraste*: son las muestras de los pares que hoy fallan, a propósito.
 - La tabla de contraste se recalcula desde los tokens: al aplicar en Figma lo aprobado del audit y regenerar el JSON, se actualiza sola.

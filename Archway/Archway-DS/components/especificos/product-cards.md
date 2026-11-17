@@ -31,3 +31,10 @@ Título `Text/Body Medium` · precio `Heading/Heading Small Bold` · etiquetas `
 - Un solo label por card: nombre + precio + precio anterior + etiqueta ("Big Mac, $4.500, antes $5.200, Oferta").
 - El precio tachado se anuncia como "antes", no como dos números seguidos.
 - Carrusel: el contenedor tiene nombre ("Para vos") y se puede recorrer con el lector sin swipe obligatorio.
+
+## Cambios 2026-11-17 (paridad con Figma)
+
+- Precio con centavos en superíndice; precio anterior en `Label Small` secundario (sin tachar). Imagen sobre blanco radio S con sombra (C-T05).
+- Anillo de Loyalty con máscara de degradé; tag de puntos con `loyalty-outline` o `lock`; Disabled con la imagen al 50 %.
+
+Web ajustado y verificado contra la captura de Figma en Storybook (historia oculta *QA paridad Figma*). iOS y Android quedan pendientes de este ajuste.

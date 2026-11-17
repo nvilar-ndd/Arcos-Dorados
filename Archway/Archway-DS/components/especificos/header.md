@@ -38,3 +38,10 @@ Barra superior de la Home que comunica el **modo de entrega activo** y la ubicac
 - El bloque de modo es un botón: "Retirar en McDonald's Palermo, cambiar método de entrega".
 - El estado del local se incluye en el label ("Próximo a cerrar").
 - QR: "Mostrar código QR".
+
+## Cambios 2026-11-17 (paridad con Figma)
+
+- Rehecho: modos Genérico / Pickup / Delivery y estados Expandido (padding superior 88) / Colapsado (56).
+- Íconos `eat-in`, `counter`, `delivery`; desplegable con chevron sobre círculo `Surface/muted`; QR como Icon Only secondary sin trazo.
+
+Web ajustado y verificado contra la captura de Figma en Storybook (historia oculta *QA paridad Figma*). iOS y Android quedan pendientes de este ajuste.

@@ -14,10 +14,11 @@ defineEmits<{ leading: []; help: [] }>()
 </script>
 
 <template>
-  <header class="aw-ui flex h-64 w-full min-w-[360px] items-center gap-8 bg-surface-default px-16 py-8">
+  <header class="aw-ui flex h-64 w-full min-w-[360px] items-center gap-16 bg-surface-default px-16 py-8">
     <AwIconButton
       v-if="leading !== 'none'"
-      :icon="leading === 'back' ? 'arrow-left' : 'close'"
+      :icon="leading === 'back' ? 'chevron-left' : 'close'"
+      :art="leading === 'back' ? 32 : 48"
       :label="leading === 'back' ? 'Volver' : 'Cerrar'"
       variant="ghost"
       @click="$emit('leading')"

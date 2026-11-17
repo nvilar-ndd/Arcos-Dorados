@@ -43,3 +43,10 @@ Contenedor `Surface/default` · card `Feedback/info-surface` · track `Surface/s
 
 - `role="progressbar"` con valor y texto: "Te faltan $1.200 para el envío gratis".
 - Anunciar el desbloqueo de un beneficio (`aria-live="polite"`).
+
+## Cambios 2026-11-17 (paridad con Figma)
+
+- Fondo `Feedback/info-surface`, radio L arriba, padding 16. Colapsada: alto mínimo 66; expandida: 162 con 80 abajo.
+- Riel con hitos (por defecto 12,8 %) e ícono final; mensaje en `Label Small` centrado.
+
+Web ajustado y verificado contra la captura de Figma en Storybook (historia oculta *QA paridad Figma*). iOS y Android quedan pendientes de este ajuste.

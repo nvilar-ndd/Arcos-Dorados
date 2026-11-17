@@ -1,6 +1,6 @@
 <script setup lang="ts">
 /**
- * List Item — Figma: Design Resources CORE › List Item. Fila de 56, padding 16, gap 8.
+ * List Item — Figma: Design Resources CORE › List Item. Fila de 56: padding 8/16, gap 16; el divider se superpone al borde inferior (Figma: absoluto).
  * Si tiene `to`/`href` o escucha click es un botón/enlace de fila completa (Pressed: Surface/subtle,
  * Focused: borde Border/strong). Leading/trailing son íconos o slots (Checkbox, Radio, Switch).
  */
@@ -20,7 +20,7 @@ const tag = computed(() => (props.href ? 'a' : isAction.value ? 'button' : 'div'
 </script>
 
 <template>
-  <div class="aw-ui w-full">
+  <div class="aw-ui relative w-full">
     <component
       :is="tag"
       :href="href"
@@ -28,7 +28,7 @@ const tag = computed(() => (props.href ? 'a' : isAction.value ? 'button' : 'div'
       :disabled="tag === 'button' ? disabled : undefined"
       :aria-disabled="tag === 'a' && disabled ? 'true' : undefined"
       :class="[
-        'flex min-h-56 w-full items-center gap-8 bg-surface-default p-16 text-left outline-none transition-colors duration-fast ease-standard',
+        'flex min-h-56 w-full items-center gap-16 bg-surface-default px-16 py-8 text-left outline-none transition-colors duration-fast ease-standard',
         isAction && !disabled ? 'active:bg-surface-subtle focus-visible:shadow-[inset_0_0_0_2px_var(--aw-border-strong)]' : '',
         disabled ? 'cursor-not-allowed' : '',
       ]"
@@ -45,6 +45,6 @@ const tag = computed(() => (props.href ? 'a' : isAction.value ? 'button' : 'div'
         <AwIcon v-if="trailingIcon" :name="trailingIcon" :class="disabled ? 'text-icon-disabled' : 'text-icon-primary'" />
       </slot>
     </component>
-    <AwDivider v-if="divider" />
+    <AwDivider v-if="divider" class="absolute inset-x-0 bottom-0" />
   </div>
 </template>

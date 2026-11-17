@@ -22,4 +22,6 @@
 
 3. Reiniciá `npm run dev`. La página *Tipografía* deja de mostrar el aviso de fuente de reemplazo.
 
+Los `@font-face` ya incluyen `ascent-override: 99.6%; descent-override: 26.8%; line-gap-override: 0%`: sin eso el texto queda 2 px más arriba que en Figma.
+
 Sin estos archivos el Storybook funciona igual, con Helvetica Neue / Arial como reemplazo.
