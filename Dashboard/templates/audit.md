@@ -35,6 +35,7 @@ metodo: Figma MCP (get_metadata · get_design_context · get_screenshot · get_v
 
 **Seguridad operativa**
 - [ ] Destructivas con confirmación que nombra objeto e impacto (BO-SEG-01)
+- [ ] Límites de negocio avisados antes de bloquear (BO-SEG-08)
 - [ ] Soft-delete / archivado restaurable (BO-SEG-02)
 - [ ] Resumen de alcance antes de publicar (BO-SEG-03)
 - [ ] Aviso de cambios sin guardar (BO-SEG-04)

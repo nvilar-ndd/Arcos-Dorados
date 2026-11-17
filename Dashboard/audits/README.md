@@ -4,7 +4,7 @@ Una auditoría por archivo (o por módulo) y por fecha, con la plantilla [`templ
 
 | # | Alcance | Fecha | Hallazgos | Estado |
 |---|---|---|---|---|
-| — | Primera auditoría pendiente de relevar los archivos de producto ([Q-01](../docs/preguntas-abiertas.md)) | — | — | — |
+| — | Archivos relevados el 2026-11-17 ([mapa de flujos](../docs/mapa-de-flujos.md)). Primera auditoría sugerida: **Promociones** | — | — | — |
 
 ## IDs
 

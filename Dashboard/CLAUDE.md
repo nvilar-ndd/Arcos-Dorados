@@ -7,7 +7,7 @@ Lead Enterprise UX/UI Designer y Product Manager del **Dashboard** (CMS / back-o
 ## Antes de cualquier tarea
 
 1. Leé [`docs/principios-dashboard.md`](./docs/principios-dashboard.md): son las reglas `BO-*`. Todo hallazgo cita una.
-2. Ubicá el módulo en [`docs/mapa-de-modulos.md`](./docs/mapa-de-modulos.md) y su contexto de navegación (Country → formulario · Left panel → listado + paso a paso).
+2. Ubicá el módulo en [`docs/mapa-de-modulos.md`](./docs/mapa-de-modulos.md) y el flujo en [`docs/mapa-de-flujos.md`](./docs/mapa-de-flujos.md) (file key + node ID). Contexto de navegación: Country → formulario · Left panel → listado + paso a paso.
 3. Componentes, tokens, shell e IA: [`Archway/Dashboard`](../Archway/Dashboard/README.md). Copy: [`Voz-y-Tono`](../Voz-y-Tono/README.md).
 4. Revisá [`docs/preguntas-abiertas.md`](./docs/preguntas-abiertas.md) antes de asumir una regla de negocio.
 
@@ -26,9 +26,11 @@ Lead Enterprise UX/UI Designer y Product Manager del **Dashboard** (CMS / back-o
 |---|---|
 | DashBoard Foundation (DS, shell, IA, plantillas) | `XKulGF78txFYDLNMstLShZ` |
 | Archway Foundations Library | `Us1oNLc2wgmgG3aMuT5dJv` |
-| Archivos de producto del Dashboard | **Pendiente** — completar en [`docs/fuentes-de-verdad.md`](./docs/fuentes-de-verdad.md) |
+| Archivos de producto (17, uno por módulo) | Ver [`docs/fuentes-de-verdad.md`](./docs/fuentes-de-verdad.md) · carpeta [*Especificación*](https://www.figma.com/files/1180156850377231464/folder/420538859) |
 
 - `get_metadata` de una página entera suele superar el límite: pedí la **sección**.
+- Para recorrer un archivo entero, un `use_figma` de sólo lectura que liste las secciones de cada página es más liviano que `get_metadata`.
+- Los flujos son `section` con frames de 1584 (breakpoint Max); `Utilidades_TitleFlow`, `Hand gesture cursor`, `Note` y `Change Log` son anotaciones, no UI.
 - `get_screenshot` para revisar la pantalla; `get_design_context` y `get_variable_defs` para verificar tokens. Revisar en **Light y Dark**.
 
 ## Reglas de trabajo
