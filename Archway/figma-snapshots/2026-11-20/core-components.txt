@@ -1,0 +1,79 @@
+# Design Resources CORE – Archway (jXe3O8ICmPdNyX6mYbQDVC) — 2026-11-20
+# página|component set o componente|variantes|id|tamaño del set|hash de estructura v2 (ver README: «Hash de estructura de component sets»)
+Utilidades|Medida|2|2393:3411|96x120.5|1bc2038a
+Utilidades|indicador de numero|4|2567:5634|82.5x208|3283f0c5
+Utilidades|Utiidades_Enlace del flujo|1|5503:360|400x166|a68a2b18
+Status bar|Status bar custom|2|5056:1729|444x188|5e073a43
+iOs|_Tab Bar Button - iPhone|4|4519:12994|210x160|8c60b8b0
+iOs|_Search - iPhone|6|4519:13459|847x230|62e0418b
+Badge|Badge|2|2133:2088|63x48|92875c9d
+Button|Button|80|424:897|1545x623|72ef6f48
+Button|FAB|4|431:2972|524x88|a3428d63
+Button|FAB_Extended|4|3256:415|642x90|6c12996a
+Button|.Button Loading — Motion|4|4364:265|370x314|cb8f35e3
+Button|Button_Ghost|32|424:567|1396x416|ab4be85c
+Button|Icon_Only|45|431:2891|663x873|b79ec499
+Card|.Card (Core)|12|5182:653|1512x650|a30089f
+Checkbox / Radio|Checkbox|4|4983:115|240x192|394db03d
+Checkbox / Radio|Radio|4|4993:137|240x192|c8e395a5
+Chip|Chip|30|548:1953|668x484|acdbfa25
+Divider|Divider|1|5009:8|412x1|77d19e82
+List Item|List Item|4|5010:47|444x352|360cb93c
+Inline notice|Inline notice|4|5699:578|344x268|6f5fc16a
+Input text field|Placeholder|9|537:14143|352x484|a517af8
+Input text field|Hint|4|537:14240|352x144|30a36666
+Input text field|Imput label|2|537:14251|352x80|b365f006
+Input text field|Imput_Text Field|9|501:1801|356x1068|8fe3d512
+Input text field|Imput_Text area|9|537:17470|352x1168|afa7a8e3
+Input text field|Imput_Select|3|5001:3921|356x328|9f7fb9df
+Input text field|Imput_PinCode box|2|5001:3930|152x88|247a9700
+Input text field|Imput_PinCode|4|5001:4017|360x512|f10a0f04
+Input text field|Imput_Password|18|5005:564|356x2168|52e7407e
+Loading & progress|Progress bar|11|2044:452|404x912|7abdfb74
+Loading & progress|Progress Circle|35|3944:367|516x508|6d80ccd2
+Loading & progress|Pagination Bullet|2|4465:1181|56x92|d89de928
+Loading & progress|Pagination|6|4465:1188|136x236|c9af279
+Loading & progress|Progress_step|2|4465:1250|88x63|4a92dca
+Loading & progress|Progress_stepper|7|4465:1217|299x151|4f1f23cb
+Navigation bars/ TabBar|NavItem|4|2142:1905|104x400|9918a656
+Navigation bars/ TabBar|NavItem_Only|4|2146:1870|80x400|b1c1cd79
+Navigation bars/ TabBar|NavBarCustom|2|2149:2174|452x256|80e67719
+Navigation bars/ TabBar|_Tab Bar Button - iPhone|4|3315:14311|210x160|8c60b8b0
+Search|Search / Android|5|3642:347|417x278|c38a66df
+Search|_Search - iPhone|6|3844:2213|847x230|62e0418b
+Switch|Switch|10|5447:68|399x226|e9a6109a
+Switch|Ios Toggle - Switch|2|5499:339|104x120|f5b3ebe8
+Skeleton|Skeleton|6|4081:14653|266x242|abf0b773
+Tag|Tag|3|581:529|344x66|71a0bd5e
+Tile (category)|Principal categories|1|2117:2661|376x104|d9009d86
+Tile (category)|Categories|1|2117:2665|396x240|697bfcdd
+Tile (category)|Stripe secondary categories|1|2117:2668|396x120|f3f7979
+Tile (category)|Category_Secondary|3|2117:2654|367x148|3ce38e20
+Tile (category)|Category_Primary|3|2117:2647|653x136|c57a0997
+Tile (category)|Tile|3|4583:10376|414x138|7ecf92dd
+Toast|Toast / General|4|4709:2086|368x346|9721d94e
+Tooltip|Tooltip_Plain|12|2108:2512|592x353|e1f739b2
+Tooltip|Pointer|4|2108:2728|114x48|3f848581
+Tooltip|Rich Tooltip|12|2316:250|820x784|142d50a5
+Top Bar|Top Bar|2|5230:4480|494x250|3f26ca0
+Top Bar|Top Bar · iOS|2|5230:4489|484x230|147e5d29
+Banners|Banner|2|4099:16647|420x648|43d86d93
+Card  💠|Card / Voucher|3|4798:9238|368x538|5c021e8f
+Card  💠|Card|10|4798:9335|728x868|1ae43e75
+Card  💠|Card / Setting|1|5435:5130|380x68|350da1f4
+Dialog 💠 Pop-up|Dialog 💠 Pop-up dashboard|2|5146:3503|768x656|2526d15a
+Gamification Bar|Icon Bar|2|2684:4297|56x92|6e90cff5
+Gamification Bar|Gamification Bar|16|2684:4307|1190x1617|4c2c7e8d
+Gamification Bar|progres Gamification Bar|8|2998:875|368x480|ecbda661
+Header|Selection Mode Header|7|2210:2260|435x478|fe92fdb7
+Header|Header|6|2236:2206|974x663|32892224
+Header|background_home|1|2396:3968|412x216|4a690868
+Header|State|3|2290:2526|288x122|927f12fb
+Loading & progress 💠|ProgressBar_beneficios|3|5253:2593|312x116|aeaaac8
+Loading & progress 💠|Progress bar misiones|3|5253:2613|372x128|38b8e8ad
+Loyalty|Loyalty home card|2|4100:16736|420x519|8504529e
+Pin 💠|Pin|3|5277:5|252x80|de73e149
+Products Cards & Carrousels|Carrousel cards / Classic / Small|5|2220:2452|638x566|48195eb5
+Products Cards & Carrousels|Carrousel cards / Classic / Big|3|2483:855|889x524|c6c6373b
+Products Cards & Carrousels|Carrousel cards / New|6|2220:2258|1328x872|10d81956
+Tile 💠 Misiones|Tile 💠 Misiones|3|5265:4129|414x138|ed51246f
