@@ -31,7 +31,8 @@ Antes de los hallazgos, lo que el archivo ya resuelve y conviene sostener:
 | C-S03 | Lista cerrada de estados distinta en cada componente; sin `Hover` para web | 🟠 P1 | Pendiente |
 | C-T03 | Textos sin estilo de texto (Card, Gamification Bar, Loyalty home card) | 🟡 P2 | Pendiente |
 | C-T05 | Toast y Product Card usan el estilo de efecto remoto `Elevation/Bordered Down` (no está en Foundations) | 🟡 P2 | Pendiente · nuevo 17/11 |
-| C-T06 | Inline notice: fondos hex sin variable y textos sin estilo de texto | 🟠 P1 | Pendiente · nuevo 17/11 |
+| C-T06 | Inline notice: fondos hex sin variable (los textos ya usan tokens desde el 20/11) | 🟠 P1 | Pendiente · nuevo 17/11 · parcial 20/11 |
+| C-T07 | Inline notice (20/11): variante `Tono4`, `Surface/inverse` en textos e íconos, enlace sin booleano, descripción en Label Small | 🟡 P2 | Pendiente · nuevo 20/11 |
 | C-S02 | Estado de los componentes desalineado entre *Índice*, *Estado de componentes* y lo publicado | 🟡 P2 | Pendiente |
 | C-S04 | Tag Core: la documentación no coincide con el componente | 🟡 P2 | Pendiente |
 | C-S05 | Skeleton: nombres de variante cruzados con los tokens | 🟡 P2 | Pendiente |
@@ -144,7 +145,18 @@ Componente nuevo (5699:578, 17/11). Los cuatro fondos son hex sueltos y los text
 | Advertencia | `#FFEDD5` | `orange/100` | `Feedback/warning-subtle` |
 | Crítico | `#FFEDF0` | `red/50` | `Feedback/error-subtle` |
 
-Textos: aplicar `Body/Body Medium` y `Body/Body Medium Bold`. iOS y Android no tienen primitivos: mientras tanto usan `Feedback/*-surface` (más saturados que Figma). Los cuatro íconos son `Icon/primary`: el tono lo da sólo el fondo, así que el aviso crítico depende del ícono y el título para no apoyarse sólo en el color (WCAG 1.4.1) — conviene que el título sea obligatorio en Advertencia y Crítico.
+Textos: ~~aplicar `Body/Body Medium` y `Body/Body Medium Bold`~~ → **resuelto en Figma el 20/11** con `Label/Label Small` (descripción) y variables `Font/*` 12/16 Bold (título y enlace); ver C-T07. iOS y Android no tienen primitivos: mientras tanto usan `Feedback/*-surface` (más saturados que Figma). Los cuatro íconos son `Icon/primary`: el tono lo da sólo el fondo, así que el aviso crítico depende del ícono y el título para no apoyarse sólo en el color (WCAG 1.4.1) — conviene que el título sea obligatorio en Advertencia y Crítico.
+
+### C-T07 · Inline notice: ajustes del 20/11
+
+Detectado en la sincronización del 20/11/2026 (hash de estructura del set 5699:578 distinto; mismo tamaño 344 × 268). Se documenta lo que está en Figma; estas observaciones quedan como propuesta:
+
+1. **Nombre de variante `Tono=Tono4`.** El tono informativo perdió su nombre (antes *Informativo*) y además es el valor por defecto. Nombre genérico = el equipo no sabe qué elige (Ley de Jakob: los nombres tienen que coincidir con el modelo mental; ver también C-H01). **Propuesta:** volver a `Tono=Informativo`.
+2. **`Surface/inverse` como color de texto e ícono.** Título y enlace (los cuatro tonos) y los íconos de Positivo, Advertencia y Crítico usan `Surface/inverse` (#292929); la descripción usa `Text/primary` y el ícono de Informativo `Icon/primary`. El valor visual es el mismo, pero un token de superficie en texto se rompe en cuanto cambie el tema. **Propuesta:** `Text/primary` en título y enlace, `Icon/primary` en los cuatro íconos. Código: ya usa `Text/primary` / `Icon/primary`.
+3. **Enlace sin propiedad para mostrarlo.** La capa *Acción · enlace* está oculta en las cuatro variantes y sólo tiene la propiedad de texto `Texto de acción`; quien usa la instancia tiene que entrar a las capas. **Propuesta:** booleano `Mostrar acción`, igual que `Mostrar título`.
+4. **Descripción en `Label/Label Small` (12/16).** Foundations define Label Small como "rótulos de UI… una sola línea"; el aviso es un párrafo que puede envolver varias líneas. 12 px cumple WCAG 2.1 AA (no hay tamaño mínimo y escala hasta 16 con el tamaño del sistema, 1.4.4), pero baja la legibilidad en avisos críticos y en Kiosco. **Propuesta:** `Text/Body Small` (12/16, pensado para texto corrido) o volver a `Text/Body Medium` 14/20; título con el estilo Bold correspondiente aplicado (hoy son variables sueltas sin estilo).
+5. **Enlace de 16 px de alto.** Como objetivo táctil queda por debajo de 44 pt / 48 dp (C-A04, Ley de Fitts). En web el enlace suma `.aw-hit` (área de 48 sin cambiar el visual, como el resto de los componentes); en Figma conviene documentar el área táctil.
+6. **Ícono centrado verticalmente.** El auto layout del contenedor es `CENTER`: con descripciones de varias líneas el ícono queda a mitad de altura, lejos del título (Ley de proximidad). **Propuesta:** alinear arriba (`MIN`) como indicaba la ficha del 17/11.
 
 ### C-T04 · Documentación con nombres viejos o hex
 

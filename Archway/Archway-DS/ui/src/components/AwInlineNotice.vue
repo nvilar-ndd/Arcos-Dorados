@@ -5,7 +5,10 @@
  * Sin cierre ni temporizador; se retira cuando la condición deja de aplicar. Tono: Informativo · Positivo ·
  * Advertencia · Crítico (significado, no duración). Título y enlace opcionales; descripción obligatoria.
  * Medidas de Figma: ancho inicial 296 (se adapta al contenedor), padding 10/12, radio 4 (Valor/radius/XS),
- * ícono 16 en un espacio de 20 × 20 alineado arriba, gap 8; Speedee 14/20 (Body Medium), título y enlace Bold.
+ * ícono 16 en un espacio de 20 × 20 centrado verticalmente con el texto, gap 8.
+ * Tipografía (Figma 20/11/2026): descripción `Label/Label Small` 12/16; título y enlace Speedee Bold 12/16 con
+ * variables Font/* (= Label Small Bold, sin estilo aplicado). Título arriba de la descripción, enlace abajo.
+ * Título y enlace en Figma usan `Surface/inverse` (#292929): acá `Text/primary`, mismo valor (audit C-T07).
  * ⚠️ Los fondos en Figma son hex sueltos (#EDF5FF, #EBF7ED, #FFEDD5, #FFEDF0) sin token semántico:
  * se usan los primitivos más cercanos (blue/100, green/100, orange/100, red/50) hasta que se definan
  * Feedback/*-subtle (audit C-T06).
@@ -37,20 +40,20 @@ const TONE = {
 <template>
   <div
     :role="tone === 'critical' || tone === 'warning' ? 'alert' : 'status'"
-    :class="['aw-ui flex w-full min-w-0 items-start gap-8 rounded-xs px-[12px] py-[10px]', TONE[props.tone].bg]"
+    :class="['aw-ui flex w-full min-w-0 items-center gap-8 rounded-xs px-[12px] py-[10px]', TONE[props.tone].bg]"
   >
     <span class="flex size-[20px] shrink-0 items-center justify-center" aria-hidden="true">
       <AwIcon :name="props.icon ?? TONE[props.tone].icon" :size="16" :class="TONE[props.tone].color" />
     </span>
-    <div class="aw-text-body-medium flex min-w-0 flex-1 flex-col text-text-primary">
-      <strong v-if="title" class="aw-text-body-medium-bold">{{ title }}</strong>
+    <div class="aw-label-small flex min-w-0 flex-1 flex-col text-text-primary">
+      <strong v-if="title" class="aw-label-small-bold">{{ title }}</strong>
       <p>{{ description }}</p>
       <component
         :is="href ? 'a' : 'button'"
         v-if="actionLabel"
         :href="href"
         :type="href ? undefined : 'button'"
-        class="aw-text-body-medium-bold self-start text-text-primary underline outline-none focus-visible:outline-2 focus-visible:outline-border-strong"
+        class="aw-hit aw-label-small-bold self-start text-text-primary underline outline-none focus-visible:outline-2 focus-visible:outline-border-strong"
         @click="$emit('action')"
       >{{ actionLabel }}</component>
     </div>

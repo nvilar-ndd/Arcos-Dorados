@@ -103,12 +103,13 @@ public struct AWInlineNotice: View {
     }
 
     public var body: some View {
-        HStack(alignment: .top, spacing: AWSpacing.s8) {
+        HStack(alignment: .center, spacing: AWSpacing.s8) {
             AWIcon(icon, size: 16).foregroundStyle(accent).frame(width: 20, height: 20)
             VStack(alignment: .leading, spacing: 0) {
-                (titleText + Text(description)).awText(AWTypography.textBodyMedium)
+                if let title { Text(title).awText(AWTypography.labelSmallBold) }
+                Text(description).awText(AWTypography.labelSmall)
                 if let actionLabel, let action {
-                    Button(action: action) { Text(actionLabel).underline().awText(AWTypography.textBodyMediumBold) }
+                    Button(action: action) { Text(actionLabel).underline().awText(AWTypography.labelSmallBold) }
                         .buttonStyle(.plain)
                 }
             }
@@ -123,7 +124,6 @@ public struct AWInlineNotice: View {
         .accessibilityAddTraits(tone == .warning || tone == .critical ? .isStaticText : [])
     }
 
-    private var titleText: Text { title.map { Text($0 + " ").bold() } ?? Text("") }
     private var icon: AWIconName { switch tone { case .info: .info; case .success: .success; case .warning: .warning; case .critical: .error } }
     private var accent: Color { AWColor.iconPrimary }
     private var background: Color { switch tone { case .info: AWColor.feedbackInfoSurface; case .success: AWColor.feedbackSuccessSurface; case .warning: AWColor.feedbackWarningSurface; case .critical: AWColor.feedbackErrorSurface } }

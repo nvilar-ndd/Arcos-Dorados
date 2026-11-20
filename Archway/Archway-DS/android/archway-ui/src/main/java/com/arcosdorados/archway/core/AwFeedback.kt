@@ -144,12 +144,14 @@ fun AwInlineNotice(
                 if (tone == AwInlineNoticeTone.Warning || tone == AwInlineNoticeTone.Critical) liveRegion = LiveRegionMode.Polite
             },
         horizontalArrangement = Arrangement.spacedBy(AwSpacing.s8),
+        verticalAlignment = Alignment.CenterVertically,
     ) {
         Box(Modifier.size(20.dp), contentAlignment = Alignment.Center) { AwIcon(icon, size = 16.dp, tint = accent) }
         Column(Modifier.weight(1f)) {
-            AwText(listOfNotNull(title, description).joinToString(" "), AwTypography.textBodyMedium, color = AwColor.textPrimary)
+            if (title != null) AwText(title, AwTypography.labelSmallBold, color = AwColor.textPrimary)
+            AwText(description, AwTypography.labelSmall, color = AwColor.textPrimary)
             if (actionLabel != null && onAction != null) {
-                AwText(actionLabel, AwTypography.textBodyMediumBold, color = AwColor.textPrimary,
+                AwText(actionLabel, AwTypography.labelSmallBold, color = AwColor.textPrimary,
                     modifier = Modifier.clickable(role = Role.Button, onClick = onAction))
             }
         }

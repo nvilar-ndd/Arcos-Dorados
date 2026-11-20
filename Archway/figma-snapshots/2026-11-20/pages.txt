@@ -1,0 +1,83 @@
+# Huella por página: id|nombre|nodos|caracteres de texto|hash djb2 de los textos
+## ArchWay (Us1oNLc2wgmgG3aMuT5dJv)
+1:3|Colors|2443|19144|f1bdec35
+241:3374|Typography|1232|17720|60e170fe
+2067:7419|Grid *base*|318|7286|3639a144
+244:5469|Spacing block|386|4679|9f8cd8f0
+2038:24413|Corner Radius|397|3243|1c7b12b2
+2038:25495|Elevations|351|3894|b2e1e700
+2067:7355|Motion|62|3152|2df3ee99
+2038:25351|Utilities|42|706|a024d9a4
+2238:223|Accesibilidad|3|8|3a0b6b98
+1:6|Color_Investigacion|10047|48165|8b72fe20
+## Dashboard (XKulGF78txFYDLNMstLShZ) — no se revisaron el 2026-11-20 (copia de la foto 2026-11-17)
+405:1446|Cover|14|135|95413439
+80:2560|Grids|53|601|5c874ddb
+0:1|Color|2382|14094|e75beba4
+65:525|Spaces|485|5063|f49d77b4
+97:731|Typography|302|2578|3bbb4b57
+106:1103|Components|8854|44815|9c773e9b
+4297:10211|Structure|0|0|1505
+657:36880|⮑ UI shell / Header + PanelLeft|5753|9318|c7bd8482
+4103:17|⮑ SubPanelLeft|257|2556|ccae6b6a
+4297:10215|Usage and design criteria|1027|5250|845b0391
+## ADK (IAqK97JM1KkMLs1VWGGTkv) — no se revisaron el 2026-11-20 (copia de la foto 2026-11-17)
+0:1|Cover|6|18|e372bc5e
+3293:4738|🎨 Design Foundations|0|0|1505
+20:365|- Colors ✅|343|1660|623dad19
+2:7|- Tipography ✅|49|555|5143047
+2:5|- Spaces|29|0|1505
+335:69|Safe Accesibility Area|10|53|1fcc36bd
+3665:3202|templete|1190|3686|dda055e6
+174:1329|🧩 Componentes|0|0|1505
+3036:4916|- Attract Screen ✅|3063|2811|37c46c59
+137:9104|- Banners ✅|593|1179|a1a0c760
+11:2495|- Banners Categorias ✅|1278|2561|183dceda
+2:6|- Buttons ✅|1642|9486|f5e33792
+19:68|- Footer ✅|2688|14405|bdf616a4
+3197:1139|- Loaders ✅|68|682|3afef0f4
+3197:1424|- Logos ✅|95|1202|b4d6d739
+139:1295|- Header ✅|233|2701|8cd7f8c7
+43:1531|- Input ✅|1919|7319|73a994a1
+11:23|- Navegation ✅|1820|7726|d87dc244
+137:8749|- Scroll Bar ✅|110|1546|321f3637
+2222:6|- Snackbars ✅|315|2368|43590bbc
+2208:145|- Alerta ✅|339|2897|75fe0275
+3845:10|UI Shell|448|2005|2e3eeb3
+2:9|Themes|7|123|88cb5dda
+2397:743|Guia para mercado (Imagenes de Productos)|2911|12923|30c03536
+73:970|- Product 🟠|1340|5094|a97cb246
+3657:2971|Ilustraciones|968|431|f668380
+## Design Resources CORE – Archway (jXe3O8ICmPdNyX6mYbQDVC) — desde 2026-11-19
+2393:3412|Utilidades|57|225|cc25a254
+5062:32|Status bar|53|9|7e0f6474
+4519:12746|iOs|199|1051|c8f7aa11
+2122:3983|Badge|10|16|60d44add
+424:440|Button|1814|17699|550c5447
+2063:5641|Card|382|3003|d6f33782
+4979:13405|Checkbox / Radio|312|3782|1fe90a6e
+540:957|Chip|127|119|15e4ef18
+5009:5|Divider|2|0|1505
+5009:6|List Item|38|91|25118520
+5699:576|Inline notice|321|6247|4a876d31
+434:3088|Input text field|962|6941|1249cb54
+2041:3425|Loading & progress|694|4630|a66d6e12
+678:518|Navigation bars/ TabBar|8134|19692|d10fdfe3
+3642:689|Search|381|7029|37ce75f5
+540:989|Switch|488|5057|6d619161
+4081:14690|Skeleton|379|9963|40a8cf0
+581:355|Tag|132|2006|e61a4b69
+2117:2643|Tile (category)|2791|6097|b24380
+4709:2085|Toast|522|8600|52b595f3
+2106:1752|Tooltip|514|4087|f605bae2
+5230:3257|Top Bar|192|2506|20d67d60
+4099:16630|Banners|5|0|1505
+4798:8849|Card  💠|2624|8757|9337ad24
+5146:2886|Dialog 💠 Pop-up|31|57|d698f5b4
+2684:4296|Gamification Bar|3892|10728|6cf5a055
+2209:7948|Header|1764|10557|7cad0d0c
+5253:2279|Loading & progress 💠|85|341|35a9dafa
+2920:1216|Loyalty|1413|9816|6e25489
+5273:4356|Pin 💠|21|260|7b8edc4f
+2220:2104|Products Cards & Carrousels|1683|12037|6468896f
+5265:4025|Tile 💠 Misiones|76|238|7505f753
