@@ -12,6 +12,7 @@ Carpeta padre de todos los sistemas de diseño de Arcos Dorados. **ArchWay es el
 | [`Iconografia/`](./Iconografia/README.md) | **Íconos** de McDonald's Global (216 íconos, 2.699 variantes) ordenados por tipo, manual de creación y export a SVG. Compartidos por todos los sistemas | [Iconography](https://www.figma.com/design/7Hb0VVgTTN1q1RMnVWFYvd/Iconography?node-id=9-11) | — |
 | [`Ilustraciones/`](./Ilustraciones/README.md) | **Ilustraciones**: Digital illustrations de Global, Specials de campaña e Ilustraciones Arcos, con guía de uso y manual de color | [Illustrations Guide](https://www.figma.com/design/E0n9VRsdG5TfPRqhf9sbFK/Illustrations-Guide?node-id=0-1) | — |
 | [`Legacy/`](./Legacy/README.md) | **Legacy DS** — el sistema anterior, en depreciación | Pendiente | — |
+| [`templates/`](./templates/README.md) | **Templates** armados con ArchWay para usar como base: [presentaciones](./templates/presentations/README.md) | — | — |
 | [`Convergencia/`](./Convergencia/README.md) | **Plan para unificar todo en ArchWay**: decisiones, fases, backlog y checklist | — | — |
 | [`figma-snapshots/`](./figma-snapshots/README.md) | Fotos de los archivos de Figma en cada revisión | — | — |
 
